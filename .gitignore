@@ -1,0 +1,7 @@
+.idea/
+.bundle/
+Gemfile
+Gemfile.lock
+_site/
+.ruby-gemset
+.ruby-version
