@@ -669,7 +669,7 @@ a:hover {
 /* Icons */
 @font-face {
   font-family: 'yotpo-fonts';
-  src: url('fonts/icomoon.eot');
+  src: url('../fonts/icomoon.eot');
 }
 @font-face {
   font-family: 'yotpo-fonts';
