@@ -2,6 +2,182 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* Yotpo */
+/* Colors */
+/* line 32, ../sass/stylesheet.scss */
+body {
+  font-family: Verdana;
+}
+
+/* line 36, ../sass/stylesheet.scss */
+.pull-left {
+  text-align: left;
+}
+
+/* line 39, ../sass/stylesheet.scss */
+.pull-right {
+  text-align: left;
+}
+
+/* line 42, ../sass/stylesheet.scss */
+.pull-center {
+  text-align: center;
+}
+
+/* line 46, ../sass/stylesheet.scss */
+.text-xl {
+  font-size: 24px;
+}
+
+/* line 49, ../sass/stylesheet.scss */
+.text-l {
+  font-size: 15px;
+}
+
+/* line 52, ../sass/stylesheet.scss */
+.text-m {
+  font-size: 12px;
+}
+
+/* line 55, ../sass/stylesheet.scss */
+.text-s {
+  font-size: 11px;
+}
+
+/* line 58, ../sass/stylesheet.scss */
+.font-bold {
+  font-weight: bold;
+}
+
+/* line 61, ../sass/stylesheet.scss */
+.font-light {
+  font-weight: lighter;
+}
+
+/* line 64, ../sass/stylesheet.scss */
+.font-upper {
+  text-transform: uppercase;
+}
+
+/* line 67, ../sass/stylesheet.scss */
+a {
+  text-decoration: none;
+  color: #3085c7;
+}
+
+/* line 71, ../sass/stylesheet.scss */
+a:hover {
+  color: #266a9f;
+}
+
+/* line 74, ../sass/stylesheet.scss */
+.primary {
+  background: #3085c7;
+}
+
+/* line 77, ../sass/stylesheet.scss */
+.primary-d1 {
+  background: #266a9f;
+}
+
+/* line 80, ../sass/stylesheet.scss */
+.primary-d2 {
+  background: #1d5077;
+}
+
+/* line 83, ../sass/stylesheet.scss */
+.primary-l1 {
+  background: #599dd2;
+}
+
+/* line 86, ../sass/stylesheet.scss */
+.primary-l2 {
+  background: #83b6dd;
+}
+
+/* line 89, ../sass/stylesheet.scss */
+.primary-l3 {
+  background: #accee9;
+}
+
+/* line 92, ../sass/stylesheet.scss */
+.primary-l4 {
+  background: #d6e7f4;
+}
+
+/* Icons */
+@font-face {
+  font-family: 'yotpo-fonts';
+  src: url("../fonts/icomoon.eot");
+}
+
+@font-face {
+  font-family: 'yotpo-fonts';
+  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format("svg"), url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAc0AAoAAAAABuwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAA4sAAAOLTcDBXE9TLzIAAASAAAAAYAAAAGAIIvy5Y21hcAAABOAAAABMAAAATBpVzFpnYXNwAAAFLAAAAAgAAAAIAAAAEGhlYWQAAAU0AAAANgAAADb/dVd6aGhlYQAABWwAAAAkAAAAJAPCAjtobXR4AAAFkAAAACAAAAAgCkgCAG1heHAAAAWwAAAABgAAAAYACFAAbmFtZQAABbgAAAFbAAABW5zaYzJwb3N0AAAHFAAAACAAAAAgAAMAAAEABAQAAQEBCGljb21vb24AAQIAAQA6+BwC+BsD+BgEHgoAGVP/i4seCgAZU/+LiwwHi2v45vh0BR0AAACIDx0AAACNER0AAAAJHQAAA4ISAAkBAQgPERMWGyAlKmljb21vb25pY29tb29udTB1MXUyMHVFNjAwdUU2MDF1RTYwMnVFNjAzAAACAYkABgAIAgABAAQABwAKAA0AoAHQAk4C4fyUDvyUDvyUDvuUDt34F/eVFYuLmpaAl3+WgHyLiwgyMgWLi3BodqB3oK2mi4sI9xH3EQWLi6+yrGqsamRni4sI+z77PQWLi1VMWb1ZvcrBi4sI9xX3FQWLi5mXgJaAln98i4sI+yf7KAWLi1NOyU3JTcnCi4sI91/3YAWLi7O3W7xau19ji4sI+yn7KQWLi15ms2O0Yq+4i4sI7e4FDt34R/dSFXmLBYiBh4GGggibewWWgIt6gIEIgoIFgYB6i4CWCHubBYKGgYeBiAiLegWLfH9/fIsIfosFfIt/l4uaCIucBYGOgY+CkAh7ewWBgHqLgJYIgpQFgZWLnJWWCJubBYaUh5WIlQh6iwV8i3+Xi5oIi5gFi5qXlpqLCJyLBY6Wj5SQlAh7mwWBlYuclZYIlJQFlpWci5WBCJp8BZWQlY+VjgiLnQWLmpeXmosImIsFmouXf4t8CIt5BZaIlYeUhgiamgWWlZyLlYEIlIIFloCLeoCBCHx7BZCCj4KOgAiciwWai5aAi3wIi34Fi3yAf3yLCPsf9RVii2tqi2OLYqtrtIuzi6yri7SLs2qsY4sIiyEVeIt8mouei52amp6LnYuafIt5i3h8fHmLCA7d+DL3PBV6i3yEf4EI+xLLBYuOjI+LjouNio2LjAj3FM0FloGahZuLr4upqIuwi69tqGeLZ4tubotni4mLiYuJCPsTSQV/lXyRe4tni21ui2eLZ6ltr4uai5iQlpQI9xZIjIwFi4mLiouJi2eobq+Lr4upqIuvi7BtqGeLCA7d9zz3lhV1iwWFi4aGi4UIi/suBYuEkIeRiwihiwWRi5CQi5EIi/cvBYuRho+Fiwj3xo0ViY6JjYeNioyKi4qLgYxflT6LlaqMkIupi6x3oH+LhYuGh4uFil9rVVNzhYqHhYuGCIv7QQWLgZWKi4uOipmKvH+MiqyErIsIzIsFmIuQj4+Si4u35Iv1i42LjYqMCA74lBT4lBWLDAoAAAMCAAGQAAUAAAFMAWYAAABHAUwBZgAAAPUAGQCEAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA5gMB4P/g/+AB4AAgAAAAAQAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAA4AAAACgAIAAIAAgABACDmA//9//8AAAAAACDmAP/9//8AAf/jGgQAAwABAAAAAAAAAAAAAAABAAH//wAPAAEAAAABAABKPBOxXw889QALAgAAAAAAzzuLcQAAAADPO4txAAAAAAHgAZsAAAAIAAIAAAAAAAAAAQAAAeD/4AAAAlIAAAAAAeAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAABAAAAAlIAhgJSAIICUgBxAlIAhwAAUAAACAAAAAAAEADGAAEAAAAAAAEADgAAAAEAAAAAAAIADgBRAAEAAAAAAAMADgAuAAEAAAAAAAQADgBfAAEAAAAAAAUAFgAYAAEAAAAAAAYABwA8AAEAAAAAAAkACgAOAAEAAAAAAAoAKABtAAMAAQQJAAEADgAAAAMAAQQJAAIADgBRAAMAAQQJAAMADgAuAAMAAQQJAAQADgBfAAMAAQQJAAUAFgAYAAMAAQQJAAYADgBDAAMAAQQJAAkACgAOAAMAAQQJAAoAKABtAGkAYwBvAG0AbwBvAG4AeQBvAHQAcABvAFYAZQByAHMAaQBvAG4AIAAxAC4AMABpAGMAbwBtAG8AbwBuaWNvbW9vbgBpAGMAbwBtAG8AbwBuAFIAZQBnAHUAbABhAHIAaQBjAG8AbQBvAG8AbgBHAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4AAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 109, ../sass/stylesheet.scss */
+.icon {
+  font-family: 'yotpo-fonts';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 20px;
+  color: grey;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 125, ../sass/stylesheet.scss */
+.icon-attach:before {
+  content: "\e600";
+}
+
+/* line 128, ../sass/stylesheet.scss */
+.icon-cogwheel:before {
+  content: "\e601";
+}
+
+/* line 131, ../sass/stylesheet.scss */
+.icon-share:before {
+  content: "\e602";
+}
+
+/* line 134, ../sass/stylesheet.scss */
+.icon-thumbs-up:before {
+  content: "\e603";
+}
+
+/* Buttons */
+/* line 140, ../sass/stylesheet.scss */
+.btn {
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  text-overflow: ellipsis;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  font-family: Verdana;
+  display: inline-block;
+}
+
+/* line 151, ../sass/stylesheet.scss */
+.btn-primary {
+  background: #3085c7;
+  border: 1px solid #26649f;
+  color: white;
+}
+
+/* End Buttons */
+/* End Yotpo */
+/* line 178, ../sass/stylesheet.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -11,66 +187,84 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/* line 188, ../sass/stylesheet.scss */
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
+/* line 191, ../sass/stylesheet.scss */
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
+/* line 194, ../sass/stylesheet.scss */
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
+/* line 197, ../sass/stylesheet.scss */
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
+/* line 201, ../sass/stylesheet.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
+
+/* line 205, ../sass/stylesheet.scss */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* LAYOUT STYLES */
+/* line 211, ../sass/stylesheet.scss */
 body {
   font-size: 15px;
-  line-height: 1.5; 
+  line-height: 1.5;
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-weight: 400;
   color: #666;
 }
 
+/* line 220, ../sass/stylesheet.scss */
 a {
   color: #2879d0;
 }
+
+/* line 223, ../sass/stylesheet.scss */
 a:hover {
   color: #2268b2;
 }
 
+/* line 227, ../sass/stylesheet.scss */
 header {
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
 }
 
+/* line 235, ../sass/stylesheet.scss */
 header h1 {
   letter-spacing: -1px;
   font-size: 72px;
@@ -80,6 +274,7 @@ header h1 {
   width: 540px;
 }
 
+/* line 244, ../sass/stylesheet.scss */
 header h2 {
   font-size: 26px;
   color: #9ddcff;
@@ -89,26 +284,31 @@ header h2 {
   letter-spacing: 0;
 }
 
+/* line 253, ../sass/stylesheet.scss */
 .inner {
   position: relative;
   width: 940px;
   margin: 0 auto;
 }
 
+/* line 259, ../sass/stylesheet.scss */
 #content-wrapper {
   border-top: solid 1px #fff;
   padding-top: 30px;
 }
 
+/* line 264, ../sass/stylesheet.scss */
 #main-content {
   width: 690px;
   float: left;
 }
 
+/* line 269, ../sass/stylesheet.scss */
 #main-content img {
   max-width: 100%;
 }
 
+/* line 273, ../sass/stylesheet.scss */
 aside#sidebar {
   width: 200px;
   padding-left: 20px;
@@ -119,15 +319,18 @@ aside#sidebar {
   line-height: 1.3;
 }
 
+/* line 284, ../sass/stylesheet.scss */
 aside#sidebar p.repo-owner,
 aside#sidebar p.repo-owner a {
   font-weight: bold;
 }
 
+/* line 288, ../sass/stylesheet.scss */
 #downloads {
   margin-bottom: 40px;
 }
 
+/* line 292, ../sass/stylesheet.scss */
 a.button {
   width: 134px;
   height: 58px;
@@ -136,18 +339,24 @@ a.button {
   color: #fff;
   padding-left: 68px;
   padding-top: 22px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
 }
+
+/* line 302, ../sass/stylesheet.scss */
 a.button small {
   display: block;
   font-size: 11px;
 }
+
+/* line 306, ../sass/stylesheet.scss */
 header a.button {
   position: absolute;
   right: 0;
   top: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
+
+/* line 312, ../sass/stylesheet.scss */
 aside a.button {
   width: 138px;
   padding-left: 64px;
@@ -157,6 +366,7 @@ aside a.button {
   font-size: 21px;
 }
 
+/* line 321, ../sass/stylesheet.scss */
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
@@ -164,12 +374,14 @@ code, pre {
   font-size: 13px;
 }
 
+/* line 328, ../sass/stylesheet.scss */
 code {
   background-color: #f2f8fc;
   border: solid 1px #dbe7f3;
   padding: 0 3px;
 }
 
+/* line 334, ../sass/stylesheet.scss */
 pre {
   padding: 20px;
   background: #fff;
@@ -177,6 +389,8 @@ pre {
   overflow: auto;
   border: solid 1px #f2f2f2;
 }
+
+/* line 341, ../sass/stylesheet.scss */
 pre code {
   color: #2879d0;
   background-color: #fff;
@@ -184,53 +398,56 @@ pre code {
   padding: 0;
 }
 
+/* line 348, ../sass/stylesheet.scss */
 ul, ol, dl {
   margin-bottom: 20px;
 }
 
-
 /* COMMON STYLES */
-
+/* line 355, ../sass/stylesheet.scss */
 hr {
   height: 1px;
   line-height: 1px;
   margin-top: 1em;
   padding-bottom: 1em;
   border: none;
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  background: transparent url("../images/hr.png") 0 0 no-repeat;
 }
 
+/* line 364, ../sass/stylesheet.scss */
 table {
   width: 100%;
   border: 1px solid #ebebeb;
 }
 
+/* line 369, ../sass/stylesheet.scss */
 th {
   font-weight: 500;
 }
 
+/* line 373, ../sass/stylesheet.scss */
 td {
   border: 1px solid #ebebeb;
-  text-align: center; 
+  text-align: center;
   font-weight: 300;
 }
 
+/* line 379, ../sass/stylesheet.scss */
 form {
   background: #f2f2f2;
   padding: 20px;
-  
 }
 
-
 /* GENERAL ELEMENT TYPE STYLES */
-
+/* line 388, ../sass/stylesheet.scss */
 #main-content h1 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 2.8em;
   letter-spacing: -1px;
   color: #474747;
-} 
+}
 
+/* line 395, ../sass/stylesheet.scss */
 #main-content h1:before {
   content: "/";
   color: #9ddcff;
@@ -238,13 +455,16 @@ form {
   margin-left: -0.9em;
 }
 
+/* line 402, ../sass/stylesheet.scss */
 #main-content h2 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 8px;
   color: #474747;
-} 
+}
+
+/* line 409, ../sass/stylesheet.scss */
 #main-content h2:before {
   content: "//";
   color: #9ddcff;
@@ -252,15 +472,17 @@ form {
   margin-left: -1.5em;
 }
 
+/* line 416, ../sass/stylesheet.scss */
 #main-content h3 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 18px;
   font-weight: bold;
   margin-top: 24px;
   margin-bottom: 8px;
   color: #474747;
-} 
- 
+}
+
+/* line 425, ../sass/stylesheet.scss */
 #main-content h3:before {
   content: "///";
   color: #9ddcff;
@@ -268,13 +490,15 @@ form {
   margin-left: -2em;
 }
 
+/* line 432, ../sass/stylesheet.scss */
 #main-content h4 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 15px;
   font-weight: bold;
   color: #474747;
-} 
+}
 
+/* line 439, ../sass/stylesheet.scss */
 h4:before {
   content: "////";
   color: #9ddcff;
@@ -282,11 +506,14 @@ h4:before {
   margin-left: -2.8em;
 }
 
+/* line 446, ../sass/stylesheet.scss */
 #main-content h5 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 14px;
   color: #474747;
-} 
+}
+
+/* line 451, ../sass/stylesheet.scss */
 h5:before {
   content: "/////";
   color: #9ddcff;
@@ -294,11 +521,14 @@ h5:before {
   margin-left: -3.2em;
 }
 
+/* line 458, ../sass/stylesheet.scss */
 #main-content h6 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: .8em;
   color: #474747;
-} 
+}
+
+/* line 463, ../sass/stylesheet.scss */
 h6:before {
   content: "//////";
   color: #9ddcff;
@@ -306,18 +536,22 @@ h6:before {
   margin-left: -3.7em;
 }
 
+/* line 470, ../sass/stylesheet.scss */
 p {
   margin-bottom: 20px;
 }
- 
+
+/* line 474, ../sass/stylesheet.scss */
 a {
   text-decoration: none;
 }
 
+/* line 478, ../sass/stylesheet.scss */
 p a {
   font-weight: 400;
 }
 
+/* line 482, ../sass/stylesheet.scss */
 blockquote {
   font-size: 1.6em;
   border-left: 10px solid #e9e9e9;
@@ -325,23 +559,27 @@ blockquote {
   padding: 0 0 0 30px;
 }
 
+/* line 489, ../sass/stylesheet.scss */
 ul {
   list-style: disc inside;
   padding-left: 20px;
 }
 
+/* line 495, ../sass/stylesheet.scss */
 ol {
   list-style: decimal inside;
   padding-left: 3px;
 }
 
+/* line 500, ../sass/stylesheet.scss */
 dl dd {
   font-style: italic;
   font-weight: 100;
 }
 
+/* line 505, ../sass/stylesheet.scss */
 footer {
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  background: transparent url("../images/hr.png") 0 0 no-repeat;
   margin-top: 40px;
   padding-top: 20px;
   padding-bottom: 30px;
@@ -349,14 +587,18 @@ footer {
   color: #aaa;
 }
 
+/* line 514, ../sass/stylesheet.scss */
 footer a {
   color: #666;
 }
+
+/* line 517, ../sass/stylesheet.scss */
 footer a:hover {
   color: #444;
 }
 
 /* MISC */
+/* line 522, ../sass/stylesheet.scss */
 .clearfix:after {
   clear: both;
   content: '.';
@@ -365,33 +607,52 @@ footer a:hover {
   height: 0;
 }
 
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
+/* line 530, ../sass/stylesheet.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 531, ../sass/stylesheet.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 532, ../sass/stylesheet.scss */
+.clearfix {
+  display: block;
+}
 
 /* #Media Queries
 ================================================== */
-
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {}
-
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 542, ../sass/stylesheet.scss */
   .inner {
     width: 740px;
   }
+
+  /* line 545, ../sass/stylesheet.scss */
   header h1, header h2 {
     width: 340px;
   }
+
+  /* line 548, ../sass/stylesheet.scss */
   header h1 {
     font-size: 60px;
   }
+
+  /* line 551, ../sass/stylesheet.scss */
   header h2 {
     font-size: 30px;
   }
+
+  /* line 554, ../sass/stylesheet.scss */
   #main-content {
     width: 490px;
   }
+
+  /* line 562, ../sass/stylesheet.scss */
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,
@@ -403,27 +664,39 @@ footer a:hover {
     margin-left: 0;
   }
 }
-
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+  /* line 571, ../sass/stylesheet.scss */
   .inner {
     width: 93%;
   }
+
+  /* line 574, ../sass/stylesheet.scss */
   header {
     padding: 20px 0;
   }
+
+  /* line 577, ../sass/stylesheet.scss */
   header .inner {
     position: relative;
   }
+
+  /* line 580, ../sass/stylesheet.scss */
   header h1, header h2 {
     width: 100%;
   }
+
+  /* line 583, ../sass/stylesheet.scss */
   header h1 {
     font-size: 48px;
   }
+
+  /* line 586, ../sass/stylesheet.scss */
   header h2 {
     font-size: 24px;
   }
+
+  /* line 589, ../sass/stylesheet.scss */
   header a.button {
     background-image: none;
     width: auto;
@@ -438,18 +711,24 @@ footer a:hover {
     background-color: #9ddcff;
     color: #2879d0;
     -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;                     
-    border-radius: 5px;    
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
   }
+
+  /* line 606, ../sass/stylesheet.scss */
   header a.button small {
     font-size: 13px;
     display: inline;
   }
+
+  /* line 611, ../sass/stylesheet.scss */
   #main-content,
   aside#sidebar {
     float: none;
-    width: 100% ! important;
+    width: 100% !important;
   }
+
+  /* line 615, ../sass/stylesheet.scss */
   aside#sidebar {
     background-image: none;
     margin-top: 20px;
@@ -457,9 +736,13 @@ footer a:hover {
     padding: 20px 0;
     min-height: 0;
   }
+
+  /* line 622, ../sass/stylesheet.scss */
   aside#sidebar a.button {
     display: none;
   }
+
+  /* line 630, ../sass/stylesheet.scss */
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,
@@ -471,15 +754,16 @@ footer a:hover {
     margin-left: 0;
   }
 }
-
-
 /* DS */
+/* line 639, ../sass/stylesheet.scss */
 body {
   font-size: 14px;
   font: Verdana;
 }
+
+/* line 643, ../sass/stylesheet.scss */
 #design-faker {
-  background: url('../images/typography2.jpg') no-repeat;
+  background: url("../images/typography2.jpg") no-repeat;
   position: absolute;
   z-index: -1;
   opacity: 0.5;
@@ -489,6 +773,8 @@ body {
   top: -4px;
   display: none;
 }
+
+/* line 654, ../sass/stylesheet.scss */
 #content-wrapper {
   position: relative;
   max-width: 1000px;
@@ -497,6 +783,8 @@ body {
   padding: 30px;
   box-sizing: border-box;
 }
+
+/* line 662, ../sass/stylesheet.scss */
 .side-part {
   display: inline-block;
   width: 20%;
@@ -504,11 +792,15 @@ body {
   float: left;
   font-weight: bold;
 }
+
+/* line 669, ../sass/stylesheet.scss */
 .content {
   width: 70%;
   float: left;
   margin-left: 10%;
 }
+
+/* line 674, ../sass/stylesheet.scss */
 section {
   max-width: 755px;
   width: 100%;
@@ -516,8 +808,9 @@ section {
   border-bottom: 1px solid;
   padding-bottom: 30px;
   margin-bottom: 30px;
-
 }
+
+/* line 683, ../sass/stylesheet.scss */
 h3 {
   font-family: Verdana;
   margin-bottom: 35px;
@@ -527,6 +820,8 @@ h3 {
   color: #2e8bc8;
   text-transform: uppercase;
 }
+
+/* line 692, ../sass/stylesheet.scss */
 .content ul {
   font-weight: light;
   list-style: none;
@@ -534,9 +829,13 @@ h3 {
   line-height: 21px;
   font-size: 15px;
 }
+
+/* line 699, ../sass/stylesheet.scss */
 bold {
   font-weight: bolder;
 }
+
+/* line 702, ../sass/stylesheet.scss */
 .exmple-box {
   border: 1px solid black;
   text-align: center;
@@ -544,13 +843,19 @@ bold {
   display: inline-block;
   min-width: 370px;
 }
+
+/* line 709, ../sass/stylesheet.scss */
 .small-title {
   font-size: 12px;
   color: grey;
 }
+
+/* line 713, ../sass/stylesheet.scss */
 .clr {
   clear: both;
 }
+
+/* line 716, ../sass/stylesheet.scss */
 .code-example {
   background: black;
   color: white;
@@ -559,9 +864,13 @@ bold {
   resize: none;
   min-width: 350px;
 }
+
+/* line 724, ../sass/stylesheet.scss */
 .color-list {
   list-style: none;
 }
+
+/* line 727, ../sass/stylesheet.scss */
 .color-item {
   width: 80px;
   text-align: center;
@@ -570,8 +879,8 @@ bold {
   min-height: 140px;
 }
 
+/* line 735, ../sass/stylesheet.scss */
 .color-circle {
-  background: grey;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
@@ -580,139 +889,58 @@ bold {
   width: 38px;
   margin: 7px auto;
 }
+
+/* line 744, ../sass/stylesheet.scss */
 .color-circle.big {
   height: 55px;
   width: 55px;
 }
+
+/* line 749, ../sass/stylesheet.scss */
 .color-blue {
   background: #00abc7;
 }
+
+/* line 752, ../sass/stylesheet.scss */
 .color-orange {
   background: #efae00;
 }
+
+/* line 755, ../sass/stylesheet.scss */
 .color-yellow {
   background: #ffd200;
 }
+
+/* line 758, ../sass/stylesheet.scss */
 .color-green {
   background: #3aba6f;
 }
+
+/* line 761, ../sass/stylesheet.scss */
 .color-white {
   background: #ffffff;
 }
+
+/* line 764, ../sass/stylesheet.scss */
 .color-gray {
   background: #bbbbbb;
 }
+
+/* line 767, ../sass/stylesheet.scss */
 .color-gray-light {
   background: #f3f3f3;
 }
+
+/* line 770, ../sass/stylesheet.scss */
 .color-gray-dark {
   background: #737373;
 }
+
+/* line 773, ../sass/stylesheet.scss */
 .color-gray-darker {
   background: #4f4f4f;
 }
 
 /* End DS */
-
-/* Yotpo */
-
-.text-xl {
-  font-size: 24px;
-}
-.text-l {
-  font-size: 15px; 
-}
-.text-m {
-  font-size: 12px; 
-}
-.text-s {
-  font-size: 11px; 
-}
-.font-bold {
-  font-weight: bold;
-}
-.font-light {
-  font-weight: lighter;
-}
-.font-upper {
-  text-transform: uppercase;
-}
-a {
-  text-decoration: none;
-  color: #3085c7;
-}
-a:hover {
-  color: #266a9f;
-}
-.primary {
-  background: #3085c7;
-}
-.primary-d1 {
-  background: #266a9f;
-}
-.primary-d2 {
-  background: #1d5077;
-}
-.primary-l1 {
-  background: #599dd2;
-}
-.primary-l2 {
-  background: #83b6dd;
-}
-.primary-l3 {
-  background: #accee9;
-}
-.primary-l4 {
-  background: #d6e7f4;
-}
- 
-/* Icons */
-@font-face {
-  font-family: 'yotpo-fonts';
-  src: url('../fonts/icomoon.eot');
-}
-@font-face {
-  font-family: 'yotpo-fonts';
-  src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype'),
-     url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.icon {
-  font-family: 'yotpo-fonts';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  font-size: 20px;
-  color: grey;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-attach:before {
-  content: "\e600";
-}
-.icon-cogwheel:before {
-  content: "\e601";
-}
-.icon-share:before {
-  content: "\e602";
-}
-.icon-thumbs-up:before {
-  content: "\e603";
-}
-
-/* End Yotpo */
-
-
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {}
-
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {}
