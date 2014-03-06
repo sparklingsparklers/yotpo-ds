@@ -1,6 +1,9 @@
 .idea/
+.DS_Store
+.sass-cache/
 .bundle/
 Gemfile.lock
 _site/
 .ruby-gemset
 .ruby-version
+javascripts/.DS_Store
