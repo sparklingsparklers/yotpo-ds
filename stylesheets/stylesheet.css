@@ -113,7 +113,7 @@ a:hover {
 /* Icons */
 @font-face {
   font-family: 'yotpo-widget-font';
-  src: url("fonts/yotpo-widget-font.eot");
+  src: url("../fonts/yotpo-widget-font.eot");
 }
 
 @font-face {
