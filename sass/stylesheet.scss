@@ -13,8 +13,8 @@ $orange: #efae00;
 $yellow: #ffd200;
 $green: #3aba6f;
 $white: #ffffff;
-$gray: #bbbbbb;
-$gray-light: #f3f3f3;
+$gray: #a2a2a2;
+$gray-light: #e3e3e3;
 $gray-dark: #737373;
 $gray-gray-darker: #4f4f4f;
 $gray-dark: #737373;
@@ -44,15 +44,18 @@ body {
 }
 
 .text-xl {
-  font-size: 24px;
+  font-size: 21px;
 }
 .text-l {
   font-size: 15px; 
 }
 .text-m {
-  font-size: 12px; 
+  font-size: 13px; 
 }
 .text-s {
+  font-size: 12px; 
+}
+.text-xs {
   font-size: 11px; 
 }
 .font-bold {
@@ -60,6 +63,7 @@ body {
 }
 .font-light {
   font-weight: lighter;
+
 }
 .font-upper {
   text-transform: uppercase;
@@ -660,16 +664,11 @@ body {
   box-sizing: border-box;
 }
 .side-part {
-  display: inline-block;
-  width: 20%;
-  min-width: 100px;
-  float: left;
   font-weight: bold;
+  font-size: 17px;
 }
 .content {
-  width: 70%;
-  float: left;
-  margin-left: 10%;
+  margin: 20px 0 0 10%;
 }
 section {
   max-width: 755px;
@@ -704,7 +703,7 @@ bold {
   text-align: center;
   padding: 30px 10px;
   display: inline-block;
-  min-width: 370px;
+  width: 100%;
 }
 .small-title {
   font-size: 12px;
@@ -719,7 +718,8 @@ bold {
   overflow: hidden;
   text-align: left;
   resize: none;
-  min-width: 350px;
+  width: 80%;
+  max-width: 400px;
 }
 .color-list {
   list-style: none;
@@ -762,10 +762,10 @@ bold {
   background: #ffffff;
 }
 .color-gray {
-  background: #bbbbbb;
+  background: $gray;
 }
 .color-gray-light {
-  background: #f3f3f3;
+  background: $gray-light;
 }
 .color-gray-dark {
   background: #737373;
