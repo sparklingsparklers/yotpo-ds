@@ -142,20 +142,20 @@ a:hover {
 /* Buttons */
 
 .btn {
-  font-size: 11px; 
-  text-transform: uppercase;
-  padding: 10px 15px;
   text-overflow: ellipsis;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+  border: solid;
+  border-width: 1px;
   font-family: Verdana;
-  display: inline-block;
+  ext-transform: uppercase;
 }
-.btn-primary {
+
+.default-button {
+
   background: $primary;
-  border: 1px solid #26649f;
+  font-size: 12px;
   color: white;
+  padding: 10px 15px; 
+  border-color:   #000000;
 }
 
 /* End Buttons */
