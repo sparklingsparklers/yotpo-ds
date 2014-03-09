@@ -287,6 +287,17 @@ a:hover {
 
 /* End Buttons */
 
+/* Media Queries */
+@media only screen and (max-width: 300px) {
+  .icon-btn {
+    .icon-button-text {
+      display: none;
+    }
+}
+
+}
+/* End Media Queries */
+
 /* End Yotpo */
 
 
