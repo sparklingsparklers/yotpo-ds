@@ -206,69 +206,66 @@ a:hover {
 
 /* Buttons */
 
-.btn {
+.default-button {
+  display: inline-block;
   text-overflow: ellipsis;
   border: none;
-  border-width: 1px;
   font-family: Verdana;
   text-transform: uppercase;
   text-align: center;
   font-size: 12px;
   padding: 10px 15px; 
+  background: $gray;
+  color: $white;
+
   &:hover {
     cursor: pointer;
+    background-color: $gray-dark;
+    color: white;  
   }
 
   &.disabled {
+
+    background: $gray-light;
+    color: $gray;
+
     &:hover {
      cursor: default;
-    }
-  }
-
-}
-  
-
-
-.icon-btn {
-  display: inline-block;
-  font-size: 12px;
-  padding: 10px 15px; 
-  border-color:   #000000;
-
-  .icon {
-    margin: 5px 5px 5px 0px;
-    vertical-align: middle;
-  }
-}
-
-.btn-xl {
-  display:block;
-  width :100%;
-  font-size: 21px;
-  border-color:   #000000;
-  padding: 7px 9px;
-}
-
-.btn-gray {
-  background: $gray-light;
-  color: $gray-dark;
-  border-color:#000000;
-
-  &:hover {
-    background-color: $gray;
-    color: white;   
-  }
-
-  &.disabled {
-    color: $gray;
-    &:hover {
-      background: $gray-light;
+     background: $gray-light;
       color: $gray;
     }
   }
 }
+  
+.icon-btn {
+  display: inline-block;
+  font-size: 12px;
+  padding: 6px;
+  border-color:   #000000;
 
-.btn-primary-color {
+  .icon {
+    height: 19px;
+    width: 19px;
+    color: $white;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 1px;
+  }
+}
+
+.xl-btn {
+  display: inline-block;
+  font-size: 21px;
+  padding: 14px 18px;
+}
+
+.full-width-btn {
+  display:block;
+  width :100%;
+  font-size: 21px;
+}
+
+.primary-color-btn {
   background-color: $primary;
   color: $white;
 
@@ -277,7 +274,13 @@ a:hover {
   }
 
   &.disabled {
-    background-color: $primary-l2;
+    background-color: $primary-l3;
+    color: $white;
+
+    &:hover {
+      background-color: $primary-l3;
+      color: $white;
+    }
   }
 }
 
