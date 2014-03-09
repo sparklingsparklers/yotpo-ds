@@ -33,6 +33,12 @@ body {
   font-family: Verdana;
 }
 
+input{
+  -webkit-appearance: none;
+  -webkit-border-radius:0; 
+  border-radius:0;
+}
+
 .pull-left {
   text-align: left;
 }
@@ -778,10 +784,15 @@ footer a:hover {
 
 
 /* DS */
+
 body {
   font-size: 14px;
   font: Verdana;
 }
+
+
+
+
 #design-faker {
   background: url('../images/typography2.jpg') no-repeat;
   position: absolute;
