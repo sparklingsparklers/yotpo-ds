@@ -33,6 +33,12 @@ body {
   font-family: Verdana;
 }
 
+input{
+  -webkit-appearance: none;
+  -webkit-border-radius:0; 
+  border-radius:0;
+}
+
 .pull-left {
   text-align: left;
 }
@@ -207,24 +213,97 @@ a:hover {
 
 /* Buttons */
 
-.btn {
-  font-size: 11px; 
-  text-transform: uppercase;
-  padding: 10px 15px;
-  text-overflow: ellipsis;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
-  font-family: Verdana;
+.default-button {
   display: inline-block;
+  text-overflow: ellipsis;
+  border: none;
+  font-family: Verdana;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 15px; 
+  background: $gray;
+  color: $white;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $gray-dark;
+    color: white;  
+  }
+
+  &.disabled {
+
+    background: $gray-light;
+    color: $gray;
+
+    &:hover {
+     cursor: default;
+     background: $gray-light;
+      color: $gray;
+    }
+  }
 }
-.btn-primary {
-  background: $primary;
-  border: 1px solid #26649f;
-  color: white;
+  
+.icon-btn {
+  display: inline-block;
+  font-size: 12px;
+  padding: 6px;
+  border-color:   #000000;
+
+  .icon {
+    height: 19px;
+    width: 19px;
+    color: $white;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 1px;
+  }
 }
 
+.xl-btn {
+  display: inline-block;
+  font-size: 21px;
+  padding: 14px 18px;
+}
+
+.full-width-btn {
+  display:block;
+  width :100%;
+  font-size: 21px;
+}
+
+.primary-color-btn {
+  background-color: $primary;
+  color: $white;
+
+  &:hover {
+    background-color: $primary-d1;   
+  }
+
+  &.disabled {
+    background-color: $primary-l3;
+    color: $white;
+
+    &:hover {
+      background-color: $primary-l3;
+      color: $white;
+    }
+  }
+}
+
+
 /* End Buttons */
+
+/* Media Queries */
+@media only screen and (max-width: 300px) {
+  .icon-btn {
+    .icon-button-text {
+      display: none;
+    }
+}
+
+}
+/* End Media Queries */
 
 /* End Yotpo */
 
@@ -706,10 +785,15 @@ footer a:hover {
 
 
 /* DS */
+
 body {
   font-size: 14px;
   font: Verdana;
 }
+
+
+
+
 #design-faker {
   background: url('../images/typography2.jpg') no-repeat;
   position: absolute;
@@ -732,6 +816,7 @@ body {
 .side-part {
   font-weight: bold;
   font-size: 17px;
+  margin-top: 20px;
 }
 .content {
   margin: 20px 0 0 10%;
