@@ -1,0 +1,191 @@
+$blue: #00abc7;
+$orange: #efae00;
+$yellow: #ffd200;
+$green: #3aba6f;
+$white: #ffffff;
+$gray: #a2a2a2;
+$gray-light: #e3e3e3;
+$gray-dark: #737373;
+$gray-gray-darker: #4f4f4f;
+$gray-dark: #737373;
+$gray-dark: #737373;
+$primary: #3085c7;
+$primary-d1: #266a9f;
+$primary-d2: #1d5077;
+$primary-l1: #599dd2;
+$primary-l2: #83b6dd;
+$primary-l3: #accee9;
+$primary-l4: #d6e7f4;
+
+/* DS */
+
+div.regular-box, div.small-box, div.regular-small-box{
+  border: solid 1px grey;
+  background: #F0A3CC;
+}
+
+.inner-box{
+  width: 100%;
+  height: 40px;
+  background: white;
+}
+
+#design-faker {
+  background: url('../images/typography2.jpg') no-repeat;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  max-width: 1000px;
+  width: 100%;
+  height: 1000px;
+  top: -4px;
+  display: none;
+}
+#content-wrapper {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.side-part {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 20px;
+}
+.content {
+  margin: 20px 0 0 10%;
+}
+section {
+  max-width: 755px;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+}
+h3 {
+  font-family: Verdana;
+  margin-bottom: 35px;
+  margin-left: 45px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2e8bc8;
+  text-transform: uppercase;
+}
+.content ul {
+  font-weight: light;
+  list-style: none;
+  padding: 0;
+  line-height: 21px;
+  font-size: 15px;
+}
+bold {
+  font-weight: bolder;
+}
+.exmple-box {
+  border: 1px solid black;
+  text-align: center;
+  padding: 30px 10px;
+  display: inline-block;
+  width: 100%;
+}
+.small-title {
+  font-size: 12px;
+  color: grey;
+}
+.clr {
+  clear: both;
+}
+.code-example {
+  background: black;
+  color: white;
+  overflow: hidden;
+  text-align: left;
+  resize: none;
+  width: 80%;
+  max-width: 400px;
+}
+.color-list {
+  list-style: none;
+}
+.color-item {
+  width: 80px;
+  text-align: center;
+  float: left;
+  margin-right: 20px;
+  min-height: 140px;
+}
+
+.color-circle {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 38px;
+  width: 38px;
+  margin: 7px auto;
+}
+.color-circle.big {
+  height: 55px;
+  width: 55px;
+}
+
+.color-blue {
+  background: $blue;
+}
+.color-orange {
+  background: #efae00;
+}
+.color-yellow {
+  background: #ffd200;
+}
+.color-green {
+  background: #3aba6f;
+}
+.color-white {
+  background: #ffffff;
+}
+.color-gray {
+  background: $gray;
+}
+.color-gray-light {
+  background: $gray-light;
+}
+.color-gray-dark {
+  background: #737373;
+}
+.color-gray-darker {
+  background: #4f4f4f;
+}
+.icon-holders {
+  margin-left: 10%;
+  .icon-holder {
+    margin-bottom: 8px;
+    min-width: 250px;
+    display: inline-block;
+    margin-right: 60px;
+    .icon {
+      margin-right: 10px;  
+    }
+  }
+}
+
+.moblie-simulator{
+  width: 200px;
+  display: inline-block;
+}
+
+/* End DS */
+
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
+/* Mobile Portrait Size to Mobile Size (devices and browsers) */
