@@ -22,8 +22,7 @@
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
       $(window).ready(function(){
-      
- 
+        document.getElementById("resolution").innerHTML=screen.width;
       });
       
     </script>
@@ -35,7 +34,7 @@
 
     <header>
       <div class="inner">
-        <h1>Yotpo-ds</h1>
+        <h1>Yotpo-ds (<span id="resolution"></span>)</h1>
         <h2>Yotpo Design Spec</h2>
         <a href="https://github.com/YotpoLtd/yotpo-ds" class="button"><small>View project on</small>GitHub</a>
       </div>
