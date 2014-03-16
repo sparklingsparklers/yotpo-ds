@@ -43,6 +43,51 @@ $('document').ready(function(){
 	});
 });
 
+
+function showSortCategories(el) {
+
+	var dropdown = parents(el,'sorting').querySelectorAll('.dropdown')[0];
+	changeDisplayMode(dropdown, 'inline-block');
+}
+
+function showMobileDropDown(el){
+	var dropdown = el.querySelectorAll('.list-categories-moblie')[0];
+	changeDisplayMode(dropdown, 'inline');
+}
+
+function changeDisplayMode(el, displayMode){
+
+	if(getStyle(el) == 'none'){
+		el.style.display = displayMode;
+	}
+	else {
+		el.style.display = 'none';
+	}
+}
+
+function getStyle(element){
+
+    return element.currentStyle ?
+    	element.currentStyle['display'] : window.getComputedStyle ? window.getComputedStyle(element, null).getPropertyValue('display') : null;
+}
+
+function changeSortCategory(el){
+	var selected = el.children;
+	if(selected.length>0){
+		var text = selected[0].text;
+	}
+	else {
+		return;
+	}
+
+	var sortLabel = parents(el,'sorting').getElementsByClassName('sort-selected')[0];
+	sortLabel.innerHTML = text;
+
+	var dropdown = parents(el,'sorting').getElementsByClassName('dropdown')[0];
+	changeDisplayMode(dropdown, 'inline-block');
+}
+
+
 function changeTheme(colorPrimary){
 
 	var colorPrimary_l1 = shade(colorPrimary, 0.2);
@@ -69,7 +114,16 @@ function changeTheme(colorPrimary){
 	$('#primary-d2-color-text').text(colorPrimary_d2);
 }
 
-    	
+function parents(elem, selector){
+	var parent = elem.parentNode;
+	 while (parent!=document.body) {
+                if (parent.classList.contains(selector))
+                        return parent;
+                else
+                        parent = parent.parentNode;
+        }
+        return null;
+}
 
 
 

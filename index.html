@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/ds.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/yotpo.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <script src="javascripts/jquery-1.11.0.js"></script>
     <script src="javascripts/prism.js"></script>
     <script src="javascripts/main.js"></script>
+    <script src="javascripts/classList.js"></script>
     <link rel="stylesheet" href="stylesheets/prism.css">
 
     <!--[if lt IE 9]>
@@ -399,6 +402,31 @@
 
         </div>
         <div class="clr"></div>
+
+
+        <div class='content'>
+
+          <ul>
+            <li class="param">Transparent Icon-btn</li>
+          </ul>
+
+          <div class="small-title">Example:</div>
+          <div class="exmple-box">
+            <div class="default-button transparent-icon-btn">
+              <span class="icon icon-three-lines pull-left"></span>
+            </div>
+
+          </div>
+
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example">
+<div class="icon-btn" ><span class="icon icon-flag"></span></div>
+            </textarea>
+          </div>
+
+        </div>
+        <div class="clr"></div>
         
 
         <div class='content'>
@@ -542,7 +570,8 @@
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example">
-<input type="text" class="input" value="this is an input"></input>            </textarea>
+<input type="text" class="input" value="this is an input"></input>
+            </textarea>
           </div>
         </div>
         <div class="clr"></div>
@@ -571,36 +600,38 @@
         <div class='side-part font-bold'>INPUT & TEXT BOX</div>
         <div class='content'>
 
-          <div class="small-title">Example (No wrap, use elipsis):</div>
+          <div class="small-title">Example:</div>
           <div class="exmple-box input-text-exmaple">
 
-
             <div class="form-group">
-              <label class="label">Company Name:</label>
-              <span><input class="input" value="Yotpo LTD"></input></span>
-            </div>
+              <div class="form-element">
+                <label class="label">one two:</label>
+                <span><input class="input" value="Yotpo LTD"></input></span>
+              </div>
 
-            <div class="form-group">
-              <label class="label">one two three four five six seven:</label>
-              <span><input class="input" value="Yotpo LTD"></input></span>
-            </div>
-            
-
-          </div>
-
-          <div class="small-title">Example (Wrap text):</div>
-          <div class="exmple-box input-text-exmaple">
-
-            <div class="form-group2">
-              <label class="label wrap">one two:</label>
-              <span><input class="input" value="Yotpo LTD"></input></span>
-            </div>
-
-            <div class="form-group2">
-              <label class="label wrap">one two three four five six seven:</label>
-              <span><input class="input" value="Yotpo LTD"></input></span>
+              <div class="form-element">
+                <label class="label">one two three four five six seven:</label>
+                <span><input class="input" value="Yotpo LTD"></input></span>
+              </div>
             </div>
                      
+          </div>
+
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example" rows="11">
+<div class="form-group">
+  <div class="form-element">
+    <label class="label">one two:</label>
+    <span><input class="input" value="Yotpo LTD"></input></span>
+  </div>
+
+  <div class="form-element">
+    <label class="label">one two three four five six seven:</label>
+    <span><input class="input" value="Yotpo LTD"></input></span>
+  </div>
+</div>
+            </textarea>
           </div>
 
           <div class="clr"></div>
@@ -614,9 +645,17 @@
 
           <div class="small-title">Example:</div>
           <div class="exmple-box">
-            <div class="box">
+            <div class="regular-box">
               <div class="inner-box"></div>
             </div>
+          </div>
+
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example">
+<div class="regular-box">
+</div>
+            </textarea>
           </div>
 
         </div>
@@ -634,11 +673,154 @@
             </div>
           </div>
 
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example">
+<div class="small-box">
+</div>
+            </textarea>
+          </div>
+
+        </div>
+        <div class="clr"></div>
+
+
+
+        <div class='side-part font-bold'>REGULAR-SMALL-BOX</div>
+        <div class='content'>
+
+          <div class="small-title">Example:</div>
+          <div class="exmple-box">
+            <div class="regular-small-box">
+              <div class="inner-box"></div>
+            </div>
+          </div>
+
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example">
+<div class="regular-small-box">
+  <div class="inner-box"></div>
+</div>
+            </textarea>
+          </div>
+
         </div>
         <div class="clr"></div>
       </section>
 
+      <h3>NAVIGATION</h3>
+      <section>
+        
+        <div class='content'>
 
+          <div class="small-title">Example:</div>
+          <div class="exmple-box">
+            <nav class="nav nav-primary">
+              <ul>
+                  <li class="nav-tab">
+                    <div class="wrapper">
+                      <a href="#">home</a>
+                      <a class="nav-tab-sum">(16)</a>
+                    </div>
+                  </li>
+                  <li class="nav-tab active">
+                    <div class="wrapper">
+                      <a href="#">services</a>
+                      <a class="nav-tab-sum">(11)</a>
+                    </div>
+                  </li>
+                  <li class="nav-tab">
+                    <div class="wrapper">
+                      <a href="#">one two three four five six seven</a>
+                      <a class="nav-tab-sum">(7)</a>
+                    </div>
+                  </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+        <div class="clr"></div>
+
+        
+        <div class='content'>
+
+          <div class="small-title">Example:</div>
+          <div class="exmple-box">
+            <div class="sorting">
+              <label>Sort:</label>
+              <label class="sort-selected" onclick="showSortCategories(this);">Select...</label>
+              <!-- <div class="dropdown"> -->
+                <ul class="dropdown list-categories">
+                  <li class="list-category" onclick="changeSortCategory(this);">
+                    <a>Oldest</a>
+                  </li>
+                  <li class="list-category" onclick="changeSortCategory(this);">
+                    <a>Newest</a>
+                  </li>
+                  <li class="list-category" onclick="changeSortCategory(this);">
+                    <a>Best</a>
+                  </li>
+                </ul>
+              <!-- </div> -->
+              <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+              <label class="seperator">|</lebel>
+            </div>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </section>
+
+      <section>
+        
+        <div class='content'>
+
+          <div class="small-title">Example:</div>
+          <div class="exmple-box">
+
+            <div class="moblie-simulator">
+
+              <div class="nav-moblie">
+
+                <ul class="nav-categories-moblie">
+
+                  <li class="nav-category-moblie">
+                      <span class="icon icon-write pull-left"></span>
+                      <label>write a review</label>
+                  </li>
+                  <li class="nav-category-moblie">
+                      <span class="icon icon-double-bubble pull-left"></span>
+                      <label>ask a question</label>
+                  </li>
+                  <li class="nav-category-moblie">
+                      <span class="icon icon-double-bubble pull-left"></span>
+                      <label>one two three four five six seven</label>
+                  </li>
+                  <li class="nav-category-moblie dropdown-moblie" onclick="showMobileDropDown(this);">
+                      <label>sort by</label>
+                      <span class="icon icon-down-arrow pull-left"></span>
+                      <ul class="list-categories-moblie">
+                        <li class="list-category-moblie">
+                          <a>Oldest</a>
+                        </li>
+                        <li class="list-category-moblie">
+                          <a>Newest</a>
+                        </li>
+                      </ul>
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="clr"></div>
+      </section>
 
   </body>
 </html>
