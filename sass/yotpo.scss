@@ -739,10 +739,21 @@ a:hover {
         /*border: solid 3px red;*/
       }
 
-      .use-name, .use-email {
-        /*margin-right: 0px;*/
+      .use-name{
+        margin-right: 0px;
         min-width: 0;
         width: 28%;
+
+        input, label{
+          min-width: 0;
+        }
+      }
+
+      .use-email{
+        display: none;
+        min-width: 0;
+        width: 28%;
+        margin-left: 15px;
 
         input, label{
           min-width: 0;
@@ -769,8 +780,15 @@ a:hover {
           float: right;
         }
       }
-      .use-email, .use-name{
+      .use-name{
         display: block;
+        width: 40%;
+        float: right;
+        margin: 0px;
+      }
+
+      .use-email{
+        display: none;
         width: 40%;
         float: right;
         margin: 0px;
@@ -807,8 +825,13 @@ a:hover {
           float: right;
         }
       }
-      .use-email, .use-name{
+      .use-name{
         display: block;
+        width: 100%;
+      }
+
+      .use-email{
+        display: none;
         width: 100%;
       }
 

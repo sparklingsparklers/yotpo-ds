@@ -45,12 +45,12 @@ $('document').ready(function(){
 
 function showWriteReviewFooter(el){
 	var footer = parents(el,'write-review').querySelectorAll('.footer')[0];
-	changeDisplayMode(footer, 'block');
+	changeWriteReviewDisplayMode(footer, 'block');
 }
 
 function showMailInput(el){
 	var footer = parents(el,'footer').querySelectorAll('.use-email')[0];
-	changeDisplayMode(footer, 'inline-block');
+	changeWriteReviewDisplayMode(footer, 'inline-block');
 }
 
 
@@ -63,6 +63,13 @@ function showSortCategories(el) {
 function showMobileDropDown(el){
 	var dropdown = el.querySelectorAll('.list-categories-moblie')[0];
 	changeDisplayMode(dropdown, 'inline');
+}
+
+function changeWriteReviewDisplayMode(el, displayMode){
+
+	if(getStyle(el) == 'none'){
+		el.style.display = displayMode;
+	}
 }
 
 function changeDisplayMode(el, displayMode){
