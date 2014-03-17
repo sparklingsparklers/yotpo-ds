@@ -584,13 +584,15 @@
 
           <div class="small-title">Example:</div>
           <div class="exmple-box">
-            <input type="text" class="input text-box" value="this is a text box"></input>
+            <textarea class="input text-box">
+this is a text box    
+            </textarea>
           </div>
 
           <div class="small-title">Code:</div>
           <div class="exmple-box">
-            <textarea class="code-example">
-<input type="text" class="input text-box" value="this is a text box"></input>
+            <textarea class="code-example" rows="4">
+<textarea class="input text-box">this is a text box<//textarea>
             </textarea>
           </div>
         </div>
@@ -607,12 +609,12 @@
             <div class="form-group">
               <div class="form-element">
                 <label class="label">one two:</label>
-                <span><input class="input" value="Yotpo LTD"></input></span>
+                <input class="input" value="Yotpo LTD"></input>
               </div>
 
               <div class="form-element">
                 <label class="label">one two three four five six seven:</label>
-                <span><input class="input" value="Yotpo LTD"></input></span>
+                <textarea class="input text-box">Yotpo LTD</textarea>
               </div>
             </div>
                      
@@ -629,7 +631,7 @@
 
   <div class="form-element">
     <label class="label">one two three four five six seven:</label>
-    <span><input class="input" value="Yotpo LTD"></input></span>
+    <span><textarea class="input text-box">Yotpo LTD<//textarea></span>
   </div>
 </div>
             </textarea>
@@ -741,18 +743,50 @@
             </nav>
           </div>
 
+
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example" rows="22">
+<nav class="nav nav-primary">
+  <ul>
+      <li class="nav-tab">
+        <div class="wrapper">
+          <a href="#">home</a>
+          <a class="nav-tab-sum">(16)</a>
+        </div>
+      </li>
+      <li class="nav-tab active">
+        <div class="wrapper">
+          <a href="#">services</a>
+          <a class="nav-tab-sum">(11)</a>
+        </div>
+      </li>
+      <li class="nav-tab">
+        <div class="wrapper">
+          <a href="#">one two three four five six seven</a>
+          <a class="nav-tab-sum">(7)</a>
+        </div>
+      </li>
+  </ul>
+</nav>
+            </textarea>
+          </div>
+
+
         </div>
         <div class="clr"></div>
+
+      </section>
+      <section>
 
         
         <div class='content'>
 
           <div class="small-title">Example:</div>
           <div class="exmple-box">
-            <div class="sorting">
+            <div class="nav-dropdown">
               <label>Sort:</label>
-              <label class="sort-selected" onclick="showSortCategories(this);">Select...</label>
-              <!-- <div class="dropdown"> -->
+              <label class="selected" onclick="showSortCategories(this);">Select...</label>
                 <ul class="dropdown list-categories">
                   <li class="list-category" onclick="changeSortCategory(this);">
                     <a>Oldest</a>
@@ -764,11 +798,80 @@
                     <a>Best</a>
                   </li>
                 </ul>
-              <!-- </div> -->
               <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
-              <label class="seperator">|</lebel>
             </div>
           </div>
+
+          <div class="exmple-box">
+            <div class="nav-dropdown">
+              <label>View:</label>
+              <label class="selected" onclick="showSortCategories(this);">Select...</label>
+                <ul class="dropdown list-categories">
+                  <li class="list-category" onclick="changeSortCategory(this);">
+                    <a>10 per page</a>
+                  </li>
+                  <li class="list-category" onclick="changeSortCategory(this);">
+                    <a>20 per page</a>
+                  </li>
+                </ul>
+              <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+            </div>
+            <div class="nav-dropdown">
+              <label>Sort:</label>
+              <label class="selected" onclick="showSortCategories(this);">Select...</label>
+                <ul class="dropdown list-categories">
+                  <li class="list-category" onclick="changeSortCategory(this);">
+                    <a>Oldest</a>
+                  </li>
+                  <li class="list-category" onclick="changeSortCategory(this);">
+                    <a>Newest</a>
+                  </li>
+                  <li class="list-category" onclick="changeSortCategory(this);">
+                    <a>Best</a>
+                  </li>
+                </ul>
+              <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+              <span class="icon icon-seperator"></span>
+            </div>
+          </div>
+
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example" rows="34">
+<div class="nav-dropdown">
+  <label>View:</label>
+  <label class="selected" onclick="showSortCategories(this);">Select...</label>
+    <ul class="dropdown list-categories">
+      <li class="list-category" onclick="changeSortCategory(this);">
+        <a>10 per page</a>
+      </li>
+      <li class="list-category" onclick="changeSortCategory(this);">
+        <a>20 per page</a>
+      </li>
+    </ul>
+  <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+</div>
+<div class="nav-dropdown">
+  <label>Sort:</label>
+  <label class="selected" onclick="showSortCategories(this);">Select...</label>
+    <ul class="dropdown list-categories">
+      <li class="list-category" onclick="changeSortCategory(this);">
+        <a>Oldest</a>
+      </li>
+      <li class="list-category" onclick="changeSortCategory(this);">
+        <a>Newest</a>
+      </li>
+      <li class="list-category" onclick="changeSortCategory(this);">
+        <a>Best</a>
+      </li>
+    </ul>
+  <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+  <span class="icon icon-seperator"></span>
+</div>
+            </textarea>
+          </div>
+
+
         </div>
         <div class="clr"></div>
       </section>
@@ -787,16 +890,20 @@
                 <ul class="nav-categories-moblie">
 
                   <li class="nav-category-moblie">
+                    <div class="category-icon">
                       <span class="icon icon-write pull-left"></span>
+                    </div>
+                    <div class="category-desc">
                       <label>write a review</label>
+                    </div>
                   </li>
                   <li class="nav-category-moblie">
-                      <span class="icon icon-double-bubble pull-left"></span>
-                      <label>ask a question</label>
-                  </li>
-                  <li class="nav-category-moblie">
-                      <span class="icon icon-double-bubble pull-left"></span>
-                      <label>one two three four five six seven</label>
+                      <div class="category-icon">
+                        <span class="icon icon-double-bubble pull-left"></span>
+                      </div>
+                      <div class="category-desc">
+                        <label>one two three four five six seven</label>
+                      </div>
                   </li>
                   <li class="nav-category-moblie dropdown-moblie" onclick="showMobileDropDown(this);">
                       <label>sort by</label>
@@ -819,9 +926,117 @@
 
           </div>
 
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example" rows="33">
+<div class="nav-moblie">
+  <ul class="nav-categories-moblie">
+    <li class="nav-category-moblie">
+      <div class="category-icon">
+        <span class="icon icon-write pull-left"></span>
+      </div>
+      <div class="category-desc">
+        <label>write a review</label>
+      </div>
+    </li>
+    <li class="nav-category-moblie">
+        <div class="category-icon">
+          <span class="icon icon-double-bubble pull-left"></span>
+        </div>
+        <div class="category-desc">
+          <label>one two three four five six seven</label>
+        </div>
+    </li>
+    <li class="nav-category-moblie dropdown-moblie" onclick="showMobileDropDown(this);">
+        <label>sort by</label>
+        <span class="icon icon-down-arrow pull-left"></span>
+        <ul class="list-categories-moblie">
+          <li class="list-category-moblie">
+            <a>Oldest</a>
+          </li>
+          <li class="list-category-moblie">
+            <a>Newest</a>
+          </li>
+        </ul>
+    </li>
+  </ul>
+</div>
+            </textarea>
+          </div>
+
         </div>
         <div class="clr"></div>
       </section>
 
+      <h3>WRITE A REVIEW</h3>
+        <div class="content-full-length">
+          <div class="small-title">Example:</div>
+          <div class="write-review">
+            <div class="header">
+
+              
+              <span class="icon icon-cogwheel icon-profile pull-left"></span>
+              
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>  
+
+            </div>
+
+            <div class="write-review-content">
+
+              <div class="form-group">
+                <div class="form-element">
+                  <label class="label">Title:</label>
+                  <input class="input" onkeyup="showWriteReviewFooter(this);"></input>
+                </div>
+
+                <div class="form-element">
+                  <label class="label">Review:</label>
+                  <textarea class="input text-box" onkeyup="showWriteReviewFooter(this);"></textarea>
+                </div>
+              </div>
+
+            </div>
+            <div class="footer">
+              <div class="socialize">
+                <label class="label">Connect with:</label>
+                <div>
+                  <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-linkdein pull-left"></span></div>
+                  <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-googleplus pull-left"></span></div>
+                  <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-twitter pull-left"></span></div>
+                  <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-facebook pull-left"></span></div>
+                  
+                </div>
+              </div>
+              <div class="or">
+                <label>-OR-</label>
+              </div>
+                <div class="use-name">
+                  <div class="form-group">
+                    <div class="form-element">
+                      <label class="label">Use your name:</label>
+                      <input class="input" onkeyup="showMailInput(this);"></input>
+                    </div>
+                  </div>
+                </div>
+                <div class="use-email">
+                  <div class="form-group">
+                    <div class="form-element">
+                      <label class="label">Email:</label>
+                      <input class="input"</input>
+                    </div>
+                  </div>
+                </div>
+              <div class="submit">
+                <input type="button" class="default-button primary-color-btn" value="submit"></input>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="clr"></div>
   </body>
 </html>

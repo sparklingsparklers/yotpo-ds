@@ -326,7 +326,7 @@ a:hover {
 .label{
   font-size: 13px;
   color: $gray;
-  padding-right: 7px;
+  padding: 20px 7px 15px;
   /*max-width: 164px;*/
   min-width:100px;
   text-align: start;
@@ -362,7 +362,6 @@ a:hover {
     .label{
       float: left;
       display: block;
-      margin-bottom: 5px;
       white-space: nowrap;
     }
 
@@ -456,10 +455,6 @@ a:hover {
     font-family: Verdana;
     display: list-item;
 
-    .sorting{
-
-    }
-
     .wrapper {
       padding-bottom: 6px;
       margin: 0;
@@ -472,7 +467,7 @@ a:hover {
   }
 }
 
-.sorting{
+.nav-dropdown{
 
   float: right;
   position: relative;
@@ -497,7 +492,7 @@ a:hover {
     }
   }
 
-  .sort-selected{
+  .selected{
     color: $gray-dark;
     &:hover{
       cursor: pointer;
@@ -514,14 +509,13 @@ a:hover {
 .dropdown{
   display: none;
   position: absolute;
-  right: 0px;
+  left: 45px;
   top:  20px;
   min-width: 96px;
   max-height: 200px;
   padding: 16px 16px;
   text-align: left;
   background: $white;
-
   border: solid 1px $gray-light;
 
   .list-categories{
@@ -556,19 +550,32 @@ a:hover {
     font-size: 12px;
     text-align: left;
     padding: 10px 16px;
+    display: block;
 
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+    white-space: normal;
+    /*overflow: hidden;*/
 
     &:hover{
       cursor: pointer;
       background: $gray-light;
     }
 
-    .icon{
-      color: $gray;
-      padding-right: 12px;
+    .category-icon{
+
+      display: inline-block;
+      width: 13%;
+      vertical-align: top;
+
+      .icon{
+        color: $gray;
+        padding-right: 12px;
+      }
+    }
+
+    .category-desc{
+      display: inline-block;
+      width: 83%;
     }
 
     .dd-trigger{
@@ -620,7 +627,203 @@ a:hover {
 
 /*END NAVIGATION*/
 
+
+/*WRITE A REVIEW*/
+
+.write-review{
+
+  .write-review-content{
+
+  }
+
+  .header{
+
+    .icon{
+      color: #FAE123;
+      font-size: 26px;
+    }
+    .icon-profile{
+      color: $primary;
+      font-size: 45px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      background: $primary-l2;
+    }
+  }
+
+  .footer{
+    display: none;
+    vertical-align: middle;
+  }
+
+  .socialize{
+    display: inline-block;
+    float: left;
+    margin-bottom: 10px;
+  }
+
+  .or{
+    display: inline-block;
+    padding:0px 30px;
+    vertical-align: top;
+    margin-top: 45px;
+    
+  }
+
+  .use-name, .use-email{
+    display: inline-block;
+    margin-bottom: 10px;
+    min-width: 220px;
+  }
+
+  .use-email{
+    display: none;
+    min-width: 300px;
+  }
+
+  .use-name{
+    margin-right: 15px;
+  }
+
+  .submit{
+    display: inline-block;
+    margin-left: 15px;
+    padding-top: 48px;
+    margin-bottom: 10px;
+    float: right;
+  }
+}
+
+
+/*END WRITE A REVIEW*/
+
 /* Media Queries */
+@media only screen and (max-width: 1010px) {
+  .write-review{
+
+    .footer{
+      text-align: right;
+
+      .use-name, .use-email{
+        min-width: 184px;
+      }
+
+      .socialize{
+        .label{
+          float: left;
+        }
+      }
+
+      .submit{
+        width: 100%;
+        display: inline-block;
+        padding-top: 0px;
+        /*border: solid 3px blue;*/
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  .write-review{
+
+    .footer {
+      text-align: right;
+
+      .submit{
+        width: 100%;
+        display: inline-block;
+        padding-top: 0px;
+        /*border: solid 3px red;*/
+      }
+
+      .use-name, .use-email {
+        /*margin-right: 0px;*/
+        min-width: 0;
+        width: 28%;
+
+        input, label{
+          min-width: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .write-review{
+
+    .footer{
+      text-align: inherit;
+
+      .submit{
+        width: 100%;
+        display: inline-block;
+        padding-top: 0px;
+        /*border: solid 3px green;*/
+
+        input{
+          float: right;
+        }
+      }
+      .use-email, .use-name{
+        display: block;
+        width: 40%;
+        float: right;
+        margin: 0px;
+      }
+
+      .or label{
+        margin-top: 35px;
+      }
+    }
+  }
+
+  .nav{
+    ul{
+      .nav-tab{
+        a.nav-tab-sum{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+
+  .write-review{
+    .footer{
+      .submit{
+        width: 100%;
+        display: inline-block;
+        padding-top: 0px;
+        /*border: solid 3px black;*/
+
+        input{
+          float: right;
+        }
+      }
+      .use-email, .use-name{
+        display: block;
+        width: 100%;
+      }
+
+      .or{
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+
 @media only screen and (max-width: 480px) {
 
    @font-face {
@@ -644,7 +847,6 @@ a:hover {
       width:100%;
       float: left;
       max-width: 100%;
-      padding: 0px;
       white-space: normal;
     }
 

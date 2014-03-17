@@ -43,10 +43,20 @@ $('document').ready(function(){
 	});
 });
 
+function showWriteReviewFooter(el){
+	var footer = parents(el,'write-review').querySelectorAll('.footer')[0];
+	changeDisplayMode(footer, 'block');
+}
+
+function showMailInput(el){
+	var footer = parents(el,'footer').querySelectorAll('.use-email')[0];
+	changeDisplayMode(footer, 'inline-block');
+}
+
 
 function showSortCategories(el) {
 
-	var dropdown = parents(el,'sorting').querySelectorAll('.dropdown')[0];
+	var dropdown = parents(el,'nav-dropdown').querySelectorAll('.dropdown')[0];
 	changeDisplayMode(dropdown, 'inline-block');
 }
 
@@ -80,10 +90,10 @@ function changeSortCategory(el){
 		return;
 	}
 
-	var sortLabel = parents(el,'sorting').getElementsByClassName('sort-selected')[0];
+	var sortLabel = parents(el,'nav-dropdown').getElementsByClassName('selected')[0];
 	sortLabel.innerHTML = text;
 
-	var dropdown = parents(el,'sorting').getElementsByClassName('dropdown')[0];
+	var dropdown = parents(el,'nav-dropdown').getElementsByClassName('dropdown')[0];
 	changeDisplayMode(dropdown, 'inline-block');
 }
 
