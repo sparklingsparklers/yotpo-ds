@@ -261,29 +261,36 @@ a:hover {
   
 .icon-btn {
   display: inline-block;
-  font-size: 12px;
   padding: 6px;
-  border-color:   #000000;
-
   .icon {
-    height: 19px;
-    width: 19px;
-    color: $white;
-    vertical-align: middle;
-    display: inline-block;
-    margin: 1px;
+    font-size: 19px;
+  }
+
+  &:hover{
+    cursor: pointer;
   }
 }
-
-.transparent-icon-btn {
-  padding: 15px;
-  background: transparent;
-
+.icon-btn-small {
+  display: inline-block;
   .icon {
-    background: transparent;
-    font-size: 26px;
-    color: $gray;
+    font-size: 14px; 
   }
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+.icon-btn-big {
+  display: inline-block;
+  padding: 4px;
+  .icon {
+    font-size: 26px; 
+  }
+
+  &:hover{
+    cursor: pointer;
+  }
+
 }
 
 .xl-btn {
@@ -313,6 +320,22 @@ a:hover {
     &:hover {
       background-color: $primary-l3;
       color: $white;
+    }
+  }
+}
+.transparent-color-btn {
+  background: transparent;
+  color: $gray;
+
+  &:hover{
+    color: $gray-dark;
+  }
+
+  &.disabled {
+    color: $gray-light;
+
+    &:hover {
+      color: $gray-light;
     }
   }
 }
@@ -513,16 +536,20 @@ a:hover {
   top:  20px;
   min-width: 96px;
   max-height: 200px;
-  padding: 16px 16px;
+  /*padding: 16px 16px;*/
   text-align: left;
   background: $white;
   border: solid 1px $gray-light;
 
-  .list-categories{
+  ul{
+    background: red;
     margin: 0px;
+    padding: 0px;
   }
 
   .list-category{
+
+    display: block;
     padding: 7px 9px 9px 9px;
     font-size: 12px;
 
@@ -700,6 +727,129 @@ a:hover {
   }
 }
 
+.review{
+
+  .header{
+
+    color: $gray;
+
+    .header-element{
+      display: inline-block;
+
+      .label{
+        min-width: 0px;
+        padding: 0px;
+        font-size: 12px;
+
+        &.review-date{
+          float: left;
+        }
+      }
+    }
+
+    .icon-profile{
+      position: relative;
+      color: $primary;
+      font-size: 45px;
+      margin-right: 7px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      background: $primary-l2;
+
+      .icon-checkmark{
+        font-size: 14px;
+        position: absolute;
+        left: 31px;
+        top: 29px;
+        color: white;
+        background: #E5B026;
+        border: solid 1px white; 
+
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+      }
+    }
+
+    .icon-flag{
+      margin-left: 11px;
+    }
+
+    .stars{
+      margin-bottom: 11px;
+      color: #FAE123;
+    }
+
+    .header-actions{
+      float: right;
+    }
+  }
+
+  .main{
+
+    display: block;
+    margin: 28px 0px;
+
+
+    .content-title{
+      display: block;
+      color: $gray-gray-darker;
+
+    }
+
+    .content-review{
+      display: block;
+      color: $gray-gray-darker;
+    }
+
+  }
+
+  .footer{
+
+    color: $gray;
+
+    .footer-actions{
+      display: inline-block;
+      float: left;
+    }
+
+    .label{
+      min-width: 0px;
+      padding: 0px;
+      text-transform: capitalize;
+
+      
+    }
+
+    .helpful{
+      display: inline-block;
+      float: right;
+        
+      .sum{
+        margin-right: 13px;
+        margin-left: 13px;
+      }
+    }
+
+    .share-options{
+      display: none;
+    }
+
+    .action{
+
+      &:hover{
+        color:$primary;
+        cursor: pointer;
+
+        .label{
+          color:$primary;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
 
 /*END WRITE A REVIEW*/
 
@@ -769,6 +919,12 @@ a:hover {
 }*/
 
 @media only screen and (max-width: 500px) {
+
+  .review{
+    .label-helpful{
+      display: none;
+    }
+  }
 
   .write-review{
 
@@ -848,6 +1004,12 @@ a:hover {
         padding: 0px;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .header-actions{
+    display: none;
   }
 }
 

@@ -377,7 +377,7 @@
           <div class="small-title">Example:</div>
           <div class="exmple-box">
 
-            <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-flag"></span></div>
+            <div class="icon-btn primary-color-btn" ><span class="icon icon-flag"></span></div>
 
             <div class="default-button icon-btn">
               <span class="icon icon-facebook"></span>
@@ -402,17 +402,16 @@
         </div>
         <div class="clr"></div>
 
-
         <div class='content'>
 
           <ul>
-            <li class="param">Transparent Icon-btn</li>
+            <li class="param">Icon Btn Small</li>
           </ul>
 
           <div class="small-title">Example:</div>
           <div class="exmple-box">
-            <div class="default-button transparent-icon-btn">
-              <span class="icon icon-three-lines pull-left"></span>
+            <div class="icon-btn-small transparent-color-btn">
+              <span class="icon icon-three-lines"></span>
             </div>
 
           </div>
@@ -420,7 +419,33 @@
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example" rows="3">
-<div class="default-button transparent-icon-btn">
+<div class="default-button transparent-icon-btn-big">
+  <span class="icon icon-three-lines pull-left"></span>
+</div>
+            </textarea>
+          </div>
+
+        </div>
+        <div class="clr"></div>
+
+        <div class='content'>
+
+          <ul>
+            <li class="param">Icon-Btn-Big</li>
+          </ul>
+
+          <div class="small-title">Example:</div>
+          <div class="exmple-box">
+            <div class="icon-btn-big transparent-color-btn">
+              <span class="icon icon-three-lines"></span>
+            </div>
+
+          </div>
+
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example" rows="3">
+<div class="default-button transparent-icon-btn-big">
   <span class="icon icon-three-lines pull-left"></span>
 </div>
             </textarea>
@@ -483,6 +508,28 @@
           <div class="small-title">Example:</div>
           <div class="exmple-box">
             <input type="button" class="default-button primary-color-btn" value="primary-color-button"></input>
+          </div>
+
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example">
+<input type="button" class="default-button primary-color-btn" value="primary-color-button"></input>
+            </textarea>
+          </div>
+        </div>
+        <div class="clr"></div>
+
+        <div class='content'>
+
+          <ul>
+            <li class="param">transparent-color-btn</li>
+          </ul>
+
+          <div class="small-title">Example:</div>
+          <div class="exmple-box">
+            <div class="icon-btn transparent-color-btn">
+              <span class="icon icon-three-lines pull-left"></span>
+            </div>
           </div>
 
           <div class="small-title">Code:</div>
@@ -969,74 +1016,156 @@ this is a text box
       </section>
 
       <h3>WRITE A REVIEW</h3>
-        <div class="content-full-length">
-          <div class="small-title">Example:</div>
-          <div class="write-review">
-            <div class="header">
+      <div class="content-full-length">
+        <div class="small-title">Example:</div>
+        <div class="write-review">
+          <div class="header">
 
-              
-              <span class="icon icon-cogwheel icon-profile pull-left"></span>
-              
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>  
+            
+            <span class="icon icon-cogwheel icon-profile pull-left"></span>
+            
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>  
 
+          </div>
+
+          <div class="write-review-content">
+
+            <div class="form-group">
+              <div class="form-element">
+                <label class="label">Title:</label>
+                <input class="input" onkeyup="showWriteReviewFooter(this);"></input>
+              </div>
+
+              <div class="form-element">
+                <label class="label">Review:</label>
+                <textarea class="input text-box" onkeyup="showWriteReviewFooter(this);"></textarea>
+              </div>
             </div>
 
-            <div class="write-review-content">
-
-              <div class="form-group">
-                <div class="form-element">
-                  <label class="label">Title:</label>
-                  <input class="input" onkeyup="showWriteReviewFooter(this);"></input>
-                </div>
-
-                <div class="form-element">
-                  <label class="label">Review:</label>
-                  <textarea class="input text-box" onkeyup="showWriteReviewFooter(this);"></textarea>
-                </div>
+          </div>
+          <div class="footer">
+            <div class="socialize">
+              <label class="label">Connect with:</label>
+              <div>
+                <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-linkdein pull-left"></span></div>
+                <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-googleplus pull-left"></span></div>
+                <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-twitter pull-left"></span></div>
+                <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-facebook pull-left"></span></div>
+                
               </div>
-
             </div>
-            <div class="footer">
-              <div class="socialize">
-                <label class="label">Connect with:</label>
-                <div>
-                  <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-linkdein pull-left"></span></div>
-                  <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-googleplus pull-left"></span></div>
-                  <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-twitter pull-left"></span></div>
-                  <div class="default-button primary-color-btn icon-btn" ><span class="icon icon-facebook pull-left"></span></div>
-                  
-                </div>
-              </div>
-              <div class="or">
-                <label>-OR-</label>
-              </div>
-                <div class="use-name">
-                  <div class="form-group">
-                    <div class="form-element">
-                      <label class="label">Use your name:</label>
-                      <input class="input" onkeyup="showMailInput(this);"></input>
-                    </div>
+            <div class="or">
+              <label>-OR-</label>
+            </div>
+              <div class="use-name">
+                <div class="form-group">
+                  <div class="form-element">
+                    <label class="label">Use your name:</label>
+                    <input class="input" onkeyup="showMailInput(this);"></input>
                   </div>
                 </div>
-                <div class="use-email">
-                  <div class="form-group">
-                    <div class="form-element">
-                      <label class="label">Email:</label>
-                      <input class="input"</input>
-                    </div>
+              </div>
+              <div class="use-email">
+                <div class="form-group">
+                  <div class="form-element">
+                    <label class="label">Email:</label>
+                    <input class="input"</input>
                   </div>
                 </div>
-              <div class="submit">
-                <input type="button" class="default-button primary-color-btn" value="submit"></input>
+              </div>
+            <div class="submit">
+              <input type="button" class="default-button primary-color-btn" value="submit"></input>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="clr"></div>
+      <br /><br />
+
+      <h3>REVIEW</h3>
+      <div class="content-full-length">
+        <div class="small-title">Example:</div>
+        <div class="review">
+
+          <div class="header">
+            <span class="icon icon-cogwheel icon-profile header-element">
+              <span class="icon icon-checkmark"></span>
+            </span>
+            <div class="header-element">
+              <div class="stars">
+                <span class="icon icon-empty-star pull-left"></span>
+                <span class="icon icon-empty-star pull-left"></span>
+                <span class="icon icon-empty-star pull-left"></span>
+                <span class="icon icon-empty-star pull-left"></span>
+                <span class="icon icon-empty-star pull-left"></span>
+              </div>
+              <div><label class="label">Verified User</label></div>
+            </div>
+            <div class="header-element header-actions">
+              <label class="label review-date">16/9/13</label>
+              <div class="icon-btn-small transparent-color-btn">
+                <span class="icon icon-flag pull-left"></span>
               </div>
             </div>
           </div>
 
-        </div>
-        <div class="clr"></div>
+          <div class="main">
+            <div class="content-title">
+              <label class="label font-bold">Best Product Ever!</label>
+            </div>
+            <div class="content-review">
+              It's not often that one finds a novel as wacky and as full of unexpected surprises as Losing Joe's Place, a book by Gordon Korman. It is the story of Jason Cardone and his friends Ferguson "The Peach" Peach and Don "Mr. Wonderful" Champion, and a summer they spend in the big city of Toronto, subletting the totally cool bachelor apartment that belongs to Jason's brother, Joe. Joe's instructions to the three teenagers boil down to one main thing: DON'T GET EVICTED!! The story shows us just how hard it can be to follow this one simple direction.
+            </div>
+
+          </div>
+
+          <div class="footer">
+            <div class="footer-actions">
+
+              <span class="action" onclick="showShareOptions(this);">
+                <span class="icon icon-share"></span>
+                <label class="label">share</label>
+                <span class="icon icon-seperator"></span>
+              </span>
+
+              <span class="share-options">
+                <label class="label action">email</label>
+                <span class="icon icon-dot pull-left"></span>
+                <label class="label action">facebook</label>
+                <span class="icon icon-dot pull-left"></span>
+                <label class="label action">twitter</label>
+                <span class="icon icon-seperator pull-left"></span>  
+              </span>
+              
+            </div>
+
+            <div class="helpful">
+              <label class="label label-helpful">helpful?</label>
+              <label class="label sum">0</label>
+              <div class="icon-btn-small transparent-color-btn">
+                <span class="icon icon-thumbs-up"></span>
+              </div>
+              <label class="label sum">0</label>
+              <div class="icon-btn-small transparent-color-btn">
+                <span class="icon icon-thumbs-down"></span>
+              </div>
+            </div>
+
+            <!-- <div class="footer-actions">
+              <label class="label review-date">16/9/13</label>
+              <div class="icon-btn-small transparent-color-btn">
+                <span class="icon icon-flag pull-left"></span>
+              </div>
+            </div> -->
+
+          </div>
+
+      </div>
+      <div class="clr"></div>
   </body>
 </html>

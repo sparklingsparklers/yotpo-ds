@@ -43,6 +43,8 @@ $('document').ready(function(){
 	});
 });
 
+
+
 function showWriteReviewFooter(el){
 	var footer = parents(el,'write-review').querySelectorAll('.footer')[0];
 	changeWriteReviewDisplayMode(footer, 'block');
@@ -57,6 +59,11 @@ function changeReviewInputVisibility(el){
 	if(el.style.visibility != 'visible'){
 		el.style.visibility= 'visible';
 	}
+}
+
+function showShareOptions (el){
+	var options = parents(el,'footer-actions').querySelectorAll('.share-options')[0];
+	changeDisplayMode(options, 'inline-block');
 }
 
 function showSortCategories(el) {
