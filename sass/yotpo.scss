@@ -348,7 +348,7 @@ a:hover {
   height: 68px;
   min-width: 148px;
   word-wrap: break-word;
-  
+  resize: vertical;
 }
 
 .form-group{
@@ -653,71 +653,56 @@ a:hover {
   }
 
   .footer{
-    /*display: none;*/
+    display: none;
     width: 100%;
     vertical-align: middle;
   }
-
-  .socialize{
-    display: inline-block;
-    float: left;
-    margin-bottom: 10px;
-    min-width: 147px;
+  .socialize-wrapper {
+    width: 240px;
+    position: absolute;
+     .socialize{
+        display: inline-block;
+        float: left;
+        margin-bottom: 10px;
+        min-width: 147px;
+      }
+      .or{
+        display: inline-block;
+        text-align: center;
+        margin-top: 60px;
+        width: 93px;
+        text-align: center;
+      }
   }
 
-  .or{
-    display: inline-block;
-    text-align: center;
-    margin-top: 60px;
-    width: 93px;
-    text-align: center;
-  }
-
-  .use-name{
-    display: inline-block;
-    margin-bottom: 10px;
-    width: 26%;
-  }
-
-  .use-email{
-    display: inline-block;
-    visibility: hidden;
-    margin-bottom: 10px;
-    width: 34%;
-  }
-
-  .use-name{
-    padding-right: 15px;
+  .connect-wrapper {
+    padding-left: 240px;
+    width: 100%;
+    box-sizing: border-box;
+    .form-element {
+      float: left;
+      width: 50%;
+      min-width: 162px;
+      padding-right: 0;
+      box-sizing: border-box;
+      &:first-child {
+        padding-right: 15px;
+      }
+      &.email-input {
+        display: none;
+      }
+    }
   }
 
   .submit{
     display: inline-block;
     margin-bottom: 10px;
     float: right;
-    margin-top: 15px;
+    margin-top: 45px;
   }
+
 }
 
-.socialize-wrapper {
-  width: 240px;
-  position: absolute;
-}
-.connect-wrapper {
-  padding-left: 240px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.tester {
-  float: left;
-  width: 50%;
-  min-width: 162px;
-  padding-left: 15px;
-  box-sizing: border-box;
-  &:first-child {
-    padding-left: 0;
-  }
-}
 
 
 /*END WRITE A REVIEW*/
@@ -789,40 +774,6 @@ a:hover {
 
 @media only screen and (max-width: 500px) {
 
-/*  .write-review{
-
-    .footer{
-      text-align: inherit;
-
-      .submit{
-        width: 100%;
-        display: inline-block;
-        padding-top: 0px;
-
-        input{
-          float: right;
-        }
-      }
-      .use-name{
-        display: block;
-        width: 40%;
-        float: right;
-        margin: 0px;
-      }
-
-      .use-email{
-        display: none;
-        width: 40%;
-        float: right;
-        margin: 0px;
-      }
-
-      .or label{
-        margin-top: 35px;
-      }
-    }
-  }*/
-
   .nav{
     ul{
       .nav-tab{
@@ -835,22 +786,40 @@ a:hover {
 }
 
 @media only screen and (max-width: 655px) {
-  .tester {
-    width: 100%;
+  .write-review {
+    .connect-wrapper {
+      .form-element {
+        width: 100%;
+        padding: 0;
+        &:first-child {
+          padding-right: 0;
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width: 510px) {
-  .socialize-wrapper {
-    width: 100%;
-    position: relative;
-  }
-  .connect-wrapper {
-    padding: 0;
-    .tester {
+  .write-review {
+    .socialize-wrapper {
+      width: 100%;
+      position: relative;
+      .socialize {
+        width: 100%;
+      }
+      .or {
+        margin-top: 20px;
+      }
+    }
+    .connect-wrapper {
       padding: 0;
+      .form-element {
+        padding: 0;
+        &:first-child {
+          padding-right: 0;
+        }
+      }
     }
   }
-
 }
 
 @media only screen and (max-width: 350px) {

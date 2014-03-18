@@ -4,8 +4,11 @@ function showWriteReviewFooter(el){
 }
 
 function showMailInput(el){
-	var footer = parents(el,'footer').querySelectorAll('.use-email')[0];
-	changeReviewInputVisibility(footer);
+	var emailInput = parents(el,'footer').querySelectorAll('.email-input')[0];
+	var submitBtn = parents(el,'footer').querySelectorAll('.submit')[0];
+	changeWriteReviewDisplayMode(emailInput, 'block');
+	submitBtn.style.marginTop = '15px';
+	submitBtn.classList.remove('disabled');
 }
 
 function changeReviewInputVisibility(el){
