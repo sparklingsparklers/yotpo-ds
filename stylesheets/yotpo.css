@@ -449,6 +449,7 @@ a:hover {
   height: 68px;
   min-width: 148px;
   word-wrap: break-word;
+  resize: vertical;
 }
 
 /* line 377, ../sass/yotpo.scss */
@@ -735,66 +736,75 @@ a:hover {
   width: 100%;
   vertical-align: middle;
 }
-/* line 688, ../sass/yotpo.scss */
-.write-review .socialize {
+/* line 687, ../sass/yotpo.scss */
+.write-review .socialize-wrapper {
+  width: 240px;
+  position: absolute;
+}
+/* line 690, ../sass/yotpo.scss */
+.write-review .socialize-wrapper .socialize {
   display: inline-block;
   float: left;
   margin-bottom: 10px;
   min-width: 147px;
 }
-/* line 695, ../sass/yotpo.scss */
-.write-review .or {
+/* line 696, ../sass/yotpo.scss */
+.write-review .socialize-wrapper .or {
   display: inline-block;
-  padding: 0px 30px;
-  vertical-align: top;
-  margin-top: 45px;
-  width: 4%;
+  text-align: center;
+  margin-top: 60px;
+  width: 93px;
+  text-align: center;
 }
-/* line 704, ../sass/yotpo.scss */
-.write-review .use-name {
-  display: inline-block;
-  margin-bottom: 10px;
-  width: 26%;
+/* line 705, ../sass/yotpo.scss */
+.write-review .connect-wrapper {
+  padding-left: 240px;
+  width: 100%;
+  box-sizing: border-box;
 }
-/* line 710, ../sass/yotpo.scss */
-.write-review .use-email {
-  display: inline-block;
-  visibility: hidden;
-  margin-bottom: 10px;
-  width: 34%;
+/* line 709, ../sass/yotpo.scss */
+.write-review .connect-wrapper .form-element {
+  float: left;
+  width: 50%;
+  min-width: 162px;
+  padding-right: 0;
+  box-sizing: border-box;
 }
-/* line 717, ../sass/yotpo.scss */
-.write-review .use-name {
+/* line 715, ../sass/yotpo.scss */
+.write-review .connect-wrapper .form-element:first-child {
   padding-right: 15px;
 }
-/* line 721, ../sass/yotpo.scss */
+/* line 718, ../sass/yotpo.scss */
+.write-review .connect-wrapper .form-element.email-input {
+  display: none;
+}
+/* line 724, ../sass/yotpo.scss */
 .write-review .submit {
   display: inline-block;
-  margin-left: 15px;
-  padding-top: 48px;
   margin-bottom: 10px;
   float: right;
+  margin-top: 45px;
 }
 
-/* line 732, ../sass/yotpo.scss */
+/* line 735, ../sass/yotpo.scss */
 .review .header {
   color: #a2a2a2;
 }
-/* line 736, ../sass/yotpo.scss */
+/* line 739, ../sass/yotpo.scss */
 .review .header .header-element {
   display: inline-block;
 }
-/* line 739, ../sass/yotpo.scss */
+/* line 742, ../sass/yotpo.scss */
 .review .header .header-element .label {
   min-width: 0px;
   padding: 0px;
   font-size: 12px;
 }
-/* line 744, ../sass/yotpo.scss */
+/* line 747, ../sass/yotpo.scss */
 .review .header .header-element .label.review-date {
   float: left;
 }
-/* line 750, ../sass/yotpo.scss */
+/* line 753, ../sass/yotpo.scss */
 .review .header .icon-profile {
   position: relative;
   color: #3085c7;
@@ -805,7 +815,7 @@ a:hover {
   -moz-border-radius: 50%;
   background: #83b6dd;
 }
-/* line 760, ../sass/yotpo.scss */
+/* line 763, ../sass/yotpo.scss */
 .review .header .icon-profile .icon-checkmark {
   font-size: 14px;
   position: absolute;
@@ -817,69 +827,69 @@ a:hover {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
 }
-/* line 774, ../sass/yotpo.scss */
+/* line 777, ../sass/yotpo.scss */
 .review .header .icon-flag {
   margin-left: 11px;
 }
-/* line 778, ../sass/yotpo.scss */
+/* line 781, ../sass/yotpo.scss */
 .review .header .stars {
   margin-bottom: 11px;
   color: #FAE123;
 }
-/* line 783, ../sass/yotpo.scss */
+/* line 786, ../sass/yotpo.scss */
 .review .header .header-actions {
   float: right;
 }
-/* line 788, ../sass/yotpo.scss */
+/* line 791, ../sass/yotpo.scss */
 .review .main {
   display: block;
   margin: 28px 0px;
 }
-/* line 794, ../sass/yotpo.scss */
+/* line 797, ../sass/yotpo.scss */
 .review .main .content-title {
   display: block;
   color: #4f4f4f;
 }
-/* line 800, ../sass/yotpo.scss */
+/* line 803, ../sass/yotpo.scss */
 .review .main .content-review {
   display: block;
   color: #4f4f4f;
 }
-/* line 807, ../sass/yotpo.scss */
+/* line 810, ../sass/yotpo.scss */
 .review .footer {
   color: #a2a2a2;
 }
-/* line 811, ../sass/yotpo.scss */
+/* line 814, ../sass/yotpo.scss */
 .review .footer .footer-actions {
   display: inline-block;
   float: left;
 }
-/* line 816, ../sass/yotpo.scss */
+/* line 819, ../sass/yotpo.scss */
 .review .footer .label {
   min-width: 0px;
   padding: 0px;
   text-transform: capitalize;
 }
-/* line 824, ../sass/yotpo.scss */
+/* line 827, ../sass/yotpo.scss */
 .review .footer .helpful {
   display: inline-block;
   float: right;
 }
-/* line 828, ../sass/yotpo.scss */
+/* line 831, ../sass/yotpo.scss */
 .review .footer .helpful .sum {
   margin-right: 13px;
   margin-left: 13px;
 }
-/* line 834, ../sass/yotpo.scss */
+/* line 837, ../sass/yotpo.scss */
 .review .footer .share-options {
   display: none;
 }
-/* line 840, ../sass/yotpo.scss */
+/* line 843, ../sass/yotpo.scss */
 .review .footer .action:hover {
   color: #3085c7;
   cursor: pointer;
 }
-/* line 844, ../sass/yotpo.scss */
+/* line 847, ../sass/yotpo.scss */
 .review .footer .action:hover .label {
   color: #3085c7;
   cursor: pointer;
@@ -950,73 +960,77 @@ a:hover {
   }
 }*/
 @media only screen and (max-width: 500px) {
-  /* line 924, ../sass/yotpo.scss */
+  /* line 927, ../sass/yotpo.scss */
   .review .label-helpful {
     display: none;
   }
 
-  /* line 931, ../sass/yotpo.scss */
-  .write-review .footer {
-    text-align: inherit;
-  }
-  /* line 934, ../sass/yotpo.scss */
-  .write-review .footer .submit {
-    width: 100%;
-    display: inline-block;
-    padding-top: 0px;
-    border: solid 3px green;
-  }
-  /* line 940, ../sass/yotpo.scss */
-  .write-review .footer .submit input {
-    float: right;
-  }
-  /* line 944, ../sass/yotpo.scss */
-  .write-review .footer .use-name {
-    display: block;
-    width: 40%;
-    float: right;
-    margin: 0px;
-  }
-  /* line 951, ../sass/yotpo.scss */
-  .write-review .footer .use-email {
-    display: none;
-    width: 40%;
-    float: right;
-    margin: 0px;
-  }
-  /* line 958, ../sass/yotpo.scss */
-  .write-review .footer .or label {
-    margin-top: 35px;
-  }
-
-  /* line 967, ../sass/yotpo.scss */
+  /* line 935, ../sass/yotpo.scss */
   .nav ul .nav-tab a.nav-tab-sum {
     display: none;
   }
 }
+@media only screen and (max-width: 655px) {
+  /* line 947, ../sass/yotpo.scss */
+  .write-review .connect-wrapper .form-element {
+    width: 100%;
+    padding: 0;
+  }
+  /* line 950, ../sass/yotpo.scss */
+  .write-review .connect-wrapper .form-element:first-child {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 510px) {
+  /* line 959, ../sass/yotpo.scss */
+  .write-review .socialize-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  /* line 962, ../sass/yotpo.scss */
+  .write-review .socialize-wrapper .socialize {
+    width: 100%;
+  }
+  /* line 965, ../sass/yotpo.scss */
+  .write-review .socialize-wrapper .or {
+    margin-top: 20px;
+  }
+  /* line 969, ../sass/yotpo.scss */
+  .write-review .connect-wrapper {
+    padding: 0;
+  }
+  /* line 971, ../sass/yotpo.scss */
+  .write-review .connect-wrapper .form-element {
+    padding: 0;
+  }
+  /* line 973, ../sass/yotpo.scss */
+  .write-review .connect-wrapper .form-element:first-child {
+    padding-right: 0;
+  }
+}
 @media only screen and (max-width: 350px) {
-  /* line 979, ../sass/yotpo.scss */
+  /* line 985, ../sass/yotpo.scss */
   .write-review .footer .submit {
     width: 100%;
     display: inline-block;
     padding-top: 0px;
     border: solid 3px black;
   }
-  /* line 985, ../sass/yotpo.scss */
+  /* line 991, ../sass/yotpo.scss */
   .write-review .footer .submit input {
     float: right;
   }
-  /* line 989, ../sass/yotpo.scss */
+  /* line 995, ../sass/yotpo.scss */
   .write-review .footer .use-name {
     display: block;
     width: 100%;
   }
-  /* line 994, ../sass/yotpo.scss */
+  /* line 1000, ../sass/yotpo.scss */
   .write-review .footer .use-email {
     display: none;
     width: 100%;
   }
-  /* line 999, ../sass/yotpo.scss */
+  /* line 1005, ../sass/yotpo.scss */
   .write-review .footer .or {
     display: inline-block;
     width: 100%;
@@ -1026,7 +1040,7 @@ a:hover {
   }
 }
 @media only screen and (max-width: 300px) {
-  /* line 1011, ../sass/yotpo.scss */
+  /* line 1017, ../sass/yotpo.scss */
   .header-actions {
     display: none;
   }
@@ -1039,19 +1053,19 @@ a:hover {
     font-style: normal;
 }
 
-  /* line 1029, ../sass/yotpo.scss */
+  /* line 1035, ../sass/yotpo.scss */
   .icon-btn .icon-button-text {
     display: none;
   }
 
-  /* line 1036, ../sass/yotpo.scss */
+  /* line 1042, ../sass/yotpo.scss */
   .form-group label {
     width: 100%;
     float: left;
     max-width: 100%;
     white-space: normal;
   }
-  /* line 1043, ../sass/yotpo.scss */
+  /* line 1049, ../sass/yotpo.scss */
   .form-group span {
     width: 100%;
     float: left;

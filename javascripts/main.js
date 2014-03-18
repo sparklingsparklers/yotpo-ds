@@ -43,6 +43,7 @@ $('document').ready(function(){
 	});
 });
 
+<<<<<<< HEAD
 
 
 function showWriteReviewFooter(el){
@@ -115,6 +116,8 @@ function changeSortCategory(el){
 	var dropdown = parents(el,'nav-dropdown').getElementsByClassName('dropdown')[0];
 	changeDisplayMode(dropdown, 'inline-block');
 }
+=======
+>>>>>>> 0e344600fbf5f2662c44fb3d0b946d7e513bdfba
 
 
 function changeTheme(colorPrimary){
@@ -143,16 +146,7 @@ function changeTheme(colorPrimary){
 	$('#primary-d2-color-text').text(colorPrimary_d2);
 }
 
-function parents(elem, selector){
-	var parent = elem.parentNode;
-	 while (parent!=document.body) {
-                if (parent.classList.contains(selector))
-                        return parent;
-                else
-                        parent = parent.parentNode;
-        }
-        return null;
-}
+
 
 
 
