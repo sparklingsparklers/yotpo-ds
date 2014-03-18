@@ -653,7 +653,7 @@ a:hover {
   }
 
   .footer{
-    display: none;
+    /*display: none;*/
     width: 100%;
     vertical-align: middle;
   }
@@ -667,11 +667,10 @@ a:hover {
 
   .or{
     display: inline-block;
-    padding:0px 30px;
-    vertical-align: top;
-    margin-top: 45px;
-    width: 4%;
-    
+    text-align: center;
+    margin-top: 60px;
+    width: 93px;
+    text-align: center;
   }
 
   .use-name{
@@ -693,10 +692,30 @@ a:hover {
 
   .submit{
     display: inline-block;
-    margin-left: 15px;
-    padding-top: 48px;
     margin-bottom: 10px;
     float: right;
+    margin-top: 15px;
+  }
+}
+
+.socialize-wrapper {
+  width: 240px;
+  position: absolute;
+}
+.connect-wrapper {
+  padding-left: 240px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tester {
+  float: left;
+  width: 50%;
+  min-width: 162px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  &:first-child {
+    padding-left: 0;
   }
 }
 
@@ -770,7 +789,7 @@ a:hover {
 
 @media only screen and (max-width: 500px) {
 
-  .write-review{
+/*  .write-review{
 
     .footer{
       text-align: inherit;
@@ -779,7 +798,6 @@ a:hover {
         width: 100%;
         display: inline-block;
         padding-top: 0px;
-        border: solid 3px green;
 
         input{
           float: right;
@@ -803,7 +821,7 @@ a:hover {
         margin-top: 35px;
       }
     }
-  }
+  }*/
 
   .nav{
     ul{
@@ -814,6 +832,25 @@ a:hover {
       }
     }
   }
+}
+
+@media only screen and (max-width: 655px) {
+  .tester {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .socialize-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  .connect-wrapper {
+    padding: 0;
+    .tester {
+      padding: 0;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 350px) {
