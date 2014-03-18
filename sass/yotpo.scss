@@ -808,12 +808,17 @@ a:hover {
   }
 
   .footer{
-
+    position: relative;
     color: $gray;
 
     .footer-actions{
       display: inline-block;
       float: left;
+        
+    }
+
+    .icon-dot, .icon-seperator{
+      font-size: 12px;
     }
 
     .label{
@@ -844,98 +849,17 @@ a:hover {
         color:$primary;
         cursor: pointer;
 
-        .label{
-          color:$primary;
+        .label, .transparent-color-btn{
           cursor: pointer;
+          color:$primary;
         }
       }
     }
-  }
-}
 
-
-
-/*END WRITE A REVIEW*/
-
-/* Media Queries */
-/*@media only screen and (max-width: 800px) {
-  .write-review{
-
-    .footer{
-      text-align: right;
-
-      .use-name, .use-email{
-        min-width: 184px;
-      }
-
-      .socialize{
-        .label{
-          float: left;
-        }
-      }
-
-      .submit{
-        width: 100%;
-        display: inline-block;
-        padding-top: 0px;
-        border: solid 3px blue;
-      }
-    }
-  }
-}*/
-
-/*@media only screen and (max-width: 720px) {
-
-  .write-review{
-
-    .footer {
-      text-align: right;
-
-      .submit{
-        width: 100%;
-        display: inline-block;
-        padding-top: 0px;
-        border: solid 3px red;
-      }
-
-      .use-name{
-        margin-right: 0px;
-        min-width: 0;
-        width: 28%;
-
-        input, label{
-          min-width: 0;
-        }
-      }
-
-      .use-email{
-        display: none;
-        min-width: 0;
-        width: 28%;
-        margin-left: 15px;
-
-        input, label{
-          min-width: 0;
-        }
-      }
-    }
-  }
-}*/
-
-@media only screen and (max-width: 500px) {
-  .review{
-    .label-helpful{
+    .footer-additional-actions{
       display: none;
-    }
-  }
-
-  .nav{
-    ul{
-      .nav-tab{
-        a.nav-tab-sum{
-          display: none;
-        }
-      }
+      position: absolute;
+      top: 40px;
     }
   }
 }
@@ -976,6 +900,22 @@ a:hover {
       }
     }
   }
+
+  .review{
+    .label-helpful{
+      display: none;
+    }
+  }
+
+  .nav{
+    ul{
+      .nav-tab{
+        a.nav-tab-sum{
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 350px) {
@@ -1011,11 +951,30 @@ a:hover {
       }
     }
   }
+
 }
 
 @media only screen and (max-width: 300px) {
-  .header-actions{
-    display: none;
+
+  .review{
+    .header{
+      .header-actions{
+        display: none;
+      }
+    }
+
+    .footer{
+
+      .helpful{
+        position: absolute;
+        top: 40px;
+        right: 0;
+      }
+
+      .footer-additional-actions{
+        display: block;
+      }
+    }
   }
 }
 

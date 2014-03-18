@@ -1,18 +1,24 @@
 /* DS */
 /* line 22, ../sass/ds.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 27, ../sass/ds.scss */
 div.regular-box, div.small-box, div.regular-small-box {
   border: solid 1px grey;
   background: #F0A3CC;
 }
 
-/* line 27, ../sass/ds.scss */
+/* line 32, ../sass/ds.scss */
 .inner-box {
   width: 100%;
   height: 40px;
   background: white;
 }
 
-/* line 33, ../sass/ds.scss */
+/* line 38, ../sass/ds.scss */
 #design-faker {
   background: url("../images/typography2.jpg") no-repeat;
   position: absolute;
@@ -25,34 +31,33 @@ div.regular-box, div.small-box, div.regular-small-box {
   display: none;
 }
 
-/* line 44, ../sass/ds.scss */
+/* line 49, ../sass/ds.scss */
 #content-wrapper {
   position: relative;
-  max-width: 1000px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
-  padding: 30px;
   box-sizing: border-box;
 }
 
-/* line 52, ../sass/ds.scss */
+/* line 56, ../sass/ds.scss */
 .side-part {
   font-weight: bold;
   font-size: 17px;
   margin-top: 20px;
 }
 
-/* line 57, ../sass/ds.scss */
+/* line 61, ../sass/ds.scss */
 .content {
   margin: 20px 0 0 10%;
 }
 
-/* line 60, ../sass/ds.scss */
+/* line 64, ../sass/ds.scss */
 .content-full-length {
   margin: 0px;
 }
 
-/* line 63, ../sass/ds.scss */
+/* line 67, ../sass/ds.scss */
 section {
   max-width: 755px;
   width: 100%;
@@ -62,7 +67,7 @@ section {
   margin-bottom: 30px;
 }
 
-/* line 72, ../sass/ds.scss */
+/* line 76, ../sass/ds.scss */
 h3 {
   font-family: Verdana;
   margin-bottom: 35px;
@@ -73,7 +78,7 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 81, ../sass/ds.scss */
+/* line 85, ../sass/ds.scss */
 .content ul {
   font-weight: light;
   list-style: none;
@@ -82,12 +87,12 @@ h3 {
   font-size: 15px;
 }
 
-/* line 88, ../sass/ds.scss */
+/* line 92, ../sass/ds.scss */
 bold {
   font-weight: bolder;
 }
 
-/* line 91, ../sass/ds.scss */
+/* line 95, ../sass/ds.scss */
 .exmple-box {
   border: 1px solid black;
   text-align: center;
@@ -96,18 +101,18 @@ bold {
   width: 100%;
 }
 
-/* line 98, ../sass/ds.scss */
+/* line 102, ../sass/ds.scss */
 .small-title {
   font-size: 12px;
   color: grey;
 }
 
-/* line 102, ../sass/ds.scss */
+/* line 106, ../sass/ds.scss */
 .clr {
   clear: both;
 }
 
-/* line 105, ../sass/ds.scss */
+/* line 109, ../sass/ds.scss */
 .code-example {
   background: black;
   color: white;
@@ -118,12 +123,12 @@ bold {
   max-width: 400px;
 }
 
-/* line 114, ../sass/ds.scss */
+/* line 118, ../sass/ds.scss */
 .color-list {
   list-style: none;
 }
 
-/* line 117, ../sass/ds.scss */
+/* line 121, ../sass/ds.scss */
 .color-item {
   width: 80px;
   text-align: center;
@@ -132,7 +137,7 @@ bold {
   min-height: 140px;
 }
 
-/* line 125, ../sass/ds.scss */
+/* line 129, ../sass/ds.scss */
 .color-circle {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -143,74 +148,74 @@ bold {
   margin: 7px auto;
 }
 
-/* line 134, ../sass/ds.scss */
+/* line 138, ../sass/ds.scss */
 .color-circle.big {
   height: 55px;
   width: 55px;
 }
 
-/* line 139, ../sass/ds.scss */
+/* line 143, ../sass/ds.scss */
 .color-blue {
   background: #00abc7;
 }
 
-/* line 142, ../sass/ds.scss */
+/* line 146, ../sass/ds.scss */
 .color-orange {
   background: #efae00;
 }
 
-/* line 145, ../sass/ds.scss */
+/* line 149, ../sass/ds.scss */
 .color-yellow {
   background: #ffd200;
 }
 
-/* line 148, ../sass/ds.scss */
+/* line 152, ../sass/ds.scss */
 .color-green {
   background: #3aba6f;
 }
 
-/* line 151, ../sass/ds.scss */
+/* line 155, ../sass/ds.scss */
 .color-white {
   background: #ffffff;
 }
 
-/* line 154, ../sass/ds.scss */
+/* line 158, ../sass/ds.scss */
 .color-gray {
   background: #a2a2a2;
 }
 
-/* line 157, ../sass/ds.scss */
+/* line 161, ../sass/ds.scss */
 .color-gray-light {
   background: #e3e3e3;
 }
 
-/* line 160, ../sass/ds.scss */
+/* line 164, ../sass/ds.scss */
 .color-gray-dark {
   background: #737373;
 }
 
-/* line 163, ../sass/ds.scss */
+/* line 167, ../sass/ds.scss */
 .color-gray-darker {
   background: #4f4f4f;
 }
 
-/* line 166, ../sass/ds.scss */
+/* line 170, ../sass/ds.scss */
 .icon-holders {
   margin-left: 10%;
 }
-/* line 168, ../sass/ds.scss */
+/* line 172, ../sass/ds.scss */
 .icon-holders .icon-holder {
   margin-bottom: 8px;
   min-width: 250px;
   display: inline-block;
   margin-right: 60px;
 }
-/* line 173, ../sass/ds.scss */
+/* line 177, ../sass/ds.scss */
 .icon-holders .icon-holder .icon {
   margin-right: 10px;
 }
 
-/* line 179, ../sass/ds.scss */
+/* line 183, ../sass/ds.scss */
 .moblie-simulator {
   width: 200px;
   display: inline-block;
