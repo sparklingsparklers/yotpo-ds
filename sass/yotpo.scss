@@ -654,6 +654,7 @@ a:hover {
 
   .footer{
     display: none;
+    width: 100%;
     vertical-align: middle;
   }
 
@@ -661,6 +662,7 @@ a:hover {
     display: inline-block;
     float: left;
     margin-bottom: 10px;
+    min-width: 147px;
   }
 
   .or{
@@ -668,22 +670,25 @@ a:hover {
     padding:0px 30px;
     vertical-align: top;
     margin-top: 45px;
+    width: 4%;
     
   }
 
-  .use-name, .use-email{
+  .use-name{
     display: inline-block;
     margin-bottom: 10px;
-    min-width: 220px;
+    width: 26%;
   }
 
   .use-email{
-    display: none;
-    min-width: 300px;
+    display: inline-block;
+    visibility: hidden;
+    margin-bottom: 10px;
+    width: 34%;
   }
 
   .use-name{
-    margin-right: 15px;
+    padding-right: 15px;
   }
 
   .submit{
@@ -699,7 +704,7 @@ a:hover {
 /*END WRITE A REVIEW*/
 
 /* Media Queries */
-@media only screen and (max-width: 1010px) {
+/*@media only screen and (max-width: 800px) {
   .write-review{
 
     .footer{
@@ -719,13 +724,13 @@ a:hover {
         width: 100%;
         display: inline-block;
         padding-top: 0px;
-        /*border: solid 3px blue;*/
+        border: solid 3px blue;
       }
     }
   }
-}
+}*/
 
-@media only screen and (max-width: 720px) {
+/*@media only screen and (max-width: 720px) {
 
   .write-review{
 
@@ -736,7 +741,7 @@ a:hover {
         width: 100%;
         display: inline-block;
         padding-top: 0px;
-        /*border: solid 3px red;*/
+        border: solid 3px red;
       }
 
       .use-name{
@@ -761,7 +766,7 @@ a:hover {
       }
     }
   }
-}
+}*/
 
 @media only screen and (max-width: 500px) {
 
@@ -774,7 +779,7 @@ a:hover {
         width: 100%;
         display: inline-block;
         padding-top: 0px;
-        /*border: solid 3px green;*/
+        border: solid 3px green;
 
         input{
           float: right;
@@ -819,7 +824,7 @@ a:hover {
         width: 100%;
         display: inline-block;
         padding-top: 0px;
-        /*border: solid 3px black;*/
+        border: solid 3px black;
 
         input{
           float: right;

@@ -50,9 +50,14 @@ function showWriteReviewFooter(el){
 
 function showMailInput(el){
 	var footer = parents(el,'footer').querySelectorAll('.use-email')[0];
-	changeWriteReviewDisplayMode(footer, 'inline-block');
+	changeReviewInputVisibility(footer);
 }
 
+function changeReviewInputVisibility(el){
+	if(el.style.visibility != 'visible'){
+		el.style.visibility= 'visible';
+	}
+}
 
 function showSortCategories(el) {
 
