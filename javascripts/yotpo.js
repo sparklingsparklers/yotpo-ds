@@ -28,6 +28,11 @@ function showMobileDropDown(el){
 	changeDisplayMode(dropdown, 'inline');
 }
 
+function showShareOptions (el){
+	var options = parents(el,'footer-actions').querySelectorAll('.share-options')[0];
+	changeDisplayMode(options, 'inline-block');
+}
+
 function changeWriteReviewDisplayMode(el, displayMode){
 
 	if(getStyle(el) == 'none'){
