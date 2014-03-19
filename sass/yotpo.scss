@@ -21,7 +21,9 @@ $primary-l2: #83b6dd;
 $primary-l3: #accee9;
 $primary-l4: #d6e7f4;
 
-
+.clr {
+  clear: both;
+}
 
 body {
   font-family: Verdana;
@@ -458,6 +460,12 @@ a:hover {
 
       }
 
+      &:hover{
+        a{
+          color: $primary-l1;
+        }
+      }
+
       &.active{
         font-weight: bold;
         a {
@@ -755,7 +763,7 @@ a:hover {
 .review{
 
   .header{
-
+    position: relative;
     color: $gray;
 
     .header-element{
@@ -766,6 +774,10 @@ a:hover {
         padding: 0px;
         font-size: 12px;
 
+        &.user-name{
+          color: $gray-dark;
+        }
+
         &.review-date{
           float: left;
         }
@@ -774,13 +786,22 @@ a:hover {
 
     .icon-profile{
       position: relative;
-      color: $primary;
-      font-size: 45px;
+      width: 45px;
+      height: 45px;
+      
       margin-right: 7px;
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       background: $primary-l2;
+
+      .user-letter{
+        position: absolute;
+        top: 13px;
+        left: 14px;
+        font-size: 20px;
+        color: $white;
+      }
 
       .icon-checkmark{
         font-size: 14px;
@@ -793,16 +814,22 @@ a:hover {
 
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
+        border-radius: 50%;
       }
     }
 
-    .icon-flag{
+    /*.icon-flag{
       margin-left: 11px;
-    }
+    }*/
 
     .stars{
       margin-bottom: 11px;
       color: #FAE123;
+
+      .icon-empty-star:hover:before {
+         content: "\e60e";
+      }
+
     }
 
     .header-actions{
@@ -826,7 +853,6 @@ a:hover {
       display: block;
       color: $gray-gray-darker;
     }
-
   }
 
   .footer{
@@ -836,7 +862,6 @@ a:hover {
     .footer-actions{
       display: inline-block;
       float: left;
-        
     }
 
     .icon-dot, .icon-seperator{
@@ -847,8 +872,6 @@ a:hover {
       min-width: 0px;
       padding: 0px;
       text-transform: capitalize;
-
-      
     }
 
     .helpful{
@@ -880,10 +903,34 @@ a:hover {
 
     .footer-additional-actions{
       display: none;
-      position: absolute;
-      top: 40px;
     }
   }
+}
+
+.star-rating-error{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 25px;
+  background: #F86262;
+
+  .star-error-text{
+    color: $white;
+    font-size: 12px;
+    line-height: 25px;
+    margin-left: 5px;
+  }
+
+  .transparent-color-btn{
+      float: right;
+      margin-right: 5px;
+      margin-top: 3px;
+      color: $white;
+    }
+}
+
+.error{
+  border: solid 2px #F86262;
 }
 
 
@@ -938,9 +985,6 @@ a:hover {
       }
     }
   }
-}
-
-@media only screen and (max-width: 300px) {
 
   .review{
     .header{
@@ -951,14 +995,22 @@ a:hover {
 
     .footer{
 
+      .footer-actions{
+
+        .share-options{
+          display: inline-block;
+          margin-bottom: 20px;
+        }
+      }
+
       .helpful{
-        position: absolute;
-        top: 40px;
-        right: 0;
+        float: right;
+        margin-bottom: 20px;
       }
 
       .footer-additional-actions{
-        display: block;
+        display: inline-block;
+        float: left;
       }
     }
   }

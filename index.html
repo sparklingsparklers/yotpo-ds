@@ -1087,11 +1087,13 @@ this is a text box
         <div class="review">
 
           <div class="header">
-            <span class="icon icon-cogwheel icon-profile header-element">
+            <span class="icon-profile header-element">
+              <label class="user-letter">M</label>
               <span class="icon icon-checkmark"></span>
             </span>
             <div class="header-element">
               <div class="stars">
+                <label class="label user-name">Micha Z.</label>
                 <span class="icon icon-empty-star"></span>
                 <span class="icon icon-empty-star"></span>
                 <span class="icon icon-empty-star"></span>
@@ -1102,9 +1104,9 @@ this is a text box
             </div>
             <div class="header-element header-actions">
               <label class="label review-date">16/9/13</label>
-              <div class="icon-btn-small transparent-color-btn">
+              <!-- <div class="icon-btn-small transparent-color-btn">
                 <span class="icon icon-flag"></span>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -1137,6 +1139,8 @@ this is a text box
               
             </div>
 
+            <dic class="clr"></dic>
+
             <div class="helpful">
               <label class="label label-helpful">helpful?</label>
               <label class="label sum">0</label>
@@ -1154,9 +1158,9 @@ this is a text box
               <span class="icon icon-seperator"></span>
 
               <span class="action">
-                <div class="icon-btn-small transparent-color-btn">
+                <!-- <div class="icon-btn-small transparent-color-btn">
                   <span class="icon icon-flag"></span>
-                </div>
+                </div> -->
                 <label class="label">report</label>
               </span>
             </div>
@@ -1165,5 +1169,77 @@ this is a text box
 
       </div>
       <div class="clr"></div>
+
+      <br/><br/>
+
+      <h3>ERROR HANDLING</h3>
+      <div class="content-full-length">
+        <div class="small-title">Example:</div>
+        <div class="write-review">
+          <div class="header">
+
+            
+            <span class="profile-wrapper pull-left"><span class="icon icon-profile-picture"></span></span>
+            <span class="stars-wrapper">
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>  
+            </span>
+
+          </div>
+
+          <div class="write-review-content">
+
+            <div class="form-group">
+              <div class="form-element">
+                <label class="label">Title:</label>
+                <input class="input" onkeyup="showWriteReviewFooter(this);"></input>
+              </div>
+              <div class="form-element">
+                <label class="label">Review:</label>
+                <textarea class="input text-box error" onkeyup="showWriteReviewFooter(this);"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="star-rating-error">
+            <label class="star-error-text">Please enter a star rating for this review</label>
+            <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
+          </div>
+          <div class="footer">
+            <div class="socialize-wrapper">
+              <div class="socialize">
+                <label class="label">Connect with:</label>
+                <div>
+                  <div class="default-button icon-btn" ><span class="icon icon-linkdein"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-googleplus"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-twitter"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-facebook"></span></div>
+                  
+                </div>
+              </div>
+              <div class="or">
+                -OR-
+              </div>
+            </div>
+            <div class="connect-wrapper">
+              <div class="form-element">
+                    <label class="label">Use your name:</label>
+                    <input class="input" onkeyup="showMailInput(this);"></input>
+              </div>
+              <div class="form-element email-input">
+                    <label class="label">Email:</label>
+                    <input class="input"</input>
+              </div>
+              <input type="button" class="default-button primary-color-btn submit disabled" value="submit"></input>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    <div class="clr"></div>
+    <br /><br />
+
   </body>
 </html>
