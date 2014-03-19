@@ -1012,7 +1012,6 @@ a:hover {
   }
 }
 
-
 @media only screen and (max-width: 655px) {
   .write-review {
     .connect-wrapper {
@@ -1076,20 +1075,25 @@ a:hover {
 
       .footer-actions{
 
+        display: block;
+        float: none;
+
         .share-options{
           display: inline-block;
-          margin-bottom: 20px;
+          /*margin-bottom: 20px;*/
         }
       }
 
       .helpful{
         float: right;
-        margin-bottom: 20px;
+        /*margin-bottom: 20px;*/
+        margin: 20px 0px;
       }
 
       .footer-additional-actions{
         display: inline-block;
         float: left;
+        margin-top: 20px;
       }
     }
 
