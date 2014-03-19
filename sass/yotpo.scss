@@ -973,6 +973,45 @@ a:hover {
   }
 }
 
+.yotpo-pager{
+  .yotpo-page-element{
+    margin-right: 15px;
+    color: $gray;
+
+    &:hover{
+      color: $gray-dark;
+      cursor: pointer;
+    }
+
+    &.disabled {
+      
+      color: $gray-light;
+
+      &:hover {
+       cursor: default;
+        color: $gray-light;
+      }
+    }
+
+    &.active {
+      font-weight: bold;
+      color: $primary;
+
+      &:hover {
+        color: $gray-light;
+      }
+    }
+
+    &.icon-left-arrow{
+      margin-right: 30px
+    }
+    &.icon-right-arrow{
+      margin-right: 0;
+      margin-left: 15px;
+    }
+  }
+}
+
 
 @media only screen and (max-width: 655px) {
   .write-review {
