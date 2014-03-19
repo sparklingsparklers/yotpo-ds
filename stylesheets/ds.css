@@ -107,12 +107,7 @@ bold {
   color: grey;
 }
 
-/* line 106, ../sass/ds.scss */
-.clr {
-  clear: both;
-}
-
-/* line 109, ../sass/ds.scss */
+/* line 107, ../sass/ds.scss */
 .code-example {
   background: black;
   color: white;
@@ -123,12 +118,12 @@ bold {
   max-width: 400px;
 }
 
-/* line 118, ../sass/ds.scss */
+/* line 116, ../sass/ds.scss */
 .color-list {
   list-style: none;
 }
 
-/* line 121, ../sass/ds.scss */
+/* line 119, ../sass/ds.scss */
 .color-item {
   width: 80px;
   text-align: center;
@@ -137,7 +132,7 @@ bold {
   min-height: 140px;
 }
 
-/* line 129, ../sass/ds.scss */
+/* line 127, ../sass/ds.scss */
 .color-circle {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -148,82 +143,82 @@ bold {
   margin: 7px auto;
 }
 
-/* line 138, ../sass/ds.scss */
+/* line 136, ../sass/ds.scss */
 .color-circle.big {
   height: 55px;
   width: 55px;
 }
 
-/* line 143, ../sass/ds.scss */
+/* line 141, ../sass/ds.scss */
 .color-blue {
   background: #00abc7;
 }
 
-/* line 146, ../sass/ds.scss */
+/* line 144, ../sass/ds.scss */
 .color-orange {
   background: #efae00;
 }
 
-/* line 149, ../sass/ds.scss */
+/* line 148, ../sass/ds.scss */
+.color-red {
+  background: #fb5654;
+}
+
+/* line 152, ../sass/ds.scss */
 .color-yellow {
   background: #ffd200;
 }
 
-/* line 152, ../sass/ds.scss */
+/* line 155, ../sass/ds.scss */
 .color-green {
   background: #3aba6f;
 }
 
-/* line 155, ../sass/ds.scss */
+/* line 158, ../sass/ds.scss */
 .color-white {
   background: #ffffff;
 }
 
-/* line 158, ../sass/ds.scss */
+/* line 161, ../sass/ds.scss */
 .color-gray {
   background: #a2a2a2;
 }
 
-/* line 161, ../sass/ds.scss */
+/* line 164, ../sass/ds.scss */
 .color-gray-light {
   background: #e3e3e3;
 }
 
-/* line 164, ../sass/ds.scss */
+/* line 167, ../sass/ds.scss */
 .color-gray-dark {
   background: #737373;
 }
 
-/* line 167, ../sass/ds.scss */
+/* line 170, ../sass/ds.scss */
 .color-gray-darker {
   background: #4f4f4f;
 }
 
-/* line 170, ../sass/ds.scss */
+/* line 173, ../sass/ds.scss */
 .icon-holders {
   margin-left: 10%;
 }
-/* line 172, ../sass/ds.scss */
+/* line 175, ../sass/ds.scss */
 .icon-holders .icon-holder {
   margin-bottom: 8px;
-  min-width: 276px;
+  min-width: 250px;
   display: inline-block;
   margin-right: 60px;
 }
-/* line 177, ../sass/ds.scss */
+/* line 180, ../sass/ds.scss */
 .icon-holders .icon-holder .icon {
   margin-right: 10px;
 }
 
-/* line 183, ../sass/ds.scss */
+/* line 186, ../sass/ds.scss */
 .moblie-simulator {
   width: 200px;
   display: inline-block;
-}
-
-/* line 188, ../sass/ds.scss */
-.icons-buttons .icon-btn {
-  margin-bottom: 5px;
 }
 
 /* End DS */

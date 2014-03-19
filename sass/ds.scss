@@ -103,9 +103,7 @@ bold {
   font-size: 12px;
   color: grey;
 }
-.clr {
-  clear: both;
-}
+
 .code-example {
   background: black;
   color: white;
@@ -146,6 +144,11 @@ bold {
 .color-orange {
   background: #efae00;
 }
+
+.color-red {
+  background: #fb5654;
+}
+
 .color-yellow {
   background: #ffd200;
 }
@@ -171,7 +174,7 @@ bold {
   margin-left: 10%;
   .icon-holder {
     margin-bottom: 8px;
-    min-width: 276px;
+    min-width: 250px;
     display: inline-block;
     margin-right: 60px;
     .icon {
@@ -183,11 +186,6 @@ bold {
 .moblie-simulator{
   width: 200px;
   display: inline-block;
-}
-.icons-buttons {
-  .icon-btn {
-    margin-bottom: 5px;
-  }
 }
 
 /* End DS */
