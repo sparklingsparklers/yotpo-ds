@@ -171,7 +171,7 @@ bold {
   margin-left: 10%;
   .icon-holder {
     margin-bottom: 8px;
-    min-width: 250px;
+    min-width: 276px;
     display: inline-block;
     margin-right: 60px;
     .icon {
@@ -183,6 +183,11 @@ bold {
 .moblie-simulator{
   width: 200px;
   display: inline-block;
+}
+.icons-buttons {
+  .icon-btn {
+    margin-bottom: 5px;
+  }
 }
 
 /* End DS */
