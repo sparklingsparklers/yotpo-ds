@@ -221,6 +221,11 @@ bold {
   display: inline-block;
 }
 
+/* line 188, ../sass/ds.scss */
+.icons-buttons .icon-btn {
+  margin-bottom: 5px;
+}
+
 /* End DS */
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
