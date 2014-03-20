@@ -159,6 +159,11 @@ a:hover {
 ul{
   list-style: none!important;
 }
+textarea{
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
 .pull-left {
   text-align: left;
   float: left;
