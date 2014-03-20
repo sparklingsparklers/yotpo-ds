@@ -1,12 +1,20 @@
 function showWriteReviewFooter(el){
 	var footer = parents(el,'write-review').querySelectorAll('.yotpo-footer')[0];
-	changeWriteReviewDisplayMode(footer, 'block');
+	addClass(footer, 'yotpo-animation-opacity');
+	footer.style.opacity = 0;
+	footer.style.display='block';
+	setTimeout(function() {footer.style.opacity = 1;}, 1);
 }
 
 function showMailInput(el){
 	var emailInput = parents(el,'yotpo-footer').querySelectorAll('.email-input')[0];
 	var submitBtn = parents(el,'yotpo-footer').querySelectorAll('.submit')[0];
-	changeWriteReviewDisplayMode(emailInput, 'block');
+	// changeWriteReviewDisplayMode(emailInput, 'block');
+	addClass(emailInput, 'yotpo-animation-opacity');
+	emailInput.style.opacity = 0;
+	emailInput.style.display='block';
+	setTimeout(function() {emailInput.style.opacity = 1;}, 1);
+
 	submitBtn.style.marginTop = '15px';
 	submitBtn.classList.remove('disabled');
 }
@@ -85,8 +93,6 @@ function changeSortCategory(el){
 	changeDisplayMode(dropdown, 'inline-block');
 }
 
-
-
 function parents(elem, selector){
 	var parent = elem.parentNode;
 	 while (parent!=document.body) {
@@ -96,4 +102,55 @@ function parents(elem, selector){
                         parent = parent.parentNode;
         }
         return null;
+}
+
+// ********* ANIMATIONS ********* //
+
+function slideElement(el){
+
+	var writeReview = parents(el,'yotpo-main-widget').querySelectorAll('.write-review')[0];
+
+	if(!writeReview.classList.contains('yotpo-slide-up') && !writeReview.classList.contains('yotpo-slide-down')){
+		addClass(writeReview, 'yotpo-slide-down');
+	}
+	else {
+
+		if (writeReview.classList.contains('yotpo-slide-up')){
+			var className = writeReview.className.replace('up','down');
+			writeReview.className = className;
+		}
+	   	else {
+		   	var className = writeReview.className.replace('down','up');
+			writeReview.className = className;
+	   }
+	}
+}
+
+function fadeElement(el){
+
+	var footer = parents(el,'write-review').querySelectorAll('.footer')[0];
+
+	if(!footer.classList.contains('yotpo-opacity-up') && !footer.classList.contains('yotpo-opacity-down')){
+		addClass(footer, 'yotpo-opacity-up');
+	}
+	else {
+
+		if (footer.classList.contains('yotpo-opacity-up')){
+			var className = footer.className.replace('up','down');
+			footer.className = className;
+		}
+	   else
+	   {
+		   	var className = footer.className.replace('down','up');
+			footer.className = className;
+	   }
+	}
+}
+
+function removeClass(el, className){
+	el.className.replace(/\className\b/,'');
+}
+
+function addClass(el, className){
+	el.className += " " + className;
 }
