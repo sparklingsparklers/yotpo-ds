@@ -19,8 +19,13 @@ function changeReviewInputVisibility(el){
 
 function showSortCategories(el) {
 
-	var dropdown = parents(el,'nav-dropdown').querySelectorAll('.dropdown')[0];
+	var dropdown = parents(el,'yotpo-nav-dropdown').querySelectorAll('.yotpo-dropdown')[0];
 	changeDisplayMode(dropdown, 'inline-block');
+}
+
+function showMobileMenu(el) {
+	var menu = parents(el, 'yotpo-dropdown-wrapper') ? parents(el, 'yotpo-dropdown-wrapper').querySelectorAll('.yotpo-menu-mobile-collapse')[0] : parents(el, 'yotpo-nav').querySelectorAll('.yotpo-menu-mobile-collapse')[0];
+	changeDisplayMode(menu,'inline-block');
 }
 
 function showMobileDropDown(el){
@@ -73,10 +78,10 @@ function changeSortCategory(el){
 		return;
 	}
 
-	var sortLabel = parents(el,'nav-dropdown').getElementsByClassName('selected')[0];
+	var sortLabel = parents(el,'yotpo-nav-dropdown').getElementsByClassName('selected')[0];
 	sortLabel.innerHTML = text;
 
-	var dropdown = parents(el,'nav-dropdown').getElementsByClassName('dropdown')[0];
+	var dropdown = parents(el,'yotpo-nav-dropdown').getElementsByClassName('yotpo-dropdown')[0];
 	changeDisplayMode(dropdown, 'inline-block');
 }
 

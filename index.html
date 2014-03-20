@@ -938,10 +938,10 @@ this is a text box
 
           <div class="small-title">Example:</div>
           <div class="exmple-box">
-            <div class="nav-dropdown">
+            <div class="yotpo-nav-dropdown">
               <label>Sort:</label>
               <label class="selected" onclick="showSortCategories(this);">Select...</label>
-                <ul class="dropdown list-categories">
+                <ul class="yotpo-dropdown list-categories">
                   <li class="list-category" onclick="changeSortCategory(this);">
                     <a>Oldest</a>
                   </li>
@@ -957,166 +957,104 @@ this is a text box
           </div>
 
           <div class="exmple-box">
-            <div class="nav-dropdown">
-              <label>View:</label>
-              <label class="selected" onclick="showSortCategories(this);">Select...</label>
-                <ul class="dropdown list-categories">
-                  <li class="list-category" onclick="changeSortCategory(this);">
-                    <a>10 per page</a>
-                  </li>
-                  <li class="list-category" onclick="changeSortCategory(this);">
-                    <a>20 per page</a>
-                  </li>
-                </ul>
-              <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
-            </div>
-            <div class="nav-dropdown">
-              <label>Sort:</label>
-              <label class="selected" onclick="showSortCategories(this);">Select...</label>
-                <ul class="dropdown list-categories">
-                  <li class="list-category" onclick="changeSortCategory(this);">
-                    <a>Oldest</a>
-                  </li>
-                  <li class="list-category" onclick="changeSortCategory(this);">
-                    <a>Newest</a>
-                  </li>
-                  <li class="list-category" onclick="changeSortCategory(this);">
-                    <a>Best</a>
-                  </li>
-                </ul>
-              <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
-              <span class="icon icon-seperator"></span>
-            </div>
+            <div class="yotpo-dropdown-wrapper mobile-collapse">
+              <div class="icon-btn-big transparent-color-btn yotpo-visible-mobile">
+                <span class="icon icon-three-lines" onclick="showMobileMenu(this);"></span>
+              </div>
+              <div class="yotpo-menu-mobile-collapse yotpo-hidden-mobile">
+                <div class="yotpo-nav-dropdown-category yotpo-visible-mobile">
+                  <span class="icon icon-write"></span>
+                  <span class="label">write a review</span>
+                </div>
+                <div class="yotpo-nav-dropdown">
+                  <div class="yotpo-dropdown-button">
+                    <label>View:</label>
+                    <label class="selected" onclick="showSortCategories(this);">Select...</label>
+                    <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
+                  </div>
+                  <ul class="yotpo-dropdown list-categories">
+                    <li class="list-category" onclick="changeSortCategory(this);">
+                      <a>10 per page</a>
+                    </li>
+                    <li class="list-category" onclick="changeSortCategory(this);">
+                      <a>20 per page</a>
+                    </li>
+                  </ul>
+                </div>
+                <span class="icon icon-seperator"></span>
+                <div class="yotpo-nav-dropdown">
+                  <div class="yotpo-dropdown-button">
+                    <label>Sort:</label>
+                    <label class="selected" onclick="showSortCategories(this);">Select...</label>
+                    <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
+                  </div>
+                    <ul class="yotpo-dropdown list-categories">
+                      <li class="list-category" onclick="changeSortCategory(this);">
+                        <a>Oldest</a>
+                      </li>
+                      <li class="list-category" onclick="changeSortCategory(this);">
+                        <a>Newest</a>
+                      </li>
+                      <li class="list-category" onclick="changeSortCategory(this);">
+                        <a>Best</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>  
           </div>
 
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example" rows="34">
-<div class="nav-dropdown">
-  <label>View:</label>
-  <label class="selected" onclick="showSortCategories(this);">Select...</label>
-    <ul class="dropdown list-categories">
-      <li class="list-category" onclick="changeSortCategory(this);">
-        <a>10 per page</a>
-      </li>
-      <li class="list-category" onclick="changeSortCategory(this);">
-        <a>20 per page</a>
-      </li>
-    </ul>
-  <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
-</div>
-<div class="nav-dropdown">
-  <label>Sort:</label>
-  <label class="selected" onclick="showSortCategories(this);">Select...</label>
-    <ul class="dropdown list-categories">
-      <li class="list-category" onclick="changeSortCategory(this);">
-        <a>Oldest</a>
-      </li>
-      <li class="list-category" onclick="changeSortCategory(this);">
-        <a>Newest</a>
-      </li>
-      <li class="list-category" onclick="changeSortCategory(this);">
-        <a>Best</a>
-      </li>
-    </ul>
-  <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
-  <span class="icon icon-seperator"></span>
-</div>
-            </textarea>
-          </div>
-
-
-        </div>
-        <div class="clr"></div>
-      </section>
-
-      <section>
-        
-        <div class='content'>
-
-          <div class="small-title">Example:</div>
-          <div class="exmple-box">
-
-            <div class="moblie-simulator">
-
-              <div class="nav-moblie">
-
-                <ul class="nav-categories-moblie">
-
-                  <li class="nav-category-moblie">
-                    <div class="category-icon">
-                      <span class="icon icon-write"></span>
-                    </div>
-                    <div class="category-desc">
-                      <label>write a review</label>
-                    </div>
-                  </li>
-                  <li class="nav-category-moblie">
-                      <div class="category-icon">
-                        <span class="icon icon-double-bubble"></span>
-                      </div>
-                      <div class="category-desc">
-                        <label>one two three four five six seven</label>
-                      </div>
-                  </li>
-                  <li class="nav-category-moblie dropdown-moblie" onclick="showMobileDropDown(this);">
-                      <label>sort by</label>
-                      <span class="icon icon-down-triangle"></span>
-                      <ul class="list-categories-moblie">
-                        <li class="list-category-moblie">
-                          <a>Oldest</a>
-                        </li>
-                        <li class="list-category-moblie">
-                          <a>Newest</a>
-                        </li>
-                      </ul>
-                  </li>
-
-                </ul>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="small-title">Code:</div>
-          <div class="exmple-box">
-            <textarea class="code-example" rows="33">
-<div class="nav-moblie">
-  <ul class="nav-categories-moblie">
-    <li class="nav-category-moblie">
-      <div class="category-icon">
-        <span class="icon icon-write"></span>
+<div class="yotpo-dropdown-wrapper mobile-collapse">
+  <div class="icon-btn-big transparent-color-btn yotpo-visible-mobile">
+    <span class="icon icon-three-lines"></span>
+  </div>
+  <div class="yotpo-menu-mobile-collapse yotpo-hidden-mobile">
+    <div class="yotpo-nav-dropdown-category yotpo-visible-mobile">
+      <span class="icon icon-write"></span>
+      <span class="label">write a review</span>
+    </div>
+    <div class="yotpo-nav-dropdown">
+      <div class="yotpo-dropdown-button">
+        <label>View:</label>
+        <label class="selected">Select...</label>
+        <span id="btn-categories" class="icon icon-down-triangle"></span>
       </div>
-      <div class="category-desc">
-        <label>write a review</label>
+      <ul class="yotpo-dropdown list-categories">
+        <li class="list-category">
+          <a>10 per page</a>
+        </li>
+        <li class="list-category">
+          <a>20 per page</a>
+        </li>
+      </ul>
+    </div>
+    <span class="icon icon-seperator"></span>
+    <div class="yotpo-nav-dropdown">
+      <div class="yotpo-dropdown-button">
+        <label>Sort:</label>
+        <label class="selected">Select...</label>
+        <span id="btn-categories" class="icon icon-down-triangle"></span>
       </div>
-    </li>
-    <li class="nav-category-moblie">
-        <div class="category-icon">
-          <span class="icon icon-double-bubble"></span>
-        </div>
-        <div class="category-desc">
-          <label>one two three four five six seven</label>
-        </div>
-    </li>
-    <li class="nav-category-moblie dropdown-moblie" onclick="showMobileDropDown(this);">
-        <label>sort by</label>
-        <span class="icon icon-down-triangle"></span>
-        <ul class="list-categories-moblie">
-          <li class="list-category-moblie">
+        <ul class="yotpo-dropdown list-categories">
+          <li class="list-category">
             <a>Oldest</a>
           </li>
-          <li class="list-category-moblie">
+          <li class="list-category">
             <a>Newest</a>
           </li>
+          <li class="list-category">
+            <a>Best</a>
+          </li>
         </ul>
-    </li>
-  </ul>
-</div>
+    </div>
+  </div>
+  </div>  
             </textarea>
           </div>
+
 
         </div>
         <div class="clr"></div>

@@ -200,6 +200,10 @@ ul{
   text-transform: uppercase;
 }
 
+.yotpo-visible-mobile {
+    display: none!important;
+}
+
 /* End General */
  
 /* Icons */
@@ -593,7 +597,24 @@ ul{
   }
 }
 
-.nav-dropdown{
+.yotpo-dropdown-wrapper {
+  display: inline-block;
+  float: right;  
+  &.mobile-collapse {
+    .transparent-color-btn{
+      width: 100%;
+      .yotpo-nav-dropdown {
+
+      }
+    } 
+  }
+  .icon-seperator {
+    float: right;
+    color: $gray-light;
+  }
+}
+
+.yotpo-nav-dropdown{
 
   float: right;
   position: relative;
@@ -632,7 +653,7 @@ ul{
 
 }
 
-.dropdown{
+.yotpo-dropdown{
   display: none;
   position: absolute;
   left: 45px;
@@ -666,94 +687,6 @@ ul{
     }
   }
 }
-
-.nav-moblie{
-  display: block;
-  background: $white;
-  border: solid 1px $gray-light;
-
-  .nav-categories-moblie{
-    margin: 0px;
-  }
-
-  .nav-category-moblie{
-    font-size: 12px;
-    text-align: left;
-    padding: 10px 16px;
-    display: block;
-
-    /*text-overflow: ellipsis;*/
-    white-space: normal;
-    /*overflow: hidden;*/
-
-    &:hover{
-      cursor: pointer;
-      background: $gray-light;
-    }
-
-    .category-icon{
-
-      display: inline-block;
-      width: 13%;
-      vertical-align: top;
-
-      .icon{
-        color: $gray;
-        padding-right: 12px;
-      }
-    }
-
-    .category-desc{
-      display: inline-block;
-      width: 83%;
-    }
-
-    .dd-trigger{
-      width:100%;
-      label{
-        position: relative;
-        margin-right: 10px;
-      }
-    }
-
-    label{
-      color: $gray-dark;
-      text-transform: uppercase;
-
-      &:hover{
-        cursor: pointer;
-      }
-    }
-
-    
-  }
-
-}
-
-.dropdown-moblie{
-
-  li{
-    padding: 10px 0;
-    font-size: 12px;
-  }
-
-  a{
-    color: $gray-dark;
-    text-transform: uppercase;
-  }
-
-  .list-categories-moblie{
-
-    display: none;
-
-    margin-bottom: 0px;
-    &:hover{
-      cursor: pointer;
-      background: $gray-light;
-    }
-  }
-}
-
 
 /*END NAVIGATION*/
 
@@ -1201,6 +1134,9 @@ ul{
   .yotpo-hidden-mobile{
     display: none;
   }
+  .yotpo-visible-mobile {
+    display: block!important;
+  }
 
   .write-review {
     .socialize-wrapper {
@@ -1271,6 +1207,79 @@ ul{
       }
     }
   }
+
+ .transparent-color-btn {
+        text-align: right;
+        float: right;
+        padding: 0;
+    } 
+  .yotpo-dropdown-wrapper {
+    width: 100%;
+    margin-top: 5px;
+    &.mobile-collapse {
+      .yotpo-menu-mobile-collapse {
+        width: 100%;
+        background: white;
+        border: solid 1px #e3e3e3;
+        text-align: left;
+        .icon-seperator {
+          display: none;
+        }
+        .yotpo-nav-dropdown {
+          float: none;
+          font-size: 12px;
+          text-align: left;
+          display: block;
+          white-space: normal;
+          label {
+            padding-left: 0;
+          }
+        }
+        .yotpo-dropdown-button {
+            padding: 10px 16px;
+            /*background: #F1F1F1;*/
+            &:hover {
+              cursor: pointer;
+              background: $gray-light;
+          }
+        }
+        .yotpo-nav-dropdown-category {
+            font-size: 12px;
+            text-align: left;
+            padding: 10px 16px;
+            display: block;
+            white-space: normal;
+            .icon {
+              color: $gray;
+              padding-right: 12px;
+            }
+            .label {
+              padding: 0;
+            }
+            &:hover {
+              cursor: pointer;
+              background: $gray-light;
+            } 
+        }
+        .yotpo-dropdown {
+           &.list-categories {
+              display: none;
+              width: 100%;
+              top: 0;
+              left: 0;
+              position: relative;
+              border: none;
+              padding: 0;
+              margin: 0;
+              float: none;
+              .list-category {
+                padding: 7px 24px;
+              }
+            }
+        }
+     }
+    }
+}
 }
 
 /* NOT JS!!! */
