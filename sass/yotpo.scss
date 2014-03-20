@@ -366,10 +366,9 @@ ul{
   
 .icon-btn {
   display: inline-block;
-  padding: 6px;
+  padding: 6px 11px;
   .icon {
     font-size: 19px;
-    margin: 0px 5px;
   }
 
   &:hover{
@@ -379,8 +378,7 @@ ul{
 .icon-btn-small {
   display: inline-block;
   .icon {
-    font-size: 14px; 
-    margin: 0px 7px;
+    font-size: 14px;
   }
 
   &:hover{
@@ -391,8 +389,7 @@ ul{
   display: inline-block;
   padding: 10px 15px;
   .icon {
-    font-size: 26px; 
-    margin: 0px 7px;
+    font-size: 26px;
   }
 
   &:hover{
@@ -742,7 +739,7 @@ ul{
     vertical-align: middle;
   }
   .socialize-wrapper {
-    width: 240px;
+    width: 273px;
     position: absolute;
      .socialize{
         display: inline-block;
@@ -760,7 +757,7 @@ ul{
   }
 
   .connect-wrapper {
-    padding-left: 240px;
+    padding-left: 273px;
     width: 100%;
     box-sizing: border-box;
     .form-element {
@@ -1318,5 +1315,7 @@ ul{
 }
 
 /* End Media Queries */
+
+
 
 /* End Yotpo */
