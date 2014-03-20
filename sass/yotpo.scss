@@ -11,7 +11,7 @@ $red: #fb5654;
 $gray: #a2a2a2;
 $gray-light: #e3e3e3;
 $gray-dark: #737373;
-$gray-gray-darker: #4f4f4f;
+$gray-darker: #4f4f4f;
 $primary: #3085c7;
 $primary-d1: #266a9f;
 $primary-d2: #1d5077;
@@ -48,7 +48,7 @@ $primary-l4: #d6e7f4;
   background: $gray-dark;
 }
 .color-gray-darker {
-  background: $gray-gray-darker;
+  background: $gray-darker;
 }
 .color-primary {
   background: $primary;
@@ -96,7 +96,7 @@ $primary-l4: #d6e7f4;
   color: $gray-dark;
 }
 .font-color-gray-darker {
-  color: $gray-gray-darker;
+  color: $gray-darker;
 }
 .font-color-primary {
   color: $primary;
@@ -462,6 +462,7 @@ ul{
 }
 
 .input {
+  font-family: Verdana;
   height: 32px;
   min-width: 148px;
   width: 100%;
@@ -473,6 +474,8 @@ ul{
 }
 
 .text-box{
+  font-family: Verdana;
+  font-size: 13px;
   height: 68px;
   min-width: 148px;
   word-wrap: break-word;
@@ -484,9 +487,6 @@ ul{
   width: 100%;
 
   .form-element{
-
-    padding-bottom: 10px;
-
     .label{
       float: left;
       display: block;
@@ -553,7 +553,7 @@ ul{
         -webkit-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
         text-align: -webkit-match-parent;
-        color: $gray-gray-darker;
+        color: $gray-darker;
       }
       &:hover{
         a{
@@ -664,7 +664,7 @@ ul{
   text-align: left;
   background: $white;
   border: solid 1px $gray-light;
-
+  z-index: 10;
   ul{
     background: red;
     margin: 0px;
@@ -792,7 +792,7 @@ ul{
 
     .header-element{
       display: inline-block;
-
+      vertical-align: top;
       .label{
         min-width: 0px;
         padding: 0px;
@@ -868,13 +868,13 @@ ul{
 
     .content-title{
       display: block;
-      color: $gray-gray-darker;
-
+      color: $gray-darker;
+      padding: 15px 0;
     }
 
     .content-review{
       display: block;
-      color: $gray-gray-darker;
+      color: $gray-darker;
     }
   }
 
@@ -1026,7 +1026,7 @@ ul{
 
 
 .yotpo-pager{
-
+  cursor: default;
   text-align: center;
   margin-top: 20px;
 

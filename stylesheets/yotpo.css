@@ -599,6 +599,7 @@ ul {
 
 /* line 464, ../sass/yotpo.scss */
 .input {
+  font-family: Verdana;
   height: 32px;
   min-width: 148px;
   width: 100%;
@@ -609,22 +610,20 @@ ul {
   box-sizing: border-box;
 }
 
-/* line 475, ../sass/yotpo.scss */
+/* line 476, ../sass/yotpo.scss */
 .text-box {
+  font-family: Verdana;
+  font-size: 13px;
   height: 68px;
   min-width: 148px;
   word-wrap: break-word;
   resize: vertical;
 }
 
-/* line 482, ../sass/yotpo.scss */
+/* line 485, ../sass/yotpo.scss */
 .form-group {
   display: table;
   width: 100%;
-}
-/* line 486, ../sass/yotpo.scss */
-.form-group .form-element {
-  padding-bottom: 10px;
 }
 /* line 490, ../sass/yotpo.scss */
 .form-group .form-element .label {
@@ -798,6 +797,7 @@ ul {
   text-align: left;
   background: white;
   border: solid 1px #e3e3e3;
+  z-index: 10;
 }
 /* line 668, ../sass/yotpo.scss */
 .yotpo-dropdown ul {
@@ -927,6 +927,7 @@ ul {
 /* line 793, ../sass/yotpo.scss */
 .yotpo-review .yotpo-header .header-element {
   display: inline-block;
+  vertical-align: top;
 }
 /* line 796, ../sass/yotpo.scss */
 .yotpo-review .yotpo-header .header-element .label {
@@ -996,6 +997,7 @@ ul {
 .yotpo-review .yotpo-main .content-title {
   display: block;
   color: #4f4f4f;
+  padding: 15px 0;
 }
 /* line 875, ../sass/yotpo.scss */
 .yotpo-review .yotpo-main .content-review {
@@ -1148,6 +1150,7 @@ ul {
 /* End Widget Stracture */
 /* line 1028, ../sass/yotpo.scss */
 .yotpo-pager {
+  cursor: default;
   text-align: center;
   margin-top: 20px;
 }
