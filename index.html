@@ -729,6 +729,71 @@ this is a text box
         </div>
       </section>
 
+      <scetion>
+        <h3>ERROR HANDLING<h3>
+        <div class='content'>
+
+          <div class="small-title">Example:</div>
+          <div class="exmple-box">
+            <div class="star-rating-error">
+              <div class="text-wrapper">
+                <label class="star-error-text">Please enter a star rating for this review</label>
+              </div>
+              <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
+            </div>
+          </div>
+
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example" rows="8">
+<div class="star-rating-error">
+  <div class="text-wrapper">
+    <label class="star-error-text">Please enter a star rating for this review</label>
+  </div>
+  <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
+</div>
+            </textarea>
+          </div>
+
+        </div>
+        <div class="clr"></div>
+
+        <div class='content'>
+
+          <div class="small-title">Example:</div>
+            <div class="exmple-box input-text-exmaple">
+
+              <div class="form-group">
+                <div class="form-element">
+                  <label class="label">one two:</label>
+                  <input class="input error" value="Yotpo LTD"></input>
+                </div>
+
+                <div class="form-element">
+                  <label class="label">one two three four five six seven:</label>
+                  <textarea class="input text-box error">Yotpo LTD</textarea>
+                </div>
+              </div>
+                       
+            </div>
+
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example">
+<input class="input error" value="Yotpo LTD"></input>
+            </textarea>
+          </div>
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example">
+<textarea class="input text-box error">Yotpo LTD</textarea>
+            </textarea>
+          </div>
+
+        </div>
+        <div class="clr"></div>
+      </section>
+
       <h3>BOXES</h3>
       <section>
         <div class='side-part font-bold'>BOX</div>
@@ -1163,19 +1228,18 @@ this is a text box
                 <label class="label">share</label>
                 <span class="icon icon-seperator"></span>
               </span>
-
-              <span class="share-options">
-                <label class="label action">email</label>
-                <span class="icon icon-dot"></span>
-                <label class="label action">facebook</label>
-                <span class="icon icon-dot"></span>
-                <label class="label action">twitter</label>
-                <span class="icon icon-seperator"></span>  
+              <span class="share-options-wrapper">
+                <span class="share-options">
+                  <label class="label action">email</label>
+                  <span class="icon icon-dot"></span>
+                  <label class="label action">facebook</label>
+                  <span class="icon icon-dot"></span>
+                  <label class="label action">twitter</label>
+                  <span class="icon icon-seperator"></span>  
+                </span>
               </span>
               
             </div>
-
-            <dic class="clr"></dic>
 
             <div class="helpful">
               <label class="label label-helpful">helpful?</label>
@@ -1191,158 +1255,32 @@ this is a text box
 
             <div class="footer-additional-actions">
               <label class="label review-date">16/9/13</label>
-              <!-- <span class="icon icon-seperator"></span>
-
-              <span class="action">
-                <div class="icon-btn-small transparent-color-btn">
-                  <span class="icon icon-flag"></span>
-                </div>
-                <label class="label">report</label>
-              </span> -->
             </div>
+            <div class="clr"></div>
 
           </div>
+          <div class="yotpo-pager">
+            <span class="yotpo-page-element icon icon-left-arrow" data-page="back"></span>
+            <span class="yotpo-page-element" data-page="1">1</span>
+            <span class="yotpo-page-element" data-page="2">2</span>
+            <span class="yotpo-page-element active" data-page="3">3</span>
+            <span class="yotpo-page-element" data-page="4">4</span>
+            <span class="yotpo-page-element" data-page="5">5</span>
+            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="6">6</span>
+            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="7">7</span>
+            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="8">8</span>
+            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="9">9</span>
+            <span class="yotpo-page-element icon icon-right-arrow disabled" data-page="next"></span>
+          </div>
+
 
       </div>
-      <div class="clr"></div>
-
-      <br/><br/>
-
-      <h3>ERROR HANDLING</h3>
-      <div class="content-full-length">
-        <div class="small-title">Example:</div>
-        <div class="write-review">
-          <div class="header">
-
-            
-            <span class="profile-wrapper pull-left"><span class="icon icon-profile-picture"></span></span>
-            <span class="stars-wrapper">
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>  
-            </span>
-
-          </div>
-
-          <div class="write-review-content">
-
-            <div class="form-group">
-              <div class="form-element">
-                <label class="label">Title:</label>
-                <input class="input" onkeyup="showWriteReviewFooter(this);"></input>
-              </div>
-              <div class="form-element">
-                <label class="label">Review:</label>
-                <textarea class="input text-box error" onkeyup="showWriteReviewFooter(this);"></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="star-rating-error">
-            <div class="text-wrapper">
-              <label class="star-error-text">Please enter a star rating for this review</label>
-            </div>
-            <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
-          </div>
-          <div class="footer">
-            <div class="socialize-wrapper">
-              <div class="socialize">
-                <label class="label">Connect with:</label>
-                <div>
-                  <div class="default-button icon-btn" ><span class="icon icon-linkdein"></span></div>
-                  <div class="default-button icon-btn" ><span class="icon icon-googleplus"></span></div>
-                  <div class="default-button icon-btn" ><span class="icon icon-twitter"></span></div>
-                  <div class="default-button icon-btn" ><span class="icon icon-facebook"></span></div>
-                  
-                </div>
-              </div>
-              <div class="or">
-                -OR-
-              </div>
-            </div>
-            <div class="connect-wrapper">
-              <div class="form-element">
-                    <label class="label">Use your name:</label>
-                    <input class="input" onkeyup="showMailInput(this);"></input>
-              </div>
-              <div class="form-element email-input">
-                    <label class="label">Email:</label>
-                    <input class="input"</input>
-              </div>
-              <input type="button" class="default-button primary-color-btn submit disabled" value="submit"></input>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    <div class="clr"></div>
-    <br /><br />
-
-    <div class='side-part font-bold'>ERROR</div>
-    <div class='content'>
-
-      <div class="small-title">Example:</div>
-      <div class="exmple-box">
-        <div class="star-rating-error">
-          <div class="text-wrapper">
-            <label class="star-error-text">Please enter a star rating for this review</label>
-          </div>
-          <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
-        </div>
-      </div>
-
-      <div class="small-title">Code:</div>
-      <div class="exmple-box">
-        <textarea class="code-example" rows="8">
-<div class="star-rating-error">
-  <div class="text-wrapper">
-    <label class="star-error-text">Please enter a star rating for this review</label>
-  </div>
-  <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
-</div>
-        </textarea>
-      </div>
-
     </div>
     <div class="clr"></div>
 
-    <div class='content'>
+    <br/><br/>
 
-      <div class="small-title">Example:</div>
-        <div class="exmple-box input-text-exmaple">
-
-          <div class="form-group">
-            <div class="form-element">
-              <label class="label">one two:</label>
-              <input class="input error" value="Yotpo LTD"></input>
-            </div>
-
-            <div class="form-element">
-              <label class="label">one two three four five six seven:</label>
-              <textarea class="input text-box error">Yotpo LTD</textarea>
-            </div>
-          </div>
-                   
-        </div>
-      </div>
-
-      <div class="small-title">Code:</div>
-      <div class="exmple-box">
-        <textarea class="code-example">
-<input class="input error" value="Yotpo LTD"></input>
-        </textarea>
-      </div>
-      <div class="small-title">Code:</div>
-      <div class="exmple-box">
-        <textarea class="code-example">
-<textarea class="input text-box error">Yotpo LTD</textarea>
-        </textarea>
-      </div>
-
-    </div>
-    <div class="clr"></div>
-    <br /><br />
+    
 
     <h3>TOOLTIP</h3>
     <section>
@@ -1412,29 +1350,29 @@ this is a text box
             <span class="yotpo-page-element active" data-page="3">3</span>
             <span class="yotpo-page-element" data-page="4">4</span>
             <span class="yotpo-page-element" data-page="5">5</span>
-            <span class="yotpo-page-element" data-page="6">6</span>
-            <span class="yotpo-page-element" data-page="7">7</span>
-            <span class="yotpo-page-element" data-page="8">8</span>
-            <span class="yotpo-page-element" data-page="9">9</span>
+            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="6">6</span>
+            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="7">7</span>
+            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="8">8</span>
+            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="9">9</span>
             <span class="yotpo-page-element icon icon-right-arrow disabled" data-page="next"></span>
           </div>
         </div>
 
         <div class="small-title">Code:</div>
         <div class="exmple-box">
-          <textarea class="code-example" rows="15">
+          <textarea class="code-example" rows="19">
 <div class="yotpo-pager">
-  <span class="page-element icon icon-left-arrow" data-page="back"></span>
-  <span class="page-element" data-page="1">1</span>
-  <span class="page-element" data-page="2">2</span>
-  <span class="page-element active" data-page="3">3</span>
-  <span class="page-element" data-page="4">4</span>
-  <span class="page-element" data-page="5">5</span>
-  <span class="page-element" data-page="6">6</span>
-  <span class="page-element" data-page="7">7</span>
-  <span class="page-element" data-page="8">8</span>
-  <span class="page-element" data-page="9">9</span>
-  <span class="page-element icon icon-right-arrow disabled" data-page="next"></span>
+  <span class="yotpo-page-element icon icon-left-arrow" data-page="back"></span>
+  <span class="yotpo-page-element" data-page="1">1</span>
+  <span class="yotpo-page-element" data-page="2">2</span>
+  <span class="yotpo-page-element active" data-page="3">3</span>
+  <span class="yotpo-page-element" data-page="4">4</span>
+  <span class="yotpo-page-element" data-page="5">5</span>
+  <span class="yotpo-page-element yotpo-hidden-mobile" data-page="6">6</span>
+  <span class="yotpo-page-element yotpo-hidden-mobile" data-page="7">7</span>
+  <span class="yotpo-page-element yotpo-hidden-mobile" data-page="8">8</span>
+  <span class="yotpo-page-element yotpo-hidden-mobile" data-page="9">9</span>
+  <span class="yotpo-page-element icon icon-right-arrow disabled" data-page="next"></span>
 </div>
           </textarea>
         </div>
@@ -1442,6 +1380,8 @@ this is a text box
       </div>
       <div class="clr"></div>
     </section>
+
+    
 
 
   </body>

@@ -30,7 +30,15 @@ function showMobileDropDown(el){
 
 function showShareOptions (el){
 	var options = parents(el,'footer-actions').querySelectorAll('.share-options')[0];
-	changeDisplayMode(options, 'inline-block');
+	changeElementOpacity(options);
+	//changeDisplayMode(options, 'inline-block');
+}
+
+function changeElementOpacity(el){
+	if(el.style.opacity ==0)
+		el.style.opacity = 1;
+	else
+		el.style.opacity = 0;
 }
 
 function changeWriteReviewDisplayMode(el, displayMode){
