@@ -1,0 +1,158 @@
+<html>
+<head>
+	<title>Full Widget!</title>
+	<meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/ds.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/yotpo.css" media="screen" />
+	<script src="javascripts/yotpo.js"></script>
+    <script src="javascripts/classList.js"></script>
+    <link rel="stylesheet" href="stylesheets/prism.css">
+</head>
+<body>
+	<div id="content-wrapper">
+		  <h3>Full Widget!</h3>
+  <div class="content-full-length">
+    <!-- Widget Start -->
+    <div class="yotpo yotpo-main-widget">
+      <!-- Yotpo label + logo -->
+      <div class="small-box yotpo-label">
+        <lable class="label">Reviews By <span class="icon icon-write"></span></lable>
+      </div>  
+      <!-- End Yotpo label + logo -->
+      <!-- Yotpo Bottom line -->
+      <div class="regular-box yotpo-bottomline">
+          <span class="icon icon-star pull-left"></span>
+          <span class="icon icon-star pull-left"></span>
+          <span class="icon icon-star pull-left"></span>
+          <span class="icon icon-star pull-left"></span>
+          <span class="icon icon-empty-star pull-left"></span>
+          <span class="sum-reviews"><span class="text-xl font-bold">4.2</span><span class="font-color-gray based-on">based on 14 verified buyers</span></span>
+          
+          <div class="default-button icon-btn pull-right">
+            <span class="icon icon-write"></span>
+            <span class="icon-button-text">write a review</span>
+          </div>
+          <div class="clr"></div>
+      </div>
+      <!-- End Yotpo Bottom line -->        
+      <!-- Write a review -->
+      <div class="write-review regular-box">
+        <div class="header">
+          <span class="profile-wrapper pull-left"><span class="icon icon-profile-picture"></span></span>
+          <span class="stars-wrapper">
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>  
+          </span>
+
+        </div>
+
+        <div class="write-review-content">
+
+          <div class="form-group">
+            <div class="form-element">
+              <label class="label">Title:</label>
+              <input class="input" onkeyup="showWriteReviewFooter(this);"></input>
+            </div>
+            <div class="form-element">
+              <label class="label">Review:</label>
+              <textarea class="input text-box" onkeyup="showWriteReviewFooter(this);"></textarea>
+            </div>
+          </div>
+          </div>
+          <div class="footer">
+            <div class="socialize-wrapper">
+              <div class="socialize">
+                <label class="label">Connect with:</label>
+                <div>
+                  <div class="default-button icon-btn" ><span class="icon icon-linkdein pull-left"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-googleplus pull-left"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-twitter pull-left"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-facebook pull-left"></span></div>
+                  
+                </div>
+              </div>
+              <div class="or">
+                -OR-
+              </div>
+            </div>
+            <div class="connect-wrapper">
+              <div class="form-element">
+                    <label class="label">Use your name:</label>
+                    <input class="input" onkeyup="showMailInput(this);"></input>
+              </div>
+              <div class="form-element email-input">
+                    <label class="label">Email:</label>
+                    <input class="input"</input>
+              </div>
+              <input type="button" class="default-button primary-color-btn submit disabled" value="submit"></input>
+          </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+      <!-- End Write a review -->
+      <!-- Nav Bar -->
+      <div class="small-box yotpo-nav">
+        <div class="yotpo-nav yotpo-nav-primary">
+          <ul>
+              <li class="yotpo-nav-tab active">
+                <div class="yotpo-nav-wrapper">
+                  <a href="javascript:void(0)">Reviews</a>
+                  <a class="nav-tab-sum">(16)</a>
+                </div>
+              </li>
+              <li class="yotpo-nav-tab">
+                <div class="yotpo-nav-wrapper">
+                  <a href="javascript:void(0)">QA</a>
+                  <a class="yotpo-nav-tab-sum">(11)</a>
+                </div>
+              </li>
+          </ul>
+          <div class="nav-dropdown">
+            <label>View:</label>
+            <label class="selected" onclick="showSortCategories(this);">Select...</label>
+              <ul class="dropdown list-categories">
+                <li class="list-category" onclick="changeSortCategory(this);">
+                  <a>10 per page</a>
+                </li>
+                <li class="list-category" onclick="changeSortCategory(this);">
+                  <a>20 per page</a>
+                </li>
+              </ul>
+            <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+          </div>
+          <div class="nav-dropdown">
+            <label>Sort:</label>
+            <label class="selected" onclick="showSortCategories(this);">Select...</label>
+              <ul class="dropdown list-categories">
+                <li class="list-category" onclick="changeSortCategory(this);">
+                  <a>Oldest</a>
+                </li>
+                <li class="list-category" onclick="changeSortCategory(this);">
+                  <a>Newest</a>
+                </li>
+                <li class="list-category" onclick="changeSortCategory(this);">
+                  <a>Best</a>
+                </li>
+              </ul>
+            <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+            <span class="icon icon-seperator"></span>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!-- End Nav Bar -->
+      review
+    </div>
+    <!-- Widget End -->
+  </div>
+	</div>
+
+</body>
+</html>
