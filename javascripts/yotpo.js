@@ -80,6 +80,8 @@ function changeSortCategory(el){
 	changeDisplayMode(dropdown, 'inline-block');
 }
 
+
+
 function parents(elem, selector){
 	var parent = elem.parentNode;
 	 while (parent!=document.body) {
