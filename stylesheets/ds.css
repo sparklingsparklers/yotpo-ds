@@ -5,20 +5,20 @@ body {
   margin: 0;
 }
 
-/* line 27, ../sass/ds.scss */
-div.regular-box, div.small-box, div.regular-small-box {
+/* line 28, ../sass/ds.scss */
+.preview-boxes div.regular-box, .preview-boxes div.small-box, .preview-boxes div.regular-small-box {
   border: solid 1px grey;
   background: #F0A3CC;
 }
 
-/* line 32, ../sass/ds.scss */
+/* line 34, ../sass/ds.scss */
 .inner-box {
   width: 100%;
   height: 40px;
   background: white;
 }
 
-/* line 38, ../sass/ds.scss */
+/* line 40, ../sass/ds.scss */
 #design-faker {
   background: url("../images/typography2.jpg") no-repeat;
   position: absolute;
@@ -31,7 +31,7 @@ div.regular-box, div.small-box, div.regular-small-box {
   display: none;
 }
 
-/* line 49, ../sass/ds.scss */
+/* line 51, ../sass/ds.scss */
 #content-wrapper {
   position: relative;
   max-width: 900px;
@@ -40,24 +40,26 @@ div.regular-box, div.small-box, div.regular-small-box {
   box-sizing: border-box;
 }
 
-/* line 56, ../sass/ds.scss */
+/* line 58, ../sass/ds.scss */
 .side-part {
   font-weight: bold;
   font-size: 17px;
   margin-top: 20px;
 }
 
-/* line 61, ../sass/ds.scss */
+/* line 63, ../sass/ds.scss */
 .content {
   margin: 20px 0 0 10%;
 }
 
-/* line 64, ../sass/ds.scss */
+/* line 66, ../sass/ds.scss */
 .content-full-length {
   margin: 0px;
+  border-bottom: 1px solid;
+  padding-bottom: 40px;
 }
 
-/* line 67, ../sass/ds.scss */
+/* line 71, ../sass/ds.scss */
 section {
   max-width: 755px;
   width: 100%;
@@ -67,18 +69,17 @@ section {
   margin-bottom: 30px;
 }
 
-/* line 76, ../sass/ds.scss */
+/* line 80, ../sass/ds.scss */
 h3 {
   font-family: Verdana;
   margin-bottom: 35px;
-  margin-left: 45px;
   font-size: 20px;
   font-weight: bold;
   color: #2e8bc8;
   text-transform: uppercase;
 }
 
-/* line 85, ../sass/ds.scss */
+/* line 88, ../sass/ds.scss */
 .content ul {
   font-weight: light;
   list-style: none;
@@ -87,12 +88,12 @@ h3 {
   font-size: 15px;
 }
 
-/* line 92, ../sass/ds.scss */
+/* line 95, ../sass/ds.scss */
 bold {
   font-weight: bolder;
 }
 
-/* line 95, ../sass/ds.scss */
+/* line 98, ../sass/ds.scss */
 .exmple-box {
   border: 1px solid black;
   text-align: center;
@@ -101,20 +102,20 @@ bold {
   width: 100%;
 }
 
-/* line 102, ../sass/ds.scss */
+/* line 105, ../sass/ds.scss */
 .small-title {
   font-size: 12px;
   color: grey;
 }
 
-/* line 106, ../sass/ds.scss */
+/* line 109, ../sass/ds.scss */
 .clr {
   clear: both;
 }
 
-/* line 109, ../sass/ds.scss */
-.code-example {
-  background: black;
+/* line 112, ../sass/ds.scss */
+textarea.code-example {
+  background: black !important;
   color: white;
   overflow: hidden;
   text-align: left;
@@ -123,12 +124,12 @@ bold {
   max-width: 400px;
 }
 
-/* line 118, ../sass/ds.scss */
+/* line 121, ../sass/ds.scss */
 .color-list {
   list-style: none;
 }
 
-/* line 121, ../sass/ds.scss */
+/* line 124, ../sass/ds.scss */
 .color-item {
   width: 80px;
   text-align: center;
@@ -137,7 +138,7 @@ bold {
   min-height: 140px;
 }
 
-/* line 129, ../sass/ds.scss */
+/* line 132, ../sass/ds.scss */
 .color-circle {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -148,80 +149,35 @@ bold {
   margin: 7px auto;
 }
 
-/* line 138, ../sass/ds.scss */
+/* line 141, ../sass/ds.scss */
 .color-circle.big {
   height: 55px;
   width: 55px;
 }
 
-/* line 143, ../sass/ds.scss */
-.color-blue {
-  background: #00abc7;
-}
-
 /* line 146, ../sass/ds.scss */
-.color-orange {
-  background: #efae00;
-}
-
-/* line 149, ../sass/ds.scss */
-.color-yellow {
-  background: #ffd200;
-}
-
-/* line 152, ../sass/ds.scss */
-.color-green {
-  background: #3aba6f;
-}
-
-/* line 155, ../sass/ds.scss */
-.color-white {
-  background: #ffffff;
-}
-
-/* line 158, ../sass/ds.scss */
-.color-gray {
-  background: #a2a2a2;
-}
-
-/* line 161, ../sass/ds.scss */
-.color-gray-light {
-  background: #e3e3e3;
-}
-
-/* line 164, ../sass/ds.scss */
-.color-gray-dark {
-  background: #737373;
-}
-
-/* line 167, ../sass/ds.scss */
-.color-gray-darker {
-  background: #4f4f4f;
-}
-
-/* line 170, ../sass/ds.scss */
 .icon-holders {
   margin-left: 10%;
 }
-/* line 172, ../sass/ds.scss */
+/* line 148, ../sass/ds.scss */
 .icon-holders .icon-holder {
   margin-bottom: 8px;
   min-width: 276px;
   display: inline-block;
   margin-right: 60px;
 }
-/* line 177, ../sass/ds.scss */
+/* line 153, ../sass/ds.scss */
 .icon-holders .icon-holder .icon {
   margin-right: 10px;
 }
 
-/* line 183, ../sass/ds.scss */
+/* line 159, ../sass/ds.scss */
 .moblie-simulator {
   width: 200px;
   display: inline-block;
 }
 
-/* line 188, ../sass/ds.scss */
+/* line 164, ../sass/ds.scss */
 .icons-buttons .icon-btn {
   margin-bottom: 5px;
 }
