@@ -172,14 +172,14 @@ textarea.code-example {
 }
 
 /* line 159, ../sass/ds.scss */
+.icons-buttons .icon-btn {
+  margin-top: 5px;
+}
+
+/* line 165, ../sass/ds.scss */
 .moblie-simulator {
   width: 200px;
   display: inline-block;
-}
-
-/* line 164, ../sass/ds.scss */
-.icons-buttons .icon-btn {
-  margin-bottom: 5px;
 }
 
 /* End DS */

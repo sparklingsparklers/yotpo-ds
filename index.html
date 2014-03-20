@@ -259,6 +259,11 @@
       </section>
       <section>
          <ul class="color-list">
+            <li class="color-item">
+              <div class="color-circle color-red"></div>
+              <div class="color-precent text-m">red</div>
+              <div class="color-code text-m">#fb5654</div>
+            </li>
              <li class="color-item">
               <div class="color-circle color-yellow"></div>
               <div class="color-precent text-m">yellow</div>
@@ -430,7 +435,7 @@
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example">
-<div class="default-button primary-color-btn icon-btn" ><span class="icon icon-flag"></span></div>
+<div class="icon-btn primary-color-btn" ><span class="icon icon-flag"></span></div>
             </textarea>
             <textarea class="code-example" rows="4">
 <div class="default-button icon-btn">
@@ -460,8 +465,8 @@
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example" rows="3">
-<div class="default-button transparent-icon-btn-big">
-  <span class="icon icon-three-lines pull-left"></span>
+<div class="icon-btn-small transparent-color-btn">
+  <span class="icon icon-three-lines"></span>
 </div>
             </textarea>
           </div>
@@ -486,8 +491,8 @@
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example" rows="3">
-<div class="default-button transparent-icon-btn-big">
-  <span class="icon icon-three-lines pull-left"></span>
+<div class="icon-btn-big transparent-color-btn">
+  <span class="icon icon-three-lines"></span>
 </div>
             </textarea>
           </div>
@@ -569,14 +574,16 @@
           <div class="small-title">Example:</div>
           <div class="exmple-box">
             <div class="icon-btn transparent-color-btn">
-              <span class="icon icon-three-lines pull-left"></span>
+              <span class="icon icon-three-lines"></span>
             </div>
           </div>
 
           <div class="small-title">Code:</div>
           <div class="exmple-box">
-            <textarea class="code-example">
-<input type="button" class="default-button primary-color-btn" value="primary-color-button"></input>
+            <textarea class="code-example" rows="3">
+<div class="icon-btn transparent-color-btn">
+  <span class="icon icon-three-lines"></span>
+</div>
             </textarea>
           </div>
         </div>
@@ -632,9 +639,7 @@
 
           <div class="small-title">Example:</div>
           <div class="exmple-box">
-            <labe class="label">Title</label>
-            <labe class="label">this is the maximum width:</label>
-            <labe class="label">this is larger than the maximum width</label>
+            <label class="label">Please write a review</label>
           </div>
 
           <div class="small-title">Code:</div>
@@ -679,7 +684,7 @@ this is a text box
 
           <div class="small-title">Code:</div>
           <div class="exmple-box">
-            <textarea class="code-example" rows="4">
+            <textarea class="code-example">
 <textarea class="input text-box">this is a text box<//textarea>
             </textarea>
           </div>
@@ -719,7 +724,7 @@ this is a text box
 
   <div class="form-element">
     <label class="label">one two three four five six seven:</label>
-    <span><textarea class="input text-box">Yotpo LTD<//textarea></span>
+    <span><textarea class="input text-box">Yotpo LTD&lt;/textarea></span>
   </div>
 </div>
             </textarea>
@@ -744,8 +749,7 @@ this is a text box
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example">
-<div class="regular-box">
-</div>
+<div class="regular-box"></div>
             </textarea>
           </div>
 
@@ -767,8 +771,7 @@ this is a text box
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example">
-<div class="small-box">
-</div>
+<div class="small-box"></div>
             </textarea>
           </div>
 
@@ -790,9 +793,7 @@ this is a text box
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example">
-<div class="regular-small-box">
-  <div class="inner-box"></div>
-</div>
+<div class="regular-small-box"></div>
             </textarea>
           </div>
 
@@ -886,7 +887,7 @@ this is a text box
                     <a>Best</a>
                   </li>
                 </ul>
-              <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+              <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
             </div>
           </div>
 
@@ -902,7 +903,7 @@ this is a text box
                     <a>20 per page</a>
                   </li>
                 </ul>
-              <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+              <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
             </div>
             <div class="nav-dropdown">
               <label>Sort:</label>
@@ -918,7 +919,7 @@ this is a text box
                     <a>Best</a>
                   </li>
                 </ul>
-              <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+              <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
               <span class="icon icon-seperator"></span>
             </div>
           </div>
@@ -937,7 +938,7 @@ this is a text box
         <a>20 per page</a>
       </li>
     </ul>
-  <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+  <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
 </div>
 <div class="nav-dropdown">
   <label>Sort:</label>
@@ -953,7 +954,7 @@ this is a text box
         <a>Best</a>
       </li>
     </ul>
-  <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+  <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
   <span class="icon icon-seperator"></span>
 </div>
             </textarea>
@@ -979,7 +980,7 @@ this is a text box
 
                   <li class="nav-category-moblie">
                     <div class="category-icon">
-                      <span class="icon icon-write pull-left"></span>
+                      <span class="icon icon-write"></span>
                     </div>
                     <div class="category-desc">
                       <label>write a review</label>
@@ -987,7 +988,7 @@ this is a text box
                   </li>
                   <li class="nav-category-moblie">
                       <div class="category-icon">
-                        <span class="icon icon-double-bubble pull-left"></span>
+                        <span class="icon icon-double-bubble"></span>
                       </div>
                       <div class="category-desc">
                         <label>one two three four five six seven</label>
@@ -995,7 +996,7 @@ this is a text box
                   </li>
                   <li class="nav-category-moblie dropdown-moblie" onclick="showMobileDropDown(this);">
                       <label>sort by</label>
-                      <span class="icon icon-down-arrow pull-left"></span>
+                      <span class="icon icon-down-triangle"></span>
                       <ul class="list-categories-moblie">
                         <li class="list-category-moblie">
                           <a>Oldest</a>
@@ -1021,7 +1022,7 @@ this is a text box
   <ul class="nav-categories-moblie">
     <li class="nav-category-moblie">
       <div class="category-icon">
-        <span class="icon icon-write pull-left"></span>
+        <span class="icon icon-write"></span>
       </div>
       <div class="category-desc">
         <label>write a review</label>
@@ -1029,7 +1030,7 @@ this is a text box
     </li>
     <li class="nav-category-moblie">
         <div class="category-icon">
-          <span class="icon icon-double-bubble pull-left"></span>
+          <span class="icon icon-double-bubble"></span>
         </div>
         <div class="category-desc">
           <label>one two three four five six seven</label>
@@ -1037,7 +1038,7 @@ this is a text box
     </li>
     <li class="nav-category-moblie dropdown-moblie" onclick="showMobileDropDown(this);">
         <label>sort by</label>
-        <span class="icon icon-down-arrow pull-left"></span>
+        <span class="icon icon-down-triangle"></span>
         <ul class="list-categories-moblie">
           <li class="list-category-moblie">
             <a>Oldest</a>
@@ -1063,13 +1064,13 @@ this is a text box
           <div class="header">
 
             
-            <span class="profile-wrapper pull-left"><span class="icon icon-profile-picture"></span></span>
+            <span class="profile-wrapper"><span class="icon icon-profile-picture"></span></span>
             <span class="stars-wrapper">
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>  
+              <span class="icon icon-empty-star"></span>
+              <span class="icon icon-empty-star"></span>
+              <span class="icon icon-empty-star"></span>
+              <span class="icon icon-empty-star"></span>
+              <span class="icon icon-empty-star"></span>  
             </span>
 
           </div>
@@ -1092,10 +1093,10 @@ this is a text box
                 <div class="socialize">
                   <label class="label">Connect with:</label>
                   <div>
-                    <div class="default-button icon-btn" ><span class="icon icon-linkdein pull-left"></span></div>
-                    <div class="default-button icon-btn" ><span class="icon icon-googleplus pull-left"></span></div>
-                    <div class="default-button icon-btn" ><span class="icon icon-twitter pull-left"></span></div>
-                    <div class="default-button icon-btn" ><span class="icon icon-facebook pull-left"></span></div>
+                    <div class="default-button icon-btn" ><span class="icon icon-linkdein"></span></div>
+                    <div class="default-button icon-btn" ><span class="icon icon-googleplus"></span></div>
+                    <div class="default-button icon-btn" ><span class="icon icon-twitter"></span></div>
+                    <div class="default-button icon-btn" ><span class="icon icon-facebook"></span></div>
                     
                   </div>
                 </div>
@@ -1127,11 +1128,13 @@ this is a text box
         <div class="review">
 
           <div class="header">
-            <span class="icon icon-cogwheel icon-profile header-element">
+            <span class="icon-profile header-element">
+              <label class="user-letter">M</label>
               <span class="icon icon-checkmark"></span>
             </span>
             <div class="header-element">
               <div class="stars">
+                <label class="label user-name">Micha Z.</label>
                 <span class="icon icon-empty-star"></span>
                 <span class="icon icon-empty-star"></span>
                 <span class="icon icon-empty-star"></span>
@@ -1142,9 +1145,9 @@ this is a text box
             </div>
             <div class="header-element header-actions">
               <label class="label review-date">16/9/13</label>
-              <div class="icon-btn-small transparent-color-btn">
+              <!-- <div class="icon-btn-small transparent-color-btn">
                 <span class="icon icon-flag"></span>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -1177,6 +1180,8 @@ this is a text box
               
             </div>
 
+            <dic class="clr"></dic>
+
             <div class="helpful">
               <label class="label label-helpful">helpful?</label>
               <label class="label sum">0</label>
@@ -1191,164 +1196,395 @@ this is a text box
 
             <div class="footer-additional-actions">
               <label class="label review-date">16/9/13</label>
-              <span class="icon icon-seperator"></span>
+              <!-- <span class="icon icon-seperator"></span>
 
               <span class="action">
                 <div class="icon-btn-small transparent-color-btn">
                   <span class="icon icon-flag"></span>
                 </div>
                 <label class="label">report</label>
-              </span>
+              </span> -->
             </div>
-            <div class="clr"></div>
+
           </div>
+
+      </div>
+      <div class="clr"></div>
+
+      <br/><br/>
+
+      <h3>ERROR HANDLING</h3>
+      <div class="content-full-length">
+        <div class="small-title">Example:</div>
+        <div class="write-review">
+          <div class="header">
+
+            
+            <span class="profile-wrapper pull-left"><span class="icon icon-profile-picture"></span></span>
+            <span class="stars-wrapper">
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>  
+            </span>
+
+          </div>
+
+          <div class="write-review-content">
+
+            <div class="form-group">
+              <div class="form-element">
+                <label class="label">Title:</label>
+                <input class="input" onkeyup="showWriteReviewFooter(this);"></input>
+              </div>
+              <div class="form-element">
+                <label class="label">Review:</label>
+                <textarea class="input text-box error" onkeyup="showWriteReviewFooter(this);"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="star-rating-error">
+            <div class="text-wrapper">
+              <label class="star-error-text">Please enter a star rating for this review</label>
+            </div>
+            <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
+          </div>
+          <div class="footer">
+            <div class="socialize-wrapper">
+              <div class="socialize">
+                <label class="label">Connect with:</label>
+                <div>
+                  <div class="default-button icon-btn" ><span class="icon icon-linkdein"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-googleplus"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-twitter"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-facebook"></span></div>
+                  
+                </div>
+              </div>
+              <div class="or">
+                -OR-
+              </div>
+            </div>
+            <div class="connect-wrapper">
+              <div class="form-element">
+                    <label class="label">Use your name:</label>
+                    <input class="input" onkeyup="showMailInput(this);"></input>
+              </div>
+              <div class="form-element email-input">
+                    <label class="label">Email:</label>
+                    <input class="input"</input>
+              </div>
+              <input type="button" class="default-button primary-color-btn submit disabled" value="submit"></input>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    <div class="clr"></div>
+    <br /><br />
+
+    <div class='side-part font-bold'>ERROR</div>
+    <div class='content'>
+
+      <div class="small-title">Example:</div>
+      <div class="exmple-box">
+        <div class="star-rating-error">
+          <div class="text-wrapper">
+            <label class="star-error-text">Please enter a star rating for this review</label>
+          </div>
+          <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
+        </div>
+      </div>
+
+      <div class="small-title">Code:</div>
+      <div class="exmple-box">
+        <textarea class="code-example" rows="8">
+<div class="star-rating-error">
+  <div class="text-wrapper">
+    <label class="star-error-text">Please enter a star rating for this review</label>
+  </div>
+  <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
+</div>
+        </textarea>
+      </div>
+
+    </div>
+    <div class="clr"></div>
+
+    <div class='content'>
+
+      <div class="small-title">Example:</div>
+        <div class="exmple-box input-text-exmaple">
+
+          <div class="form-group">
+            <div class="form-element">
+              <label class="label">one two:</label>
+              <input class="input error" value="Yotpo LTD"></input>
+            </div>
+
+            <div class="form-element">
+              <label class="label">one two three four five six seven:</label>
+              <textarea class="input text-box error">Yotpo LTD</textarea>
+            </div>
+          </div>
+                   
+        </div>
+      </div>
+
+      <div class="small-title">Code:</div>
+      <div class="exmple-box">
+        <textarea class="code-example">
+<input class="input error" value="Yotpo LTD"></input>
+        </textarea>
+      </div>
+      <div class="small-title">Code:</div>
+      <div class="exmple-box">
+        <textarea class="code-example">
+<textarea class="input text-box error">Yotpo LTD</textarea>
+        </textarea>
+      </div>
+
+    </div>
+    <div class="clr"></div>
+    <br /><br />
+
+    <h3>TOOLTIP</h3>
+    <section>
+      <div class='content'>
+
+        <div class="small-title">Example:</div>
+        <div class="exmple-box">
+          <div class="tool-tip">
+            <div class="tool-tip-header">
+              <span>What is</span>
+              <span class="header-blue">Verified User</span>
+            </div>
+            <div class="tool-tip-content">
+              When users write reviews through the Mail After Purchase email, they are published as a "Verified Buyer" since we know they bought the product they are reviewing. 
+            </div>
+          </div>
+          <br />
+          <div class="tool-tip">
+            <div class="tool-tip-header">
+              <span>What is</span>
+              <span class="header-green">Verified User</span>
+            </div>
+            <div class="tool-tip-content">
+              When users write reviews through the Mail After Purchase email, they are published as a "Verified Buyer" since we know they bought the product they are reviewing. 
+            </div>
+          </div>
+          <br />
+          <div class="tool-tip">
+            <div class="tool-tip-header">
+              <span>What is</span>
+              <span class="header-orange">Verified User</span>
+            </div>
+            <div class="tool-tip-content">
+              When users write reviews through the Mail After Purchase email, they are published as a "Verified Buyer" since we know they bought the product they are reviewing. 
+            </div>
+          </div>
+        </div>
+        <div class="small-title">Code:</div>
+        <div class="exmple-box">
+          <textarea class="code-example" rows="9">
+<div class="tool-tip">
+  <div class="tool-tip-header">
+    <span>What is</span>
+    <span class="header-blue">Verified User</span>
+  </div>
+  <div class="tool-tip-content">
+    When users write reviews through the Mail After Purchase email, they are published as a "Verified Buyer" since we know they bought the product they are reviewing. 
+  </div>
+</div>
+          </textarea>
+        </div>
+
+      </div>
+      <div class="clr"></div>
+
+    </section>
+
+    <h3>PAGER</h3>
+    <section>
+      <div class="content">
+        <div class="small-title">Example:</div>
+        <div class="exmple-box">
+          <div class="yotpo-pager">
+            <span class="yotpo-page-element icon icon-left-arrow" data-page="back"></span>
+            <span class="yotpo-page-element" data-page="1">1</span>
+            <span class="yotpo-page-element" data-page="2">2</span>
+            <span class="yotpo-page-element active" data-page="3">3</span>
+            <span class="yotpo-page-element" data-page="4">4</span>
+            <span class="yotpo-page-element" data-page="5">5</span>
+            <span class="yotpo-page-element" data-page="6">6</span>
+            <span class="yotpo-page-element" data-page="7">7</span>
+            <span class="yotpo-page-element" data-page="8">8</span>
+            <span class="yotpo-page-element" data-page="9">9</span>
+            <span class="yotpo-page-element icon icon-right-arrow disabled" data-page="next"></span>
+          </div>
+        </div>
+
+        <div class="small-title">Code:</div>
+        <div class="exmple-box">
+          <textarea class="code-example" rows="15">
+<div class="yotpo-pager">
+  <span class="page-element icon icon-left-arrow" data-page="back"></span>
+  <span class="page-element" data-page="1">1</span>
+  <span class="page-element" data-page="2">2</span>
+  <span class="page-element active" data-page="3">3</span>
+  <span class="page-element" data-page="4">4</span>
+  <span class="page-element" data-page="5">5</span>
+  <span class="page-element" data-page="6">6</span>
+  <span class="page-element" data-page="7">7</span>
+  <span class="page-element" data-page="8">8</span>
+  <span class="page-element" data-page="9">9</span>
+  <span class="page-element icon icon-right-arrow disabled" data-page="next"></span>
+</div>
+          </textarea>
         </div>
       </div>
       <div class="clr"></div>
-      <br /><br />
-      
-      <h3>Full Widget!</h3>
-      <div class="content-full-length">
-        <!-- Widget Start -->
-        <div class="yotpo yotpo-main-widget">
-          <!-- Yotpo label + logo -->
-          <div class="small-box yotpo-label">
-            <lable class="label">Reviews By <span class="icon icon-write"></span></lable>
-          </div>  
-          <!-- End Yotpo label + logo -->
-          <!-- Yotpo Bottom line -->
-          <div class="regular-box yotpo-bottomline">
-              <span class="icon icon-star pull-left"></span>
-              <span class="icon icon-star pull-left"></span>
-              <span class="icon icon-star pull-left"></span>
-              <span class="icon icon-star pull-left"></span>
-              <span class="icon icon-empty-star pull-left"></span>
-              <span class="sum-reviews"><span class="text-xl font-bold">4.2</span><span class="font-color-gray based-on">based on 14 verified buyers</span></span>
-              
-              <div class="default-button icon-btn pull-right">
-                <span class="icon icon-write"></span>
-                <span class="icon-button-text">write a review</span>
-              </div>
-              <div class="clr"></div>
+    </section>
+
+  <h3>Full Widget!</h3>
+  <div class="content-full-length">
+    <!-- Widget Start -->
+    <div class="yotpo yotpo-main-widget">
+      <!-- Yotpo label + logo -->
+      <div class="small-box yotpo-label">
+        <lable class="label">Reviews By <span class="icon icon-write"></span></lable>
+      </div>  
+      <!-- End Yotpo label + logo -->
+      <!-- Yotpo Bottom line -->
+      <div class="regular-box yotpo-bottomline">
+          <span class="icon icon-star pull-left"></span>
+          <span class="icon icon-star pull-left"></span>
+          <span class="icon icon-star pull-left"></span>
+          <span class="icon icon-star pull-left"></span>
+          <span class="icon icon-empty-star pull-left"></span>
+          <span class="sum-reviews"><span class="text-xl font-bold">4.2</span><span class="font-color-gray based-on">based on 14 verified buyers</span></span>
+          
+          <div class="default-button icon-btn pull-right">
+            <span class="icon icon-write"></span>
+            <span class="icon-button-text">write a review</span>
           </div>
-          <!-- End Yotpo Bottom line -->        
-          <!-- Write a review -->
-          <div class="write-review regular-box">
-            <div class="header">
-              <span class="profile-wrapper pull-left"><span class="icon icon-profile-picture"></span></span>
-              <span class="stars-wrapper">
-                <span class="icon icon-empty-star pull-left"></span>
-                <span class="icon icon-empty-star pull-left"></span>
-                <span class="icon icon-empty-star pull-left"></span>
-                <span class="icon icon-empty-star pull-left"></span>
-                <span class="icon icon-empty-star pull-left"></span>  
-              </span>
-
-            </div>
-
-            <div class="write-review-content">
-
-              <div class="form-group">
-                <div class="form-element">
-                  <label class="label">Title:</label>
-                  <input class="input" onkeyup="showWriteReviewFooter(this);"></input>
-                </div>
-                <div class="form-element">
-                  <label class="label">Review:</label>
-                  <textarea class="input text-box" onkeyup="showWriteReviewFooter(this);"></textarea>
-                </div>
-              </div>
-              </div>
-              <div class="footer">
-                <div class="socialize-wrapper">
-                  <div class="socialize">
-                    <label class="label">Connect with:</label>
-                    <div>
-                      <div class="default-button icon-btn" ><span class="icon icon-linkdein pull-left"></span></div>
-                      <div class="default-button icon-btn" ><span class="icon icon-googleplus pull-left"></span></div>
-                      <div class="default-button icon-btn" ><span class="icon icon-twitter pull-left"></span></div>
-                      <div class="default-button icon-btn" ><span class="icon icon-facebook pull-left"></span></div>
-                      
-                    </div>
-                  </div>
-                  <div class="or">
-                    -OR-
-                  </div>
-                </div>
-                <div class="connect-wrapper">
-                  <div class="form-element">
-                        <label class="label">Use your name:</label>
-                        <input class="input" onkeyup="showMailInput(this);"></input>
-                  </div>
-                  <div class="form-element email-input">
-                        <label class="label">Email:</label>
-                        <input class="input"</input>
-                  </div>
-                  <input type="button" class="default-button primary-color-btn submit disabled" value="submit"></input>
-              </div>
-            </div>
-            <div class="clr"></div>
-        </div>
-          <!-- End Write a review -->
-          <!-- Nav Bar -->
-          <div class="small-box yotpo-nav">
-            <div class="yotpo-nav yotpo-nav-primary">
-              <ul>
-                  <li class="yotpo-nav-tab active">
-                    <div class="yotpo-nav-wrapper">
-                      <a href="javascript:void(0)">Reviews</a>
-                      <a class="nav-tab-sum">(16)</a>
-                    </div>
-                  </li>
-                  <li class="yotpo-nav-tab">
-                    <div class="yotpo-nav-wrapper">
-                      <a href="javascript:void(0)">QA</a>
-                      <a class="yotpo-nav-tab-sum">(11)</a>
-                    </div>
-                  </li>
-              </ul>
-              <div class="nav-dropdown">
-                <label>View:</label>
-                <label class="selected" onclick="showSortCategories(this);">Select...</label>
-                  <ul class="dropdown list-categories">
-                    <li class="list-category" onclick="changeSortCategory(this);">
-                      <a>10 per page</a>
-                    </li>
-                    <li class="list-category" onclick="changeSortCategory(this);">
-                      <a>20 per page</a>
-                    </li>
-                  </ul>
-                <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
-              </div>
-              <div class="nav-dropdown">
-                <label>Sort:</label>
-                <label class="selected" onclick="showSortCategories(this);">Select...</label>
-                  <ul class="dropdown list-categories">
-                    <li class="list-category" onclick="changeSortCategory(this);">
-                      <a>Oldest</a>
-                    </li>
-                    <li class="list-category" onclick="changeSortCategory(this);">
-                      <a>Newest</a>
-                    </li>
-                    <li class="list-category" onclick="changeSortCategory(this);">
-                      <a>Best</a>
-                    </li>
-                  </ul>
-                <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
-                <span class="icon icon-seperator"></span>
-              </div>
-            </div>
-            <div class="clr"></div>
-          </div>
-          <!-- End Nav Bar -->
-          review
-<br/><br/>reviewreviewreviewreviewreview<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-review
-        </div>
-        <!-- Widget End -->
-        
-        
+          <div class="clr"></div>
       </div>
+      <!-- End Yotpo Bottom line -->        
+      <!-- Write a review -->
+      <div class="write-review regular-box">
+        <div class="header">
+          <span class="profile-wrapper pull-left"><span class="icon icon-profile-picture"></span></span>
+          <span class="stars-wrapper">
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>
+            <span class="icon icon-empty-star pull-left"></span>  
+          </span>
+
+        </div>
+
+        <div class="write-review-content">
+
+          <div class="form-group">
+            <div class="form-element">
+              <label class="label">Title:</label>
+              <input class="input" onkeyup="showWriteReviewFooter(this);"></input>
+            </div>
+            <div class="form-element">
+              <label class="label">Review:</label>
+              <textarea class="input text-box" onkeyup="showWriteReviewFooter(this);"></textarea>
+            </div>
+          </div>
+          </div>
+          <div class="footer">
+            <div class="socialize-wrapper">
+              <div class="socialize">
+                <label class="label">Connect with:</label>
+                <div>
+                  <div class="default-button icon-btn" ><span class="icon icon-linkdein pull-left"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-googleplus pull-left"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-twitter pull-left"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-facebook pull-left"></span></div>
+                  
+                </div>
+              </div>
+              <div class="or">
+                -OR-
+              </div>
+            </div>
+            <div class="connect-wrapper">
+              <div class="form-element">
+                    <label class="label">Use your name:</label>
+                    <input class="input" onkeyup="showMailInput(this);"></input>
+              </div>
+              <div class="form-element email-input">
+                    <label class="label">Email:</label>
+                    <input class="input"</input>
+              </div>
+              <input type="button" class="default-button primary-color-btn submit disabled" value="submit"></input>
+          </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+      <!-- End Write a review -->
+      <!-- Nav Bar -->
+      <div class="small-box yotpo-nav">
+        <div class="yotpo-nav yotpo-nav-primary">
+          <ul>
+              <li class="yotpo-nav-tab active">
+                <div class="yotpo-nav-wrapper">
+                  <a href="javascript:void(0)">Reviews</a>
+                  <a class="nav-tab-sum">(16)</a>
+                </div>
+              </li>
+              <li class="yotpo-nav-tab">
+                <div class="yotpo-nav-wrapper">
+                  <a href="javascript:void(0)">QA</a>
+                  <a class="yotpo-nav-tab-sum">(11)</a>
+                </div>
+              </li>
+          </ul>
+          <div class="nav-dropdown">
+            <label>View:</label>
+            <label class="selected" onclick="showSortCategories(this);">Select...</label>
+              <ul class="dropdown list-categories">
+                <li class="list-category" onclick="changeSortCategory(this);">
+                  <a>10 per page</a>
+                </li>
+                <li class="list-category" onclick="changeSortCategory(this);">
+                  <a>20 per page</a>
+                </li>
+              </ul>
+            <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+          </div>
+          <div class="nav-dropdown">
+            <label>Sort:</label>
+            <label class="selected" onclick="showSortCategories(this);">Select...</label>
+              <ul class="dropdown list-categories">
+                <li class="list-category" onclick="changeSortCategory(this);">
+                  <a>Oldest</a>
+                </li>
+                <li class="list-category" onclick="changeSortCategory(this);">
+                  <a>Newest</a>
+                </li>
+                <li class="list-category" onclick="changeSortCategory(this);">
+                  <a>Best</a>
+                </li>
+              </ul>
+            <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+            <span class="icon icon-seperator"></span>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!-- End Nav Bar -->
+      review
+    </div>
+    <!-- Widget End -->
+  </div>
 
   </body>
 </html>
