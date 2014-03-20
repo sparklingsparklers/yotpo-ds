@@ -4,7 +4,6 @@
 	<meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/ds.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/yotpo.css" media="screen" />
@@ -114,35 +113,37 @@
                 </div>
               </li>
           </ul>
-          <div class="nav-dropdown">
-            <label>View:</label>
-            <label class="selected" onclick="showSortCategories(this);">Select...</label>
-              <ul class="dropdown list-categories">
-                <li class="list-category" onclick="changeSortCategory(this);">
-                  <a>10 per page</a>
-                </li>
-                <li class="list-category" onclick="changeSortCategory(this);">
-                  <a>20 per page</a>
-                </li>
-              </ul>
-            <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
-          </div>
-          <div class="nav-dropdown">
-            <label>Sort:</label>
-            <label class="selected" onclick="showSortCategories(this);">Select...</label>
-              <ul class="dropdown list-categories">
-                <li class="list-category" onclick="changeSortCategory(this);">
-                  <a>Oldest</a>
-                </li>
-                <li class="list-category" onclick="changeSortCategory(this);">
-                  <a>Newest</a>
-                </li>
-                <li class="list-category" onclick="changeSortCategory(this);">
-                  <a>Best</a>
-                </li>
-              </ul>
-            <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
-            <span class="icon icon-seperator"></span>
+          <div class="yotpo-dropdown-wrapper">
+	          <div class="nav-dropdown">
+	            <label>View:</label>
+	            <label class="selected" onclick="showSortCategories(this);">Select...</label>
+	              <ul class="dropdown list-categories">
+	                <li class="list-category" onclick="changeSortCategory(this);">
+	                  <a>10 per page</a>
+	                </li>
+	                <li class="list-category" onclick="changeSortCategory(this);">
+	                  <a>20 per page</a>
+	                </li>
+	              </ul>
+	            <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+	          </div>
+	          <div class="nav-dropdown">
+	            <label>Sort:</label>
+	            <label class="selected" onclick="showSortCategories(this);">Select...</label>
+	              <ul class="dropdown list-categories">
+	                <li class="list-category" onclick="changeSortCategory(this);">
+	                  <a>Oldest</a>
+	                </li>
+	                <li class="list-category" onclick="changeSortCategory(this);">
+	                  <a>Newest</a>
+	                </li>
+	                <li class="list-category" onclick="changeSortCategory(this);">
+	                  <a>Best</a>
+	                </li>
+	              </ul>
+	            <span id="btn-categories" class="icon icon-down-arrow" onclick="showSortCategories(this);"></span>
+	            <span class="icon icon-seperator"></span>
+	          </div>
           </div>
         </div>
         <div class="clr"></div>

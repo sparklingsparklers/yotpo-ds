@@ -593,6 +593,13 @@ ul{
   }
 }
 
+.yotpo-dropdown-wrapper {
+  display: inline-block;
+  float: right;  
+  &.mobile-collapse {
+    
+  }
+}
 .nav-dropdown{
 
   float: right;
