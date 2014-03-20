@@ -159,7 +159,6 @@ a:hover {
 ul{
   list-style: none!important;
 }
-
 .pull-left {
   text-align: left;
   float: left;
@@ -982,7 +981,9 @@ ul{
     }
 
     .share-options{
-      display: none;
+      /*display: none;*/
+      opacity: 0;
+      -webkit-transition: opacity 0.4s ease-in-out;
     }
 
     .action{
@@ -1000,6 +1001,7 @@ ul{
 
     .footer-additional-actions{
       display: none;
+      margin-top: 20px;
     }
   }
 }
@@ -1096,6 +1098,10 @@ ul{
 
 
 .yotpo-pager{
+
+  text-align: center;
+  margin-top: 20px;
+
   .yotpo-page-element{
     margin-right: 15px;
     color: $gray;
@@ -1134,6 +1140,7 @@ ul{
   }
 }
 
+
 @media only screen and (max-width: 655px) {
   .write-review {
     .connect-wrapper {
@@ -1148,6 +1155,11 @@ ul{
   }
 }
 @media only screen and (max-width: 510px) {
+
+  .yotpo-hidden-mobile{
+    display: none;
+  }
+
   .write-review {
     .socialize-wrapper {
       width: 100%;
@@ -1208,14 +1220,12 @@ ul{
 
       .helpful{
         float: right;
-        /*margin-bottom: 20px;*/
-        margin: 20px 0px;
+        margin-top: 20px;
       }
 
       .footer-additional-actions{
         display: inline-block;
         float: left;
-        margin-top: 20px;
       }
     }
   }
