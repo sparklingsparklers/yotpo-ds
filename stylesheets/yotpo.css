@@ -1067,19 +1067,20 @@ textarea {
   min-height: 25px;
   height: auto;
   background: #fb5654;
+  text-align: left;
 }
-/* line 947, ../sass/yotpo.scss */
+/* line 948, ../sass/yotpo.scss */
 .star-rating-error .text-wrapper {
   padding-left: 5px;
   margin-right: 25px;
 }
-/* line 951, ../sass/yotpo.scss */
+/* line 952, ../sass/yotpo.scss */
 .star-rating-error .text-wrapper .star-error-text {
   color: white;
   font-size: 12px;
   line-height: 25px;
 }
-/* line 960, ../sass/yotpo.scss */
+/* line 961, ../sass/yotpo.scss */
 .star-rating-error .transparent-color-btn {
   position: absolute;
   top: 3px;
@@ -1087,114 +1088,114 @@ textarea {
   color: white;
 }
 
-/* line 968, ../sass/yotpo.scss */
+/* line 969, ../sass/yotpo.scss */
 .error {
   -webkit-box-shadow: 0px 0px 1px 1px #fb5654;
   -moz-box-shadow: 0px 0px 1px 1px #fb5654;
   box-shadow: 0px 0px 1px 1px #fb5654;
 }
 
-/* line 974, ../sass/yotpo.scss */
+/* line 975, ../sass/yotpo.scss */
 .tool-tip {
   padding: 20px;
   border: solid 1px #e3e3e3;
   width: 223px;
   background: white;
 }
-/* line 980, ../sass/yotpo.scss */
+/* line 981, ../sass/yotpo.scss */
 .tool-tip .tool-tip-header {
   margin-bottom: 15px;
   font-weight: bold;
   font-size: 13px;
 }
-/* line 985, ../sass/yotpo.scss */
+/* line 986, ../sass/yotpo.scss */
 .tool-tip .tool-tip-header .header-blue {
   color: #00abc7;
 }
-/* line 988, ../sass/yotpo.scss */
+/* line 989, ../sass/yotpo.scss */
 .tool-tip .tool-tip-header .header-green {
   color: #3aba6f;
 }
-/* line 991, ../sass/yotpo.scss */
+/* line 992, ../sass/yotpo.scss */
 .tool-tip .tool-tip-header .header-orange {
   color: #efae00;
 }
-/* line 996, ../sass/yotpo.scss */
+/* line 997, ../sass/yotpo.scss */
 .tool-tip .tool-tip-content {
   font-size: 12px;
   color: #737373;
 }
 
 /* Widget Stracture */
-/* line 1005, ../sass/yotpo.scss */
+/* line 1006, ../sass/yotpo.scss */
 .yotpo-main-widget {
   background: transparent !important;
 }
-/* line 1008, ../sass/yotpo.scss */
+/* line 1009, ../sass/yotpo.scss */
 .yotpo-main-widget .yotpo-label .icon {
   color: #3085c7;
 }
-/* line 1013, ../sass/yotpo.scss */
+/* line 1014, ../sass/yotpo.scss */
 .yotpo-main-widget .yotpo-bottomline .icon-star, .yotpo-main-widget .yotpo-bottomline .icon-half-star, .yotpo-main-widget .yotpo-bottomline .icon-empty-star {
   color: #ffd200;
   font-size: 26px;
 }
-/* line 1017, ../sass/yotpo.scss */
+/* line 1018, ../sass/yotpo.scss */
 .yotpo-main-widget .yotpo-bottomline .sum-reviews {
   padding: 5px 10px;
   display: inline-block;
 }
-/* line 1021, ../sass/yotpo.scss */
+/* line 1022, ../sass/yotpo.scss */
 .yotpo-main-widget .yotpo-bottomline .based-on {
   vertical-align: top;
   padding-left: 10px;
 }
 
 /* End Widget Stracture */
-/* line 1031, ../sass/yotpo.scss */
+/* line 1032, ../sass/yotpo.scss */
 .yotpo-pager {
   text-align: center;
   margin-top: 20px;
 }
-/* line 1036, ../sass/yotpo.scss */
+/* line 1037, ../sass/yotpo.scss */
 .yotpo-pager .yotpo-page-element {
   margin-right: 15px;
   color: #a2a2a2;
 }
-/* line 1040, ../sass/yotpo.scss */
+/* line 1041, ../sass/yotpo.scss */
 .yotpo-pager .yotpo-page-element:hover {
   color: #737373;
   cursor: pointer;
 }
-/* line 1045, ../sass/yotpo.scss */
+/* line 1046, ../sass/yotpo.scss */
 .yotpo-pager .yotpo-page-element.disabled {
   color: #e3e3e3;
 }
-/* line 1049, ../sass/yotpo.scss */
+/* line 1050, ../sass/yotpo.scss */
 .yotpo-pager .yotpo-page-element.disabled:hover {
   cursor: default;
   color: #e3e3e3;
 }
-/* line 1055, ../sass/yotpo.scss */
+/* line 1056, ../sass/yotpo.scss */
 .yotpo-pager .yotpo-page-element.active {
   font-weight: bold;
   color: #3085c7;
 }
-/* line 1059, ../sass/yotpo.scss */
+/* line 1060, ../sass/yotpo.scss */
 .yotpo-pager .yotpo-page-element.active:hover {
   color: #e3e3e3;
 }
-/* line 1064, ../sass/yotpo.scss */
+/* line 1065, ../sass/yotpo.scss */
 .yotpo-pager .yotpo-page-element.icon-left-arrow {
   margin-right: 30px;
 }
-/* line 1067, ../sass/yotpo.scss */
+/* line 1068, ../sass/yotpo.scss */
 .yotpo-pager .yotpo-page-element.icon-right-arrow {
   margin-right: 0;
   margin-left: 15px;
 }
 
-/* line 1074, ../sass/yotpo.scss */
+/* line 1075, ../sass/yotpo.scss */
 .yotpo-thank-you {
   border: solid 1px #e3e3e3;
   padding: 40px;
@@ -1202,18 +1203,18 @@ textarea {
   position: relative;
   background: white;
 }
-/* line 1081, ../sass/yotpo.scss */
+/* line 1082, ../sass/yotpo.scss */
 .yotpo-thank-you .icon-cross {
   position: absolute;
   top: 15px;
   right: 15px;
   font-size: 19px;
 }
-/* line 1088, ../sass/yotpo.scss */
+/* line 1089, ../sass/yotpo.scss */
 .yotpo-thank-you .yotpo-thankyou-header {
   margin-bottom: 20px;
 }
-/* line 1092, ../sass/yotpo.scss */
+/* line 1093, ../sass/yotpo.scss */
 .yotpo-thank-you .yotpo-thankyou-header span {
   text-transform: uppercase;
   font-weight: bold;
@@ -1221,127 +1222,127 @@ textarea {
   font-size: 21px;
   line-height: 18px;
 }
-/* line 1100, ../sass/yotpo.scss */
+/* line 1101, ../sass/yotpo.scss */
 .yotpo-thank-you .yotpo-thankyou-header .icon {
   display: block;
   margin-bottom: 20px;
 }
-/* line 1106, ../sass/yotpo.scss */
+/* line 1107, ../sass/yotpo.scss */
 .yotpo-thank-you .yotpo-thankyou-content {
   color: #737373;
   margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 655px) {
-  /* line 1119, ../sass/yotpo.scss */
+  /* line 1120, ../sass/yotpo.scss */
   .write-review .connect-wrapper .form-element {
     width: 100%;
     padding: 0;
   }
-  /* line 1122, ../sass/yotpo.scss */
+  /* line 1123, ../sass/yotpo.scss */
   .write-review .connect-wrapper .form-element:first-child {
     padding-right: 0;
   }
 }
 @media only screen and (max-width: 510px) {
-  /* line 1132, ../sass/yotpo.scss */
+  /* line 1133, ../sass/yotpo.scss */
   .icon-btn .icon-button-text {
     display: none;
   }
 
-  /* line 1137, ../sass/yotpo.scss */
+  /* line 1138, ../sass/yotpo.scss */
   .yotpo-hidden-mobile {
     display: none;
   }
 
-  /* line 1140, ../sass/yotpo.scss */
+  /* line 1141, ../sass/yotpo.scss */
   .yotpo-visible-mobile {
     display: block !important;
   }
 
-  /* line 1145, ../sass/yotpo.scss */
+  /* line 1146, ../sass/yotpo.scss */
   .write-review .socialize-wrapper {
     width: 100%;
     position: relative;
   }
-  /* line 1148, ../sass/yotpo.scss */
+  /* line 1149, ../sass/yotpo.scss */
   .write-review .socialize-wrapper .socialize {
     width: 100%;
   }
-  /* line 1151, ../sass/yotpo.scss */
+  /* line 1152, ../sass/yotpo.scss */
   .write-review .socialize-wrapper .yotpo-or {
     margin-top: 20px;
   }
-  /* line 1155, ../sass/yotpo.scss */
+  /* line 1156, ../sass/yotpo.scss */
   .write-review .connect-wrapper {
     padding: 0;
   }
-  /* line 1157, ../sass/yotpo.scss */
+  /* line 1158, ../sass/yotpo.scss */
   .write-review .connect-wrapper .form-element {
     padding: 0;
   }
-  /* line 1159, ../sass/yotpo.scss */
+  /* line 1160, ../sass/yotpo.scss */
   .write-review .connect-wrapper .form-element:first-child {
     padding-right: 0;
   }
 
-  /* line 1169, ../sass/yotpo.scss */
+  /* line 1170, ../sass/yotpo.scss */
   .nav ul .nav-tab a.nav-tab-sum {
     display: none;
   }
 
-  /* line 1178, ../sass/yotpo.scss */
+  /* line 1179, ../sass/yotpo.scss */
   .yotpo-review .yotpo-header .header-actions {
     display: none;
   }
-  /* line 1183, ../sass/yotpo.scss */
+  /* line 1184, ../sass/yotpo.scss */
   .yotpo-review .label-helpful {
     display: none;
   }
-  /* line 1187, ../sass/yotpo.scss */
+  /* line 1188, ../sass/yotpo.scss */
   .yotpo-review .yotpo-footer .footer-actions {
     display: block;
     float: none;
   }
-  /* line 1190, ../sass/yotpo.scss */
+  /* line 1191, ../sass/yotpo.scss */
   .yotpo-review .yotpo-footer .footer-actions .share-options {
     display: inline-block;
     /*margin-bottom: 20px;*/
   }
-  /* line 1195, ../sass/yotpo.scss */
+  /* line 1196, ../sass/yotpo.scss */
   .yotpo-review .yotpo-footer .helpful {
     float: right;
     margin-top: 20px;
   }
-  /* line 1199, ../sass/yotpo.scss */
+  /* line 1200, ../sass/yotpo.scss */
   .yotpo-review .yotpo-footer .footer-additional-actions {
     display: inline-block;
     float: left;
   }
 
-  /* line 1206, ../sass/yotpo.scss */
+  /* line 1207, ../sass/yotpo.scss */
   .yotpo-nav .transparent-color-btn {
     text-align: right;
     float: right;
     padding: 0;
   }
-  /* line 1211, ../sass/yotpo.scss */
+  /* line 1212, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper {
     width: 100%;
     margin-top: 5px;
   }
-  /* line 1215, ../sass/yotpo.scss */
+  /* line 1216, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse {
     width: 100%;
     background: white;
     border: solid 1px #e3e3e3;
     text-align: left;
   }
-  /* line 1220, ../sass/yotpo.scss */
+  /* line 1221, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .icon-seperator {
     display: none;
   }
-  /* line 1223, ../sass/yotpo.scss */
+  /* line 1224, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .yotpo-nav-dropdown {
     float: none;
     font-size: 12px;
@@ -1349,21 +1350,21 @@ textarea {
     display: block;
     white-space: normal;
   }
-  /* line 1229, ../sass/yotpo.scss */
+  /* line 1230, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .yotpo-nav-dropdown label {
     padding-left: 0;
   }
-  /* line 1233, ../sass/yotpo.scss */
+  /* line 1234, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .yotpo-dropdown-button {
     padding: 10px 16px;
     /*background: #F1F1F1;*/
   }
-  /* line 1236, ../sass/yotpo.scss */
+  /* line 1237, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .yotpo-dropdown-button:hover {
     cursor: pointer;
     background: #e3e3e3;
   }
-  /* line 1241, ../sass/yotpo.scss */
+  /* line 1242, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .yotpo-nav-dropdown-category {
     font-size: 12px;
     text-align: left;
@@ -1371,21 +1372,21 @@ textarea {
     display: block;
     white-space: normal;
   }
-  /* line 1247, ../sass/yotpo.scss */
+  /* line 1248, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .yotpo-nav-dropdown-category .icon {
     color: #a2a2a2;
     padding-right: 12px;
   }
-  /* line 1251, ../sass/yotpo.scss */
+  /* line 1252, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .yotpo-nav-dropdown-category .label {
     padding: 0;
   }
-  /* line 1254, ../sass/yotpo.scss */
+  /* line 1255, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .yotpo-nav-dropdown-category:hover {
     cursor: pointer;
     background: #e3e3e3;
   }
-  /* line 1260, ../sass/yotpo.scss */
+  /* line 1261, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .yotpo-dropdown.list-categories {
     display: none;
     width: 100%;
@@ -1397,7 +1398,7 @@ textarea {
     margin: 0;
     float: none;
   }
-  /* line 1270, ../sass/yotpo.scss */
+  /* line 1271, ../sass/yotpo.scss */
   .yotpo-nav .yotpo-dropdown-wrapper.mobile-collapse .yotpo-menu-mobile-collapse .yotpo-dropdown.list-categories .list-category {
     padding: 7px 24px;
   }
@@ -1411,14 +1412,14 @@ textarea {
     font-style: normal;
 }
 
-  /* line 1297, ../sass/yotpo.scss */
+  /* line 1298, ../sass/yotpo.scss */
   .form-group label {
     width: 100%;
     float: left;
     max-width: 100%;
     white-space: normal;
   }
-  /* line 1304, ../sass/yotpo.scss */
+  /* line 1305, ../sass/yotpo.scss */
   .form-group span {
     width: 100%;
     float: left;
@@ -1428,7 +1429,7 @@ textarea {
 }
 /* End Media Queries */
 /* Animation */
-/* line 1318, ../sass/yotpo.scss */
+/* line 1319, ../sass/yotpo.scss */
 .yotpo-animation-opacity {
   -webkit-transition: opacity 0.7s ease-in;
   overflow: hidden;
