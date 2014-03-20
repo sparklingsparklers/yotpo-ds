@@ -699,7 +699,7 @@ ul{
 
   }
 
-  .header{
+  .yotpo-header{
 
     .icon{
       color: #FAE123;
@@ -733,7 +733,7 @@ ul{
     }
   }
 
-  .footer{
+  .yotpo-footer{
     display: none;
     width: 100%;
     vertical-align: middle;
@@ -747,7 +747,7 @@ ul{
         margin-bottom: 10px;
         min-width: 147px;
       }
-      .or{
+      .yotpo-or{
         display: inline-block;
         text-align: center;
         margin-top: 60px;
@@ -784,9 +784,9 @@ ul{
 
 }
 
-.review{
+.yotpo-review{
 
-  .header{
+  .yotpo-header{
     position: relative;
     color: $gray;
 
@@ -860,7 +860,7 @@ ul{
     }
   }
 
-  .main{
+  .yotpo-main{
 
     display: block;
     margin: 28px 0px;
@@ -878,7 +878,7 @@ ul{
     }
   }
 
-  .footer{
+  .yotpo-footer{
     position: relative;
     color: $gray;
 
@@ -1145,7 +1145,7 @@ ul{
       .socialize {
         width: 100%;
       }
-      .or {
+      .yotpo-or {
         margin-top: 20px;
       }
     }
@@ -1160,12 +1160,6 @@ ul{
     }
   }
 
-  .review{
-    .label-helpful{
-      display: none;
-    }
-  }
-
   .nav{
     ul{
       .nav-tab{
@@ -1176,31 +1170,29 @@ ul{
     }
   }
 
-  .review{
-    .header{
+  .yotpo-review{
+    .yotpo-header{
       .header-actions{
         display: none;
       }
     }
 
-    .footer{
-
+    .label-helpful{
+      display: none;
+    }
+    .yotpo-footer{
       .footer-actions{
-
         display: block;
         float: none;
-
         .share-options{
           display: inline-block;
           /*margin-bottom: 20px;*/
         }
       }
-
       .helpful{
         float: right;
         margin-top: 20px;
       }
-
       .footer-additional-actions{
         display: inline-block;
         float: left;
