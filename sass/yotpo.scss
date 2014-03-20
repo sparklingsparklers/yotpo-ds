@@ -12,8 +12,6 @@ $gray: #a2a2a2;
 $gray-light: #e3e3e3;
 $gray-dark: #737373;
 $gray-gray-darker: #4f4f4f;
-$gray-dark: #737373;
-$gray-dark: #737373;
 $primary: #3085c7;
 $primary-d1: #266a9f;
 $primary-d2: #1d5077;
@@ -21,6 +19,108 @@ $primary-l1: #599dd2;
 $primary-l2: #83b6dd;
 $primary-l3: #accee9;
 $primary-l4: #d6e7f4;
+
+.color-blue {
+  background: $blue;
+}
+.color-red {
+  background: $red;
+}
+.color-orange {
+  background: $orange;
+}
+.color-yellow {
+  background: $yellow;
+}
+.color-green {
+  background: $green;
+}
+.color-white {
+  background: $white;
+}
+.color-gray {
+  background: $gray;
+}
+.color-gray-light {
+  background: $gray-light;
+}
+.color-gray-dark {
+  background: $gray-dark;
+}
+.color-gray-darker {
+  background: $gray-gray-darker;
+}
+.color-primary {
+  background: $primary;
+}
+.color-primary-d1 {
+  background: $primary-d1;
+}
+.color-primary-d2 {
+  background: $primary-d2;
+}
+.color-primary-l1 {
+  background: $primary-l1;
+}
+.color-primary-l2 {
+  background: $primary-l2;
+}
+.color-primary-l3 {
+  background: $primary-l3;
+}
+.color-primary-l4 {
+  background: $primary-l4;
+}
+.font-color-blue {
+  color: $blue;
+}
+.font-color-orange {
+  color: $orange;
+}
+.font-color-yellow {
+  color: $yellow;
+}
+.font-color-green {
+  color: $green;
+}
+.font-color-white {
+  color: $white;
+}
+.font-color-gray {
+  color: $gray;
+}
+.font-color-gray-light {
+  color: $gray-light;
+}
+.font-color-gray-dark {
+  color: $gray-dark;
+}
+.font-color-gray-darker {
+  color: $gray-gray-darker;
+}
+.font-color-primary {
+  color: $primary;
+}
+.font-color-primary-d1 {
+  color: $primary-d1;
+}
+.font-color-primary-d2 {
+  color: $primary-d2;
+}
+.font-color-primary-l1 {
+  color: $primary-l1;
+}
+.font-color-primary-l2 {
+  color: $primary-l2;
+}
+.font-color-primary-l3 {
+  color: $primary-l3;
+}
+.font-color-primary-l4 {
+  color: $primary-l4;
+}
+
+/* General */
 
 .clr {
   clear: both;
@@ -32,27 +132,44 @@ body {
   line-height: 17px;
 }
 
+.yotpo-hr {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid $gray-light;
+  margin: 0 10px;
+}
+
 input{
   -webkit-appearance: none;
   -webkit-border-radius:0; 
   border-radius:0;
 }
+a, a:hover {
+  background: inherit!important;
+}
 
 a {
   color: $primary;
+  text-decoration: none;
 }
 a:hover {
   color: $primary-l1;
 }
 
+ul{
+  list-style: none!important;
+}
 .pull-left {
   text-align: left;
+  float: left;
 }
 .pull-right {
-  text-align: left;
+  text-align: right;
+  float: right;
 }
 .pull-center {
   text-align: center;
+  margin: 0 auto;
 }
 
 .text-xl {
@@ -81,34 +198,8 @@ a:hover {
 .font-upper {
   text-transform: uppercase;
 }
-a {
-  text-decoration: none;
-  color: #3085c7;
-}
-a:hover {
-  color: #266a9f;
-}
-.primary {
-  background: $primary;
-}
-.primary-d1 {
-  background: $primary-d1;
-}
-.primary-d2 {
-  background: $primary-d2;
-}
-.primary-l1 {
-  background: $primary-l1;
-}
-.primary-l2 {
-  background: $primary-l2;
-}
-.primary-l3 {
-  background: $primary-l3;
-}
-.primary-l4 {
-  background: $primary-l4;
-}
+
+/* End General */
  
 /* Icons */
 
@@ -359,6 +450,7 @@ a:hover {
   font-size: 13px;
   color: $gray;
   padding: 20px 7px 15px;
+  /*max-width: 164px;*/
   min-width:100px;
   text-align: start;
   display: inline-block;
@@ -408,16 +500,23 @@ a:hover {
 
 /*Boxes*/
 
+.regular-box , .small-box, .regular-small-box {
+  border-bottom: 1px solid $gray-light;
+}
+
 .regular-box{
-  padding: 28px 10px;
+  padding: 28px 0;
+  margin: 0 10px;
 }
 
 .small-box{
-  padding: 28px 10px 0px 10px;
+  padding: 28px 0px 0px 0px;
+  margin: 0 10px;
 }
 
 .regular-small-box{
-  padding: 28px 10px 15px 10px;
+  padding: 28px 0px 15px 0px;
+  margin: 0 10px;
 }
 
 /*End Boxes*/
@@ -425,14 +524,10 @@ a:hover {
 
 /*NAVIGATION*/
 
-.nav{
-
+.yotpo-nav{
   background: transparent;
   font-family: Verdana;
-  border-bottom: 2px solid;
-  border-color: #eaedee;
   border-color: rgba(0,39,59,.08);
-  overflow: hidden;
   display: block;
   position: relative;
   box-sizing: border-box;
@@ -440,14 +535,10 @@ a:hover {
   ul{
     float: left;
     text-transform: uppercase;
-    padding-right: 18px;
+    padding: 0;
     font-size: 15px;
     margin: 0px;
-    
-    display: list-item;
-
-    .nav-tab{
-
+    .yotpo-nav-tab{
        a {
         display: inline;
         margin: 0;
@@ -458,10 +549,7 @@ a:hover {
         transition: all .2s ease-in-out;
         text-align: -webkit-match-parent;
         color: $gray-gray-darker;
-
-
       }
-
       &:hover{
         a{
           color: $primary-l1;
@@ -473,7 +561,7 @@ a:hover {
         a {
           color: $primary;
         }
-        .wrapper {
+        .yotpo-nav-wrapper {
           border-bottom: 3px solid;
           border-color: $primary;
           overflow: visible;
@@ -492,7 +580,7 @@ a:hover {
     font-family: Verdana;
     display: list-item;
 
-    .wrapper {
+    .yotpo-nav-wrapper {
       padding-bottom: 6px;
       margin: 0;
       text-overflow : ellipsis;
@@ -562,11 +650,11 @@ a:hover {
   }
 
   .list-category{
-
     display: block;
     padding: 7px 9px 9px 9px;
     font-size: 12px;
-
+    width: 100%;
+    box-sizing: border-box;
     &:hover{
       cursor: pointer;
       background: $gray-light;
@@ -790,7 +878,6 @@ a:hover {
       position: relative;
       width: 45px;
       height: 45px;
-      
       margin-right: 7px;
       border-radius: 50%;
       -webkit-border-radius: 50%;
@@ -975,6 +1062,34 @@ a:hover {
   }
 }
 
+/* Widget Stracture */
+
+.yotpo-main-widget {
+  background: transparent!important;
+  .yotpo-label {
+    .icon {
+      color: $primary;
+    }
+  }
+  .yotpo-bottomline {
+    .icon-star, .icon-half-star, .icon-empty-star {
+      color: $yellow;
+      font-size: 26px;
+    }
+    .sum-reviews {
+      padding: 5px 10px;
+      display: inline-block;
+    }
+    .based-on {
+      vertical-align: top;
+      padding-left: 10px;
+    }
+  }
+}
+
+/* End Widget Stracture */
+
+
 .yotpo-pager{
 
   text-align: center;
@@ -1106,8 +1221,6 @@ a:hover {
         float: left;
       }
     }
-
-
   }
 }
 
