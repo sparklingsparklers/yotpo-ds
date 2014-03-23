@@ -1,16 +1,35 @@
 function showWriteReviewFooter(el){
 	var footer = parents(el,'write-review').querySelectorAll('.yotpo-footer')[0];
-	addClass(footer, 'yotpo-animation-opacity');
+	addClass(footer, 'yotpo-animation-fade');
 	footer.style.opacity = 0;
 	footer.style.display='block';
 	setTimeout(function() {footer.style.opacity = 1;}, 1);
+}
+
+function showWriteReview(el){
+
+	var reviewForm = parents(el,'yotpo-main-widget').querySelectorAll('.write-review')[0];
+
+	reviewForm.style.position="absolute";
+	reviewForm.style.right="-10000px";
+	reviewForm.style.top="-10000px";
+	reviewForm.style.display = "block";
+	var oldH = reviewForm.scrollHeight;
+
+	reviewForm.style.height = 0;
+	addClass(reviewForm, 'yotpo-animation-slide');
+	reviewForm.style.right="0";
+	reviewForm.style.top="0";
+	reviewForm.style.position="relative";
+	
+	setTimeout(function() {reviewForm.style.height = oldH;}, 10);
 }
 
 function showMailInput(el){
 	var emailInput = parents(el,'yotpo-footer').querySelectorAll('.email-input')[0];
 	var submitBtn = parents(el,'yotpo-footer').querySelectorAll('.submit')[0];
 	// changeWriteReviewDisplayMode(emailInput, 'block');
-	addClass(emailInput, 'yotpo-animation-opacity');
+	addClass(emailInput, 'yotpo-animation-fade');
 	emailInput.style.opacity = 0;
 	emailInput.style.display='block';
 	setTimeout(function() {emailInput.style.opacity = 1;}, 1);
