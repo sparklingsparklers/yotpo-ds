@@ -31,7 +31,7 @@
           <span class="icon icon-empty-star pull-left"></span>
           <span class="sum-reviews"><span class="text-xl font-bold">4.2</span><span class="font-color-gray based-on">based on 14 verified buyers</span></span>
           
-          <div class="default-button icon-btn pull-right yotpo-hidden-mobile" onclick="slideDown(this, 'yotpo-main-widget', '.write-review');">
+          <div class="default-button icon-btn pull-right yotpo-hidden-mobile" onclick="showWriteReview(this, 'yotpo-main-widget', '.write-review');">
             <span class="icon icon-write"></span>
             <span class="icon-button-text">write a review</span>
           </div>
@@ -58,15 +58,15 @@
             <div class="form-group">
               <div class="form-element">
                 <label class="label">Title:</label>
-                <input class="input" onkeyup="fade(this, 'write-review', '.yotpo-footer');"></input>
+                <input class="input" onkeyup="showWriteReviewFooter(this, 'write-review', '.yotpo-footer');"></input>
               </div>
               <div class="form-element">
                 <label class="label">Review:</label>
-                <textarea class="input text-box" onkeyup="fade(this, 'write-review', '.yotpo-footer');"></textarea>
+                <textarea class="input text-box" onkeyup="showWriteReviewFooter(this, 'write-review', '.yotpo-footer');"></textarea>
               </div>
             </div>
             </div>
-            <div class="yotpo-footer yotpo-animation-fade">
+            <div class="yotpo-footer">
               <div class="socialize-wrapper">
                 <div class="socialize">
                   <label class="label">Connect with:</label>
@@ -92,11 +92,12 @@
                       <input class="input"</input>
                 </div>
                 <input type="button" class="default-button primary-color-btn submit disabled" value="submit"></input>
+                <div class="clr"></div>
+              </div>
             </div>
-          </div>
-          <div class="clr"></div>
+            <div class="clr"></div>
+        </div>
       </div>
-    </div>
       <!-- End Write a review -->
       <!-- Nav Bar -->
       <div class="small-box yotpo-nav">
@@ -120,7 +121,7 @@
           </div>
           <div class="yotpo-dropdown-wrapper mobile-collapse">
               <div class="yotpo-menu-mobile-collapse yotpo-hidden-mobile">
-                <div class="yotpo-nav-dropdown-category yotpo-visible-mobile" onclick="slideDown(this, 'yotpo-main-widget', '.write-review');">
+                <div class="yotpo-nav-dropdown-category yotpo-visible-mobile" onclick="showWriteReview(this, 'yotpo-main-widget', '.write-review');">
                   <span class="icon icon-write"></span>
                   <span class="label">write a review</span>
                 </div>
@@ -203,7 +204,7 @@
 		      <div class="yotpo-footer">
 		        <div class="footer-actions">
 
-		          <span class="action" onclick="showShareOptions(this);">
+		          <span class="action" onclick="showShareOptions(this, 'footer-actions', '.share-options');">
 		            <span class="icon icon-share"></span>
 		            <label class="label">share</label>
 		            <span class="icon icon-seperator"></span>

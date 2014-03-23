@@ -1100,6 +1100,7 @@
       }
 
       .icon{
+        font-size: 26px;
         display: block;
         margin-bottom: 20px;
       }
@@ -1324,12 +1325,19 @@
 .yotpo {
   .yotpo-animation-fade{
     -webkit-transition: opacity 0.7s ease-in;
+    -moz-transition: opacity 0.7s ease-in;
+    -ms-transition: opacity 0.7s ease-in;
+    -o-transition: opacity 0.7s ease-in;
+    transition: opacity 0.7s ease-in;
     overflow: hidden;
   }
 
   .yotpo-animation-slide{
     -webkit-transition: height 1.1s ease-in-out;
-
+    -moz-transition: height 1.1s ease-in-out;
+    -ms-transition: height 1.1s ease-in-out;
+    -o-transition: height 1.1s ease-in-out;
+    transition: height 1.1s ease-in-out;
   }
 }
 

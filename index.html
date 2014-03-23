@@ -342,8 +342,13 @@
           <div class="icon-holder"><span class="icon icon-flag            pull-left"></span><span class='pull-left'>Class Name: <bold>  icon-flag          </bold></span></div>
           <div class="icon-holder"><span class="icon icon-facebook        pull-left"></span><span class='pull-left'>Class Name: <bold>  icon-facebook      </bold></span></div>
           <div class="icon-holder"><span class="icon icon-down-arrow      pull-left"></span><span class='pull-left'>Class Name: <bold>  icon-down-arrow    </bold></span></div>
+          <div class="icon-holder"><span class="icon icon-store   pull-left"></span><span class='pull-left'>Class Name: <bold>  icon-down-store </bold></span></div>
+          <div class="icon-holder"><span class="icon icon-heart   pull-left"></span><span class='pull-left'>Class Name: <bold>  icon-down-heart </bold></span></div>
           <div class="icon-holder"><span class="icon icon-double-bubble   pull-left"></span><span class='pull-left'>Class Name: <bold>  icon-double-bubble </bold></span></div>
           <div class="icon-holder"><span class="icon icon-down-triangle   pull-left"></span><span class='pull-left'>Class Name: <bold>  icon-down-triangle </bold></span></div>
+
+          
+          
         </div>
         <div class='content'>
           <div class="small-title">Code:</div>
@@ -386,6 +391,8 @@
           <div class="primary-color-btn icon-btn" ><span class="icon icon-down-arrow   "></span></div>
           <div class="primary-color-btn icon-btn" ><span class="icon icon-double-bubble"></span></div>
           <div class="primary-color-btn icon-btn" ><span class="icon icon-down-triangle"></span></div>
+          <div class="primary-color-btn icon-btn" ><span class="icon icon-heart        "></span></div>
+          <div class="primary-color-btn icon-btn" ><span class="icon icon-store        "></span></div>
         </div>
       </section>
 
@@ -1163,13 +1170,13 @@ this is a text box
           <div class="yotpo-footer">
             <div class="footer-actions">
 
-              <span class="action" onclick="showShareOptions(this);">
+              <span class="action" onclick="showShareOptions(this, 'footer-actions', '.share-options');">
                 <span class="icon icon-share"></span>
                 <label class="label">share</label>
                 <span class="icon icon-seperator"></span>
               </span>
               <span class="share-options-wrapper">
-                <span class="share-options yotpo-animation-fade">
+                <span class="share-options">
                   <label class="label action">email</label>
                   <span class="icon icon-dot"></span>
                   <label class="label action">facebook</label>
@@ -1328,7 +1335,7 @@ this is a text box
 
             <div class="icon-btn transparent-color-btn" ><span class="icon icon-cross "></span></div>
             <div class="yotpo-thankyou-header text-xl">
-              <span class="icon icon-star"></span>
+              <span class="icon icon-heart"></span>
               <span>thank you for posting a review</span>
             </div>
             <div class="yotpo-thankyou-content">

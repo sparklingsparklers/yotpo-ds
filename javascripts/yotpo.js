@@ -1,15 +1,18 @@
-function fade(el, parentClass, targetClass){
+function fadeIn(target){
 
-	 var footer = parents(el, parentClass).querySelectorAll(targetClass)[0];
-	 addClass(footer, 'yotpo-animation-fade');
-	 footer.style.opacity = 0;
-	 footer.style.display='block';
-	 setTimeout(function() {footer.style.opacity = 1;}, 1);
+	addClass(target, 'yotpo-animation-fade');
+	target.style.opacity = 0;
+	target.style.display='inherit';
+	setTimeout(function() {target.style.opacity = 1;}, 1);
 }
 
-function slideDown(el, parentClass, targetClass){
+function fadeOut(target){
 
-	var target = parents(el,parentClass).querySelectorAll(targetClass)[0];
+	addClass(target, 'yotpo-animation-fade');
+	setTimeout(function() {target.style.opacity = 0;}, 1);
+}
+
+function slideDown(target){
 
 	target.style.position="absolute";
 	target.style.right="-10000px";
@@ -27,9 +30,12 @@ function slideDown(el, parentClass, targetClass){
 	setTimeout(function() {target.style.height = 'auto';}, 1000);
 }
 
-function slideUp(el, parentClass, targetClass){
-
+function showWriteReview(el, parentClass, targetClass){
 	var target = parents(el,parentClass).querySelectorAll(targetClass)[0];
+	slideDown(target);
+}
+
+function slideUp(target){
 
 	var oldH = target.offsetHeight;
 	addClass(target, 'yotpo-animation-slide');
@@ -40,12 +46,17 @@ function slideUp(el, parentClass, targetClass){
 	setTimeout(function() {target.style.height = oldH;}, 1000);	
 }
 
+function showWriteReviewFooter(el, parentClass, targetClass){
+	var target = parents(el, parentClass).querySelectorAll(targetClass)[0];
+	fadeIn(target);
+}
+
 function showMailInput(el, parentClass, targetClass){
 
-	fade(el, parentClass, targetClass);
+	var target = parents(el, parentClass).querySelectorAll(targetClass)[0];
+	fadeIn(target);
 
 	var submitBtn = parents(el,'yotpo-footer').querySelectorAll('.submit')[0];
-
 	submitBtn.style.marginTop = '15px';
 	submitBtn.classList.remove('disabled');
 }
@@ -72,17 +83,12 @@ function showMobileDropDown(el){
 	changeDisplayMode(dropdown, 'inline');
 }
 
-function showShareOptions (el){
-	var options = parents(el,'footer-actions').querySelectorAll('.share-options')[0];
-	changeElementOpacity(options);
-	//changeDisplayMode(options, 'inline-block');
-}
-
-function changeElementOpacity(el){
-	if(el.style.opacity ==0)
-		el.style.opacity = 1;
+function showShareOptions (el, parentClass, targetClass){
+	var target = parents(el,parentClass).querySelectorAll(targetClass)[0];
+	if(target.style.opacity ==0)
+		fadeIn(target);
 	else
-		el.style.opacity = 0;
+		fadeOut(target);
 }
 
 function changeWriteReviewDisplayMode(el, displayMode){
