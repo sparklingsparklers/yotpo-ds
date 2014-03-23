@@ -507,6 +507,9 @@
 
   .regular-box , .small-box, .regular-small-box {
     border-bottom: 1px solid $gray-light;
+    &.no-border {
+      border-bottom: none;
+    } 
   }
 
   .regular-box{
@@ -524,8 +527,14 @@
     margin: 0 10px;
   }
 
-  .comment-box {
-    
+  .comments-box {
+    margin-left: 22px;
+    border-left: 2px solid $primary-l3;
+    margin-top: 28px;
+    .comment-box {
+      margin-left: 22px;
+      padding-top: 28px;
+    }
   }
 
   /*End Boxes*/
@@ -789,8 +798,7 @@
 
   }
 
-  .yotpo-review{
-
+  .yotpo-review, .yotpo-comment{
     .yotpo-header{
       position: relative;
       color: $gray;
@@ -850,7 +858,7 @@
         margin-left: 11px;
       }*/
 
-      .stars{
+      .stars-and-name{
         margin-bottom: 11px;
         color: #FAE123;
 
