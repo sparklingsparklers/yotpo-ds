@@ -557,10 +557,15 @@
 
     ul{
       float: left;
-      text-transform: capitalize;
+      
       padding: 0;
       font-size: 15px;
       margin: 0px;
+
+      :first-letter{
+        text-transform: capitalize;  
+      }
+
       .yotpo-nav-tab{
          a {
           display: inline;
