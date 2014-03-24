@@ -122,6 +122,8 @@
 
   input{
     -webkit-appearance: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
     -webkit-border-radius:0; 
     border-radius:0;
   }
@@ -481,6 +483,8 @@
     word-wrap: break-word;
     resize: vertical;
     -webkit-appearance: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
   }
 
   .form-group{
@@ -1321,6 +1325,8 @@
   }
   .text-box{
     -webkit-appearance: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
   }
 }
 
