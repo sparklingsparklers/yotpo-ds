@@ -714,7 +714,6 @@
     }
 
     .yotpo-header{
-
       .icon{
         color: #FAE123;
         font-size: 26px;
@@ -849,6 +848,21 @@
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
+        }
+      }
+      &.yotpo-verified-user {
+        .icon-circle-checkmark{
+          color: $blue; 
+        }
+      }
+      &.yotpo-verified-buyer {
+        .icon-circle-checkmark{
+          color: $green;
+        }
+      }
+      &.yotpo-store-owner {
+        .icon-circle-checkmark{
+          color: $orange; 
         }
       }
 
