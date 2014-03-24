@@ -839,15 +839,13 @@
           color: $white;
         }
 
-        .icon-checkmark{
+        .icon-circle-checkmark{
           font-size: 14px;
           position: absolute;
           left: 31px;
           top: 29px;
-          color: white;
-          background: #E5B026;
-          border: solid 1px white; 
-
+          color: #E5B026;
+          background: white;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
@@ -882,7 +880,7 @@
       .content-title{
         display: block;
         color: $gray-darker;
-        padding: 15px 0;
+        padding-bottom: 15px;
       }
 
       .content-review{
@@ -1288,6 +1286,12 @@
             }
          }
         }
+      }
+    }
+    .comments-box {
+      margin-left: 10px;
+      .comment-box {
+        margin-left: 10px;
       }
     }
   }
