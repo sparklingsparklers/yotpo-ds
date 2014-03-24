@@ -700,6 +700,11 @@
       font-size: 12px;
       width: 100%;
       box-sizing: border-box;
+
+      &:first-letter{
+        text-transform: capitalize;  
+      }
+
       &:hover{
         cursor: pointer;
         background: $gray-light;
