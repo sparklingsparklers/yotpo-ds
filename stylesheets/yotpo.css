@@ -627,7 +627,7 @@
 /* line 558, ../sass/core.scss */
 .yotpo .yotpo-nav ul {
   float: left;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding: 0;
   font-size: 15px;
   margin: 0px;
@@ -666,7 +666,7 @@
 /* line 598, ../sass/core.scss */
 .yotpo .yotpo-nav li {
   float: left;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   padding-right: 18px;
   font-size: 15px;
   font-family: Verdana;

@@ -557,7 +557,7 @@
 
     ul{
       float: left;
-      text-transform: uppercase;
+      text-transform: capitalize;
       padding: 0;
       font-size: 15px;
       margin: 0px;
@@ -597,7 +597,7 @@
 
     li{
       float: left;
-      text-transform: uppercase;
+      /*text-transform: uppercase;*/
       padding-right: 18px;
       font-size: 15px;
       font-family: Verdana;
