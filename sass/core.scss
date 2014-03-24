@@ -480,6 +480,7 @@
     min-width: 148px;
     word-wrap: break-word;
     resize: vertical;
+    -webkit-appearance: none;
   }
 
   .form-group{
@@ -987,9 +988,7 @@
   }
 
   .error{
-    -webkit-box-shadow: 0px 0px 1px 1px $red;
-    -moz-box-shadow: 0px 0px 1px 1px $red;
-    box-shadow: 0px 0px 1px 1px $red;
+    border: solid 1px $red;
   }
 
   .tool-tip{
@@ -1319,6 +1318,9 @@
         margin-left: 10px;
       }
     }
+  }
+  .text-box{
+    -webkit-appearance: none;
   }
 }
 
