@@ -23,6 +23,12 @@ body {
   padding: 0;
   margin: 0;
 }
+#content-wrapper {
+  .side-part, .content .param, .content .small-title {
+    color: black;
+  }
+
+}
 
 .preview-boxes{
   div.regular-box, div.small-box, div.regular-small-box{

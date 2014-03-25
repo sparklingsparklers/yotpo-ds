@@ -1,12 +1,15 @@
 /* Yotpo */
 
 
-.yotpo, .yotpo div, .yotpo span, .yotpo-testimonails span, .yotpo p, .yotpo a, .yotpo img, .yotpo i, .yotpo strong, .yotpo sup, .yotpo ul, .yotpo li, .yotpo form, .yotpo label {
-  font-family: Verdana;
-  font-size: 14px;
-  line-height: 17px;
-  color: $gray;
-
+.yotpo, .yotpo {
+  div, span, p, a, img, i, strong, sup, ul, li, form, label {
+    font-family: Verdana;
+    font-size: 14px;
+    line-height: 17px;
+    color: $gray;  
+  }
+}
+.yotpo {
 /* Colors */
 
   .color-blue {
@@ -217,7 +220,7 @@
 
 .yotpo {
   .icon {
-    font-family: 'yotpo-widget-font';
+    font-family: 'yotpo-widget-font'!important;
     speak: none;
     font-size: 17.5px;
     font-style: normal;
