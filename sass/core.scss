@@ -1,9 +1,11 @@
 /* Yotpo */
 
-.yotpo {
+
+.yotpo, .yotpo div, .yotpo span, .yotpo-testimonails span, .yotpo p, .yotpo a, .yotpo img, .yotpo i, .yotpo strong, .yotpo sup, .yotpo ul, .yotpo li, .yotpo form, .yotpo label {
   font-family: Verdana;
   font-size: 14px;
   line-height: 17px;
+  color: $gray;
 
 /* Colors */
 
@@ -60,6 +62,9 @@
   }
   .font-color-blue {
     color: $blue;
+  }
+  .font-color-black {
+    color: $black;
   }
   .font-color-orange {
     color: $orange;
@@ -331,7 +336,7 @@
 
   /* Buttons */
 
-  .default-button {
+  .yotpo-default-button {
     display: inline-block;
     text-overflow: ellipsis;
     border: none;
@@ -371,6 +376,10 @@
     padding: 6px 11px;
     .icon {
       font-size: 19px;
+      color: $white;
+    }
+    .icon-button-text {
+      color: $white;
     }
 
     &:hover{
@@ -887,15 +896,14 @@
 
       .stars-and-name{
         margin-bottom: 3px;
-        color: $yellow;
         padding-top: 8px;
-
         .user-name {
           float: left;
           margin-right: 5px;
         }
         .icon {
           float: left;
+          color: $yellow;
         }
 
         .icon-empty-star:hover:before {
