@@ -391,7 +391,7 @@
     display: inline-block;
     padding: 10px 15px;
     .icon {
-      font-size: 256px;
+      font-size: 25px;
     }
 
     &:hover{
@@ -854,16 +854,14 @@
         }
 
         .icon-circle-checkmark{
-          font-size: 14px;
           position: absolute;
           left: 31px;
-          top: 29px;
-          color: #E5B026;
-          background: white;
+          top: 28px;
+          background: $white;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
-          width: 14.3px;
+          width: 18.3px;
         }
       }
       &.yotpo-verified-user {
@@ -889,7 +887,15 @@
       .stars-and-name{
         margin-bottom: 3px;
         color: $yellow;
-        padding-top: 5px;
+        padding-top: 8px;
+
+        .user-name {
+          float: left;
+          margin-right: 5px;
+        }
+        .icon {
+          float: left;
+        }
 
         .icon-empty-star:hover:before {
            content: "\e60e";
