@@ -1,15 +1,22 @@
-function fadeIn(target){
+var fadeDelay = '200';
 
+function fadeIn(target, delay){
+	$delay = delay || fadeDelay;
 	addClass(target, 'yotpo-animation-fade');
+	addTransitionDelay(target, $delay);
 	target.style.opacity = 0;
+	target.style.display = 'inline-block';
 	target.style.display='inherit';
 	setTimeout(function() {target.style.opacity = 1;}, 1);
 }
 
-function fadeOut(target){
-
+function fadeOut(target, delay){
+	$delay = delay || fadeDelay;
 	addClass(target, 'yotpo-animation-fade');
+	addTransitionDelay(target, $delay);
 	setTimeout(function() {target.style.opacity = 0;}, 1);
+	setTimeout(function() {target.style.display = 'none';}, $delay);
+	
 }
 
 function slideDown(target){
@@ -191,4 +198,14 @@ function removeClass(el, className){
 function addClass(el, className){
 	if(!el.classList.contains(className))
 		el.className += " " + className;
+}
+
+function addTransitionDelay(elm, time) {
+	$time = (time/1000) + 's'
+	elm.style['-webkit-transition-duration'] = time;
+    elm.style['-webkit-transition-duration'] = time;
+   	elm.style['-moz-transition-duration'] = time;
+    elm.style['-o-transition-duration'] = time;
+    elm.style['-ms-transition-duration'] = time;
+    elm.style['transition-duration'] = time;
 }

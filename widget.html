@@ -31,7 +31,7 @@
           <span class="icon icon-star pull-left"></span>
           <span class="icon icon-empty-star pull-left"></span>
           <span class="sum-reviews"><span class="text-xl font-bold">4.2</span><span class="font-color-gray based-on">based on 14 verified buyers</span></span>
-          <div class="default-button icon-btn pull-right yotpo-hidden-mobile" onclick="showWriteReview(this, 'yotpo-main-widget', '.write-review');">
+          <div class="default-button icon-btn pull-right yotpo-hidden-mobile" onclick="showWriteReview(this, 'yotpo-main-widget', '.write-review-wrapper');">
             <span class="icon icon-write"></span>
             <span class="icon-button-text">write a review</span>
           </div>
@@ -39,60 +39,61 @@
       </div>
       <!-- End Yotpo Bottom line -->        
       <!-- Write a review -->
-      <div class="write-review regular-box">
-        <div class="yotpo-header">
-          <span class="profile-wrapper pull-left"><span class="icon icon-profile-picture"></span></span>
-          <span class="stars-wrapper">
-            <span class="icon icon-empty-star pull-left"></span>
-            <span class="icon icon-empty-star pull-left"></span>
-            <span class="icon icon-empty-star pull-left"></span>
-            <span class="icon icon-empty-star pull-left"></span>
-            <span class="icon icon-empty-star pull-left"></span>  
-          </span>
-        </div>
-        <div class="write-review-content">
-          <div class="form-group">
-            <div class="form-element">
-              <label class="label">Title:</label>
-              <input class="input" onkeyup="showWriteReviewFooter(this, 'write-review', '.yotpo-footer');"></input>
-            </div>
-            <div class="form-element">
-              <label class="label">Review:</label>
-              <textarea class="input text-box" onkeyup="showWriteReviewFooter(this, 'write-review', '.yotpo-footer');"></textarea>
-            </div>
+      <div class="write-review-wrapper">
+        <div class="write-review regular-box">
+          <div class="yotpo-header">
+            <span class="profile-wrapper pull-left"><span class="icon icon-profile-picture"></span></span>
+            <span class="stars-wrapper">
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>
+              <span class="icon icon-empty-star pull-left"></span>  
+            </span>
           </div>
-        </div>
-        <div class="yotpo-footer yotpo-animation-opacity">
-          <div class="socialize-wrapper">
-            <div class="socialize">
-              <label class="label">Connect with:</label>
-              <div>
-                <div class="default-button icon-btn" ><span class="icon icon-linkdein pull-left"></span></div>
-                <div class="default-button icon-btn" ><span class="icon icon-googleplus pull-left"></span></div>
-                <div class="default-button icon-btn" ><span class="icon icon-twitter pull-left"></span></div>
-                <div class="default-button icon-btn" ><span class="icon icon-facebook pull-left"></span></div>
-              </div>
-            </div>
-            <div class="yotpo-or">
-                -OR-
-              </div>
-            </div>
-            <div class="connect-wrapper">
+          <div class="write-review-content">
+            <div class="form-group">
               <div class="form-element">
-                    <label class="label">Use your name:</label>
-                    <input class="input" onkeyup="showMailInput(this, 'yotpo-footer', '.email-input');"></input>
+                <label class="label">Title:</label>
+                <input class="input" onkeyup="showWriteReviewFooter(this, 'write-review', '.yotpo-footer');"></input>
               </div>
-              <div class="form-element email-input">
-                    <label class="label">Email:</label>
-                    <input class="input"</input>
+              <div class="form-element">
+                <label class="label">Review:</label>
+                <textarea class="input text-box" onkeyup="showWriteReviewFooter(this, 'write-review', '.yotpo-footer');"></textarea>
               </div>
-              <input type="button" class="default-button primary-color-btn submit disabled" value="submit"></input>
-              <div class="clr"></div>
             </div>
           </div>
-          <div class="clr"></div>
-        </div>
-
+          <div class="yotpo-footer yotpo-animation-opacity">
+            <div class="socialize-wrapper">
+              <div class="socialize">
+                <label class="label">Connect with:</label>
+                <div>
+                  <div class="default-button icon-btn" ><span class="icon icon-linkdein pull-left"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-googleplus pull-left"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-twitter pull-left"></span></div>
+                  <div class="default-button icon-btn" ><span class="icon icon-facebook pull-left"></span></div>
+                </div>
+              </div>
+              <div class="yotpo-or">
+                  -OR-
+                </div>
+              </div>
+              <div class="connect-wrapper">
+                <div class="form-element">
+                      <label class="label">Use your name:</label>
+                      <input class="input" onkeyup="showMailInput(this, 'yotpo-footer', '.email-input');"></input>
+                </div>
+                <div class="form-element email-input">
+                      <label class="label">Email:</label>
+                      <input class="input"</input>
+                </div>
+                <input type="button" class="default-button primary-color-btn submit disabled" value="submit"></input>
+                <div class="clr"></div>
+              </div>
+            </div>
+            <div class="clr"></div>
+          </div>
+      </div>
       <!-- End Write a review -->
       <!-- Nav Bar -->
       <div class="small-box yotpo-nav">
@@ -116,7 +117,7 @@
           </div>
           <div class="yotpo-dropdown-wrapper mobile-collapse">
               <div class="yotpo-menu-mobile-collapse yotpo-hidden-mobile">
-                <div class="yotpo-nav-dropdown-category yotpo-visible-mobile" onclick="showWriteReview(this, 'yotpo-main-widget', '.write-review');">
+                <div class="yotpo-nav-dropdown-category yotpo-visible-mobile" onclick="showWriteReview(this, 'yotpo-main-widget', '.write-review-wrapper');">
                   <span class="icon icon-write"></span>
                   <span class="label">write a review</span>
                 </div>
@@ -195,22 +196,26 @@
 
 		      <div class="yotpo-footer">
 		        <div class="footer-actions">
-
-		          <span class="action" onclick="showShareOptions(this, 'footer-actions', '.share-options');">
+		          <span class="yotpo-action" onclick="showShareOptions(this, 'footer-actions', '.share-options');">
 		            <span class="icon icon-share"></span>
 		            <label class="label">share</label>
 		            <span class="icon icon-seperator"></span>
 		          </span>
 		          <span class="share-options-wrapper">
 		            <span class="share-options">
-		              <label class="label action">email</label>
+		              <label class="label yotpo-action">email</label>
 		              <span class="icon icon-dot"></span>
-		              <label class="label action">facebook</label>
+		              <label class="label yotpo-action">facebook</label>
 		              <span class="icon icon-dot"></span>
-		              <label class="label action">twitter</label>
+		              <label class="label yotpo-action">twitter</label>
 		              <span class="icon icon-seperator"></span>  
 		            </span>
 		          </span>
+              <span class="yotpo-action" onclick="">
+                <span class="icon icon-share"></span>
+                <label class="label">Comments</label>
+                <span class="icon icon-seperator"></span>
+              </span>
 		          
 		        </div>
 
@@ -266,18 +271,18 @@
           <div class="yotpo-footer">
             <div class="footer-actions">
 
-              <span class="action" onclick="showShareOptions(this, 'footer-actions', '.share-options');">
+              <span class="yotpo-action" onclick="showShareOptions(this, 'footer-actions', '.share-options');">
                 <span class="icon icon-share"></span>
                 <label class="label">share</label>
                 <span class="icon icon-seperator"></span>
               </span>
               <span class="share-options-wrapper">
                 <span class="share-options">
-                  <label class="label action">email</label>
+                  <label class="label yotpo-action">email</label>
                   <span class="icon icon-dot"></span>
-                  <label class="label action">facebook</label>
+                  <label class="label yotpo-action">facebook</label>
                   <span class="icon icon-dot"></span>
-                  <label class="label action">twitter</label>
+                  <label class="label yotpo-action">twitter</label>
                   <span class="icon icon-seperator"></span>  
                 </span>
               </span>
@@ -322,18 +327,18 @@
           <div class="yotpo-footer">
             <div class="footer-actions">
 
-              <span class="action" onclick="showShareOptions(this, 'footer-actions', '.share-options');">
+              <span class="yotpo-action" onclick="showShareOptions(this, 'footer-actions', '.share-options');">
                 <span class="icon icon-share"></span>
                 <label class="label">share</label>
                 <span class="icon icon-seperator"></span>
               </span>
               <span class="share-options-wrapper">
                 <span class="share-options">
-                  <label class="label action">email</label>
+                  <label class="label yotpo-action">email</label>
                   <span class="icon icon-dot"></span>
-                  <label class="label action">facebook</label>
+                  <label class="label yotpo-action">facebook</label>
                   <span class="icon icon-dot"></span>
-                  <label class="label action">twitter</label>
+                  <label class="label yotpo-action">twitter</label>
                   <span class="icon icon-seperator"></span>  
                 </span>
               </span>

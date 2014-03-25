@@ -720,10 +720,11 @@
 
 
   /*WRITE A REVIEW*/
-
-  .write-review{
+  .write-review-wrapper {
     display: none;
     overflow: hidden;
+  }
+  .write-review{
     .write-review-content{
 
     }
@@ -956,10 +957,10 @@
       }
 
       .share-options{
-        opacity: 0;
+        display: none;
       }
 
-      .action{
+      .yotpo-action{
 
         &:hover{
           color:$primary;
