@@ -532,7 +532,7 @@
 .yotpo .label {
   font-size: 13px;
   color: #a2a2a2;
-  padding: 20px 7px 15px;
+  padding: 20px 7px 15px 0px;
   /*max-width: 164px;*/
   min-width: 100px;
   text-align: start;
