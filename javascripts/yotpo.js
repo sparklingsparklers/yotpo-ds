@@ -15,8 +15,7 @@ function fadeOut(target, delay){
 	addClass(target, 'yotpo-animation-fade');
 	addTransitionDelay(target, $delay);
 	setTimeout(function() {target.style.opacity = 0;}, 1);
-	setTimeout(function() {target.style.display = 'none';}, $delay);
-	
+	setTimeout(function() {target.style.display = 'none';}, $delay);	
 }
 
 function slideDown(target){
@@ -51,6 +50,16 @@ function slideUp(target){
 
 	setTimeout(function() {target.style.display = "none";}, 1000);
 	setTimeout(function() {target.style.height = oldH;}, 1000);	
+}
+
+function showToolTip(el, parentClass, targetClass) {
+	var target = parents(el, parentClass).querySelectorAll(targetClass)[0];
+	fadeIn(target);
+}
+
+function hideToolTip(el, parentClass, targetClass) {
+	var target = parents(el, parentClass).querySelectorAll(targetClass)[0];
+	fadeOut(target);
 }
 
 function showWriteReviewFooter(el, parentClass, targetClass){
