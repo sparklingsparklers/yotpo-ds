@@ -212,7 +212,7 @@
   .icon {
     font-family: 'yotpo-widget-font';
     speak: none;
-    font-size: 17px;
+    font-size: 17.5px;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -378,7 +378,7 @@
   .icon-btn-small {
     display: inline-block;
     .icon {
-      font-size: 14px;
+      
     }
 
     &:hover{
@@ -389,7 +389,7 @@
     display: inline-block;
     padding: 10px 15px;
     .icon {
-      font-size: 26px;
+      font-size: 256px;
     }
 
     &:hover{
@@ -533,7 +533,7 @@
     margin-top: 28px;
     .comment-box {
       margin-left: 22px;
-      padding-top: 28px;
+      padding: 28px 0;
     }
   }
 
@@ -848,6 +848,7 @@
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
+          width: 14.3px;
         }
       }
       &.yotpo-verified-user {
@@ -871,8 +872,9 @@
       }*/
 
       .stars-and-name{
-        margin-bottom: 11px;
-        color: #FAE123;
+        margin-bottom: 3px;
+        color: $yellow;
+        padding-top: 5px;
 
         .icon-empty-star:hover:before {
            content: "\e60e";
@@ -1199,7 +1201,7 @@
         }
       }
 
-      .yotpo-review{
+      .yotpo-review, .yotpo-comment {
         .yotpo-header{
           .header-actions{
             display: none;
@@ -1350,20 +1352,20 @@
 
 .yotpo {
   .yotpo-animation-fade{
-    -webkit-transition: opacity 0.7s ease-in;
-    -moz-transition: opacity 0.7s ease-in;
-    -ms-transition: opacity 0.7s ease-in;
-    -o-transition: opacity 0.7s ease-in;
-    transition: opacity 0.7s ease-in;
+    -webkit-transition: opacity 0.2s ease-in;
+    -moz-transition:    opacity 0.2s ease-in;
+    -ms-transition:     opacity 0.2s ease-in;
+    -o-transition:      opacity 0.2s ease-in;
+    transition:         opacity 0.2s ease-in;
     overflow: hidden;
   }
 
   .yotpo-animation-slide{
-    -webkit-transition: height 1.1s ease-in-out;
-    -moz-transition: height 1.1s ease-in-out;
-    -ms-transition: height 1.1s ease-in-out;
-    -o-transition: height 1.1s ease-in-out;
-    transition: height 1.1s ease-in-out;
+    -webkit-transition:     height 1.1s ease-in-out;
+    -moz-transition:        height 1.1s ease-in-out;
+    -ms-transition:         height 1.1s ease-in-out;
+    -o-transition:          height 1.1s ease-in-out;
+    transition:             height 1.1s ease-in-out;
   }
 }
 
