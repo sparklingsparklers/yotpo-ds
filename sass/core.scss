@@ -869,6 +869,7 @@
         }
 
         .icon-circle-checkmark{
+          display: none;
           position: absolute;
           left: 31px;
           top: 28px;
@@ -881,16 +882,19 @@
       }
       &.yotpo-verified-user {
         .icon-circle-checkmark{
+          display: inline-block;
           color: $blue; 
         }
       }
       &.yotpo-verified-buyer {
         .icon-circle-checkmark{
+          display: inline-block;
           color: $green;
         }
       }
       &.yotpo-store-owner {
         .icon-circle-checkmark{
+          display: inline-block;
           color: $orange; 
         }
       }
