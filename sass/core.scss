@@ -866,6 +866,9 @@
           left: 14px;
           font-size: 20px;
           color: $white;
+          span.icon {
+            color: $white;
+          }
         }
 
         .icon-circle-checkmark{
