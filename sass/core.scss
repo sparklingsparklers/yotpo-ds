@@ -904,6 +904,14 @@
           display: inline-block;
           color: $orange; 
         }
+        .yotpo-store-avatar {
+          background: transparent;
+        }
+        img.yotpo-store-avatar {
+          width: 100%;
+          height: auto;
+          vertical-align: middle;
+        }
       }
 
       /*.icon-flag{
