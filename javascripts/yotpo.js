@@ -201,7 +201,8 @@ function fadeElement(el){
 }
 
 function removeClass(el, className){
-	el.className.replace(/\className\b/,'');
+	// el.className.replace(/\className\b/,'');
+	el.className = el.className.replace(new RegExp("(?:^|\\s+)" + className + "(?:\\s+|$)", "g"), "");
 }
 
 function addClass(el, className){
@@ -217,4 +218,16 @@ function addTransitionDelay(elm, time) {
     elm.style['-o-transition-duration'] = time;
     elm.style['-ms-transition-duration'] = time;
     elm.style['transition-duration'] = time;
+}
+
+function showTestimonials() {
+	var modal = document.querySelectorAll('.yotpo-modal')[0];
+	modal.style.display = 'block';
+	setTimeout(function(){ addClass(modal, 'yotpo-modal-active');},10);
+}
+function hideTestimonials(delay){
+	$delay = delay || fadeDelay;
+	var modal = document.querySelectorAll('.yotpo-modal')[0];
+	removeClass(modal, 'yotpo-modal-active');
+	setTimeout(function() {modal.style.display="none";}, $delay);
 }
