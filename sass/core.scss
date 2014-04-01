@@ -1066,6 +1066,7 @@
     border: solid 1px $gray-light;
     width: 223px;
     background: $white;
+    z-index: 20;
 
     .tool-tip-header{
       margin-bottom: 15px;
