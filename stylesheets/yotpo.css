@@ -887,7 +887,7 @@
   display: none;
 }
 /* line 825, ../sass/core.scss */
-.yotpo .write-review .submit {
+.yotpo .write-review .yotpo-submit {
   display: inline-block;
   margin-bottom: 10px;
   float: right;
