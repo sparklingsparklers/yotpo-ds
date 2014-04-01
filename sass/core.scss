@@ -584,7 +584,7 @@
       }
 
       .yotpo-nav-tab{
-         a {
+         span {
           display: inline;
           margin: 0;
           padding: 0;
@@ -595,15 +595,16 @@
           text-align: -webkit-match-parent;
           color: $gray-darker;
         }
-        &:hover{
-          a{
+        &:hover {
+          cursor: pointer;
+          span {
             color: $primary-l1;
           }
         }
 
         &.active{
           font-weight: bold;
-          a {
+          span {
             color: $primary;
           }
           .yotpo-nav-wrapper {
@@ -620,7 +621,7 @@
     li{
       float: left;
       /*text-transform: uppercase;*/
-      padding-right: 18px;
+      margin-right: 18px;
       font-size: 15px;
       font-family: Verdana;
       display: list-item;
@@ -633,6 +634,15 @@
         overflow: hidden;
         min-width: 20px;
         max-width: 250px;
+      }
+    }
+  }
+
+  .yotpo-nav-content {
+    > * {
+      display: none;
+      &.active {
+        display: block;
       }
     }
   }
@@ -824,7 +834,7 @@
       }
     }
 
-    .yotpo-submit{
+    .submit{
       display: inline-block;
       margin-bottom: 10px;
       float: right;
