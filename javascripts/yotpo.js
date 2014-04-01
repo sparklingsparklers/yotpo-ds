@@ -72,7 +72,7 @@ function showMailInput(el, parentClass, targetClass){
 	var target = parents(el, parentClass).querySelectorAll(targetClass)[0];
 	fadeIn(target);
 
-	var submitBtn = parents(el,'yotpo-footer').querySelectorAll('.submit')[0];
+	var submitBtn = parents(el,'yotpo-footer').querySelectorAll('.yotpo-submit')[0];
 	submitBtn.style.marginTop = '15px';
 	submitBtn.classList.remove('disabled');
 }
