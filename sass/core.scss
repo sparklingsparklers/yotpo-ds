@@ -1360,7 +1360,7 @@
   } 
   .yotpo-modal-dialog{
     height: 80%;
-    max-height: 500px;
+    max-height: 540px;
     min-height: 149px;
     width: 64%;
     margin: 0 auto;
@@ -1373,8 +1373,8 @@
     top: -170%;
     
 
-    border: solid 1px $white;
-    background: $white;
+    /*border: solid 1px $white;*/
+    /*background: $white;*/
     -webkit-transition: top 0.7s ease-in-out 0.1s;
     -moz-transition:    top 0.7s ease-in-out 0.1s;
     -ms-transition:     top 0.7s ease-in-out 0.1s;
@@ -1385,13 +1385,23 @@
       top: 15%;
     }
   }
+  .yotpo-modal-logo{
+    span:NOT(.icon-yotpo-logo){
+      color: white;
+      position: relative;
+      bottom: 3px;
+    }
+    .icon-yotpo-logo{
+      color: white;
+    }
+  }
   .yotpo-modal-header{
     height: 90px;
     background: $primary;
 
     .icon-btn-small{
       position: absolute;
-      top: 5px;
+      top: 50px;
       right: 5px;
     }
 
@@ -1414,10 +1424,11 @@
   }
   .yotpo-modal-bottom-line{
     height: 37px;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding: 10px 0px;
+    /*margin-right: 10px;*/
+    /*margin-left: 10px;*/
+    padding: 10px 10px;
     border-bottom: solid 1px $gray-light;
+    background: $white;
     input{
       float: right;
     }
@@ -1434,22 +1445,33 @@
       }
     }
   }
-  .yotpo-modal-navigation{
-    height: 24px;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    border-bottom: solid 1px $gray-light;
+  .yotpo-modal-wrapper{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background: $white;
+
+    .yotpo-modal-navigation{
+      height: 24px;
+      /*margin-right: 10px;
+      margin-left: 10px;
+      padding-top: 10px;*/
+      padding-bottom: 0px;
+      border-bottom: solid 1px $gray-light;
+      background: $white;
+    }  
   }
+  
   .yotpo-modal-body{
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     max-height: 300px;
     min-height: 50px;
     height: auto;
     overflow-x: hidden;
     overflow-y: scroll;
     text-align: center;
+    background: $white;
+    height: 100%;
 
     .yotpo-review{
       width: 270px;
