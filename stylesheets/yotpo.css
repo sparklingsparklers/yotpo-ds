@@ -2,7 +2,7 @@
 /* Yotpo */
 /* line 2, ../sass/core.scss */
 .yotpo-display-wrapper {
-  display: block !important;
+  display: inline-block !important;
 }
 
 /* line 7, ../sass/core.scss */
