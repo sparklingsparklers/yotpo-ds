@@ -1192,11 +1192,11 @@
   padding-left: 10px;
 }
 /* line 1139, ../sass/core.scss */
-.yotpo.bottomLine .yotpo-bottomline .yotpo-stars, .yotpo.bottomline .yotpo-bottomline .yotpo-stars {
+.yotpo.bottomLine .yotpo-bottomline .yotpo-stars, .yotpo.bottomline .yotpo-bottomline .yotpo-stars, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .yotpo-stars {
   padding: 0;
 }
 /* line 1142, ../sass/core.scss */
-.yotpo.bottomLine .yotpo-bottomline .icon-star, .yotpo.bottomLine .yotpo-bottomline .icon-half-star, .yotpo.bottomLine .yotpo-bottomline .icon-empty-star, .yotpo.bottomline .yotpo-bottomline .icon-star, .yotpo.bottomline .yotpo-bottomline .icon-half-star, .yotpo.bottomline .yotpo-bottomline .icon-empty-star {
+.yotpo.bottomLine .yotpo-bottomline .icon-star, .yotpo.bottomLine .yotpo-bottomline .icon-half-star, .yotpo.bottomLine .yotpo-bottomline .icon-empty-star, .yotpo.bottomline .yotpo-bottomline .icon-star, .yotpo.bottomline .yotpo-bottomline .icon-half-star, .yotpo.bottomline .yotpo-bottomline .icon-empty-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .icon-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .icon-half-star, .yotpo .yotpo-modal-bottom-line .yotpo-bottomline .icon-empty-star {
   font-size: 17.5px;
 }
 /* line 1152, ../sass/core.scss */
