@@ -1113,7 +1113,7 @@
       }
     }
   }
-    
+
   .yotpo-bottomline {
     .yotpo-stars {
       padding-right: 10px;
@@ -1133,6 +1133,14 @@
       vertical-align: top;
       padding-left: 10px;
     }
+  }
+  .bottomLine {
+    .yotpo-bottomline {
+      .icon-star, .icon-half-star, .icon-empty-star {
+        font-size: 17.5px;
+      }
+    }
+
   }
 
   /* End Widget Stracture */
