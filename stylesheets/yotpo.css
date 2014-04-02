@@ -657,7 +657,7 @@
   text-transform: capitalize;
 }
 /* line 587, ../sass/core.scss */
-.yotpo .yotpo-nav ul .yotpo-nav-tab a {
+.yotpo .yotpo-nav ul .yotpo-nav-tab span {
   display: inline;
   margin: 0;
   padding: 0;
@@ -669,7 +669,7 @@
   color: #4f4f4f;
 }
 /* line 599, ../sass/core.scss */
-.yotpo .yotpo-nav ul .yotpo-nav-tab:hover a {
+.yotpo .yotpo-nav ul .yotpo-nav-tab:hover span {
   color: #599dd2;
 }
 /* line 604, ../sass/core.scss */
@@ -677,7 +677,7 @@
   font-weight: bold;
 }
 /* line 606, ../sass/core.scss */
-.yotpo .yotpo-nav ul .yotpo-nav-tab.active a {
+.yotpo .yotpo-nav ul .yotpo-nav-tab.active span {
   color: #3085c7;
 }
 /* line 609, ../sass/core.scss */
@@ -1562,7 +1562,7 @@
   padding-right: 0;
 }
 /* line 1521, ../sass/core.scss */
-.yotpo.yotpo-small .nav ul .nav-tab a.nav-tab-sum {
+.yotpo.yotpo-small .nav ul .nav-tab span.nav-tab-sum {
   display: none;
 }
 /* line 1530, ../sass/core.scss */

@@ -584,7 +584,7 @@
       }
 
       .yotpo-nav-tab{
-         a {
+         span {
           display: inline;
           margin: 0;
           padding: 0;
@@ -596,14 +596,14 @@
           color: $gray-darker;
         }
         &:hover{
-          a{
+          span {
             color: $primary-l1;
           }
         }
 
         &.active{
           font-weight: bold;
-          a {
+          span {
             color: $primary;
           }
           .yotpo-nav-wrapper {
@@ -1519,7 +1519,7 @@
   .nav{
     ul{
       .nav-tab{
-        a.nav-tab-sum{
+        span.nav-tab-sum{
           display: none;
         }
       }
