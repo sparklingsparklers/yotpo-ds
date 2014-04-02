@@ -1227,13 +1227,14 @@
   /* Testimonials Button */
   .yotpo-testimonials-btn {
     position: fixed;
-    padding: 15px;
-    color: $white;
+    padding: 15px 20px;
     background-color: $primary !important;
     text-transform: uppercase;
     &:hover {
-      color: $white;
       background-color: $primary !important;
+    }
+    span {
+      color: $white;
     }
     &[data-position=left] {
       -webkit-transform-origin: 0% 50%;
@@ -1260,6 +1261,33 @@
       transform-origin: 100% 50%;
       transform: rotate(90deg) translate(50%, 50%);
       right: 0;
+    }
+    &[data-position=horizontal] {
+      bottom: 0;
+    }
+    &.use-image {
+      width: 52px;
+      height: 140px;
+      padding: 0;
+      -webkit-transform-origin: initial;
+      -webkit-transform: initial;
+      -moz-transform-origin: initial;
+      -moz-transform: initial;
+      -ms-transform-origin: initial;
+      -ms-transform: initial;
+      -o-transform-origin: initial;
+      -o-transform: initial;
+      transform-origin: initial;
+      transform: initial;
+      &[data-position=left] {
+        background: url("/assets/tab_left.jpg") no-repeat !important;
+      }
+      &[data-position=right] {
+        background: url("/assets/tab_right.jpg") no-repeat !important;
+      }
+      span {
+        display: none;
+      }
     }
   }
   /* End Testimonials Button */
