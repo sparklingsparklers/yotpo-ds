@@ -596,6 +596,7 @@
           color: $gray-darker;
         }
         &:hover{
+          cursor: pointer;
           span {
             color: $primary-l1;
           }
