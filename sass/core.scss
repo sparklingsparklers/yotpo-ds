@@ -1134,7 +1134,7 @@
       padding-left: 10px;
     }
   }
-  .bottomLine {
+  &.bottomLine, &.bottomline {
     .yotpo-bottomline {
       .icon-star, .icon-half-star, .icon-empty-star {
         font-size: 17.5px;

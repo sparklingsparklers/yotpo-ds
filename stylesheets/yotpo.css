@@ -1192,7 +1192,7 @@
   padding-left: 10px;
 }
 /* line 1139, ../sass/core.scss */
-.yotpo .bottomLine .yotpo-bottomline .icon-star, .yotpo .bottomLine .yotpo-bottomline .icon-half-star, .yotpo .bottomLine .yotpo-bottomline .icon-empty-star {
+.yotpo.bottomLine .yotpo-bottomline .icon-star, .yotpo.bottomLine .yotpo-bottomline .icon-half-star, .yotpo.bottomLine .yotpo-bottomline .icon-empty-star, .yotpo.bottomline .yotpo-bottomline .icon-star, .yotpo.bottomline .yotpo-bottomline .icon-half-star, .yotpo.bottomline .yotpo-bottomline .icon-empty-star {
   font-size: 17.5px;
 }
 /* line 1149, ../sass/core.scss */
