@@ -638,6 +638,15 @@
     }
   }
 
+  .yotpo-nav-content {
+    > div {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+
   .yotpo-dropdown-wrapper {
     display: inline-block;
     float: right;  
