@@ -1374,6 +1374,7 @@
     } 
   } 
   .yotpo-modal-dialog{
+    display: table;
     height: 80%;
     max-height: 550px;
     min-height: 149px;
@@ -1445,16 +1446,23 @@
     background: $white;
   }
 
-  .yotpo-modal-body{
-    max-height: 370px;
-    min-height: 50px;
-    height: auto;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background: $white;
+  .modal-body-wrapper {
+    display: table-row;
+    position: relative;
+    overflow: auto;
     height: 100%;
 
+    .yotpo-modal-body{
+      position: relative;
+      max-height: 370px;
+      min-height: 50px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      background: $white;
+      height: 100%;
+    }
   }
+
   .btn-testimonials{
     text-transform: uppercase;
   }
