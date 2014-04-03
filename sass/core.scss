@@ -1037,6 +1037,15 @@
         margin-top: 20px;
       }
     }
+    .yotpo-read-more {
+      white-space: nowrap;
+      color: $primary;
+      cursor: pointer;
+    }
+    .rest-content-collapsed {
+      display: none;
+      color: inherit;
+    }
   }
 
   .error-box{
