@@ -964,8 +964,8 @@
         .yotpo-tool-tip {
           opacity: 1;
         }  
-      };
-      
+      }
+
     }
 
     .yotpo-main{
@@ -1045,6 +1045,10 @@
     .rest-content-collapsed {
       display: none;
       color: inherit;
+    }
+
+    .comments-box {
+      display: none;
     }
   }
 
