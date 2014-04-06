@@ -122,6 +122,11 @@
   .clr {
     clear: both;
   }
+  .clear-box:after {
+    content: " ";
+    clear: both;
+    visibility: hidden;
+  }
   .hidden {
     display: none !important;
   }
@@ -939,24 +944,12 @@
         margin-left: 11px;
       }*/
 
-      .stars-and-name{
+      .user-name {
         margin-bottom: 3px;
         padding-top: 8px;
-        .user-name {
-          float: left;
-          margin-right: 5px;
-        }
-        .icon {
-          float: left;
-          color: $yellow;
-        }
-
-        .icon-empty-star:hover:before {
-           content: "\e60e";
-        }
-
+        float: left;
+        margin-right: 5px;
       }
-
       .header-actions{
         float: right;
       }
@@ -964,7 +957,7 @@
         .yotpo-tool-tip {
           opacity: 1;
         }  
-      };
+      }
       
     }
 
@@ -973,9 +966,19 @@
       display: block;
       margin: 28px 0px;
 
-
+      .review-stars {
+        float: left;
+        display: inline-block;
+        padding-bottom: 15px;
+        margin-right: 10px;
+        .icon {
+          float: left;
+          color: $yellow;
+        }
+      }
       .content-title{
-        display: block;
+        display: inline-block;
+        float: left;
         color: $gray-darker;
         padding-bottom: 15px;
       }
