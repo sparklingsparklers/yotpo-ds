@@ -1466,11 +1466,13 @@
     position: relative;
     overflow: auto;
     height: 100%;
+    max-width: inherit;
 
     .yotpo-modal-body{
       position: relative;
       max-height: 370px;
       min-height: 50px;
+      max-width: inherit;
       overflow-x: hidden;
       overflow-y: scroll;
       background: $white;
