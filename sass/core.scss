@@ -1282,13 +1282,14 @@
   .yotpo-testimonials-btn {
     position: fixed;
     padding: 15px 20px;
-    background-color: $primary !important;
+    background-color: $testimonials-bg-color !important;
     text-transform: uppercase;
+    opacity: $testimonials-opacity;
     &:hover {
-      background-color: $primary-d1 !important;
+      background-color: $testimonials-bg-color !important;
     }
     span {
-      color: $white;
+      color: $testimonials-text-color;
     }
     &[data-position=left] {
       -webkit-transform-origin: 0% 50%;
