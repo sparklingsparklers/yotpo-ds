@@ -532,7 +532,7 @@
 
   /*Boxes*/
 
-  .regular-box , .small-box, .regular-small-box, .side-box {
+  .regular-box , .small-box, .regular-small-box, .popup-box-small, .popup-box-medium, .popup-box-large {
     border-bottom: 1px solid $gray-light;
     &.no-border {
       border-bottom: none;
@@ -563,8 +563,19 @@
     }
   }
 
-  .side-box {
-    padding: 0 10px;
+  .popup-box-small {
+    padding-top: 12px;
+    margin: 0 10px;
+  }
+
+  .popup-box-medium {
+    padding: 12px 0;
+    margin: 0 10px;
+  }
+
+  .popup-box-large {
+    padding-top: 12px;
+    padding-bottom: 5px;
   }
 
   /*End Boxes*/
@@ -1533,9 +1544,6 @@
       }
     }
   }
-  .yotpo-modal{
-    width: 80%;
-  }
 }
 
 .yotpo.yotpo-small {
@@ -1708,7 +1716,6 @@
     font-weight: normal;
     font-style: normal;
   }
-
  .yotpo {
   .form-group {
     label{
@@ -1723,6 +1730,20 @@
       float: left;
       margin: 0;
       padding: 0;
+    }
+  }
+  .yotpo-modal {
+      &.yotpo-modal-active {
+        .yotpo-modal-dialog {
+          width: 94%;
+          top: 2%;
+          max-height: 94%;
+        }
+      }
+    .modal-body-wrapper {
+      .yotpo-modal-body {
+        max-height: 100%;
+      }
     }
   }
  }
