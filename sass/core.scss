@@ -1112,7 +1112,9 @@
         position: absolute;
         top: 3px;
         right: 5px;
-        color: $white;
+        .icon {
+          color: $white;
+        }
       }
   }
 
@@ -1378,7 +1380,7 @@
 .yotpo {
   .yotpo-modal{
     position: fixed;
-    z-index: 800;
+    z-index: 10000;
     left: 0;
     top: 0;
     width: 100%;
