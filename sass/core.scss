@@ -508,6 +508,8 @@
     color: $gray-dark;
     padding: 0px 10px;
     border: solid 1px $gray-light;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -603,6 +605,8 @@
     border-color: rgba(0,39,59,.08);
     display: block;
     position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 
     ul{
@@ -759,6 +763,8 @@
       padding: 7px 9px 9px 9px;
       font-size: 12px;
       width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
 
       &:first-letter{
@@ -806,6 +812,8 @@
         text-align: center;
         padding-top: 6px;
         overflow: hidden;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
         .icon {
           font-size: 45px;
@@ -851,12 +859,16 @@
     .connect-wrapper {
       padding-left: 273px;
       width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
       .form-element {
         float: left;
         width: 50%;
         min-width: 162px;
         padding-right: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
         &:first-child {
           padding-right: 15px;
