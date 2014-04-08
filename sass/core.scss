@@ -378,7 +378,7 @@
     padding: 10px 15px; 
     background: $gray;
     color: $white;
-    height: inherit!important;
+    height: auto;
 
     &:hover {
       cursor: pointer;
