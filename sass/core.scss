@@ -257,7 +257,6 @@
     text-transform: none;
     line-height: 1;
     width: auto!important;
-    margin: auto!important;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -1625,6 +1624,9 @@
           padding-right: 0;
         }
       }
+    }
+    .icon {
+      margin: auto!important;
     }
   }
   .yotpo-review, .yotpo-comment {
