@@ -129,6 +129,10 @@
   }
   .hidden {
     display: none !important;
+    &.only-invisible {
+      display: block !important;
+      visibility: hidden;
+    }
   }
 
   .yotpo-hr {
