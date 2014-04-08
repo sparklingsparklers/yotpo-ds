@@ -164,10 +164,14 @@
   a {
     color: $primary;
     text-decoration: none;
+    .label {
+      cursor: pointer;
+    }
   }
   a:hover {
     color: $primary-l1;
   }
+
 
   ul{
     list-style: none!important;
@@ -374,6 +378,7 @@
     padding: 10px 15px; 
     background: $gray;
     color: $white;
+    height: inherit!important;
 
     &:hover {
       cursor: pointer;
@@ -1031,7 +1036,8 @@
         color: $gray-darker;
       }
       .product-link {
-        display:block;
+        display:none;
+        padding-bottom: 0;
         width: 100%;
       }
     }
@@ -1043,6 +1049,10 @@
       .footer-actions{
         display: inline-block;
         float: left;
+
+        .share-options-wrapper{
+          display: inline-block;
+        }
       }
 
       .icon-dot, .icon-seperator{
@@ -1084,7 +1094,6 @@
 
       .footer-additional-actions{
         display: none;
-        margin-top: 20px;
       }
     }
     .yotpo-read-more {
@@ -1557,6 +1566,11 @@
         overflow-y: scroll;
         background: $white;
         height: 100%;
+        .yotpo-main {
+          .product-link {
+            display:block;
+          }
+        }
       }
     }
 
@@ -1589,7 +1603,11 @@
       display:none;
     }
   }
-
+  .yotpo-main {
+    .product-link {
+      display:block;
+    }
+  }
 }
 
 
@@ -1602,6 +1620,13 @@
         &:first-child {
           padding-right: 0;
         }
+      }
+    }
+  }
+  .yotpo-review, .yotpo-comment {
+    .yotpo-footer{
+      .footer-actions{
+        margin-bottom: 20px;
       }
     }
   }
@@ -1667,21 +1692,17 @@
       .footer-actions{
         display: block;
         float: none;
-        .share-options{
-          display: inline-block;
-          /*margin-bottom: 20px;*/
+        margin-bottom: 20px;
         }
       }
       .helpful{
         float: right;
-        margin-top: 20px;
       }
       .footer-additional-actions{
         display: inline-block;
         float: left;
       }
     }
-  }
   .yotpo-nav {
     .transparent-color-btn {
       text-align: right;
