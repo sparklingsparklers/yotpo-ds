@@ -1,29 +1,29 @@
 /* DS */
-/* line 22, ../sass/ds.scss */
+/* line 23, ../sass/ds.scss */
 body {
   padding: 0;
   margin: 0;
 }
 
-/* line 27, ../sass/ds.scss */
+/* line 28, ../sass/ds.scss */
 #content-wrapper .side-part, #content-wrapper .content .param, #content-wrapper .content .small-title {
   color: black;
 }
 
-/* line 34, ../sass/ds.scss */
+/* line 35, ../sass/ds.scss */
 .preview-boxes div.regular-box, .preview-boxes div.small-box, .preview-boxes div.regular-small-box {
   border: solid 1px grey;
   background: #F0A3CC;
 }
 
-/* line 40, ../sass/ds.scss */
+/* line 41, ../sass/ds.scss */
 .inner-box {
   width: 100%;
   height: 40px;
   background: white;
 }
 
-/* line 46, ../sass/ds.scss */
+/* line 47, ../sass/ds.scss */
 #design-faker {
   background: url("../images/typography2.jpg") no-repeat;
   position: absolute;
@@ -36,7 +36,7 @@ body {
   display: none;
 }
 
-/* line 57, ../sass/ds.scss */
+/* line 58, ../sass/ds.scss */
 #content-wrapper {
   position: relative;
   max-width: 900px;
@@ -45,26 +45,26 @@ body {
   box-sizing: border-box;
 }
 
-/* line 64, ../sass/ds.scss */
+/* line 65, ../sass/ds.scss */
 .side-part {
   font-weight: bold;
   font-size: 17px;
   margin-top: 20px;
 }
 
-/* line 69, ../sass/ds.scss */
+/* line 70, ../sass/ds.scss */
 .content {
   margin: 20px 0 0 10%;
 }
 
-/* line 72, ../sass/ds.scss */
+/* line 73, ../sass/ds.scss */
 .content-full-length {
   margin: 0px;
   border-bottom: 1px solid;
   padding-bottom: 40px;
 }
 
-/* line 77, ../sass/ds.scss */
+/* line 78, ../sass/ds.scss */
 section {
   max-width: 755px;
   width: 100%;
@@ -74,7 +74,7 @@ section {
   margin-bottom: 30px;
 }
 
-/* line 86, ../sass/ds.scss */
+/* line 87, ../sass/ds.scss */
 h3 {
   font-family: Verdana;
   margin-bottom: 35px;
@@ -84,7 +84,7 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 94, ../sass/ds.scss */
+/* line 95, ../sass/ds.scss */
 .content ul {
   font-weight: light;
   list-style: none;
@@ -93,12 +93,12 @@ h3 {
   font-size: 15px;
 }
 
-/* line 101, ../sass/ds.scss */
+/* line 102, ../sass/ds.scss */
 bold {
   font-weight: bolder;
 }
 
-/* line 104, ../sass/ds.scss */
+/* line 105, ../sass/ds.scss */
 .exmple-box {
   border: 1px solid black;
   text-align: center;
@@ -107,18 +107,18 @@ bold {
   width: 100%;
 }
 
-/* line 111, ../sass/ds.scss */
+/* line 112, ../sass/ds.scss */
 .small-title {
   font-size: 12px;
   color: grey;
 }
 
-/* line 115, ../sass/ds.scss */
+/* line 116, ../sass/ds.scss */
 .clr {
   clear: both;
 }
 
-/* line 118, ../sass/ds.scss */
+/* line 119, ../sass/ds.scss */
 textarea.code-example {
   background: black !important;
   color: white;
@@ -129,12 +129,12 @@ textarea.code-example {
   max-width: 400px;
 }
 
-/* line 127, ../sass/ds.scss */
+/* line 128, ../sass/ds.scss */
 .color-list {
   list-style: none;
 }
 
-/* line 130, ../sass/ds.scss */
+/* line 131, ../sass/ds.scss */
 .color-item {
   width: 80px;
   text-align: center;
@@ -143,7 +143,7 @@ textarea.code-example {
   min-height: 140px;
 }
 
-/* line 138, ../sass/ds.scss */
+/* line 139, ../sass/ds.scss */
 .color-circle {
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -154,34 +154,34 @@ textarea.code-example {
   margin: 7px auto;
 }
 
-/* line 147, ../sass/ds.scss */
+/* line 148, ../sass/ds.scss */
 .color-circle.big {
   height: 55px;
   width: 55px;
 }
 
-/* line 152, ../sass/ds.scss */
+/* line 153, ../sass/ds.scss */
 .icon-holders {
   margin-left: 10%;
 }
-/* line 154, ../sass/ds.scss */
+/* line 155, ../sass/ds.scss */
 .icon-holders .icon-holder {
   margin-bottom: 8px;
   min-width: 276px;
   display: inline-block;
   margin-right: 60px;
 }
-/* line 159, ../sass/ds.scss */
+/* line 160, ../sass/ds.scss */
 .icon-holders .icon-holder .icon {
   margin-right: 10px;
 }
 
-/* line 165, ../sass/ds.scss */
+/* line 166, ../sass/ds.scss */
 .icons-buttons .icon-btn {
   margin-top: 5px;
 }
 
-/* line 171, ../sass/ds.scss */
+/* line 172, ../sass/ds.scss */
 .moblie-simulator {
   width: 200px;
   display: inline-block;
