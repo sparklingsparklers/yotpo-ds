@@ -334,7 +334,7 @@
   .icon-right-arrow:before {
     content: "\e611";
   }
-  .icon-linkdein:before {
+  .icon-linkedin:before {
     content: "\e612";
   }
   .icon-left-arrow:before {
@@ -378,6 +378,7 @@
     padding: 10px 15px; 
     background: $gray;
     color: $white;
+    height: inherit!important;
 
     &:hover {
       cursor: pointer;
@@ -1048,6 +1049,10 @@
       .footer-actions{
         display: inline-block;
         float: left;
+
+        .share-options-wrapper{
+          display: inline-block;
+        }
       }
 
       .icon-dot, .icon-seperator{
@@ -1089,7 +1094,6 @@
 
       .footer-additional-actions{
         display: none;
-        margin-top: 20px;
       }
     }
     .yotpo-read-more {
@@ -1612,6 +1616,13 @@
       }
     }
   }
+  .yotpo-review, .yotpo-comment {
+    .yotpo-footer{
+      .footer-actions{
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 .yotpo.yotpo-small {
@@ -1674,21 +1685,17 @@
       .footer-actions{
         display: block;
         float: none;
-        .share-options{
-          display: inline-block;
-          /*margin-bottom: 20px;*/
+        margin-bottom: 20px;
         }
       }
       .helpful{
         float: right;
-        margin-top: 20px;
       }
       .footer-additional-actions{
         display: inline-block;
         float: left;
       }
     }
-  }
   .yotpo-nav {
     .transparent-color-btn {
       text-align: right;
