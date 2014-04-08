@@ -981,8 +981,14 @@
       }
       .label-with-tooltip:hover {
         .yotpo-tool-tip {
+          .tool-tip-header, .tool-tip-content {
+            display:block;
+          }
           opacity: 1;
-        }  
+          height: auto;
+          padding: 20px;
+          border: solid 1px $gray-light;
+        }
       }
     }
 
@@ -1115,10 +1121,11 @@
   }
 
   .yotpo-tool-tip {
+    height: 0;
+    padding: 0px;
     position: absolute;
     opacity: 0;
-    padding: 20px;
-    border: solid 1px $gray-light;
+    border: none;
     width: 223px;
     background: $white;
     z-index: 20;
@@ -1132,7 +1139,7 @@
         color: $blue;
       }
       .header-green{
-        color: $green;      
+        color: $green;
       }
       .header-orange{
         color: $orange;
