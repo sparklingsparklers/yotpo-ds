@@ -1314,7 +1314,14 @@
     }
 
     .yotpo-thankyou-footer{
+      .yotpo-default-button {
+        padding: 6px 0;
+        vertical-align: top;
+      }
 
+      .social-link {
+        padding: 6px 11px;
+      }
     }
   }
 
