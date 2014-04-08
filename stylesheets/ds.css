@@ -1,56 +1,193 @@
-/*
-Syntax error: Invalid CSS after "body ": expected selector or at-rule, was "{"
-        on line 23 of /Users/maxgulyaev/Development/yotpo-workspace/yotpo-b2b/lib/ds/sass/ds.scss
+/* DS */
+/* line 23, ../sass/ds.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
 
-Backtrace:
-/Users/maxgulyaev/Development/yotpo-workspace/yotpo-b2b/lib/ds/sass/ds.scss:23
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/sass-3.2.19/lib/sass/scss/parser.rb:1149:in `expected'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/sass-3.2.19/lib/sass/scss/parser.rb:28:in `parse'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/compiler.rb:126:in `timed'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/compiler.rb:138:in `block in compile'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/logger.rb:45:in `red'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/compiler.rb:137:in `compile'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/compiler.rb:101:in `each'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/compiler.rb:101:in `block in run'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/compiler.rb:126:in `timed'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/compiler.rb:100:in `run'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/commands/watch_project.rb:87:in `perform'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/commands/base.rb:18:in `execute'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/bin/compass:30:in `block in <top (required)>'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/bin/compass:44:in `call'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/gems/compass-0.12.5/bin/compass:44:in `<top (required)>'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/bin/compass:23:in `load'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/bin/compass:23:in `<main>'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/bin/ruby_executable_hooks:15:in `eval'
-/Users/maxgulyaev/.rvm/gems/ruby-1.9.3-p429@yotpo-b2b/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"body \": expected selector or at-rule, was \"{\"\A         on line 23 of /Users/maxgulyaev/Development/yotpo-workspace/yotpo-b2b/lib/ds/sass/ds.scss"; }
+/* line 28, ../sass/ds.scss */
+#content-wrapper .side-part, #content-wrapper .content .param, #content-wrapper .content .small-title {
+  color: black;
+}
+
+/* line 35, ../sass/ds.scss */
+.preview-boxes div.regular-box, .preview-boxes div.small-box, .preview-boxes div.regular-small-box {
+  border: solid 1px grey;
+  background: #F0A3CC;
+}
+
+/* line 41, ../sass/ds.scss */
+.inner-box {
+  width: 100%;
+  height: 40px;
+  background: white;
+}
+
+/* line 47, ../sass/ds.scss */
+#design-faker {
+  background: url("../images/typography2.jpg") no-repeat;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  max-width: 1000px;
+  width: 100%;
+  height: 1000px;
+  top: -4px;
+  display: none;
+}
+
+/* line 58, ../sass/ds.scss */
+#content-wrapper {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 65, ../sass/ds.scss */
+.side-part {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+/* line 70, ../sass/ds.scss */
+.content {
+  margin: 20px 0 0 10%;
+}
+
+/* line 73, ../sass/ds.scss */
+.content-full-length {
+  margin: 0px;
+  border-bottom: 1px solid;
+  padding-bottom: 40px;
+}
+
+/* line 78, ../sass/ds.scss */
+section {
+  max-width: 755px;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 87, ../sass/ds.scss */
+h3 {
+  font-family: Verdana;
+  margin-bottom: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2e8bc8;
+  text-transform: uppercase;
+}
+
+/* line 95, ../sass/ds.scss */
+.content ul {
+  font-weight: light;
+  list-style: none;
+  padding: 0;
+  line-height: 21px;
+  font-size: 15px;
+}
+
+/* line 102, ../sass/ds.scss */
+bold {
+  font-weight: bolder;
+}
+
+/* line 105, ../sass/ds.scss */
+.exmple-box {
+  border: 1px solid black;
+  text-align: center;
+  padding: 30px 10px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 112, ../sass/ds.scss */
+.small-title {
+  font-size: 12px;
+  color: grey;
+}
+
+/* line 116, ../sass/ds.scss */
+.clr {
+  clear: both;
+}
+
+/* line 119, ../sass/ds.scss */
+textarea.code-example {
+  background: black !important;
+  color: white;
+  overflow: hidden;
+  text-align: left;
+  resize: none;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* line 128, ../sass/ds.scss */
+.color-list {
+  list-style: none;
+}
+
+/* line 131, ../sass/ds.scss */
+.color-item {
+  width: 80px;
+  text-align: center;
+  float: left;
+  margin-right: 20px;
+  min-height: 140px;
+}
+
+/* line 139, ../sass/ds.scss */
+.color-circle {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 38px;
+  width: 38px;
+  margin: 7px auto;
+}
+
+/* line 148, ../sass/ds.scss */
+.color-circle.big {
+  height: 55px;
+  width: 55px;
+}
+
+/* line 153, ../sass/ds.scss */
+.icon-holders {
+  margin-left: 10%;
+}
+/* line 155, ../sass/ds.scss */
+.icon-holders .icon-holder {
+  margin-bottom: 8px;
+  min-width: 276px;
+  display: inline-block;
+  margin-right: 60px;
+}
+/* line 160, ../sass/ds.scss */
+.icon-holders .icon-holder .icon {
+  margin-right: 10px;
+}
+
+/* line 166, ../sass/ds.scss */
+.icons-buttons .icon-btn {
+  margin-top: 5px;
+}
+
+/* line 172, ../sass/ds.scss */
+.moblie-simulator {
+  width: 200px;
+  display: inline-block;
+}
+
+/* End DS */
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+/* Mobile Portrait Size to Mobile Size (devices and browsers) */
