@@ -1112,7 +1112,9 @@
         position: absolute;
         top: 3px;
         right: 5px;
-        color: $white;
+        .icon {
+          color: $white;
+        }
       }
   }
 
