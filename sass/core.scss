@@ -999,17 +999,6 @@
       .header-actions{
         float: right;
       }
-      .label-with-tooltip:hover {
-        .yotpo-tool-tip {
-          .tool-tip-header, .tool-tip-content {
-            display:block;
-          }
-          opacity: 1;
-          height: auto;
-          padding: 20px;
-          border: solid 1px $gray-light;
-        }
-      }
     }
 
     .yotpo-main{
@@ -1156,11 +1145,11 @@
   }
 
   .yotpo-tool-tip {
-    height: 0;
-    padding: 0px;
+    display: none;
+    height: auto;
+    padding: 20px;
+    border: solid 1px $gray-light;
     position: absolute;
-    opacity: 0;
-    border: none;
     width: 223px;
     background: $white;
     z-index: 20;
