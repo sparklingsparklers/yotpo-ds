@@ -503,6 +503,7 @@
     min-width:100px;
     text-align: start;
     display: inline-block;
+    font-weight: normal;
   }
 
   .input {
@@ -1054,6 +1055,11 @@
 
         .share-options-wrapper{
           display: inline-block;
+          .facebook, .twitter, .linkedin, .google {
+            float: none;
+            margin: none;
+            padding: none;
+          }
         }
       }
 
