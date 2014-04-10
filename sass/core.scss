@@ -9,6 +9,9 @@
     font-size: 14px;
     line-height: 17px;
     color: $gray;
+    border: none;
+    padding: 0;
+    margin: 0;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
@@ -162,14 +165,16 @@
   }
 
   a {
-    color: $primary;
-    text-decoration: none;
+    color: $primary!important;
+    text-decoration: none!important;
+    cursor: pointer!important;
     .label {
       cursor: pointer;
     }
   }
   a:hover {
-    color: $primary-l1;
+    color: $primary-l1!important;
+    text-decoration: none!important;
   }
 
 
@@ -1506,11 +1511,11 @@
         position: relative;
         bottom: 3px;
         a {
-          color: $white;
+          color: $white!important;
         }
       }
       .icon-yotpo-logo{
-        color: $white;
+        color: $white!important;
       }
     }
     .yotpo-modal-header{
