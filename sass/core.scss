@@ -373,7 +373,7 @@
 
   /* Buttons */
 
-  .yotpo-default-button {
+  .yotpo-default-button, input[type="button"].yotpo-default-button {
     display: inline-block;
     text-overflow: ellipsis;
     border: none;
@@ -385,6 +385,7 @@
     background: $gray;
     color: $white;
     height: auto;
+    margin : 0;
 
     &:hover {
       cursor: pointer;
@@ -459,21 +460,25 @@
     font-size: 21px;
   }
 
-  .primary-color-btn {
+  .primary-color-btn, input[type="button"].primary-color-btn{
     background-color: $primary;
     color: $white;
+    font-weight: normal !important;
+    text-shadow: none !important;
 
     &:hover {
-      background-color: $primary-d1;   
+      background: $primary-d1 !important;
+      border: none !important;
     }
 
     &.yotpo-disabled {
-      background-color: $primary-l3;
+      background: $primary-l3;
       color: $white;
 
       &:hover {
-        background-color: $primary-l3;
-        color: $white;
+        background: $primary-l3 !important;
+        color: $white !important;
+        border: none !important;
       }
     }
   }
@@ -896,7 +901,7 @@
       display: inline-block;
       margin-bottom: 10px;
       float: $right;
-      margin-top: 45px;
+      margin-top: 45px !important;
     }
 
   }
