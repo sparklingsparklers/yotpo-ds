@@ -1160,7 +1160,9 @@
     padding: 20px;
     border: solid 1px $gray-light;
     position: absolute;
-    width: 223px;
+    opacity: 0;
+    border: none;
+    width: 245px;
     background: $white;
     z-index: 20;
 
