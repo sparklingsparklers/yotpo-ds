@@ -942,7 +942,9 @@
         .user-letter{
           position: absolute;
           top: 13px;
-          #{$left}: 14px;
+          width: 100%;
+          #{$left}: 1px;
+          text-align: center;
           font-size: 20px;
           color: $white;
           span.icon {
