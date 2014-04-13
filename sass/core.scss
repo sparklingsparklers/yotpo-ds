@@ -610,8 +610,7 @@
   }
 
   .popup-box-large {
-    padding-top: 12px;
-    padding-bottom: 5px;
+    padding: 12px 10px 5px;
   }
 
   /*End Boxes*/
@@ -817,6 +816,9 @@
     }
 
     .yotpo-header{
+      .label {
+        padding-top: 0;
+      }
       .icon{
         color: #FAE123;
         font-size: 26px;
@@ -1606,6 +1608,13 @@
         overflow-y: scroll;
         background: $white;
         height: 100%;
+        .regular-box {
+          padding: 25px 0;
+          margin: 0;
+        }
+        .product-link {
+          padding: 10px 7px 15px 0px;
+        }
         .yotpo-main {
           .product-link {
             display:block;
@@ -1618,6 +1627,25 @@
 
         .content-review{
           color: $default-gray-darker;
+        }
+        .write-review.regular-box {
+          padding: 0 0 20px 0;
+          margin: 0;
+          .yotpo-footer {
+            display: inline-block;
+          }
+          .label {
+            padding: 10px 7px 8px 0px!important;
+          }
+          .connect-wrapper{
+            .form-element {
+              width: 100%;
+              padding-right: 0;
+            }
+            .email-input {
+              display: block;
+            }
+          }
         }
       }
     }
