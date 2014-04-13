@@ -965,6 +965,11 @@
         }
       }
       .icon-profile-social{
+        img {
+          max-width:100%!important;
+          width:100%!important;
+          height:auto!important;
+        }
         width: 45px;
         height: 45px;
         margin-#{$right}: 7px;
