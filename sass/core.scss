@@ -964,6 +964,11 @@
           width: 18.3px;
         }
       }
+      .icon-profile-social{
+        width: 45px;
+        height: 45px;
+        margin-#{$right}: 7px;
+      }
       &.yotpo-verified-user {
         .icon-circle-checkmark{
           display: inline-block;
@@ -1239,7 +1244,7 @@
     }
     .based-on {
       vertical-align: top;
-      padding-#{$left}: 10px;
+      padding-#{$left}: 0px;
     }
   }
   &.bottomLine, &.bottomline, .yotpo-modal-bottom-line {
