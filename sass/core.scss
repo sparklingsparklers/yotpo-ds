@@ -505,7 +505,7 @@
 
   /* Fields */
 
-  .label{
+  .label, label.label{
     font-size: 13px;
     color: $gray;
     padding: 20px 7px 15px 0px;
@@ -514,6 +514,7 @@
     text-align: start;
     display: inline-block;
     font-weight: normal;
+    float: none;
   }
 
   .input {
