@@ -6,6 +6,9 @@
 .yotpo, .yotpo {
   div, span, p, a, img, i, strong, sup, ul, li, form, label {
     font-family: $font-type;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal!important;
     font-size: 14px;
     line-height: 17px;
     color: $gray;
@@ -487,7 +490,10 @@
     color: $gray;
 
     &:hover{
-      color: $gray-dark;
+      span, i {
+        color: $gray-dark;
+      }
+
     }
 
     &.yotpo-disabled {
@@ -574,26 +580,26 @@
   }
 
   .regular-box{
-    padding: 28px 0;
+    padding: 25px 0 22px;
     margin: 0 10px;
   }
 
   .small-box{
-    padding: 28px 10px 0 10px;
+    padding: 25px 10px 0 10px;
   }
 
   .regular-small-box{
-    padding: 28px 0px 15px 0px;
+    padding: 25px 0px 15px 0px;
     margin: 0 10px;
   }
 
   .comments-box {
     margin-left: 22px;
     border-left: 2px solid $primary-l3;
-    margin-top: 28px;
+    margin-top: 25px;
     .comment-box {
       margin-left: 22px;
-      padding: 28px 0;
+      padding: 25px 0;
     }
   }
 
@@ -608,8 +614,7 @@
   }
 
   .popup-box-large {
-    padding-top: 12px;
-    padding-bottom: 5px;
+    padding: 12px 10px 5px;
   }
 
   /*End Boxes*/
@@ -815,6 +820,9 @@
     }
 
     .yotpo-header{
+      .label {
+        padding-top: 0;
+      }
       .icon{
         color: #FAE123;
         font-size: 26px;
@@ -913,15 +921,17 @@
       color: $gray;
 
       .header-element{
+        padding-top: 2px;
         display: inline-block;
         vertical-align: top;
         .label{
           min-width: 0px;
           padding: 0px;
           font-size: 12px;
+          vertical-align: top;
 
           &.user-name{
-            color: $gray-dark;
+            color: $primary;
           }
 
           &.review-date{
@@ -934,7 +944,7 @@
         position: relative;
         width: 45px;
         height: 45px;
-        margin-#{$right}: 7px;
+        margin-#{$right}: 8px;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -966,6 +976,11 @@
         }
       }
       .icon-profile-social{
+        img {
+          max-width:100%!important;
+          width:100%!important;
+          height:auto!important;
+        }
         width: 45px;
         height: 45px;
         margin-#{$right}: 7px;
@@ -1009,38 +1024,36 @@
       }*/
 
       .user-name {
-        margin-bottom: 3px;
-        padding-top: 8px;
         float: $left;
+        color:$primary;
+        font-weight: bolder;
+
         margin-#{$right}: 5px;
       }
       .header-actions{
         float: $right;
       }
-    }
-
-    .yotpo-main{
-
-      display: block;
-      margin: 28px 0px;
-
       .review-stars {
         float: $left;
         display: inline-block;
-        padding-bottom: 15px;
+        margin-top: 7px;
         margin-#{$right}: 10px;
         .icon {
           float: $left;
           color: $yellow;
         }
       }
+    }
+
+    .yotpo-main{
+      display: block;
+      margin: 10px 0px 15px 53px;
       .content-title{
         display: inline-block;
         float: $left;
         color: $gray-darker;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
       }
-
       .content-review{
         display: inline;
         color: $gray-darker;
@@ -1055,6 +1068,7 @@
     .yotpo-footer{
       position: relative;
       color: $gray;
+      margin-left: 53px;
 
       .footer-actions{
         display: inline-block;
@@ -1095,6 +1109,9 @@
       }
 
       .yotpo-action{
+        i {
+          font-size: 13px;
+        }
 
         &:hover{
           color:$primary;
@@ -1224,6 +1241,9 @@
       .icon-btn-big{
         float: $left;
         padding: 10px 5px;
+        a {
+          font-size: 30px;
+        }
       }
     }
   }
@@ -1245,6 +1265,8 @@
     }
     .based-on {
       vertical-align: top;
+      display: inline-block;
+      padding-top: 6px;
       padding-#{$left}: 0px;
     }
   }
@@ -1593,21 +1615,44 @@
         overflow-y: scroll;
         background: $white;
         height: 100%;
+        .regular-box {
+          padding: 25px 0;
+          margin: 0;
+        }
+        .product-link {
+          padding: 10px 7px 15px 0px;
+        }
         .yotpo-main {
           .product-link {
             display:block;
           }
         }
         /* Set Default Colors */
-        .user-name {
-          color: $default-gray-dark!important;
-        }
         .content-title{
           color: $default-gray-darker;
         }
 
         .content-review{
           color: $default-gray-darker;
+        }
+        .write-review.regular-box {
+          padding: 0 0 20px 0;
+          margin: 0;
+          .yotpo-footer {
+            display: inline-block;
+          }
+          .label {
+            padding: 10px 7px 8px 0px!important;
+          }
+          .connect-wrapper{
+            .form-element {
+              width: 100%;
+              padding-right: 0;
+            }
+            .email-input {
+              display: block;
+            }
+          }
         }
       }
     }
@@ -1670,9 +1715,12 @@
   .yotpo-review, .yotpo-comment {
     .yotpo-footer{
       .footer-actions{
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
     }
+  }
+  .yotpo-footer , .yotpo-main {
+    margin-left: 0;
   }
 }
 
@@ -1736,7 +1784,7 @@
       .footer-actions{
         display: block;
         float: none;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         }
       }
       .helpful{
