@@ -490,7 +490,10 @@
     color: $gray;
 
     &:hover{
-      color: $gray-dark;
+      span, i {
+        color: $gray-dark;
+      }
+
     }
 
     &.yotpo-disabled {
@@ -1237,6 +1240,9 @@
       .icon-btn-big{
         float: $left;
         padding: 10px 5px;
+        a {
+          font-size: 30px;
+        }
       }
     }
   }
