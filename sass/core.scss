@@ -1170,7 +1170,8 @@
     position: absolute;
     opacity: 0;
     border: none;
-    width: 245px;
+    max-width: 300px;
+    width: 70%;
     background: $white;
     z-index: 20;
 
