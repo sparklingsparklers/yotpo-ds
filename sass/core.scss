@@ -5,7 +5,7 @@
 
 .yotpo, .yotpo {
   div, span, p, a, img, i, strong, sup, ul, li, form, label {
-    font-family: Verdana;
+    font-family: $font-type;
     font-size: 14px;
     line-height: 17px;
     color: $gray;
@@ -377,7 +377,7 @@
     display: inline-block;
     text-overflow: ellipsis;
     border: none;
-    font-family: Verdana;
+    font-family: $font-type;
     text-transform: uppercase;
     text-align: center;
     font-size: 12px;
@@ -517,7 +517,7 @@
   }
 
   .input {
-    font-family: Verdana;
+    font-family: $font-type;
     height: 32px;
     min-width: 148px;
     width: 100%;
@@ -531,7 +531,7 @@
   }
 
   .text-box{
-    font-family: Verdana;
+    font-family: $font-type;
     font-size: 13px;
     height: 68px;
     min-width: 148px;
@@ -618,7 +618,7 @@
 
   .yotpo-nav{
     background: transparent;
-    font-family: Verdana;
+    font-family: $font-type;
     border-color: rgba(0,39,59,.08);
     display: block;
     position: relative;
@@ -677,7 +677,7 @@
       /*text-transform: uppercase;*/
       padding-right: 18px;
       font-size: 15px;
-      font-family: Verdana;
+      font-family: $font-type;
       display: list-item;
 
       .yotpo-nav-wrapper {
