@@ -1166,7 +1166,7 @@
     display: none;
     height: auto;
     padding: 20px;
-    border: solid 1px $gray-light;
+    border: solid 1px $default-gray-light!important;
     position: absolute;
     opacity: 0;
     border: none;
@@ -1192,7 +1192,7 @@
 
     .tool-tip-content{
       font-size: 12px;
-      color: $gray-dark;
+      color: $default-gray-dark;
 
     }
   }
@@ -1589,7 +1589,21 @@
             display:block;
           }
         }
+        /* Set Default Colors */
+        .user-name {
+          color: $default-gray-dark!important;
+        }
+        .content-title{
+          color: $default-gray-darker;
+        }
+
+        .content-review{
+          color: $default-gray-darker;
+        }
       }
+    }
+    .yotpo-nav-tab span {
+      color: $default-gray-darker!important;
     }
 
     .btn-testimonials{
