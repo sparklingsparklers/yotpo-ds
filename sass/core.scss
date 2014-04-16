@@ -1910,6 +1910,11 @@
     -moz-animation:    yotpo-pre-loader-animation 1.5s infinite; /* Fx 5+ */
     -o-animation:      yotpo-pre-loader-animation 1.5s infinite; /* Opera 12+ */
     animation:         yotpo-pre-loader-animation 1.5s infinite; /* IE 10+ */
+
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
 
   span.yotpo-empty-stars{
