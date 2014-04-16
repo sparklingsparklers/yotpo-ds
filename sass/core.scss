@@ -5,15 +5,21 @@
 
 .yotpo, .yotpo {
   div, span, p, a, img, i, strong, sup, ul, li, form, label {
-    font-family: Verdana;
+    font-family: $font-type;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal!important;
     font-size: 14px;
     line-height: 17px;
     color: $gray;
+    border: none;
+    padding: 0;
+    margin: 0;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
   }
-  text-align: left;
+  text-align: $left;
 }
 
 .yotpo {
@@ -162,14 +168,16 @@
   }
 
   a {
-    color: $primary;
-    text-decoration: none;
+    color: $primary!important;
+    text-decoration: none!important;
+    cursor: pointer!important;
     .label {
       cursor: pointer;
     }
   }
   a:hover {
-    color: $primary-l1;
+    color: $primary-l1!important;
+    text-decoration: none!important;
   }
 
 
@@ -182,12 +190,12 @@
     border-radius: 0px;
   }
   .pull-left {
-    text-align: left;
-    float: left;
+    text-align: $left;
+    float: $left;
   }
   .pull-right {
-    text-align: right;
-    float: right;
+    text-align: $right;
+    float: $right;
   }
   .pull-center {
     text-align: center;
@@ -368,11 +376,11 @@
 
   /* Buttons */
 
-  .yotpo-default-button {
+  .yotpo-default-button, input[type="button"].yotpo-default-button {
     display: inline-block;
     text-overflow: ellipsis;
     border: none;
-    font-family: Verdana;
+    font-family: $font-type;
     text-transform: uppercase;
     text-align: center;
     font-size: 12px;
@@ -380,6 +388,7 @@
     background: $gray;
     color: $white;
     height: auto;
+    margin : 0;
 
     &:hover {
       cursor: pointer;
@@ -391,7 +400,7 @@
       outline-width: 0px;
     }
 
-    &.disabled {
+    &.yotpo-disabled {
 
       background: $gray-light;
       color: $gray;
@@ -454,21 +463,25 @@
     font-size: 21px;
   }
 
-  .primary-color-btn {
+  .primary-color-btn, input[type="button"].primary-color-btn{
     background-color: $primary;
     color: $white;
+    font-weight: normal !important;
+    text-shadow: none !important;
 
     &:hover {
-      background-color: $primary-d1;   
+      background: $primary-d1 !important;
+      border: none !important;
     }
 
-    &.disabled {
-      background-color: $primary-l3;
+    &.yotpo-disabled {
+      background: $primary-l3;
       color: $white;
 
       &:hover {
-        background-color: $primary-l3;
-        color: $white;
+        background: $primary-l3 !important;
+        color: $white !important;
+        border: none !important;
       }
     }
   }
@@ -477,10 +490,13 @@
     color: $gray;
 
     &:hover{
-      color: $gray-dark;
+      span, i {
+        color: $gray-dark;
+      }
+
     }
 
-    &.disabled {
+    &.yotpo-disabled {
       color: $gray-light;
 
       &:hover {
@@ -495,7 +511,7 @@
 
   /* Fields */
 
-  .label{
+  .label, label.label{
     font-size: 13px;
     color: $gray;
     padding: 20px 7px 15px 0px;
@@ -503,10 +519,12 @@
     min-width:100px;
     text-align: start;
     display: inline-block;
+    font-weight: normal;
+    float: none;
   }
 
   .input {
-    font-family: Verdana;
+    font-family: $font-type;
     height: 32px;
     min-width: 148px;
     width: 100%;
@@ -520,7 +538,7 @@
   }
 
   .text-box{
-    font-family: Verdana;
+    font-family: $font-type;
     font-size: 13px;
     height: 68px;
     min-width: 148px;
@@ -537,7 +555,7 @@
 
     .form-element{
       .label{
-        float: left;
+        float: $left;
         display: block;
         white-space: nowrap;
       }
@@ -562,26 +580,26 @@
   }
 
   .regular-box{
-    padding: 28px 0;
+    padding: 25px 0 22px;
     margin: 0 10px;
   }
 
   .small-box{
-    padding: 28px 10px 0 10px;
+    padding: 25px 10px 0 10px;
   }
 
   .regular-small-box{
-    padding: 28px 0px 15px 0px;
+    padding: 25px 0px 15px 0px;
     margin: 0 10px;
   }
 
   .comments-box {
     margin-left: 22px;
     border-left: 2px solid $primary-l3;
-    margin-top: 28px;
+    margin-top: 25px;
     .comment-box {
       margin-left: 22px;
-      padding: 28px 0;
+      padding: 25px 0;
     }
   }
 
@@ -596,8 +614,7 @@
   }
 
   .popup-box-large {
-    padding-top: 12px;
-    padding-bottom: 5px;
+    padding: 12px 10px 5px;
   }
 
   /*End Boxes*/
@@ -607,7 +624,7 @@
 
   .yotpo-nav{
     background: transparent;
-    font-family: Verdana;
+    font-family: $font-type;
     border-color: rgba(0,39,59,.08);
     display: block;
     position: relative;
@@ -616,7 +633,7 @@
     box-sizing: border-box;
 
     ul{
-      float: left;
+      float: $left;
       
       padding: 0;
       font-size: 15px;
@@ -662,11 +679,11 @@
     }
 
     li{
-      float: left;
+      float: $left;
       /*text-transform: uppercase;*/
       padding-right: 18px;
       font-size: 15px;
-      font-family: Verdana;
+      font-family: $font-type;
       display: list-item;
 
       .yotpo-nav-wrapper {
@@ -803,6 +820,9 @@
     }
 
     .yotpo-header{
+      .label {
+        padding-top: 0;
+      }
       .icon{
         color: #FAE123;
         font-size: 26px;
@@ -846,7 +866,7 @@
       position: absolute;
        .socialize{
           display: inline-block;
-          float: left;
+          float: $left;
           margin-bottom: 10px;
           min-width: 147px;
         }
@@ -864,21 +884,21 @@
     }
 
     .connect-wrapper {
-      padding-left: 273px;
+      padding-#{$left}: 273px;
       width: 100%;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       .form-element {
-        float: left;
+        float: $left;
         width: 50%;
         min-width: 162px;
-        padding-right: 0;
+        padding-#{$right}: 0;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         &:first-child {
-          padding-right: 15px;
+          padding-#{$right}: 15px;
         }
         &.email-input {
           display: none;
@@ -889,8 +909,8 @@
     .yotpo-submit{
       display: inline-block;
       margin-bottom: 10px;
-      float: right;
-      margin-top: 45px;
+      float: $right;
+      margin-top: 15px !important;
     }
 
   }
@@ -901,19 +921,21 @@
       color: $gray;
 
       .header-element{
+        padding-top: 2px;
         display: inline-block;
         vertical-align: top;
         .label{
           min-width: 0px;
           padding: 0px;
           font-size: 12px;
+          vertical-align: top;
 
           &.user-name{
-            color: $gray-dark;
+            color: $primary;
           }
 
           &.review-date{
-            float: left;
+            float: $left;
           }
         }
       }
@@ -922,7 +944,7 @@
         position: relative;
         width: 45px;
         height: 45px;
-        margin-right: 7px;
+        margin-#{$right}: 8px;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -931,7 +953,9 @@
         .user-letter{
           position: absolute;
           top: 13px;
-          left: 14px;
+          width: 100%;
+          #{$left}: 1px;
+          text-align: center;
           font-size: 20px;
           color: $white;
           span.icon {
@@ -942,7 +966,7 @@
         .icon-circle-checkmark{
           display: none;
           position: absolute;
-          left: 31px;
+          #{$left}: 31px;
           top: 28px;
           background: $white;
           -webkit-border-radius: 50%;
@@ -950,6 +974,16 @@
           border-radius: 50%;
           width: 18.3px;
         }
+      }
+      .icon-profile-social{
+        img {
+          max-width:100%!important;
+          width:100%!important;
+          height:auto!important;
+        }
+        width: 45px;
+        height: 45px;
+        margin-#{$right}: 7px;
       }
       &.yotpo-verified-user {
         .icon-circle-checkmark{
@@ -990,49 +1024,36 @@
       }*/
 
       .user-name {
-        margin-bottom: 3px;
-        padding-top: 8px;
-        float: left;
-        margin-right: 5px;
+        float: $left;
+        color:$primary;
+        font-weight: bolder;
+
+        margin-#{$right}: 5px;
       }
       .header-actions{
-        float: right;
+        float: $right;
       }
-      .label-with-tooltip:hover {
-        .yotpo-tool-tip {
-          .tool-tip-header, .tool-tip-content {
-            display:block;
-          }
-          opacity: 1;
-          height: auto;
-          padding: 20px;
-          border: solid 1px $gray-light;
+      .review-stars {
+        float: $left;
+        display: inline-block;
+        margin-top: 7px;
+        margin-#{$right}: 10px;
+        .icon {
+          float: $left;
+          color: $yellow;
         }
       }
     }
 
     .yotpo-main{
-
       display: block;
-      margin: 28px 0px;
-
-      .review-stars {
-        float: left;
-        display: inline-block;
-        padding-bottom: 15px;
-        margin-right: 10px;
-        .icon {
-          float: left;
-          color: $yellow;
-        }
-      }
+      margin: 10px 0px 15px 53px;
       .content-title{
         display: inline-block;
-        float: left;
+        float: $left;
         color: $gray-darker;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
       }
-
       .content-review{
         display: inline;
         color: $gray-darker;
@@ -1047,13 +1068,19 @@
     .yotpo-footer{
       position: relative;
       color: $gray;
+      margin-left: 53px;
 
       .footer-actions{
         display: inline-block;
-        float: left;
+        float: $left;
 
         .share-options-wrapper{
           display: inline-block;
+          .facebook, .twitter, .linkedin, .google {
+            float: none;
+            margin: none;
+            padding: none;
+          }
         }
       }
 
@@ -1069,7 +1096,7 @@
 
       .helpful{
         display: inline-block;
-        float: right;
+        float: $right;
           
         .sum{
           margin-right: 13px;
@@ -1082,6 +1109,9 @@
       }
 
       .yotpo-action{
+        i {
+          font-size: 13px;
+        }
 
         &:hover{
           color:$primary;
@@ -1090,6 +1120,14 @@
           .label, .transparent-color-btn{
             cursor: pointer;
             color:$primary;
+          }
+
+          .icon-share{
+            color: inherit;
+          }
+
+          i{
+            color: inherit;
           }
         }
       }
@@ -1120,11 +1158,11 @@
     min-height: 25px;
     height: auto;
     background: $red;
-    text-align: left;
+    text-align: #{$left};
 
     .text-wrapper{
-      padding-left: 5px;
-      margin-right: 25px;
+      padding-#{$left}: 5px;
+      margin-#{$right}: 25px;
 
       .error-text{
         color: $white;
@@ -1138,7 +1176,7 @@
     .transparent-color-btn{
         position: absolute;
         top: 3px;
-        right: 5px;
+        #{$right}: 5px;
         .icon {
           color: $white;
         }
@@ -1150,12 +1188,15 @@
   }
 
   .yotpo-tool-tip {
-    height: 0;
-    padding: 0px;
+    display: none;
+    height: auto;
+    padding: 20px;
+    border: solid 1px $default-gray-light!important;
     position: absolute;
     opacity: 0;
     border: none;
-    width: 223px;
+    max-width: 300px;
+    width: 70%;
     background: $white;
     z-index: 20;
 
@@ -1177,7 +1218,7 @@
 
     .tool-tip-content{
       font-size: 12px;
-      color: $gray-dark;
+      color: $default-gray-dark;
 
     }
   }
@@ -1190,7 +1231,7 @@
     width: $main-widget-width;
     .yotpo-label {
       .yotpo-logo-title{
-        float: left;
+        float: $left;
         margin-top: 15px;
         color: $gray;
       }
@@ -1198,15 +1239,18 @@
         color: #21679A;
       }
       .icon-btn-big{
-        float: left;
+        float: $left;
         padding: 10px 5px;
+        a {
+          font-size: 30px;
+        }
       }
     }
   }
 
   .yotpo-bottomline {
     .yotpo-stars {
-      padding-right: 10px;
+      padding-#{$right}: 10px;
       display: inline-block;
       vertical-align: bottom;
       padding-bottom: 2px;
@@ -1221,7 +1265,9 @@
     }
     .based-on {
       vertical-align: top;
-      padding-left: 10px;
+      display: inline-block;
+      padding-top: 6px;
+      padding-#{$left}: 0px;
     }
   }
   &.bottomLine, &.bottomline, .yotpo-modal-bottom-line {
@@ -1258,7 +1304,7 @@
         cursor: pointer;
       }
 
-      &.disabled {
+      &.yotpo-disabled {
         
         color: $gray-light;
 
@@ -1511,11 +1557,11 @@
         position: relative;
         bottom: 3px;
         a {
-          color: $white;
+          color: $white!important;
         }
       }
       .icon-yotpo-logo{
-        color: $white;
+        color: $white!important;
       }
     }
     .yotpo-modal-header{
@@ -1569,12 +1615,49 @@
         overflow-y: scroll;
         background: $white;
         height: 100%;
+        .regular-box {
+          padding: 25px 0;
+          margin: 0;
+        }
+        .product-link {
+          padding: 10px 7px 15px 0px;
+        }
         .yotpo-main {
           .product-link {
             display:block;
           }
         }
+        /* Set Default Colors */
+        .content-title{
+          color: $default-gray-darker;
+        }
+
+        .content-review{
+          color: $default-gray-darker;
+        }
+        .write-review.regular-box {
+          padding: 0 0 20px 0;
+          margin: 0;
+          .yotpo-footer {
+            display: inline-block;
+          }
+          .label {
+            padding: 10px 7px 8px 0px!important;
+          }
+          .connect-wrapper{
+            .form-element {
+              width: 100%;
+              padding-right: 0;
+            }
+            .email-input {
+              display: block;
+            }
+          }
+        }
       }
+    }
+    .yotpo-nav-tab span {
+      color: $default-gray-darker!important;
     }
 
     .btn-testimonials{
@@ -1632,9 +1715,12 @@
   .yotpo-review, .yotpo-comment {
     .yotpo-footer{
       .footer-actions{
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
     }
+  }
+  .yotpo-footer , .yotpo-main {
+    margin-left: 0;
   }
 }
 
@@ -1698,21 +1784,21 @@
       .footer-actions{
         display: block;
         float: none;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         }
       }
       .helpful{
-        float: right;
+        float: $right;
       }
       .footer-additional-actions{
         display: inline-block;
-        float: left;
+        float: $left;
       }
     }
   .yotpo-nav {
     .transparent-color-btn {
-      text-align: right;
-      float: right;
+      text-align: $right;
+      float: $right;
       padding: 0;
       /*margin-bottom: 5px;*/
     }

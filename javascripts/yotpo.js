@@ -74,7 +74,7 @@ function showMailInput(el, parentClass, targetClass){
 
 	var submitBtn = parents(el,'yotpo-footer').querySelectorAll('.yotpo-submit')[0];
 	submitBtn.style.marginTop = '15px';
-	submitBtn.classList.remove('disabled');
+	submitBtn.classList.remove('yotpo-disabled');
 }
 
 function changeReviewInputVisibility(el){
