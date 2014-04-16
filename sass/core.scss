@@ -371,6 +371,15 @@
     content: "\e61d";
   }
 
+  .icon-half-star {
+    -moz-transform: scaleX($flip);
+    -o-transform: scaleX($flip);
+    -webkit-transform: scaleX($flip);
+    transform: scaleX($flip);
+    filter: $flipIE;
+    -ms-filter: "#{$flipIE}";
+  }
+
 
   /* End Icons */
 
