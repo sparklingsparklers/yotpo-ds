@@ -1,5 +1,5 @@
 // Should include all widgets but badge.
-.yotpo.yotpo-main-widget, .yotpo.embedded-widget, .yotpo.yotpo-modal {
+.yotpo.yotpo-main-widget, .yotpo.embedded-widget, .yotpo.yotpo-modal, .yotpo.bottomLine {
   .yotpo-header .icon-profile,
   .icon-star,
   .icon-half-star,
@@ -42,22 +42,24 @@
     }
   }
 
-  .yotpo-review .review-stars .icon,
-  .yotpo-comment .review-stars .icon,
-  .yotpoBottomline,
-  .yotpo-modal-bottom-line .yotpo-bottomline .icon,
-  #embedded_widget .icon {
-    width: 18px!important;
-    height: 18px!important;
+  .yotpo-review .review-stars,
+  .yotpo-comment .review-stars,
+  .standalone-bottomline,
+  .yotpo-modal-bottom-line .yotpo-bottomline,
+  #embedded_widget {
+    .icon {
+      width: 18px!important;
+      height: 18px!important;
 
-    &.icon-star {
-      background-position: -117px 0;
-    }
-    &.icon-half-star {
-      background-position: -135px 0;
-    }
-    &.icon-empty-star {
-      background-position: -153px 0;
+      &.icon-star {
+        background-position: -117px 0;
+      }
+      &.icon-half-star {
+        background-position: -135px 0;
+      }
+      &.icon-empty-star {
+        background-position: -153px 0;
+      }
     }
   }
 }
