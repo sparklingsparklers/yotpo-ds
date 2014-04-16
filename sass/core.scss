@@ -1056,7 +1056,10 @@
 
     .yotpo-main{
       display: block;
-      margin: 10px 0px 15px 53px;
+      margin-top:10px;
+      margin-#{$right}: 0px;
+      margin-bottom: 15px;
+      margin-#{$left}: 53px;
       .content-title{
         display: inline-block;
         float: $left;
@@ -1077,7 +1080,7 @@
     .yotpo-footer{
       position: relative;
       color: $gray;
-      margin-left: 53px;
+      margin-#{$left}: 53px;
 
       .footer-actions{
         display: inline-block;
