@@ -1888,6 +1888,59 @@
   }
 }
 
+.yotpo-pre-loader{
+  position: relative;
+  
+  .icon{
+    color: $orange;
+
+    margin-left: -5px;
+    &:first-child {
+      margin:0;
+    }
+
+  }
+
+  span.yotpo-full-stars{
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+
+    -webkit-animation: yotpo-pre-loader-animation 1.5s infinite; /* Safari 4+ */
+    -moz-animation:    yotpo-pre-loader-animation 1.5s infinite; /* Fx 5+ */
+    -o-animation:      yotpo-pre-loader-animation 1.5s infinite; /* Opera 12+ */
+    animation:         yotpo-pre-loader-animation 1.5s infinite; /* IE 10+ */
+  }
+
+  span.yotpo-empty-stars{
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+@-webkit-keyframes yotpo-pre-loader-animation {
+  0%   { width: 0; }
+  50%  { width: 88px;}
+  100% { width: 0; }
+}
+@-moz-keyframes yotpo-pre-loader-animation {
+  0%   { width: 0; }
+  50%  { width: 88px; }
+  100% { width: 0; }
+}
+@-o-keyframes yotpo-pre-loader-animation {
+  0%   { width: 0; }
+  50%  { width: 88px; }
+  100% { width: 0; }
+}
+@keyframes yotpo-pre-loader-animation {
+  0%   { width: 0; }
+  50%  { width: 88px; }
+  100% { width: 0; }
+}
+
+
 /* NOT JS!!! */
 @media only screen and (max-width: 480px) {
 
