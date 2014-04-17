@@ -1,29 +1,4 @@
 /* Yotpo */
-.yotpo-display-wrapper {
-    visibility: visible!important;
-}
-
-.yotpo, .yotpo {
-  div, span, p, a, img, i, strong, sup, ul, li, form, label {
-    font-family: $font-type;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-style: normal!important;
-    font-size: 14px;
-    line-height: 17px;
-    color: $gray;
-    border: none;
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-    p, a, img, i, strong, sup, ul, li, form, label {
-      background: inherit!important
-    }
-  }
-  text-align: $left;
-}
 
 .yotpo {
 /* Colors */
