@@ -1,3 +1,4 @@
+
 /* Yotpo */
 .yotpo-display-wrapper {
     visibility: visible!important;
@@ -457,6 +458,18 @@
     padding: 10px 15px;
     .icon {
       font-size: 25px;
+    }
+
+    &:hover{
+      cursor: pointer;
+    }
+
+  }
+   .icon-btn-xs {
+    display: inline-block;
+    padding: 5px;
+    .icon {
+      font-size: 15px;
     }
 
     &:hover{
