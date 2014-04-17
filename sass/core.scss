@@ -499,6 +499,9 @@
   .transparent-color-btn {
     background: transparent;
     color: $gray;
+    span.icon {
+      color: $gray;
+    }
 
     &:hover{
       span, i {
@@ -1253,11 +1256,20 @@
         color: #21679A;
       }
       .icon-btn-big{
-        float: $left;
         padding: 10px 5px;
         a {
           font-size: 30px;
         }
+      }
+    }
+    .yotpo-semi-label {
+      float: $left;
+      span.icon {
+        color: $gray;
+      }
+      .yotpo-tool-tip {
+        padding: 0 20px;
+        width: 190px;
       }
     }
   }
