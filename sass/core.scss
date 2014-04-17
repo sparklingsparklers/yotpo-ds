@@ -1907,11 +1907,12 @@
 
 div.yotpo-preloader-wrapper{
   display: none;
-  padding-left: 45%;
-  margin-top: 20px;
-
+  width: 100%;
   .yotpo-pre-loader{
     position: relative;
+    display: block;
+    width: 88px;
+    margin: 20px auto;
 
     .icon{
       color: $orange;
