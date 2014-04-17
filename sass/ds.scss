@@ -23,6 +23,19 @@ $font-url: '../fonts/yotpo-widget-font.eot';
 body {
   padding: 0!important;
   margin: 0!important;
+  font-family: Verdana;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal!important;
+  font-size: 14px;
+  line-height: 17px;
+  color: $gray;
+  border: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
 }
 #content-wrapper {
   .side-part, .content .param, .content .small-title {
