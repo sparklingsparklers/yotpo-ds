@@ -12,9 +12,17 @@
     display: none!important;
   }
 
-  .yotpo-comment .yotpo-header .icon-profile label {
-    display: none;
+  .yotpo-store-owner.yotpo-header .icon-profile {
+    background-color: $primary-l2!important;
+    background-image: none!important;
+    .user-letter {
+      display: inline-block!important;
+    }
   }
+
+  /*.yotpo-comment .yotpo-header .icon-profile label {
+    display: none;
+  }*/
 
   .icon-star,
   .icon-half-star,

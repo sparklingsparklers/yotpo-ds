@@ -962,6 +962,7 @@
         background: $primary-l2;
 
         .user-letter{
+          background: transparent!important;
           position: absolute;
           top: 13px;
           width: 100%;
@@ -1015,6 +1016,7 @@
         }
         .yotpo-store-avatar {
           background: transparent;
+          background-image: none!important;
         }
         .yopto-avatar-wrapper {
           border-radius: 50%;
