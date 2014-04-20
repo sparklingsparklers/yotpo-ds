@@ -471,10 +471,6 @@
     &.icon {
       font-size: 15px;
     }
-    &.white-color {
-      color: white;
-    }
-
     &:hover{
       cursor: pointer;
     }
@@ -1269,7 +1265,7 @@
 
   /* Widget Stracture */
 
-  &.yotpo-main-widget {
+  &.yotpo-main-widget, .yotpo-modal-dialog {
     
     background-color: $bg-color!important;
     width: $main-widget-width;
@@ -1281,7 +1277,7 @@
       }
       .icon {
         color: #21679A;
-      }
+          }
       .icon-btn-big{
         padding: 10px 5px;
         a {
@@ -1297,8 +1293,12 @@
       .yotpo-tool-tip {
         padding: 0 20px;
         width: 190px;
-        left: -60px;
       }
+    }
+  }
+  .yotpo-modal-dialog {
+    .icon.icon-star {
+      color: $white;
     }
   }
 
