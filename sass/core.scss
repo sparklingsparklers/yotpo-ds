@@ -468,8 +468,11 @@
    .icon-btn-xs {
     display: inline-block;
     padding: 5px;
-    .icon {
+    &.icon {
       font-size: 15px;
+    }
+    &.white-color {
+      color: white;
     }
 
     &:hover{
@@ -1255,6 +1258,8 @@
       }
     }
 
+
+
     .tool-tip-content{
       font-size: 12px;
       color: $default-gray-dark;
@@ -1292,6 +1297,7 @@
       .yotpo-tool-tip {
         padding: 0 20px;
         width: 190px;
+        left: -60px;
       }
     }
   }
@@ -1595,6 +1601,12 @@
         .yotpo-modal-header {
           .icon-btn-small{
             top: 50px;
+          }
+          .icon-btn-small.semi-white-label {
+            top: 30px;
+          }
+          .icon-btn-small.full-white-label {
+            top: 5px;
           }
         }
       }
@@ -1924,6 +1936,17 @@
     .comment-box {
       margin-left: 10px;
     }
+  }
+}
+
+.yotpo-testimonials-semi-label {
+  float: $left;
+  position: relative;
+
+  .yotpo-tool-tip {
+    padding: 0 20px;
+    width: 190px;
+
   }
 }
 
