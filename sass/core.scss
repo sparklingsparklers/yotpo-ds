@@ -1241,11 +1241,11 @@
   }
 
   /* Widget Stracture */
+  &.yotpo-main-widget {
+    background-color: $bg-color!important;
+  }
 
   &.yotpo-main-widget, .yotpo-modal-dialog {
-    
-    background-color: $bg-color!important;
-    width: $main-widget-width;
     .yotpo-label {
       .yotpo-logo-title{
         float: $left;
@@ -1307,7 +1307,6 @@
     }
   }
   .yotpo-modal-bottom-line {
-    border-top: 1px solid $gray-light;
     .yotpo-bottomline {
       padding-top: 10px;
     }
@@ -1482,6 +1481,9 @@
 #yotpo-testimonials-custom-tab {
   .yotpo-testimonials-btn {
     display: none;
+  }
+  .yotpo-modal-bottom-line {
+    border-top: 1px solid $gray-light;
   }
 }
 .yotpo {
