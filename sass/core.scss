@@ -1273,6 +1273,13 @@
       }
     }
   }
+  .yotpo-modal-dialog {
+    .yotpo-label {
+      .icon {
+        color: $white;
+      }
+    }
+  }
 
   .yotpo-bottomline {
     .yotpo-stars {
@@ -1484,6 +1491,13 @@
   }
   .yotpo-modal-bottom-line {
     border-top: 1px solid $gray-light;
+  }
+  .yotpo-label {
+    padding-left: 10px;
+    .icon {
+      color: $gray;
+      font-size: 25px;
+    }
   }
 }
 .yotpo {
