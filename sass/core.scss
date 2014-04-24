@@ -1716,6 +1716,11 @@
   .promoted-products-box{ 
     overflow: hidden;
     position: relative;
+    .main-title {
+      margin-bottom: 65px;
+      margin-top: 34px;
+      text-align: center;
+    }
     .yotpo-promoted-products {
       margin: 0 40px;
       overflow: hidden;
