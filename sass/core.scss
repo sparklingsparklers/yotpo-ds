@@ -1716,10 +1716,11 @@
   .promoted-products-box{ 
     overflow: hidden;
     position: relative;
-    .main-title {
+    .yotpo-main-title {
       margin-bottom: 65px;
       margin-top: 34px;
       text-align: center;
+      white-space:nowrap;
     }
     .yotpo-promoted-products {
       margin: 0 40px;
@@ -1742,13 +1743,13 @@
     li {
       display: inline-block;
     }
-   .promoted-product{
+   .yotpo-promoted-product{
       text-align: #{$left};  
       width: 160px;
       height: 200px;    
       margin-right:24px;
       margin-left:24px;
-    .product-image {
+    .yotpo-product-image {
       width: 160px;
       height: 110px;
       img {
@@ -1778,10 +1779,10 @@
        margin-#{$left}: 8px;
      }
     }
-    .product-name {
+    .yotpo-product-name {
       margin-top: 5px;
     }
-    .product-price {
+    .yotpo-product-price {
       margin-top: 3px;
       color: $primary;
     }
