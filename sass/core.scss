@@ -1713,7 +1713,84 @@
     }
 
   }
+  .promoted-products-box{ 
+    overflow: hidden;
+    position: relative;
+    .yotpo-main-title {
+      margin-bottom: 65px;
+      margin-top: 34px;
+      text-align: center;
+      white-space:nowrap;
+    }
+    .yotpo-promoted-products {
+      margin: 0 40px;
+      overflow: hidden;
+      position: relative;
+    }
+    .yotpo-page-element{
+      top: 50%;
+      position: absolute;
+    }
+    .icon-left-arrow {
+      left: 0;
+    }
+    .icon-right-arrow{
+      right: 0;
+    }
+  .promoted-products{
+    white-space:nowrap;
+    display: inline-block;
+    li {
+      display: inline-block;
+    }
+   .yotpo-promoted-product{
+      text-align: #{$left};  
+      width: 160px;
+      height: 200px;    
+      margin-right:24px;
+      margin-left:24px;
+    .yotpo-product-image {
+      width: 160px;
+      height: 110px;
+      img {
+       height:110px; 
+       width:160px; 
+       max-width:160px; 
+       max-height:110px;
+      }
+      position: relative;
+      .image-text {
+       width: 110px;
+       height: 20px;
+       position: absolute;
+       background: white;
+       opacity: 0.6;
+       bottom: 10px;
+       color: $gray-dark;
+      }
+    }
+    .review-stars {
+     .icon {
+       margin-top: 14px;
+       color: $yellow;
+     }
+     .reviews-count {
+       margin-top: 16px;
+       margin-#{$left}: 8px;
+     }
+    }
+    .yotpo-product-name {
+      margin-top: 5px;
+    }
+    .yotpo-product-price {
+      margin-top: 3px;
+      color: $primary;
+    }
+   }
+ }
+ }
 }
+
 
 #yotpo-testimonials-custom-tab {
   .yotpo-modal-mask {
