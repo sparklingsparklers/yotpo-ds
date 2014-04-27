@@ -2018,12 +2018,24 @@
 .yotpo-embedded-semi-label {
   .yotpo-tool-tip {
 
-
+    padding: 13px;
     position: absolute;
     top: 58px;
     width:160px;
+
   }
+  .icon-embedded {
+    font-size: 25px !important ;
+  }
+  #embedded-semi-label {
+    color: white !important;
+  }
+  .star-embedded {
+    color: red;
+  }
+
 }
+
 
 
 
