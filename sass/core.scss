@@ -1728,6 +1728,7 @@
       margin-top: 34px;
       text-align: center;
       white-space:nowrap;
+      color: $gray-darker;
     }
     .yotpo-promoted-products {
       margin: 0 40px;
@@ -1770,10 +1771,10 @@
        width: 110px;
        height: 20px;
        position: absolute;
-       background: white;
-       opacity: 0.6;
+       background: $white;
+       opacity: 0.9;
        bottom: 10px;
-       color: $gray-dark;
+       color: $gray-darker;
       }
     }
     .review-stars {
@@ -1784,14 +1785,17 @@
      .reviews-count {
        margin-top: 16px;
        margin-#{$left}: 8px;
+       color: $gray-dark;
      }
     }
     .yotpo-product-name {
       margin-top: 5px;
+      color: $gray-dark;
     }
     .yotpo-product-price {
       margin-top: 3px;
       color: $primary;
+      font-weight: bold
     }
    }
  }
