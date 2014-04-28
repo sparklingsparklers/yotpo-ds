@@ -932,7 +932,7 @@
 
   }
 
-  .yotpo-review, .yotpo-comment{
+  .yotpo-review, .yotpo-comment, .yotpo-question{
     .yotpo-header{
       position: relative;
       color: $gray;
@@ -1902,7 +1902,7 @@
     }
   }
 
-  .yotpo-review, .yotpo-comment {
+  .yotpo-review, .yotpo-comment, .yotpo-question {
     .yotpo-header{
       .header-actions{
         display: none;
