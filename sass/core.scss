@@ -1315,6 +1315,14 @@
       padding-top: 6px;
       padding-#{$left}: 0px;
     }
+    .questions {
+      margin: 5px;
+
+      .icon.label {
+        min-width: 0;
+        padding: 0;
+      }
+    }
   }
   &.bottomLine, &.bottomline, .yotpo-modal-bottom-line {
     .yotpo-bottomline {
