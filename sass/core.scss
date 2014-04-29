@@ -1300,6 +1300,12 @@
     }
   }
 
+  .standalone-bottomline {
+    &.star-clickable {
+      cursor: pointer;
+    }
+  }
+
   .yotpo-bottomline {
     .yotpo-stars {
       padding-#{$right}: 10px;
@@ -1320,6 +1326,14 @@
       display: inline-block;
       padding-top: 6px;
       padding-#{$left}: 0px;
+    }
+    .questions {
+      margin: 5px;
+
+      .icon.label {
+        min-width: 0;
+        padding: 0;
+      }
     }
   }
   &.bottomLine, &.bottomline, .yotpo-modal-bottom-line {
@@ -2015,6 +2029,9 @@
                 text-transform: none;
               }
             }
+          }
+          .write-question-button {
+            margin-left: 0;
           }
         }
       }
