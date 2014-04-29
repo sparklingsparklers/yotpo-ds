@@ -2031,6 +2031,15 @@
       margin-left: 10px;
     }
   }
+
+  .promoted-products-box{
+    .promoted-products{
+      overflow-x: auto !important;
+    }
+    .yotpo-promoted-products {
+      margin: 0;
+    }
+  }
 }
 
 .yotpo-testimonials-semi-label {
