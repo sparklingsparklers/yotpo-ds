@@ -1173,6 +1173,9 @@
 
     .comments-box {
       display: none;
+      &.visible {
+        display: inherit;
+      }
     }
   }
 
