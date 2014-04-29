@@ -1294,6 +1294,12 @@
     }
   }
 
+  .standalone-bottomline {
+    &.star_clickable {
+      cursor: pointer;
+    }
+  }
+
   .yotpo-bottomline {
     .yotpo-stars {
       padding-#{$right}: 10px;
