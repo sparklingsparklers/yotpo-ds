@@ -1304,6 +1304,11 @@
     &.star-clickable {
       cursor: pointer;
     }
+    .yotpo-bottomline {
+      .questions {
+        margin: 0;
+      }
+    }
   }
 
   .yotpo-bottomline {
