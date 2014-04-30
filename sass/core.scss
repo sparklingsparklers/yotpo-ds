@@ -1755,7 +1755,7 @@
     overflow: hidden;
     position: relative;
     .yotpo-main-title {
-      margin-bottom: 65px;
+      margin-bottom: 34px;
       margin-top: 34px;
       text-align: center;
       white-space:nowrap;
@@ -1786,43 +1786,44 @@
    .yotpo-promoted-product{
       text-align: #{$left};  
       width: 160px;
-      height: 200px;    
-      margin-right:24px;
-      margin-left:24px;
+      margin-right:14px;
+      margin-left:14px;
     .yotpo-product-image {
       width: 160px;
-      height: 110px;
+      height: 160px;
       img {
-       height:110px; 
-       width:160px; 
-       max-width:160px; 
-       max-height:110px;
+       max-width:160px;
+       max-height:160px;
       }
       position: relative;
       .image-text {
-       width: 110px;
        height: 20px;
+       padding-right: 2px;
+       padding-left: 2px;
        position: absolute;
-       background: $white;
+       background: $gray-dark;
        opacity: 0.9;
        bottom: 10px;
-       color: $gray-darker;
+       color: $white;
       }
     }
     .review-stars {
+      display: inline-block;
      .icon {
-       margin-top: 14px;
+       margin-top: 2px;
        color: $yellow;
      }
      .reviews-count {
-       margin-top: 16px;
-       margin-#{$left}: 8px;
+       margin-top: 3px;
+       margin-#{$left}: 0px;
        color: $gray-dark;
      }
     }
     .yotpo-product-name {
       margin-top: 5px;
       color: $gray-dark;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .yotpo-product-price {
       margin-top: 3px;
@@ -2052,9 +2053,28 @@
   .promoted-products-box{
     .promoted-products{
       overflow-x: auto !important;
+      overflow-y: hidden;
+
     }
     .yotpo-promoted-products {
       margin: 0;
+      .yotpo-promoted-product {
+        margin-left: 0;
+        margin-right: 0;
+        width: 110px;
+        .yotpo-product-image {
+          width: 100px;
+          height: 100px;
+          img {
+            max-width:100px;
+            max-height:100px;
+          }
+          position: relative;
+          .image-text {
+            bottom: 10px;
+          }
+        }
+      }
     }
   }
 }
