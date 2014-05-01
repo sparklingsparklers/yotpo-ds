@@ -1809,6 +1809,7 @@
     }
     .review-stars {
       display: inline-block;
+      min-height: 20px;
      .icon {
        margin-top: 2px;
        color: $yellow;
