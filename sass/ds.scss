@@ -121,6 +121,9 @@ div.exmple-box {
   padding: 30px 10px!important;
   display: inline-block!important;
   width: 100%!important;
+  &.pull-left {
+    text-align: left!important;
+  }
 }
 .small-title {
   font-size: 12px!important;
