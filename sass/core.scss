@@ -1778,8 +1778,7 @@
     }
   .promoted-products{
     white-space:nowrap;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
     li {
       display: inline-block;
     }
