@@ -1261,6 +1261,9 @@
 
   /* Widget Stracture */
   &.yotpo-main-widget {
+    display: block;
+    width: $main-widget-width;
+    margin: 0 auto;
     background-color: $bg-color!important;
   }
 
