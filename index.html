@@ -397,6 +397,16 @@
           <div class="primary-color-btn icon-btn" ><span class="icon icon-heart               "></span></div>
           <div class="primary-color-btn icon-btn" ><span class="icon icon-store               "></span></div>
         </div>
+
+        <div class='content'>
+          <div class="small-title">Code:</div>
+          <div class="exmple-box">
+            <textarea class="code-example">
+<div class="primary-color-btn icon-btn" ><span class="icon icon-store"></span></div>
+            </textarea>
+          </div>
+        </div>
+
       </section>
 
       <h3>Buttons</h3>
@@ -492,8 +502,11 @@
 
           <div class="small-title">Example:</div>
           <div class="exmple-box">
-            <div class="icon-btn-xs transparent-color-btn">
+            <!-- <div class="icon-btn-xs transparent-color-btn">
               <span class="icon icon-three-lines"></span>
+            </div> -->
+            <div class="icon icon-three-lines icon-btn-xs transparent-color-btn">
+              <span class=""></span>
             </div>
 
           </div>
@@ -675,13 +688,15 @@
 
           <div class="small-title">Example:</div>
           <div class="exmple-box">
-            <label class="label">Please write a review</label>
+            <div><label class="label">Please write a review</label></div>
+            <div><span class="label">write comment</span></div>
           </div>
 
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example">
-<labe class="label"></label>
+<label class="label"></label>
+<span class="label">write comment</span>
             </textarea>
           </div>
         </div>
@@ -721,7 +736,7 @@ this is a text box
           <div class="small-title">Code:</div>
           <div class="exmple-box">
             <textarea class="code-example">
-<textarea class="input text-box">this is a text box<//textarea>
+<textarea class="input text-box">this is a text box&lt;/textarea>
             </textarea>
           </div>
         </div>
@@ -911,19 +926,19 @@ this is a text box
           <div class="exmple-box">
             <div class="yotpo-nav yotpo-nav-primary">
               <ul>
-                  <li class="yotpo-nav-tab">
+                  <li class="yotpo-nav-tab" data-content="yotpo-main-widget-reviews">
                     <div class="yotpo-nav-wrapper">
-                      <span>home</span>
+                      <span>reviews</span>
                       <span class="nav-tab-sum">(16)</span>
                     </div>
                   </li>
-                  <li class="yotpo-nav-tab active">
+                  <li class="yotpo-nav-tab active" data-content="yotpo-main-widget-qa">
                     <div class="yotpo-nav-wrapper">
-                      <span>services</span>
+                      <span>Q&A</span>
                       <span class="yotpo-nav-tab-sum">(11)</span>
                     </div>
                   </li>
-                  <li class="yotpo-nav-tab">
+                  <li class="yotpo-nav-tab" data-content="yotpo-main-widget-whatever">
                     <div class="yotpo-nav-wrapper">
                       <span>one two three four five six seven</span>
                       <span class="yotpo-nav-tab-sum">(7)</span>
@@ -936,22 +951,22 @@ this is a text box
 
           <div class="small-title">Code:</div>
           <div class="exmple-box">
-            <textarea class="code-example" rows="22">
+            <textarea class="code-example" rows="25">
 <div class="yotpo-nav yotpo-nav-primary">
   <ul>
-      <li class="yotpo-nav-tab">
+      <li class="yotpo-nav-tab" data-content="yotpo-main-widget-reviews">
         <div class="yotpo-nav-wrapper">
-          <span>home</span>
+          <span>reviews</span>
           <span class="nav-tab-sum">(16)</span>
         </div>
       </li>
-      <li class="yotpo-nav-tab active">
+      <li class="yotpo-nav-tab active" data-content="yotpo-main-widget-qa">
         <div class="yotpo-nav-wrapper">
-          <span>services</span>
+          <span>Q&A</span>
           <span class="yotpo-nav-tab-sum">(11)</span>
         </div>
       </li>
-      <li class="yotpo-nav-tab">
+      <li class="yotpo-nav-tab" data-content="yotpo-main-widget-whatever">
         <div class="yotpo-nav-wrapper">
           <span>one two three four five six seven</span>
           <span class="yotpo-nav-tab-sum">(7)</span>
@@ -974,120 +989,128 @@ this is a text box
 
           <div class="small-title">Example:</div>
           <div class="exmple-box">
-            <div class="yotpo-nav-dropdown">
-              <label>Sort:</label>
-              <label class="selected" onclick="showSortCategories(this);">Select...</label>
-                <ul class="yotpo-dropdown list-categories">
-                  <li class="list-category" onclick="changeSortCategory(this);">
-                    <a>oldest</a>
-                  </li>
-                  <li class="list-category" onclick="changeSortCategory(this);">
-                    <a>newest</a>
-                  </li>
-                  <li class="list-category" onclick="changeSortCategory(this);">
-                    <a>best</a>
-                  </li>
-                </ul>
-              <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
+            <div class="yotpo-nav-dropdown" data-type="page_sort" data-value="oldest">
+              <div class="yotpo-dropdown-button">
+                <label>Sort:</label>
+                <label class="selected" onclick="showSortCategories(this);">Select...</label>
+                <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
+              </div>
+              <ul class="yotpo-dropdown list-categories">
+                <li class="list-category" data-value="oldest" onclick="changeSortCategory(this);">
+                  <a>oldest</a>
+                </li>
+                <li class="list-category" data-value="newest" onclick="changeSortCategory(this);">
+                  <a>newest</a>
+                </li>
+                <li class="list-category" data-value="best" onclick="changeSortCategory(this);">
+                  <a>best</a>
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="exmple-box">
+
+            <div class="icon-btn-big transparent-color-btn yotpo-visible-mobile">
+              <span class="icon icon-three-lines"></span>
+            </div>
+
             <div class="yotpo-dropdown-wrapper mobile-collapse">
-              <div class="icon-btn-big transparent-color-btn yotpo-visible-mobile">
-                <span class="icon icon-three-lines" onclick="showMobileMenu(this);"></span>
-              </div>
               <div class="yotpo-menu-mobile-collapse yotpo-hidden-mobile">
-                <div class="yotpo-nav-dropdown-category yotpo-visible-mobile">
+                
+                <div class="yotpo-nav-dropdown-category yotpo-visible-mobile write-review-button">
                   <span class="icon icon-write"></span>
                   <span class="label">write a review</span>
                 </div>
-                <div class="yotpo-nav-dropdown">
+
+                <div class="yotpo-nav-dropdown" data-type="per_page" data-value="10">
                   <div class="yotpo-dropdown-button">
                     <label>View:</label>
                     <label class="selected" onclick="showSortCategories(this);">Select...</label>
                     <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
                   </div>
                   <ul class="yotpo-dropdown list-categories">
-                    <li class="list-category" onclick="changeSortCategory(this);">
+                    <li class="list-category" data-value="10" onclick="changeSortCategory(this);">
                       <a>10 per page</a>
                     </li>
-                    <li class="list-category" onclick="changeSortCategory(this);">
+                    <li class="list-category" data-value="20" onclick="changeSortCategory(this);">
                       <a>20 per page</a>
                     </li>
                   </ul>
                 </div>
                 <span class="icon icon-seperator"></span>
-                <div class="yotpo-nav-dropdown">
+                <div class="yotpo-nav-dropdown" data-type="page_sort" data-value="oldest">
                   <div class="yotpo-dropdown-button">
                     <label>Sort:</label>
                     <label class="selected" onclick="showSortCategories(this);">Select...</label>
                     <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
                   </div>
-                    <ul class="yotpo-dropdown list-categories">
-                      <li class="list-category" onclick="changeSortCategory(this);">
-                        <a>oldest</a>
-                      </li>
-                      <li class="list-category" onclick="changeSortCategory(this);">
-                        <a>newest</a>
-                      </li>
-                      <li class="list-category" onclick="changeSortCategory(this);">
-                        <a>best</a>
-                      </li>
-                    </ul>
+                  <ul class="yotpo-dropdown list-categories">
+                    <li class="list-category" data-value="oldest" onclick="changeSortCategory(this);">
+                      <a>oldest</a>
+                    </li>
+                    <li class="list-category" data-value="newest" onclick="changeSortCategory(this);">
+                      <a>newest</a>
+                    </li>
+                    <li class="list-category" data-value="best" onclick="changeSortCategory(this);">
+                      <a>best</a>
+                    </li>
+                  </ul>
                 </div>
+                
               </div>
             </div>  
           </div>
 
           <div class="small-title">Code:</div>
           <div class="exmple-box">
-            <textarea class="code-example" rows="34">
+            <textarea class="code-example" rows="58">
+<div class="icon-btn-big transparent-color-btn yotpo-visible-mobile">
+  <span class="icon icon-three-lines"></span>
+</div>
+
 <div class="yotpo-dropdown-wrapper mobile-collapse">
-  <div class="icon-btn-big transparent-color-btn yotpo-visible-mobile">
-    <span class="icon icon-three-lines"></span>
-  </div>
   <div class="yotpo-menu-mobile-collapse yotpo-hidden-mobile">
-    <div class="yotpo-nav-dropdown-category yotpo-visible-mobile">
+    <div class="yotpo-nav-dropdown-category yotpo-visible-mobile write-review-button">
       <span class="icon icon-write"></span>
       <span class="label">write a review</span>
     </div>
-    <div class="yotpo-nav-dropdown">
+    <div class="yotpo-nav-dropdown" data-type="per_page" data-value="10">
       <div class="yotpo-dropdown-button">
         <label>View:</label>
-        <label class="selected">Select...</label>
-        <span id="btn-categories" class="icon icon-down-triangle"></span>
+        <label class="selected" onclick="showSortCategories(this);">Select...</label>
+        <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
       </div>
       <ul class="yotpo-dropdown list-categories">
-        <li class="list-category">
+        <li class="list-category" data-value="10" onclick="changeSortCategory(this);">
           <a>10 per page</a>
         </li>
-        <li class="list-category">
+        <li class="list-category" data-value="20" onclick="changeSortCategory(this);">
           <a>20 per page</a>
         </li>
       </ul>
     </div>
     <span class="icon icon-seperator"></span>
-    <div class="yotpo-nav-dropdown">
+    <div class="yotpo-nav-dropdown" data-type="page_sort" data-value="oldest">
       <div class="yotpo-dropdown-button">
         <label>Sort:</label>
-        <label class="selected">Select...</label>
-        <span id="btn-categories" class="icon icon-down-triangle"></span>
+        <label class="selected" onclick="showSortCategories(this);">Select...</label>
+        <span id="btn-categories" class="icon icon-down-triangle" onclick="showSortCategories(this);"></span>
       </div>
-        <ul class="yotpo-dropdown list-categories">
-          <li class="list-category">
-            <a>oldest</a>
-          </li>
-          <li class="list-category">
-            <a>newest</a>
-          </li>
-          <li class="list-category">
-            <a>best</a>
-          </li>
-        </ul>
+      <ul class="yotpo-dropdown list-categories">
+        <li class="list-category" data-value="oldest" onclick="changeSortCategory(this);">
+          <a>oldest</a>
+        </li>
+        <li class="list-category" data-value="newest" onclick="changeSortCategory(this);">
+          <a>newest</a>
+        </li>
+        <li class="list-category" data-value="best" onclick="changeSortCategory(this);">
+          <a>best</a>
+        </li>
+      </ul>
     </div>
   </div>
-  </div>  
+</div>
             </textarea>
           </div>
 
@@ -1101,8 +1124,7 @@ this is a text box
         <div class="small-title">Example:</div>
         <div class="write-review">
           <div class="yotpo-header">
-
-            
+           
             <span class="profile-wrapper"><span class="icon icon-profile-picture"></span></span>
             <span class="stars-wrapper">
               <span class="icon icon-empty-star"></span>
@@ -1126,33 +1148,33 @@ this is a text box
                 <textarea class="input text-box" onkeyup="showWriteReviewFooter(this);"></textarea>
               </div>
             </div>
-            </div>
-            <div class="yotpo-footer">
-              <div class="socialize-wrapper">
-                <div class="socialize">
-                  <label class="label">Connect with:</label>
-                  <div>
-                    <div class="yotpo-default-button icon-btn" ><span class="icon icon-linkedin"></span></div>
-                    <div class="yotpo-default-button icon-btn" ><span class="icon icon-googleplus"></span></div>
-                    <div class="yotpo-default-button icon-btn" ><span class="icon icon-twitter"></span></div>
-                    <div class="yotpo-default-button icon-btn" ><span class="icon icon-facebook"></span></div>
-                    
-                  </div>
-                </div>
-                <div class="yotpo-or">
-                  -OR-
+          </div>
+          <div class="yotpo-footer">
+            <div class="socialize-wrapper">
+              <div class="socialize">
+                <label class="label">Connect with:</label>
+                <div>
+                  <div class="yotpo-default-button icon-btn" ><span class="icon icon-linkedin"></span></div>
+                  <div class="yotpo-default-button icon-btn" ><span class="icon icon-googleplus"></span></div>
+                  <div class="yotpo-default-button icon-btn" ><span class="icon icon-twitter"></span></div>
+                  <div class="yotpo-default-button icon-btn" ><span class="icon icon-facebook"></span></div>
+                  
                 </div>
               </div>
-              <div class="connect-wrapper">
-                <div class="form-element">
-                      <label class="label">Use your name:</label>
-                      <input class="input" onkeyup="showMailInput(this);"></input>
-                </div>
-                <div class="form-element email-input">
-                      <label class="label">Email:</label>
-                      <input class="input"</input>
-                </div>
-                <input type="button" class="yotpo-default-button primary-color-btn yotpo-submit yotpo-disabled" value="submit"></input>
+              <div class="yotpo-or">
+                -OR-
+              </div>
+            </div>
+            <div class="connect-wrapper">
+              <div class="form-element">
+                <label class="label">Use your name:</label>
+                <input class="input" onkeyup="showMailInput(this);"></input>
+              </div>
+              <div class="form-element email-input">
+                <label class="label">Email:</label>
+                <input class="input"></input>
+              </div>
+              <input type="button" class="yotpo-default-button primary-color-btn yotpo-submit yotpo-disabled" value="submit"></input>
             </div>
             <div class="clr"></div>
           </div>
@@ -1248,7 +1270,7 @@ this is a text box
             <span class="yotpo-page-element yotpo-hidden-mobile" data-page="9">9</span>
             <span class="yotpo-page-element icon icon-right-arrow yotpo-disabled" data-page="next"></span>
           </div>
-      </div>
+        </div>
 
     </div>
     <div class="clr"></div>
@@ -1259,7 +1281,7 @@ this is a text box
 
     <h3>TOOLTIP</h3>
     <section>
-      <div class='content'>
+      <div class="content tool-tip-example">
 
         <div class="small-title">Example:</div>
         <div class="exmple-box">
@@ -1295,9 +1317,9 @@ this is a text box
         </div>
         <div class="small-title">Code:</div>
         <div class="exmple-box">
-          <textarea class="code-example" rows="9">
+          <textarea class="code-example" rows="12">
 <div class="tool-tip">
-  <div class="tool-tip-header">
+  <div class="tool-tip-header yotpo-animation-fade" data-user-type="user_type">
     <span>What is a</span>
     <span class="header-blue">Verified User</span>
   </div>
@@ -1319,35 +1341,35 @@ this is a text box
         <div class="small-title">Example:</div>
         <div class="exmple-box">
           <div class="yotpo-pager">
-            <span class="yotpo-page-element icon icon-left-arrow" data-page="back"></span>
-            <span class="yotpo-page-element" data-page="1">1</span>
-            <span class="yotpo-page-element" data-page="2">2</span>
-            <span class="yotpo-page-element active" data-page="3">3</span>
-            <span class="yotpo-page-element" data-page="4">4</span>
-            <span class="yotpo-page-element" data-page="5">5</span>
-            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="6">6</span>
-            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="7">7</span>
-            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="8">8</span>
-            <span class="yotpo-page-element yotpo-hidden-mobile" data-page="9">9</span>
-            <span class="yotpo-page-element icon icon-right-arrow yotpo-disabled" data-page="next"></span>
+            <span class="yotpo-page-element icon icon-left-arrow previous" data-page="back"></span>
+            <span class="yotpo-page-element goTo" data-page="1">1</span>
+            <span class="yotpo-page-element goTo" data-page="2">2</span>
+            <span class="yotpo-page-element goTo active" data-page="3">3</span>
+            <span class="yotpo-page-element goTo" data-page="4">4</span>
+            <span class="yotpo-page-element goTo" data-page="5">5</span>
+            <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="6">6</span>
+            <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="7">7</span>
+            <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="8">8</span>
+            <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="9">9</span>
+            <span class="yotpo-page-element icon icon-right-arrow next yotpo-disabled" data-page="next"></span>
           </div>
         </div>
 
         <div class="small-title">Code:</div>
         <div class="exmple-box">
-          <textarea class="code-example" rows="19">
+          <textarea class="code-example" rows="20">
 <div class="yotpo-pager">
-  <span class="yotpo-page-element icon icon-left-arrow" data-page="back"></span>
-  <span class="yotpo-page-element" data-page="1">1</span>
-  <span class="yotpo-page-element" data-page="2">2</span>
-  <span class="yotpo-page-element active" data-page="3">3</span>
-  <span class="yotpo-page-element" data-page="4">4</span>
-  <span class="yotpo-page-element" data-page="5">5</span>
-  <span class="yotpo-page-element yotpo-hidden-mobile" data-page="6">6</span>
-  <span class="yotpo-page-element yotpo-hidden-mobile" data-page="7">7</span>
-  <span class="yotpo-page-element yotpo-hidden-mobile" data-page="8">8</span>
-  <span class="yotpo-page-element yotpo-hidden-mobile" data-page="9">9</span>
-  <span class="yotpo-page-element icon icon-right-arrow yotpo-disabled" data-page="next"></span>
+  <span class="yotpo-page-element icon icon-left-arrow previous" data-page="back"></span>
+  <span class="yotpo-page-element goTo" data-page="1">1</span>
+  <span class="yotpo-page-element goTo" data-page="2">2</span>
+  <span class="yotpo-page-element goTo active" data-page="3">3</span>
+  <span class="yotpo-page-element goTo" data-page="4">4</span>
+  <span class="yotpo-page-element goTo" data-page="5">5</span>
+  <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="6">6</span>
+  <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="7">7</span>
+  <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="8">8</span>
+  <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="9">9</span>
+  <span class="yotpo-page-element icon icon-right-arrow next yotpo-disabled" data-page="next"></span>
 </div>
           </textarea>
         </div>
@@ -1360,64 +1382,85 @@ this is a text box
       <div class="content">
         <!-- <div class="small-title">Example:</div> -->
         <div class="exmple-box">
-          <div class="yotpo-thank-you">
+          <div class="yotpo-messages">
+            <div class="yotpo-thank-you">
 
-            <div class="icon-btn transparent-color-btn" ><span class="icon icon-cross "></span></div>
-            <div class="yotpo-thankyou-header text-xl">
-              <span class="icon icon-heart"></span>
-              <span>thank you for posting a review</span>
-            </div>
-            <div class="yotpo-thankyou-content">
-              <span>Be a pal and share this review to help your friends with their next shopping experience</span>
-            </div>
-            <div class="yotpo-thankyou-footer">
-              <div class="yotpo-default-button icon-btn">
-                <span class="icon icon-facebook"></span>
-                <span class="icon-button-text">share</span>
+              <div class="icon-btn transparent-color-btn" ><span class="icon icon-cross "></span></div>
+              <div class="yotpo-thankyou-header text-xl">
+                <span class="icon icon-heart"></span>
+                <span>thank you for posting a review</span>
               </div>
-              <div class="yotpo-default-button icon-btn">
-                <span class="icon icon-twitter"></span>
-                <span class="icon-button-text">share</span>
+              <div class="yotpo-thankyou-content">
+                <span>Be a pal and share this review to help your friends with their next shopping experience</span>
               </div>
-              <div class="yotpo-default-button icon-btn">
-                <span class="icon icon-linkedin"></span>
-                <span class="icon-button-text">share</span>
-              </div>
-              <div class="yotpo-default-button icon-btn">
-                <span class="icon icon-googleplus"></span>
-                <span class="icon-button-text">share</span>
+              <div class="yotpo-thankyou-footer">
+                <div class="yotpo-default-button icon-btn">
+                  <a class="social-link popup-link" href="#" target="_blank" data-network="facebook">
+                    <span class="icon icon-facebook"></span>
+                    <span class="icon-button-text">share</span>
+                  </a>
+                </div>
+                <div class="yotpo-default-button icon-btn">
+                  <a class="social-link popup-link" href="#" target="_blank" data-network="twitter">
+                    <span class="icon icon-twitter"></span>
+                    <span class="icon-button-text">share</span>
+                  </a>
+                </div>
+                <div class="yotpo-default-button icon-btn">
+                  <a class="social-link popup-link" href="#" target="_blank" data-network="linkedin">
+                    <span class="icon icon-linkedin"></span>
+                    <span class="icon-button-text">share</span>
+                  </a>
+                </div>
+                <div class="yotpo-default-button icon-btn">
+                  <a class="social-link popup-link" href="#" target="_blank" data-network="googleplus">
+                    <span class="icon icon-googleplus"></span>
+                    <span class="icon-button-text">share</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+          
         <div class="small-title">Code:</div>
         <div class="exmple-box">
-          <textarea class="code-example" rows="30">
-<div class="yotpo-thank-you">
-  <div class="icon-btn transparent-color-btn" ><span class="icon icon-cross "></span></div>
-  <div class="yotpo-thankyou-header text-xl">
-    <span class="icon icon-star"></span>
-    <span>thank you for posting a review</span>
-  </div>
-  <div class="yotpo-thankyou-content">
-    <span>Be a pal and share this review to help your friends with their next shopping experience</span>
-  </div>
-  <div class="yotpo-thankyou-footer">
-    <div class="yotpo-default-button icon-btn">
-      <span class="icon icon-facebook"></span>
-      <span class="icon-button-text">share</span>
+          <textarea class="code-example" rows="39" style="max-width:none!important;">
+<div class="yotpo-messages">
+  <div class="yotpo-thank-you">
+    <div class="icon-btn transparent-color-btn" ><span class="icon icon-cross "></span></div>
+    <div class="yotpo-thankyou-header text-xl">
+      <span class="icon icon-heart"></span>
+      <span>thank you for posting a review</span>
     </div>
-    <div class="yotpo-default-button icon-btn">
-      <span class="icon icon-twitter"></span>
-      <span class="icon-button-text">share</span>
+    <div class="yotpo-thankyou-content">
+      <span>Be a pal and share this review to help your friends with their next shopping experience</span>
     </div>
-    <div class="yotpo-default-button icon-btn">
-      <span class="icon icon-linkedin"></span>
-      <span class="icon-button-text">share</span>
-    </div>
-    <div class="yotpo-default-button icon-btn">
-      <span class="icon icon-googleplus"></span>
-      <span class="icon-button-text">share</span>
+    <div class="yotpo-thankyou-footer">
+      <div class="yotpo-default-button icon-btn">
+        <a class="social-link popup-link" href="#" target="_blank" data-network="facebook">
+          <span class="icon icon-facebook"></span>
+          <span class="icon-button-text">share</span>
+        </a>
+      </div>
+      <div class="yotpo-default-button icon-btn">
+        <a class="social-link popup-link" href="#" target="_blank" data-network="twitter">
+          <span class="icon icon-twitter"></span>
+          <span class="icon-button-text">share</span>
+        </a>
+      </div>
+      <div class="yotpo-default-button icon-btn">
+        <a class="social-link popup-link" href="#" target="_blank" data-network="linkedin">
+          <span class="icon icon-linkedin"></span>
+          <span class="icon-button-text">share</span>
+        </a>
+      </div>
+      <div class="yotpo-default-button icon-btn">
+        <a class="social-link popup-link" href="#" target="_blank" data-network="googleplus">
+          <span class="icon icon-googleplus"></span>
+          <span class="icon-button-text">share</span>
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -1442,92 +1485,836 @@ this is a text box
 
     <h3>Promoted Products</h3>
     <section>
-        <div class="exmple-box">          
-          <div class="promoted-products-box">
-            <!-- Pagination  -->
-            <div class="yotpo-pager">
-              <span class="yotpo-page-element icon icon-left-arrow" data-page="back"></span>
-              <span class="yotpo-page-element icon icon-right-arrow" data-page="next"></span>
+      <div class="small-title">Example:</div>
+      <div class="exmple-box">          
+        <div class="promoted-products-box">
+          <!-- Pagination  -->
+          <div class="yotpo-pager">
+            <span class="yotpo-page-element icon icon-left-arrow" data-page="back"></span>
+            <span class="yotpo-page-element icon icon-right-arrow" data-page="next"></span>
+          </div>
+          <!-- End Pagination  -->
+          <div class="yotpo-promoted-products">
+            <ul class="promoted-products">
+              <li>
+                <div class="yotpo-promoted-product">
+                  <!-- Product image  -->
+                  <div class="yotpo-product-image">
+                    <img src="images/product-example.jpg">
+                    <div class="image-text text-m">
+                      Computer Vaio
+                    </div>
+                  </div>
+                  <!-- End Product image  -->
+                  <!-- Product stars  -->
+                  <span class="review-stars">
+                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span     class  ="  icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span> <div class="text-m pull-left reviews-count">(23)</div>
+                  </span>
+                  <div class="clr"></div> 
+                  <!-- End product stars  -->
+                  <div class="text-m yotpo-product-name">Computer Vaio</div>
+                  <div class="text-l yotpo-product-price">$449</div>
+                </div>
+              </li>
+              <li>
+                <div class="yotpo-promoted-product">
+                  <div class="yotpo-product-image">
+                    <img src="images/product-example.jpg">
+                    <div class="image-text text-m">
+                      Computer Vaio
+                    </div>
+                  </div>
+                  <span class="review-stars">
+                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span     class  ="  icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span> <div class="text-s pull-left reviews-count">(23)</div>
+                  </span>
+                  <div class="clr"></div>
+                  <div class="text-m yotpo-product-name">Computer Vaio</div>
+                  <div class="text-l yotpo-product-price">$449</div>
+                </div>
+              </li>
+              <li>
+                <div class="yotpo-promoted-product">
+                  <div class="yotpo-product-image">
+                    <img src="images/product-example.jpg">
+                    <div class="image-text text-m">
+                      Computer Vaio
+                    </div>
+                  </div>
+                  <span class="review-stars">
+                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span     class  ="  icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span> <div class="text-s pull-left reviews-count">(23)</div>
+                  </span>
+                  <div class="clr"></div>
+                  <div class="text-m yotpo-product-name">Computer Vaio</div>
+                  <div class="text-l yotpo-product-price">$449</div>
+                </div>
+              </li>
+              <li>
+                <div class="yotpo-promoted-product">
+                  <div class="product-image">
+                    <img src="images/product-example.jpg">
+                    <div class="image-text text-m">
+                      Computer Vaio
+                    </div>
+                  </div>
+                  <span class="review-stars">
+                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span     class  ="  icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span> <div class="text-s pull-left reviews-count">(23)</div>
+                  </span>
+                  <div class="clr"></div>
+                  <div class="text-m yotpo-product-name">Computer Vaio</div>
+                  <div class="text-l yotpo-product-price">$449</div>
+                </div>
+              </li>                                          
+            </ul>
+          </div>
+        </div>          
+      </div>
+
+      <div class="small-title">Code:</div>
+      <div class="exmple-box">
+        <textarea class="code-example" rows="100" style="max-width:none!important;">
+<div class="promoted-products-box">
+  <!-- Pagination  -->
+  <div class="yotpo-pager">
+    <span class="yotpo-page-element icon icon-left-arrow" data-page="back"></span>
+    <span class="yotpo-page-element icon icon-right-arrow" data-page="next"></span>
+  </div>
+  <!-- End Pagination  -->
+  <div class="yotpo-promoted-products">
+    <ul class="promoted-products">
+      <li>
+        <div class="yotpo-promoted-product">
+          <!-- Product image  -->
+          <div class="yotpo-product-image">
+            <img src="images/product-example.jpg">
+            <div class="image-text text-m">
+              Computer Vaio
             </div>
-            <!-- End Pagination  -->
-            <div class="yotpo-promoted-products">
-              <ul class="promoted-products">
-                <li>
-                  <div class="yotpo-promoted-product">
-                    <!-- Product image  -->
-                    <div class="yotpo-product-image">
-                      <img src="images/product-example.jpg">
-                      <div class="image-text text-m">
-                        Computer Vaio
-                      </div>
-                    </div>
-                    <!-- End Product image  -->
-                    <!-- Product stars  -->
-                    <span class="review-stars">
-                      <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span     class  ="  icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span> <div class="text-s pull-left reviews-count">(23)</div>
-                    </span>
-                    <div class="clr"></div> 
-                    <!-- End product stars  -->
-                    <div class="text-m yotpo-product-name">Computer Vaio</div>
-                    <div class="text-l yotpo-product-price">$449</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="yotpo-promoted-product">
-                    <div class="yotpo-product-image">
-                      <img src="images/product-example.jpg">
-                      <div class="image-text text-m">
-                        Computer Vaio
-                      </div>
-                    </div>
-                    <span class="review-stars">
-                      <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span     class  ="  icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span> <div class="text-s pull-left reviews-count">(23)</div>
-                    </span>
-                    <div class="clr"></div>
-                    <div class="text-m yotpo-product-name">Computer Vaio</div>
-                    <div class="text-l yotpo-product-price">$449</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="yotpo-promoted-product">
-                    <div class="yotpo-product-image">
-                      <img src="images/product-example.jpg">
-                      <div class="image-text text-m">
-                        Computer Vaio
-                      </div>
-                    </div>
-                    <span class="review-stars">
-                      <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span     class  ="  icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span> <div class="text-s pull-left reviews-count">(23)</div>
-                    </span>
-                    <div class="clr"></div>
-                    <div class="text-m yotpo-product-name">Computer Vaio</div>
-                    <div class="text-l yotpo-product-price">$449</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="yotpo-promoted-product">
-                    <div class="product-image">
-                      <img src="images/product-example.jpg">
-                      <div class="image-text text-m">
-                        Computer Vaio
-                      </div>
-                    </div>
-                    <span class="review-stars">
-                      <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span     class  ="  icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span> <div class="text-s pull-left reviews-count">(23)</div>
-                    </span>
-                    <div class="clr"></div>
-                    <div class="text-m yotpo-product-name">Computer Vaio</div>
-                    <div class="text-l yotpo-product-price">$449</div>
-                  </div>
-                </li>                                          
-              </ul>
-            </div>
-          </div>          
+          </div>
+          <!-- End Product image  -->
+          <!-- Product stars  -->
+          <span class="review-stars">
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <div class="text-m pull-left reviews-count">(23)</div>
+          </span>
+          <div class="clr"></div> 
+          <!-- End product stars  -->
+          <div class="text-m yotpo-product-name">Computer Vaio</div>
+          <div class="text-l yotpo-product-price">$449</div>
         </div>
+      </li>
+      <li>
+        <div class="yotpo-promoted-product">
+          <div class="yotpo-product-image">
+            <img src="images/product-example.jpg">
+            <div class="image-text text-m">
+              Computer Vaio
+            </div>
+          </div>
+          <span class="review-stars">
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <div class="text-s pull-left reviews-count">(23)</div>
+          </span>
+          <div class="clr"></div>
+          <div class="text-m yotpo-product-name">Computer Vaio</div>
+          <div class="text-l yotpo-product-price">$449</div>
+        </div>
+      </li>
+      <li>
+        <div class="yotpo-promoted-product">
+          <div class="yotpo-product-image">
+            <img src="images/product-example.jpg">
+            <div class="image-text text-m">
+              Computer Vaio
+            </div>
+          </div>
+          <span class="review-stars">
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <div class="text-s pull-left reviews-count">(23)</div>
+          </span>
+          <div class="clr"></div>
+          <div class="text-m yotpo-product-name">Computer Vaio</div>
+          <div class="text-l yotpo-product-price">$449</div>
+        </div>
+      </li>
+      <li>
+        <div class="yotpo-promoted-product">
+          <div class="product-image">
+            <img src="images/product-example.jpg">
+            <div class="image-text text-m">
+              Computer Vaio
+            </div>
+          </div>
+          <span class="review-stars">
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <span class="icon icon-star pull-left"></span>
+            <div class="text-s pull-left reviews-count">(23)</div>
+          </span>
+          <div class="clr"></div>
+          <div class="text-m yotpo-product-name">Computer Vaio</div>
+          <div class="text-l yotpo-product-price">$449</div>
+        </div>
+      </li>                                          
+    </ul>
+  </div>
+</div>
+        </textarea>
+      </div>
+    </section>
+    
+    <h3>REVIEW</h3>
+    <section>
+      <div class='content'>
+
+        <div class="small-title">Example:</div>
+        <div class="exmple-box pull-left">
+          <div class="yotpo-review regular-box" data-review-id="<%= review['id'].to_s %>">
+            <div class="yotpo-header <%= user_type if user_type %>">
+              <span class="icon-profile header-element pull-left">
+                <label class="user-letter">M</label>
+                <span class="icon icon-circle-checkmark"></span>
+              </span>
+              <div class="header-element">
+                  <label class="label user-name font-bold pull-left">micha zana</label>
+                
+                    <div class='label-with-tooltip pull-left'>
+                      <span class="label yotpo-action-hover" data-type="toggleFade" data-target="yotpo-tool-tip">Verified User</span>
+
+                      <div class="yotpo-tool-tip yotpo-animation-fade" data-user-type="verified buyer">
+                        <div class="tool-tip-header">
+                          <span>What is a</span>
+                          <span class="header-blue">Verified User</span>
+                        </div>
+                        <div class="tool-tip-content">
+                          When users write reviews through the Mail After Purchase email, they are published as a "Verified Buyer" since we know they bought the product they are reviewing. 
+                        </div>
+                      </div>
+                    </div>
+                
+                <div class="clr"></div>
+                <span class="review-stars">
+                  <span class="icon icon-star pull-left"></span>
+                  <span class="icon icon-star pull-left"></span>
+                  <span class="icon icon-star pull-left"></span>
+                  <span class="icon icon-star pull-left"></span>
+                  <span class="icon icon-star pull-left"></span>
+                </span>
+                <div class="clr"></div>
+              </div>
+              <div class="header-element header-actions">
+                <label class="label review-date">04/29/14</label>
+              </div>
+            </div>
+
+            <div class="yotpo-main">
+              <div class="content-title font-bold">
+                brilliantly presented!
+              </div>
+              <div class="clr"></div>
+              <div class="yotpo-review-wrapper">
+                <div class="content-review">
+                  I just got your seed package - thank you very much and its so brilliantly presented and cared for. I'm glad we found you and can see you'll be great for presents and things in the future. Many thanks, Micha.
+                </div>
+              </div>
+              <a href="#product_link" target="_blank"><div class="label product-link">product_name</div></a>
+            </div>
+            <!-- Reviews Comments -->
+            <div class="no-border comments-box" style="display:block">
+
+              <div class="comment-box yotpo-comment" data-comment-id="1">
+                <div class="yotpo-header yotpo-store-owner">
+                  <span class="icon-profile header-element">
+                    <label class="user-letter"><span class="icon icon-store"></span></label>
+                    <span class="icon icon-circle-checkmark"></span>
+                  </span>
+                  <div class="header-element">
+                    <div class="stars-and-name">
+                      <label class="label user-name font-bold">Adele</label>
+                    </div>
+                    <div><label class="label"></label></div>
+                  </div>
+                  <div class="header-element header-actions">
+                    <label class="label review-date">05/01/14</label>
+                  </div>
+                </div>
+
+                <div class="yotpo-main">
+                  <div class="content-title font-bold">
+
+                  </div>
+                  <div class="content-review">
+                    thank you! those seeds are truely magical..
+                  </div>
+                </div>
+
+                <div class="yotpo-footer">
+                  <div class="footer-actions">
+                    <span class="yotpo-action" data-type="toggleFade" data-target="share-comment">
+                      <span class="icon icon-share"></span>
+                      <label class="label">Share</label>
+                      <span class="icon icon-seperator"></span>
+                    </span>
+                    
+                    <span class="share-options-wrapper">
+                      <span class="share-options share-review">
+                        <label class="label yotpo-action">
+                          <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">facebook</i></a>
+                        </label>
+                        <span class="icon icon-dot"></span>
+                        <label class="label yotpo-action">
+                          <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">twitter</i></a>
+                        </label>
+                        <span class="icon icon-dot"></span>
+                        <label class="label yotpo-action">
+                          <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">LinkedIn</i></a>
+                        </label>
+                        <span class="icon icon-dot"></span>
+                        <label class="label yotpo-action">
+                          <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">google</i></a>
+                        </label>
+                        <span class="icon icon-separator"></span>
+                        <span class="icon icon-seperator"></span>
+                      </span>
+                    </span>
+
+                  </div>
+
+                  <div class="footer-additional-actions">
+                    <label class="label review-date">05/01/14</label>
+                  </div>
+                  <div class="clr"></div>
+                </div>
+              </div>
+
+            </div>
+            <!-- End Reviews Comments -->
+            <div class="yotpo-footer">
+              <div class="footer-actions">
+                <span class="yotpo-action" data-type="toggleFade" data-target="share-review">
+                  <span class="icon icon-share"></span>
+                  <label class="label">Share</label>
+                  <span class="icon icon-seperator"></span>
+                </span>
+
+                <span class="share-options-wrapper">
+                  <span class="share-options share-review">
+                    <label class="label yotpo-action">
+                      <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">facebook</i></a>
+                    </label>
+                    <span class="icon icon-dot"></span>
+                    <label class="label yotpo-action">
+                      <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">twitter</i></a>
+                    </label>
+                    <span class="icon icon-dot"></span>
+                    <label class="label yotpo-action">
+                      <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">LinkedIn</i></a>
+                    </label>
+                    <span class="icon icon-dot"></span>
+                    <label class="label yotpo-action">
+                      <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">google</i></a>
+                    </label>
+                    <span class="icon icon-separator"></span>
+                    <span class="icon icon-seperator"></span>
+                  </span>
+                </span>
+
+                <span class="yotpo-action" data-type="toggleFade" data-target="comments-box">
+                  <span class="icon icon-chat-bubble label"></span>
+                  <label class="label">Comments (1)</label>
+                </span>
+
+              </div>
+              <div class="helpful">
+                <label class="label label-helpful">Was This Review Helpful?</label>
+                <label class="label sum vote-sum" data-type="up">2</label>
+                <div class="icon-btn-small transparent-color-btn vote-btn" data-type="up">
+                  <span class="icon icon-thumbs-up"></span>
+                </div>
+                <label class="label sum vote-sum" data-type="down">1</label>
+                <div class="icon-btn-small transparent-color-btn vote-btn" data-type="down">
+                  <span class="icon icon-thumbs-down"></span>
+                </div>
+              </div>
+
+              <div class="footer-additional-actions">
+                <label class="label review-date">04/29/14</label>
+              </div>
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="small-title">Code:</div>
+        <div class="exmple-box">
+          <textarea class="code-example" rows="185" style="max-width:none!important;">
+<div class="yotpo-review regular-box" data-review-id="<%= review['id'].to_s %>">
+  <div class="yotpo-header <%= user_type if user_type %>">
+    <span class="icon-profile header-element pull-left">
+      <label class="user-letter">M</label>
+      <span class="icon icon-circle-checkmark"></span>
+    </span>
+    <div class="header-element">
+        <label class="label user-name font-bold pull-left">micha zana</label>
+      
+          <div class='label-with-tooltip pull-left'>
+            <span class="label yotpo-action-hover" data-type="toggleFade" data-target="yotpo-tool-tip">verified buyer</span>
+
+            <div class="yotpo-tool-tip yotpo-animation-fade" data-user-type="verified buyer">
+              <div class="tool-tip-header">
+                <span>What is a</span>
+                <span class="header-blue">Verified User</span>
+              </div>
+              <div class="tool-tip-content">
+                When users write reviews through the Mail After Purchase email, they are published as a "Verified Buyer" since we know they bought the product they are reviewing. 
+              </div>
+            </div>
+          </div>
+      
+      <div class="clr"></div>
+      <span class="review-stars">
+        <span class="icon icon-star pull-left"></span>
+        <span class="icon icon-star pull-left"></span>
+        <span class="icon icon-star pull-left"></span>
+        <span class="icon icon-star pull-left"></span>
+        <span class="icon icon-star pull-left"></span>
+      </span>
+      <div class="clr"></div>
+    </div>
+    <div class="header-element header-actions">
+      <label class="label review-date">04/29/14</label>
+    </div>
+  </div>
+
+  <div class="yotpo-main">
+    <div class="content-title font-bold">
+      brilliantly presented!
+    </div>
+    <div class="clr"></div>
+    <div class="yotpo-review-wrapper">
+      <div class="content-review">
+        I just got your seed package - thank you very much and its so brilliantly presented and cared for. I'm glad we found you and can see you'll be great for presents and things in the future. Many thanks, Micha.
+      </div>
+    </div>
+    <a href="#product_link" target="_blank"><div class="label product-link">product_name</div></a>
+  </div>
+  <!-- Reviews Comments -->
+  <div class="no-border comments-box">
+    <div class="comment-box yotpo-comment" data-comment-id="1">
+      <div class="yotpo-header yotpo-store-owner">
+        <span class="icon-profile header-element">
+          <label class="user-letter"><span class="icon icon-store"></span></label>
+          <span class="icon icon-circle-checkmark"></span>
+        </span>
+        <div class="header-element">
+          <div class="stars-and-name">
+            <label class="label user-name font-bold">Adele</label>
+          </div>
+          <div><label class="label"></label></div>
+        </div>
+        <div class="header-element header-actions">
+          <label class="label review-date">05/01/14</label>
+        </div>
+      </div>
+
+      <div class="yotpo-main">
+        <div class="content-title font-bold">
+
+        </div>
+        <div class="content-review">
+          thank you! those seeds are truely magical..
+        </div>
+      </div>
+
+      <div class="yotpo-footer">
+        <div class="footer-actions">
+          <span class="yotpo-action" data-type="toggleFade" data-target="share-comment">
+            <span class="icon icon-share"></span>
+            <label class="label">Share</label>
+            <span class="icon icon-seperator"></span>
+          </span>
+          
+          <span class="share-options-wrapper">
+            <span class="share-options share-review">
+              <label class="label yotpo-action">
+                <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">facebook</i></a>
+              </label>
+              <span class="icon icon-dot"></span>
+              <label class="label yotpo-action">
+                <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">twitter</i></a>
+              </label>
+              <span class="icon icon-dot"></span>
+              <label class="label yotpo-action">
+                <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">LinkedIn</i></a>
+              </label>
+              <span class="icon icon-dot"></span>
+              <label class="label yotpo-action">
+                <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">google</i></a>
+              </label>
+              <span class="icon icon-separator"></span>
+              <span class="icon icon-seperator"></span>
+            </span>
+          </span>
+
+        </div>
+
+        <div class="footer-additional-actions">
+          <label class="label review-date">05/01/14</label>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Reviews Comments -->
+  <div class="yotpo-footer">
+    <div class="footer-actions">
+      <span class="yotpo-action" data-type="toggleFade" data-target="share-review">
+        <span class="icon icon-share"></span>
+        <label class="label">Share</label>
+        <span class="icon icon-seperator"></span>
+      </span>
+
+      <span class="share-options-wrapper">
+        <span class="share-options share-review">
+          <label class="label yotpo-action">
+            <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">facebook</i></a>
+          </label>
+          <span class="icon icon-dot"></span>
+          <label class="label yotpo-action">
+            <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">twitter</i></a>
+          </label>
+          <span class="icon icon-dot"></span>
+          <label class="label yotpo-action">
+            <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">LinkedIn</i></a>
+          </label>
+          <span class="icon icon-dot"></span>
+          <label class="label yotpo-action">
+            <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">google</i></a>
+          </label>
+          <span class="icon icon-separator"></span>
+          <span class="icon icon-seperator"></span>
+        </span>
+      </span>
+
+      <span class="yotpo-action" data-type="toggleFade" data-target="comments-box">
+        <span class="icon icon-chat-bubble label"></span>
+        <label class="label">Comments (2)</label>
+      </span>
+
+    </div>
+    <div class="helpful">
+      <label class="label label-helpful">Was This Review Helpful?</label>
+      <label class="label sum vote-sum" data-type="up">2</label>
+      <div class="icon-btn-small transparent-color-btn vote-btn" data-type="up">
+        <span class="icon icon-thumbs-up"></span>
+      </div>
+      <label class="label sum vote-sum" data-type="down">1</label>
+      <div class="icon-btn-small transparent-color-btn vote-btn" data-type="down">
+        <span class="icon icon-thumbs-down"></span>
+      </div>
+    </div>
+
+    <div class="footer-additional-actions">
+      <label class="label review-date">04/29/14</label>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+          </textarea>
+        </div>
+          
+      </div>
+      <div class="clr"></div>
     </section>
 
-    <section class="pull-center">
-      <a href="widget.html" >go to full widget</a>
+    <h3>WRITE-REVIEW</h3>
+    <section>
+      <div class="small-title">Example:</div>
+      <div class="exmple-box pull-left">
+        <div class="write-review-wrapper" style="display:block;">
+          <div class="write-review regular-box">
+            <div class="yotpo-header">
+              <label class="label">Score:</label>
+              <div>
+                <span class="stars-wrapper">
+                  <span class="icon icon-empty-star pull-left star" data-score="1"></span>
+                  <span class="icon icon-empty-star pull-left star" data-score="2"></span>
+                  <span class="icon icon-empty-star pull-left star" data-score="3>"></span>
+                  <span class="icon icon-empty-star pull-left star" data-score="4"></span>
+                  <span class="icon icon-empty-star pull-left star" data-score="5"></span>
+                </span>
+              </div>
+            </div>
+            <div class="write-review-content">
+              <div class="form-group">
+                <div class="form-element">
+                  <label class="label">Title:</label>
+                  <input class="input" autocomplete="off" name="review_title" maxlength="150"/>
+                </div>
+                <div class="form-element">
+                  <label class="label">Review:</label>
+                  <textarea class="input text-box" name="review_content" maxlength="1000"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="error-box hidden">
+              <div class="text-wrapper">
+                <label class="error-text"></label>
+              </div>
+              <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
+            </div>
+            <div class="yotpo-footer yotpo-animation-opacity visible" style="display:block;">
+              <div class="socialize-wrapper">
+                <div class="connected">connected to a social network.</div>
+                <div class="socialize">
+                  <label class="label">Connect with:</label>
+                  <div>
+                    <div class="yotpo-default-button icon-btn" data-network="linkedin"><span class="icon icon-linkedin pull-left"></span></div>
+                    <div class="yotpo-default-button icon-btn" data-network="google_oauth2"><span class="icon icon-googleplus pull-left"></span></div>
+                    <div class="yotpo-default-button icon-btn" data-network="twitter"><span class="icon icon-twitter pull-left"></span></div>
+                    <div class="yotpo-default-button icon-btn" data-network="facebook"><span class="icon icon-facebook pull-left"></span></div>
+                  </div>
+                </div>
+                <div class="yotpo-or">
+                  -OR-
+                </div>
+              </div>
+              <div class="connect-wrapper">
+                <div class="form-element name-input">
+                  <label class="label">Use your name:</label>
+                  <input class="input" autocomplete="off" name="display_name"/>
+                </div>
+                <div class="form-element email-input" style="display:block;">
+                  <label class="label">Email:</label>
+                  <input class="input" autocomplete="off" name="email"/>
+                </div>
+                <div class="clr"></div>
+              </div>
+            </div>
+            <input type="button" class="yotpo-default-button primary-color-btn yotpo-submit yotpo-disabled" value="POST"/>
+            <div class="yotpo-preloader-wrapper">
+              <div class="yotpo yotpo-pre-loader">
+                <span class="yotpo-empty-stars">
+                  <span class="icon icon-empty-star"></span>
+                  <span class="icon icon-empty-star"></span>
+                  <span class="icon icon-empty-star"></span>
+                  <span class="icon icon-empty-star"></span>
+                  <span class="icon icon-empty-star"></span>
+                </span>
+
+                <span class="yotpo-full-stars">
+                  <span class="icon icon-star"></span>
+                  <span class="icon icon-star"></span>
+                  <span class="icon icon-star"></span>
+                  <span class="icon icon-star"></span>
+                  <span class="icon icon-star"></span>
+                </span>
+              </div>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+        <div class="yotpo-messages">
+          <div class="yotpo-thank-you hidden" data-type="share">
+            <div class="icon-btn transparent-color-btn"><span class="icon icon-cross"></span></div>
+            <div class="yotpo-thankyou-header text-xl">
+              <span class="icon icon-heart"></span>
+              <span>Thank you for posting a review!</span>
+            </div>
+            <div class="yotpo-thankyou-content">
+              <span>Be a pal and share this review to help your friends with their next shopping experience</span>
+
+            </div>
+            <div class="yotpo-thankyou-footer">
+                <div class="yotpo-default-button icon-btn">
+                  <a class="social-link" href="#" target="_blank" data-network="facebook">
+                    <span class="icon icon-facebook"></span>
+                    <span class="icon-button-text">share</span>
+                  </a>
+                </div>
+                <div class="yotpo-default-button icon-btn">
+                  <a class="social-link" href="#" target="_blank" data-network="twitter">
+                    <span class="icon icon-twitter"></span>
+                    <span class="icon-button-text">share</span>
+                  </a>
+                </div>
+                <div class="yotpo-default-button icon-btn">
+                  <a class="social-link" href="#" target="_blank" data-network="linkedin">
+                    <span class="icon icon-linkedin"></span>
+                    <span class="icon-button-text">share</span>
+                  </a>
+                </div>
+                <div class="yotpo-default-button icon-btn">
+                  <a class="social-link" href="#" target="_blank" data-network="googleplus">
+                    <span class="icon icon-googleplus"></span>
+                    <span class="icon-button-text">share</span>
+                  </a>
+                </div>
+            </div>
+          </div>
+          <div class="yotpo-thank-you hidden" data-type="pending-for-approval">
+            <div class="icon-btn transparent-color-btn"><span class="icon icon-cross"></span></div>
+            <div class="yotpo-thankyou-header text-xl">
+              <span class="icon icon-heart"></span>
+              <span>Thank you for posting a review!</span>
+            </div>
+            <div class="yotpo-thankyou-content">
+              <span>Your review was sent successfully and is now waiting for our staff to publish it</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="small-title">Code:</div>
+      <div class="exmple-box">
+        <textarea class="code-example" rows="137" style="max-width:none!important;">
+<div class="write-review-wrapper">
+  <div class="write-review regular-box">
+    <div class="yotpo-header">
+      <label class="label">Score:</label>
+      <div>
+        <span class="stars-wrapper">
+          <span class="icon icon-empty-star pull-left star" data-score="1"></span>
+          <span class="icon icon-empty-star pull-left star" data-score="2"></span>
+          <span class="icon icon-empty-star pull-left star" data-score="3>"></span>
+          <span class="icon icon-empty-star pull-left star" data-score="4"></span>
+          <span class="icon icon-empty-star pull-left star" data-score="5"></span>
+        </span>
+      </div>
+    </div>
+    <div class="write-review-content">
+      <div class="form-group">
+        <div class="form-element">
+          <label class="label">Title:</label>
+          <input class="input" autocomplete="off" name="review_title" maxlength="150"/>
+        </div>
+        <div class="form-element">
+          <label class="label">Review:</label>
+          <textarea class="input text-box" name="review_content" maxlength="1000">&lt;/textarea>
+        </div>
+      </div>
+    </div>
+    <div class="error-box hidden">
+      <div class="text-wrapper">
+        <label class="error-text"></label>
+      </div>
+      <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
+    </div>
+    <div class="yotpo-footer yotpo-animation-opacity">
+      <div class="socialize-wrapper">
+        <div class="connected">connected to a social network.</div>
+        <div class="socialize">
+          <label class="label">Connect with:</label>
+          <div>
+            <div class="yotpo-default-button icon-btn" data-network="linkedin"><span class="icon icon-linkedin pull-left"></span></div>
+            <div class="yotpo-default-button icon-btn" data-network="google_oauth2"><span class="icon icon-googleplus pull-left"></span></div>
+            <div class="yotpo-default-button icon-btn" data-network="twitter"><span class="icon icon-twitter pull-left"></span></div>
+            <div class="yotpo-default-button icon-btn" data-network="facebook"><span class="icon icon-facebook pull-left"></span></div>
+          </div>
+        </div>
+        <div class="yotpo-or">
+          -OR-
+        </div>
+      </div>
+      <div class="connect-wrapper">
+        <div class="form-element name-input">
+          <label class="label">Use your name:</label>
+          <input class="input" autocomplete="off" name="display_name"/>
+        </div>
+        <div class="form-element email-input">
+          <label class="label">Email:</label>
+          <input class="input" autocomplete="off" name="email"/>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <input type="button" class="yotpo-default-button primary-color-btn yotpo-submit yotpo-disabled" value="POST"/>
+    <div class="yotpo-preloader-wrapper">
+      <div class="yotpo yotpo-pre-loader">
+        <span class="yotpo-empty-stars">
+          <span class="icon icon-empty-star"></span>
+          <span class="icon icon-empty-star"></span>
+          <span class="icon icon-empty-star"></span>
+          <span class="icon icon-empty-star"></span>
+          <span class="icon icon-empty-star"></span>
+        </span>
+
+        <span class="yotpo-full-stars">
+          <span class="icon icon-star"></span>
+          <span class="icon icon-star"></span>
+          <span class="icon icon-star"></span>
+          <span class="icon icon-star"></span>
+          <span class="icon icon-star"></span>
+        </span>
+      </div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div>
+<div class="yotpo-messages">
+  <div class="yotpo-thank-you hidden" data-type="share">
+    <div class="icon-btn transparent-color-btn"><span class="icon icon-cross"></span></div>
+    <div class="yotpo-thankyou-header text-xl">
+      <span class="icon icon-heart"></span>
+      <span>Thank you for posting a review!</span>
+    </div>
+    <div class="yotpo-thankyou-content">
+      <span>Be a pal and share this review to help your friends with their next shopping experience</span>
+
+    </div>
+    <div class="yotpo-thankyou-footer">
+        <div class="yotpo-default-button icon-btn">
+          <a class="social-link" href="#" target="_blank" data-network="facebook">
+            <span class="icon icon-facebook"></span>
+            <span class="icon-button-text">share</span>
+          </a>
+        </div>
+        <div class="yotpo-default-button icon-btn">
+          <a class="social-link" href="#" target="_blank" data-network="twitter">
+            <span class="icon icon-twitter"></span>
+            <span class="icon-button-text">share</span>
+          </a>
+        </div>
+        <div class="yotpo-default-button icon-btn">
+          <a class="social-link" href="#" target="_blank" data-network="linkedin">
+            <span class="icon icon-linkedin"></span>
+            <span class="icon-button-text">share</span>
+          </a>
+        </div>
+        <div class="yotpo-default-button icon-btn">
+          <a class="social-link" href="#" target="_blank" data-network="googleplus">
+            <span class="icon icon-googleplus"></span>
+            <span class="icon-button-text">share</span>
+          </a>
+        </div>
+    </div>
+  </div>
+  <div class="yotpo-thank-you hidden" data-type="pending-for-approval">
+    <div class="icon-btn transparent-color-btn"><span class="icon icon-cross"></span></div>
+    <div class="yotpo-thankyou-header text-xl">
+      <span class="icon icon-heart"></span>
+      <span>Thank you for posting a review!</span>
+    </div>
+    <div class="yotpo-thankyou-content">
+      <span>Your review was sent successfully and is now waiting for our staff to publish it</span>
+    </div>
+  </div>
+</div>
+        </textarea>
+      </div>
     </section>
 
     <section class="pull-center">
@@ -1535,382 +2322,441 @@ this is a text box
     </section>
   </div>
 
-  <div id="yotpo-testimonials" class="yotpo yotpo-modal" style="display: none;">
-    <div class="yotpo-modal-mask" onclick="hideTestimonials(900)"></div>
 
-    <div class="yotpo-modal-dialog">
-      <div class="yotpo-modal-logo">
-        <span><a class="" href="http://www.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=PoweredBy&amp;utm_medium=Testimonials&amp;utm_source=Testimonials" target="_blank">Reviews by</a> </span>
-        <div class="icon-btn-big transparent-color-btn">
-          <a class="icon icon-yotpo-logo" href="http://www.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=PoweredBy&amp;utm_medium=Testimonials&amp;utm_source=Testimonials" target="_blank"></a>
-        </div>
-      </div>
-      <div class="yotpo-modal-content">
-        <div class="yotpo-modal-header">
-          <div class="icon-btn-small transparent-color-btn close" onclick="hideTestimonials(900)">
-            <span class="icon icon-cross"></span>
-          </div>
-          <div class="modal-title">
-          <span>
-            These are real reviews <br> from real shoppers
-          </span>
-          </div>
-        </div>
 
-        <div class="popup-box-medium yotpo-modal-bottom-line">
-          <div class="yotpo-nav-content">
-            <div class="tab-pane " id="yotpo-testimonials-site-bottomline">
-              
-            </div>
-            <div class="tab-pane active" id="yotpo-testimonials-product-bottomline">
-              <span class="yotpo-display-wrapper" style="visibility: hidden;">
-                <a class="standalone-bottomline" href="http://www.micha.com/widget-test.html#yotpo-reviews" target="_self">
-                  <div class="yotpo-bottomline pull-left">
-                    <span class="yotpo-stars">
-                      <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-half-star pull-left"></span><span class="icon icon-empty-star pull-left"></span>
-                    </span>
-                    <span class="text-m">(26)</span>
-                    <div class="clr"></div>
-                  </div>
-                </a>
-              </span>
-            </div>
-          </div>
-          <input type="button" class="yotpo-default-button primary-color-btn pull-right write-review-button only-invisible " value="write a review">
-          <div class="clr"></div>
-        </div>
+  <div id="yotpo-testimonials" class="yotpo yotpo-modal">
+      <div class="yotpo-modal-mask" onclick="hideTestimonials(1500)"></div>
 
-        <div class="popup-box-small yotpo-nav yotpo-nav-primary">
-          <ul>
-            <li class="yotpo-nav-tab " data-type="site" data-content="yotpo-testimonials-site-reviews yotpo-testimonials-site-bottomline">
-              <div class="yotpo-nav-wrapper">
-                <span>Site Reviews</span>
-              </div>
-            </li>
-            <li class="yotpo-nav-tab active" data-type="product" data-content="yotpo-testimonials-product-reviews yotpo-testimonials-product-bottomline">
-              <div class="yotpo-nav-wrapper">
-                <span>Product Reviews</span>
-              </div>
-            </li>
-          </ul>
-          <div class="clr"></div>
-        </div>
-
-        <div class="modal-body-wrapper">
-          <div class="popup-box-large yotpo-modal-body">
-
-            <!-- Write a review -->
-            <div class="write-review-wrapper" style="display: none;">
-              <div class="write-review regular-box">
-                <div class="yotpo-header">
-                  <label class="label">score:</label>
-                  <div>
-                    <span class="stars-wrapper">
-                        <span class="icon icon-empty-star pull-left star" data-score="1"></span>
-                        <span class="icon icon-empty-star pull-left star" data-score="2"></span>
-                        <span class="icon icon-empty-star pull-left star" data-score="3"></span>
-                        <span class="icon icon-empty-star pull-left star" data-score="4"></span>
-                        <span class="icon icon-empty-star pull-left star" data-score="5"></span>
-                    </span>
-                  </div>
-                </div>
-                <div class="write-review-content">
-                  <div class="form-group">
-                    <div class="form-element">
-                      <label class="label">title:</label>
-                      <input class="input" autocomplete="off" name="review_title" maxlength="150">
-                    </div>
-                    <div class="form-element">
-                      <label class="label">Review:</label>
-                      <textarea class="input text-box" name="review_content" maxlength="1000"></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="error-box hidden">
-                  <div class="text-wrapper">
-                    <label class="error-text"></label>
-                  </div>
-                  <div class="icon-btn-small transparent-color-btn"><span class="icon icon-cross"></span></div>
-                </div>
-                <div class="yotpo-footer yotpo-animation-opacity">
-                  <div class="socialize-wrapper">
-                    <div class="connected">connected to a social network.</div>
-                    <div class="socialize">
-                      <label class="label">Connect with:</label>
-                      <div>
-                        <div class="yotpo-default-button icon-btn" data-network="linkedin"><span class="icon icon-linkedin pull-left"></span></div>
-                        <div class="yotpo-default-button icon-btn" data-network="google_oauth2"><span class="icon icon-googleplus pull-left"></span></div>
-                        <div class="yotpo-default-button icon-btn" data-network="twitter"><span class="icon icon-twitter pull-left"></span></div>
-                        <div class="yotpo-default-button icon-btn" data-network="facebook"><span class="icon icon-facebook pull-left"></span></div>
-                      </div>
-                    </div>
-                    <div class="yotpo-or">
-                      -OR-
-                    </div>
-                  </div>
-                  <div class="connect-wrapper">
-                    <div class="form-element name-input">
-                      <label class="label">Use your name:</label>
-                      <input class="input" autocomplete="off" name="display_name">
-                    </div>
-                    <div class="form-element email-input">
-                      <label class="label">email:</label>
-                      <input class="input" autocomplete="off" name="email">
-                    </div>
-                    <input type="button" class="yotpo-default-button primary-color-btn yotpo-submit yotpo-disabled" value="submit">
-                    <div class="clr"></div>
-                  </div>
+      <div class="yotpo-modal-dialog">
+        <div class="yotpo-label">
+          <div class="label-with-tooltip yotpo-testimonials-semi-label yotpo-semi-label">
+            <a href="http://www.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=reviews_tab&amp;utm_medium=widget&amp;utm_source=micha.com " target="_blank">
+              <div class="icon icon-star icon-btn-xs icon-yotpo-logo yotpo-action-hover" data-type="toggleFade" data-target="yotpo-tool-tip"></div>
+            </a>
+            <div class="yotpo-tool-tip yotpo-animation-fade">
+              <div class="tool-tip-content">
+                <span class="yotpo-logo-title"><a class="" href="http://www.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=reviews_tab&amp;utm_medium=widget&amp;utm_source=micha.com" target="_blank">Reviews by</a> </span>
+                <div class="icon-btn-big transparent-color-btn">
+                  <a class="icon icon-yotpo-logo" href="http://www.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=reviews_tab&amp;utm_medium=widget&amp;utm_source=micha.com" target="_blank"></a>
                 </div>
                 <div class="clr"></div>
               </div>
             </div>
-            <div class="yotpo-messages">
-              <div class="yotpo-thank-you hidden" data-type="share">
-                <div class="icon-btn transparent-color-btn"><span class="icon icon-cross"></span></div>
-                <div class="yotpo-thankyou-header text-xl">
-                  <span class="icon icon-heart"></span>
-                  <span>Thank you for posting a review!</span>
-                </div>
-                <div class="yotpo-thankyou-content">
-                  <span>Be a pal and share this review to help your friends with their next shopping experience</span>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="yotpo-modal-content">
+          <div class="yotpo-modal-header">
+            <div class="icon-btn-small transparent-color-btn close semi-white-label">
+              <span class="icon icon-cross" onclick="hideTestimonials(1500)"></span>
+            </div>
+            <div class="modal-title">
+              <span>
+                These are real reviews <br> from real shoppers
+              </span>
+            </div>
+          </div>
 
-                </div>
-                <div class="yotpo-thankyou-footer">
-                    <div class="yotpo-default-button icon-btn">
-                      <a class="social-link" href="#" target="_blank" data-network="facebook">
-                        <span class="icon icon-facebook"></span>
-                        <span class="icon-button-text">share</span>
-                      </a>
+          <div class="popup-box-medium yotpo-modal-bottom-line">
+            <div class="yotpo-nav-content">
+              <div class="tab-pane " id="yotpo-testimonials-site-bottomline"></div>
+              <div class="tab-pane active" id="yotpo-testimonials-product-bottomline">
+                <span class="yotpo-display-wrapper" style="visibility: hidden;">
+                  <div class="standalone-bottomline">
+                    <div class="yotpo-bottomline pull-left">
+                      <span class="yotpo-stars">
+                        <span class="icon icon-star pull-left"></span>
+                        <span class="icon icon-star pull-left"></span>
+                        <span class="icon icon-star pull-left"></span>
+                        <span class="icon icon-half-star pull-left"></span>
+                        <span class="icon icon-empty-star pull-left"></span>
+                      </span>
+                      <span class="text-m">63 Reviews</span>
+                      <div class="clr"></div>
                     </div>
-                    <div class="yotpo-default-button icon-btn">
-                      <a class="social-link" href="#" target="_blank" data-network="twitter">
-                        <span class="icon icon-twitter"></span>
-                        <span class="icon-button-text">share</span>
-                      </a>
-                    </div>
-                    <div class="yotpo-default-button icon-btn">
-                      <a class="social-link" href="#" target="_blank" data-network="linkedin">
-                        <span class="icon icon-linkedin"></span>
-                        <span class="icon-button-text">share</span>
-                      </a>
-                    </div>
-                    <div class="yotpo-default-button icon-btn">
-                      <a class="social-link" href="#" target="_blank" data-network="googleplus">
-                        <span class="icon icon-googleplus"></span>
-                        <span class="icon-button-text">share</span>
-                      </a>
-                    </div>
-                </div>
-              </div>
-              <div class="yotpo-thank-you hidden" data-type="pending-for-approval">
-                <div class="icon-btn transparent-color-btn"><span class="icon icon-cross"></span></div>
-                <div class="yotpo-thankyou-header text-xl">
-                  <span class="icon icon-heart"></span>
-                  <span>Thank you for posting a review!</span>
-                </div>
-                <div class="yotpo-thankyou-content">
-                  <span>Your review was sent successfully and is now waiting for our staff to publish it</span>
-                </div>
+                  </div>
+                </span>
               </div>
             </div>
+            <input type="button" class="yotpo-default-button primary-color-btn pull-right write-review-button only-invisible " value="write a review"/>
+            <div class="clr"></div>
+          </div>
 
-            <!-- End Write a review -->
+          <div class="popup-box-small yotpo-nav yotpo-nav-primary">
+            <ul>
+              <li class="yotpo-nav-tab " data-type="site" data-content="yotpo-testimonials-site-reviews yotpo-testimonials-site-bottomline">
+                <div class="yotpo-nav-wrapper">
+                  <span>Site Reviews</span>
+                </div>
+              </li>
+              <li class="yotpo-nav-tab active" data-type="product" data-content="yotpo-testimonials-product-reviews yotpo-testimonials-product-bottomline">
+                <div class="yotpo-nav-wrapper">
+                  <span>Product Reviews</span>
+                </div>
+              </li>
+            </ul>
+            <div class="clr"></div>
+          </div>
 
-            <div class="yotpo-nav-content">
-              <div class="tab-pane yotpo-reviews " id="yotpo-testimonials-site-reviews">
-                
-              </div>
-              <div class="tab-pane yotpo-reviews active" id="yotpo-testimonials-product-reviews">
+          <div class="modal-body-wrapper">
+            <div class="yotpo-modal-body">
+              <div class="popup-box-large">
+                <!-- Write a review -->
+                <div class="write-review-wrapper">
+                  <div class="write-review regular-box">
+                    <div class="yotpo-header">
+                      <label class="label">Score:</label>
+                      <div>
+                        <span class="stars-wrapper">
+                            <span class="icon icon-empty-star pull-left star" data-score="1"></span>
+                            <span class="icon icon-empty-star pull-left star" data-score="2"></span>
+                            <span class="icon icon-empty-star pull-left star" data-score="3"></span>
+                            <span class="icon icon-empty-star pull-left star" data-score="4"></span>
+                            <span class="icon icon-empty-star pull-left star" data-score="5"></span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="write-review-content">
+                      <div class="form-group">
+                        <div class="form-element">
+                          <label class="label">Title:</label>
+                          <input class="input" autocomplete="off" name="review_title" maxlength="150">
+                        </div>
+                        <div class="form-element">
+                          <label class="label">Review:</label>
+                          <textarea class="input text-box" name="review_content" maxlength="1000"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="error-box hidden">
+                      <div class="text-wrapper">
+                        <label class="error-text"></label>
+                      </div>
+                      <div class="icon-btn-small transparent-color-btn"><span class="icon icon-cross"></span></div>
+                    </div>
+                    <div class="yotpo-footer yotpo-animation-opacity">
+                      <div class="socialize-wrapper">
+                        <div class="connected">connected to a social network.</div>
+                        <div class="socialize">
+                          <label class="label">Connect with:</label>
+                          <div>
+                            <div class="yotpo-default-button icon-btn" data-network="linkedin"><span class="icon icon-linkedin pull-left"></span></div>
+                            <div class="yotpo-default-button icon-btn" data-network="google_oauth2"><span class="icon icon-googleplus pull-left"></span></div>
+                            <div class="yotpo-default-button icon-btn" data-network="twitter"><span class="icon icon-twitter pull-left"></span></div>
+                            <div class="yotpo-default-button icon-btn" data-network="facebook"><span class="icon icon-facebook pull-left"></span></div>
+                          </div>
+                        </div>
+                        <div class="yotpo-or">
+                          -OR-
+                        </div>
+                      </div>
+                      <div class="connect-wrapper">
+                        <div class="form-element name-input">
+                          <label class="label">Use your name:</label>
+                          <input class="input" autocomplete="off" name="display_name">
+                        </div>
+                        <div class="form-element email-input">
+                          <label class="label">Email:</label>
+                          <input class="input" autocomplete="off" name="email">
+                        </div>
+                        <div class="clr"></div>
+                      </div>
+                    </div>
+                    <input type="button" class="yotpo-default-button primary-color-btn yotpo-submit yotpo-disabled" value="Post">
+                    <div class="yotpo-preloader-wrapper">
+                      <div class="yotpo yotpo-pre-loader">
+                        <span class="yotpo-empty-stars">
+                          <span class="icon icon-empty-star"></span>
+                          <span class="icon icon-empty-star"></span>
+                          <span class="icon icon-empty-star"></span>
+                          <span class="icon icon-empty-star"></span>
+                          <span class="icon icon-empty-star"></span>
+                        </span>
+
+                        <span class="yotpo-full-stars">
+                          <span class="icon icon-star"></span>
+                          <span class="icon icon-star"></span>
+                          <span class="icon icon-star"></span>
+                          <span class="icon icon-star"></span>
+                          <span class="icon icon-star"></span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="clr"></div>
+                  </div>
+                </div>
+                <div class="yotpo-messages">
+                  <div class="yotpo-thank-you hidden" data-type="share">
+                    <div class="icon-btn transparent-color-btn"><span class="icon icon-cross"></span></div>
+                    <div class="yotpo-thankyou-header text-xl">
+                      <span class="icon icon-heart"></span>
+                      <span>Thank you for posting a review!</span>
+                    </div>
+                    <div class="yotpo-thankyou-content">
+                      <span>Be a pal and share this review to help your friends with their next shopping experience.</span>
+                    </div>
+                    <div class="yotpo-thankyou-footer">
+                      <div class="yotpo-default-button icon-btn">
+                        <a class="social-link popup-link" href="#" target="_blank" data-network="facebook">
+                          <span class="icon icon-facebook"></span>
+                          <span class="icon-button-text">share</span>
+                        </a>
+                      </div>
+                      <div class="yotpo-default-button icon-btn">
+                        <a class="social-link popup-link" href="#" target="_blank" data-network="twitter">
+                          <span class="icon icon-twitter"></span>
+                          <span class="icon-button-text">share</span>
+                        </a>
+                      </div>
+                      <div class="yotpo-default-button icon-btn">
+                        <a class="social-link popup-link" href="#" target="_blank" data-network="linkedin">
+                          <span class="icon icon-linkedin"></span>
+                          <span class="icon-button-text">share</span>
+                        </a>
+                      </div>
+                      <div class="yotpo-default-button icon-btn">
+                        <a class="social-link popup-link" href="#" target="_blank" data-network="googleplus">
+                          <span class="icon icon-googleplus"></span>
+                          <span class="icon-button-text">share</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="yotpo-thank-you hidden" data-type="pending-for-approval">
+                    <div class="icon-btn transparent-color-btn"><span class="icon icon-cross"></span></div>
+                    <div class="yotpo-thankyou-header text-xl">
+                      <span class="icon icon-heart"></span>
+                      <span>Thank you for posting a review!</span>
+                    </div>
+                    <div class="yotpo-thankyou-content">
+                      <span>Your review was sent successfully and is now waiting for our staff to publish it</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Write a review -->
+                <div class="yotpo-nav-content">
+                  <div class="tab-pane yotpo-reviews " id="yotpo-testimonials-site-reviews"></div>
+                  <div class="tab-pane yotpo-reviews active" id="yotpo-testimonials-product-reviews">
+                    <div class="yotpo-preloader-wrapper">
+                      <div class="yotpo yotpo-pre-loader">
+                        <span class="yotpo-empty-stars">
+                          <span class="icon icon-empty-star"></span>
+                          <span class="icon icon-empty-star"></span>
+                          <span class="icon icon-empty-star"></span>
+                          <span class="icon icon-empty-star"></span>
+                          <span class="icon icon-empty-star"></span>
+                        </span>
+
+                        <span class="yotpo-full-stars">
+                          <span class="icon icon-star"></span>
+                          <span class="icon icon-star"></span>
+                          <span class="icon icon-star"></span>
+                          <span class="icon icon-star"></span>
+                          <span class="icon icon-star"></span>
+                        </span>
+                      </div>
+                    </div>
                     <!-- Start Review -->
-                <div class="yotpo-review regular-box" data-review-id="18">
-                  <div class="yotpo-header ">
-                    <span class="icon-profile header-element">
-                      <label class="user-letter">G</label>
-                      <span class="icon icon-circle-checkmark"></span>
-                    </span>
-                    <div class="header-element">
-                        <label class="label user-name font-bold">gdfgfd</label>
-                        <div class="clr"></div>
-                    </div>
-                    <div class="header-element header-actions">
-                      <label class="label review-date">03/06/14</label>
-                    </div>
-                  </div>
-
-                  <div class="yotpo-main">
-                    <div>
-                      <span class="review-stars">
-                        <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-empty-star pull-left"></span><span class="icon icon-empty-star pull-left"></span>
-                      </span>
-                      <div class="content-title font-bold">
-                        dfgfd
-                      </div>
-                      <div class="clr"></div>
-                    </div>
-                    <div class="yotpo-review-wrapper">
-                      <div class="content-review">
-                        fdg
-                      </div>
-                    </div>
-                    <a href="https://yotpo.com/go/byUKFEJg" target="_blank"><div class="label product-link">Product Title</div></a>
-                  </div>
-                  <!-- Reviews Comments -->
-                  <!-- End Reviews Comments -->
-                  <div class="yotpo-footer">
-                    <div class="footer-actions">
-                      <span class="yotpo-action" data-type="toggleFade" data-target="share-options">
-                        <span class="icon icon-share"></span>
-                        <label class="label">share</label>
-                        <span class="icon icon-seperator"></span>
-                      </span>
-                      <span class="share-options-wrapper">
-                        <span class="share-options">
-                          <label class="label yotpo-action">
-                            <a class="social-link popup-link" data-network="facebook" href="https://www.facebook.com/dialog/feed?app_id=226132034107547&amp;caption=%26%239733%3B%26%239733%3B%26%239733%3B%26%239734%3B%26%239734%3B&amp;description=fdg&amp;display=popup&amp;link=https%3A%2F%2Fyotpo.com%2Fgo%2F2PzjUmup&amp;name=dfgfd&amp;redirect_uri=http%3A%2F%2Fwww.yotpo.com%2Fshares%2F18"><i class="facebook share">facebook</i></a>
-                          </label>
-                          <span class="icon icon-dot"></span>
-                          <label class="label yotpo-action">
-                            <a class="social-link popup-link" data-network="twitter" href="https://twitter.com/intent/tweet?text=fdg&amp;url=https%3A%2F%2Fyotpo.com%2Fgo%2Ft1Nk9xb6&amp;via=yotpo"><i class="twitter share">twitter</i></a>
-                          </label>
-                          <span class="icon icon-dot"></span>
-                          <label class="label yotpo-action">
-                            <a class="social-link popup-link" data-network="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;source=Yotpo&amp;summary=fdg&amp;title=dfgfd&amp;url=https%3A%2F%2Fyotpo.com%2Fgo%2FrfRKUfyU"><i class="linkedin share">linkedin</i></a>
-                          </label>
-                          <span class="icon icon-dot"></span>
-                          <label class="label yotpo-action">
-                            <a class="social-link popup-link" data-network="google" href="https://plus.google.com/share?url=https%3A%2F%2Fyotpo.com%2Fgo%2F1454NdDL"><i class="google share">google</i></a>
-                          </label>
-                          <span class="icon icon-separator"></span>
+    
+                    <div class="yotpo-review regular-box" data-review-id="70">
+                      <div class="yotpo-header ">
+                        <span class="icon-profile header-element pull-left">
+                          <label class="user-letter">M</label>
+                          <span class="icon icon-circle-checkmark"></span>
                         </span>
-                      </span>
-
-                    </div>
-                    <div class="helpful">
-                      <label class="label label-helpful">Helpful?</label>
-                      <label class="label sum vote-sum" data-type="up">0</label>
-                      <div class="icon-btn-small transparent-color-btn vote-btn" data-type="up">
-                        <span class="icon icon-thumbs-up"></span>
+                        <div class="header-element">
+                          <label class="label user-name font-bold pull-left">micha</label>
+                          <div class="clr"></div>
+                          <span class="review-stars">
+                            <span class="icon icon-star pull-left"></span>
+                            <span class="icon icon-star pull-left"></span>
+                            <span class="icon icon-star pull-left"></span>
+                            <span class="icon icon-star pull-left"></span>
+                            <span class="icon icon-star pull-left"></span>
+                          </span>
+                          <div class="clr"></div>
+                        </div>
+                        <div class="header-element header-actions">
+                          <label class="label review-date">04/29/14</label>
+                        </div>
                       </div>
-                      <label class="label sum vote-sum" data-type="down">0</label>
-                      <div class="icon-btn-small transparent-color-btn vote-btn" data-type="down">
-                        <span class="icon icon-thumbs-down"></span>
-                      </div>
-                    </div>
 
-                    <div class="footer-additional-actions">
-                      <label class="label review-date">03/06/14</label>
-                    </div>
-                    <div class="clr"></div>
-                  </div>
-                </div>
-                <!-- End Review -->
-                <!-- Start Review -->
-
-                <div class="yotpo-review regular-box" data-review-id="17">
-                  <div class="yotpo-header ">
-                      <span class="icon-profile header-element">
-                        <label class="user-letter">G</label>
-                        <span class="icon icon-circle-checkmark"></span>
-                      </span>
-                    <div class="header-element">
-                        <label class="label user-name font-bold">gdfgfd</label>
+                      <div class="yotpo-main">
+                        <div class="content-title font-bold">
+                          test-special
+                        </div>
                         <div class="clr"></div>
-                    </div>
-                    <div class="header-element header-actions">
-                      <label class="label review-date">03/06/14</label>
-                    </div>
-                  </div>
+                        <div class="yotpo-review-wrapper">
+                          <div class="content-review">
+                            I just got your seed package - thank you very much and its so brilliantly presented and cared for. I'm glad we found you and can see you'll be great for presents and things in the future. Many thanks Adele
+                          </div>
+                        </div>
+                        <a href="#" target="_blank"><div class="label product-link">On Product Title</div></a>
+                      </div>
+                      <!-- Reviews Comments -->
+                      <!-- End Reviews Comments -->
+                      <div class="yotpo-footer">
+                        <div class="footer-actions">
+                          <span class="yotpo-action" data-type="toggleFade" data-target="share-review">
+                            <span class="icon icon-share"></span>
+                            <label class="label">share</label>
+                            <span class="icon icon-seperator"></span>
+                          </span>
+                          <span class="share-options-wrapper">
+                            <span class="share-options share-review">
+                                <label class="label yotpo-action">
+                                  <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">facebook</i></a>
+                                </label>
+                                <span class="icon icon-dot"></span>
+                                <label class="label yotpo-action">
+                                  <a class="social-link popup-link" data-network="twitter" href="#"><i class="twitter share">twitter</i></a>
+                                </label>
+                                <span class="icon icon-dot"></span>
+                                <label class="label yotpo-action">
+                                  <a class="social-link popup-link" data-network="LinkedIn" href="#"><i class="LinkedIn share">LinkedIn</i></a>
+                                </label>
+                                <span class="icon icon-dot"></span>
+                                <label class="label yotpo-action">
+                                  <a class="social-link popup-link" data-network="google" href="#"><i class="google share">google</i></a>
+                                </label>
+                                <span class="icon icon-separator"></span>
+                              <span class="icon icon-seperator"></span>
+                            </span>
+                          </span>
+                        </div>
+                        <div class="helpful">
+                          <label class="label label-helpful">Was this review helpful?</label>
+                          <label class="label sum vote-sum" data-type="up">0</label>
+                          <div class="icon-btn-small transparent-color-btn vote-btn" data-type="up">
+                            <span class="icon icon-thumbs-up"></span>
+                          </div>
+                          <label class="label sum vote-sum" data-type="down">0</label>
+                          <div class="icon-btn-small transparent-color-btn vote-btn" data-type="down">
+                            <span class="icon icon-thumbs-down"></span>
+                          </div>
+                        </div>
 
-                  <div class="yotpo-main">
-                    <div>
-                      <span class="review-stars">
-                        <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-empty-star pull-left"></span><span class="icon icon-empty-star pull-left"></span>
-                      </span>
-                      <div class="content-title font-bold">
-                        dfgfd
-                      </div>
-                      <div class="clr"></div>
-                    </div>
-                    <div class="yotpo-review-wrapper">
-                      <div class="content-review">
-                        fdg
+                        <div class="footer-additional-actions">
+                          <label class="label review-date">04/29/14</label>
+                        </div>
+                        <div class="clr"></div>
                       </div>
                     </div>
-                    <a href="https://yotpo.com/go/byUKFEJg" target="_blank"><div class="label product-link">Product Title</div></a>
-                  </div>
-                  <!-- Reviews Comments -->
-                  <!-- End Reviews Comments -->
-                  <div class="yotpo-footer">
-                    <div class="footer-actions">
-                      <span class="yotpo-action" data-type="toggleFade" data-target="share-options">
-                        <span class="icon icon-share"></span>
-                        <label class="label">share</label>
-                        <span class="icon icon-seperator"></span>
-                      </span>
-                      <span class="share-options-wrapper">
-                        <span class="share-options">
-                          <label class="label yotpo-action">
-                            <a class="social-link popup-link" data-network="facebook" href="https://www.facebook.com/dialog/feed?app_id=226132034107547&amp;caption=%26%239733%3B%26%239733%3B%26%239733%3B%26%239734%3B%26%239734%3B&amp;description=fdg&amp;display=popup&amp;link=https%3A%2F%2Fyotpo.com%2Fgo%2F2PzjUmup&amp;name=dfgfd&amp;redirect_uri=http%3A%2F%2Fwww.yotpo.com%2Fshares%2F17"><i class="facebook share">facebook</i></a>
-                          </label>
-                          <span class="icon icon-dot"></span>
-                          <label class="label yotpo-action">
-                            <a class="social-link popup-link" data-network="twitter" href="https://twitter.com/intent/tweet?text=fdg&amp;url=https%3A%2F%2Fyotpo.com%2Fgo%2Ft1Nk9xb6&amp;via=yotpo"><i class="twitter share">twitter</i></a>
-                          </label>
-                          <span class="icon icon-dot"></span>
-                          <label class="label yotpo-action">
-                            <a class="social-link popup-link" data-network="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;source=Yotpo&amp;summary=fdg&amp;title=dfgfd&amp;url=https%3A%2F%2Fyotpo.com%2Fgo%2FrfRKUfyU"><i class="linkedin share">linkedin</i></a>
-                          </label>
-                          <span class="icon icon-dot"></span>
-                          <label class="label yotpo-action">
-                            <a class="social-link popup-link" data-network="google" href="https://plus.google.com/share?url=https%3A%2F%2Fyotpo.com%2Fgo%2F1454NdDL"><i class="google share">google</i></a>
-                          </label>
-                          <span class="icon icon-separator"></span>
+                    <!-- End Review -->
+
+                    <!-- Start Review -->
+                    <div class="yotpo-review regular-box" data-review-id="69">
+                      <div class="yotpo-header ">
+                        <span class="icon-profile header-element pull-left">
+                          <label class="user-letter">S</label>
+                          <span class="icon icon-circle-checkmark"></span>
                         </span>
-                      </span>
-
-                    </div>
-                    <div class="helpful">
-                      <label class="label label-helpful">Helpful?</label>
-                      <label class="label sum vote-sum" data-type="up">0</label>
-                      <div class="icon-btn-small transparent-color-btn vote-btn" data-type="up">
-                        <span class="icon icon-thumbs-up"></span>
+                        <div class="header-element">
+                          <label class="label user-name font-bold pull-left">sdgadfsg</label>
+                          <div class="clr"></div>
+                          <span class="review-stars">
+                            <span class="icon icon-star pull-left"></span>
+                            <span class="icon icon-star pull-left"></span>
+                            <span class="icon icon-star pull-left"></span>
+                            <span class="icon icon-star pull-left"></span>
+                            <span class="icon icon-star pull-left"></span>
+                          </span>
+                          <div class="clr"></div>
+                        </div>
+                        <div class="header-element header-actions">
+                          <label class="label review-date">04/29/14</label>
+                        </div>
                       </div>
-                      <label class="label sum vote-sum" data-type="down">0</label>
-                      <div class="icon-btn-small transparent-color-btn vote-btn" data-type="down">
-                        <span class="icon icon-thumbs-down"></span>
+
+                      <div class="yotpo-main">
+                        <div class="content-title font-bold">micha</div>
+                        <div class="clr"></div>
+                        <div class="yotpo-review-wrapper">
+                          <div class="content-review">
+                            I've used this with the intense repair shampoo and conditioner, it's great for shine and doesn't make my hair feel oily.
+                          </div>
+                        </div>
+                        <a href="#" target="_blank"><div class="label product-link">On Product Title</div></a>
+                      </div>
+                      <!-- Reviews Comments -->
+                      <!-- End Reviews Comments -->
+                      <div class="yotpo-footer">
+                        <div class="footer-actions">
+                          <span class="yotpo-action" data-type="toggleFade" data-target="share-review">
+                            <span class="icon icon-share"></span>
+                            <label class="label">share</label>
+                            <span class="icon icon-seperator"></span>
+                          </span>
+                          <span class="share-options-wrapper">
+                            <span class="share-options share-review">
+                              <label class="label yotpo-action">
+                                <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">facebook</i></a>
+                              </label>
+                              <span class="icon icon-dot"></span>
+                              <label class="label yotpo-action">
+                                <a class="social-link popup-link" data-network="twitter" href="#"><i class="twitter share">twitter</i></a>
+                              </label>
+                              <span class="icon icon-dot"></span>
+                              <label class="label yotpo-action">
+                                <a class="social-link popup-link" data-network="LinkedIn" href="#"><i class="LinkedIn share">LinkedIn</i></a>
+                              </label>
+                              <span class="icon icon-dot"></span>
+                              <label class="label yotpo-action">
+                                <a class="social-link popup-link" data-network="google" href="#"><i class="google share">google</i></a>
+                              </label>
+                              <span class="icon icon-separator"></span>
+                              <span class="icon icon-seperator"></span>
+                            </span>
+                          </span>
+                        </div>
+                        <div class="helpful">
+                          <label class="label label-helpful">Was this review helpful?</label>
+                          <label class="label sum vote-sum" data-type="up">0</label>
+                          <div class="icon-btn-small transparent-color-btn vote-btn" data-type="up">
+                            <span class="icon icon-thumbs-up"></span>
+                          </div>
+                          <label class="label sum vote-sum" data-type="down">0</label>
+                          <div class="icon-btn-small transparent-color-btn vote-btn" data-type="down">
+                            <span class="icon icon-thumbs-down"></span>
+                          </div>
+                        </div>
+
+                        <div class="footer-additional-actions">
+                          <label class="label review-date">04/29/14</label>
+                        </div>
+                        <div class="clr"></div>
                       </div>
                     </div>
-
-                    <div class="footer-additional-actions">
-                      <label class="label review-date">03/06/14</label>
+                    <!-- End Review -->
+                    
+                    <!-- Pagination -->
+                    <div class="yotpo-pager">
+                      <span class="yotpo-page-element icon icon-left-arrow previous yotpo-disabled"></span>
+                      <span class="yotpo-page-element goTo active" data-page="1">1</span>
+                      <span class="yotpo-page-element goTo " data-page="2">2</span>
+                      <span class="yotpo-page-element goTo " data-page="3">3</span>
+                      <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="4">4</span>
+                      <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="5">5</span>
+                      <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="6">6</span>
+                      <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="7">7</span>
+                      <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="8">8</span>
+                      <span class="yotpo-page-element goTo yotpo-hidden-mobile" data-page="9">9</span>
+                      <span class="yotpo-page-element icon icon-right-arrow next "></span>
                     </div>
-                    <div class="clr"></div>
+                    <!-- End Pagination -->
                   </div>
                 </div>
-                <!-- End Review -->
-                <!-- Pagination -->
-                <div class="yotpo-pager">
-                  <span class="yotpo-page-element icon icon-left-arrow previous yotpo-disabled"></span>
-                    <span class="yotpo-page-element goTo active" data-page="1">1</span>
-                    <span class="yotpo-page-element goTo " data-page="2">2</span>
-                    <span class="yotpo-page-element goTo " data-page="3">3</span>
-                  <span class="yotpo-page-element icon icon-right-arrow next "></span>
-                </div>
-
-                <!-- End Pagination -->
-
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="yotpo-modal-footer" style="display: none;">
-          <div class="yoPowered ">
-            <a class="" href="http://www.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=PoweredBy&amp;utm_medium=Testimonials&amp;utm_source=Testimonials" target="_blank">Reviews by</a>
+          <div class="yotpo-modal-footer" style="display: none;">
+            <div class="yoPowered ">
+              <a class="" href="http://www.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=reviews_tab&amp;utm_medium=widget&amp;utm_source=micha.com" target="_blank">Reviews by</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
   </body>
 </html>
