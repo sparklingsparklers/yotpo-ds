@@ -316,11 +316,8 @@
   .icon-attach:before {
     content: "\e60d";
   }
-  .icon-default-star:before {
+  .icon-star:before {
     content: "\e60e";
-  }
-  .icon-star {
-    @extend .icon-default-star;
   }
   .icon-share:before {
     content: "\e60f";
