@@ -316,8 +316,11 @@
   .icon-attach:before {
     content: "\e60d";
   }
-  .icon-star:before {
+  .icon-default-star:before {
     content: "\e60e";
+  }
+  .icon-star {
+    @extend .icon-default-star;
   }
   .icon-share:before {
     content: "\e60f";
@@ -2057,13 +2060,8 @@
   }
 
   .promoted-products-box{
-    .promoted-products{
-      overflow-x: auto !important;
-      overflow-y: hidden;
-
-    }
     .yotpo-promoted-products {
-      margin: 0;
+      margin: 0 30px;
       .yotpo-promoted-product {
         margin-left: 0;
         margin-right: 0;
