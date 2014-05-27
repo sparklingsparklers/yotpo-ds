@@ -2060,13 +2060,8 @@
   }
 
   .promoted-products-box{
-    .promoted-products{
-      overflow-x: auto !important;
-      overflow-y: hidden;
-
-    }
     .yotpo-promoted-products {
-      margin: 0;
+      margin: 0 30px;
       .yotpo-promoted-product {
         margin-left: 0;
         margin-right: 0;
