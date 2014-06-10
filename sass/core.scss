@@ -250,6 +250,7 @@
     text-transform: none;
     line-height: 1;
     width: auto!important;
+    background-image: none;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -531,6 +532,7 @@
     padding: 20px 7px 15px 0px;
     /*max-width: 164px;*/
     min-width:100px;
+    width: auto;
     text-align: start;
     display: inline-block;
     font-weight: normal;
