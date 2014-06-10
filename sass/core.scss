@@ -1323,6 +1323,9 @@
   }
 
   .yotpo-bottomline {
+    .text-m {
+      white-space: nowrap;
+    }
     .yotpo-stars {
       padding-#{$right}: 10px;
       display: inline-block;
