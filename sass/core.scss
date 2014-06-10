@@ -718,6 +718,7 @@
     > div {
       display: none;
       &.active {
+        background-image: none;
         display: block;
       }
     }
