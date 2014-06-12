@@ -1,74 +1,33 @@
-/*
-Syntax error: Undefined variable: "$font-type".
-        on line 8 of /Users/billykov/Development/yotpo-workspace/yotpo-ds/sass/general_rules.scss
+/* General elements rules to override general rules in client sites */
+/* line 3, ../sass/general_rules.scss */
+.yotpo-display-wrapper {
+  visibility: visible !important;
+}
 
-Backtrace:
-/Users/billykov/Development/yotpo-workspace/yotpo-ds/sass/general_rules.scss:8
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/compiler.rb:139:in `block in compile'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/logger.rb:45:in `red'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/compiler.rb:138:in `compile'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `each'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/compiler.rb:101:in `block in run'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/compiler.rb:126:in `timed'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/compiler.rb:100:in `run'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/commands/watch_project.rb:68:in `perform'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/commands/base.rb:18:in `execute'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/bin/compass:30:in `block in <top (required)>'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/bin/compass:44:in `call'
-/Users/billykov/.rvm/gems/ruby-2.1.1/gems/compass-0.12.3/bin/compass:44:in `<top (required)>'
-/Users/billykov/.rvm/gems/ruby-2.1.1/bin/compass:23:in `load'
-/Users/billykov/.rvm/gems/ruby-2.1.1/bin/compass:23:in `<main>'
-/Users/billykov/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
-/Users/billykov/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$font-type\".\A         on line 8 of /Users/billykov/Development/yotpo-workspace/yotpo-ds/sass/general_rules.scss"; }
+/* line 7, ../sass/general_rules.scss */
+.yotpo {
+  text-align: left;
+}
+/* line 8, ../sass/general_rules.scss */
+.yotpo div, .yotpo span, .yotpo p, .yotpo a, .yotpo img, .yotpo i, .yotpo strong, .yotpo sup, .yotpo ul, .yotpo li, .yotpo form, .yotpo label {
+  font-family: Verdana;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal !important;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a2a2a2;
+  border: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+/* line 22, ../sass/general_rules.scss */
+.yotpo div p, .yotpo div a, .yotpo div img, .yotpo div i, .yotpo div strong, .yotpo div sup, .yotpo div ul, .yotpo div li, .yotpo div form, .yotpo div label, .yotpo span p, .yotpo span a, .yotpo span img, .yotpo span i, .yotpo span strong, .yotpo span sup, .yotpo span ul, .yotpo span li, .yotpo span form, .yotpo span label, .yotpo p p, .yotpo p a, .yotpo p img, .yotpo p i, .yotpo p strong, .yotpo p sup, .yotpo p ul, .yotpo p li, .yotpo p form, .yotpo p label, .yotpo a p, .yotpo a a, .yotpo a img, .yotpo a i, .yotpo a strong, .yotpo a sup, .yotpo a ul, .yotpo a li, .yotpo a form, .yotpo a label, .yotpo img p, .yotpo img a, .yotpo img img, .yotpo img i, .yotpo img strong, .yotpo img sup, .yotpo img ul, .yotpo img li, .yotpo img form, .yotpo img label, .yotpo i p, .yotpo i a, .yotpo i img, .yotpo i i, .yotpo i strong, .yotpo i sup, .yotpo i ul, .yotpo i li, .yotpo i form, .yotpo i label, .yotpo strong p, .yotpo strong a, .yotpo strong img, .yotpo strong i, .yotpo strong strong, .yotpo strong sup, .yotpo strong ul, .yotpo strong li, .yotpo strong form, .yotpo strong label, .yotpo sup p, .yotpo sup a, .yotpo sup img, .yotpo sup i, .yotpo sup strong, .yotpo sup sup, .yotpo sup ul, .yotpo sup li, .yotpo sup form, .yotpo sup label, .yotpo ul p, .yotpo ul a, .yotpo ul img, .yotpo ul i, .yotpo ul strong, .yotpo ul sup, .yotpo ul ul, .yotpo ul li, .yotpo ul form, .yotpo ul label, .yotpo li p, .yotpo li a, .yotpo li img, .yotpo li i, .yotpo li strong, .yotpo li sup, .yotpo li ul, .yotpo li li, .yotpo li form, .yotpo li label, .yotpo form p, .yotpo form a, .yotpo form img, .yotpo form i, .yotpo form strong, .yotpo form sup, .yotpo form ul, .yotpo form li, .yotpo form form, .yotpo form label, .yotpo label p, .yotpo label a, .yotpo label img, .yotpo label i, .yotpo label strong, .yotpo label sup, .yotpo label ul, .yotpo label li, .yotpo label form, .yotpo label label {
+  background: inherit !important;
+}
