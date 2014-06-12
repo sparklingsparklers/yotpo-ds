@@ -1474,6 +1474,8 @@
   .yotpo-first-review{
     .yotpo-first-review-stars{
       margin-bottom: 20px;
+      text-align: center;
+      margin-top: 20px;
 
       .icon-star{
         color: $primary-l1;
@@ -1481,6 +1483,8 @@
       }
     }
     .yotpo-first-review-content{
+
+      text-align: center;
       
       span, input{
         display: block;
