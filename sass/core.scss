@@ -1470,6 +1470,29 @@
     }
   }
 
+  /* BE THE FIRST TO WRITE A REVIEW */
+  .yotpo-first-review{
+    .yotpo-first-review-stars{
+      margin-bottom: 20px;
+
+      .icon-star{
+        color: $primary-l1;
+        font-size: 22px;
+      }
+    }
+    .yotpo-first-review-content{
+      
+      span, input{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      span{
+        color: $primary;
+      }
+    }
+  }
+
   /* Testimonials Button */
   .yotpo-testimonials-btn {
     position: fixed;
