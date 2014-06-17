@@ -250,7 +250,8 @@
     text-transform: none;
     line-height: 1;
     width: auto!important;
-    background-image: none;
+    background: none;
+    height: auto;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
@@ -963,10 +964,6 @@
           padding: 0px;
           font-size: 12px;
           vertical-align: top;
-
-          &.user-title {
-            background: none;
-          }
 
           &.user-name{
             color: $primary;
