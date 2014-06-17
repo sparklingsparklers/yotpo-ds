@@ -964,6 +964,10 @@
           font-size: 12px;
           vertical-align: top;
 
+          &.user-title {
+            background: none;
+          }
+
           &.user-name{
             color: $primary;
           }
