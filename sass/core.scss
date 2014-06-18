@@ -678,7 +678,7 @@
           }
         }
 
-        &.active{
+        &.yotpo-active{
           font-weight: bold;
           span {
             color: $primary;
@@ -717,7 +717,7 @@
   .yotpo-nav-content {
     > div {
       display: none;
-      &.active {
+      &.yotpo-active {
         background-image: none;
         display: block;
       }
@@ -1406,7 +1406,7 @@
         }
       }
 
-      &.active {
+      &.yotpo-active {
         font-weight: bold;
         color: $primary;
 
