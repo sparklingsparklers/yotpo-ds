@@ -1,18 +1,18 @@
 // Should include all widgets but badge.
 .yotpo.yotpo-main-widget, .yotpo.embedded-widget, .yotpo.yotpo-modal, .yotpo.bottomLine {
-  .yotpo-header .icon-profile,
-  .icon-star,
-  .icon-half-star,
-  .icon-empty-star {
+  .yotpo-header .yotpo-icon-profile,
+  .yotpo-icon-star,
+  .yotpo-icon-half-star,
+  .yotpo-icon-empty-star {
     color: transparent !important;
     background-color: transparent !important;
     background-image: url($sprite-sheet) !important;
   }
-  .yotpo-header .icon-profile .user-letter {
+  .yotpo-header .yotpo-icon-profile .user-letter {
     display: none!important;
   }
 
-  .yotpo-store-owner.yotpo-header .icon-profile {
+  .yotpo-store-owner.yotpo-header .yotpo-icon-profile {
     background-color: $primary-l2!important;
     background-image: none!important;
     .user-letter {
@@ -20,31 +20,31 @@
     }
   }
 
-  /*.yotpo-comment .yotpo-header .icon-profile label {
+  /*.yotpo-comment .yotpo-header .yotpo-icon-profile label {
     display: none;
   }*/
 
-  .icon-star,
-  .icon-half-star,
-  .icon-empty-star {
+  .yotpo-icon-star,
+  .yotpo-icon-half-star,
+  .yotpo-icon-empty-star {
     margin: 1px;
   }
 
-  .icon-star {
+  .yotpo-icon-star {
     background-position: -45px 0;
   }
-  .icon-half-star {
+  .yotpo-icon-half-star {
     background-position: -69px 0;
   }
-  .icon-empty-star {
+  .yotpo-icon-empty-star {
     background-position: -93px 0;
   }
 
   .yotpo-bottomline,
   .write-review .yotpo-header {
-    .icon-star,
-    .icon-half-star,
-    .icon-empty-star {
+    .yotpo-icon-star,
+    .yotpo-icon-half-star,
+    .yotpo-icon-empty-star {
       width: 24px!important;
       height: 24px!important;
     }
@@ -56,17 +56,17 @@
   .yotpo-modal-bottom-line .yotpo-bottomline,
   #embedded_widget,
   .yotpo-promoted-product .review-stars {
-    .icon {
+    .yotpo-icon {
       width: 18px!important;
       height: 18px!important;
 
-      &.icon-star {
+      &.yotpo-icon-star {
         background-position: -117px 0;
       }
-      &.icon-half-star {
+      &.yotpo-icon-half-star {
         background-position: -135px 0;
       }
-      &.icon-empty-star {
+      &.yotpo-icon-empty-star {
         background-position: -153px 0;
       }
     }

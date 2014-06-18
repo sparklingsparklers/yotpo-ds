@@ -238,10 +238,10 @@
 }
 
 .yotpo {
-  .icon, .icon:after, .icon:before {
+  .yotpo-icon, .yotpo-icon:after, .yotpo-icon:before {
     font-family: 'yotpo-widget-font'!important;
   }
-  .icon {
+  .yotpo-icon {
     speak: none;
     font-size: 17.5px;
     font-style: normal;
@@ -257,111 +257,111 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .icon-store:before {
+  .yotpo-icon-store:before {
     content: "\e600";
   }
-  .icon-yotpo-logo:before {
+  .yotpo-icon-yotpo-logo:before {
     content: "\e609";
   }
-  .icon-heart:before {
+  .yotpo-icon-heart:before {
     content: "\e60b";
   }
-  .icon-cross:before {
+  .yotpo-icon-cross:before {
     content: "\e615";
   }
-  .icon-facebook:before {
+  .yotpo-icon-facebook:before {
     content: "\e616";
   }
-  .icon-double-bubble:before {
+  .yotpo-icon-double-bubble:before {
     content: "\e618";
   }
-  .icon-write:before {
+  .yotpo-icon-write:before {
     content: "\e61e";
   }
-  .icon-flag:before {
+  .yotpo-icon-flag:before {
     content: "\e61f";
   }
-  .icon-chat-bubble:before {
+  .yotpo-icon-chat-bubble:before {
     content: "\e620";
   }
-  .icon-video:before {
+  .yotpo-icon-video:before {
     content: "\e601";
   }
-  .icon-up-arrow:before {
+  .yotpo-icon-up-arrow:before {
     content: "\e602";
   }
-  .icon-twitter:before {
+  .yotpo-icon-twitter:before {
     content: "\e603";
   }
-  .icon-thumbs-up:before {
+  .yotpo-icon-thumbs-up:before {
     content: "\e604";
   }
-  .icon-thumbs-down:before {
+  .yotpo-icon-thumbs-down:before {
     content: "\e605";
   }
-  .icon-three-lines:before {
+  .yotpo-icon-three-lines:before {
     content: "\e606";
   }
-  .icon-dot:before {
+  .yotpo-icon-dot:before {
     content: "\e607";
   }
-  .icon-seperator:before {
+  .yotpo-icon-seperator:before {
     content: "\e608";
   }
-  .icon-checkmark:before {
+  .yotpo-icon-checkmark:before {
     content: "\e60a";
   }
-  .icon-camera:before {
+  .yotpo-icon-camera:before {
     content: "\e60c";
     
   }
-  .icon-attach:before {
+  .yotpo-icon-attach:before {
     content: "\e60d";
   }
-  .icon-default-star:before {
+  .yotpo-icon-default-star:before {
     content: "\e60e";
   }
-  .icon-star {
-    @extend .icon-default-star;
+  .yotpo-icon-star {
+    @extend .yotpo-icon-default-star;
   }
-  .icon-share:before {
+  .yotpo-icon-share:before {
     content: "\e60f";
   }
-  .icon-cogwheel:before {
+  .yotpo-icon-cogwheel:before {
     content: "\e610";
   }
-  .icon-right-arrow:before {
+  .yotpo-icon-right-arrow:before {
     content: "\e611";
   }
-  .icon-linkedin:before {
+  .yotpo-icon-linkedin:before {
     content: "\e612";
   }
-  .icon-left-arrow:before {
+  .yotpo-icon-left-arrow:before {
     content: "\e613";
   }
-  .icon-googleplus:before {
+  .yotpo-icon-googleplus:before {
     content: "\e614";
   }
-  .icon-down-arrow:before {
+  .yotpo-icon-down-arrow:before {
     content: "\e617";
   }
-  .icon-circle-checkmark:before {
+  .yotpo-icon-circle-checkmark:before {
     content: "\e619";
   }
-  .icon-half-star:before {
+  .yotpo-icon-half-star:before {
     content: "\e61a";
   }
-  .icon-empty-star:before {
+  .yotpo-icon-empty-star:before {
     content: "\e61b";
   }
-  .icon-profile-picture:before {
+  .yotpo-icon-profile-picture:before {
     content: "\e61c";
   }
-  .icon-down-triangle:before {
+  .yotpo-icon-down-triangle:before {
     content: "\e61d";
   }
 
-  .icon-half-star {
+  .yotpo-icon-half-star {
     -moz-transform: scaleX($flip);
     -o-transform: scaleX($flip);
     -webkit-transform: scaleX($flip);
@@ -414,14 +414,14 @@
 
 
     
-  .icon-btn {
+  .yotpo-icon-btn {
     display: inline-block;
     padding: 6px 11px;
-    .icon {
+    .yotpo-icon {
       font-size: 19px;
       color: $white;
     }
-    .icon-button-text {
+    .yotpo-icon-button-text {
       color: $white;
     }
 
@@ -429,9 +429,9 @@
       cursor: pointer;
     }
   }
-  .icon-btn-small {
+  .yotpo-icon-btn-small {
     display: inline-block;
-    .icon {
+    .yotpo-icon {
       
     }
 
@@ -439,10 +439,10 @@
       cursor: pointer;
     }
   }
-  .icon-btn-big {
+  .yotpo-icon-btn-big {
     display: inline-block;
     padding: 10px 15px;
-    .icon {
+    .yotpo-icon {
       font-size: 25px;
     }
 
@@ -451,10 +451,10 @@
     }
 
   }
-   .icon-btn-xs {
+   .yotpo-icon-btn-xs {
     display: inline-block;
     padding: 5px;
-    &.icon {
+    &.yotpo-icon {
       font-size: 15px;
     }
     &:hover{
@@ -500,7 +500,7 @@
   .transparent-color-btn {
     background: transparent;
     color: $gray;
-    span.icon {
+    span.yotpo-icon {
       color: $gray;
     }
 
@@ -735,7 +735,7 @@
         }
       } 
     }
-    .icon-seperator {
+    .yotpo-icon-seperator {
       float: right;
       color: $gray-light;
     }
@@ -757,7 +757,7 @@
       display: inline-block;
     }
 
-    .icon{
+    .yotpo-icon{
       color: $gray;
       padding-left: 5px;
 
@@ -850,7 +850,7 @@
       .label {
         padding-top: 0;
       }
-      .icon{
+      .yotpo-icon{
         color: $yellow;
         font-size: 26px;
         height: auto;
@@ -870,7 +870,7 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        .icon {
+        .yotpo-icon {
           font-size: 45px;
           color: $primary
         }
@@ -878,7 +878,7 @@
       .stars-wrapper {
         display: inline-block;
         vertical-align: top;
-        .icon-empty-star:hover:before {
+        .yotpo-icon-empty-star:hover:before {
            content: "\e60e";
         }     
       }
@@ -978,7 +978,7 @@
         }
       }
 
-      .icon-profile{
+      .yotpo-icon-profile{
         position: relative;
         width: 45px;
         height: 45px;
@@ -997,12 +997,12 @@
           text-align: center;
           font-size: 20px;
           color: $white;
-          span.icon {
+          span.yotpo-icon {
             color: $white;
           }
         }
 
-        .icon-circle-checkmark{
+        .yotpo-icon-circle-checkmark{
           display: none;
           position: absolute;
           #{$left}: 31px;
@@ -1014,7 +1014,7 @@
           width: 18.3px;
         }
       }
-      .icon-profile-social{
+      .yotpo-icon-profile-social{
         img {
           max-width:100%!important;
           width:100%!important;
@@ -1025,19 +1025,19 @@
         margin-#{$right}: 7px;
       }
       &.yotpo-verified-user {
-        .icon-circle-checkmark{
+        .yotpo-icon-circle-checkmark{
           display: inline-block;
           color: $blue; 
         }
       }
       &.yotpo-verified-buyer {
-        .icon-circle-checkmark{
+        .yotpo-icon-circle-checkmark{
           display: inline-block;
           color: $green;
         }
       }
       &.yotpo-store-owner {
-        .icon-circle-checkmark{
+        .yotpo-icon-circle-checkmark{
           display: inline-block;
           color: $orange; 
         }
@@ -1059,7 +1059,7 @@
         }
       }
 
-      /*.icon-flag{
+      /*.yotpo-icon-flag{
         margin-left: 11px;
       }*/
 
@@ -1078,7 +1078,7 @@
         display: inline-block;
         margin-top: 7px;
         margin-#{$right}: 10px;
-        .icon {
+        .yotpo-icon {
           float: $left;
           color: $yellow;
         }
@@ -1128,7 +1128,7 @@
         }
       }
 
-      .icon-dot, .icon-seperator{
+      .yotpo-icon-dot, .yotpo-icon-seperator{
         font-size: 12px;
       }
 
@@ -1166,7 +1166,7 @@
             color:$primary;
           }
 
-          .icon-share{
+          .yotpo-icon-share{
             color: inherit;
           }
 
@@ -1224,7 +1224,7 @@
         position: absolute;
         top: 3px;
         #{$right}: 5px;
-        .icon {
+        .yotpo-icon {
           color: $white;
         }
       }
@@ -1287,10 +1287,10 @@
         margin-top: 15px;
         color: $gray;
       }
-      .icon {
+      .yotpo-icon {
         color: #21679A;
           }
-      .icon-btn-big{
+      .yotpo-icon-btn-big{
         padding: 10px 5px;
         a {
           font-size: 30px;
@@ -1299,7 +1299,7 @@
     }
     .yotpo-semi-label {
       float: $left;
-      span.icon {
+      span.yotpo-icon {
         color: $gray;
       }
       .yotpo-tool-tip {
@@ -1310,7 +1310,7 @@
   }
   .yotpo-modal-dialog {
     .yotpo-label {
-      .icon {
+      .yotpo-icon {
         color: $white;
       }
     }
@@ -1337,7 +1337,7 @@
       vertical-align: bottom;
       padding-bottom: 2px;
     }
-    .icon-star, .icon-half-star, .icon-empty-star {
+    .yotpo-icon-star, .yotpo-icon-half-star, .yotpo-icon-empty-star {
       color: $yellow;
       font-size: 26px;
     }
@@ -1354,7 +1354,7 @@
     .questions {
       margin: 5px;
 
-      .icon.label {
+      .yotpo-icon.label {
         min-width: 0;
         padding: 0;
       }
@@ -1365,7 +1365,7 @@
       .yotpo-stars {
         padding: 0;
       }
-      .icon-star, .icon-half-star, .icon-empty-star {
+      .yotpo-icon-star, .yotpo-icon-half-star, .yotpo-icon-empty-star {
         font-size: 17.5px;
       }
     }
@@ -1415,10 +1415,10 @@
         }
       }
 
-      &.icon-left-arrow{
+      &.yotpo-icon-left-arrow{
         margin-right: 30px
       }
-      &.icon-right-arrow{
+      &.yotpo-icon-right-arrow{
         margin-right: 0;
         margin-left: 15px;
       }
@@ -1432,7 +1432,7 @@
     position: relative;
     background: $white;
 
-    .icon-cross{
+    .yotpo-icon-cross{
       position: absolute;
       top: 15px;
       right: 15px;
@@ -1451,7 +1451,7 @@
         line-height: 18px;
       }
 
-      .icon{
+      .yotpo-icon{
         font-size: 26px;
         display: block;
         margin-bottom: 20px;
@@ -1482,7 +1482,7 @@
       text-align: center;
       margin-top: 20px;
 
-      .icon-star{
+      .yotpo-icon-star{
         color: $primary-l1;
         font-size: 22px;
       }
@@ -1581,7 +1581,7 @@
   }
   .yotpo-label {
     padding-left: 10px;
-    .icon {
+    .yotpo-icon {
       color: $gray;
       font-size: 25px;
     }
@@ -1674,20 +1674,20 @@
         height: 100%;
         background: $white;
         .yotpo-modal-header {
-          .icon-btn-small{
+          .yotpo-icon-btn-small{
             top: 55px;
           }
-          .icon-btn-small.semi-white-label {
+          .yotpo-icon-btn-small.semi-white-label {
             top: 30px;
           }
-          .icon-btn-small.full-white-label {
+          .yotpo-icon-btn-small.full-white-label {
             top: 5px;
           }
         }
       }
     }
     .yotpo-modal-logo{
-      span:NOT(.icon-yotpo-logo){
+      span:NOT(.yotpo-icon-yotpo-logo){
         color: $white;
         position: relative;
         bottom: 3px;
@@ -1695,7 +1695,7 @@
           color: $white!important;
         }
       }
-      .icon-yotpo-logo{
+      .yotpo-icon-yotpo-logo{
         color: $white!important;
       }
     }
@@ -1703,13 +1703,13 @@
       height: 90px;
       background: $primary;
 
-      .icon-btn-small{
+      .yotpo-icon-btn-small{
         position: absolute;
         top: 5px;
         right: 5px;
       }
 
-      .icon-cross{
+      .yotpo-icon-cross{
         color: $white;
       }
 
@@ -1819,10 +1819,10 @@
       top: 50%;
       position: absolute;
     }
-    .icon-left-arrow {
+    .yotpo-icon-left-arrow {
       left: 0;
     }
-    .icon-right-arrow{
+    .yotpo-icon-right-arrow{
       right: 0;
     }
   .promoted-products{
@@ -1858,7 +1858,7 @@
     .review-stars {
       display: inline-block;
       min-height: 20px;
-     .icon {
+     .yotpo-icon {
        margin-top: 2px;
        color: $yellow;
      }
@@ -1926,7 +1926,7 @@
         }
       }
     }
-    .icon {
+    .yotpo-icon {
       margin: auto!important;
     }
   }
@@ -1943,8 +1943,8 @@
 }
 
 .yotpo.yotpo-small {
-  .icon-btn {
-    .icon-button-text {
+  .yotpo-icon-btn {
+    .yotpo-icon-button-text {
       display: none;
     }
   }
@@ -2029,7 +2029,7 @@
           background: white;
           border: solid 1px #e3e3e3;
           text-align: left;
-          .icon-seperator {
+          .yotpo-icon-seperator {
             display: none;
           }
           .yotpo-nav-dropdown {
@@ -2056,7 +2056,7 @@
             padding: 10px 16px;
             display: block;
             white-space: normal;
-            .icon {
+            .yotpo-icon {
               color: $gray;
               padding-right: 12px;
             }
@@ -2148,7 +2148,7 @@ div.yotpo-preloader-wrapper{
     width: 88px;
     margin: 20px auto;
 
-    .icon{
+    .yotpo-icon{
       color: $orange;
 
       margin-left: -5px;
