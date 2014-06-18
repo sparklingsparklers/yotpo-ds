@@ -8,14 +8,14 @@
     background-color: transparent !important;
     background-image: url($sprite-sheet) !important;
   }
-  .yotpo-header .yotpo-icon-profile .user-letter {
+  .yotpo-header .yotpo-icon-profile .yotpo-user-letter {
     display: none!important;
   }
 
   .yotpo-store-owner.yotpo-header .yotpo-icon-profile {
     background-color: $primary-l2!important;
     background-image: none!important;
-    .user-letter {
+    .yotpo-user-letter {
       display: inline-block!important;
     }
   }
@@ -50,12 +50,12 @@
     }
   }
 
-  .yotpo-review .review-stars,
-  .yotpo-comment .review-stars,
+  .yotpo-review .yotpo-review-stars,
+  .yotpo-comment .yotpo-review-stars,
   .standalone-bottomline,
   .yotpo-modal-bottom-line .yotpo-bottomline,
   #embedded_widget,
-  .yotpo-promoted-product .review-stars {
+  .yotpo-promoted-product .yotpo-review-stars {
     .yotpo-icon {
       width: 18px!important;
       height: 18px!important;
