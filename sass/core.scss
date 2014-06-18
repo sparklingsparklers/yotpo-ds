@@ -1856,6 +1856,7 @@
       display: inline-block;
       min-height: 20px;
      .icon {
+       font-size: 15px;
        margin-top: 2px;
        color: $yellow;
      }
@@ -1868,8 +1869,8 @@
     .yotpo-product-name {
       margin-top: 5px;
       color: $gray-dark;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      max-height: 34px;
+      white-space: normal;
     }
     .yotpo-product-price {
       margin-top: 3px;
@@ -1878,6 +1879,13 @@
     }
    }
  }
+    .yotpo-long-product-names {
+      .yotpo-promoted-product {
+        .yotpo-product-name {
+          height: 34px;
+        }
+      }
+    }
  }
 }
 
