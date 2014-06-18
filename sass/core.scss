@@ -198,7 +198,7 @@
   .text-xs {
     font-size: 11px; 
   }
-  .font-bold {
+  .yotpo-font-bold {
     font-weight: bold;
   }
   .font-light {
@@ -588,48 +588,48 @@
 
   /*Boxes*/
 
-  .regular-box , .small-box, .regular-small-box, .popup-box-small, .popup-box-medium, .popup-box-large {
+  .yotpo-regular-box , .yotpo-small-box, .yotpo-regular-small-box, .yotpo-popup-box-small, .yotpo-popup-box-medium, .yotpo-popup-box-large {
     border-bottom: 1px solid $gray-light;
     &.no-border {
       border-bottom: none;
     } 
   }
 
-  .regular-box{
+  .yotpo-regular-box{
     padding: 25px 0 22px;
     margin: 0 10px;
   }
 
-  .small-box{
+  .yotpo-small-box{
     padding: 25px 10px 0 10px;
   }
 
-  .regular-small-box{
+  .yotpo-regular-small-box{
     padding: 25px 0px 15px 0px;
     margin: 0 10px;
   }
 
-  .comments-box {
+  .yotpo-comments-box {
     margin-left: 22px;
     border-left: 2px solid $primary-l3;
     margin-top: 25px;
-    .comment-box {
+    .yotpo-comment-box {
       margin-left: 22px;
       padding: 25px 0;
     }
   }
 
-  .popup-box-small {
+  .yotpo-popup-box-small {
     padding-top: 12px;
     margin: 0 10px;
   }
 
-  .popup-box-medium {
+  .yotpo-popup-box-medium {
     padding: 12px 0;
     margin: 0 10px;
   }
 
-  .popup-box-large {
+  .yotpo-popup-box-large {
     padding: 12px 10px 5px;
   }
 
@@ -968,7 +968,7 @@
             background: none;
           }
 
-          &.user-name{
+          &.yotpo-user-name{
             color: $primary;
           }
 
@@ -1063,7 +1063,7 @@
         margin-left: 11px;
       }*/
 
-      .user-name {
+      .yotpo-user-name {
         float: $left;
         color:$primary;
         font-weight: bolder;
@@ -1138,11 +1138,11 @@
         text-transform: capitalize;
       }
 
-      .helpful{
+      .yotpo-helpful{
         display: inline-block;
         float: $right;
           
-        .sum{
+        .yotpo-sum{
           margin-right: 13px;
           margin-left: 13px;
         }
@@ -1190,7 +1190,7 @@
       color: inherit;
     }
 
-    .comments-box {
+    .yotpo-comments-box {
       display: none;
       &.visible {
         display: inherit;
@@ -1341,7 +1341,7 @@
       color: $yellow;
       font-size: 26px;
     }
-    .sum-reviews {
+    .yotpo-sum-reviews {
       padding: 5px 0px;
       display: inline-block;
     }
@@ -1750,7 +1750,7 @@
         overflow-y: scroll;
         background: $white;
         height: 100%;
-        .regular-box {
+        .yotpo-regular-box {
           padding: 25px 0;
           margin: 0;
         }
@@ -1770,7 +1770,7 @@
         .content-review{
           color: $default-gray-darker;
         }
-        .write-review.regular-box {
+        .write-review.yotpo-regular-box {
           padding: 0 0 20px 0;
           margin: 0;
           .yotpo-footer {
@@ -2005,7 +2005,7 @@
         margin-bottom: 15px;
         }
       }
-      .helpful{
+      .yotpo-helpful{
         float: $right;
       }
       .footer-additional-actions{
@@ -2092,9 +2092,9 @@
       }
     }
   }
-  .comments-box {
+  .yotpo-comments-box {
     margin-left: 10px;
-    .comment-box {
+    .yotpo-comment-box {
       margin-left: 10px;
     }
   }
