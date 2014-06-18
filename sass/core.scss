@@ -150,7 +150,7 @@
     color: $primary!important;
     text-decoration: none!important;
     cursor: pointer!important;
-    .label {
+    .y-label {
       cursor: pointer;
     }
   }
@@ -526,7 +526,7 @@
 
   /* Fields */
 
-  .label, label.label{
+  .y-label, label.y-label{
     font-size: 13px;
     color: $gray;
     padding: 20px 7px 15px 0px;
@@ -570,7 +570,7 @@
     width: 100%;
 
     .form-element{
-      .label{
+      .y-label{
         float: $left;
         display: block;
         white-space: nowrap;
@@ -847,7 +847,7 @@
     }
 
     .yotpo-header{
-      .label {
+      .y-label {
         padding-top: 0;
       }
       .yotpo-icon{
@@ -958,7 +958,7 @@
         padding-top: 2px;
         display: inline-block;
         vertical-align: top;
-        .label{
+        .y-label{
           min-width: 0px;
           padding: 0px;
           font-size: 12px;
@@ -1132,7 +1132,7 @@
         font-size: 12px;
       }
 
-      .label{
+      .y-label{
         min-width: 0px;
         padding: 0px;
         text-transform: capitalize;
@@ -1161,7 +1161,7 @@
           color:$primary;
           cursor: pointer;
 
-          .label, .transparent-color-btn{
+          .y-label, .transparent-color-btn{
             cursor: pointer;
             color:$primary;
           }
@@ -1354,7 +1354,7 @@
     .questions {
       margin: 5px;
 
-      .yotpo-icon.label {
+      .yotpo-icon.y-label {
         min-width: 0;
         padding: 0;
       }
@@ -1776,7 +1776,7 @@
           .yotpo-footer {
             display: inline-block;
           }
-          .label {
+          .y-label {
             padding: 10px 7px 8px 0px!important;
           }
           .connect-wrapper{
@@ -2060,7 +2060,7 @@
               color: $gray;
               padding-right: 12px;
             }
-            .label {
+            .y-label {
               padding: 0;
             }
             &:hover {
