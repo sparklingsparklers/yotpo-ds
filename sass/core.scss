@@ -109,7 +109,7 @@
 
   /* General */
 
-  .clr {
+  .yotpo-clr {
     clear: both;
   }
   .clear-box:after {
@@ -117,7 +117,7 @@
     clear: both;
     visibility: hidden;
   }
-  .hidden {
+  .yotpo-hidden {
     display: none !important;
     &.only-invisible {
       display: block !important;
