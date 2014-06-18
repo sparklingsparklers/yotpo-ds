@@ -22,5 +22,11 @@
       background: inherit!important
     }
   }
+  ul,li,ul li {
+    list-style: none outside none !important;
+  }
+  img {
+    box-shadow: 0 0 0;
+  }
   text-align: $left;
 }
