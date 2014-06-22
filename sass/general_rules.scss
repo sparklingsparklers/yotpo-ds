@@ -4,6 +4,8 @@
 }
 
 .yotpo {
+  clear: both;
+  text-align: $left;
   div, span, p, a, img, i, strong, sup, ul, li, form, label {
     font-family: $font-type;
     -webkit-font-smoothing: antialiased;
@@ -28,5 +30,4 @@
   img {
     box-shadow: 0 0 0;
   }
-  text-align: $left;
 }
