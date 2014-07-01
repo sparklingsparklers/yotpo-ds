@@ -1832,7 +1832,7 @@
       margin-right:14px;
       margin-left:14px;
     .yotpo-product-image {
-      width: 160px;
+      min-width: 160px;
       height: 160px;
       img {
        max-width:160px;
@@ -2100,7 +2100,7 @@
       .yotpo-promoted-product {
         margin-left: 0;
         margin-right: 0;
-        width: 110px;
+        min-width: 110px;
         .yotpo-product-image {
           width: 100px;
           height: 100px;
