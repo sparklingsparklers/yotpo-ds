@@ -588,7 +588,7 @@
 
   /*Boxes*/
 
-  .yotpo-regular-box , .yotpo-small-box, .yotpo-regular-small-box, .yotpo-popup-box-small, .yotpo-popup-box-medium, .yotpo-popup-box-large {
+  .yotpo-small-box, .yotpo-regular-small-box, .yotpo-popup-box-medium {
     border-bottom: 1px solid $gray-light;
     &.no-border {
       border-bottom: none;
@@ -598,6 +598,7 @@
   .yotpo-regular-box{
     padding: 25px 0 22px;
     margin: 0 10px;
+    border-top:1px solid $gray-light;
   }
 
   .yotpo-small-box{
@@ -1482,6 +1483,9 @@
 
   /* BE THE FIRST TO WRITE A REVIEW */
   .yotpo-first-review{
+    position: relative;
+    top: 50px;
+
     .yotpo-first-review-stars{
       margin-bottom: 20px;
       text-align: center;
