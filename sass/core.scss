@@ -1590,6 +1590,19 @@
       font-size: 25px;
     }
   }
+  .yotpo-review{
+    .yotpo-main{
+      .content-title{
+        color: $default-gray-darker;
+      }
+      .content-review{
+        color: $default-gray-darker;
+      }
+    }
+  }
+  .yotpo-nav-tab span {
+    color: $default-gray-darker!important;
+  }
 }
 .yotpo {
   .yotpo-modal{
