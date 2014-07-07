@@ -50,6 +50,21 @@
     }
   }
 
+  @mixin stars-module($size) {
+    width: $size!important;
+    height: $size!important;
+
+    &.yotpo-icon-star {
+      background-position: -117px 0;
+    }
+    &.yotpo-icon-half-star {
+      background-position: -135px 0;
+    }
+    &.yotpo-icon-empty-star {
+      background-position: -153px 0;
+    }
+  }
+
   .yotpo-review .yotpo-review-stars,
   .yotpo-comment .yotpo-review-stars,
   .standalone-bottomline,
@@ -57,18 +72,11 @@
   #embedded_widget,
   .yotpo-promoted-product .yotpo-review-stars {
     .yotpo-icon {
-      width: 18px!important;
-      height: 18px!important;
-
-      &.yotpo-icon-star {
-        background-position: -117px 0;
-      }
-      &.yotpo-icon-half-star {
-        background-position: -135px 0;
-      }
-      &.yotpo-icon-empty-star {
-        background-position: -153px 0;
-      }
+      @include stars-module(18px);
     }
+  }
+
+  #embedded_widget .yotpo-icon {
+    @include stars-module(15px);
   }
 }
