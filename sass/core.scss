@@ -994,6 +994,7 @@
           position: absolute;
           top: 13px;
           width: 100%;
+          min-width: 100%;
           #{$left}: 1px;
           text-align: center;
           font-size: 20px;
