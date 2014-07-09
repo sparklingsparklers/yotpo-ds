@@ -2131,9 +2131,9 @@
       .yotpo-promoted-product {
         margin-left: 0;
         margin-right: 0;
-        min-width: 110px;
+        width: 110px;
         .yotpo-product-image {
-          width: 100px;
+          min-width: 100px;
           height: 100px;
           img {
             max-width:100px;
