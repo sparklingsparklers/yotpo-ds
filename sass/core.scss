@@ -212,6 +212,12 @@
   .yotpo-visible-mobile {
       display: none!important;
   }
+
+  /* Testiomnials Tab */
+  &.testimonials {
+    position: relative;
+    z-index: 1000;
+  }
 }
 
   /* End General */
