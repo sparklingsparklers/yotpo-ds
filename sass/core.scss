@@ -212,6 +212,12 @@
   .yotpo-visible-mobile {
       display: none!important;
   }
+
+  /* Testiomnials Tab */
+  &.testimonials {
+    position: relative;
+    z-index: 1000;
+  }
 }
 
   /* End General */
@@ -1479,9 +1485,8 @@
 
   /* BE THE FIRST TO WRITE A REVIEW */
   .yotpo-first-review{
+    margin-top: 50px;
     position: relative;
-    top: 50px;
-
     .yotpo-first-review-stars{
       margin-bottom: 20px;
       text-align: center;
@@ -1821,6 +1826,7 @@
   .promoted-products-box{ 
     overflow: hidden;
     position: relative;
+    background: $promoted-product-background;
     .yotpo-main-title {
       margin-bottom: 34px;
       margin-top: 34px;

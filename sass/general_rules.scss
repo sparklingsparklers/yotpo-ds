@@ -4,6 +4,7 @@
 }
 
 .yotpo {
+  direction: $dir;
   clear: both;
   text-align: $left;
   div, span, p, a, img, i, strong, sup, ul, li, form, label {
