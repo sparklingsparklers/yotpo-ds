@@ -1569,10 +1569,10 @@
       transform-origin: initial;
       transform: initial;
       &[data-position=left] {
-        background: url("/assets/tab_left.jpg") no-repeat !important;
+        background: url($tab_left) no-repeat !important;
       }
       &[data-position=right] {
-        background: url("/assets/tab_right.jpg") no-repeat !important;
+        background: url($tab_right) no-repeat !important;
       }
       span {
         display: none;
