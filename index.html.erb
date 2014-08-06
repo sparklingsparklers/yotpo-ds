@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Yotpo-DS</title>
+  <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/ds.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/yotpo.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/widget_workaround.css" media="screen" />
+  <script src="javascripts/jquery-1.11.0.js"></script>
+  <script src="javascripts/prism.js"></script>
+  <script src="javascripts/main.js"></script>
+  <script src="javascripts/yotpo.js"></script>
+  <script src="javascripts/classList.js"></script>
+  <link rel="stylesheet" href="stylesheets/prism.css">
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <script type="text/javascript">
+      $(window).ready(function(){
+          document.getElementById("resolution").innerHTML=screen.width;
+      });
+
+  </script>
+
+
+  <style type="text/css">
+      a {
+          background: green;
+      }
+  </style>
+</head>
+<body class="yotpo">
+    <header>
+      <div class="inner">
+        <h1>Yotpo-ds (since <span id="resolution"></span>)</h1>
+        <h2>Yotpo Design Spec</h2>
+        <a href="https://github.com/YotpoLtd/yotpo-ds" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <%= @ds %>
+    </div>
+</body>
+</html>
