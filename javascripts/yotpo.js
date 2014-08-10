@@ -126,8 +126,8 @@ function changeDisplayMode(el, displayMode){
 
 function getStyle(element){
 
-    return element.currentStyle ?
-    	element.currentStyle['display'] : window.getComputedStyle ? window.getComputedStyle(element, null).getPropertyValue('display') : null;
+	return element.currentStyle ?
+		element.currentStyle['display'] : window.getComputedStyle ? window.getComputedStyle(element, null).getPropertyValue('display') : null;
 }
 
 function changeSortCategory(el){
@@ -149,12 +149,12 @@ function changeSortCategory(el){
 function parents(elem, selector){
 	var parent = elem.parentNode;
 	 while (parent!=document.body) {
-                if (parent.classList.contains(selector))
-                        return parent;
-                else
-                        parent = parent.parentNode;
-        }
-        return null;
+				if (parent.classList.contains(selector))
+						return parent;
+				else
+						parent = parent.parentNode;
+		}
+		return null;
 }
 
 // ********* ANIMATIONS ********* //
@@ -172,10 +172,10 @@ function slideElement(el){
 			var className = writeReview.className.replace('up','down');
 			writeReview.className = className;
 		}
-	   	else {
-		   	var className = writeReview.className.replace('down','up');
+		else {
+			var className = writeReview.className.replace('down','up');
 			writeReview.className = className;
-	   }
+		}
 	}
 }
 
@@ -192,11 +192,11 @@ function fadeElement(el){
 			var className = footer.className.replace('up','down');
 			footer.className = className;
 		}
-	   else
-	   {
-		   	var className = footer.className.replace('down','up');
+		else
+		{
+			var className = footer.className.replace('down','up');
 			footer.className = className;
-	   }
+		}
 	}
 }
 
@@ -213,11 +213,11 @@ function addClass(el, className){
 function addTransitionDelay(elm, time) {
 	$time = (time/1000) + 's'
 	elm.style['-webkit-transition-duration'] = time;
-    elm.style['-webkit-transition-duration'] = time;
-   	elm.style['-moz-transition-duration'] = time;
-    elm.style['-o-transition-duration'] = time;
-    elm.style['-ms-transition-duration'] = time;
-    elm.style['transition-duration'] = time;
+	elm.style['-webkit-transition-duration'] = time;
+	elm.style['-moz-transition-duration'] = time;
+	elm.style['-o-transition-duration'] = time;
+	elm.style['-ms-transition-duration'] = time;
+	elm.style['transition-duration'] = time;
 }
 
 function showTestimonials() {

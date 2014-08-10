@@ -5,36 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/ds.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/yotpo.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/widget_workaround.css" media="screen" />
+    
+
     <script src="javascripts/jquery-1.11.0.js"></script>
-    <script src="javascripts/prism.js"></script>
+    <script src="javascripts/classList.js"></script>
     <script src="javascripts/main.js"></script>
     <script src="javascripts/yotpo.js"></script>
-    <script src="javascripts/classList.js"></script>
-    <link rel="stylesheet" href="stylesheets/prism.css">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-      $(window).ready(function(){
-        document.getElementById("resolution").innerHTML=screen.width;
-      });
-      
-    </script>
-
     <title>Yotpo-ds by vladshub</title>
-    <style type="text/css">
-      a {
-        background: green;
-      }
-    </style>
   </head>
 
   <body class='yotpo'>
@@ -227,8 +211,9 @@
           </li>
           <li class="color-item">
               <div class="color-name text-l">primary</div>
-              <div class="color-circle big primary"></div>
-              <div id="primary-color-text" class="color-code text-m">#3085c7</div>
+              <div class="color-circle primary"></div>
+              <div class="color-precent text-m">0%</div>
+              <div id="primary-color-text" class="color-code text-m">#26649f</div>
           </li>
           <li class="color-item">
               <div class="color-name text-l">primary L1</div>
@@ -786,69 +771,70 @@ this is a text box
       </section>
 
       <scetion>
-        <h3>ERROR HANDLING</h3>
-        <div class='content'>
-          <div class="small-title">Example:</div>
+          <h3>ERROR HANDLING</h3>
 
-          <div class="exmple-box">
-            <div class="error-box">
-              <div class="text-wrapper">
-                <label class="error-text">Please enter a star rating for this review</label>
+          <div class='content'>
+              <div class="small-title">Example:</div>
+
+              <div class="exmple-box">
+                  <div class="error-box">
+                      <div class="text-wrapper">
+                          <label class="error-text">Please enter a star rating for this review</label>
+                      </div>
+                      <div class="icon-btn-small transparent-color-btn"><span class="icon icon-cross"></span></div>
+                  </div>
               </div>
-              <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
-            </div>
-          </div>
 
-          <div class="small-title">Code:</div>
-          <div class="exmple-box">
-            <textarea class="code-example" rows="8">
-<div class="error-box">
-  <div class="text-wrapper">
-    <label class="error-text">Please enter a star rating for this review</label>
-  </div>
-  <div class="icon-btn-small transparent-color-btn" ><span class="icon icon-cross"></span></div>
-</div>
-            </textarea>
-          </div>
-
-        </div>
-        <div class="clr"></div>
-
-        <div class='content'>
-
-          <div class="small-title">Example:</div>
-            <div class="exmple-box input-text-exmaple">
-
-              <div class="form-group">
-                <div class="form-element">
-                  <label class="label">one two:</label>
-                  <input class="input error" value="Yotpo LTD"></input>
-                </div>
-
-                <div class="form-element">
-                  <label class="label">one two three four five six seven:</label>
-                  <textarea class="input text-box error">Yotpo LTD</textarea>
-                </div>
+              <div class="small-title">Code:</div>
+              <div class="exmple-box">
+                  <textarea class="code-example" rows="8">
+                      <div class="error-box">
+                          <div class="text-wrapper">
+                              <label class="error-text">Please enter a star rating for this review</label>
+                          </div>
+                          <div class="icon-btn-small transparent-color-btn"><span class="icon icon-cross"></span></div>
+                      </div>
+                  </textarea>
               </div>
-                       
-            </div>
 
-          <div class="small-title">Code:</div>
-          <div class="exmple-box">
-            <textarea class="code-example">
-<input class="input error" value="Yotpo LTD"></input>
-            </textarea>
           </div>
-          <div class="small-title">Code:</div>
-          <div class="exmple-box">
-            <textarea class="code-example">
-<textarea class="input text-box error">Yotpo LTD</textarea>
-            </textarea>
-          </div>
+          <div class="clr"></div>
 
-        </div>
-        <div class="clr"></div>
-      </section>
+          <div class='content'>
+
+              <div class="small-title">Example:</div>
+              <div class="exmple-box input-text-exmaple">
+
+                  <div class="form-group">
+                      <div class="form-element">
+                          <label class="label">one two:</label>
+                          <input class="input error" value="Yotpo LTD"></input>
+                      </div>
+
+                      <div class="form-element">
+                          <label class="label">one two three four five six seven:</label>
+                          <textarea class="input text-box error">Yotpo LTD</textarea>
+                      </div>
+                  </div>
+
+              </div>
+
+              <div class="small-title">Code:</div>
+              <div class="exmple-box">
+                  <textarea class="code-example">
+                      <input class="input error" value="Yotpo LTD"></input>
+                  </textarea>
+              </div>
+              <div class="small-title">Code:</div>
+              <div class="exmple-box">
+                  <textarea class="code-example">
+                      <textarea class="input text-box error">Yotpo LTD</textarea>
+                  </textarea>
+              </div>
+
+          </div>
+          <div class="clr"></div>
+      </scetion>
 
       <h3>BOXES</h3>
       <section class='preview-boxes'>
@@ -1559,228 +1545,170 @@ this is a text box
       <div class='content'>
         <div class="small-title">Example:</div>
         <div class="exmple-box">
-        <div class="yotpo yotpo-medium yotpo-small">
-        <div class="promoted-products-box">
-        <div class="text-xl yotpo-main-title">Other top rated products</div>
+        <div class="promoted-products-box" style="display: block;">
+        <div class="text-xl yotpo-main-title">Otros productos altamente valorados</div>
 
         <!-- Pagination  -->
 
         <div class="yotpo-pager" style="display: inline-block;">
-            <span class="yotpo-page-element icon icon-left-arrow previous" data-page="back"></span>
-            <span class="yotpo-page-element icon icon-right-arrow next" data-page="next"></span>
+            <span class="yotpo-page-element yotpo-icon yotpo-icon-left-arrow previous" data-page="back"></span>
+            <span class="yotpo-page-element yotpo-icon yotpo-icon-right-arrow next" data-page="next"></span>
         </div>
         <!-- End Pagination  -->
 
         <div class="yotpo-promoted-products">
-        <ul class="promoted-products">
+        <ul class="promoted-products yotpo-long-product-names">
 
         <li>
-            <div class="yotpo-promoted-product" data-type="MostBought" data-product-id="1176505" data-dest-app-key="PdFT1iSN4yam0qPjncIZr5EOmLUeDZvZV1Wx3mLa">
+            <div class="yotpo-promoted-product" data-type="MostLiked" data-product-id="1" data-dest-app-key="123aaa">
 
-                <a href="https://yotpo.com/go/u6YP3g9f" class="yotpo-product-link" target="_self">
+                <a href="https://www.google.com" class="yotpo-product-link" target="_self">
                     <!-- Product image  -->
                     <div class="yotpo-product-image">
-                        <img src="http://ddcfq0gxiontw.cloudfront.net/Product/1215481/1201248/big.png?1388065331">
+                        <img src="images/product-example.jpg">
                     </div>
                     <!-- End Product image  -->
 
 
-                    <div class="text-m yotpo-product-name">Loop Loft - ReMixed &amp; ReCut</div>
+                    <div class="text-m yotpo-product-name">Lorem delorian impsun</div>
                 </a>
                 <!-- Product stars  -->
-                <div class="review-stars">
-                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span>
+                <div class="yotpo-review-stars pull-left text-l">
+                    <span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span>
                 </div>
-                <div class="text-m reviews-count">
-                    9 <span class="translation_missing" title="translation missing: en.reviews">Reviews</span>
+                <div class="text-s reviews-count">
+                    (2)
                 </div>
                 <!-- End product stars  -->
-
-                <div class="text-l yotpo-product-price">$29.0</div>
+                <div class="yotpo-clr"></div>
+                <div class="text-l yotpo-product-price">&nbsp;</div>
             </div>
         </li>
+            <li>
+                <div class="yotpo-promoted-product" data-type="MostLiked" data-product-id="1" data-dest-app-key="123aaa">
 
-        <li>
-            <div class="yotpo-promoted-product" data-type="MostBought" data-product-id="42" data-dest-app-key="PdFT1iSN4yam0qPjncIZr5EOmLUeDZvZV1Wx3mLa">
+                    <a href="https://www.google.com" class="yotpo-product-link" target="_self">
+                        <!-- Product image  -->
+                        <div class="yotpo-product-image">
+                            <img src="images/product-example.jpg">
+                        </div>
+                        <!-- End Product image  -->
 
-                <a href="https://yotpo.com/go/hNPw4Gud" class="yotpo-product-link" target="_self">
-                    <!-- Product image  -->
-                    <div class="yotpo-product-image">
-                        <img src="http://ddcfq0gxiontw.cloudfront.net/Product/43/41/big.png?1395753742">
+
+                        <div class="text-m yotpo-product-name">Lorem delorian impsun</div>
+                    </a>
+                    <!-- Product stars  -->
+                    <div class="yotpo-review-stars pull-left text-l">
+                        <span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span>
                     </div>
-                    <!-- End Product image  -->
-
-
-                    <div class="text-m yotpo-product-name">Bundle of Brushes - Save 25%</div>
-                </a>
-                <!-- Product stars  -->
-                <div class="review-stars">
-                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span>
-                </div>
-                <div class="text-m reviews-count">
-                    27 <span class="translation_missing" title="translation missing: en.reviews">Reviews</span>
-                </div>
-                <!-- End product stars  -->
-
-                <div class="text-l yotpo-product-price">$65.0</div>
-            </div>
-        </li>
-
-        <li>
-            <div class="yotpo-promoted-product" data-type="MostBought" data-product-id="2203135" data-dest-app-key="PdFT1iSN4yam0qPjncIZr5EOmLUeDZvZV1Wx3mLa">
-
-                <a href="https://yotpo.com/go/rkEGvsbT" class="yotpo-product-link" target="_self">
-                    <!-- Product image  -->
-                    <div class="yotpo-product-image">
-                        <img src="http://ddcfq0gxiontw.cloudfront.net/Product/2251302/2197543/big.png?1401523508">
+                    <div class="text-s reviews-count">
+                        (2)
                     </div>
-                    <!-- End Product image  -->
-
-
-                    <div class="text-m yotpo-product-name">Hunter/Harland - The Bunker Sessions Vol 2 Offer</div>
-                </a>
-                <!-- Product stars  -->
-                <div class="review-stars">
-
+                    <!-- End product stars  -->
+                    <div class="yotpo-clr"></div>
+                    <div class="text-l yotpo-product-price">&nbsp;</div>
                 </div>
-                <div class="text-m reviews-count">
-                    &nbsp;
-                </div>
-                <!-- End product stars  -->
+            </li>
+            <li>
+                <div class="yotpo-promoted-product" data-type="MostLiked" data-product-id="1" data-dest-app-key="123aaa">
 
-                <div class="text-l yotpo-product-price">$0.0</div>
-            </div>
-        </li>
+                    <a href="https://www.google.com" class="yotpo-product-link" target="_self">
+                        <!-- Product image  -->
+                        <div class="yotpo-product-image">
+                            <img src="images/product-example.jpg">
+                        </div>
+                        <!-- End Product image  -->
 
-        <li>
-            <div class="yotpo-promoted-product" data-type="MostBought" data-product-id="1238" data-dest-app-key="PdFT1iSN4yam0qPjncIZr5EOmLUeDZvZV1Wx3mLa">
 
-                <a href="https://yotpo.com/go/tDwJkR7I" class="yotpo-product-link" target="_self">
-                    <!-- Product image  -->
-                    <div class="yotpo-product-image">
-                        <img src="http://ddcfq0gxiontw.cloudfront.net/Product/1242/1067/big.png?1395754128">
+                        <div class="text-m yotpo-product-name">Lorem delorian impsun</div>
+                    </a>
+                    <!-- Product stars  -->
+                    <div class="yotpo-review-stars pull-left text-l">
+                        <span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span>
                     </div>
-                    <!-- End Product image  -->
-
-
-                    <div class="text-m yotpo-product-name">Jazz Bundle - Save 25%</div>
-                </a>
-                <!-- Product stars  -->
-                <div class="review-stars">
-                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-half-star pull-left"></span>
-                </div>
-                <div class="text-m reviews-count">
-                    16 <span class="translation_missing" title="translation missing: en.reviews">Reviews</span>
-                </div>
-                <!-- End product stars  -->
-
-                <div class="text-l yotpo-product-price">$29.0</div>
-            </div>
-        </li>
-
-        <li>
-            <div class="yotpo-promoted-product" data-type="MostBought" data-product-id="13" data-dest-app-key="PdFT1iSN4yam0qPjncIZr5EOmLUeDZvZV1Wx3mLa">
-
-                <a href="https://yotpo.com/go/olC06u6F" class="yotpo-product-link" target="_self">
-                    <!-- Product image  -->
-                    <div class="yotpo-product-image">
-                        <img src="http://ddcfq0gxiontw.cloudfront.net/Product/14/12/big.png?1398068530">
+                    <div class="text-s reviews-count">
+                        (2)
                     </div>
-                    <!-- End Product image  -->
-
-
-                    <div class="text-m yotpo-product-name">The Platinum Pack - Save 50%!</div>
-                </a>
-                <!-- Product stars  -->
-                <div class="review-stars">
-                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-half-star pull-left"></span>
+                    <!-- End product stars  -->
+                    <div class="yotpo-clr"></div>
+                    <div class="text-l yotpo-product-price">&nbsp;</div>
                 </div>
-                <div class="text-m reviews-count">
-                    35 <span class="translation_missing" title="translation missing: en.reviews">Reviews</span>
-                </div>
-                <!-- End product stars  -->
+            </li>
+            <li>
+                <div class="yotpo-promoted-product" data-type="MostLiked" data-product-id="1" data-dest-app-key="123aaa">
 
-                <div class="text-l yotpo-product-price">$404.0</div>
-            </div>
-        </li>
+                    <a href="https://www.google.com" class="yotpo-product-link" target="_self">
+                        <!-- Product image  -->
+                        <div class="yotpo-product-image">
+                            <img src="images/product-example.jpg">
+                        </div>
+                        <!-- End Product image  -->
 
-        <li>
-            <div class="yotpo-promoted-product" data-type="MostBought" data-product-id="2283" data-dest-app-key="PdFT1iSN4yam0qPjncIZr5EOmLUeDZvZV1Wx3mLa">
 
-                <a href="https://yotpo.com/go/7nKGzbR0" class="yotpo-product-link" target="_self">
-                    <!-- Product image  -->
-                    <div class="yotpo-product-image">
-                        <img src="http://ddcfq0gxiontw.cloudfront.net/Product/2288/9827/big.png?1395764329">
+                        <div class="text-m yotpo-product-name">Lorem delorian impsun</div>
+                    </a>
+                    <!-- Product stars  -->
+                    <div class="yotpo-review-stars pull-left text-l">
+                        <span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span>
                     </div>
-                    <!-- End Product image  -->
-
-
-                    <div class="text-m yotpo-product-name">Indie Rock Bundle - Save 30%</div>
-                </a>
-                <!-- Product stars  -->
-                <div class="review-stars">
-                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span>
-                </div>
-                <div class="text-m reviews-count">
-                    10 <span class="translation_missing" title="translation missing: en.reviews">Reviews</span>
-                </div>
-                <!-- End product stars  -->
-
-                <div class="text-l yotpo-product-price">$82.0</div>
-            </div>
-        </li>
-
-        <li>
-            <div class="yotpo-promoted-product" data-type="MostBought" data-product-id="1968" data-dest-app-key="PdFT1iSN4yam0qPjncIZr5EOmLUeDZvZV1Wx3mLa">
-
-                <a href="https://yotpo.com/go/jBGRB69r" class="yotpo-product-link" target="_self">
-                    <!-- Product image  -->
-                    <div class="yotpo-product-image">
-                        <img src="http://ddcfq0gxiontw.cloudfront.net/Product/1972/7932/big.png?1395761546">
+                    <div class="text-s reviews-count">
+                        (2)
                     </div>
-                    <!-- End Product image  -->
-
-
-                    <div class="text-m yotpo-product-name">Celso Alberti - Brazilian Drums &amp; Percussion Bundle - Save 25%</div>
-                </a>
-                <!-- Product stars  -->
-                <div class="review-stars">
-                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span>
+                    <!-- End product stars  -->
+                    <div class="yotpo-clr"></div>
+                    <div class="text-l yotpo-product-price">&nbsp;</div>
                 </div>
-                <div class="text-m reviews-count">
-                    12 <span class="translation_missing" title="translation missing: en.reviews">Reviews</span>
-                </div>
-                <!-- End product stars  -->
+            </li>
+            <li>
+                <div class="yotpo-promoted-product" data-type="MostLiked" data-product-id="1" data-dest-app-key="123aaa">
 
-                <div class="text-l yotpo-product-price">$58.5</div>
-            </div>
-        </li>
+                    <a href="https://www.google.com" class="yotpo-product-link" target="_self">
+                        <!-- Product image  -->
+                        <div class="yotpo-product-image">
+                            <img src="images/product-example.jpg">
+                        </div>
+                        <!-- End Product image  -->
 
-        <li>
-            <div class="yotpo-promoted-product" data-type="MostBought" data-product-id="282" data-dest-app-key="PdFT1iSN4yam0qPjncIZr5EOmLUeDZvZV1Wx3mLa">
 
-                <a href="https://yotpo.com/go/1drmdOea" class="yotpo-product-link" target="_self">
-                    <!-- Product image  -->
-                    <div class="yotpo-product-image">
-                        <img src="http://ddcfq0gxiontw.cloudfront.net/Product/284/240/big.png?1395753833">
+                        <div class="text-m yotpo-product-name">Lorem delorian impsun</div>
+                    </a>
+                    <!-- Product stars  -->
+                    <div class="yotpo-review-stars pull-left text-l">
+                        <span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span>
                     </div>
-                    <!-- End Product image  -->
-
-
-                    <div class="text-m yotpo-product-name">World Percussion Loops</div>
-                </a>
-                <!-- Product stars  -->
-                <div class="review-stars">
-                    <span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span><span class="icon icon-star pull-left"></span>
+                    <div class="text-s reviews-count">
+                        (2)
+                    </div>
+                    <!-- End product stars  -->
+                    <div class="yotpo-clr"></div>
+                    <div class="text-l yotpo-product-price">&nbsp;</div>
                 </div>
-                <div class="text-m reviews-count">
-                    10 <span class="translation_missing" title="translation missing: en.reviews">Reviews</span>
-                </div>
-                <!-- End product stars  -->
+            </li>
+            <li>
+                <div class="yotpo-promoted-product" data-type="MostLiked" data-product-id="1" data-dest-app-key="123aaa">
 
-                <div class="text-l yotpo-product-price">$29.0</div>
-            </div>
-        </li>
+                    <a href="https://www.google.com" class="yotpo-product-link" target="_self">
+                        <!-- Product image  -->
+                        <div class="yotpo-product-image">
+                            <img src="images/product-example.jpg">
+                        </div>
+                        <!-- End Product image  -->
+
+
+                        <div class="text-m yotpo-product-name">Lorem delorian impsun</div>
+                    </a>
+                    <!-- Product stars  -->
+                    <div class="yotpo-review-stars pull-left text-l">
+                        <span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span><span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                    </div>
+                    <div class="text-s reviews-count">
+                        (2)
+                    </div>
+                    <!-- End product stars  -->
+                    <div class="yotpo-clr"></div>
+                    <div class="text-l yotpo-product-price">&nbsp;</div>
+                </div>
+            </li>
         </ul>
         </div>
         </div>

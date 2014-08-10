@@ -6,4 +6,11 @@ Gemfile.lock
 _site/
 .ruby-gemset
 .ruby-version
-javascripts/.DS_Store
+.DS_Store
+stylesheets/core.css
+stylesheets/custom_sprite_sheet.css
+stylesheets/general_rules.css
+stylesheets/ds.css
+stylesheets/variables.css
+stylesheets/widget_workaround.css
+

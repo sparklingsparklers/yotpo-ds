@@ -1,25 +1,4 @@
-$blue: #00abc7;
-$orange: #efae00;
-$yellow: #ffd200;
-$green: #3aba6f;
-$white: #ffffff;
-$gray: #a2a2a2;
-$gray-light: #e3e3e3;
-$gray-dark: #737373;
-$gray-darker: #4f4f4f;
-$gray-dark: #737373;
-$gray-dark: #737373;
-$primary: #3085c7;
-$primary-d1: #266a9f;
-$primary-d2: #1d5077;
-$primary-l1: #599dd2;
-$primary-l2: #83b6dd;
-$primary-l3: #accee9;
-$primary-l4: #d6e7f4;
-$font-url: '../fonts/yotpo-widget-font.eot';
-
 /* DS */
-
 body {
   padding: 0!important;
   margin: 0!important;
@@ -29,7 +8,7 @@ body {
   font-style: normal!important;
   font-size: 14px;
   line-height: 17px;
-  color: $gray;
+  color: #a2a2a2;
   border: none;
   padding: 0;
   margin: 0;
