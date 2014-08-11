@@ -1,0 +1,61 @@
+#y-badges {
+  width: 100%;
+  background-color: transparent!important;
+}
+
+#y-badges + .badge-init {
+  display: none;
+}
+
+#y-badges .y-badge {
+  cursor: pointer;
+  height: 160px;
+  width: $badge_width;
+  margin: 0 auto;
+  position: relative;
+}
+
+#y-badges .y-badge-image {
+  width: 100%;
+}
+#y-badges .y-badge-stars {
+  display: block;
+  position: absolute;
+  top: $badge_stars_top;
+  left: $badge_stars_left;
+}
+#y-badges .y-badges-certified {
+  color: #5997c1;
+  font-size: $badge_certified_font_size;
+  text-transform: uppercase;
+  position: absolute;
+  top: $badge_certified_top;
+  left: $badge_certified_left;
+  max-width: $badge_certified_max_width;
+  width: $badge_certified_max_width;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+#y-badges .y-powered-by {
+  position: absolute;
+  white-space: nowrap;
+  top: $badge_poweredBy_top;
+  width: 100%;
+  text-align: center;
+  font-size: $badge_poweredBy_font_size;
+}
+
+#y-badges .y-badge-reviews {
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+  top: $badge_reviews_top;
+  font-size: $badge_reviews_font_size;
+  color: #FFFFFF;
+}
+
+#y-badges .yotpo-icon {
+  color: #ECC525;
+  font-size: $badge_stars_font_size;
+}

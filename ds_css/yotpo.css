@@ -1,4 +1,52 @@
+/* 
+Yotpo DS variables 
+They are here to complement for missing ones.
+*/
 /* Yotpo */
+/* General elements rules to override general rules in client sites */
+/* line 2, ../sass/general_rules.scss */
+.yotpo-display-wrapper {
+  visibility: visible !important;
+}
+
+/* line 6, ../sass/general_rules.scss */
+.yotpo {
+  direction: LTR;
+  clear: both;
+  text-align: left;
+}
+/* line 10, ../sass/general_rules.scss */
+.yotpo div, .yotpo span, .yotpo p, .yotpo a, .yotpo img, .yotpo i, .yotpo strong, .yotpo sup, .yotpo ul, .yotpo li, .yotpo form, .yotpo label {
+  font-family: Verdana;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal !important;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a2a2a2;
+  border: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+/* line 24, ../sass/general_rules.scss */
+.yotpo div p, .yotpo div a, .yotpo div img, .yotpo div i, .yotpo div strong, .yotpo div sup, .yotpo div ul, .yotpo div li, .yotpo div form, .yotpo div label, .yotpo span p, .yotpo span a, .yotpo span img, .yotpo span i, .yotpo span strong, .yotpo span sup, .yotpo span ul, .yotpo span li, .yotpo span form, .yotpo span label, .yotpo p p, .yotpo p a, .yotpo p img, .yotpo p i, .yotpo p strong, .yotpo p sup, .yotpo p ul, .yotpo p li, .yotpo p form, .yotpo p label, .yotpo a p, .yotpo a a, .yotpo a img, .yotpo a i, .yotpo a strong, .yotpo a sup, .yotpo a ul, .yotpo a li, .yotpo a form, .yotpo a label, .yotpo img p, .yotpo img a, .yotpo img img, .yotpo img i, .yotpo img strong, .yotpo img sup, .yotpo img ul, .yotpo img li, .yotpo img form, .yotpo img label, .yotpo i p, .yotpo i a, .yotpo i img, .yotpo i i, .yotpo i strong, .yotpo i sup, .yotpo i ul, .yotpo i li, .yotpo i form, .yotpo i label, .yotpo strong p, .yotpo strong a, .yotpo strong img, .yotpo strong i, .yotpo strong strong, .yotpo strong sup, .yotpo strong ul, .yotpo strong li, .yotpo strong form, .yotpo strong label, .yotpo sup p, .yotpo sup a, .yotpo sup img, .yotpo sup i, .yotpo sup strong, .yotpo sup sup, .yotpo sup ul, .yotpo sup li, .yotpo sup form, .yotpo sup label, .yotpo ul p, .yotpo ul a, .yotpo ul img, .yotpo ul i, .yotpo ul strong, .yotpo ul sup, .yotpo ul ul, .yotpo ul li, .yotpo ul form, .yotpo ul label, .yotpo li p, .yotpo li a, .yotpo li img, .yotpo li i, .yotpo li strong, .yotpo li sup, .yotpo li ul, .yotpo li li, .yotpo li form, .yotpo li label, .yotpo form p, .yotpo form a, .yotpo form img, .yotpo form i, .yotpo form strong, .yotpo form sup, .yotpo form ul, .yotpo form li, .yotpo form form, .yotpo form label, .yotpo label p, .yotpo label a, .yotpo label img, .yotpo label i, .yotpo label strong, .yotpo label sup, .yotpo label ul, .yotpo label li, .yotpo label form, .yotpo label label {
+  background: inherit !important;
+}
+/* line 28, ../sass/general_rules.scss */
+.yotpo ul, .yotpo li, .yotpo ul li {
+  list-style: none outside none !important;
+}
+/* line 31, ../sass/general_rules.scss */
+.yotpo img {
+  box-shadow: 0 0 0;
+}
+
 /* Yotpo */
 /* line 2, ../sass/core.scss */
 .yotpo {
@@ -2505,4 +2553,259 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
 }
 
 /*End Animation */
+/* line 1, ../sass/embedded_widget.scss */
+.yotpo.embedded-widget {
+  background-color: transparent;
+  position: relative;
+}
+
+/* line 6, ../sass/embedded_widget.scss */
+#embedded_widget {
+  margin: 20px auto;
+  max-width: 280px;
+}
+/* line 9, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container {
+  height: auto;
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 17, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_header {
+  background-color: #919191;
+  border-bottom: 1px solid #b19e9e;
+}
+/* line 20, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_header .embedded-inner-header {
+  padding: 15px 0;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+}
+/* line 27, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_header .embedded-inner-header.semi-wl-class {
+  width: 85%;
+  float: left;
+}
+/* line 32, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_header .embedded-semi-wl {
+  width: 15%;
+  float: left;
+  padding: 15px 0;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  box-sizing: border-box;
+  border-right: 1px solid grey;
+}
+/* line 44, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list {
+  background: #F5F5F5;
+  overflow: hidden;
+  padding: 0;
+}
+/* line 48, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list.hidden_widget {
+  display: none;
+}
+/* line 51, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list .embedded_widget_list_item {
+  display: block;
+  border-bottom: 1px solid #cccccc;
+  cursor: pointer;
+}
+/* line 55, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list .embedded_widget_list_item:hover {
+  opacity: 0.8;
+}
+/* line 59, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list .embedded_widget_list_item .embedded_widget_image_container {
+  float: left;
+}
+/* line 62, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list .embedded_widget_list_item .embedded_widget_image_container .embedded_widget_image {
+  max-width: 90%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  max-height: 80%;
+  margin: 10% auto 10%;
+  display: block !important;
+}
+/* line 71, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list .embedded_widget_list_item .embedded_widget_info {
+  float: left;
+}
+/* line 74, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list .embedded_widget_list_item .embedded_widget_info .embedded_widget_product_rank {
+  min-width: 86px;
+}
+/* line 79, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list .embedded_widget_list_item .embedded_widget_product_name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 83, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list .embedded_widget_list_item .embedded_widget_product_name .embedded_widget_product_link {
+  color: #005696;
+  float: left;
+}
+/* line 87, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list .embedded_widget_list_item .embedded_widget_product_name .embedded_widget_timeStamp {
+  float: right;
+  font-size: 8px;
+}
+/* line 95, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list#basic-embedded .embedded_widget_image_container {
+  width: 65%;
+  padding: 2.5% 0;
+}
+/* line 100, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list#basic-embedded .embedded_widget_info {
+  width: 35%;
+  padding: 2.3% 0;
+}
+/* line 105, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list#basic-embedded .embedded_widget_product_name {
+  padding: 0 5%;
+}
+/* line 110, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list#pictures-embedded .embedded_widget_image_container {
+  width: 35%;
+  height: 65px;
+}
+/* line 114, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list#pictures-embedded .embedded_widget_info {
+  width: 65%;
+  overflow: hidden;
+  height: auto;
+  margin: 5% 0;
+}
+/* line 122, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list#reviews-embedded .embedded_widget_list_item {
+  padding: 3%;
+}
+/* line 125, ../sass/embedded_widget.scss */
+#embedded_widget .embedded_widget_container .embedded_widget_list#reviews-embedded .embedded_widget_review {
+  clear: both;
+}
+
+/* line 133, ../sass/embedded_widget.scss */
+.yotpo-embedded-semi-label .yotpo-tool-tip {
+  padding: 13px;
+  position: absolute;
+  top: 58px;
+  width: 151px;
+}
+/* line 141, ../sass/embedded_widget.scss */
+.yotpo-embedded-semi-label .yotpo-icon-embedded {
+  font-size: 30px !important;
+}
+/* line 144, ../sass/embedded_widget.scss */
+.yotpo-embedded-semi-label #embedded-semi-label {
+  color: white !important;
+}
+/* line 147, ../sass/embedded_widget.scss */
+.yotpo-embedded-semi-label .embedded-reviews-by {
+  position: relative;
+  bottom: 5px;
+  margin-right: 10px;
+}
+
+/* line 155, ../sass/embedded_widget.scss */
+#embedded_widget .yotpo-icon {
+  color: #ECC525;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+}
+
+/* line 160, ../sass/embedded_widget.scss */
+#embedded_widget .star-embedded {
+  color: white;
+}
+
+/* line 164, ../sass/embedded_widget.scss */
+.y-badge-stars {
+  color: #ecc525 !important;
+}
+
+/* line 1, ../sass/badge.scss */
+#y-badges {
+  width: 100%;
+  background-color: transparent !important;
+}
+
+/* line 6, ../sass/badge.scss */
+#y-badges + .badge-init {
+  display: none;
+}
+
+/* line 10, ../sass/badge.scss */
+#y-badges .y-badge {
+  cursor: pointer;
+  height: 160px;
+  width: 151px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 18, ../sass/badge.scss */
+#y-badges .y-badge-image {
+  width: 100%;
+}
+
+/* line 21, ../sass/badge.scss */
+#y-badges .y-badge-stars {
+  display: block;
+  position: absolute;
+  top: 67px;
+  left: 34px;
+}
+
+/* line 27, ../sass/badge.scss */
+#y-badges .y-badges-certified {
+  color: #5997c1;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  max-width: 130px;
+  width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* line 40, ../sass/badge.scss */
+#y-badges .y-powered-by {
+  position: absolute;
+  white-space: nowrap;
+  top: 140px;
+  width: 100%;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* line 49, ../sass/badge.scss */
+#y-badges .y-badge-reviews {
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+  top: -100px;
+  font-size: 33px;
+  color: #FFFFFF;
+}
+
+/* line 58, ../sass/badge.scss */
+#y-badges .yotpo-icon {
+  color: #ECC525;
+  font-size: 18px;
+}
+
 /* End Yotpo */

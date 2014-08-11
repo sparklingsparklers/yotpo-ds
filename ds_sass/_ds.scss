@@ -1,25 +1,4 @@
-$blue: #00abc7;
-$orange: #efae00;
-$yellow: #ffd200;
-$green: #3aba6f;
-$white: #ffffff;
-$gray: #a2a2a2;
-$gray-light: #e3e3e3;
-$gray-dark: #737373;
-$gray-darker: #4f4f4f;
-$gray-dark: #737373;
-$gray-dark: #737373;
-$primary: #3085c7;
-$primary-d1: #266a9f;
-$primary-d2: #1d5077;
-$primary-l1: #599dd2;
-$primary-l2: #83b6dd;
-$primary-l3: #accee9;
-$primary-l4: #d6e7f4;
-$graph-bg: #ededed;
-$font-url: '../fonts/yotpo-widget-font.eot';
-
-/* DS */
+/* Yotpo Customizations for the DS */
 
 body {
   padding: 0!important;
@@ -30,7 +9,7 @@ body {
   font-style: normal!important;
   font-size: 14px;
   line-height: 17px;
-  color: $gray;
+  color: #a2a2a2;
   border: none;
   padding: 0;
   margin: 0;
@@ -43,13 +22,6 @@ body {
     color: black!important;
   }
 
-}
-
-.preview-boxes{
-  div.yotpo-regular-box, div.yotpo-small-box, div.regular-yotpo-small-box{
-    border: solid 1px grey!important;
-    background: #F0A3CC!important;
-  }
 }
 
 .inner-box{
@@ -130,9 +102,6 @@ div.exmple-box {
   font-size: 12px!important;
   color: grey!important;
 }
-.yotpo-clr {
-  clear: both;
-}
 textarea.code-example {
   background: black!important;
   color: white;
@@ -165,25 +134,6 @@ textarea.code-example {
 .color-circle.big {
   height: 55px;
   width: 55px;
-}
-
-.yotpo-icon-holders {
-  margin-left: 10%;
-  .yotpo-icon-holder {
-    margin-bottom: 8px;
-    min-width: 276px;
-    display: inline-block;
-    margin-right: 60px;
-    .yotpo-icon {
-      margin-right: 10px;  
-    }
-  }
-}
-.yotpo-icons-buttons {
-  .yotpo-icon-btn {
-    margin-top: 5px;
-
-  }
 }
 
 .moblie-simulator{

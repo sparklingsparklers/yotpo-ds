@@ -41,6 +41,8 @@ $('document').ready(function(){
 		}
     	    	
 	});
+
+	$("#resolution").html(screen.width);
 });
 
 function changeTheme(colorPrimary){

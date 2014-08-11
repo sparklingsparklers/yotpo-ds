@@ -1,0 +1,166 @@
+.yotpo.embedded-widget {
+  background-color: transparent;
+  position: relative;
+}
+
+#embedded_widget {
+  margin: 20px auto;
+  max-width: 280px;
+  .embedded_widget_container {
+    height: auto;
+    width:100%;
+    border: 1px solid rgb(223, 223, 223);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    .embedded_widget_header {
+      background-color: #919191;
+      border-bottom: 1px solid #b19e9e;
+      .embedded-inner-header {
+        padding: 15px 0;
+        display: inline-block;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        width: 100%;
+        &.semi-wl-class {
+          width: 85%;
+          float: $left;
+        }
+      }
+      .embedded-semi-wl {
+        width: 15%;
+        float: $left;
+        padding: 15px 0;
+        text-align: center;
+        display: inline-block;
+        font-size: 15px;
+        box-sizing: border-box;
+        border-#{$right}: 1px solid grey;
+
+      }
+    }
+    .embedded_widget_list {
+      background: #F5F5F5;
+      overflow: hidden;
+      padding: 0;
+      &.hidden_widget {
+        display:none;
+      }
+      .embedded_widget_list_item {
+        display: block;
+        border-bottom: 1px solid #cccccc;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+
+        .embedded_widget_image_container {
+          float: $left;
+
+          .embedded_widget_image {
+            max-width: 90%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            max-height: 80%;
+            margin: 10% auto 10%;
+            display: block!important;
+          }
+        }
+        .embedded_widget_info {
+          float: $left;
+
+          .embedded_widget_product_rank {
+            min-width: 86px;
+          }
+        }
+
+        .embedded_widget_product_name {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          .embedded_widget_product_link {
+            color: #005696;
+            float: $left;
+          }
+          .embedded_widget_timeStamp {
+            float: $right;
+            font-size: 8px;
+          }
+        }
+      }
+
+      &#basic-embedded {
+        .embedded_widget_image_container {
+          width: 65%;
+          padding: 2.5% 0;
+        }
+
+        .embedded_widget_info {
+          width: 35%;
+          padding: 2.3% 0;
+        }
+
+        .embedded_widget_product_name {
+          padding: 0 5%;
+        }
+      }
+      &#pictures-embedded {
+        .embedded_widget_image_container {
+          width: 35%;
+          height: 65px;
+        }
+        .embedded_widget_info {
+          width: 65%;
+          overflow: hidden;
+          height: auto;
+          margin: 5% 0;
+        }
+      }
+      &#reviews-embedded {
+        .embedded_widget_list_item {
+          padding: 3%;
+        }
+        .embedded_widget_review {
+          clear: both;
+        }
+      }
+    }
+  }
+}
+.yotpo-embedded-semi-label {
+  .yotpo-tool-tip {
+
+    padding: 13px;
+    position: absolute;
+    top: 58px;
+    width:151px;
+
+  }
+  .yotpo-icon-embedded {
+    font-size: 30px !important ;
+  }
+  #embedded-semi-label {
+    color: white !important;
+  }
+  .embedded-reviews-by {
+    position: relative;
+    bottom: 5px;
+    margin-right: 10px;
+  }
+
+}
+
+#embedded_widget .yotpo-icon {
+  color: #ECC525;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+}
+#embedded_widget .star-embedded {
+  color: $white;
+}
+
+.y-badge-stars {
+  color: #ECC525!important;
+}
