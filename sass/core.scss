@@ -731,7 +731,7 @@
 
   .yotpo-dropdown-wrapper {
     display: inline-block;
-    float: right;  
+    float: $right;
     &.mobile-collapse {
       .transparent-color-btn{
         width: 100%;
