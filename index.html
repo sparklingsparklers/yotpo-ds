@@ -132,6 +132,76 @@
                         </div>
                     </div>
                 </section>
+                <h3>Sorting</h3>
+                <section>
+
+
+                    <div class='content'>
+
+                        <div class="small-title">Example:</div>
+
+                        <div class="exmple-box yotpo">
+
+                            <div class="yotpo-dropdown-wrapper mobile-collapse">
+                                <div class="yotpo-menu-mobile-collapse yotpo-hidden-mobile">
+
+                                    <span class="yotpo-icon yotpo-icon-seperator"></span>
+                                    <div class="yotpo-nav-dropdown" data-type="page_sort" data-value="oldest">
+                                        <div class="yotpo-dropdown-button">
+                                            <label>Sort:</label>
+                                            <label class="selected" onclick="showSortCategories(this);">Select...</label>
+                                            <span id="btn-categories" class="yotpo-icon yotpo-icon-down-triangle" onclick="showSortCategories(this);"></span>
+                                        </div>
+                                        <ul class="yotpo-dropdown list-categories">
+                                            <li class="list-category" data-value="oldest" onclick="changeSortCategory(this);">
+                                                <a>oldest</a>
+                                            </li>
+                                            <li class="list-category" data-value="newest" onclick="changeSortCategory(this);">
+                                                <a>newest</a>
+                                            </li>
+                                            <li class="list-category" data-value="best" onclick="changeSortCategory(this);">
+                                                <a>best</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box yotpo">
+                            <textarea class="code-example" rows="32">
+<div class="yotpo-dropdown-wrapper mobile-collapse">
+    <div class="yotpo-menu-mobile-collapse yotpo-hidden-mobile">
+
+        <span class="yotpo-icon yotpo-icon-seperator"></span>
+        <div class="yotpo-nav-dropdown" data-type="page_sort" data-value="oldest">
+            <div class="yotpo-dropdown-button">
+                <label>Sort:</label>
+                <label class="selected" onclick="showSortCategories(this);">Select...</label>
+                <span id="btn-categories" class="yotpo-icon yotpo-icon-down-triangle" onclick="showSortCategories(this);"></span>
+            </div>
+            <ul class="yotpo-dropdown list-categories">
+                <li class="list-category" data-value="oldest" onclick="changeSortCategory(this);">
+                    <a>oldest</a>
+                </li>
+                <li class="list-category" data-value="newest" onclick="changeSortCategory(this);">
+                    <a>newest</a>
+                </li>
+                <li class="list-category" data-value="best" onclick="changeSortCategory(this);">
+                    <a>best</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
             </div>
 
         </div>
