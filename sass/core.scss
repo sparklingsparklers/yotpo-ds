@@ -2346,12 +2346,17 @@ div.yotpo-preloader-wrapper{
 
 
 /* NOT JS!!! */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 785px) {
 
  .yotpo {
     .yotpo-bottomline {
       &.yotpo-bottomline-ditribution-version{
         
+        .yotpo-star-distribution{
+          float: right;
+          margin-right: 10px;
+        }
+
         .yotpo-default-button{
           margin: 0;
           left: 0;
