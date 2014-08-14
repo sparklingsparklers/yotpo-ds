@@ -1334,6 +1334,22 @@
   }
 
   .yotpo-bottomline {
+
+    &.yotpo-bottomline-ditribution-version{
+      position: relative;
+      .yotpo-default-button{
+        float: none;
+        position: absolute;
+        right: 0;
+        &.write-review-button{
+          top: 25px;
+        }
+        &.write-question-button{
+          top: 65px;
+        }
+      }
+    }
+
     .text-m {
       white-space: nowrap;
     }
