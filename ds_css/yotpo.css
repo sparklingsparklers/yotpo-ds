@@ -2517,6 +2517,23 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
 }
 
 /* NOT JS!!! */
+@media only screen and (max-width: 770) {
+  /* line 2355, ../sass/core.scss */
+  .yotpo .yotpo-bottomline.yotpo-bottomline-ditribution-version .yotpo-default-button {
+    margin: 0;
+    left: 0;
+    right: auto;
+  }
+  /* line 2359, ../sass/core.scss */
+  .yotpo .yotpo-bottomline.yotpo-bottomline-ditribution-version .yotpo-default-button.write-review-button {
+    top: 65px;
+  }
+  /* line 2362, ../sass/core.scss */
+  .yotpo .yotpo-bottomline.yotpo-bottomline-ditribution-version .yotpo-default-button.write-question-button {
+    top: 105px;
+  }
+}
+/* NOT JS!!! */
 @media only screen and (max-width: 480px) {
   /*
      @font-face {
@@ -2527,36 +2544,36 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
       font-weight: normal;
       font-style: normal;
     }*/
-  /* line 2361, ../sass/core.scss */
+  /* line 2384, ../sass/core.scss */
   .yotpo .form-group label {
     width: 100%;
     float: left;
     max-width: 100%;
     white-space: normal;
   }
-  /* line 2368, ../sass/core.scss */
+  /* line 2391, ../sass/core.scss */
   .yotpo .form-group span {
     width: 100%;
     float: left;
     margin: 0;
     padding: 0;
   }
-  /* line 2377, ../sass/core.scss */
+  /* line 2400, ../sass/core.scss */
   .yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog {
     width: 94%;
     top: 2%;
     max-height: 94%;
   }
-  /* line 2384, ../sass/core.scss */
+  /* line 2407, ../sass/core.scss */
   .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body {
     max-height: 100%;
   }
-  /* line 2389, ../sass/core.scss */
+  /* line 2412, ../sass/core.scss */
   .yotpo #yotpo_testimonials_btn {
     display: none;
   }
 
-  /* line 2394, ../sass/core.scss */
+  /* line 2417, ../sass/core.scss */
   .text-box {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -2565,7 +2582,7 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
 }
 /* End Media Queries */
 /* Animation */
-/* line 2407, ../sass/core.scss */
+/* line 2430, ../sass/core.scss */
 .yotpo .yotpo-animation-fade {
   -webkit-transition: opacity 0.2s ease-in;
   -moz-transition: opacity 0.2s ease-in;
@@ -2573,7 +2590,7 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   -o-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
 }
-/* line 2415, ../sass/core.scss */
+/* line 2438, ../sass/core.scss */
 .yotpo .yotpo-animation-slide {
   -webkit-transition: height 1.1s ease-in-out;
   -moz-transition: height 1.1s ease-in-out;
