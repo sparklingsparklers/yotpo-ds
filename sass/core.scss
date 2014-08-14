@@ -1564,17 +1564,24 @@
           height: 100%;
           background-color: $graph-bg;
         }
-        .yotpo-star-distribution-graph-score{
-          position: absolute;
-          width: 30%;
-          height: 100%;
-          background-color: $primary;
 
-          &.active{
+        .yotpo-star-distribution-score-wrapper{
+          position: relative;
+          width: 90%;
+          height: 100%;
+
+          .yotpo-star-distribution-graph-score{
+            position: absolute;
+            width: 30%;
+            height: 100%;
             background-color: $primary;
-          }
-          &.unactive{
-            background-color: $primary-l3;
+
+            &.active{
+              background-color: $primary;
+            }
+            &.unactive{
+              background-color: $primary-l3;
+            }
           }
         }
       }
