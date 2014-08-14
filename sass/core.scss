@@ -2346,6 +2346,29 @@ div.yotpo-preloader-wrapper{
 
 
 /* NOT JS!!! */
+@media only screen and (max-width: 770) {
+
+ .yotpo {
+    .yotpo-bottomline {
+      &.yotpo-bottomline-ditribution-version{
+        
+        .yotpo-default-button{
+          margin: 0;
+          left: 0;
+          right: auto;
+          &.write-review-button{
+            top: 65px;
+          }
+          &.write-question-button{
+            top: 105px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* NOT JS!!! */
 @media only screen and (max-width: 480px) {
 /*
    @font-face {
