@@ -1636,11 +1636,11 @@ They are here to complement for missing ones.
   text-align: left;
 }
 /* line 1528, ../sass/core.scss */
-.yotpo .yotpo-star-distribution .yotpo-star-distribution-content .yotpo-distribution .yotpo-distribution-clickable:hover {
+.yotpo .yotpo-star-distribution .yotpo-star-distribution-content .yotpo-distribution.yotpo-distribution-clickable:hover {
   cursor: pointer;
 }
 /* line 1535, ../sass/core.scss */
-.yotpo .yotpo-star-distribution .yotpo-star-distribution-content .yotpo-distribution .yotpo-distribution-unactive .yotpo-star-distribution-graph .yotpo-star-distribution-graph-score {
+.yotpo .yotpo-star-distribution .yotpo-star-distribution-content .yotpo-distribution.yotpo-distribution-unactive .yotpo-star-distribution-graph .yotpo-star-distribution-graph-score {
   background-color: #accee9;
 }
 /* line 1541, ../sass/core.scss */

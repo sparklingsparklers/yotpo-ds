@@ -1524,13 +1524,13 @@
 
       .yotpo-distribution{
 
-        .yotpo-distribution-clickable{
+        &.yotpo-distribution-clickable{
           &:hover{
             cursor: pointer;
           }
         }
 
-        .yotpo-distribution-unactive{
+        &.yotpo-distribution-unactive{
           .yotpo-star-distribution-graph{
             .yotpo-star-distribution-graph-score{
               background-color: $primary-l3;
