@@ -1355,6 +1355,7 @@
           position: absolute;
           right: auto;
           top: 95px;
+          margin: 0;
           .yotpo-icon-button-text{
               display: none;
           }
@@ -1654,6 +1655,30 @@
           }
           .yotpo-star-distribution-graph{
             width: 80px;
+          }
+        }
+      }
+    }
+
+    &.yotpo-small{
+      margin: 0;
+      padding: 0;
+      border-left: none;
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: solid 1px $gray-light;
+      width: 100%;
+
+
+      .yotpo-star-distribution-content{
+
+        .yotpo-distribution{
+
+          .review-stars{
+            margin-right: 6px;
+          }
+          .yotpo-sum-reviews{
+            margin-right: 6px;
           }
         }
       }
