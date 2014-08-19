@@ -48,6 +48,15 @@
       width: 24px!important;
       height: 24px!important;
     }
+
+    yotpo-star-distribution{
+      .yotpo-icon-star,
+      .yotpo-icon-half-star,
+      .yotpo-icon-empty-star {
+        width: 15px!important;
+        height: 15px!important;
+      }      
+    }
   }
 
   @mixin stars-module($size) {
