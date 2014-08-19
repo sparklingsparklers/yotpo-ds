@@ -1,0 +1,27 @@
+@import "../sass/variables";
+
+/* 
+Yotpo DS variables 
+They are here to complement for missing ones.
+*/
+
+$badge_width: 151px;
+$badge_stars_top: 67px;
+$badge_stars_left: 34px;
+$badge_stars_font_size: 18px;
+$badge_certified_font_size: 12px;
+$badge_certified_top: 90px;
+$badge_certified_left: 10px;
+$badge_certified_max_width: 130px;
+$badge_poweredBy_top: 140px;
+$badge_poweredBy_left: 25px;
+$badge_poweredBy_font_size: 13px;
+$badge_reviews_top: -100px;
+$badge_reviews_font_size: 33px;
+
+/* Yotpo */
+@import "../sass/general_rules";
+@import "../sass/core";
+@import "../sass/embedded_widget";
+@import "../sass/badge";
+/* End Yotpo */

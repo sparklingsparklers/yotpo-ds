@@ -1,5 +1,5 @@
 /* DS */
-/* line 23, ../sass/ds.scss */
+/* line 24, ../sass/ds.scss */
 body {
   padding: 0 !important;
   margin: 0 !important;
@@ -21,25 +21,25 @@ body {
   /* Opera/IE 8+ */
 }
 
-/* line 41, ../sass/ds.scss */
+/* line 42, ../sass/ds.scss */
 #content-wrapper .side-part, #content-wrapper .content .param, #content-wrapper .content .small-title {
   color: black !important;
 }
 
-/* line 48, ../sass/ds.scss */
-.preview-boxes div.regular-box, .preview-boxes div.small-box, .preview-boxes div.regular-small-box {
+/* line 49, ../sass/ds.scss */
+.preview-boxes div.yotpo-regular-box, .preview-boxes div.yotpo-small-box, .preview-boxes div.regular-yotpo-small-box {
   border: solid 1px grey !important;
   background: #f0a3cc !important;
 }
 
-/* line 54, ../sass/ds.scss */
+/* line 55, ../sass/ds.scss */
 .inner-box {
   width: 100% !important;
   height: 40px !important;
   background: white !important;
 }
 
-/* line 60, ../sass/ds.scss */
+/* line 61, ../sass/ds.scss */
 #design-faker {
   background: url("../images/typography2.jpg") no-repeat;
   position: absolute;
@@ -52,7 +52,7 @@ body {
   display: none;
 }
 
-/* line 71, ../sass/ds.scss */
+/* line 72, ../sass/ds.scss */
 #content-wrapper {
   position: relative;
   max-width: 900px !important;
@@ -61,26 +61,26 @@ body {
   box-sizing: border-box;
 }
 
-/* line 78, ../sass/ds.scss */
+/* line 79, ../sass/ds.scss */
 .side-part {
   font-weight: bold !important;
   font-size: 17px !important;
   margin-top: 20px !important;
 }
 
-/* line 83, ../sass/ds.scss */
+/* line 84, ../sass/ds.scss */
 .content {
   margin: 20px 0 0 10% !important;
 }
 
-/* line 86, ../sass/ds.scss */
+/* line 87, ../sass/ds.scss */
 .content-full-length {
   margin: 0px !important;
   border-bottom: 1px solid !important;
   padding-bottom: 40px !important;
 }
 
-/* line 91, ../sass/ds.scss */
+/* line 92, ../sass/ds.scss */
 section {
   max-width: 755px !important;
   width: 100% !important;
@@ -90,7 +90,7 @@ section {
   margin-bottom: 30px !important;
 }
 
-/* line 100, ../sass/ds.scss */
+/* line 101, ../sass/ds.scss */
 h3 {
   font-family: Verdana;
   margin-bottom: 35px !important;
@@ -100,7 +100,7 @@ h3 {
   text-transform: uppercase !important;
 }
 
-/* line 108, ../sass/ds.scss */
+/* line 109, ../sass/ds.scss */
 .content ul {
   font-weight: light;
   list-style: none;
@@ -109,12 +109,12 @@ h3 {
   font-size: 15px;
 }
 
-/* line 115, ../sass/ds.scss */
+/* line 116, ../sass/ds.scss */
 bold {
   font-weight: bolder;
 }
 
-/* line 118, ../sass/ds.scss */
+/* line 119, ../sass/ds.scss */
 div.exmple-box {
   border: 1px solid black !important;
   text-align: center !important;
@@ -122,23 +122,23 @@ div.exmple-box {
   display: inline-block !important;
   width: 100% !important;
 }
-/* line 124, ../sass/ds.scss */
+/* line 125, ../sass/ds.scss */
 div.exmple-box.pull-left {
   text-align: left !important;
 }
 
-/* line 128, ../sass/ds.scss */
+/* line 129, ../sass/ds.scss */
 .small-title {
   font-size: 12px !important;
   color: grey !important;
 }
 
-/* line 132, ../sass/ds.scss */
-.clr {
+/* line 133, ../sass/ds.scss */
+.yotpo-clr {
   clear: both;
 }
 
-/* line 135, ../sass/ds.scss */
+/* line 136, ../sass/ds.scss */
 textarea.code-example {
   background: black !important;
   color: white;
@@ -149,12 +149,12 @@ textarea.code-example {
   max-width: 400px !important;
 }
 
-/* line 144, ../sass/ds.scss */
+/* line 145, ../sass/ds.scss */
 .color-list {
   list-style: none;
 }
 
-/* line 147, ../sass/ds.scss */
+/* line 148, ../sass/ds.scss */
 .color-item {
   width: 80px;
   text-align: center;
@@ -163,7 +163,7 @@ textarea.code-example {
   min-height: 140px;
 }
 
-/* line 155, ../sass/ds.scss */
+/* line 156, ../sass/ds.scss */
 .color-circle {
   -webkit-border-radius: 50px !important;
   -moz-border-radius: 50px !important;
@@ -174,34 +174,34 @@ textarea.code-example {
   margin: 7px auto !important;
 }
 
-/* line 164, ../sass/ds.scss */
+/* line 165, ../sass/ds.scss */
 .color-circle.big {
   height: 55px;
   width: 55px;
 }
 
-/* line 169, ../sass/ds.scss */
-.icon-holders {
+/* line 170, ../sass/ds.scss */
+.yotpo-icon-holders {
   margin-left: 10%;
 }
-/* line 171, ../sass/ds.scss */
-.icon-holders .icon-holder {
+/* line 172, ../sass/ds.scss */
+.yotpo-icon-holders .yotpo-icon-holder {
   margin-bottom: 8px;
   min-width: 276px;
   display: inline-block;
   margin-right: 60px;
 }
-/* line 176, ../sass/ds.scss */
-.icon-holders .icon-holder .icon {
+/* line 177, ../sass/ds.scss */
+.yotpo-icon-holders .yotpo-icon-holder .yotpo-icon {
   margin-right: 10px;
 }
 
-/* line 182, ../sass/ds.scss */
-.icons-buttons .icon-btn {
+/* line 183, ../sass/ds.scss */
+.yotpo-icons-buttons .yotpo-icon-btn {
   margin-top: 5px;
 }
 
-/* line 188, ../sass/ds.scss */
+/* line 189, ../sass/ds.scss */
 .moblie-simulator {
   width: 200px;
   display: inline-block;
