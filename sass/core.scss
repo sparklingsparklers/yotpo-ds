@@ -1359,6 +1359,160 @@
           padding: 0;
         }
       }
+
+      /* Star Distribution */
+      .yotpo-star-distribution{
+        display: inline-block;
+        padding-left: 15px;
+        margin-left: 15px;
+        border-left: solid 1px $gray-light;
+        vertical-align: middle;
+        text-align: left;
+
+        .yotpo-star-distribution-content{
+          margin-bottom: 10px;
+          text-align: left;
+
+
+          .yotpo-distibutions-stars{
+            padding-top: 2px;
+            float: left;
+            .review-stars{
+              display: block;
+              vertical-align: middle;
+              margin-right: 6px;
+              margin-bottom: 4px;
+              .yotpo-icon-star, .yotpo-icon-empty-star{
+                color: $yellow;
+                font-size: 15px;
+              }
+
+              &.yotpo-distribution-clickable{
+                &:hover{
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          .yotpo-distibutions-sum-reviews{
+            float: left;
+            .yotpo-sum-reviews{
+              display: block;
+              vertical-align: middle;
+              min-width: 24px;
+              margin-right: 6px;
+              margin-bottom: 2px;
+              padding: 0;
+
+              &.yotpo-distribution-clickable{
+                &:hover{
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          .yotpo-distributions-graphs{
+            display: block;
+            overflow: hidden;
+            width: auto;
+            padding-top: 4px;
+
+            .yotpo-star-distribution-graph{
+              vertical-align: middle;
+              display: block;
+              width: 85px;
+              height: 10px;
+              position: relative;
+              margin-bottom: 9px;
+
+              .yotpo-star-distribution-graph-background{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: $graph-bg;
+              }
+
+              .yotpo-star-distribution-score-wrapper{
+                position: relative;
+                width: 90%;
+                height: 100%;
+
+                .yotpo-star-distribution-graph-score{
+                  position: absolute;
+                  width: 30%;
+                  height: 100%;
+                  background-color: $primary;
+
+                  &.active{
+                    background-color: $primary;
+                  }
+                  &.unactive{
+                    background-color: $primary-l3;
+                  }
+                }
+              }
+
+              &.yotpo-distribution-clickable{
+                &:hover{
+                  cursor: pointer;
+                }
+              }
+              &.yotpo-distribution-unactive{
+                .yotpo-star-distribution-graph-score{
+                  background-color: $primary-l3;
+                }
+              }
+            }
+          }
+        }
+
+        .yotpo-star-distribution-footer{
+          text-align: left;
+          line-height: 11px;
+
+          span{
+            &:hover{
+              cursor: pointer;
+            }
+            color: $primary;
+          }
+        }
+
+        /*&.yotpo-medium{
+          float: right;
+          .yotpo-star-distribution-content{
+            .yotpo-star-distribution-graph{
+              width: 100px;
+            }
+          }
+        }
+
+        &.yotpo-small{
+          display: block;
+          margin: 0;
+          padding: 0;
+          border-left: none;
+          margin-top: 15px;
+          padding-top: 10px;
+          border-top: solid 1px $gray-light;
+          
+          .yotpo-star-distribution-content{
+            .review-stars{
+              margin-right: 6px;
+            }
+            .yotpo-sum-reviews{
+              margin-right: 6px;
+            }
+            .yotpo-distributions-graphs{
+              .yotpo-star-distribution-graph{
+                width: 100%;
+              }
+            }
+          }
+        }*/
+      }
     }
 
     &.yotpo-medium{
@@ -1381,6 +1535,15 @@
             }
           }
         }
+
+        .yotpo-star-distribution{
+          float: right;
+          .yotpo-star-distribution-content{
+            .yotpo-star-distribution-graph{
+              width: 100px;
+            }
+          }
+        }
       }
     }
     &.yotpo-small{
@@ -1388,6 +1551,30 @@
         &.yotpo-bottomline-ditribution-version {
           .yotpo-star-distribution-seperator{
             clear: both;
+          }
+        }
+
+        .yotpo-star-distribution{
+          display: block;
+          margin: 0;
+          padding: 0;
+          border-left: none;
+          margin-top: 15px;
+          padding-top: 10px;
+          border-top: solid 1px $gray-light;
+          
+          .yotpo-star-distribution-content{
+            .review-stars{
+              margin-right: 6px;
+            }
+            .yotpo-sum-reviews{
+              margin-right: 6px;
+            }
+            .yotpo-distributions-graphs{
+              .yotpo-star-distribution-graph{
+                width: 100%;
+              }
+            }
           }
         }
       }
@@ -1582,160 +1769,6 @@
       }
       span{
         color: $primary;
-      }
-    }
-  }
-
-  /* Star Distribution */
-  .yotpo-star-distribution{
-    display: inline-block;
-    padding-left: 15px;
-    margin-left: 15px;
-    border-left: solid 1px $gray-light;
-    vertical-align: middle;
-    text-align: left;
-
-    .yotpo-star-distribution-content{
-      margin-bottom: 10px;
-      text-align: left;
-
-
-      .yotpo-distibutions-stars{
-        padding-top: 2px;
-        float: left;
-        .review-stars{
-          display: block;
-          vertical-align: middle;
-          margin-right: 6px;
-          margin-bottom: 4px;
-          .yotpo-icon-star, .yotpo-icon-empty-star{
-            color: $yellow;
-            font-size: 15px;
-          }
-
-          &.yotpo-distribution-clickable{
-            &:hover{
-              cursor: pointer;
-            }
-          }
-        }
-      }
-
-      .yotpo-distibutions-sum-reviews{
-        float: left;
-        .yotpo-sum-reviews{
-          display: block;
-          vertical-align: middle;
-          min-width: 24px;
-          margin-right: 6px;
-          margin-bottom: 2px;
-          padding: 0;
-
-          &.yotpo-distribution-clickable{
-            &:hover{
-              cursor: pointer;
-            }
-          }
-        }
-      }
-
-      .yotpo-distributions-graphs{
-        display: block;
-        overflow: hidden;
-        width: auto;
-        padding-top: 4px;
-
-        .yotpo-star-distribution-graph{
-          vertical-align: middle;
-          display: block;
-          width: 85px;
-          height: 10px;
-          position: relative;
-          margin-bottom: 9px;
-
-          .yotpo-star-distribution-graph-background{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-color: $graph-bg;
-          }
-
-          .yotpo-star-distribution-score-wrapper{
-            position: relative;
-            width: 90%;
-            height: 100%;
-
-            .yotpo-star-distribution-graph-score{
-              position: absolute;
-              width: 30%;
-              height: 100%;
-              background-color: $primary;
-
-              &.active{
-                background-color: $primary;
-              }
-              &.unactive{
-                background-color: $primary-l3;
-              }
-            }
-          }
-
-          &.yotpo-distribution-clickable{
-            &:hover{
-              cursor: pointer;
-            }
-          }
-          &.yotpo-distribution-unactive{
-            .yotpo-star-distribution-graph-score{
-              background-color: $primary-l3;
-            }
-          }
-        }
-      }
-    }
-
-    .yotpo-star-distribution-footer{
-      text-align: left;
-      line-height: 11px;
-
-      span{
-        &:hover{
-          cursor: pointer;
-        }
-        color: $primary;
-      }
-    }
-
-    &.yotpo-medium{
-      float: right;
-      .yotpo-star-distribution-content{
-        .yotpo-star-distribution-graph{
-          width: 100px;
-        }
-      }
-    }
-
-    &.yotpo-small{
-      display: block;
-      margin: 0;
-      padding: 0;
-      border-left: none;
-      margin-top: 15px;
-      padding-top: 10px;
-      border-top: solid 1px $gray-light;
-      
-      .yotpo-star-distribution-content{
-        .review-stars{
-          margin-right: 6px;
-        }
-        .yotpo-sum-reviews{
-          margin-right: 6px;
-        }
-        .yotpo-distributions-graphs{
-          .yotpo-star-distribution-graph{
-            width: 100%;
-          }
-        }
       }
     }
   }
