@@ -58,7 +58,16 @@
         .yotpo-icon-empty-star {
           width: 13px!important;
           height: 13px!important;
-          background-position: -187px 0px;
+        }
+
+        .yotpo-icon-star {
+          background-position: -172px -1;
+        }
+        .yotpo-icon-half-star {
+          background-position: -187px -1;
+        }
+        .yotpo-icon-empty-star {
+          background-position: -202px -1;
         }
       }
     }
