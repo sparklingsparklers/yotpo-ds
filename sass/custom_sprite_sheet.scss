@@ -50,6 +50,20 @@
     }
   }
 
+  .yotpo-bottomline{
+    .yotpo-star-distribution{
+      .review-stars{
+        .yotpo-icon-star,
+        .yotpo-icon-half-star,
+        .yotpo-icon-empty-star {
+          width: 13px!important;
+          height: 13px!important;
+          background-position: -187px 0px;
+        }
+      }
+    }
+  }
+
   @mixin stars-module($size) {
     width: $size!important;
     height: $size!important;
