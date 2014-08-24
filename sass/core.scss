@@ -1301,31 +1301,6 @@
             top: 65px;
           }
         }
-
-        /*&.yotpo-medium{
-          .yotpo-default-button{
-            float: none;
-            position: absolute;
-            right: auto;
-            top: 95px;
-            margin: 0;
-            .yotpo-icon-button-text{
-                display: none;
-            }
-            &.write-review-button{
-              left: 0px;
-            }
-            &.write-question-button{
-              left: 55px;
-            }
-          }
-        }
-
-        &.yotpo-small{
-          .yotpo-star-distribution-seperator{
-            clear: both;
-          }
-        }*/
       }
 
       .text-m {
@@ -1338,7 +1313,6 @@
         padding-bottom: 2px;
       }
       .yotpo-icon-star, .yotpo-icon-half-star, .yotpo-icon-empty-star {
-        color: $yellow;
         font-size: 26px;
       }
       .yotpo-sum-reviews {
@@ -1581,6 +1555,12 @@
       .yotpo-icon {
         color: $white;
       }
+    }
+  }
+
+  .yotpo-bottomline{
+    .yotpo-icon-star, .yotpo-icon-half-star, .yotpo-icon-empty-star {
+      color: $yellow;
     }
   }
 
