@@ -939,7 +939,7 @@ They are here to complement for missing ones.
 /* line 824, ../sass/core.scss */
 .yotpo .yotpo-dropdown .list-category a {
   font-size: 12px;
-  color: #737373;
+  color: #737373 !important;
 }
 /* line 834, ../sass/core.scss */
 .yotpo .write-question-wrapper {
