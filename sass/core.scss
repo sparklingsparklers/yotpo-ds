@@ -1319,15 +1319,15 @@
       &.yotpo-botomline-2-boxes{
         .yotpo-bottomline-box-1{
           max-width: 33%;
+          min-width: 220px;
 
           .write-question-button, .write-review-button{
             display: none;
           }
         }
         .yotpo-bottomline-box-2{
-          float: $left;
+          overflow: hidden;
           padding-top: 5px;
-          min-width: 67%;
           position: relative;
 
           /* Review Rating Fields */
@@ -1512,17 +1512,203 @@
         position: relative;
 
         .yotpo-bottomline-box-1{
-          width: 33%;
+          max-width: 33%;
+          min-width: 220px;
+          margin-right: 15px;
+          .write-question-button, .write-review-button{
+            display: none;
+          }
         }
         .yotpo-bottomline-box-2{
-          max-width: 33%;
-          float: $left;
+          overflow: hidden;
+          min-width: 557px;
           padding-top: 5px;
+
+          .write-question-button, .write-review-button{
+            display: none;
+          }
+          /* Star Distribution */
+          .yotpo-star-distribution{
+            display: inline-block;
+            float: left;
+            min-width: 230px;
+            padding-left: 15px;
+            border-left: solid 1px $gray-light;
+            padding-right: 15px;
+            border-right: solid 1px $gray-light;
+            vertical-align: middle;
+            text-align: left;
+
+            .yotpo-star-distribution-content{
+              margin-bottom: 10px;
+              text-align: left;
+
+
+              .yotpo-distibutions-stars{
+                padding-top: 2px;
+                float: left;
+                .review-stars{
+                  display: block;
+                  vertical-align: middle;
+                  margin-right: 6px;
+                  margin-bottom: 4px;
+                  .yotpo-icon-star, .yotpo-icon-empty-star{
+                    color: $yellow;
+                    font-size: 15px;
+                  }
+
+                  &.yotpo-distribution-clickable{
+                    &:hover{
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+
+              .yotpo-distibutions-sum-reviews{
+                float: left;
+                .yotpo-sum-reviews{
+                  display: block;
+                  vertical-align: middle;
+                  min-width: 24px;
+                  margin-right: 6px;
+                  margin-bottom: 2px;
+                  padding: 0;
+
+                  &.yotpo-distribution-clickable{
+                    &:hover{
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+
+              .yotpo-distributions-graphs{
+                display: block;
+                overflow: hidden;
+                width: auto;
+                padding-top: 4px;
+
+                .yotpo-star-distribution-graph{
+                  vertical-align: middle;
+                  display: block;
+                  width: 85px;
+                  height: 10px;
+                  position: relative;
+                  margin-bottom: 9px;
+
+                  .yotpo-star-distribution-graph-background{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $graph-bg;
+                  }
+
+                  .yotpo-star-distribution-score-wrapper{
+                    position: relative;
+                    width: 90%;
+                    height: 100%;
+
+                    .yotpo-star-distribution-graph-score{
+                      position: absolute;
+                      width: 30%;
+                      height: 100%;
+                      background-color: $primary;
+
+                      &.active{
+                        background-color: $primary;
+                      }
+                      &.unactive{
+                        background-color: $primary-l3;
+                      }
+                    }
+                  }
+
+                  &.yotpo-distribution-clickable{
+                    &:hover{
+                      cursor: pointer;
+                    }
+                  }
+                  &.yotpo-distribution-unactive{
+                    .yotpo-star-distribution-graph-score{
+                      background-color: $primary-l3;
+                    }
+                  }
+                }
+              }
+            }
+
+            .yotpo-star-distribution-footer{
+              text-align: left;
+              line-height: 11px;
+
+              span{
+                &:hover{
+                  cursor: pointer;
+                }
+                color: $primary;
+              }
+            }
+
+            .yotpo-star-distribution-content, .yotpo-star-distribution-footer{
+              width: 215px;
+              margin-left: auto ;
+              margin-right: auto ;
+            }
+          }
+
+          /* Review Rating Fields */
+          .yotpo-review-rating-fields{
+            max-width: 265px;
+            display: inline-block;
+            margin-left: 28px;
+
+            .yotpo-review-rating-fields-cloumn{
+
+              &:first-child{
+                .yotpo-review-rating-field:first-child{
+                  padding-top: 0;
+                }
+              }
+
+              float: left;
+              min-width: 50%;
+              .yotpo-review-rating-field{
+
+                padding: 5px 0;
+
+                .yotpo-review-rating-field-name{
+                  float: $left;
+                  min-width: 150px;
+                }
+                .yotpo-review-rating-field-score{
+                  float: $left;
+                  vertical-align: middle;
+                  padding-left: 20px;
+                  .yotpo-review-rating-field-score-bar{
+                    width: 18px;
+                    height: 6px;
+                    float: $left;
+                    margin-top: 6px;
+                    background-color: $gray-light;
+
+                    &.yotpo-rating-bar-full{
+                      background-color: $primary;
+                    }
+                  }
+                  .yotpo-review-rating-field-score-divider{
+                    width: 1px;
+                    height: 6px;
+                    background-color: $white;
+                    float: $left;
+                  }
+                }
+              }
+            }
+          }
         }
         .yotpo-bottomline-box-3{
-          max-width: 33%;
-          float: $left;
-          padding-top: 5px;
+          display: none;
         }
       }
 
@@ -1627,9 +1813,21 @@
         &.yotpo-botomline-3-boxes{
           .yotpo-bottomline-box-1{
             width: 33%;
+            margin-bottom: 10px;
           }
           .yotpo-bottomline-box-2{
             width: 33%;
+
+            /* Star Distribution */
+            .yotpo-star-distribution{
+              padding-left: 0;
+              padding-right: 10px;
+              border-left: none;
+            }
+            /* Review Rating Fields */
+            .yotpo-review-rating-fields{
+              margin-left: 15px;
+            }
           }
           .yotpo-bottomline-box-3{
             width: 33%;
@@ -1711,10 +1909,42 @@
             }
           }
           .yotpo-bottomline-box-2{
-            width: 33%;
+            display: block;
+            overflow: visible;
+            float: none;
+            min-width: 0;
 
             .write-question-button, .write-review-button{
               display: none;
+            }
+
+            .yotpo-star-distribution{
+              width: 100%;
+              border: none;
+              padding: 0;
+              margin: 30px 0;
+              
+              .yotpo-star-distribution-content{
+                width: 100%;
+                .review-stars{
+                  margin-right: 6px;
+                }
+                .yotpo-sum-reviews{
+                  margin-right: 6px;
+                }
+                .yotpo-distributions-graphs{
+                  .yotpo-star-distribution-graph{
+                    width: 100%;
+                  }
+                }
+              }
+              .yotpo-star-distribution-footer{
+                float: left;
+              }
+            }
+
+            .yotpo-review-rating-fields{
+              margin: 0;
             }
           }
           .yotpo-bottomline-box-3{
