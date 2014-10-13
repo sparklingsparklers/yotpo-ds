@@ -1529,7 +1529,7 @@ They are here to complement for missing ones.
 /* line 1400, ../sass/core.scss */
 .yotpo.yotpo-main-widget .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .yotpo-product-related-fields .yotpo-product-related-fields-cloumn, .yotpo .yotpo-modal-dialog .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .yotpo-product-related-fields .yotpo-product-related-fields-cloumn {
   float: left;
-  min-width: 50%;
+  min-width: 35%;
   padding-left: 20px;
 }
 /* line 1404, ../sass/core.scss */
