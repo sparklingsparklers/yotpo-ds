@@ -1373,12 +1373,12 @@
 
     .yotpo-bottomline {
 
-      &.yotpo-botomline-1-boxes{
+      &.yotpo-bottomline-1-boxes{
         .yotpo-bottomline-box-1{
           width: 100%;
         }
       }
-      &.yotpo-botomline-2-boxes{
+      &.yotpo-bottomline-2-boxes{
         .yotpo-bottomline-box-1{
           max-width: 33%;
           min-width: 220px;
@@ -1570,7 +1570,7 @@
           }
         }
       }
-      &.yotpo-botomline-3-boxes{
+      &.yotpo-bottomline-3-boxes{
         position: relative;
 
         .yotpo-bottomline-box-1{
@@ -1809,12 +1809,12 @@
     &.yotpo-medium{
       .yotpo-bottomline {
 
-        &.yotpo-botomline-1-boxes{
+        &.yotpo-bottomline-1-boxes{
           .yotpo-bottomline-box-1{
             width: 100%;
           }
         }
-        &.yotpo-botomline-2-boxes{
+        &.yotpo-bottomline-2-boxes{
           .yotpo-bottomline-box-1{
             position: relative;
             min-width: 45%;
@@ -1856,7 +1856,7 @@
             }
           }
         }
-        &.yotpo-botomline-3-boxes{
+        &.yotpo-bottomline-3-boxes{
           .yotpo-bottomline-box-1{
             width: 33%;
             margin-bottom: 10px;
@@ -1893,7 +1893,7 @@
     &.yotpo-small{
       .yotpo-bottomline {
 
-        &.yotpo-botomline-1-boxes{
+        &.yotpo-bottomline-1-boxes{
           .yotpo-bottomline-box-1{
             width: 100%;
             .write-question-button, .write-review-button{
@@ -1901,7 +1901,7 @@
             }
           }
         }
-        &.yotpo-botomline-2-boxes{
+        &.yotpo-bottomline-2-boxes{
           .yotpo-bottomline-box-1{
             max-width: none;
           }
@@ -1947,7 +1947,7 @@
           }
         }
 
-        &.yotpo-botomline-3-boxes{
+        &.yotpo-bottomline-3-boxes{
           .yotpo-bottomline-box-1{
             width: 33%;
             .write-question-button, .write-review-button{
