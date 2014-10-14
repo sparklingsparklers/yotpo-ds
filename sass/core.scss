@@ -1817,14 +1817,14 @@
         &.yotpo-botomline-2-boxes{
           .yotpo-bottomline-box-1{
             position: relative;
-            min-width: 41%;
+            min-width: 45%;
 
             .yotpo-default-button {
               display: block;
               float: none;
               position: absolute;
               right: auto;
-              top: 95px;
+              top: 75px;
               margin: 0;
               .yotpo-icon-button-text{
                   display: none;
@@ -1840,14 +1840,14 @@
           .yotpo-bottomline-box-2{
             float: none;
             .yotpo-product-related-fields{
-
+              margin-left: 0;
               .yotpo-product-related-fields-cloumn{
                 float: $right;
                 min-width: 50%;
                 
                 .yotpo-product-related-field{
                   display: block;
-
+                  padding-left: 0;
                   .yotpo-product-related-field-name{
                     
                   }

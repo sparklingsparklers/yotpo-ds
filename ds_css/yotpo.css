@@ -1946,7 +1946,7 @@ They are here to complement for missing ones.
 /* line 1818, ../sass/core.scss */
 .yotpo.yotpo-main-widget.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-1, .yotpo .yotpo-modal-dialog.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-1 {
   position: relative;
-  min-width: 41%;
+  min-width: 45%;
 }
 /* line 1822, ../sass/core.scss */
 .yotpo.yotpo-main-widget.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-1 .yotpo-default-button, .yotpo .yotpo-modal-dialog.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-1 .yotpo-default-button {
@@ -1954,7 +1954,7 @@ They are here to complement for missing ones.
   float: none;
   position: absolute;
   right: auto;
-  top: 95px;
+  top: 75px;
   margin: 0;
 }
 /* line 1829, ../sass/core.scss */
@@ -1973,6 +1973,10 @@ They are here to complement for missing ones.
 .yotpo.yotpo-main-widget.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2, .yotpo .yotpo-modal-dialog.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 {
   float: none;
 }
+/* line 1842, ../sass/core.scss */
+.yotpo.yotpo-main-widget.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .yotpo-product-related-fields, .yotpo .yotpo-modal-dialog.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .yotpo-product-related-fields {
+  margin-left: 0;
+}
 /* line 1844, ../sass/core.scss */
 .yotpo.yotpo-main-widget.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .yotpo-product-related-fields .yotpo-product-related-fields-cloumn, .yotpo .yotpo-modal-dialog.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .yotpo-product-related-fields .yotpo-product-related-fields-cloumn {
   float: right;
@@ -1981,6 +1985,7 @@ They are here to complement for missing ones.
 /* line 1848, ../sass/core.scss */
 .yotpo.yotpo-main-widget.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .yotpo-product-related-fields .yotpo-product-related-fields-cloumn .yotpo-product-related-field, .yotpo .yotpo-modal-dialog.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .yotpo-product-related-fields .yotpo-product-related-fields-cloumn .yotpo-product-related-field {
   display: block;
+  padding-left: 0;
 }
 /* line 1870, ../sass/core.scss */
 .yotpo.yotpo-main-widget.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .write-question-button, .yotpo.yotpo-main-widget.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .write-review-button, .yotpo .yotpo-modal-dialog.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .write-question-button, .yotpo .yotpo-modal-dialog.yotpo-medium .yotpo-bottomline.yotpo-botomline-2-boxes .yotpo-bottomline-box-2 .write-review-button {
