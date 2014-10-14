@@ -639,7 +639,7 @@
   box-sizing: border-box;
 }
 /* line 560, ../sass/core.scss */
-.yotpo .text-box {
+.yotpo .yotpo-text-box {
   font-family: Verdana;
   font-size: 13px;
   height: 68px;
@@ -2479,7 +2479,7 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   }
 
   /* line 2365, ../sass/core.scss */
-  .text-box {
+  .yotpo-text-box {
     -webkit-appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;

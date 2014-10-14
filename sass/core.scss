@@ -130,16 +130,6 @@
     margin: 0 10px;
   }
 
-  input{
-    -webkit-appearance: none;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    -webkit-border-radius:0;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-    border-radius:0;
-  }
   a, a:hover {
     background: inherit!important;
   }
@@ -526,25 +516,34 @@
     float: none;
   }
 
-  .y-input {
+  input, .y-input {
     font-family: $font-type;
     height: 32px;
     min-width: 148px;
-    width: 100%;
+    max-width: 100%;
     font-size: 13px;
     color: $gray-dark;
-    padding: 0px 10px;
+    padding: 12px 9px;
+    margin: 15px 10px 20px 0;
     border: solid 1px $gray-light;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
   }
 
-  .text-box{
+  .yotpo-text-box{
     font-family: $font-type;
-    font-size: 13px;
     height: 68px;
     min-width: 148px;
+    color: $gray-dark;
+    padding: 12px 9px;
+    margin: 15px 0 20px;
+    border: solid 1px $gray-light;
     word-wrap: break-word;
     resize: vertical;
     -webkit-appearance: none;
@@ -557,10 +556,11 @@
     width: 100%;
 
     .form-element{
+      text-align: left;
       .y-label{
-        float: $left;
         display: block;
         white-space: nowrap;
+        padding: 0;
       }
 
       span{
@@ -2989,7 +2989,7 @@ div.yotpo-preloader-wrapper{
     }
 }
 
-  .text-box{
+  .yotpo-text-box{
     -webkit-appearance: none;
     -moz-appearance:none;
     -webkit-appearance:none;
