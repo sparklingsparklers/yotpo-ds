@@ -1844,25 +1844,9 @@
               .yotpo-product-related-fields-cloumn{
                 float: $right;
                 min-width: 50%;
-                
+                padding-left: 0;
                 .yotpo-product-related-field{
                   display: block;
-                  padding-left: 0;
-                  .yotpo-product-related-field-name{
-                    
-                  }
-                  .yotpo-product-related-field-score{
-                    
-                    .yotpo-product-related-field-score-bar{
-
-                      &.yotpo-rating-bar-full{
-                        
-                      }
-                    }
-                    .yotpo-product-related-field-score-divider{
-                      
-                    }
-                  }
                 }
               }
             }
