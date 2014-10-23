@@ -1566,9 +1566,10 @@
   }
 
   .standalone-bottomline {
-    &.star-clickable {
+    &.star-clickable,.star-clickable {
       cursor: pointer;
     }
+
     .yotpo-bottomline {
       .questions {
         margin: 0;
