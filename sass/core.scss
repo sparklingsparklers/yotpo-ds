@@ -955,13 +955,6 @@
 
   }
 
-  .write-only {
-    .write-review-wrapper,
-    .write-question-wrapper {
-      display: block;
-    }
-  }
-
   .yotpo-review, .yotpo-comment, .yotpo-question{
     .yotpo-header{
       position: relative;
@@ -1797,6 +1790,22 @@
     }
   }
   /* End Testimonials Button */
+
+  /* Write Only Widget */
+  .write-only {
+    .write-review-wrapper,
+    .write-question-wrapper {
+      display: block;
+    }
+
+    .yotpo-thank-you[data-type=share] {
+      .yotpo-thankyou-content,
+      .yotpo-thankyou-footer {
+        display: none;
+      }
+    }
+  }
+  /* End Write Only Widget */
 }
 
 #yotpo-testimonials-custom-tab {
