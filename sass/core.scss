@@ -536,6 +536,34 @@
     -webkit-appearance:none;
   }
 
+  .yotpo-multi-options{
+    text-align: #{$left};
+    display: inline-block;
+    float: #{$left};
+
+    .yotpo-option{
+      margin-top: 15px;
+      input[type="checkbox"]{
+        margin: initial;
+        min-width: initial;
+        min-height: initial;
+        padding: initial;
+        display:inline-block;
+        color: $gray;
+        width: 15px;
+        height: 15px;
+        margin-#{$left}: 20px;
+        margin-#{$right}: 12px;
+        vertical-align: middle;
+      }
+      label{
+        vertical-align: middle;
+        text-transform: capitalize;
+        color: $gray-darker;
+      }
+    }
+  }
+
   .yotpo-text-box{
     font-family: $font-type;
     height: 68px;
