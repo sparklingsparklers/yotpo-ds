@@ -521,6 +521,7 @@
     height: 32px;
     min-width: 148px;
     max-width: 100%;
+    width: 100%;
     font-size: 13px;
     color: $gray-dark;
     padding: 12px 9px;
@@ -850,6 +851,14 @@
     width:100%;
     display: none;
     overflow: hidden;
+
+    .write-question-content{
+      .form-group{
+        .yotpo-text-box{
+          width: 100%;
+        }
+      }
+    }
   }
   .write-question-button {
     margin-left: 15px;
@@ -2068,6 +2077,12 @@
               }
             }
           }
+        }
+      }
+
+      .yotpo-label{
+        .yotpo-default-button{
+          display: none;
         }
       }
     }
