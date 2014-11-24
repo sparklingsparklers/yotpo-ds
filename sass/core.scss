@@ -521,7 +521,6 @@
     height: 32px;
     min-width: 148px;
     max-width: 100%;
-    width: 100%;
     font-size: 13px;
     color: $gray-dark;
     padding: 12px 9px;
@@ -590,6 +589,9 @@
         display: block;
         white-space: nowrap;
         padding: 0;
+      }
+      .y-input{
+        width: 100%;
       }
 
       span{
@@ -872,11 +874,9 @@
     overflow: hidden;
   }
   .write-review{
-    .write-review-content{
-
-    }
 
     .yotpo-header{
+      margin-bottom: 20px;
       .y-label {
         padding-top: 0;
       }
@@ -2083,6 +2083,13 @@
       .yotpo-label{
         .yotpo-default-button{
           display: none;
+        }
+      }
+
+      .connect-wrapper{
+        .form-element{
+          float: none;
+          width: 100%;
         }
       }
     }
