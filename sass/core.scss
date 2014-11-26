@@ -1652,19 +1652,19 @@
     }
   }
 
+  .yotpo-icon-cross {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 19px;
+  }
+
   .yotpo-thank-you{
     border: solid 1px $gray-light;
     padding: 40px;
     text-align: center;
     position: relative;
     background: $white;
-
-    .yotpo-icon-cross{
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      font-size: 19px;
-    }
 
     .yotpo-thankyou-header{
 
