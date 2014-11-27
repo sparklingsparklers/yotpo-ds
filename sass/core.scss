@@ -428,7 +428,7 @@
     }
 
   }
-   .yotpo-icon-btn-xs {
+  .yotpo-icon-btn-xs {
     display: inline-block;
     padding: 5px;
     &.yotpo-icon {
@@ -437,7 +437,6 @@
     &:hover{
       cursor: pointer;
     }
-
   }
 
   .xl-btn , input[type="button"].xl-btn{
@@ -589,6 +588,11 @@
         display: block;
         white-space: nowrap;
         padding: 0;
+
+        &.yotpo-field-title{
+          margin-top: 10px;
+          margin-bottom: 25px;
+        }
       }
       .y-input{
         width: 100%;
@@ -597,6 +601,81 @@
       span{
         display: block;
       }
+
+      .yotpo-rating-field{
+
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        margin-bottom: 25px;
+
+        .yotpo-rating-field-content{
+          text-align: left;
+
+
+          .yotpo-rating-field-buttons{
+            float: left;
+            display: block;
+            .yotpo-radio-wrapper{
+              margin: 0;
+              height: 17px;
+              margin-bottom: 15px;
+              input[type="radio"]{
+                vertical-align: super;
+                margin: 0px 15px 0px 20px;
+                height: initial;
+                -webkit-appearance: radio;
+                -moz-appearance:radio;
+                -webkit-appearance:radio;
+              }
+            }
+          }
+
+          .yotpo-rating-field-titles{
+            float: left;
+            display: block;
+            .y-label{
+              min-width: 0;
+              margin-bottom: 15px;
+            }
+          }
+
+          .yotpo-rating-field-bars{
+            display: block;
+            overflow: hidden;
+            width: auto;
+            .yotpo-rating-bars{
+              display: block;
+              float: none;
+              height: 17px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .yotpo-rating-bars{
+    float: $left;
+    vertical-align: middle;
+    padding-left: 20px;
+    .yotpo-product-related-field-score-bar{
+      width: 18px;
+      height: 6px;
+      float: $left;
+      margin-top: 6px;
+      background-color: $gray-light;
+
+      &.yotpo-rating-bar-full{
+        background-color: $primary;
+      }
+    }
+    .yotpo-product-related-field-score-divider{
+      width: 1px;
+      height: 6px;
+      background-color: $white;
+      float: $left;
     }
   }
 
@@ -955,6 +1034,11 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+
+        .y-input{
+          margin: 0;
+          width: 100%;
+        }
         &:first-child {
           padding-#{$right}: 15px;
         }
@@ -1178,28 +1262,6 @@
                 float: $left;
                 min-width: 150px;
                 color: $gray-darker;
-              }
-              .yotpo-product-related-field-score{
-                float: $left;
-                vertical-align: middle;
-                padding-left: 20px;
-                .yotpo-product-related-field-score-bar{
-                  width: 18px;
-                  height: 6px;
-                  float: $left;
-                  margin-top: 6px;
-                  background-color: $gray-light;
-
-                  &.yotpo-rating-bar-full{
-                    background-color: $primary;
-                  }
-                }
-                .yotpo-product-related-field-score-divider{
-                  width: 1px;
-                  height: 6px;
-                  background-color: $white;
-                  float: $left;
-                }
               }
             }
           }
@@ -1438,6 +1500,7 @@
           padding-top: 5px;
           position: relative;
 
+
           /* Product Rating Fields */
           .yotpo-product-related-fields{
             border-left: solid 1px $gray-light;
@@ -1454,28 +1517,6 @@
                 .yotpo-product-related-field-name{
                   float: $left;
                   min-width: 150px;
-                }
-                .yotpo-product-related-field-score{
-                  float: $left;
-                  vertical-align: middle;
-                  padding-left: 20px;
-                  .yotpo-product-related-field-score-bar{
-                    width: 18px;
-                    height: 6px;
-                    float: $left;
-                    margin-top: 6px;
-                    background-color: $gray-light;
-
-                    &.yotpo-rating-bar-full{
-                      background-color: $primary;
-                    }
-                  }
-                  .yotpo-product-related-field-score-divider{
-                    width: 1px;
-                    height: 6px;
-                    background-color: $white;
-                    float: $left;
-                  }
                 }
               }
             }
@@ -1788,28 +1829,6 @@
                 .yotpo-product-related-field-name{
                   float: $left;
                   min-width: 150px;
-                }
-                .yotpo-product-related-field-score{
-                  float: $left;
-                  vertical-align: middle;
-                  padding-left: 20px;
-                  .yotpo-product-related-field-score-bar{
-                    width: 18px;
-                    height: 6px;
-                    float: $left;
-                    margin-top: 6px;
-                    background-color: $gray-light;
-
-                    &.yotpo-rating-bar-full{
-                      background-color: $primary;
-                    }
-                  }
-                  .yotpo-product-related-field-score-divider{
-                    width: 1px;
-                    height: 6px;
-                    background-color: $white;
-                    float: $left;
-                  }
                 }
               }
             }
