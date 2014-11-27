@@ -721,6 +721,10 @@
         max-width: 250px;
       }
     }
+
+    &.questions .sorting{
+      display: none;
+    }
   }
 
   .yotpo-nav-content {
@@ -2360,6 +2364,7 @@
       }
     }
   }
+
   .yotpo-comments-box {
     margin-left: 10px;
     .yotpo-comment-box {
