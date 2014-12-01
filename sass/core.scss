@@ -603,7 +603,7 @@
       }
 
       .yotpo-single-choice-field{
-        margin-bottom: 25px;
+        padding-bottom: 25px;
         .yotpo-single-choice-option{
           display: block;
           .yotpo-radio-wrapper{
@@ -618,6 +618,34 @@
               -webkit-appearance: radio;
               -moz-appearance:radio;
               -webkit-appearance:radio;
+            }
+          }
+          .y-label{
+            display: inline-block;
+            vertical-align: super;
+            &:first-letter{
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+
+      .yotpo-multiple-choice-field{
+        padding-bottom: 25px;
+        .yotpo-multiple-choice-option{
+          display: block;
+          .yotpo-checkbox-wrapper{
+            margin: 0;
+            height: 17px;
+            margin-bottom: 15px;
+            display: inline-block;
+            input[type="checkbox"]{
+              vertical-align: super;
+              margin: 0px 15px 0px 20px;
+              height: initial;
+              -webkit-appearance: checkbox;
+              -moz-appearance:checkbox;
+              -webkit-appearance:checkbox;
             }
           }
           .y-label{
