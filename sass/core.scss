@@ -592,6 +592,7 @@
         &.yotpo-field-title{
           margin-top: 10px;
           margin-bottom: 25px;
+          color: $gray-darker;
         }
       }
       .y-input{
@@ -623,6 +624,7 @@
           .y-label{
             display: inline-block;
             vertical-align: super;
+            color: $gray;
             &:first-letter{
               text-transform: capitalize;
             }
@@ -651,6 +653,7 @@
           .y-label{
             display: inline-block;
             vertical-align: super;
+            color: $gray;
             &:first-letter{
               text-transform: capitalize;
             }
@@ -693,6 +696,7 @@
             .y-label{
               min-width: 0;
               margin-bottom: 15px;
+              color: $gray;
               &:first-letter{
                 text-transform: capitalize;
               }
