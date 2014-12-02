@@ -2653,6 +2653,9 @@
           margin: 0;
           .y-label {
             padding: 10px 7px 8px 0px!important;
+            &.yotpo-field-option-label{
+              padding: 0!important;
+            }
           }
           .connect-wrapper{
             .form-element {
