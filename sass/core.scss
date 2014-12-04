@@ -1200,6 +1200,13 @@
       .footer-additional-actions{
         display: none;
       }
+
+      &.yotpo-show-more {
+        padding-top: 25px;
+        label {
+          text-transform: none;
+        }
+      }
     }
     .yotpo-read-more {
       white-space: nowrap;
@@ -1211,7 +1218,8 @@
       color: inherit;
     }
 
-    .yotpo-comments-box {
+    .yotpo-comments-box,
+    .yotpo-show-more {
       display: none;
       &.visible {
         display: inherit;
