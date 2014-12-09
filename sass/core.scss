@@ -1667,8 +1667,11 @@
   .yotpo-icon-cross {
     position: absolute;
     top: 15px;
-    right: 15px;
+    #{$right}: 15px;
     font-size: 19px;
+  }
+  .error-box .yotpo-icon-cross {
+    position: static;
   }
 
   .yotpo-thank-you{
