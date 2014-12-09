@@ -1670,6 +1670,10 @@
     #{$right}: 15px;
     font-size: 19px;
   }
+  .write-review > .yotpo-icon-btn > .yotpo-icon-cross,
+  .write-question > .yotpo-icon-btn > .yotpo-icon-cross {
+    display: none;
+  }
   .error-box .yotpo-icon-cross {
     position: static;
   }
