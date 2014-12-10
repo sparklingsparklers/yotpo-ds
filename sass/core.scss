@@ -1234,6 +1234,7 @@
     height: auto;
     background: $red;
     text-align: #{$left};
+    margin-top: 1px;
 
     .text-wrapper{
       padding-#{$left}: 5px;
