@@ -1272,6 +1272,22 @@
           float: $left;
           color: $yellow;
         }
+
+        /* User Related Fields */
+        .yotpo-user-related-fields{
+          margin-bottom: 15px;
+          .yotpo-user-field{
+            .yotpo-user-field-description{
+              font-style: italic !important;
+              font-weight: bold;
+              margin-right: 7px;
+              color: $gray-darker;
+            }
+            .yotpo-user-field-answer{
+              color: $gray-darker;
+            }
+          }
+        }
       }
     }
 
@@ -1301,21 +1317,6 @@
       .yotpo-multiple-rating-fields{
         margin-top: 15px;
 
-        /* User Related Fields */
-        .yotpo-user-related-fields{
-          margin-bottom: 30px;
-          .yotpo-user-field{
-            .yotpo-user-field-description{
-              font-style: italic;
-              font-weight: bold;
-              margin-right: 7px;
-              color: $gray-darker;
-            }
-            .yotpo-user-field-answer{
-              color: $gray-darker;
-            }
-          }
-        }
         /* Product Rating Fields */
         .yotpo-product-related-fields{
           margin-bottom: 30px;
