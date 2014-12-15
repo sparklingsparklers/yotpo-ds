@@ -1337,6 +1337,10 @@
             }
           }
         }
+
+        .yotpo-user-related-fields{
+          display: none;
+        }
       }
     }
 
@@ -2829,6 +2833,10 @@
         margin-bottom: 15px;
       }
     }
+
+    .yotpo-user-related-fields{
+      display: block;
+    }
   }
   .yotpo-footer , .yotpo-main {
     margin-left: 0;
@@ -2896,16 +2904,21 @@
         display: block;
         float: none;
         margin-bottom: 15px;
-        }
-      }
-      .yotpo-helpful{
-        float: $right;
-      }
-      .footer-additional-actions{
-        display: inline-block;
-        float: $left;
       }
     }
+    .yotpo-helpful{
+      float: $right;
+    }
+    .footer-additional-actions{
+      display: inline-block;
+      float: $left;
+    }
+  }
+
+  .yotpo-footer , .yotpo-main {
+    margin-left: 0;
+  }
+
   .yotpo-nav {
     .transparent-color-btn {
       text-align: $right;
@@ -2985,6 +2998,7 @@
       }
     }
   }
+
   .yotpo-comments-box {
     margin-left: 10px;
     .yotpo-comment-box {
