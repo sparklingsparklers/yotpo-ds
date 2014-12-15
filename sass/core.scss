@@ -1340,6 +1340,7 @@
 
         /* User Related Fields */
         .yotpo-user-related-fields{
+          display: none;
           margin: 15px 0;
           .yotpo-user-field{
             .yotpo-user-field-description{
@@ -1353,9 +1354,6 @@
             }
           }
         }
-      }
-      .yotpo-user-related-fields{
-        display: none;
       }
     }
 
@@ -2864,8 +2862,10 @@
     }
 
     .yotpo-main{
-      .yotpo-user-related-fields{
-        display: block;
+      .yotpo-multiple-rating-fields{
+        .yotpo-user-related-fields{
+          display: block;
+        }
       }
     }
   }
