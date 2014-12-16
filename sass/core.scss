@@ -2240,6 +2240,7 @@
           width: 100%;
         }
       }
+
       .yotpo-review, .yotpo-comment, .yotpo-question {
 
         .yotpo-header-element{
@@ -2258,8 +2259,13 @@
           }
         }
       }
+
       .yotpo-footer , .yotpo-main {
         margin-left: 0;
+      }
+
+      .yotpo-visible-mobile {
+        display: block !important;
       }
     }
   }
