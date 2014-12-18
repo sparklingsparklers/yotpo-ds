@@ -1327,9 +1327,12 @@
           }
         }
       }
-
       .text-m {
         white-space: nowrap;
+      }
+      .yotpo-stars-and-sum-reviews{
+        float:left;
+        text-align: left;
       }
       .yotpo-stars {
         padding-#{$right}: 10px;
