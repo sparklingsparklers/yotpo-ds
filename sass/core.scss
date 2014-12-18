@@ -1368,6 +1368,7 @@
         border-left: solid 1px $gray-light;
         vertical-align: middle;
         text-align: left;
+        float:left;
 
         .yotpo-star-distribution-content{
           margin-bottom: 10px;
@@ -1529,7 +1530,6 @@
           margin-top: 15px;
           padding-top: 10px;
           border-top: solid 1px $gray-light;
-          float:left;
 
           .yotpo-star-distribution-content{
             .review-stars{
