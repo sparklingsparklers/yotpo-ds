@@ -1327,9 +1327,12 @@
           }
         }
       }
-
       .text-m {
         white-space: nowrap;
+      }
+      .yotpo-stars-and-sum-reviews{
+        float:left;
+        text-align: left;
       }
       .yotpo-stars {
         padding-#{$right}: 10px;
@@ -1368,6 +1371,7 @@
         border-left: solid 1px $gray-light;
         vertical-align: middle;
         text-align: left;
+        float:left;
 
         .yotpo-star-distribution-content{
           margin-bottom: 10px;
@@ -1529,7 +1533,7 @@
           margin-top: 15px;
           padding-top: 10px;
           border-top: solid 1px $gray-light;
-          
+
           .yotpo-star-distribution-content{
             .review-stars{
               margin-right: 6px;
