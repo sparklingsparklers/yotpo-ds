@@ -226,7 +226,7 @@
 @font-face {
   font-family: 'yotpo-widget-font';
   src:  url($font-url-eot);
-  src:  url($font-url-eot) format('embedded-opentype'),
+  src:  url($font-url-eot-iefix) format('embedded-opentype'),
         url($font-url-woff) format('woff'),
         url($font-url-ttf) format('truetype'),
         url($font-url-svg) format('svg');
