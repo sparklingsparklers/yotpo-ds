@@ -519,7 +519,7 @@
       color: $gray-light;
 
       span, i {
-        color: $gray-dark;
+        color: $gray-light;
       }
 
       &:hover {
@@ -527,7 +527,7 @@
         cursor: default;
 
         span, i {
-          color: $gray-dark;
+          color: $gray-light;
           cursor: default;
         }
       }
