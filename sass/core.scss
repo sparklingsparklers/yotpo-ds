@@ -520,6 +520,10 @@
 
       &:hover {
         color: $gray-light;
+        
+        span, i {
+          color: $gray-dark;
+        }
       }
     }
   }
