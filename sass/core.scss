@@ -557,7 +557,8 @@
     box-sizing: border-box;
   }
 
-  .text-box{
+  .text-box {
+    display: initial;
     font-family: $font-type;
     font-size: 13px;
     height: 68px;
@@ -759,7 +760,8 @@
     float: right;
     position: relative;
 
-    label{
+    label {
+      display: inline;
       color: $gray;
       padding-left: 9px;
       padding-bottom: 16px;
