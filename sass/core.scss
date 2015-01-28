@@ -518,8 +518,18 @@
     &.yotpo-disabled {
       color: $gray-light;
 
+      span, i {
+        color: $gray-light;
+      }
+
       &:hover {
         color: $gray-light;
+        cursor: default;
+
+        span, i {
+          color: $gray-light;
+          cursor: default;
+        }
       }
     }
   }
