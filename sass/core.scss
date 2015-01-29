@@ -1352,12 +1352,23 @@
         vertical-align: bottom;
         padding-bottom: 2px;
       }
+      .yotpo-star-digits {
+        font-size: 24px;
+        font-weight: bolder;
+        position: relative;
+        bottom: 2px;
+
+      }
       .yotpo-icon-star, .yotpo-icon-half-star, .yotpo-icon-empty-star {
         font-size: 26px;
       }
       .yotpo-sum-reviews {
         padding: 5px 0px;
         display: inline-block;
+      }
+      .yotpo-sum-reviews-average-score {
+        position: absolute;
+        left: 5px;
       }
       .based-on {
         vertical-align: top;
