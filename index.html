@@ -7,6 +7,7 @@
         <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="ds_css/stylesheet.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="ds_css/yotpo.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="ds_css/custom_fields.css" media="screen" />
 
 
         <script src="javascripts/jquery-1.11.0.js"></script>
@@ -14,7 +15,7 @@
         <script src="javascripts/yotpo.js"></script>
         <script src="javascripts/classList.js"></script>
         <script type="text/javascript">
-          
+
         </script>
 
         <title>Yotpo-ds by vladshub</title>
@@ -228,7 +229,7 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <h3>Sorting</h3>
                 <section>
 
@@ -298,6 +299,483 @@
                     <div class="clr"></div>
                 </section>
             </div>
+
+            <h3>Custom Fields</h3>
+            <section>
+                <div class='content'>
+                    <div class="small-title">Example:</div>
+                    <div class="exmple-box custom-field-wrapper">
+                        <table cellspacing="0" cellpadding="0" border="0" class="custom-field">
+                            <tbody>
+                            <tr height="5px"></tr>
+                            <tr><td width="100%" height="23px" class="field-text-left">
+                                <span  class="red-text">* </span>Single Choice:</td></tr>
+                            <tr><td width="100%" height="23px" class="field-grey-text">What is the time</td></tr>
+                            <tr height="13px"></tr>
+                            <tr><td class="field-text-left">
+                                <table width="100%">
+                                    <tbody><tr>
+                                        <td width="13px"></td>
+                                        <td width="20px"><input type="radio" name="fields[single-choice]" value="5:00"></td>
+                                        <td class="field-grey-text">5:00</td>
+                                    </tr>
+                                    <tr height="5px"></tr>
+                                    <tr>
+                                        <td width="13px"></td>
+                                        <td width="20px"><input type="radio" name="fields[single-choice]" value="6:00"></td>
+                                        <td class="field-grey-text">6:00</td>
+                                    </tr>
+                                    <tr height="5px"></tr>
+                                    <tr>
+                                        <td width="13px"></td>
+                                        <td width="20px"><input type="radio" name="fields[single-choice]" value="7:00"></td>
+                                        <td class="field-grey-text">7:00</td>
+                                    </tr>
+                                    <tr height="5px"></tr>
+                                    </tbody></table>
+                            </td></tr>
+                            <tr height="25px"></tr>
+                            <tr height="5px"></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="small-title">Code:</div>
+                    <div class="exmple-box yotpo">
+                    <textarea class="large-code-example" rows="37">
+&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;0&quot; class=&quot;custom-field&quot;&gt;
+    &lt;tbody&gt;
+    &lt;tr height=&quot;5px&quot;&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td width=&quot;100%&quot; height=&quot;23px&quot; class=&quot;field-text-left&quot;&gt;
+        &lt;span  class=&quot;red-text&quot;&gt;* &lt;/span&gt;Single Choice:&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td width=&quot;100%&quot; height=&quot;23px&quot; class=&quot;field-grey-text&quot;&gt;What is the time&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr height=&quot;13px&quot;&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&quot;field-text-left&quot;&gt;
+        &lt;table width=&quot;100%&quot;&gt;
+            &lt;tbody&gt;&lt;tr&gt;
+                &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+                &lt;td width=&quot;20px&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;fields[single-choice]&quot; value=&quot;5:00&quot;&gt;&lt;/td&gt;
+                &lt;td class=&quot;field-grey-text&quot;&gt;5:00&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr height=&quot;5px&quot;&gt;&lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+                &lt;td width=&quot;20px&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;fields[single-choice]&quot; value=&quot;6:00&quot;&gt;&lt;/td&gt;
+                &lt;td class=&quot;field-grey-text&quot;&gt;6:00&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr height=&quot;5px&quot;&gt;&lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+                &lt;td width=&quot;20px&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;fields[single-choice]&quot; value=&quot;7:00&quot;&gt;&lt;/td&gt;
+                &lt;td class=&quot;field-grey-text&quot;&gt;7:00&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr height=&quot;5px&quot;&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;&lt;/table&gt;
+    &lt;/td&gt;&lt;/tr&gt;
+    &lt;tr height=&quot;25px&quot;&gt;&lt;/tr&gt;
+    &lt;tr height=&quot;5px&quot;&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                    </textarea>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </section>
+
+            <section>
+                <div class='content'>
+                    <div class="small-title">Example:</div>
+                    <div class="exmple-box custom-field-wrapper">
+                        <table cellspacing="0" cellpadding="0" border="0" class="custom-field">
+                            <tbody>
+                            <tr><td width="100%" height="23px" class="field-text-left">
+                                <span  class="red-text">* </span>Multiple choice:</td></tr>
+                            <tr><td width="100%" height="23px" class="field-grey-text">What do you choose?</td></tr>
+                            <tr height="13px"></tr>
+                            <tr><td class="field-text-left">
+                                <table width="100%">
+                                    <tbody><tr>
+                                        <td width="13px"></td>
+                                        <td width="20px"><input type="checkbox" name="fields[multiple-choice]" value="a"></td>
+                                        <td class="field-grey-text">a</td>
+                                    </tr>
+                                    <tr height="5px"></tr>
+                                    <tr>
+                                        <td width="13px"></td>
+                                        <td width="20px"><input type="checkbox" name="fields[multiple-choice]" value="b"></td>
+                                        <td class="field-grey-text">b</td>
+                                    </tr>
+                                    <tr height="5px"></tr>
+                                    <tr>
+                                        <td width="13px"></td>
+                                        <td width="20px"><input type="checkbox" name="fields[multiple-choice]" value="c"></td>
+                                        <td class="field-grey-text">c</td>
+                                    </tr>
+                                    <tr height="5px"></tr>
+                                    <tr>
+                                        <td width="13px"></td>
+                                        <td width="20px"><input type="checkbox" name="fields[multiple-choice]" value="d"></td>
+                                        <td class="field-grey-text">d</td>
+                                    </tr>
+                                    <tr height="5px"></tr>
+                                    </tbody>
+                                </table>
+                            </td></tr>
+                            <tr height="25px"></tr>
+                            <tr height="5px"></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="small-title">Code:</div>
+                    <div class="exmple-box yotpo">
+                    <textarea class="large-code-example" rows="44">
+&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;0&quot; class=&quot;custom-field&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td width=&quot;100%&quot; height=&quot;23px&quot; class=&quot;field-text-left&quot;&gt;
+    &lt;span  class=&quot;red-text&quot;&gt;* &lt;/span&gt;Multiple choice:&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td width=&quot;100%&quot; height=&quot;23px&quot; class=&quot;field-grey-text&quot;&gt;What do you choose?&lt;/td&gt;&lt;/tr&gt;
+&lt;tr height=&quot;13px&quot;&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;field-text-left&quot;&gt;
+    &lt;table width=&quot;100%&quot;&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+            &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+            &lt;td width=&quot;20px&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;fields[multiple-choice]&quot; value=&quot;a&quot;&gt;&lt;/td&gt;
+            &lt;td class=&quot;field-grey-text&quot;&gt;a&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr height=&quot;5px&quot;&gt;&lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+            &lt;td width=&quot;20px&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;fields[multiple-choice]&quot; value=&quot;b&quot;&gt;&lt;/td&gt;
+            &lt;td class=&quot;field-grey-text&quot;&gt;b&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr height=&quot;5px&quot;&gt;&lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+            &lt;td width=&quot;20px&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;fields[multiple-choice]&quot; value=&quot;c&quot;&gt;&lt;/td&gt;
+            &lt;td class=&quot;field-grey-text&quot;&gt;c&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr height=&quot;5px&quot;&gt;&lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+            &lt;td width=&quot;20px&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;fields[multiple-choice]&quot; value=&quot;d&quot;&gt;&lt;/td&gt;
+            &lt;td class=&quot;field-grey-text&quot;&gt;d&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr height=&quot;5px&quot;&gt;&lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;/table&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr height=&quot;25px&quot;&gt;&lt;/tr&gt;
+&lt;tr height=&quot;5px&quot;&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+                    </textarea>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </section>
+
+            <section>
+                <div class='content'>
+                    <div class="small-title">Example:</div>
+                    <div class="exmple-box custom-field-wrapper">
+                        <table cellspacing="0" cellpadding="0" border="0" class="custom-field">
+                            <tbody>
+                            <tr><td width="100%" height="23px" class="field-text-left">
+                                <span class="field-grey-text"></span>Rating:</td></tr>
+                            <tr><td width="100%" height="23px" class="field-grey-text">How's the product?</td></tr>
+                            <tr height="13px"></tr>
+                            <tr><td class="field-text-left">
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td width="13px"></td>
+                                        <td width="20px">
+                                            <input type="radio" name="fields[rating]" value="1">
+                                        </td>
+                                        <td height="23px" class="field-grey-text">Weak</td>
+                                        <td width="5px"></td>
+                                        <td>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-empty"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-empty"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-empty"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-empty"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="13px"></td>
+                                        <td width="20px">
+                                            <input type="radio" name="fields[rating]" value="2">
+                                        </td>
+                                        <td height="23px" class="field-grey-text">OK</td>
+                                        <td width="5px"></td>
+                                        <td>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-empty"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-empty"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-empty"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="13px"></td>
+                                        <td width="20px">
+                                            <input type="radio" name="fields[rating]" value="3">
+                                        </td>
+                                        <td height="23px" class="field-grey-text">Good</td>
+                                        <td width="5px"></td>
+                                        <td>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-empty"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-empty"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="13px"></td>
+                                        <td width="20px">
+                                            <input type="radio" name="fields[rating]" value="4">
+                                        </td>
+                                        <td height="23px" class="field-grey-text">Very good</td>
+                                        <td width="5px"></td>
+                                        <td>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-empty"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="13px"></td>
+                                        <td width="20px">
+                                            <input type="radio" name="fields[rating]" value="5">
+                                        </td>
+                                        <td height="23px" class="field-grey-text">Best</td>
+                                        <td width="5px"></td>
+                                        <td>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                        <td class="yotpo-rating-bar yotpo-rating-bar-full"></td>
+                                                        <td class="yotpo-rating-bar-divider"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td></tr>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="small-title">Code:</div>
+                    <div class="exmple-box yotpo">
+                    <textarea class="large-code-example" rows="146">
+&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=&quot;0&quot; class=&quot;custom-field&quot;&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;&lt;td width=&quot;100%&quot; height=&quot;23px&quot; class=&quot;field-text-left&quot;&gt;
+        &lt;span class=&quot;field-grey-text&quot;&gt;&lt;/span&gt;Rating:&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td width=&quot;100%&quot; height=&quot;23px&quot; class=&quot;field-grey-text&quot;&gt;How's the product?&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr height=&quot;13px&quot;&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td class=&quot;field-text-left&quot;&gt;
+        &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+                &lt;td width=&quot;20px&quot;&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;fields[rating]&quot; value=&quot;1&quot;&gt;
+                &lt;/td&gt;
+                &lt;td height=&quot;23px&quot; class=&quot;field-grey-text&quot;&gt;Weak&lt;/td&gt;
+                &lt;td width=&quot;5px&quot;&gt;&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-empty&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-empty&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-empty&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-empty&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+                &lt;td width=&quot;20px&quot;&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;fields[rating]&quot; value=&quot;2&quot;&gt;
+                &lt;/td&gt;
+                &lt;td height=&quot;23px&quot; class=&quot;field-grey-text&quot;&gt;OK&lt;/td&gt;
+                &lt;td width=&quot;5px&quot;&gt;&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-empty&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-empty&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-empty&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+                &lt;td width=&quot;20px&quot;&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;fields[rating]&quot; value=&quot;3&quot;&gt;
+                &lt;/td&gt;
+                &lt;td height=&quot;23px&quot; class=&quot;field-grey-text&quot;&gt;Good&lt;/td&gt;
+                &lt;td width=&quot;5px&quot;&gt;&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-empty&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-empty&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+                &lt;td width=&quot;20px&quot;&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;fields[rating]&quot; value=&quot;4&quot;&gt;
+                &lt;/td&gt;
+                &lt;td height=&quot;23px&quot; class=&quot;field-grey-text&quot;&gt;Very good&lt;/td&gt;
+                &lt;td width=&quot;5px&quot;&gt;&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-empty&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td width=&quot;13px&quot;&gt;&lt;/td&gt;
+                &lt;td width=&quot;20px&quot;&gt;
+                    &lt;input type=&quot;radio&quot; name=&quot;fields[rating]&quot; value=&quot;5&quot;&gt;
+                &lt;/td&gt;
+                &lt;td height=&quot;23px&quot; class=&quot;field-grey-text&quot;&gt;Best&lt;/td&gt;
+                &lt;td width=&quot;5px&quot;&gt;&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;table&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar yotpo-rating-bar-full&quot;&gt;&lt;/td&gt;
+                                &lt;td class=&quot;yotpo-rating-bar-divider&quot;&gt;&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/td&gt;&lt;/tr&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                    </textarea>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+            </section>
 
         </div>
     </body>
