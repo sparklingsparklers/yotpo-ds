@@ -1345,6 +1345,7 @@
       .yotpo-stars-and-sum-reviews{
         float:left;
         text-align: left;
+        position: relative;
       }
       .yotpo-stars {
         padding-#{$right}: 10px;
@@ -1365,10 +1366,6 @@
       .yotpo-sum-reviews {
         padding: 5px 0px;
         display: inline-block;
-      }
-      .yotpo-sum-reviews-average-score {
-        position: absolute;
-        left: 5px;
       }
       .based-on {
         vertical-align: top;
