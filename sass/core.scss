@@ -1345,12 +1345,20 @@
       .yotpo-stars-and-sum-reviews{
         float:left;
         text-align: left;
+        position: relative;
       }
       .yotpo-stars {
         padding-#{$right}: 10px;
         display: inline-block;
         vertical-align: bottom;
         padding-bottom: 2px;
+      }
+      .yotpo-star-digits {
+        font-size: 24px;
+        font-weight: bolder;
+        position: relative;
+        bottom: 2px;
+
       }
       .yotpo-icon-star, .yotpo-icon-half-star, .yotpo-icon-empty-star {
         font-size: 26px;
