@@ -601,6 +601,10 @@
 
       span{
         display: block;
+        &.yotpo-mandatory-mark{
+          display: inline;
+          color: red;
+        }
       }
 
       .yotpo-single-choice-field{
@@ -2692,7 +2696,7 @@
       }
     }
     .yotpo-modal-logo{
-      span:NOT(.yotpo-icon-yotpo-logo){
+      span:not(.yotpo-icon-yotpo-logo){
         color: $white;
         position: relative;
         bottom: 3px;
