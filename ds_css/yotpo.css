@@ -1426,7 +1426,7 @@ They are here to complement for missing ones.
 }
 /* line 1281, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-header .yotpo-review-stars .yotpo-user-related-fields, .yotpo .yotpo-comment .yotpo-header .yotpo-review-stars .yotpo-user-related-fields, .yotpo .yotpo-question .yotpo-header .yotpo-review-stars .yotpo-user-related-fields {
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 /* line 1284, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-header .yotpo-review-stars .yotpo-user-related-fields .yotpo-user-field .yotpo-user-field-description, .yotpo .yotpo-comment .yotpo-header .yotpo-review-stars .yotpo-user-related-fields .yotpo-user-field .yotpo-user-field-description, .yotpo .yotpo-question .yotpo-header .yotpo-review-stars .yotpo-user-related-fields .yotpo-user-field .yotpo-user-field-description {
@@ -1474,7 +1474,7 @@ They are here to complement for missing ones.
 }
 /* line 1325, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-main .yotpo-multiple-rating-fields .yotpo-product-related-fields, .yotpo .yotpo-comment .yotpo-main .yotpo-multiple-rating-fields .yotpo-product-related-fields, .yotpo .yotpo-question .yotpo-main .yotpo-multiple-rating-fields .yotpo-product-related-fields {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 /* line 1328, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-main .yotpo-multiple-rating-fields .yotpo-product-related-fields .yotpo-product-related-fields-cloumn, .yotpo .yotpo-comment .yotpo-main .yotpo-multiple-rating-fields .yotpo-product-related-fields .yotpo-product-related-fields-cloumn, .yotpo .yotpo-question .yotpo-main .yotpo-multiple-rating-fields .yotpo-product-related-fields .yotpo-product-related-fields-cloumn {
