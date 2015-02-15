@@ -76,7 +76,7 @@ They are here to complement for missing ones.
 }
 /* line 20, ../sass/core.scss */
 .yotpo .color-white {
-  background: white;
+  background: #ffffff;
 }
 /* line 23, ../sass/core.scss */
 .yotpo .color-gray {
@@ -128,7 +128,7 @@ They are here to complement for missing ones.
 }
 /* line 59, ../sass/core.scss */
 .yotpo .font-color-black {
-  color: black;
+  color: #000000;
 }
 /* line 62, ../sass/core.scss */
 .yotpo .font-color-orange {
@@ -144,7 +144,7 @@ They are here to complement for missing ones.
 }
 /* line 71, ../sass/core.scss */
 .yotpo .font-color-white {
-  color: white;
+  color: #ffffff;
 }
 /* line 74, ../sass/core.scss */
 .yotpo .font-color-gray {
@@ -327,12 +327,11 @@ They are here to complement for missing ones.
   font-weight: normal;
   font-style: normal;
 }
-
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: 'yotpo-widget-font';
     src: url("../fonts/yotpo-widget-font.svg") format("svg");
-}
+  }
 }
 /* line 244, ../sass/core.scss */
 .yotpo {
@@ -527,7 +526,7 @@ They are here to complement for missing ones.
   font-size: 12px;
   padding: 10px 15px;
   background: #a2a2a2;
-  color: white;
+  color: #ffffff;
   height: auto;
   margin: 0 0 5px 0;
 }
@@ -560,11 +559,11 @@ They are here to complement for missing ones.
 /* line 424, ../sass/core.scss */
 .yotpo .yotpo-icon-btn .yotpo-icon {
   font-size: 19px;
-  color: white;
+  color: #ffffff;
 }
 /* line 428, ../sass/core.scss */
 .yotpo .yotpo-icon-btn .yotpo-icon-button-text {
-  color: white;
+  color: #ffffff;
 }
 /* line 432, ../sass/core.scss */
 .yotpo .yotpo-icon-btn:hover {
@@ -619,7 +618,7 @@ They are here to complement for missing ones.
 /* line 482, ../sass/core.scss */
 .yotpo .primary-color-btn, .yotpo input[type="button"].primary-color-btn {
   background-color: #3085c7;
-  color: white;
+  color: #ffffff;
   font-weight: normal !important;
   text-shadow: none !important;
 }
@@ -631,12 +630,12 @@ They are here to complement for missing ones.
 /* line 493, ../sass/core.scss */
 .yotpo .primary-color-btn.yotpo-disabled, .yotpo input[type="button"].primary-color-btn.yotpo-disabled {
   background: #accee9;
-  color: white;
+  color: #ffffff;
 }
 /* line 497, ../sass/core.scss */
 .yotpo .primary-color-btn.yotpo-disabled:hover, .yotpo input[type="button"].primary-color-btn.yotpo-disabled:hover {
   background: #accee9 !important;
-  color: white !important;
+  color: #ffffff !important;
   border: none !important;
 }
 /* line 504, ../sass/core.scss */
@@ -918,7 +917,7 @@ They are here to complement for missing ones.
   max-height: 200px;
   /*padding: 16px 16px;*/
   text-align: left;
-  background: white !important;
+  background: #ffffff !important;
   border: solid 1px #e3e3e3;
   z-index: 10;
 }
@@ -1141,11 +1140,11 @@ They are here to complement for missing ones.
   left: 1px;
   text-align: center;
   font-size: 20px;
-  color: white;
+  color: #ffffff;
 }
 /* line 1021, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-header .yotpo-icon-profile .yotpo-user-letter span.yotpo-icon, .yotpo .yotpo-comment .yotpo-header .yotpo-icon-profile .yotpo-user-letter span.yotpo-icon, .yotpo .yotpo-question .yotpo-header .yotpo-icon-profile .yotpo-user-letter span.yotpo-icon {
-  color: white;
+  color: #ffffff;
 }
 /* line 1026, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-header .yotpo-icon-profile .yotpo-icon-circle-checkmark, .yotpo .yotpo-comment .yotpo-header .yotpo-icon-profile .yotpo-icon-circle-checkmark, .yotpo .yotpo-question .yotpo-header .yotpo-icon-profile .yotpo-icon-circle-checkmark {
@@ -1153,7 +1152,7 @@ They are here to complement for missing ones.
   position: absolute;
   left: 31px;
   top: 28px;
-  background: white;
+  background: #ffffff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -1345,7 +1344,7 @@ They are here to complement for missing ones.
   display: none;
   color: inherit;
 }
-/* line 1222, ../sass/core.scss */
+/* line 1221, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-comments-box,
 .yotpo .yotpo-review .yotpo-show-more, .yotpo .yotpo-comment .yotpo-comments-box,
 .yotpo .yotpo-comment .yotpo-show-more, .yotpo .yotpo-question .yotpo-comments-box,
@@ -1377,7 +1376,7 @@ They are here to complement for missing ones.
 }
 /* line 1244, ../sass/core.scss */
 .yotpo .error-box .text-wrapper .error-text {
-  color: white;
+  color: #ffffff;
   font-size: 12px;
   line-height: 25px;
 }
@@ -1393,7 +1392,7 @@ They are here to complement for missing ones.
 }
 /* line 1259, ../sass/core.scss */
 .yotpo .error-box .transparent-color-btn .yotpo-icon {
-  color: white;
+  color: #ffffff;
 }
 /* line 1265, ../sass/core.scss */
 .yotpo .error {
@@ -1410,7 +1409,7 @@ They are here to complement for missing ones.
   border: none;
   max-width: 300px;
   width: 70%;
-  background: white;
+  background: #ffffff;
   z-index: 20;
 }
 /* line 1282, ../sass/core.scss */
@@ -1712,7 +1711,7 @@ They are here to complement for missing ones.
 }
 /* line 1585, ../sass/core.scss */
 .yotpo .yotpo-modal-dialog .yotpo-label .yotpo-icon {
-  color: white;
+  color: #ffffff;
 }
 /* line 1592, ../sass/core.scss */
 .yotpo .yotpo-bottomline .yotpo-icon-star, .yotpo .yotpo-bottomline .yotpo-icon-half-star, .yotpo .yotpo-bottomline .yotpo-icon-empty-star {
@@ -1802,7 +1801,7 @@ They are here to complement for missing ones.
   padding: 40px;
   text-align: center;
   position: relative;
-  background: white;
+  background: #ffffff;
 }
 /* line 1692, ../sass/core.scss */
 .yotpo .yotpo-thank-you .yotpo-thankyou-header {
@@ -1884,7 +1883,7 @@ They are here to complement for missing ones.
 }
 /* line 1770, ../sass/core.scss */
 .yotpo .yotpo-testimonials-btn span {
-  color: white;
+  color: #ffffff;
 }
 /* line 1773, ../sass/core.scss */
 .yotpo .yotpo-testimonials-btn[data-position=left] {
@@ -1946,7 +1945,7 @@ They are here to complement for missing ones.
 .yotpo .yotpo-testimonials-btn.use-image span {
   display: none;
 }
-/* line 1832, ../sass/core.scss */
+/* line 1831, ../sass/core.scss */
 .yotpo .write-only .write-review-wrapper,
 .yotpo .write-only .write-question-wrapper {
   display: block;
@@ -2012,7 +2011,7 @@ They are here to complement for missing ones.
   height: 100%;
   width: 100%;
   z-index: 800;
-  background: black;
+  background: #000000;
   -moz-opacity: 0;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -2058,7 +2057,7 @@ They are here to complement for missing ones.
   display: table;
   width: 100%;
   height: 100%;
-  background: white;
+  background: #ffffff;
 }
 /* line 1954, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-dialog .yotpo-modal-content .yotpo-modal-header .yotpo-icon-btn-small {
@@ -2073,18 +2072,18 @@ They are here to complement for missing ones.
   top: 5px;
 }
 /* line 1967, ../sass/core.scss */
-.yotpo .yotpo-modal .yotpo-modal-logo span:NOT(.yotpo-icon-yotpo-logo) {
-  color: white;
+.yotpo .yotpo-modal .yotpo-modal-logo span:not(.yotpo-icon-yotpo-logo) {
+  color: #ffffff;
   position: relative;
   bottom: 3px;
 }
 /* line 1971, ../sass/core.scss */
-.yotpo .yotpo-modal .yotpo-modal-logo span:NOT(.yotpo-icon-yotpo-logo) a {
-  color: white !important;
+.yotpo .yotpo-modal .yotpo-modal-logo span:not(.yotpo-icon-yotpo-logo) a {
+  color: #ffffff !important;
 }
 /* line 1975, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-logo .yotpo-icon-yotpo-logo {
-  color: white !important;
+  color: #ffffff !important;
 }
 /* line 1979, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-header {
@@ -2099,7 +2098,7 @@ They are here to complement for missing ones.
 }
 /* line 1989, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-header .yotpo-icon-cross {
-  color: white;
+  color: #ffffff;
 }
 /* line 1993, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-header .modal-title {
@@ -2111,14 +2110,14 @@ They are here to complement for missing ones.
 .yotpo .yotpo-modal .yotpo-modal-header .modal-title span {
   font-size: 24px;
   line-height: 24px;
-  color: white;
+  color: #ffffff;
 }
 /* line 2007, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-navigation {
   height: 24px;
   padding-bottom: 0px;
   border-bottom: solid 1px #e3e3e3;
-  background: white;
+  background: #ffffff;
 }
 /* line 2014, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper {
@@ -2136,7 +2135,7 @@ They are here to complement for missing ones.
   max-width: inherit;
   overflow-x: hidden;
   overflow-y: scroll;
-  background: white;
+  background: #ffffff;
   height: 100%;
   /* Set Default Colors */
 }
@@ -2256,7 +2255,7 @@ They are here to complement for missing ones.
   background: #737373;
   opacity: 0.9;
   bottom: 10px;
-  color: white;
+  color: #ffffff;
 }
 /* line 2133, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product .yotpo-review-stars {
@@ -2592,73 +2591,49 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
 }
 
 @-webkit-keyframes yotpo-pre-loader-animation {
-  /* line 2472, ../sass/core.scss */
   0% {
     width: 0;
   }
-
-  /* line 2473, ../sass/core.scss */
   50% {
     width: 88px;
   }
-
-  /* line 2474, ../sass/core.scss */
   100% {
     width: 0;
   }
 }
-
 @-moz-keyframes yotpo-pre-loader-animation {
-  /* line 2477, ../sass/core.scss */
   0% {
     width: 0;
   }
-
-  /* line 2478, ../sass/core.scss */
   50% {
     width: 88px;
   }
-
-  /* line 2479, ../sass/core.scss */
   100% {
     width: 0;
   }
 }
-
 @-o-keyframes yotpo-pre-loader-animation {
-  /* line 2482, ../sass/core.scss */
   0% {
     width: 0;
   }
-
-  /* line 2483, ../sass/core.scss */
   50% {
     width: 88px;
   }
-
-  /* line 2484, ../sass/core.scss */
   100% {
     width: 0;
   }
 }
-
 @keyframes yotpo-pre-loader-animation {
-  /* line 2487, ../sass/core.scss */
   0% {
     width: 0;
   }
-
-  /* line 2488, ../sass/core.scss */
   50% {
     width: 88px;
   }
-
-  /* line 2489, ../sass/core.scss */
   100% {
     width: 0;
   }
 }
-
 /* NOT JS!!! */
 @media only screen and (max-width: 480px) {
   /*
@@ -2907,12 +2882,12 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
 
 /* line 160, ../sass/embedded_widget.scss */
 #embedded_widget .star-embedded {
-  color: white;
+  color: #ffffff;
 }
 
 /* line 164, ../sass/embedded_widget.scss */
 .y-badge-stars {
-  color: #ecc525 !important;
+  color: #ECC525 !important;
 }
 
 /* line 1, ../sass/badge.scss */

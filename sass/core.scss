@@ -518,8 +518,18 @@
     &.yotpo-disabled {
       color: $gray-light;
 
+      span, i {
+        color: $gray-light;
+      }
+
       &:hover {
         color: $gray-light;
+        cursor: default;
+
+        span, i {
+          color: $gray-light;
+          cursor: default;
+        }
       }
     }
   }
@@ -557,7 +567,8 @@
     box-sizing: border-box;
   }
 
-  .text-box{
+  .text-box {
+    display: initial;
     font-family: $font-type;
     font-size: 13px;
     height: 68px;
@@ -759,7 +770,8 @@
     float: right;
     position: relative;
 
-    label{
+    label {
+      display: inline;
       color: $gray;
       padding-left: 9px;
       padding-bottom: 16px;
@@ -1333,12 +1345,20 @@
       .yotpo-stars-and-sum-reviews{
         float:left;
         text-align: left;
+        position: relative;
       }
       .yotpo-stars {
         padding-#{$right}: 10px;
         display: inline-block;
         vertical-align: bottom;
         padding-bottom: 2px;
+      }
+      .yotpo-star-digits {
+        font-size: 24px;
+        font-weight: bolder;
+        position: relative;
+        bottom: 2px;
+
       }
       .yotpo-icon-star, .yotpo-icon-half-star, .yotpo-icon-empty-star {
         font-size: 26px;
@@ -1964,7 +1984,7 @@
       }
     }
     .yotpo-modal-logo{
-      span:NOT(.yotpo-icon-yotpo-logo){
+      span:not(.yotpo-icon-yotpo-logo){
         color: $white;
         position: relative;
         bottom: 3px;
