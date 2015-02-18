@@ -1599,6 +1599,57 @@
       }
     }
 
+    .yotpo-thank-you{
+    border: solid 1px $gray-light;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    background: $white;
+
+    .yotpo-icon-cross{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 19px;
+      color: $gray;
+    }
+
+    .yotpo-thankyou-header{
+
+      margin-bottom: 20px;
+
+      span{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $primary;
+        font-size: 21px;
+        line-height: 18px;
+      }
+
+      .yotpo-icon{
+        font-size: 26px;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    .yotpo-thankyou-content{
+      color: $gray-dark;
+      margin-bottom: 20px;
+    }
+
+    .yotpo-thankyou-footer{
+      .yotpo-default-button {
+        padding: 6px 0;
+        vertical-align: top;
+      }
+
+      .social-link {
+        padding: 6px 11px;
+      }
+    }
+  }
+
     .yotpo-bottomline {
 
       &.yotpo-bottomline-1-boxes{
@@ -2588,56 +2639,6 @@
   }
   .error-box .yotpo-icon-cross {
     position: static;
-  }
-
-  .yotpo-thank-you{
-    border: solid 1px $gray-light;
-    padding: 40px;
-    text-align: center;
-    position: relative;
-    background: $white;
-
-    .yotpo-icon-cross{
-      position: absolute;
-      top: 15px;
-      right: 15px;
-      font-size: 19px;
-    }
-
-    .yotpo-thankyou-header{
-
-      margin-bottom: 20px;
-
-      span{
-        text-transform: uppercase;
-        font-weight: bold;
-        color: $primary;
-        font-size: 21px;
-        line-height: 18px;
-      }
-
-      .yotpo-icon{
-        font-size: 26px;
-        display: block;
-        margin-bottom: 20px;
-      }
-    }
-
-    .yotpo-thankyou-content{
-      color: $gray-dark;
-      margin-bottom: 20px;
-    }
-
-    .yotpo-thankyou-footer{
-      .yotpo-default-button {
-        padding: 6px 0;
-        vertical-align: top;
-      }
-
-      .social-link {
-        padding: 6px 11px;
-      }
-    }
   }
 
   /* BE THE FIRST TO WRITE A REVIEW */
