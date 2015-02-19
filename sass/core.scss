@@ -1687,7 +1687,8 @@
 
                 .yotpo-product-related-field-name {
                   float: $left;
-                  min-width: 150px;
+                  min-width: 100px;
+                  color: @gray-darker;
                 }
               }
             }
@@ -2193,12 +2194,12 @@
             }
           }
         }
-        &.yotpo-bottomline-2-boxes{
+        &.yotpo-bottomline-2-boxes {
           height: 100px;
-          .yotpo-bottomline-box-1{
+          .yotpo-bottomline-box-1 {
             max-width: none;
           }
-          .yotpo-bottomline-box-2{
+          .yotpo-bottomline-box-2 {
             margin-top: 15px;
             width: 100%;
 
@@ -2206,7 +2207,7 @@
               display: none;
             }
 
-            .yotpo-star-distribution{
+            .yotpo-star-distribution {
               display: block;
               margin: 0;
               padding: 0;
@@ -2230,10 +2231,11 @@
               }
             }
 
-            .yotpo-product-related-fields{
+            .yotpo-product-related-fields {
               margin-left: 0;
+              border-left: none;
 
-              .yotpo-product-related-fields-cloumn{
+              .yotpo-product-related-fields-cloumn {
                 padding-left: 0;
               }
             }
