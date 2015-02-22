@@ -630,11 +630,13 @@
             input[type="radio"]{
               vertical-align: super;
               margin: 0px 15px 0px 20px;
-              height: initial;
+              height: auto;
+              width: auto;
+              min-width: 0;
+              border: none;
               -webkit-appearance: radio;
               -moz-appearance:radio;
               -webkit-appearance:radio;
-              width: auto;
             }
           }
           .y-label{
@@ -660,8 +662,10 @@
             input[type="checkbox"]{
               vertical-align: super;
               margin: 0px 15px 0px 20px;
-              height: initial;
+              height: auto;
               width: auto;
+              min-width: 0;
+              border: none;
               -webkit-appearance: checkbox;
               -moz-appearance:checkbox;
               -webkit-appearance:checkbox;
@@ -699,11 +703,13 @@
               input[type="radio"]{
                 vertical-align: super;
                 margin: 0px 15px 0px 20px;
-                height: initial;
+                height: auto;
+                width: auto;
+                min-width: 0;
+                border: none;
                 -webkit-appearance: radio;
                 -moz-appearance:radio;
                 -webkit-appearance:radio;
-                width: auto;
               }
             }
           }
@@ -2197,6 +2203,7 @@
         margin-left: 0;
       }      
     }
+
     &.yotpo-small {
       .yotpo-bottomline {
 
