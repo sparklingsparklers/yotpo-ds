@@ -2145,16 +2145,16 @@
         }
 
         &.yotpo-bottomline-empty-state {
-          &.yotpo-bottomline-2-boxes {
-            .write-question-button, .write-review-button {
-              display: inline;
-            }
-          }
-          &.yotpo-bottomline-1-boxes {
+          .yotpo-bottomline-box-1 {
             .yotpo-bottomline-box-1 {
               .write-question-button, .write-review-button {
                 display: none;
               }
+            }
+          }
+          .yotpo-bottomline-box-2 {
+            .write-question-button, .write-review-button {
+              display: inline;
             }
           }
         }
