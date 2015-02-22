@@ -2400,7 +2400,7 @@ They are here to complement for missing ones.
 }
 /* line 2261, ../sass/core.scss */
 .yotpo.yotpo-main-widget.yotpo-small .yotpo-bottomline.yotpo-bottomline-3-boxes .yotpo-bottomline-box-1, .yotpo .yotpo-modal-dialog.yotpo-small .yotpo-bottomline.yotpo-bottomline-3-boxes .yotpo-bottomline-box-1 {
-  width: 33%;
+  float: none;
 }
 /* line 2263, ../sass/core.scss */
 .yotpo.yotpo-main-widget.yotpo-small .yotpo-bottomline.yotpo-bottomline-3-boxes .yotpo-bottomline-box-1 .write-question-button, .yotpo.yotpo-main-widget.yotpo-small .yotpo-bottomline.yotpo-bottomline-3-boxes .yotpo-bottomline-box-1 .write-review-button, .yotpo .yotpo-modal-dialog.yotpo-small .yotpo-bottomline.yotpo-bottomline-3-boxes .yotpo-bottomline-box-1 .write-question-button, .yotpo .yotpo-modal-dialog.yotpo-small .yotpo-bottomline.yotpo-bottomline-3-boxes .yotpo-bottomline-box-1 .write-review-button {
