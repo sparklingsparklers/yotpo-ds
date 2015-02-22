@@ -1658,6 +1658,7 @@
         }
       }
       &.yotpo-bottomline-2-boxes {
+        position: relative;
         height: 85px;
         .yotpo-bottomline-box-1 {
           max-width: 33%;
@@ -1670,7 +1671,6 @@
         .yotpo-bottomline-box-2 {
           float: left;
           padding-top: 5px;
-          position: relative;
 
           /* Product Rating Fields */
           .yotpo-product-related-fields {
@@ -1823,12 +1823,12 @@
           position: absolute;
           right: 0;
           &.write-review-button {
-            top: 8px;
+            top: 30px;
           }
           &.write-question-button {
-            top: 48px;
-            &.yotpo-read-only{
-              top: 8px;   
+            top: 70px;
+            &.yotpo-read-only {
+              top: 30px;   
             }
           }
         }
@@ -2059,7 +2059,6 @@
 
     &.yotpo-medium {
       .yotpo-bottomline {
-
         &.yotpo-bottomline-1-boxes {
           .yotpo-bottomline-box-1 {
             width: 100%;
@@ -2090,52 +2089,51 @@
           }
           .yotpo-bottomline-box-2 {
             float: left;
-            .yotpo-product-related-fields{
+            .yotpo-product-related-fields {
               margin-left: 0;
               padding-left: 20px;
-              .yotpo-product-related-fields-cloumn{
+              .yotpo-product-related-fields-cloumn {
                 float: $right;
                 min-width: 50%;
                 padding-left: 0;
-                .yotpo-product-related-field{
+                .yotpo-product-related-field {
                   display: block;
                 }
               }
             }
-
-            .write-question-button, .write-review-button{
-              display: none;
-            }
+          }
+          .write-question-button, .write-review-button {
+            display: none;
           }
         }
-        &.yotpo-bottomline-3-boxes{
-          .yotpo-bottomline-box-1{
+        &.yotpo-bottomline-3-boxes {
+          .yotpo-bottomline-box-1 {
             width: 33%;
             margin-bottom: 10px;
           }
-          .yotpo-bottomline-box-2{
+          .yotpo-bottomline-box-2 {
             width: 33%;
 
             /* Star Distribution */
-            .yotpo-star-distribution{
+            .yotpo-star-distribution {
               padding-left: 0;
               padding-right: 10px;
               border-left: none;
             }
             /* Review Rating Fields */
-            .yotpo-product-related-fields{
+            .yotpo-product-related-fields {
               margin-left: 15px;
             }
           }
-          .yotpo-bottomline-box-3{
+          .yotpo-bottomline-box-3 {
             width: 33%;
           }
         }
 
-        .yotpo-star-distribution{
+        .yotpo-star-distribution {
           float: right;
-          .yotpo-star-distribution-content{
-            .yotpo-star-distribution-graph{
+          .yotpo-star-distribution-content {
+            .yotpo-star-distribution-graph {
               width: 100px;
             }
           }
