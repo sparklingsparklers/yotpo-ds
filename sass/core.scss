@@ -1657,6 +1657,7 @@
           width: 100%;
         }
       }
+
       &.yotpo-bottomline-2-boxes {
         position: relative;
         height: 85px;
@@ -1833,23 +1834,22 @@
           }
         }
       }
-      &.yotpo-bottomline-3-boxes{
+
+      &.yotpo-bottomline-3-boxes {
         position: relative;
 
-        .yotpo-bottomline-box-1{
-          max-width: 33%;
-          min-width: 243px;
+        .yotpo-bottomline-box-1 {
           margin-right: 15px;
-          .write-question-button, .write-review-button{
+          .write-question-button, .write-review-button {
             display: none;
           }
         }
-        .yotpo-bottomline-box-2{
+        .yotpo-bottomline-box-2 {
           overflow: hidden;
           min-width: 557px;
           padding-top: 5px;
 
-          .write-question-button, .write-review-button{
+          .write-question-button, .write-review-button {
             display: none;
           }
           /* Star Distribution */
@@ -1868,7 +1868,7 @@
               text-align: left;
 
 
-              .yotpo-distibutions-stars{
+              .yotpo-distibutions-stars {
                 padding-top: 2px;
                 float: left;
                 .review-stars{
@@ -1876,12 +1876,12 @@
                   vertical-align: middle;
                   margin-right: 6px;
                   margin-bottom: 4px;
-                  .yotpo-icon-star, .yotpo-icon-empty-star{
+                  .yotpo-icon-star, .yotpo-icon-empty-star {
                     color: $yellow;
                     font-size: 15px;
                   }
 
-                  &.yotpo-distribution-clickable{
+                  &.yotpo-distribution-clickable {
                     &:hover{
                       cursor: pointer;
                     }
@@ -1889,7 +1889,7 @@
                 }
               }
 
-              .yotpo-distibutions-sum-reviews{
+              .yotpo-distibutions-sum-reviews {
                 float: left;
                 .yotpo-sum-reviews{
                   display: block;
@@ -1907,13 +1907,13 @@
                 }
               }
 
-              .yotpo-distributions-graphs{
+              .yotpo-distributions-graphs {
                 display: block;
                 overflow: hidden;
                 width: auto;
                 padding-top: 4px;
 
-                .yotpo-star-distribution-graph{
+                .yotpo-star-distribution-graph {
                   vertical-align: middle;
                   display: block;
                   width: 85px;
@@ -1921,19 +1921,19 @@
                   position: relative;
                   margin-bottom: 9px;
 
-                  .yotpo-star-distribution-graph-background{
+                  .yotpo-star-distribution-graph-background {
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     background-color: $graph-bg;
                   }
 
-                  .yotpo-star-distribution-score-wrapper{
+                  .yotpo-star-distribution-score-wrapper {
                     position: relative;
                     width: 90%;
                     height: 100%;
 
-                    .yotpo-star-distribution-graph-score{
+                    .yotpo-star-distribution-graph-score {
                       position: absolute;
                       width: 30%;
                       height: 100%;
@@ -1948,12 +1948,12 @@
                     }
                   }
 
-                  &.yotpo-distribution-clickable{
+                  &.yotpo-distribution-clickable {
                     &:hover{
                       cursor: pointer;
                     }
                   }
-                  &.yotpo-distribution-unactive{
+                  &.yotpo-distribution-unactive {
                     .yotpo-star-distribution-graph-score{
                       background-color: $primary-l3;
                     }
@@ -2013,6 +2013,7 @@
           display: none;
         }
       }
+
       .text-m {
         white-space: nowrap;
       }
@@ -2113,7 +2114,6 @@
 
         &.yotpo-bottomline-3-boxes {
           .yotpo-bottomline-box-1 {
-            width: 33%;
             margin-bottom: 10px;
           }
           .yotpo-bottomline-box-2 {
