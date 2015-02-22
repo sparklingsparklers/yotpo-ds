@@ -1816,19 +1816,19 @@
               }
             }
           }
+        }
 
-          .yotpo-default-button {
-            float: none;
-            position: absolute;
-            right: 0;
-            &.write-review-button {
-              top: 8px;
-            }
-            &.write-question-button {
-              top: 48px;
-              &.yotpo-read-only{
-                top: 8px;   
-              }
+        .yotpo-default-button {
+          float: none;
+          position: absolute;
+          right: 0;
+          &.write-review-button {
+            top: 8px;
+          }
+          &.write-question-button {
+            top: 48px;
+            &.yotpo-read-only{
+              top: 8px;   
             }
           }
         }
