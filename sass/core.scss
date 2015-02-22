@@ -2064,6 +2064,7 @@
             width: 100%;
           }
         }
+
         &.yotpo-bottomline-2-boxes {
           .yotpo-bottomline-box-1 {
             position: relative;
@@ -2109,6 +2110,7 @@
             display: none;
           }
         }
+
         &.yotpo-bottomline-3-boxes {
           .yotpo-bottomline-box-1 {
             width: 33%;
@@ -2138,6 +2140,21 @@
           .yotpo-star-distribution-content {
             .yotpo-star-distribution-graph {
               width: 100px;
+            }
+          }
+        }
+
+        &.yotpo-bottomline-empty-state {
+          &.yotpo-bottomline-2-boxes {
+            .write-question-button, .write-review-button {
+              display: inline;
+            }
+          }
+          &.yotpo-bottomline-1-boxes {
+            .yotpo-bottomline-box-1 {
+              .write-question-button, .write-review-button {
+                display: none;
+              }
             }
           }
         }
@@ -2195,6 +2212,7 @@
             }
           }
         }
+
         &.yotpo-bottomline-2-boxes {
           height: 100px;
           border-top: none;
@@ -2298,13 +2316,6 @@
           }
         }
 
-
-        &.yotpo-bottomline-ditribution-version {
-          .yotpo-star-distribution-seperator{
-            clear: both;
-          }
-        }
-
         .yotpo-star-distribution{
           display: block;
           margin: 0;
@@ -2326,6 +2337,12 @@
                 width: 100%;
               }
             }
+          }
+        }
+
+        &.yotpo-bottomline-ditribution-version {
+          .yotpo-star-distribution-seperator{
+            clear: both;
           }
         }
       }
