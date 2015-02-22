@@ -2068,7 +2068,7 @@
         &.yotpo-bottomline-2-boxes {
           .yotpo-bottomline-box-1 {
             position: relative;
-            min-width: 45%;
+            margin-right: 20px;
 
             .yotpo-default-button {
               display: block;
@@ -2092,10 +2092,11 @@
             float: left;
             .yotpo-product-related-fields{
               margin-left: 0;
+              padding-left: 20px;
               .yotpo-product-related-fields-cloumn{
                 float: $right;
                 min-width: 50%;
-                padding-left: 20px;
+                padding-left: 0;
                 .yotpo-product-related-field{
                   display: block;
                 }
