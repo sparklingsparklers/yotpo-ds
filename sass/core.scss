@@ -589,13 +589,13 @@
     -webkit-appearance:none;
   }
 
-  .form-group{
+  .form-group {
     display: table;
     width: 100%;
 
-    .form-element{
+    .form-element {
       text-align: left;
-      .y-label{
+      .y-label {
         display: block;
         white-space: nowrap;
         padding: 0;
@@ -604,6 +604,11 @@
           margin-top: 10px;
           margin-bottom: 25px;
           color: $gray-darker;
+
+          &.yotpo-custom-field-error {
+            font-weight: bold;
+            color: $red;
+          }
         }
       }
       .y-input{
@@ -612,13 +617,13 @@
 
       span{
         display: block;
-        &.yotpo-mandatory-mark{
+        &.yotpo-mandatory-mark {
           display: inline;
           color: red;
         }
       }
 
-      .yotpo-single-choice-field{
+      .yotpo-single-choice-field {
         padding-bottom: 25px;
         .yotpo-single-choice-option{
           display: block;
