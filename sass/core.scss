@@ -2321,6 +2321,9 @@
       }
       .yotpo-helpful{
         float: $right;
+        .yotpo-vote-text {
+          display: none;
+        }
       }
       .footer-additional-actions{
         display: inline-block;
