@@ -877,11 +877,14 @@
 
     }
 
-    .yotpo-header{
+    .yotpo-header {
       .y-label {
         padding-top: 0;
       }
-      .yotpo-icon{
+      .yotpo-header-title {
+          font-size: 15px;
+      }
+      .yotpo-icon {
         color: $yellow;
         font-size: 26px;
         height: auto;
@@ -1180,8 +1183,10 @@
         float: $right;
           
         .yotpo-sum{
-          margin-right: 13px;
-          margin-left: 13px;
+          margin: 0;
+        }
+        .vote-btn {
+          margin-left: 10px;
         }
       }
 
