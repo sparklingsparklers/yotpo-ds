@@ -206,7 +206,7 @@ function removeClass(el, className){
 }
 
 function addClass(el, className){
-	if(!el.classList.contains(className))
+	if(className &&!el.classList.contains(className))
 		el.className += " " + className;
 }
 
@@ -230,4 +230,25 @@ function hideTestimonials(delay){
 	var modal = document.querySelectorAll('.yotpo-modal')[0];
 	removeClass(modal, 'yotpo-modal-active');
 	setTimeout(function() {modal.style.display="none";}, $delay);
+}
+
+function windowResize() {
+	var className = '';
+	var width = document.body.offsetWidth;
+    if (width <= 655) {
+        className = 'yotpo-medium';
+    }
+
+    if (width <= 510) {
+        className = 'yotpo-small';
+    }
+    
+	var mainWidgets = document.getElementsByClassName('yotpo-main-widget');
+	for (var i = 0; i < mainWidgets.length; i++) {
+		var elm = mainWidgets[i];
+		removeClass(elm, 'yotpo-small');
+		removeClass(elm, 'yotpo-medium');
+		addClass(elm, className);
+	}
+    
 }
