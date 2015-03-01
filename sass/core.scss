@@ -877,11 +877,14 @@
 
     }
 
-    .yotpo-header{
+    .yotpo-header {
       .y-label {
         padding-top: 0;
       }
-      .yotpo-icon{
+      .yotpo-header-title {
+          font-size: 15px;
+      }
+      .yotpo-icon {
         color: $yellow;
         font-size: 26px;
         height: auto;
@@ -1175,13 +1178,18 @@
         text-transform: capitalize;
       }
 
-      .yotpo-helpful{
+      .yotpo-helpful {
         display: inline-block;
         float: $right;
           
-        .yotpo-sum{
-          margin-right: 13px;
-          margin-left: 13px;
+        .yotpo-sum {
+          margin: 0;
+        }
+        .vote-btn {
+          margin-left: 10px;
+        }
+        .yotpo-vote-text {
+          cursor: pointer;
         }
       }
 
@@ -2316,6 +2324,9 @@
       }
       .yotpo-helpful{
         float: $right;
+        .yotpo-vote-text {
+          display: none;
+        }
       }
       .footer-additional-actions{
         display: inline-block;
