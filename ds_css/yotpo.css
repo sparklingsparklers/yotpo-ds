@@ -2191,11 +2191,11 @@ They are here to complement for missing ones.
   margin-top: 15px;
 }
 /* line 2024, ../sass/core.scss */
-.yotpo.yotpo-main-widget .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-all, .yotpo .yotpo-modal-dialog .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-all {
+.yotpo.yotpo-main-widget .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-all, .yotpo.yotpo-main-widget .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-less, .yotpo .yotpo-modal-dialog .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-all, .yotpo .yotpo-modal-dialog .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-less {
   color: #3085c7;
 }
 /* line 2026, ../sass/core.scss */
-.yotpo.yotpo-main-widget .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-all:hover, .yotpo .yotpo-modal-dialog .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-all:hover {
+.yotpo.yotpo-main-widget .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-all:hover, .yotpo.yotpo-main-widget .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-less:hover, .yotpo .yotpo-modal-dialog .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-all:hover, .yotpo .yotpo-modal-dialog .yotpo-bottomline .yotpo-product-related-fields .yotpo-product-related-footer span.yotpo-product-related-show-less:hover {
   cursor: pointer;
 }
 /* line 2033, ../sass/core.scss */
