@@ -1856,7 +1856,6 @@
         }
         .yotpo-bottomline-box-2 {
           overflow: hidden;
-          min-width: 557px;
           padding-top: 5px;
 
           .write-question-button, .write-review-button {
@@ -2122,6 +2121,7 @@
         &.yotpo-bottomline-3-boxes {
           .yotpo-bottomline-box-1 {
             margin-bottom: 10px;
+            float: none;
           }
           .yotpo-bottomline-box-2 {
             width: 33%;
