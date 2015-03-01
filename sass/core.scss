@@ -2020,12 +2020,10 @@
         }
         .yotpo-product-related-footer {
           margin-top: 15px;
-          .yotpo-product-related-show-all {
-            span{
-              &:hover{
-                cursor: pointer;
-              }
-              color: $primary;
+          span.yotpo-product-related-show-all {
+            color: $primary;
+            &:hover {
+              cursor: pointer;
             }
           }
         }
