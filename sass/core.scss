@@ -1854,6 +1854,9 @@
           .write-question-button, .write-review-button {
             display: none;
           }
+          .yotpo-sum-reviews {
+            display: block;
+          }
         }
         .yotpo-bottomline-box-2 {
           overflow: hidden;
@@ -2132,9 +2135,11 @@
           .yotpo-bottomline-box-1 {
             margin-bottom: 10px;
             float: none;
+            .yotpo-sum-reviews {
+              display: inline-block;
+            }
           }
           .yotpo-bottomline-box-2 {
-            width: 33%;
 
             /* Star Distribution */
             .yotpo-star-distribution {
