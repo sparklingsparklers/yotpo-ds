@@ -576,9 +576,6 @@
 
     .yotpo-product-related-fields-names {
       float: left;
-      .yotpo-product-related-field-name {
-        color: $gray-darker;
-      } 
     }
     .yotpo-product-related-fields-bars {
       width: auto;
@@ -1361,11 +1358,15 @@
         /* Product Rating Fields */
         .yotpo-product-related-fields {
           margin-bottom: 20px;
-          .yotpo-product-related-fields-column {
-            display: inline-block;
-            margin-right: 28px;
-            &.yotpo-small-version {
-              display: none;
+          .yotpo-product-related-wrapper {
+            background-color: #f6f8fc;
+            padding: 15px;
+            .yotpo-product-related-fields-column {
+              display: inline-block;
+              margin-right: 28px;
+              &.yotpo-small-version {
+                display: none;
+              }
             }
           }
         }
