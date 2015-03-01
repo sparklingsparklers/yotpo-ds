@@ -2003,7 +2003,7 @@
         .yotpo-product-related-fields-cloumn {
           .yotpo-product-related-fields-names {
             .yotpo-product-related-field-name {
-              margin-top: 5px;
+              margin-top: 2px;
               &:first-child {
                 margin-top: 0;
               }
@@ -2011,10 +2011,21 @@
           }
           .yotpo-product-related-fields-bars {
             .yotpo-rating-bars {
-              margin-top: 5px;
+              margin-top: 2px;
               &:first-child {
                 margin-top: 0;
               }
+            }
+          }
+        }
+        .yotpo-product-related-footer {
+          margin-top: 15px;
+          .yotpo-product-related-show-all {
+            span{
+              &:hover{
+                cursor: pointer;
+              }
+              color: $primary;
             }
           }
         }
