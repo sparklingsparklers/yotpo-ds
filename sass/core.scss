@@ -1178,15 +1178,18 @@
         text-transform: capitalize;
       }
 
-      .yotpo-helpful{
+      .yotpo-helpful {
         display: inline-block;
         float: $right;
           
-        .yotpo-sum{
+        .yotpo-sum {
           margin: 0;
         }
         .vote-btn {
           margin-left: 10px;
+        }
+        .yotpo-vote-text {
+          cursor: pointer;
         }
       }
 
