@@ -2041,7 +2041,7 @@ They are here to complement for missing ones.
   display: inline-block;
   float: left;
   min-width: 230px;
-  padding: 0 15px;
+  padding-left: 5px;
   border-left: solid 1px #e3e3e3;
   border-right: solid 1px #e3e3e3;
   vertical-align: middle;
