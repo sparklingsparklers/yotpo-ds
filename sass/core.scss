@@ -1367,6 +1367,11 @@
               &.yotpo-small-version {
                 display: none;
               }
+              .yotpo-product-related-fields-bars {
+                .yotpo-rating-bars {
+                  min-width: 220px;
+                }
+              }
             }
           }
         }
@@ -2018,6 +2023,7 @@
           .yotpo-product-related-fields-bars {
             .yotpo-rating-bars {
               margin-top: 2px;
+              min-width: 240px;
               &:first-child {
                 margin-top: 0;
               }
