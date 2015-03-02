@@ -847,6 +847,10 @@
 
   /*NAVIGATION*/
 
+  .yotpo-nav-primary-testimonials{
+    float:$left;
+  }
+
   .yotpo-nav{
     background: transparent;
     font-family: $font-type;
@@ -947,7 +951,7 @@
     &.mobile-collapse {
       .transparent-color-btn {
         width: 100%;
-      } 
+      }
     }
     .yotpo-icon-seperator {
       float: $right;
@@ -1038,7 +1042,7 @@
 
   /*END NAVIGATION*/
 
-  
+
   /*WRITE A QUESTION*/
   .write-question-wrapper {
     width:100%;
@@ -1072,7 +1076,10 @@
       .y-label {
         padding-top: 0;
       }
-      .yotpo-icon{
+      .yotpo-header-title {
+          font-size: 15px;
+      }
+      .yotpo-icon {
         color: $yellow;
         font-size: 26px;
         height: auto;
@@ -1424,13 +1431,18 @@
         text-transform: capitalize;
       }
 
-      .yotpo-helpful{
+      .yotpo-helpful {
         display: inline-block;
         float: $right;
           
-        .yotpo-sum{
-          margin-right: 13px;
-          margin-left: 13px;
+        .yotpo-sum {
+          margin: 0;
+        }
+        .vote-btn {
+          margin-left: 10px;
+        }
+        .yotpo-vote-text {
+          cursor: pointer;
         }
       }
 
@@ -1845,7 +1857,7 @@
           &.write-question-button {
             top: 70px;
             &.yotpo-read-only {
-              top: 30px;   
+              top: 30px;
             }
           }
         }
@@ -2179,12 +2191,12 @@
         &.yotpo-bottomline-empty-state {
           .write-question-button, .write-review-button {
             display: inline;
-          } 
+          }
           .yotpo-bottomline-box-1 {
             .write-question-button, .write-review-button {
               display: none;
             }
-          }       
+          }
         }
       }
 
@@ -2213,7 +2225,7 @@
           .yotpo-review-stars {
             .yotpo-user-related-fields {
               display: none;
-            }  
+            }
           }
         }
 
@@ -2227,11 +2239,11 @@
       }
       .yotpo-footer , .yotpo-main {
         margin-left: 0;
-      }      
+      }
     }
 
     &.yotpo-small {
-      
+
       .yotpo-bottomline {
 
         &.yotpo-bottomline-1-boxes {
@@ -2260,7 +2272,7 @@
               float: none;
               border-left: none;
               border-top: none;
-              
+
               .yotpo-star-distribution-content{
                 .review-stars{
                   margin-right: 6px;
@@ -2314,7 +2326,7 @@
               border: none;
               padding: 0;
               margin: 30px 0;
-              
+
               .yotpo-star-distribution-content{
                 width: 100%;
                 .review-stars{
@@ -2355,7 +2367,7 @@
           margin-top: 15px;
           padding-top: 10px;
           border-top: solid 1px $gray-light;
-          
+
           .yotpo-star-distribution-content{
             .review-stars{
               margin-right: 6px;
@@ -2380,7 +2392,7 @@
         &.yotpo-bottomline-empty-state {
           .write-question-button, .write-review-button {
             display: none;
-          }   
+          }
         }
       }
 
@@ -2432,7 +2444,7 @@
           .yotpo-review-stars {
             .yotpo-user-related-fields {
               display: none;
-            }  
+            }
           }
         }
 
@@ -2449,7 +2461,7 @@
               }
             }
 
-            /* User Related Fields */            
+            /* User Related Fields */
             .yotpo-user-related-fields {
               display: block;
             }
@@ -2465,7 +2477,7 @@
         .label-helpful {
           display: none;
         }
-        
+
         .yotpo-footer {
           .footer-actions {
             display: block;
@@ -2473,11 +2485,11 @@
             margin-bottom: 15px;
           }
         }
-        
+
         .yotpo-helpful {
           float: $right;
         }
-        
+
         .footer-additional-actions {
           display: inline-block;
           float: $left;
@@ -3095,7 +3107,7 @@
         display: inline-block;
       }
       .yotpo-promoted-product{
-        text-align: #{$left};  
+        text-align: #{$left};
         width: 160px;
         margin-right:14px;
         margin-left:14px;
