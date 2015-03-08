@@ -1376,7 +1376,10 @@
               }
               .yotpo-product-related-fields-bars {
                 .yotpo-rating-bars {
-                  min-width: 220px;
+                  /* FireFox Only: */
+                  @-moz-document url-prefix() {
+                     min-width: 220px;
+                  }
                 }
               }
             }
@@ -2035,7 +2038,12 @@
           .yotpo-product-related-fields-bars {
             .yotpo-rating-bars {
               margin-top: 2px;
-              min-width: 224px;
+
+              /* FireFox Only: */
+              @-moz-document url-prefix() {
+                 min-width: 224px;
+              }
+
               &:first-child {
                 margin-top: 0;
               }
