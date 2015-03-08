@@ -1374,14 +1374,6 @@
               &.yotpo-small-version {
                 display: none;
               }
-              .yotpo-product-related-fields-bars {
-                /* FireFox Only: */
-                @-moz-document url-prefix() {
-                  .yotpo-rating-bars {
-                    min-width: 220px;
-                  }
-                }
-              }
             }
           }
         }
@@ -2041,12 +2033,6 @@
 
               &:first-child {
                 margin-top: 0;
-              }
-            }
-            /* FireFox Only: */
-            @-moz-document url-prefix() {
-              .yotpo-rating-bars {
-                min-width: 224px;
               }
             }
           }
