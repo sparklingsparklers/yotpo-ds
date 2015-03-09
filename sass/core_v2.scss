@@ -578,8 +578,7 @@
       float: left;
     }
     .yotpo-product-related-fields-bars {
-      width: auto;
-      overflow: hidden;
+      float: left;
     }
 
     &.yotpo-small-version {
@@ -767,7 +766,6 @@
   }
 
   .yotpo-rating-bars{
-    float: $left;
     vertical-align: middle;
     padding-left: 20px;
     height: 17px;
