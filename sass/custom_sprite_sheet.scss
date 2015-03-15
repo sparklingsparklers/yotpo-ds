@@ -82,6 +82,27 @@
     }
   }
 
+  &.yotpo-small {
+    .promoted-products-box {
+      .yotpo-promoted-product {
+        .yotpo-review-stars {
+          .yotpo-icon {
+            width: 13px !important;
+          }
+          .yotpo-icon-star {
+            background-position: -172px -1px !important;
+          }
+          .yotpo-icon-half-star {
+            background-position: -187px -1px !important;
+          }
+          .yotpo-icon-empty-star {
+            background-position: -202px -1px !important;
+          }
+        }
+      }
+    }
+  }
+
   @mixin stars-module($size) {
     width: $size!important;
     height: $size!important;
