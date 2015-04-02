@@ -2762,7 +2762,7 @@ They are here to complement for missing ones.
 }
 /* line 2625, ../sass/core.scss */
 .yotpo.yotpo-modal-dialog {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 /* line 2631, ../sass/core.scss */
 .yotpo .yotpo-modal-dialog .yotpo-label .yotpo-icon {
