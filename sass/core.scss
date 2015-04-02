@@ -1575,7 +1575,6 @@
     display: block;
     width: $main-widget-width;
     margin: 0 auto;
-    background-color: $bg-color!important;
 
     .yotpo-icon-btn {
       display: inline-block;
@@ -2622,8 +2621,8 @@
     }
   }
 
-  &.yotpo-modal-dialog {
-    background-color: transparent!important;
+  &.yotpo-main-widget {
+    background-color: $bg-color!important;
   }
 
   .yotpo-modal-dialog {
