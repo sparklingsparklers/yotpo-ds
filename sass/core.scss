@@ -1620,6 +1620,7 @@
 
     .yotpo-form-buttons-wrapper {
       padding: 0 10px;
+      margin-bottom: 10px;
     }
 
     .yotpo-thank-you{
@@ -1683,7 +1684,7 @@
 
       &.yotpo-bottomline-2-boxes {
         position: relative;
-        height: 85px;
+        
         .yotpo-bottomline-box-1 {
           max-width: 33%;
           min-width: 220px;
@@ -1694,12 +1695,12 @@
         }
         .yotpo-bottomline-box-2 {
           float: left;
-          padding-top: 5px;
+          padding-top: 10px;
 
           /* Product Rating Fields */
           .yotpo-product-related-fields {
             border-left: solid 1px $gray-light;
-            margin-left: 28px;
+            margin: 5px 0 0 28px;
 
             .yotpo-product-related-fields-column {
               float: left;
