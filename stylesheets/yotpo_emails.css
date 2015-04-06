@@ -1,0 +1,54 @@
+/* For index.html display only */
+
+.custom-field-wrapper table {
+    border: none;
+    width: inherit;
+    border-spacing: 2px;
+    font-family: arial, sans-serif;
+    color: #000000;
+}
+.custom-field-wrapper td {
+    border: none;
+    text-align: left;
+}
+
+.large-code-example {
+    background: black !important;
+    color: white;
+    overflow: hidden;
+    text-align: left;
+    resize: none;
+    width: 80%;
+    max-width: 500px !important;
+}
+
+/* Custom Fields */
+.red-text {
+    color: #ff0000;
+}
+input {
+    margin-right: 10px;
+}
+.field-text-left {
+    text-align: left;
+}
+.field-grey-text {
+    color: #8d8d8d;
+}
+.yotpo-rating-bar {
+    width: 18px;
+    height: 6px;
+    padding: 0;
+}
+.yotpo-rating-bar-full {
+    background-color: #3085C7;
+}
+.yotpo-rating-bar-empty {
+    background-color: #E3E3E3;
+}
+.yotpo-rating-bar-divider {
+    width: 1px;
+    height: 6px;
+    background-color: white;
+    padding: 0;
+}
