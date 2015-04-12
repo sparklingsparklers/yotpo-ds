@@ -55,6 +55,10 @@ body {
 }
 .content {
   margin: 20px 0 0 10%!important;
+
+  &.wide-content {
+    margin: 0!important;
+  }
 }
 .content-full-length{
   margin: 0px!important;
@@ -68,6 +72,11 @@ section {
   border-bottom: 1px solid!important;
   padding-bottom: 30px!important;
   margin-bottom: 30px!important;
+
+  &.wide-section{
+    max-width: none!important;
+    width: 90%!important;
+  }
 
 }
 h3 {

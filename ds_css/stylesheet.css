@@ -624,15 +624,19 @@ body {
 .content {
   margin: 20px 0 0 10% !important;
 }
-
 /* line 59, ../ds_sass/_ds.scss */
+.content.wide-content {
+  margin: 0 !important;
+}
+
+/* line 63, ../ds_sass/_ds.scss */
 .content-full-length {
   margin: 0px !important;
   border-bottom: 1px solid !important;
   padding-bottom: 40px !important;
 }
 
-/* line 64, ../ds_sass/_ds.scss */
+/* line 68, ../ds_sass/_ds.scss */
 section {
   max-width: 755px !important;
   width: 100% !important;
@@ -641,8 +645,13 @@ section {
   padding-bottom: 30px !important;
   margin-bottom: 30px !important;
 }
+/* line 76, ../ds_sass/_ds.scss */
+section.wide-section {
+  max-width: none !important;
+  width: 90% !important;
+}
 
-/* line 73, ../ds_sass/_ds.scss */
+/* line 82, ../ds_sass/_ds.scss */
 h3 {
   font-family: Verdana;
   margin-bottom: 35px !important;
@@ -652,7 +661,7 @@ h3 {
   text-transform: uppercase !important;
 }
 
-/* line 81, ../ds_sass/_ds.scss */
+/* line 90, ../ds_sass/_ds.scss */
 .content ul {
   font-weight: light;
   list-style: none;
@@ -661,12 +670,12 @@ h3 {
   font-size: 15px;
 }
 
-/* line 88, ../ds_sass/_ds.scss */
+/* line 97, ../ds_sass/_ds.scss */
 bold {
   font-weight: bolder;
 }
 
-/* line 91, ../ds_sass/_ds.scss */
+/* line 100, ../ds_sass/_ds.scss */
 div.exmple-box {
   border: 1px solid black !important;
   text-align: center !important;
@@ -674,18 +683,18 @@ div.exmple-box {
   display: inline-block !important;
   width: 100% !important;
 }
-/* line 97, ../ds_sass/_ds.scss */
+/* line 106, ../ds_sass/_ds.scss */
 div.exmple-box.pull-left {
   text-align: left !important;
 }
 
-/* line 101, ../ds_sass/_ds.scss */
+/* line 110, ../ds_sass/_ds.scss */
 .small-title {
   font-size: 12px !important;
   color: grey !important;
 }
 
-/* line 105, ../ds_sass/_ds.scss */
+/* line 114, ../ds_sass/_ds.scss */
 textarea.code-example {
   background: black !important;
   color: white;
@@ -696,12 +705,12 @@ textarea.code-example {
   max-width: 400px !important;
 }
 
-/* line 114, ../ds_sass/_ds.scss */
+/* line 123, ../ds_sass/_ds.scss */
 .color-list {
   list-style: none;
 }
 
-/* line 117, ../ds_sass/_ds.scss */
+/* line 126, ../ds_sass/_ds.scss */
 .color-item {
   width: 80px;
   text-align: center;
@@ -710,7 +719,7 @@ textarea.code-example {
   min-height: 140px;
 }
 
-/* line 125, ../ds_sass/_ds.scss */
+/* line 134, ../ds_sass/_ds.scss */
 .color-circle {
   -webkit-border-radius: 50px !important;
   -moz-border-radius: 50px !important;
@@ -721,13 +730,13 @@ textarea.code-example {
   margin: 7px auto !important;
 }
 
-/* line 134, ../ds_sass/_ds.scss */
+/* line 143, ../ds_sass/_ds.scss */
 .color-circle.big {
   height: 55px;
   width: 55px;
 }
 
-/* line 139, ../ds_sass/_ds.scss */
+/* line 148, ../ds_sass/_ds.scss */
 .moblie-simulator {
   width: 200px;
   display: inline-block;
