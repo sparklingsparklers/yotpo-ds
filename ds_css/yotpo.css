@@ -3777,4 +3777,86 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   font-size: 18px;
 }
 
+/* line 6, ../sass/carousel.scss */
+.yotpo-carousel .carousel-review-author {
+  font-family: OpenSans;
+  color: #737373;
+  font-size: 12px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+  text-align: left;
+  margin-top: 8px;
+}
+/* line 15, ../sass/carousel.scss */
+.yotpo-carousel .carousel-review-body {
+  text-align: left;
+}
+/* line 18, ../sass/carousel.scss */
+.yotpo-carousel .product-image-container {
+  width: 89px;
+  border: 1px solid green;
+}
+/* line 22, ../sass/carousel.scss */
+.yotpo-carousel .y-carousel-product-image {
+  width: 89px;
+  height: 89px;
+  overflow: hidden;
+}
+/* line 27, ../sass/carousel.scss */
+.yotpo-carousel .carousel-review-product-text {
+  font-family: OpenSans;
+  color: #c6c6c6;
+  font-size: 10px;
+  /* Approximation due to font substitution */
+  font-weight: 400;
+  text-align: left;
+}
+/* line 34, ../sass/carousel.scss */
+.yotpo-carousel .yotpo-icon-star {
+  color: #ffd200;
+  font-size: 32px;
+}
+/* line 39, ../sass/carousel.scss */
+.yotpo-carousel .carousel-review-title {
+  font-family: OpenSans;
+  color: #4f4f4f;
+  font-size: 18px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+  line-height: 24px;
+}
+/* line 46, ../sass/carousel.scss */
+.yotpo-carousel .big-version {
+  border: 1px solid red;
+  height: 208px;
+  width: 403px;
+  overflow: hidden;
+}
+/* line 51, ../sass/carousel.scss */
+.yotpo-carousel .big-version .right-side {
+  width: 300px;
+  border: 1px solid purple;
+  text-align: left;
+}
+/* line 56, ../sass/carousel.scss */
+.yotpo-carousel .big-version .carousel-stars {
+  margin-bottom: 14px;
+}
+/* line 60, ../sass/carousel.scss */
+.yotpo-carousel .small-version {
+  border: 1px solid red;
+  width: 300px;
+  height: 212px;
+  overflow: hidden;
+}
+/* line 65, ../sass/carousel.scss */
+.yotpo-carousel .small-version .right-side {
+  width: 194px;
+  height: 119px;
+}
+/* line 69, ../sass/carousel.scss */
+.yotpo-carousel .small-version .carousel-review-title {
+  margin-bottom: 5px;
+}
+
 /* End Yotpo */

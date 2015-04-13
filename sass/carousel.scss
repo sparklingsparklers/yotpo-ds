@@ -1,23 +1,73 @@
+
+
+
 .yotpo-carousel {
-  border: 1px solid black;
-  .carousel-review {
+
+  .carousel-review-author {
+    font-family: OpenSans;
+    color:  #737373;
+    font-size: 12px; /* Approximation due to font substitution */
+    font-weight: 700;
+    text-align: left;
+    margin-top: 8px;
+
+  }
+  .carousel-review-body {
+    text-align: left;
+  }
+  .product-image-container {
+    width: 89px;
+    border: 1px solid green;
+  }
+  .y-carousel-product-image {
+    width: 89px;
+    height: 89px;
+    overflow: hidden;
+  }
+  .carousel-review-product-text {
+    font-family: OpenSans;
+    color:  #c6c6c6;
+    font-size: 10px; /* Approximation due to font substitution */
+    font-weight: 400;
+    text-align: left;
+  }
+  .yotpo-icon-star {
+    color: $yellow;
+    font-size: 32px;
+  }
+
+  .carousel-review-title {
+    font-family: OpenSans;
+    color:  #4f4f4f;
+    font-size: 18px; /* Approximation due to font substitution */
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .big-version{
+    border: 1px solid red;
+    height: 208px;
     width: 403px;
-    color: red;
-
-
-
-
-    
-
-
-    .left {
-      width: 70px;
-
-    }
-    .right {
+    overflow: hidden;
+    .right-side {
       width: 300px;
-      height: 208px;
+      border: 1px solid purple;
+      text-align: left;
     }
-
+    .carousel-stars {
+      margin-bottom: 14px;
+    }
+  }
+  .small-version {
+    border: 1px solid red;
+    width: 300px;
+    height: 212px;
+    overflow: hidden;
+    .right-side {
+      width: 194px;
+      height: 119px;
+    }
+    .carousel-review-title {
+      margin-bottom: 5px;
+    }
   }
 }
