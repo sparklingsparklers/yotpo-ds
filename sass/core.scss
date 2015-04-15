@@ -362,6 +362,18 @@
   .yotpo-icon-down-triangle:before {
     content: "\e61d";
   }
+  .yotpo-icon-left-arrow-thin:before {
+    content: "\e621";
+  }
+  .yotpo-icon-right-arrow-thin:before {
+    content: "\e622";
+  }
+  .yotpo-icon-quote-left:before {
+    content: "\e623";
+  }
+  .yotpo-icon-quote-right:before {
+    content: "\e624";
+  }
 
   .yotpo-icon-half-star {
     -moz-transform: scaleX($flip);
