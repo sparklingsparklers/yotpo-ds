@@ -17,7 +17,7 @@ They are here to complement for missing ones.
 }
 /* line 10, ../sass/general_rules.scss */
 .yotpo div, .yotpo span, .yotpo p, .yotpo a, .yotpo img, .yotpo i, .yotpo strong, .yotpo sup, .yotpo ul, .yotpo li, .yotpo form, .yotpo label {
-  font-family: Verdana;
+  font-family: "Open Sans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal !important;
@@ -519,7 +519,7 @@ They are here to complement for missing ones.
   display: inline-block;
   text-overflow: ellipsis;
   border: none;
-  font-family: Verdana;
+  font-family: "Open Sans";
   text-transform: uppercase;
   text-align: center;
   font-size: 12px;
@@ -665,7 +665,7 @@ They are here to complement for missing ones.
 }
 /* line 536, ../sass/core.scss */
 .yotpo input, .yotpo .y-input {
-  font-family: Verdana;
+  font-family: "Open Sans";
   height: 32px;
   min-width: 148px;
   max-width: 100%;
@@ -731,7 +731,7 @@ They are here to complement for missing ones.
 /* line 598, ../sass/core.scss */
 .yotpo .text-box, .yotpo .yotpo-text-box {
   display: initial;
-  font-family: Verdana;
+  font-family: "Open Sans";
   height: 68px;
   min-width: 148px;
   color: #737373;
@@ -1002,7 +1002,7 @@ They are here to complement for missing ones.
 /* line 860, ../sass/core.scss */
 .yotpo .yotpo-nav {
   background: transparent;
-  font-family: Verdana;
+  font-family: "Open Sans";
   border-color: rgba(0, 39, 59, 0.08);
   display: block;
   position: relative;
@@ -1067,7 +1067,7 @@ They are here to complement for missing ones.
   /*text-transform: uppercase;*/
   padding-right: 18px;
   font-size: 15px;
-  font-family: Verdana;
+  font-family: "Open Sans";
   display: list-item;
 }
 /* line 928, ../sass/core.scss */

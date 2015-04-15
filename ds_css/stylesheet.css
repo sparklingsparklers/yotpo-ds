@@ -742,6 +742,20 @@ textarea.code-example {
   display: inline-block;
 }
 
+/* line 154, ../ds_sass/_ds.scss */
+.icon-holders .icon-holder {
+  width: 50%;
+  float: left;
+}
+/* line 158, ../ds_sass/_ds.scss */
+.icon-holders .icon-holder .yotpo-icon {
+  margin-right: 10px;
+}
+/* line 161, ../ds_sass/_ds.scss */
+.icon-holders .icon-holder .yotpo-icon.yotpo-icon-cross {
+  position: static;
+}
+
 /* End DS */
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */

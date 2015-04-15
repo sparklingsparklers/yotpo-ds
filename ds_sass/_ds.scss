@@ -150,6 +150,21 @@ textarea.code-example {
   display: inline-block;
 }
 
+.icon-holders {
+  .icon-holder {
+    width: 50%;
+    float: left;
+
+    .yotpo-icon {
+      margin-right: 10px;
+
+      &.yotpo-icon-cross {
+        position: static;
+      }
+    }
+  }
+}
+
 
 /* End DS */
 
