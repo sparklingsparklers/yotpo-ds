@@ -7,7 +7,7 @@
         <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="ds_css/stylesheet.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="ds_css/yotpo.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="stylesheets/yotpo_emails.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="ds_css/yotpo_emails.css" media="screen" />
         <script src="javascripts/jquery-1.11.0.js"></script>
         <script src="javascripts/main.js"></script>
         <script src="javascripts/yotpo.js"></script>
@@ -24,7 +24,7 @@
         </style>
     </head>
 
-    <body>
+    <body onresize="windowResize()">
         <div>
             <header>
                 <div class="inner">
@@ -35,99 +35,372 @@
             </header>
 
             <div class="content-wrapper">
+                <br /><br />
+                <h3>Typogrphy</h3>
+                <section>
+                    <div class='side-part'>Base Text</div>
+                    <div class='content yotpo'>
+                        <ul>
+                            <li class="param">Size:<bold>14</bold></li>
+                            <li class="param">Line height:<bold>20</bold></li>
+                        </ul>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box">Base text</div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <section>
+                    <div class='side-part'>XL Text</div>
+                    <div class='content'>
+                        <ul>
+                            <li class="param">Size:<bold>21</bold></li>
+                        </ul>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="text-xl">XL Text</div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="text-xl">XL Text</div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <section>
+                    <div class='side-part'>Large Text</div>
+                    <div class='content'>
+                        <ul>
+                            <li class="param">Size:<bold>15</bold></li>
+                        </ul>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="text-l">Large Text</div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="text-l">Large Text</div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <section>
+                    <div class='side-part'>Medium Text</div>
+                    <div class='content'>
+                        <ul>
+                            <li class="param">Size:<bold>13</bold></li>
+                        </ul>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="text-m">Medium Text</div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="text-m">Medium Text</div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <section>
+                    <div class='side-part'>Small Text</div>
+                    <div class='content'>
+                        <ul>
+                            <li class="param">Size:<bold>12</bold></li>
+                        </ul>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="text-s">Small Text</div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="text-s">Small Text</div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <section>
+                    <div class='side-part'>XS Text</div>
+                    <div class='content'>
+                        <ul>
+                            <li class="param">Size:<bold>11</bold></li>
+                        </ul>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="text-xs">XS Text</div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="text-xs">XS Text</div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+    
+                <h3>Emphasis</h3>
+                <section>
+                    <div class='side-part font-bold'>Bold</div>
+                    <div class='content yotpo'>
+                        <ul>
+                            <li class="param">Weight: Bold</li>
+                        </ul>
+                    </div>
+
+                    <div class='side-part font-light font-upper'>UPPER CASE</div>
+                    <div class='content yotpo'>
+                        <ul>
+                            <li class="param">Transform: Uppercase</li>
+                        </ul>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <h3>Links</h3>
+                <section>
+                    <div class='side-part font-bold'>Regular State</div>
+                    <div class='content yotpo'>
+                        <ul>
+                            <li class="param">text-decoration: <bold>none</bold></li>
+                            <li class="param">color: <bold>primary</bold></li>
+                        </ul>
+                    </div>
+                    <div class='side-part font-bold'>Hover State:</div>
+                    <div class='content yotpo'>
+                        <ul>
+                            <li class="param">color: <bold>primaryD1</bold></li>
+                        </ul>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box">
+                            <a href="#">click me</a>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <h3>BOXES</h3>
+                <section class='preview-boxes'>
+                    <div class='side-part font-bold'>BOX</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="regular-box">
+                                <div class="inner-box"></div>
+                            </div>
+                        </div>
+
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="regular-box"></div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+
+
+
+                    <div class='side-part font-bold'>SMALL-BOX</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="small-box">
+                                <div class="inner-box"></div>
+                            </div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="small-box"></div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+
+
+                    <div class='side-part font-bold'>REGULAR-SMALL-BOX</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="regular-small-box">
+                                <div class="inner-box"></div>
+                            </div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="regular-small-box"></div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+
+                    <div class='side-part font-bold'>POP-UP-BOX-SMALL</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="yotpo-popup-box-small">
+                                <div class="inner-box"></div>
+                            </div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="yotpo-popup-box-small"></div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+
+                    <div class='side-part font-bold'>POP-UP-BOX-MEDIUM</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="yotpo-popup-box-medium">
+                                <div class="inner-box"></div>
+                            </div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="yotpo-popup-box-medium"></div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+
+                    <div class='side-part font-bold'>POP-UP-BOX-LARGE</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="yotpo-popup-box-large">
+                                <div class="inner-box"></div>
+                            </div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<div class="yotpo-popup-box-large"></div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
 
                 <h3>STAR DISTRIBUTION</H3>
                 <section>
                     <div class="content">
-                        <div class="exmple-box yotpo">
-
-                            <div class="yotpo-star-distribution">
-                                <div class="yotpo-star-distribution-content">
-                                    <div class="yotpo-distibutions-stars">
-                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="5">
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <div class="yotpo-clr"></div>
-                                        </span>
-                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="5">
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
-                                            <div class="yotpo-clr"></div>
-                                        </span>
-                                        <span class="review-stars" data-score-distribution="3">
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
-                                            <div class="yotpo-clr"></div>
-                                        </span>
-                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="2">
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
-                                            <div class="yotpo-clr"></div>
-                                        </span>
-                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="1">
-                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
-                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
-                                            <div class="yotpo-clr"></div>
-                                        </span>
-                                    </div>
-                                    <div class="yotpo-distibutions-sum-reviews">
-                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="5">(14)</span>
-                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="4">(14)</span>
-                                        <span class="yotpo-sum-reviews text-xs font-color-primary" data-score-distribution="3">(1444)</span>
-                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="2">(14)</span>
-                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="1">(14)</span>
-                                    </div>
-                                    <div class="yotpo-distributions-graphs">
-                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="5">
-                                            <div class="yotpo-star-distribution-graph-background"></div>
-                                            <div class="yotpo-star-distribution-score-wrapper">
-                                                <div class="yotpo-star-distribution-graph-score"></div>
+                        <div class="exmple-box">
+                            <div class="yotpo yotpo-main-widget">
+                                <div class="yotpo-display-wrapper">
+                                    <span class="yotpo-display-wrapper" style="visibility: hidden;">
+                                        <div class="yotpo-regular-box yotpo-bottomline yotpo-bottomline-2-boxes">
+                                            <div class="yotpo-bottomline-box-2">
+                                                <div class="yotpo-star-distribution">
+                                                    <div class="yotpo-star-distribution-content">
+                                                        <div class="yotpo-distibutions-stars">
+                                                            <span class="review-stars yotpo-distribution-clickable" data-score-distribution="5">
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <div class="yotpo-clr"></div>
+                                                            </span>
+                                                            <span class="review-stars yotpo-distribution-clickable" data-score-distribution="5">
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                                <div class="yotpo-clr"></div>
+                                                            </span>
+                                                            <span class="review-stars" data-score-distribution="3">
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                                <div class="yotpo-clr"></div>
+                                                            </span>
+                                                            <span class="review-stars yotpo-distribution-clickable" data-score-distribution="2">
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                                <div class="yotpo-clr"></div>
+                                                            </span>
+                                                            <span class="review-stars yotpo-distribution-clickable" data-score-distribution="1">
+                                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                                <div class="yotpo-clr"></div>
+                                                            </span>
+                                                        </div>
+                                                        <div class="yotpo-distibutions-sum-reviews">
+                                                            <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="5">(14)</span>
+                                                            <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="4">(14)</span>
+                                                            <span class="yotpo-sum-reviews text-xs font-color-primary" data-score-distribution="3">(1444)</span>
+                                                            <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="2">(14)</span>
+                                                            <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="1">(14)</span>
+                                                        </div>
+                                                        <div class="yotpo-distributions-graphs">
+                                                            <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="5">
+                                                                <div class="yotpo-star-distribution-graph-background"></div>
+                                                                <div class="yotpo-star-distribution-score-wrapper">
+                                                                    <div class="yotpo-star-distribution-graph-score"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="4">
+                                                                <div class="yotpo-star-distribution-graph-background"></div>
+                                                                <div class="yotpo-star-distribution-score-wrapper">
+                                                                    <div class="yotpo-star-distribution-graph-score"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="yotpo-star-distribution-graph" data-score-distribution="3">
+                                                                <div class="yotpo-star-distribution-graph-background"></div>
+                                                                <div class="yotpo-star-distribution-score-wrapper">
+                                                                    <div class="yotpo-star-distribution-graph-score"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="yotpo-star-distribution-graph yotpo-distribution-clickable yotpo-distribution-unactive" data-score-distribution="2">
+                                                                <div class="yotpo-star-distribution-graph-background"></div>
+                                                                <div class="yotpo-star-distribution-score-wrapper">
+                                                                    <div class="yotpo-star-distribution-graph-score"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="1">
+                                                                <div class="yotpo-star-distribution-graph-background"></div>
+                                                                <div class="yotpo-star-distribution-score-wrapper">
+                                                                    <div class="yotpo-star-distribution-graph-score"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="yotpo-clr"></div>
+                                                    <div class="yotpo-star-distribution-footer text-xs">
+                                                        <span class="yotpo-star-distribution-show-all">Show all reviews</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="4">
-                                            <div class="yotpo-star-distribution-graph-background"></div>
-                                            <div class="yotpo-star-distribution-score-wrapper">
-                                                <div class="yotpo-star-distribution-graph-score"></div>
-                                            </div>
-                                        </div>
-                                        <div class="yotpo-star-distribution-graph" data-score-distribution="3">
-                                            <div class="yotpo-star-distribution-graph-background"></div>
-                                            <div class="yotpo-star-distribution-score-wrapper">
-                                                <div class="yotpo-star-distribution-graph-score"></div>
-                                            </div>
-                                        </div>
-                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable yotpo-distribution-unactive" data-score-distribution="2">
-                                            <div class="yotpo-star-distribution-graph-background"></div>
-                                            <div class="yotpo-star-distribution-score-wrapper">
-                                                <div class="yotpo-star-distribution-graph-score"></div>
-                                            </div>
-                                        </div>
-                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="1">
-                                            <div class="yotpo-star-distribution-graph-background"></div>
-                                            <div class="yotpo-star-distribution-score-wrapper">
-                                                <div class="yotpo-star-distribution-graph-score"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="yotpo-clr"></div>
-                                <div class="yotpo-star-distribution-footer text-xs">
-                                    <span class="yotpo-star-distribution-show-all">Show all reviews</span>
+                                    </span>
+                                    <div class="yotpo-clr"></div>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +500,7 @@
                         </div>
                     </div>
                 </section>
-
+                
                 <h3>Sorting</h3>
                 <section>
 
@@ -777,6 +1050,1299 @@
                 </div>
             </section>
 
+                <h3>Form Customization Fileds (Mulitple Rating)</h3>
+                <section class="wide-section">
+                    <div class="content wide-content">
+                        <div class="small-title">Example:</div>
+
+                        <div class="yotpo yotpo-main-widget">
+                            <div class="yotpo-display-wrapper">
+                                <div class="yotpo-label yotpo-small-box">
+                                    <span class="yotpo-logo-title"><a class="" href="http://my.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=branding_link_reviews_widget_v2&amp;utm_medium=widget&amp;utm_source=track.com" target="_blank">Reviews by</a></span>
+                                    <div class="yotpo-icon-btn-big transparent-color-btn"><a class="yotpo-icon yotpo-icon-yotpo-logo" href="http://my.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=branding_link_reviews_widget_v2&amp;utm_medium=widget&amp;utm_source=track.com" target="_blank"></a></div>
+                                    <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-question-button">
+                                        <span class="yotpo-icon yotpo-icon-double-bubble"></span>
+                                        <span class="yotpo-icon-button-text">ask a question</span>
+                                    </div>
+                                    <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-button write-review-button">
+                                        <span class="yotpo-icon yotpo-icon-write"></span>
+                                        <span class="yotpo-icon-button-text">write a review</span>
+                                    </div>
+                                    <div class="yotpo-clr"></div>
+                                </div>
+
+                                <span class="yotpo-display-wrapper" style="visibility: hidden;">
+                                    <div class="yotpo-regular-box yotpo-bottomline yotpo-bottomline-2-boxes">
+                                        <div class="yotpo-bottomline-box-1 pull-left">
+                                            <span class="yotpo-stars">
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                            </span>
+                                            <span class="yotpo-sum-reviews"><span class="font-color-gray based-on">2 Reviews</span></span>
+                                            <div class="yotpo-clr"></div>
+                                            <div class="questions pull-left">
+                                                <a href="#" class="text-m ask-question">
+                                                0 Questions \ 0 Answers
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="yotpo-bottomline-box-2">
+                                            <div class="yotpo-product-related-fields">
+                                                <div class="yotpo-product-related-fields-column">
+                                                    <div class="yotpo-product-related-fields-names">
+                                                        <div class="yotpo-product-related-field-name text-s">A very:</div>
+                                                        <div class="yotpo-product-related-field-name text-s">A very very long title:</div>
+                                                        <div class="yotpo-product-related-field-name text-s">A very very:</div>
+                                                        <div class="yotpo-product-related-field-name text-s">A very very long:</div>
+                                                    </div>
+                                                    <div class="yotpo-product-related-fields-bars">
+                                                        <div class="yotpo-rating-bars">
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-clr"></div>
+                                                        </div>
+                                                        <div class="yotpo-rating-bars">
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-clr"></div>
+                                                        </div>
+                                                        <div class="yotpo-rating-bars">
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-clr"></div>
+                                                        </div>
+                                                        <div class="yotpo-rating-bars">
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-clr"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="yotpo-clr"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                                <div class="yotpo-clr"></div>
+                            </div>
+                        </div>
+
+                        <div class="small-title" style="margin-top: 40px;">Code:</div>
+                        <div class="exmple-box yotpo">
+                            <textarea class="code-example" rows="32">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <h3>STAR DISTRIBUTION</h3>
+                <section class="wide-section">
+
+
+                    <div class="content wide-content">
+
+                        <div class="small-title">Example:</div>
+
+                        <div class="yotpo yotpo-main-widget">
+                            <div class="yotpo-display-wrapper">
+                                <div class="yotpo-label yotpo-small-box">
+                                    <span class="yotpo-logo-title"><a class="" href="http://my.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=branding_link_reviews_widget_v2&amp;utm_medium=widget&amp;utm_source=track.com" target="_blank">Reviews by</a></span>
+                                    <div class="yotpo-icon-btn-big transparent-color-btn"><a class="yotpo-icon yotpo-icon-yotpo-logo" href="http://my.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=branding_link_reviews_widget_v2&amp;utm_medium=widget&amp;utm_source=track.com" target="_blank"></a></div>
+                                    <div class="yotpo-clr"></div>
+                                </div>
+
+                                <span class="yotpo-display-wrapper" style="visibility: hidden;">
+                                    <div class="yotpo-regular-box yotpo-bottomline yotpo-bottomline-2-boxes">
+                                        <div class="yotpo-bottomline-box-1 pull-left">
+                                            <span class="yotpo-stars">
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                            </span>
+                                            <span class="yotpo-sum-reviews"><span class="font-color-gray based-on">2 Reviews</span></span>
+                                            <div class="yotpo-clr"></div>
+                                            <div class="questions pull-left">
+                                                <a href="#" class="text-m ask-question">
+                                                0 Questions \ 0 Answers
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-button write-review-button">
+                                                <span class="yotpo-icon yotpo-icon-write"></span>
+                                                <span class="yotpo-icon-button-text">write a review</span>
+                                            </div>
+                                            <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-question-button">
+                                                <span class="yotpo-icon yotpo-icon-double-bubble"></span>
+                                                <span class="yotpo-icon-button-text">ask a question</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="yotpo-bottomline-box-2">
+                                            <div class="yotpo-star-distribution">
+                                                <div class="yotpo-star-distribution-content">
+                                                    <div class="yotpo-distibutions-stars">
+                                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="5">
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <div class="yotpo-clr"></div>
+                                                        </span>
+                                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="5">
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <div class="yotpo-clr"></div>
+                                                        </span>
+                                                        <span class="review-stars" data-score-distribution="3">
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <div class="yotpo-clr"></div>
+                                                        </span>
+                                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="2">
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <div class="yotpo-clr"></div>
+                                                        </span>
+                                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="1">
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <div class="yotpo-clr"></div>
+                                                        </span>
+                                                    </div>
+                                                    <div class="yotpo-distibutions-sum-reviews">
+                                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="5">(14)</span>
+                                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="4">(14)</span>
+                                                        <span class="yotpo-sum-reviews text-xs font-color-primary" data-score-distribution="3">(1444)</span>
+                                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="2">(14)</span>
+                                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="1">(14)</span>
+                                                    </div>
+                                                    <div class="yotpo-distributions-graphs">
+                                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="5">
+                                                            <div class="yotpo-star-distribution-graph-background"></div>
+                                                            <div class="yotpo-star-distribution-score-wrapper">
+                                                                <div class="yotpo-star-distribution-graph-score"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="4">
+                                                            <div class="yotpo-star-distribution-graph-background"></div>
+                                                            <div class="yotpo-star-distribution-score-wrapper">
+                                                                <div class="yotpo-star-distribution-graph-score"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="yotpo-star-distribution-graph" data-score-distribution="3">
+                                                            <div class="yotpo-star-distribution-graph-background"></div>
+                                                            <div class="yotpo-star-distribution-score-wrapper">
+                                                                <div class="yotpo-star-distribution-graph-score"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable yotpo-distribution-unactive" data-score-distribution="2">
+                                                            <div class="yotpo-star-distribution-graph-background"></div>
+                                                            <div class="yotpo-star-distribution-score-wrapper">
+                                                                <div class="yotpo-star-distribution-graph-score"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="1">
+                                                            <div class="yotpo-star-distribution-graph-background"></div>
+                                                            <div class="yotpo-star-distribution-score-wrapper">
+                                                                <div class="yotpo-star-distribution-graph-score"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="yotpo-clr"></div>
+                                                <div class="yotpo-star-distribution-footer text-xs">
+                                                    <span class="yotpo-star-distribution-show-all">Show all reviews</span>
+                                                </div>
+                                            </div>
+                                            <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-question-button">
+                                                <span class="yotpo-icon yotpo-icon-double-bubble"></span>
+                                                <span class="yotpo-icon-button-text">ask a question</span>
+                                            </div>
+                                            <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-button write-review-button">
+                                                <span class="yotpo-icon yotpo-icon-write"></span>
+                                                <span class="yotpo-icon-button-text">write a review</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                                <div class="yotpo-clr"></div>
+                            </div>
+                        </div>
+
+                        <div class="small-title" style="margin-top: 40px;">Code:</div>
+                        <div class="exmple-box yotpo">
+                            <textarea class="code-example" rows="32">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <h3>STAR DISTRIBUTION & FORM CUSTOMIZATION (Mulitple Rating) FILEDS</h3>
+                <section class="wide-section">
+
+
+                    <div class="content wide-content">
+
+                        <div class="small-title">Example:</div>
+
+                        <div class="yotpo yotpo-main-widget">
+                            <div class="yotpo-display-wrapper">
+                                <div class="yotpo-label yotpo-small-box">
+                                    <span class="yotpo-logo-title"><a class="" href="http://my.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=branding_link_reviews_widget_v2&amp;utm_medium=widget&amp;utm_source=track.com" target="_blank">Reviews by</a></span>
+                                    <div class="yotpo-icon-btn-big transparent-color-btn"><a class="yotpo-icon yotpo-icon-yotpo-logo" href="http://my.yotpo.com/landing_page?redirect=http%3A%2F%2Flp.yotpo.com%2Ffree-review-app.html&amp;utm_campaign=branding_link_reviews_widget_v2&amp;utm_medium=widget&amp;utm_source=track.com" target="_blank"></a></div>
+                                    <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-question-button">
+                                        <span class="yotpo-icon yotpo-icon-double-bubble"></span>
+                                        <span class="yotpo-icon-button-text">ask a question</span>
+                                    </div>
+                                    <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-button write-review-button">
+                                        <span class="yotpo-icon yotpo-icon-write"></span>
+                                        <span class="yotpo-icon-button-text">write a review</span>
+                                    </div>
+                                    <div class="yotpo-clr"></div>
+                                </div>
+
+                                <span class="yotpo-display-wrapper" style="visibility: hidden;">
+                                    <div class="yotpo-regular-box yotpo-bottomline yotpo-bottomline-3-boxes">
+                                        <div class="yotpo-bottomline-box-1 pull-left">
+                                            <span class="yotpo-stars">
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                            </span>
+                                            <span class="yotpo-sum-reviews"><span class="font-color-gray based-on">2 Reviews</span></span>
+                                            <div class="yotpo-clr"></div>
+                                            <div class="questions pull-left">
+                                                <a href="#" class="text-m ask-question">
+                                                0 Questions \ 0 Answers
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-button write-review-button">
+                                                <span class="yotpo-icon yotpo-icon-write"></span>
+                                                <span class="yotpo-icon-button-text">write a review</span>
+                                            </div>
+                                            <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-question-button">
+                                                <span class="yotpo-icon yotpo-icon-double-bubble"></span>
+                                                <span class="yotpo-icon-button-text">ask a question</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="yotpo-bottomline-box-2">
+                                            <div class="yotpo-star-distribution">
+                                                <div class="yotpo-star-distribution-content">
+                                                    <div class="yotpo-distibutions-stars">
+                                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="5">
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <div class="yotpo-clr"></div>
+                                                        </span>
+                                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="5">
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <div class="yotpo-clr"></div>
+                                                        </span>
+                                                        <span class="review-stars" data-score-distribution="3">
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <div class="yotpo-clr"></div>
+                                                        </span>
+                                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="2">
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <div class="yotpo-clr"></div>
+                                                        </span>
+                                                        <span class="review-stars yotpo-distribution-clickable" data-score-distribution="1">
+                                                            <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <span class="yotpo-icon yotpo-icon-empty-star pull-left"></span>
+                                                            <div class="yotpo-clr"></div>
+                                                        </span>
+                                                    </div>
+                                                    <div class="yotpo-distibutions-sum-reviews">
+                                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="5">(14)</span>
+                                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="4">(14)</span>
+                                                        <span class="yotpo-sum-reviews text-xs font-color-primary" data-score-distribution="3">(1444)</span>
+                                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="2">(14)</span>
+                                                        <span class="yotpo-sum-reviews text-xs font-color-primary yotpo-distribution-clickable" data-score-distribution="1">(14)</span>
+                                                    </div>
+                                                    <div class="yotpo-distributions-graphs">
+                                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="5">
+                                                            <div class="yotpo-star-distribution-graph-background"></div>
+                                                            <div class="yotpo-star-distribution-score-wrapper">
+                                                                <div class="yotpo-star-distribution-graph-score"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="4">
+                                                            <div class="yotpo-star-distribution-graph-background"></div>
+                                                            <div class="yotpo-star-distribution-score-wrapper">
+                                                                <div class="yotpo-star-distribution-graph-score"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="yotpo-star-distribution-graph" data-score-distribution="3">
+                                                            <div class="yotpo-star-distribution-graph-background"></div>
+                                                            <div class="yotpo-star-distribution-score-wrapper">
+                                                                <div class="yotpo-star-distribution-graph-score"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable yotpo-distribution-unactive" data-score-distribution="2">
+                                                            <div class="yotpo-star-distribution-graph-background"></div>
+                                                            <div class="yotpo-star-distribution-score-wrapper">
+                                                                <div class="yotpo-star-distribution-graph-score"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="yotpo-star-distribution-graph yotpo-distribution-clickable" data-score-distribution="1">
+                                                            <div class="yotpo-star-distribution-graph-background"></div>
+                                                            <div class="yotpo-star-distribution-score-wrapper">
+                                                                <div class="yotpo-star-distribution-graph-score"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="yotpo-clr"></div>
+                                                <div class="yotpo-star-distribution-footer text-xs">
+                                                    <span class="yotpo-star-distribution-show-all">Show all reviews</span>
+                                                </div>
+                                            </div>
+                                            <div class="yotpo-product-related-fields">
+                                                <div class="yotpo-product-related-fields-column">
+                                                    <div class="yotpo-product-related-fields-names">
+                                                        <div class="yotpo-product-related-field-name text-s">A very:</div>
+                                                        <div class="yotpo-product-related-field-name text-s">A very very long title:</div>
+                                                        <div class="yotpo-product-related-field-name text-s">A very very:</div>
+                                                        <div class="yotpo-product-related-field-name text-s">A very very long:</div>
+                                                    </div>
+                                                    <div class="yotpo-product-related-fields-bars">
+                                                        <div class="yotpo-rating-bars">
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-clr"></div>
+                                                        </div>
+                                                        <div class="yotpo-rating-bars">
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-clr"></div>
+                                                        </div>
+                                                        <div class="yotpo-rating-bars">
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-clr"></div>
+                                                        </div>
+                                                        <div class="yotpo-rating-bars">
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                            <div class="yotpo-product-related-field-score-divider"></div>
+                                                            <div class="yotpo-product-related-field-score-bar"></div>
+                                                            <div class="yotpo-clr"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="yotpo-clr"></div>
+                                                </div>
+                                            </div>
+                                            <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-question-button">
+                                                <span class="yotpo-icon yotpo-icon-double-bubble"></span>
+                                                <span class="yotpo-icon-button-text">ask a question</span>
+                                            </div>
+                                            <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-button write-review-button">
+                                                <span class="yotpo-icon yotpo-icon-write"></span>
+                                                <span class="yotpo-icon-button-text">write a review</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="yotpo-bottomline-box-3 yotpo-hidden">
+                                        </div>
+                                    </div>
+                                </span>
+                                <div class="yotpo-clr"></div>
+                            </div>
+                        </div>
+
+                        <div class="small-title" style="margin-top: 40px;">Code:</div>
+                        <div class="exmple-box yotpo">
+                            <textarea class="code-example" rows="32">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <h3>Review & Form Customization (Mulitple Rating) FIELDS</h3>
+                <section class="wide-section">
+                    <div class="content wide-content">
+                        <div class="small-title">Example:</div>
+
+                        <div class="yotpo yotpo-main-widget" data-product-id="336305857" data-name="ETUDE" data-url="" data-image-url="#" data-description="#">
+                            <div class="yotpo-display-wrapper" style="visibility: hidden;">
+                                <div class="yotpo-nav-content">
+                                    <div class="yotpo-reviews yotpo-active" id="00f8d2f59557">
+                                        <!-- Start Review -->
+                                        <div class="yotpo-review yotpo-regular-box" data-review-id="2282652">
+                                            <div class="yotpo-header yotpo-verified-buyer">
+                                                <span class="yotpo-icon-profile yotpo-header-element pull-left">
+                                                    <label class="yotpo-user-letter">J</label>
+                                                    <span class="yotpo-icon yotpo-icon-circle-checkmark yotpo-action-hover" data-type="toggleFade" data-target="yotpo-tool-tip"></span>
+                                                </span>
+                                                <div class="yotpo-header-element">
+                                                    <label class="y-label yotpo-user-name yotpo-font-bold pull-left">Jane Y.</label>
+                                                    <div class="label-with-tooltip pull-left">
+                                                        <span class="y-label yotpo-user-title yotpo-action-hover" data-type="toggleFade" data-target="yotpo-tool-tip">Verified Buyer</span>
+                                                        <div class="yotpo-tool-tip" data-user-type="yotpo-verified-buyer" style="-webkit-transition: 0.2s; transition: 0.2s; opacity: 0; display: none;">
+                                                            <div class="tool-tip-header">
+                                                                <span>What is a</span>
+                                                                <span class="header-green">Verified Buyer</span>
+                                                            </div>
+                                                            <div class="tool-tip-content">
+                                                                A Verified Buyer is a user who has purchased the reviewed product through our store.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="yotpo-clr"></div>
+                                                    <span class="yotpo-review-stars">
+                                                        <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                        <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                        <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                        <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                        <span class="yotpo-icon yotpo-icon-star pull-left"></span>
+                                                        <div class="yotpo-clr"></div>
+                                                        <div class="yotpo-user-related-fields">
+                                                            <div class="yotpo-user-field">
+                                                                <span class="yotpo-user-field-description text-s">skills:</span>
+                                                                <span class="yotpo-user-field-answer text-s">Semi-pro Photographer</span>
+                                                            </div>
+                                                            <div class="yotpo-user-field">
+                                                                <span class="yotpo-user-field-description text-s">popular use:</span>
+                                                                <span class="yotpo-user-field-answer text-s">Nature, Weddings, Urban view</span>
+                                                            </div>
+                                                            <div class="yotpo-clr"></div>
+                                                        </div>
+                                                    </span>
+                                                    <div class="yotpo-clr"></div>
+                                                </div>
+                                                <div class="yotpo-header-element yotpo-header-actions">
+                                                    <label class="y-label yotpo-review-date">10/01/14</label>
+                                                </div>
+                                            </div>
+                                            <div class="yotpo-main">
+                                                <div class="yotpo-multiple-rating-fields">
+                                                    <div class="yotpo-user-related-fields">
+                                                        <div class="yotpo-user-field">
+                                                            <span class="yotpo-user-field-description text-s">color:</span>
+                                                            <span class="yotpo-user-field-answer text-s">yellow</span>
+                                                        </div>
+                                                        <div class="yotpo-clr"></div>
+                                                    </div>
+                                                    <div class="yotpo-product-related-fields">
+                                                        <div class="yotpo-product-related-wrapper">
+                                                            <div class="yotpo-product-related-fields-column">
+                                                                <div class="yotpo-product-related-fields-names">
+                                                                    <div class="yotpo-product-related-field-name text-s">user satisfaction:</div>
+                                                                    <div class="yotpo-product-related-field-name text-s">shipment:</div>
+                                                                    <div class="yotpo-product-related-field-name text-s">tests required:</div>
+                                                                </div>
+                                                                <div class="yotpo-product-related-fields-bars">
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="yotpo-clr"></div>
+                                                            </div>
+                                                            <div class="yotpo-product-related-fields-column">
+                                                                <div class="yotpo-product-related-fields-names">
+                                                                    <div class="yotpo-product-related-field-name text-s">repackaged:</div>
+                                                                    <div class="yotpo-product-related-field-name text-s">sample:</div>
+                                                                    <div class="yotpo-product-related-field-name text-s">product listing:</div>
+                                                                </div>
+                                                                <div class="yotpo-product-related-fields-bars">
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="yotpo-clr"></div>
+                                                            </div>
+
+                                                            <!-- Single column data for yotpo-small mode -->
+                                                            <div class="yotpo-product-related-fields-column yotpo-small-version">
+                                                                <div class="yotpo-product-related-fields-names">
+                                                                    <div class="yotpo-product-related-field-name text-s">user satisfaction:</div>
+                                                                    <div class="yotpo-product-related-field-name text-s">shipment:</div>
+                                                                    <div class="yotpo-product-related-field-name text-s">tests required:</div>
+                                                                    <div class="yotpo-product-related-field-name text-s">repackaged:</div>
+                                                                    <div class="yotpo-product-related-field-name text-s">sample:</div>
+                                                                    <div class="yotpo-product-related-field-name text-s">product listing:</div>
+                                                                </div>
+                                                                <div class="yotpo-product-related-fields-bars">
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                    <div class="yotpo-rating-bars ">
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                                                        <div class="yotpo-clr"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="yotpo-clr"></div>
+                                                            </div>
+                                                            <div class="yotpo-clr"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-title yotpo-font-bold">
+                                                    I love this stuff. Smells
+                                                </div>
+                                                <div class="yotpo-clr"></div>
+                                                <div class="yotpo-review-wrapper">
+                                                    <div class="content-review">
+                                                        I love this stuff. Smells like candy and makes my lips feel super soft and silky! My lips are highly pigmented but this stuff is so amazing that even though it's semi-sheer, I still get the color I'm supposed to get. Wasn't sure if it was going to happen. Great price for lipstick... definitely buying more of these!
+                                                    </div>
+                                                </div>
+                                                <a href="#" target="_blank">
+                                                    <div data-product-id="2534649" class="y-label product-link">On ETUDE Sweet Recipe Dear My Jelly Lips Talk
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="yotpo-footer">
+                                                <div class="footer-actions">
+                                                    <span class="yotpo-action" data-type="toggleFade" data-target="share-review">
+                                                        <span class="yotpo-icon yotpo-icon-share"></span>
+                                                        <label class="y-label">share</label>
+                                                        <span class="yotpo-icon yotpo-icon-seperator"></span>
+                                                    </span>
+                                                    <span class="share-options-wrapper">
+                                                        <span class="share-options share-review" style="-webkit-transition: 0.2s; transition: 0.2s; opacity: 1; display: inherit;">
+                                                            <label class="y-label yotpo-action">
+                                                                <a class="social-link popup-link" data-network="facebook" href="#"><i class="facebook share">facebook</i></a>
+                                                            </label>
+                                                            <span class="yotpo-icon yotpo-icon-dot"></span>
+                                                            <label class="y-label yotpo-action">
+                                                                <a class="social-link popup-link" data-network="twitter" href="#"><i class="twitter share">twitter</i></a>
+                                                            </label>
+                                                            <span class="yotpo-icon yotpo-icon-dot"></span>
+                                                            <label class="y-label yotpo-action">
+                                                                <a class="social-link popup-link" data-network="LinkedIn" href="#"><i class="LinkedIn share">LinkedIn</i></a>
+                                                            </label>
+                                                            <span class="yotpo-icon yotpo-icon-dot"></span>
+                                                            <label class="y-label yotpo-action">
+                                                                <a class="social-link popup-link" data-network="google" href="#"><i class="google share">google</i></a>
+                                                            </label>
+                                                            <span class="yotpo-icon yotpo-icon-separator"></span>
+                                                            <span class="yotpo-icon yotpo-icon-seperator"></span>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="yotpo-helpful">
+                                                    <label class="y-label label-helpful">Was this review helpful?</label>
+                                                    <label class="y-label yotpo-sum vote-sum" data-type="up">0</label>
+                                                    <div class="yotpo-icon-btn-small transparent-color-btn vote-btn" data-type="up">
+                                                        <span class="yotpo-icon yotpo-icon-thumbs-up"></span>
+                                                    </div>
+                                                    <label class="y-label yotpo-sum vote-sum" data-type="down">0</label>
+                                                    <div class="yotpo-icon-btn-small transparent-color-btn vote-btn" data-type="down">
+                                                        <span class="yotpo-icon yotpo-icon-thumbs-down"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="footer-additional-actions">
+                                                    <label class="y-label yotpo-review-date">10/01/14</label>
+                                                </div>
+                                                <div class="yotpo-clr"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-title" style="margin-top: 40px;">Code:</div>
+                    <div class="exmple-box yotpo">
+                        <textarea class="code-example" rows="32">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                </section>
+
+                <section>
+                    <div class='side-part font-bold'>INPUT</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <input type="text" class="input text-m" value="this is an input"></input>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<input type="text" class="input" value="this is an input"></input>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <section>
+                    <div class='side-part font-bold'>TEXT BOX</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <textarea class="input yotpo-text-box text-m">
+this is a text box    
+                            </textarea>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+<textarea class="input yotpo-text-box text-m">this is a text box&lt;/textarea>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <section>
+                    <div class='side-part font-bold'>INPUT & TEXT BOX</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box input-text-exmaple yotpo">
+                            <div class="form-group">
+                                <div class="form-element">
+                                    <label class="y-label  text-m">one two:</label>
+                                    <input type="text" class="y-input text-m"></input>
+                                </div>
+
+                                <div class="form-element">
+                                    <label class="y-label  text-m">one two three four five six seven:</label>
+                                    <textarea class="y-input yotpo-text-box text-m">Yotpo LTD</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example" rows="13">
+<div class="form-group">
+    <div class="form-element">
+        <label class="y-label text-m">one two:</label>
+        <input type="text" class="y-input text-m"></input>
+    </div>
+
+    <div class="form-element">
+        <label class="y-label  text-m">one two three four five six seven:</label>
+        <textarea class="y-input yotpo-text-box text-m">Yotpo LTD&lt;/textarea>
+    </div>
+</div>
+                            </textarea>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class='side-part font-bold'>MULTIPLE CHOICE FIELD</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box input-text-exmaple yotpo">
+                            <div class="yotpo-multi-options">
+                                <div class="yotpo-option">
+                                    <input type="checkbox" name="vehicle[]" value="car">
+                                    <label class="text-m">I have a car</label>
+                                </div>
+                                <div class="yotpo-option">
+                                    <input type="checkbox" name="vehicle[]" value="pig">
+                                    <label class="text-m">I have a pig</label>
+                                </div>
+                                <div class="yotpo-option">
+                                    <input type="checkbox" name="vehicle[]" value="boat">
+                                    <label class="text-m">I have a boat!</label>
+
+                                </div>
+                                <div class="yotpo-option">
+                                    <input type="checkbox" name="vehicle[]" value="shitload">
+                                    <label class="text-m">I have a shitload of nothing</label>
+                                </div>
+                            </div>
+                            <div class="yotpo-multi-options">
+                                <div class="yotpo-option">
+                                    <input type="checkbox" name="vehicle[]" value="plain">
+                                    <label class="text-m">I have a plain</label>
+                                </div>
+                                <div class="yotpo-option">
+                                    <input type="checkbox" name="vehicle[]" value="cat">
+                                    <label class="text-m">I have a cat</label>
+                                </div>
+                                <div class="yotpo-option">
+                                    <input type="checkbox" name="vehicle[]" value="kayak">
+                                    <label class="text-m">I have a kayak!</label>
+
+                                </div>
+                                <div class="yotpo-option">
+                                    <input type="checkbox" name="vehicle[]" value="nothing">
+                                    <label class="text-m">I have nothing</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example" rows="38">
+<div class="yotpo-multi-options">
+    <div class="yotpo-option">
+        <input type="checkbox" name="vehicle[]" value="car">
+        <label class="text-m">I have a car</label>
+    </div>
+    <div class="yotpo-option">
+        <input type="checkbox" name="vehicle[]" value="pig">
+        <label class="text-m">I have a pig</label>
+    </div>
+    <div class="yotpo-option">
+        <input type="checkbox" name="vehicle[]" value="boat">
+        <label class="text-m">I have a boat!</label>
+
+    </div>
+    <div class="yotpo-option">
+        <input type="checkbox" name="vehicle[]" value="shitload">
+        <label class="text-m">I have a shitload of nothing</label>
+    </div>
+</div>
+<div class="yotpo-multi-options">
+    <div class="yotpo-option">
+        <input type="checkbox" name="vehicle[]" value="plain">
+        <label class="text-m">I have a plain</label>
+    </div>
+    <div class="yotpo-option">
+        <input type="checkbox" name="vehicle[]" value="cat">
+        <label class="text-m">I have a cat</label>
+    </div>
+    <div class="yotpo-option">
+        <input type="checkbox" name="vehicle[]" value="kayak">
+        <label class="text-m">I have a kayak!</label>
+
+    </div>
+    <div class="yotpo-option">
+        <input type="checkbox" name="vehicle[]" value="nothing">
+        <label class="text-m">I have nothing</label>
+    </div>
+</div>
+                            </textarea>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class='side-part font-bold'>RATING FIELD</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box input-text-exmaple yotpo" style="text-align: left !important">
+                            <div class="form-group">
+                                <div class="form-element yotpo-custom-tag-field yotpo-mandatory-custom-field">
+                                    <label class="y-label yotpo-field-title"><span class="yotpo-mandatory-mark">* </span>Choose what best describes you.</label>
+                                    <div class="yotpo-rating-field">
+                                        <div class="yotpo-rating-field-content">
+                                            <div class="yotpo-rating-field-buttons">
+                                                <div class="yotpo-radio-wrapper"><input type="radio" name="sex" value="Weak" checked></div>
+                                                <div class="yotpo-radio-wrapper"><input type="radio" name="sex" value="Weak" checked></div>
+                                                <div class="yotpo-radio-wrapper"><input type="radio" name="sex" value="Weak" checked></div>
+                                                <div class="yotpo-radio-wrapper"><input type="radio" name="sex" value="Weak" checked></div>
+                                                <div class="yotpo-radio-wrapper"><input type="radio" name="sex" value="Weak" checked></div>
+                                            </div>
+                                            <div class="yotpo-rating-field-titles">
+                                                <label class="y-label yotpo-field-option-label">Weak</label>
+                                                <label class="y-label yotpo-field-option-label">Weak</label>
+                                                <label class="y-label yotpo-field-option-label">Weak</label>
+                                                <label class="y-label yotpo-field-option-label">Weak</label>
+                                                <label class="y-label yotpo-field-option-label">Weak</label>
+                                            </div>
+                                            <div class="yotpo-rating-field-bars">
+                                                <div class="yotpo-rating-bars">
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                </div>
+                                                <div class="yotpo-clr"></div>
+                                                <div class="yotpo-rating-bars">
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                </div>
+                                                <div class="yotpo-clr"></div>
+                                                <div class="yotpo-rating-bars">
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                </div>
+                                                <div class="yotpo-clr"></div>
+                                                <div class="yotpo-rating-bars">
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                </div>
+                                                <div class="yotpo-clr"></div>
+                                                <div class="yotpo-rating-bars">
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                    <div class="yotpo-product-related-field-score-divider"></div>
+                                                    <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                                </div>
+                                                <div class="yotpo-clr"></div>
+                                            </div>
+                                        </div>
+                                        <div class="yotpo-clr"></div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example" rows="38">
+                            </textarea>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class='side-part font-bold'>SINGLE CHOICE FIELD</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box input-text-exmaple yotpo" style="text-align: left !important">
+                            <div class="form-group">
+                                <div class="form-element yotpo-custom-tag-field yotpo-mandatory-custom-field">
+                                    <label class="y-label yotpo-field-title"><span class="yotpo-mandatory-mark">* </span>Choose what best describes you.</label>
+                                    <div class="yotpo-single-choice-field">
+                                        <div class="yotpo-single-choice-option">
+                                            <div class="yotpo-radio-wrapper"><input type="radio" name="sex" value="Weak" checked></div>
+                                            <label class="y-label yotpo-field-option-label">yes</label>
+                                        </div>
+                                        <div class="yotpo-single-choice-option">
+                                            <div class="yotpo-radio-wrapper"><input type="radio" name="sex" value="Weak" checked></div>
+                                            <label class="y-label yotpo-field-option-label">no</label>
+                                        </div>
+                                    </div>
+                                    <div class="yotpo-clr"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example" rows="38">
+                            </textarea>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class='side-part font-bold'>MULTIPLE CHOICE FIELD</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box input-text-exmaple yotpo" style="text-align: left !important">
+                            <div class="form-group">
+                                <div class="form-element yotpo-custom-tag-field yotpo-mandatory-custom-field">
+                                    <label class="y-label yotpo-field-title"><span class="yotpo-mandatory-mark">* </span>Choose what best describes you.</label>
+                                    <div class="yotpo-multiple-choice-field">
+                                        <div class="yotpo-multiple-choice-option">
+                                            <div class="yotpo-checkbox-wrapper"><input type="checkbox" name="sex" value="music"></div>
+                                            <label class="y-label yotpo-field-option-label">music</label>
+                                        </div>
+                                        <div class="yotpo-multiple-choice-option">
+                                            <div class="yotpo-checkbox-wrapper"><input type="checkbox" name="sex" value="trecking"></div>
+                                            <label class="y-label yotpo-field-option-label">trecking</label>
+                                        </div>
+                                        <div class="yotpo-multiple-choice-option">
+                                            <div class="yotpo-checkbox-wrapper"><input type="checkbox" name="sex" value="sports" checked></div>
+                                            <label class="y-label yotpo-field-option-label">sports</label>
+                                        </div>
+                                        <div class="yotpo-multiple-choice-option">
+                                            <div class="yotpo-checkbox-wrapper"><input type="checkbox" name="sex" value="computer" checked></div>
+                                            <label class="y-label yotpo-field-option-label">computer</label>
+                                        </div>
+                                        <div class="yotpo-multiple-choice-option">
+                                            <div class="yotpo-checkbox-wrapper"><input type="checkbox" name="sex" value="tv_shows"></div>
+                                            <label class="y-label yotpo-field-option-label">TV shows</label>
+                                        </div>
+                                    </div>
+                                    <div class="yotpo-clr"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example" rows="38">
+                            </textarea>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class='side-part font-bold'>RATING FIELDS COLUMNS</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box input-text-exmaple yotpo" style="text-align: left !important">
+                            <div class="form-group">
+                                <div class="form-element yotpo-custom-tag-field yotpo-mandatory-custom-field">
+                                    <label class="y-label yotpo-field-title"><span class="yotpo-mandatory-mark">* </span>Choose what best describes you.</label>
+                                    <div class="yotpo-multiple-choice-field">
+                                        <div class="yotpo-multiple-choice-option">
+                                            <div class="yotpo-checkbox-wrapper"><input type="checkbox" name="sex" value="music"></div>
+                                            <label class="y-label yotpo-field-option-label">music</label>
+                                        </div>
+                                        <div class="yotpo-multiple-choice-option">
+                                            <div class="yotpo-checkbox-wrapper"><input type="checkbox" name="sex" value="trecking"></div>
+                                            <label class="y-label yotpo-field-option-label">trecking</label>
+                                        </div>
+                                        <div class="yotpo-multiple-choice-option">
+                                            <div class="yotpo-checkbox-wrapper"><input type="checkbox" name="sex" value="sports" checked></div>
+                                            <label class="y-label yotpo-field-option-label">sports</label>
+                                        </div>
+                                        <div class="yotpo-multiple-choice-option">
+                                            <div class="yotpo-checkbox-wrapper"><input type="checkbox" name="sex" value="computer" checked></div>
+                                            <label class="y-label yotpo-field-option-label">computer</label>
+                                        </div>
+                                        <div class="yotpo-multiple-choice-option">
+                                            <div class="yotpo-checkbox-wrapper"><input type="checkbox" name="sex" value="tv_shows"></div>
+                                            <label class="y-label yotpo-field-option-label">TV shows</label>
+                                        </div>
+                                    </div>
+                                    <div class="yotpo-clr"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example" rows="38">
+                            </textarea>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class='side-part font-bold'>RATING FIELD COLUMN</div>
+                    <div class='content'>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box input-text-exmaple yotpo" style="text-align: left !important"> 
+                            <div class="yotpo-product-related-fields-column">
+                                <div class="yotpo-product-related-fields-names">
+                                    <div class="yotpo-product-related-field-name text-s">A very:</div>
+                                    <div class="yotpo-product-related-field-name text-s">A very very long title:</div>
+                                    <div class="yotpo-product-related-field-name text-s">A very very:</div>
+                                    <div class="yotpo-product-related-field-name text-s">A very very long:</div>
+                                </div>
+                                <div class="yotpo-product-related-fields-bars">
+                                    <div class="yotpo-rating-bars">
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                        <div class="yotpo-clr"></div>
+                                    </div>
+                                    <div class="yotpo-rating-bars">
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                        <div class="yotpo-clr"></div>
+                                    </div>
+                                    <div class="yotpo-rating-bars">
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-clr"></div>
+                                    </div>
+                                    <div class="yotpo-rating-bars">
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar yotpo-rating-bar-full"></div>
+                                        <div class="yotpo-product-related-field-score-divider"></div>
+                                        <div class="yotpo-product-related-field-score-bar"></div>
+                                        <div class="yotpo-clr"></div>
+                                    </div>
+                                </div>
+                                <div class="yotpo-clr"></div>
+                            </div>
+                        </div>
+
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example" rows="38">
+                            </textarea>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
+                </section>
+
+            </div>
         </div>
     </body>
 </html>
