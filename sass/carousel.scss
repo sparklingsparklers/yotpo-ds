@@ -1,5 +1,5 @@
 .yotpo-carousels {
-
+  position: relative;
   .grid {
     div {
       display: inline-block;
@@ -183,14 +183,15 @@
   }
 
   .carousel-tool-tip {
-    display: block;
-    opacity: 1 !important;
+
     .yotpo-tool-tip {
       top: -10px;
       right: 0px;
       width: 400px;
       overflow-y: scroll;
       height: 190px;
+      display: none;
+      opacity: 1 !important;
 
     }
 
