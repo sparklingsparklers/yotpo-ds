@@ -9,7 +9,7 @@
   }
 
   .carousel-display-wrapper {
-     max-height: 212px;
+
     .yotpo-read-more {
       white-space: nowrap;
       color: $primary;
@@ -88,14 +88,12 @@
     }
 
       .yotpo-carousel {
-        //max-height: 212px;
         width: 15000px;
         padding-top: 15px;
         position: relative;
 
         .single-carousel {
           display: inline-block;
-
           vertical-align: top;
         }
         .carousel-review-author {
@@ -106,7 +104,6 @@
           text-align: left;
           margin-top: 8px;
           float: left;
-
         }
         .carousel-review-body {
           text-align: left;
@@ -150,7 +147,7 @@
           //height: 208px;
           width: 403px;
           box-sizing: border-box;
-          position: relative;
+
           .right-side {
             width: 300px;
             //border: 1px solid purple;
@@ -165,7 +162,6 @@
           width: 300px;
           box-sizing: border-box;
          // height: 212px;
-          position: relative;
           .right-side {
             width: 194px;
             height: 119px;
@@ -183,19 +179,16 @@
   }
 
   .carousel-tool-tip {
-
     .yotpo-tool-tip {
       top: -10px;
       right: 0px;
-      width: 400px;
+      max-width: 400px;
       overflow-y: scroll;
-      height: 190px;
       display: none;
       opacity: 1 !important;
-
     }
-
   }
+
   .carousel-read-more {
     font-family: OpenSans;
     color:  #266abe;
@@ -204,5 +197,4 @@
     line-height: 20px; /* Approximation due to font substitution */
     text-align: left;
   }
-
 }
