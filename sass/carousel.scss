@@ -1,16 +1,85 @@
 .yotpo-reviews-carousel {
   font-family: 'Open Sans', sans-serif;
   position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+
+
+
   .grid {
+    &.extra-large {
+      .carousel-reviews-bottom-line {
+        float: right;
+      }
+    }
+    &.large {
+      .carousel-reviews-bottom-line {
+        float: right;
+      }
+    }
+    &.medium {
+      .carousel-reviews-bottom-line {
+        float: right;
+      }
+      .headline {
+        font-size: 1.1em;
+      }
+      .all-reviews {
+        font-size: 0.9em;
+      }
+
+
+
+    }
+    &.small {
+      .headline {
+        width: 100%;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+      }
+      .carousel-reviews-bottom-line {
+        float: right;
+      }
+      .carousel-reviews-bottom-line {
+
+      }
+
+
+    }
+    &.extra-small {
+      .headline,  {
+        width: 100%;
+        font-size: 1.2em !important;
+      }
+      .carousel-reviews-bottom-line {
+        position: relative;
+        top: 19px;
+      }
+      .all-reviews {
+        width: 85%;
+        position: relative;
+        bottom: 20px;
+      }
+      .carousel-arrows {
+        position: relative;
+        top: 15px;
+      }
+
+    }
+
+
     div {
-      display: inline-block;
+      //display: inline-block;
       vertical-align: top;
     }
 
   }
 
   .carousel-display-wrapper {
-
+    .headline {
+      margin-bottom: 8px;
+      display: inline-block;
+    }
     .yotpo-read-more {
       white-space: nowrap;
       color: $primary;
@@ -27,6 +96,7 @@
       padding-bottom: 8px;
       margin-bottom: 5px;
       padding-top: 5px;
+      float: none !important;
 
       .headline {
 
@@ -45,47 +115,23 @@
 
       }
       .all-reviews {
-
-        color:  #266abe;
-        font-size: 16px; /* Approximation due to font substitution */
-        font-weight: 400;
+        display: inline-block;
+        a {
+          color:  #266abe;
+          font-size: 1.3em; /* Approximation due to font substitution */
+          font-weight: 400;
+          margin-left: 5px;
+        }
       }
 
       .carousel-arrows {
         float: right;
         margin-left: 15px;
+        .yotpo-icon-left-arrow-thin, .yotpo-icon-right-arrow-thin {
+          color: #56575f;
+        }
       }
 
-      &.extra-large {
-        .carousel-reviews-bottom-line {
-          float: right;
-        }
-      }
-      &.large {
-        .carousel-reviews-bottom-line {
-          float: right;
-        }
-      }
-      &.medium {
-        float: right;
-      }
-      &.small {
-        .headline {
-          width: 100%;
-        }
-        .carousel-reviews-bottom-line {
-          float: right;
-        }
-      }
-      &.extra-small {
-        .headline,  {
-          width: 100%;
-        }
-        .all-reviews {
-          width: 85%;
-        }
-
-      }
     }
 
       .yotpo-carousel {
@@ -176,7 +222,7 @@
          // height: 212px;
           .right-side {
             width: 194px;
-            height: 119px;
+
           }
           .carousel-review-title {
             margin-bottom: 5px;
