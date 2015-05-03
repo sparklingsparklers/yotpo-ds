@@ -9,20 +9,19 @@
   }
 
   .grid {
+
+    .carousel-reviews-bottom-line {
+      float: right;
+    }
+
     &.extra-large {
-      .carousel-reviews-bottom-line {
-        float: right;
-      }
+
     }
     &.large {
-      .carousel-reviews-bottom-line {
-        float: right;
-      }
+
     }
     &.medium {
-      .carousel-reviews-bottom-line {
-        float: right;
-      }
+
       .headline {
         font-size: 1.1em;
       }
@@ -30,43 +29,44 @@
         font-size: 0.9em;
       }
 
-
-
     }
     &.small {
-      .headline {
-        width: 100%;
-        font-size: 1.2em;
-        margin-bottom: 8px;
+      &.has-testimonials-link {
+        .headline {
+          width: 100%;
+          font-size: 1.2em;
+          margin-bottom: 8px;
+        }
+        .all-reviews a {
+          margin-left: 0px !important;
+        }
       }
-      .carousel-reviews-bottom-line {
-        float: right;
-      }
-      .carousel-reviews-bottom-line {
-
-      }
-
-
     }
     &.extra-small {
-      .headline,  {
-        width: 100%;
-        font-size: 1.2em !important;
-      }
-      .carousel-reviews-bottom-line {
-        position: relative;
-        top: 19px;
-      }
-      .all-reviews {
-        width: 85%;
-        position: relative;
-        bottom: 20px;
-      }
-      .carousel-arrows {
-        position: relative;
-        top: 15px;
-      }
+      &.has-testimonials-link {
+        .headline,  {
+          width: 100%;
+          font-size: 1.2em !important;
+        }
+        .carousel-reviews-bottom-line {
+          position: relative;
+          top: 19px;
+          float: none;
+        }
 
+        .all-reviews {
+          width: 85%;
+          position: relative;
+          bottom: 20px;
+        }
+        .all-reviews a {
+          margin-left: 0px !important;
+        }
+        .carousel-arrows {
+          position: relative;
+          top: 15px;
+        }
+      }
     }
 
 
