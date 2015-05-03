@@ -4,7 +4,9 @@
   padding-left: 15px;
   padding-right: 15px;
 
-
+  .yotpo-icon-btn-big {
+    padding: 0 0 0 5px;
+  }
 
   .grid {
     &.extra-large {
@@ -122,6 +124,10 @@
           font-size: 1.3em; /* Approximation due to font substitution */
           font-weight: 400;
           margin-left: 5px;
+
+        }
+        a:hover {
+          text-decoration: underline !important;
         }
       }
 
@@ -164,7 +170,7 @@
           font-size: 12px; /* Approximation due to font substitution */
           font-weight: 700;
           text-align: left;
-          margin-top: 8px;
+          margin-top: 4px;
           float: left;
         }
         .carousel-review-body {
@@ -191,7 +197,9 @@
           font-weight: 400;
           text-align: left;
           overflow: hidden;
-          height: 31px;
+          height: 41px;
+          line-height: 1;
+          margin-top: 4px;
         }
         .yotpo-icon-star {
           color: $yellow;
