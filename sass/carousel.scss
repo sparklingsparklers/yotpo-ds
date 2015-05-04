@@ -140,6 +140,9 @@
         .yotpo-icon-left-arrow-thin, .yotpo-icon-right-arrow-thin {
           color: #56575f;
         }
+        .yotpo-icon-left-arrow-thin:hover, .yotpo-icon-right-arrow-thin:hover {
+          cursor: pointer;
+        }
       }
 
     }
