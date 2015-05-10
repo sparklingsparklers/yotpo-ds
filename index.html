@@ -14,7 +14,7 @@
         <script src="javascripts/yotpo.js"></script>
         <script src="javascripts/classList.js"></script>
         <script type="text/javascript">
-          
+
         </script>
 
         <title>Yotpo-ds by vladshub</title>
@@ -52,10 +52,50 @@
                 </section>
 
                 <section>
-                    <div class='side-part'>XL Text</div>
+                    <div class='side-part'>3XL Text</div>
                     <div class='content'>
                         <ul>
                             <li class="param">Size:<bold>21</bold></li>
+                        </ul>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="text-3xl">3XL Text</div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+                                <div class="text-3xl">3XL Text</div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <section>
+                    <div class='side-part'>2XL Text</div>
+                    <div class='content'>
+                        <ul>
+                            <li class="param">Size:<bold>18</bold></li>
+                        </ul>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="text-2xl">2XL Text</div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+                                <div class="text-2xl">2XL Text</div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
+                <section>
+                    <div class='side-part'>XL Text</div>
+                    <div class='content'>
+                        <ul>
+                            <li class="param">Size:<bold>16</bold></li>
                         </ul>
                         <div class="small-title">Example:</div>
                         <div class="exmple-box yotpo">
@@ -64,7 +104,7 @@
                         <div class="small-title">Code:</div>
                         <div class="exmple-box">
                             <textarea class="code-example">
-<div class="text-xl">XL Text</div>
+                                <div class="text-xl">XL Text</div>
                             </textarea>
                         </div>
                     </div>
@@ -144,13 +184,33 @@
                         <div class="small-title">Code:</div>
                         <div class="exmple-box">
                             <textarea class="code-example">
-<div class="text-xs">XS Text</div>
+                                <div class="text-xs">XS Text</div>
                             </textarea>
                         </div>
                     </div>
                     <div class="clr"></div>
                 </section>
-    
+
+                <section>
+                    <div class='side-part'>2XS Text</div>
+                    <div class='content'>
+                        <ul>
+                            <li class="param">Size:<bold>10</bold></li>
+                        </ul>
+                        <div class="small-title">Example:</div>
+                        <div class="exmple-box yotpo">
+                            <div class="text-2xs">2XS Text</div>
+                        </div>
+                        <div class="small-title">Code:</div>
+                        <div class="exmple-box">
+                            <textarea class="code-example">
+                                <div class="text-2xs">2XS Text</div>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </section>
+
                 <h3>Emphasis</h3>
                 <section>
                     <div class='side-part font-bold'>Bold</div>
@@ -189,6 +249,163 @@
                         </div>
                     </div>
                     <div class="clr"></div>
+                </section>
+
+                <h3>Colors</h3>
+                <section>
+                  <div class="color-picker text-l pull-center">
+                    <label>Choose primary color: </label>
+                    <input type="text" id="input-color" value="#3085c7"></input>
+                    <input id="btn-createTheme" class="btn" type="button" value="Create Theme!"></input>
+                  </div>
+                </section>
+
+                <section>
+                  <ul class="color-list clearfix yotpo">
+                    <li class="color-item">
+                        <div class="color-name text-l">primary D2</div>
+                        <div class="color-circle color-primary-d2"></div>
+                        <div class="color-precent text-m">-40%</div>
+                        <div id="primary-d2-color-text" class="color-code text-m">#31d5077</div>
+                    </li>
+                    <li class="color-item">
+                        <div class="color-name text-l">primary D1</div>
+                        <div class="color-circle color-primary-d1"></div>
+                        <div class="color-precent text-m">-20%</div>
+                        <div id="primary-d1-color-text" class="color-code text-m">#26649f</div>
+                    </li>
+                    <li class="color-item">
+                        <div class="color-name text-l">primary</div>
+                        <div class="color-circle big color-primary"></div>
+                        <div id="primary-color-text" class="color-code text-m">#3085c7</div>
+                    </li>
+                    <li class="color-item">
+                        <div class="color-name text-l">primary L1</div>
+                        <div class="color-circle color-primary-l1"></div>
+                        <div class="color-precent text-m">+20%</div>
+                        <div id="primary-l1-color-text" class="color-code text-m">#599dd2</div>
+                    </li>
+                    <li class="color-item">
+                        <div class="color-name text-l">primary L2</div>
+                        <div class="color-circle color-primary-l2"></div>
+                        <div class="color-precent text-m">+40%</div>
+                        <div id="primary-l2-color-text" class="color-code text-m">#83b6dd</div>
+                    </li>
+                    <li class="color-item">
+                        <div class="color-name text-l">primary L3</div>
+                        <div class="color-circle color-primary-l3"></div>
+                        <div class="color-precent text-m">+60%</div>
+                        <div id="primary-l3-color-text" class="color-code text-m">#accee9</div>
+                    </li>
+                    <li class="color-item">
+                        <div class="color-name text-l">primary L4</div>
+                        <div class="color-circle color-primary-l4"></div>
+                        <div class="color-precent text-m">+80%</div>
+                        <div id="primary-l4-color-text" class="color-code text-m">#d6e7f4</div>
+                    </li>
+                  </ul>
+                </section>
+                <section>
+                   <ul class="color-list clearfix yotpo">
+                      <li class="color-item">
+                        <div class="color-circle color-red"></div>
+                        <div class="color-precent text-m">red</div>
+                        <div class="color-code text-m">#f04860</div>
+                      </li>
+                       <li class="color-item">
+                        <div class="color-circle color-yellow"></div>
+                        <div class="color-precent text-m">yellow</div>
+                        <div class="color-code text-m">#fec600</div>
+                      </li>
+                       <li class="color-item">
+                        <div class="color-circle color-orange"></div>
+                        <div class="color-precent text-m">orange</div>
+                        <div class="color-code text-m">#efae00</div>
+                      </li>
+                      <li class="color-item">
+                        <div class="color-circle color-blue"></div>
+                        <div class="color-precent text-m">blue</div>
+                        <div class="color-code text-m">#2f84ed</div>
+                      </li>
+                      <li class="color-item">
+                        <div class="color-circle color-green"></div>
+                        <div class="color-precent text-m">green</div>
+                        <div class="color-code text-m">#1cc286</div>
+                      </li>
+                      <li class="color-item">
+                        <div class="color-circle color-white"></div>
+                        <div class="color-precent text-m">white</div>
+                        <div class="color-code text-m">#ffffff</div>
+                      </li>
+                      <li class="color-item">
+                        <div class="color-circle color-gray-light"></div>
+                        <div class="color-precent text-m">gray light</div>
+                        <div class="color-code text-m">#e3e3e3</div>
+                      </li>
+                      <li class="color-item">
+                        <div class="color-circle color-gray"></div>
+                        <div class="color-precent text-m">gray</div>
+                        <div class="color-code text-m">#a2a2a2</div>
+                      </li>
+                      <li class="color-item">
+                        <div class="color-circle color-gray-dark"></div>
+                        <div class="color-precent text-m">gray-dark</div>
+                        <div class="color-code text-m">#737373</div>
+                      </li>
+                      <li class="color-item">
+                        <div class="color-circle color-gray-darker"></div>
+                        <div class="color-precent text-m">gray-darker</div>
+                        <div class="color-code text-m">#4f4f4f</div>
+                      </li>
+                  </ul>
+                </section>
+
+                <h3>Icons</h3>
+                <section>
+                  <div class="icon-holders yotpo clearfix">
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-write             pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-write              </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-video             pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-video              </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-up-arrow          pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-up-arrow           </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-twitter           pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-twitter            </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-thumbs-up         pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-thumbs-up          </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-thumbs-down       pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-thumbs-down        </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-three-lines       pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-three-lines        </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-dot               pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-dot                </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-seperator         pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-seperator          </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-cross             pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-cross              </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-checkmark         pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-checkmark          </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-circle-checkmark  pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-circle-checkmark   </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-chat-bubble       pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-chat-bubble        </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-camera            pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-camera             </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-attach            pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-attach             </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-star              pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-star               </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-half-star         pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-half-star          </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-empty-star        pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-empty-star         </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-share             pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-share              </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-cogwheel          pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-cogwheel           </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-right-arrow       pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-right-arrow        </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-linkedin          pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-linkedin           </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-left-arrow        pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-left-arrow         </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-google            pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-google             </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-flag              pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-flag               </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-facebook          pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-facebook           </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-down-arrow        pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-down-arrow         </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-store             pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-store              </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-heart             pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-heart              </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-double-bubble     pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-double-bubble      </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-down-triangle     pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-down-triangle      </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-left-arrow-thin   pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-left-arrow-thin    </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-right-arrow-thin  pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-right-arrow-thin   </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-quote-left        pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-quote-left         </bold></span></div>
+                    <div class="icon-holder"><span class="yotpo-icon yotpo-icon-quote-right       pull-left"></span><span class='pull-left'>Class Name: <bold>  yotpo-icon-quote-right        </bold></span></div>
+                  </div>
+
+                  <div class="content">
+                    <div class="small-title">Code:</div>
+                    <div class="exmple-box">
+                      <textarea class="code-example"><span class="yotpo-icon yotpo-icon-write"></span></textarea>
+                    </div>
+                  </div>
                 </section>
 
                 <h3>BOXES</h3>
@@ -501,7 +718,7 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <h3>Sorting</h3>
                 <section>
 
@@ -722,7 +939,7 @@
                                                 0 Questions \ 0 Answers
                                                 </a>
                                             </div>
-                                            
+
                                             <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-button write-review-button">
                                                 <span class="yotpo-icon yotpo-icon-write"></span>
                                                 <span class="yotpo-icon-button-text">write a review</span>
@@ -888,7 +1105,7 @@
                                                 0 Questions \ 0 Answers
                                                 </a>
                                             </div>
-                                            
+
                                             <div class="yotpo-default-button yotpo-icon-btn pull-right yotpo-hidden-mobile write-button write-review-button">
                                                 <span class="yotpo-icon yotpo-icon-write"></span>
                                                 <span class="yotpo-icon-button-text">write a review</span>
@@ -1424,7 +1641,7 @@
                         <div class="small-title">Example:</div>
                         <div class="exmple-box yotpo">
                             <textarea class="input yotpo-text-box text-m">
-this is a text box    
+this is a text box
                             </textarea>
                         </div>
                         <div class="small-title">Code:</div>
@@ -1654,7 +1871,7 @@ this is a text box
                                             </div>
                                         </div>
                                         <div class="yotpo-clr"></div>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1792,7 +2009,7 @@ this is a text box
                     <div class='side-part font-bold'>RATING FIELD COLUMN</div>
                     <div class='content'>
                         <div class="small-title">Example:</div>
-                        <div class="exmple-box input-text-exmaple yotpo" style="text-align: left !important"> 
+                        <div class="exmple-box input-text-exmaple yotpo" style="text-align: left !important">
                             <div class="yotpo-product-related-fields-column">
                                 <div class="yotpo-product-related-fields-names">
                                     <div class="yotpo-product-related-field-name text-s">A very:</div>

@@ -1,4 +1,4 @@
-function shadeColor2(color, percent) {   
+function shadeColor2(color, percent) {
     var f=parseInt(color.slice(1),16),t=percent<0?0:255,p=percent<0?percent*-1:percent,R=f>>16,G=f>>8&0x00FF,B=f&0x0000FF;
     return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
 }
@@ -39,7 +39,7 @@ $('document').ready(function(){
 		if(isOk){
 			changeTheme(colorPrimary);
 		}
-    	    	
+
 	});
 
 	$("#resolution").html(screen.width);
@@ -54,13 +54,13 @@ function changeTheme(colorPrimary){
 	var colorPrimary_d1 = shade(colorPrimary, -0.2);
 	var colorPrimary_d2 = shade(colorPrimary, -0.4);
 
-	$('.color-circle.big.primary').css('background-color' , colorPrimary);
-	$('.color-circle.primary-l1').css('background-color' , colorPrimary_l1);
-	$('.color-circle.primary-l2').css('background-color' , colorPrimary_l2);
-	$('.color-circle.primary-l3').css('background-color' , colorPrimary_l3);
-	$('.color-circle.primary-l4').css('background-color' , colorPrimary_l4);
-	$('.color-circle.primary-d1').css('background-color' , colorPrimary_d1);
-	$('.color-circle.primary-d2').css('background-color' , colorPrimary_d2);
+	$('.color-circle.big.color-primary').css('background-color' , colorPrimary);
+	$('.color-circle.color-primary-l1').css('background-color' , colorPrimary_l1);
+	$('.color-circle.color-primary-l2').css('background-color' , colorPrimary_l2);
+	$('.color-circle.color-primary-l3').css('background-color' , colorPrimary_l3);
+	$('.color-circle.color-primary-l4').css('background-color' , colorPrimary_l4);
+	$('.color-circle.color-primary-d1').css('background-color' , colorPrimary_d1);
+	$('.color-circle.color-primary-d2').css('background-color' , colorPrimary_d2);
 
 	$('#primary-color-text').text(colorPrimary);
 	$('#primary-l1-color-text').text(colorPrimary_l1);
