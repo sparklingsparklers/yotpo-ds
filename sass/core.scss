@@ -1632,7 +1632,7 @@
         color: $gray;
       }
       .yotpo-tool-tip {
-        left: 35px;
+        #{$left}: 35px;
         padding: 0 20px;
         width: 190px;
       }
