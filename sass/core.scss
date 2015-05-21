@@ -1626,11 +1626,13 @@
     }
 
     .yotpo-semi-label {
+      position: relative;
       float: $left;
       span.yotpo-icon {
         color: $gray;
       }
       .yotpo-tool-tip {
+        #{$left}: 35px;
         padding: 0 20px;
         width: 190px;
       }
