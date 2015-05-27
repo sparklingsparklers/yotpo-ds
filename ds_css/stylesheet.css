@@ -1,4 +1,4 @@
-/* line 4, ../ds_sass/stylesheet.scss */
+/* line 16, ../ds_sass/stylesheet.scss */
 html, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,7 +21,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 25, ../ds_sass/stylesheet.scss */
+/* line 26, ../ds_sass/stylesheet.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -37,7 +37,7 @@ blockquote, q {
   quotes: none;
 }
 
-/* line 35, ../ds_sass/stylesheet.scss */
+/* line 36, ../ds_sass/stylesheet.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -120,7 +120,7 @@ aside#sidebar {
   line-height: 1.3;
 }
 
-/* line 106, ../ds_sass/stylesheet.scss */
+/* line 107, ../ds_sass/stylesheet.scss */
 aside#sidebar p.repo-owner,
 aside#sidebar p.repo-owner a {
   font-weight: bold;
@@ -453,7 +453,7 @@ footer a:hover {
     width: 490px;
   }
 
-  /* line 380, ../ds_sass/stylesheet.scss */
+  /* line 385, ../ds_sass/stylesheet.scss */
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,
@@ -522,7 +522,7 @@ footer a:hover {
     display: inline;
   }
 
-  /* line 433, ../ds_sass/stylesheet.scss */
+  /* line 434, ../ds_sass/stylesheet.scss */
   #main-content,
   aside#sidebar {
     float: none;
@@ -543,7 +543,7 @@ footer a:hover {
     display: none;
   }
 
-  /* line 448, ../ds_sass/stylesheet.scss */
+  /* line 453, ../ds_sass/stylesheet.scss */
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,
@@ -655,7 +655,7 @@ section.wide-section {
   width: 90% !important;
 }
 
-/* line 87, ../ds_sass/_ds.scss */
+/* line 82, ../ds_sass/_ds.scss */
 h3 {
   font-family: Verdana;
   margin-bottom: 35px !important;
@@ -665,7 +665,7 @@ h3 {
   text-transform: uppercase !important;
 }
 
-/* line 95, ../ds_sass/_ds.scss */
+/* line 90, ../ds_sass/_ds.scss */
 .content ul {
   font-weight: light;
   list-style: none;
@@ -674,12 +674,12 @@ h3 {
   font-size: 15px;
 }
 
-/* line 102, ../ds_sass/_ds.scss */
+/* line 97, ../ds_sass/_ds.scss */
 bold {
   font-weight: bolder;
 }
 
-/* line 105, ../ds_sass/_ds.scss */
+/* line 100, ../ds_sass/_ds.scss */
 div.exmple-box {
   border: 1px solid black !important;
   text-align: center !important;
@@ -687,18 +687,18 @@ div.exmple-box {
   display: inline-block !important;
   width: 100% !important;
 }
-/* line 111, ../ds_sass/_ds.scss */
+/* line 106, ../ds_sass/_ds.scss */
 div.exmple-box.pull-left {
   text-align: left !important;
 }
 
-/* line 115, ../ds_sass/_ds.scss */
+/* line 110, ../ds_sass/_ds.scss */
 .small-title {
   font-size: 12px !important;
   color: grey !important;
 }
 
-/* line 119, ../ds_sass/_ds.scss */
+/* line 114, ../ds_sass/_ds.scss */
 textarea.code-example {
   background: black !important;
   color: white;
@@ -709,12 +709,12 @@ textarea.code-example {
   max-width: 400px !important;
 }
 
-/* line 128, ../ds_sass/_ds.scss */
+/* line 123, ../ds_sass/_ds.scss */
 .color-list {
   list-style: none;
 }
 
-/* line 131, ../ds_sass/_ds.scss */
+/* line 126, ../ds_sass/_ds.scss */
 .color-item {
   width: 80px;
   text-align: center;
@@ -723,7 +723,7 @@ textarea.code-example {
   min-height: 140px;
 }
 
-/* line 139, ../ds_sass/_ds.scss */
+/* line 134, ../ds_sass/_ds.scss */
 .color-circle {
   -webkit-border-radius: 50px !important;
   -moz-border-radius: 50px !important;
@@ -734,16 +734,30 @@ textarea.code-example {
   margin: 7px auto !important;
 }
 
-/* line 148, ../ds_sass/_ds.scss */
+/* line 143, ../ds_sass/_ds.scss */
 .color-circle.big {
   height: 55px;
   width: 55px;
 }
 
-/* line 153, ../ds_sass/_ds.scss */
+/* line 148, ../ds_sass/_ds.scss */
 .moblie-simulator {
   width: 200px;
   display: inline-block;
+}
+
+/* line 154, ../ds_sass/_ds.scss */
+.icon-holders .icon-holder {
+  width: 50%;
+  float: left;
+}
+/* line 158, ../ds_sass/_ds.scss */
+.icon-holders .icon-holder .yotpo-icon {
+  margin-right: 10px;
+}
+/* line 161, ../ds_sass/_ds.scss */
+.icon-holders .icon-holder .yotpo-icon.yotpo-icon-cross {
+  position: static;
 }
 
 /* End DS */

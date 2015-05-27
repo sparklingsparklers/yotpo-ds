@@ -128,7 +128,7 @@ textarea.code-example {
 .color-list {
   list-style: none;
 }
-.color-item {
+.yotpo .color-item {
   width: 80px;
   text-align: center;
   float: left;
@@ -153,6 +153,21 @@ textarea.code-example {
 .moblie-simulator{
   width: 200px;
   display: inline-block;
+}
+
+.icon-holders {
+  .icon-holder {
+    width: 50%;
+    float: left;
+
+    .yotpo-icon {
+      margin-right: 10px;
+
+      &.yotpo-icon-cross {
+        position: static;
+      }
+    }
+  }
 }
 
 
