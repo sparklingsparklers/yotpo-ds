@@ -646,6 +646,10 @@ section {
   margin-bottom: 30px !important;
 }
 /* line 76, ../ds_sass/_ds.scss */
+section.big-section {
+  max-width: 100% !important;
+}
+/* line 81, ../ds_sass/_ds.scss */
 section.wide-section {
   max-width: none !important;
   width: 90% !important;
@@ -711,7 +715,7 @@ textarea.code-example {
 }
 
 /* line 126, ../ds_sass/_ds.scss */
-.yotpo .color-item {
+.color-item {
   width: 80px;
   text-align: center;
   float: left;

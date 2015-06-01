@@ -1,5 +1,5 @@
-/* 
-Yotpo DS variables 
+/*
+Yotpo DS variables
 They are here to complement for missing ones.
 */
 /* Yotpo */
@@ -3828,6 +3828,435 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
 #y-badges .yotpo-icon {
   color: #ECC525;
   font-size: 18px;
+}
+
+/*
+  Simple Grid
+  Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - dallasbass.com
+*/
+/* line 9, ../sass/simple_grid.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/simple_grid.scss */
+body {
+  margin: 0px;
+}
+
+/* line 19, ../sass/simple_grid.scss */
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  /* column-space */
+}
+
+/* line 24, ../sass/simple_grid.scss */
+.grid {
+  width: 100%;
+  max-width: 1366px;
+  min-width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 32, ../sass/simple_grid.scss */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 38, ../sass/simple_grid.scss */
+.grid-pad {
+  padding-top: 20px;
+  padding-left: 20px;
+  /* grid-space to left */
+  padding-right: 0px;
+  /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+}
+
+/* line 44, ../sass/simple_grid.scss */
+.push-right {
+  float: right;
+}
+
+/* Content Columns */
+/* line 50, ../sass/simple_grid.scss */
+.col-1-1 {
+  width: 100%;
+}
+
+/* line 53, ../sass/simple_grid.scss */
+.col-2-3, .col-8-12 {
+  width: 66.66%;
+}
+
+/* line 57, ../sass/simple_grid.scss */
+.col-1-2, .col-6-12 {
+  width: 50%;
+}
+
+/* line 61, ../sass/simple_grid.scss */
+.col-1-3, .col-4-12 {
+  width: 33.33%;
+}
+
+/* line 65, ../sass/simple_grid.scss */
+.col-1-4, .col-3-12 {
+  width: 25%;
+}
+
+/* line 69, ../sass/simple_grid.scss */
+.col-1-5 {
+  width: 20%;
+}
+
+/* line 73, ../sass/simple_grid.scss */
+.col-1-6, .col-2-12 {
+  width: 16.667%;
+}
+
+/* line 77, ../sass/simple_grid.scss */
+.col-1-7 {
+  width: 14.28%;
+}
+
+/* line 81, ../sass/simple_grid.scss */
+.col-1-8 {
+  width: 12.5%;
+}
+
+/* line 85, ../sass/simple_grid.scss */
+.col-1-9 {
+  width: 11.1%;
+}
+
+/* line 89, ../sass/simple_grid.scss */
+.col-1-10 {
+  width: 10%;
+}
+
+/* line 93, ../sass/simple_grid.scss */
+.col-1-11 {
+  width: 9.09%;
+}
+
+/* line 97, ../sass/simple_grid.scss */
+.col-1-12 {
+  width: 8.33%;
+}
+
+/* Layout Columns */
+/* line 103, ../sass/simple_grid.scss */
+.col-11-12 {
+  width: 91.66%;
+}
+
+/* line 107, ../sass/simple_grid.scss */
+.col-10-12 {
+  width: 83.333%;
+}
+
+/* line 111, ../sass/simple_grid.scss */
+.col-9-12 {
+  width: 75%;
+}
+
+/* line 115, ../sass/simple_grid.scss */
+.col-5-12 {
+  width: 41.66%;
+}
+
+/* line 119, ../sass/simple_grid.scss */
+.col-7-12 {
+  width: 58.33%;
+}
+
+/* Pushing blocks */
+/* line 127, ../sass/simple_grid.scss */
+.push-2-3, .push-8-12 {
+  margin-left: 66.66%;
+}
+
+/* line 131, ../sass/simple_grid.scss */
+.push-1-2, .push-6-12 {
+  margin-left: 50%;
+}
+
+/* line 135, ../sass/simple_grid.scss */
+.push-1-3, .push-4-12 {
+  margin-left: 33.33%;
+}
+
+/* line 139, ../sass/simple_grid.scss */
+.push-1-4, .push-3-12 {
+  margin-left: 25%;
+}
+
+/* line 143, ../sass/simple_grid.scss */
+.push-1-5 {
+  margin-left: 20%;
+}
+
+/* line 147, ../sass/simple_grid.scss */
+.push-1-6, .push-2-12 {
+  margin-left: 16.667%;
+}
+
+/* line 151, ../sass/simple_grid.scss */
+.push-1-7 {
+  margin-left: 14.28%;
+}
+
+/* line 155, ../sass/simple_grid.scss */
+.push-1-8 {
+  margin-left: 12.5%;
+}
+
+/* line 159, ../sass/simple_grid.scss */
+.push-1-9 {
+  margin-left: 11.1%;
+}
+
+/* line 163, ../sass/simple_grid.scss */
+.push-1-10 {
+  margin-left: 10%;
+}
+
+/* line 167, ../sass/simple_grid.scss */
+.push-1-11 {
+  margin-left: 9.09%;
+}
+
+/* line 171, ../sass/simple_grid.scss */
+.push-1-12 {
+  margin-left: 8.33%;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 177, ../sass/simple_grid.scss */
+  .grid {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    /* grid-space to left */
+    padding-right: 10px;
+    /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+  }
+
+  /* line 186, ../sass/simple_grid.scss */
+  [class*='col-'] {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
+    /* column-space */
+  }
+
+  /* Mobile Layout */
+  /* line 200, ../sass/simple_grid.scss */
+  [class*='mobile-col-'] {
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
+    /* column-space */
+    padding-bottom: 0px;
+  }
+
+  /* line 211, ../sass/simple_grid.scss */
+  .mobile-col-1-1 {
+    width: 100%;
+  }
+
+  /* line 214, ../sass/simple_grid.scss */
+  .mobile-col-2-3, .mobile-col-8-12 {
+    width: 66.66%;
+  }
+
+  /* line 218, ../sass/simple_grid.scss */
+  .mobile-col-1-2, .mobile-col-6-12 {
+    width: 50%;
+  }
+
+  /* line 222, ../sass/simple_grid.scss */
+  .mobile-col-1-3, .mobile-col-4-12 {
+    width: 33.33%;
+  }
+
+  /* line 226, ../sass/simple_grid.scss */
+  .mobile-col-1-4, .mobile-col-3-12 {
+    width: 25%;
+  }
+
+  /* line 230, ../sass/simple_grid.scss */
+  .mobile-col-1-5 {
+    width: 20%;
+  }
+
+  /* line 234, ../sass/simple_grid.scss */
+  .mobile-col-1-6, .mobile-col-2-12 {
+    width: 16.667%;
+  }
+
+  /* line 238, ../sass/simple_grid.scss */
+  .mobile-col-1-7 {
+    width: 14.28%;
+  }
+
+  /* line 242, ../sass/simple_grid.scss */
+  .mobile-col-1-8 {
+    width: 12.5%;
+  }
+
+  /* line 246, ../sass/simple_grid.scss */
+  .mobile-col-1-9 {
+    width: 11.1%;
+  }
+
+  /* line 250, ../sass/simple_grid.scss */
+  .mobile-col-1-10 {
+    width: 10%;
+  }
+
+  /* line 254, ../sass/simple_grid.scss */
+  .mobile-col-1-11 {
+    width: 9.09%;
+  }
+
+  /* line 258, ../sass/simple_grid.scss */
+  .mobile-col-1-12 {
+    width: 8.33%;
+  }
+
+  /* Layout Columns */
+  /* line 264, ../sass/simple_grid.scss */
+  .mobile-col-11-12 {
+    width: 91.66%;
+  }
+
+  /* line 268, ../sass/simple_grid.scss */
+  .mobile-col-10-12 {
+    width: 83.333%;
+  }
+
+  /* line 272, ../sass/simple_grid.scss */
+  .mobile-col-9-12 {
+    width: 75%;
+  }
+
+  /* line 276, ../sass/simple_grid.scss */
+  .mobile-col-5-12 {
+    width: 41.66%;
+  }
+
+  /* line 280, ../sass/simple_grid.scss */
+  .mobile-col-7-12 {
+    width: 58.33%;
+  }
+
+  /* line 284, ../sass/simple_grid.scss */
+  .hide-on-mobile {
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+}
+/* line 6, ../sass/carousel.scss */
+.yotpo-carousel .carousel-review-author {
+  font-family: OpenSans;
+  color: #737373;
+  font-size: 12px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+  text-align: left;
+  margin-top: 8px;
+}
+/* line 15, ../sass/carousel.scss */
+.yotpo-carousel .carousel-review-body {
+  text-align: left;
+}
+/* line 18, ../sass/carousel.scss */
+.yotpo-carousel .product-image-container {
+  width: 89px;
+  border: 1px solid green;
+}
+/* line 22, ../sass/carousel.scss */
+.yotpo-carousel .y-carousel-product-image {
+  width: 89px;
+  height: 89px;
+  overflow: hidden;
+}
+/* line 27, ../sass/carousel.scss */
+.yotpo-carousel .carousel-review-product-text {
+  font-family: OpenSans;
+  color: #c6c6c6;
+  font-size: 10px;
+  /* Approximation due to font substitution */
+  font-weight: 400;
+  text-align: left;
+}
+/* line 34, ../sass/carousel.scss */
+.yotpo-carousel .yotpo-icon-star {
+  color: #ffd200;
+  font-size: 32px;
+}
+/* line 39, ../sass/carousel.scss */
+.yotpo-carousel .carousel-review-title {
+  font-family: OpenSans;
+  color: #4f4f4f;
+  font-size: 18px;
+  /* Approximation due to font substitution */
+  font-weight: 700;
+  line-height: 24px;
+}
+/* line 46, ../sass/carousel.scss */
+.yotpo-carousel .big-version {
+  border: 1px solid red;
+  height: 208px;
+  width: 403px;
+  overflow: hidden;
+}
+/* line 51, ../sass/carousel.scss */
+.yotpo-carousel .big-version .right-side {
+  width: 300px;
+  border: 1px solid purple;
+  text-align: left;
+}
+/* line 56, ../sass/carousel.scss */
+.yotpo-carousel .big-version .carousel-stars {
+  margin-bottom: 14px;
+}
+/* line 60, ../sass/carousel.scss */
+.yotpo-carousel .small-version {
+  border: 1px solid red;
+  width: 300px;
+  height: 212px;
+  overflow: hidden;
+}
+/* line 65, ../sass/carousel.scss */
+.yotpo-carousel .small-version .right-side {
+  width: 194px;
+  height: 119px;
+}
+/* line 69, ../sass/carousel.scss */
+.yotpo-carousel .small-version .carousel-review-title {
+  margin-bottom: 5px;
 }
 
 /* End Yotpo */

@@ -73,6 +73,11 @@ section {
   padding-bottom: 30px!important;
   margin-bottom: 30px!important;
 
+  &.big-section {
+    max-width: 100% !important;
+  }
+
+
   &.wide-section{
     max-width: none!important;
     width: 90%!important;
