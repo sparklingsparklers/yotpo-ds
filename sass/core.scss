@@ -1500,6 +1500,18 @@
         display: none;
       }
 
+      .yotpo-syndication-reference {
+        margin-top: 10px;
+        label {
+          vertical-align: super;
+        }
+        img {
+          margin-left: 10px;
+          height: 22px;
+          width: 52px;
+        }
+      }
+
       &.yotpo-show-more {
         padding-top: 25px;
         label {
