@@ -3136,12 +3136,13 @@
     .promoted-products{
       left:0;
       position: relative;
-      transition: left 1s;
       width: 600%;
       overflow: hidden;
+      transition: left 1s;
       li {
-        float: right;
-        margin-left: 5px;
+        float: $left;
+        margin-left: 2px;
+        margin-right: 2px;
       }
       .yotpo-promoted-product{
         text-align: #{$left};
