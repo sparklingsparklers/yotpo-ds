@@ -3134,6 +3134,8 @@
       right: 0;
     }
     .promoted-products{
+      position: relative;
+      transition: left 1s;
       width: 600%;
       overflow: hidden;
       li {
