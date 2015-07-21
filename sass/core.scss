@@ -3137,7 +3137,8 @@
       width: 600%;
       overflow: hidden;
       li {
-        display: inline-block;
+        float: right;
+        margin-left: 5px;
       }
       .yotpo-promoted-product{
         text-align: #{$left};
