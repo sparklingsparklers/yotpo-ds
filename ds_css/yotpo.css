@@ -1679,7 +1679,7 @@ They are here to complement for missing ones.
 }
 /* line 1505, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-footer .yotpo-syndication-reference label, .yotpo .yotpo-comment .yotpo-footer .yotpo-syndication-reference label, .yotpo .yotpo-question .yotpo-footer .yotpo-syndication-reference label {
-  vertical-align: super;
+  float: left;
 }
 /* line 1508, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-footer .yotpo-syndication-reference img, .yotpo .yotpo-comment .yotpo-footer .yotpo-syndication-reference img, .yotpo .yotpo-question .yotpo-footer .yotpo-syndication-reference img {
