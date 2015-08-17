@@ -1577,7 +1577,7 @@
     border: solid 1px $red;
   }
 
-  .yotpo-tool-tip {
+  .yotpo-tool-tip, .yotpo-tool-tip-question, .yotpo-tool-tip-answer {
     display: none;
     height: auto;
     padding: 20px;

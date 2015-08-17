@@ -1761,7 +1761,7 @@ They are here to complement for missing ones.
   border: solid 1px #f04860;
 }
 /* line 1580, ../sass/core.scss */
-.yotpo .yotpo-tool-tip {
+.yotpo .yotpo-tool-tip, .yotpo .yotpo-tool-tip-question, .yotpo .yotpo-tool-tip-answer {
   display: none;
   height: auto;
   padding: 20px;
@@ -1775,25 +1775,25 @@ They are here to complement for missing ones.
   z-index: 20;
 }
 /* line 1593, ../sass/core.scss */
-.yotpo .yotpo-tool-tip .tool-tip-header {
+.yotpo .yotpo-tool-tip .tool-tip-header, .yotpo .yotpo-tool-tip-question .tool-tip-header, .yotpo .yotpo-tool-tip-answer .tool-tip-header {
   margin-bottom: 15px;
   font-weight: bold;
   font-size: 13px;
 }
 /* line 1598, ../sass/core.scss */
-.yotpo .yotpo-tool-tip .tool-tip-header .header-blue {
+.yotpo .yotpo-tool-tip .tool-tip-header .header-blue, .yotpo .yotpo-tool-tip-question .tool-tip-header .header-blue, .yotpo .yotpo-tool-tip-answer .tool-tip-header .header-blue {
   color: #2f84ed;
 }
 /* line 1601, ../sass/core.scss */
-.yotpo .yotpo-tool-tip .tool-tip-header .header-green {
+.yotpo .yotpo-tool-tip .tool-tip-header .header-green, .yotpo .yotpo-tool-tip-question .tool-tip-header .header-green, .yotpo .yotpo-tool-tip-answer .tool-tip-header .header-green {
   color: #1cc286;
 }
 /* line 1604, ../sass/core.scss */
-.yotpo .yotpo-tool-tip .tool-tip-header .header-orange {
+.yotpo .yotpo-tool-tip .tool-tip-header .header-orange, .yotpo .yotpo-tool-tip-question .tool-tip-header .header-orange, .yotpo .yotpo-tool-tip-answer .tool-tip-header .header-orange {
   color: #efae00;
 }
 /* line 1609, ../sass/core.scss */
-.yotpo .yotpo-tool-tip .tool-tip-content {
+.yotpo .yotpo-tool-tip .tool-tip-content, .yotpo .yotpo-tool-tip-question .tool-tip-content, .yotpo .yotpo-tool-tip-answer .tool-tip-content {
   font-size: 12px;
   color: #737373;
 }
