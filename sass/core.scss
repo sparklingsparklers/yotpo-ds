@@ -1503,9 +1503,10 @@
       .yotpo-syndication-reference {
         margin-top: 10px;
         label {
-          float: #{$left};
+          vertical-align: middle;
         }
         img {
+          vertical-align: middle;
           margin-#{$left}: 10px;
           max-height: 30px;
           max-width: 100px;
