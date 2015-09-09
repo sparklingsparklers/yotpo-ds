@@ -1684,8 +1684,8 @@ They are here to complement for missing ones.
 /* line 1508, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-footer .yotpo-syndication-reference img, .yotpo .yotpo-comment .yotpo-footer .yotpo-syndication-reference img, .yotpo .yotpo-question .yotpo-footer .yotpo-syndication-reference img {
   margin-left: 10px;
-  height: 22px;
-  width: 52px;
+  max-height: 30px;
+  max-width: 100px;
 }
 /* line 1515, ../sass/core.scss */
 .yotpo .yotpo-review .yotpo-footer.yotpo-show-more, .yotpo .yotpo-comment .yotpo-footer.yotpo-show-more, .yotpo .yotpo-question .yotpo-footer.yotpo-show-more {
