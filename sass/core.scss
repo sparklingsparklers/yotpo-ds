@@ -3193,7 +3193,7 @@
           margin-top: 5px;
           color: $gray-dark;
           max-height: 34px;
-          height: 34px;
+          height: 100%;
           white-space: normal;
         }
         .yotpo-product-price {
@@ -3206,7 +3206,7 @@
     .yotpo-long-product-names {
       .yotpo-promoted-product {
         .yotpo-product-name {
-          height: 34px;
+          height: 100%;
         }
       }
     }
