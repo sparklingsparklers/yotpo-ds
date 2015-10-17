@@ -1369,15 +1369,33 @@
       margin-#{$right}: 0px;
       margin-bottom: 15px;
       margin-#{$left}: 53px;
-      .content-title{
+      .content-title {
         display: inline-block;
         float: $left;
         color: $gray-darker;
         padding-bottom: 5px;
       }
-      .content-review{
+      .content-review {
         display: inline;
         color: $gray-darker;
+      }
+      .yotpo-review-images-wrapper {
+        margin: 16px 0;
+        .image-review {
+          width: 84px;
+          height: 84px;
+          float: left;
+          cursor: pointer;
+          -webkit-backface-visibility: hidden;
+        }
+        .image-review:hover {
+          -moz-opacity: 0.70;
+          opacity: 0.70;
+          filter: alpha(opacity=70);
+        }
+        .image-review + .image-review {
+          margin-left: 8px;
+        }
       }
       .product-link {
         display:none;
@@ -2912,6 +2930,75 @@
   }
   .yotpo-nav-tab span {
     color: $default-gray-darker!important;
+  }
+}
+
+.yotpo-gallery {
+  &.yotpo {
+    .yotpo-modal {
+      opacity: 0;
+      &.yotpo-modal-active {
+        opacity: 1;
+        .yotpo-icon-left-arrow-thin, .yotpo-icon-right-arrow-thin {
+          cursor: pointer;
+          color: white;
+          font-size: 40px;
+        }
+        .yotpo-icon-left-arrow-thin {
+          float: left;
+        }
+        .yotpo-icon-right-arrow-thin {
+          float: right;
+        }
+        .yotpo-icon.yotpo-icon-cross {
+          color: white;
+          z-index: 1000;
+        }
+        .gallery-arrows {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          padding: 0 20px;
+          height: 0;
+          z-index: 10001;
+        }
+        .yotpo-modal-dialog {
+          width: 80%;
+          max-width: none;
+          max-height: none;
+          top: 10%;
+          .yotpo-modal-content {
+            background: inherit;
+            text-align: center;
+            display: table;
+            .gallery-images-container {
+              display: table;
+              table-layout: fixed;
+              position: absolute;
+              left: 0;
+              height: 100%;
+              width: 300%;
+              font-size: 0;
+              -webkit-transition: left 0.5s ease-out 0s;
+              -moz-transition:    left 0.5s ease-out 0s;
+              -ms-transition:     left 0.5s ease-out 0s;
+              -o-transition:      left 0.5s ease-out 0s;
+              transition:         left 0.5s ease-out 0s;
+            }
+            .gallery-image-container {
+              display: table-cell;
+              height: 100%;
+              vertical-align: middle;
+              width: 33.33%;
+            }
+            .yotpo-gallery-image {
+              cursor: pointer;
+              max-width: 95%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

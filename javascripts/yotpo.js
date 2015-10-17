@@ -211,7 +211,7 @@ function addClass(el, className){
 }
 
 function addTransitionDelay(elm, time) {
-	$time = (time/1000) + 's'
+	$time = (time/1000) + 's';
 	elm.style['-webkit-transition-duration'] = time;
     elm.style['-webkit-transition-duration'] = time;
    	elm.style['-moz-transition-duration'] = time;
@@ -225,6 +225,7 @@ function showTestimonials() {
 	modal.style.display = 'block';
 	setTimeout(function(){ addClass(modal, 'yotpo-modal-active');},10);
 }
+
 function hideTestimonials(delay){
 	$delay = delay || fadeDelay;
 	var modal = document.querySelectorAll('.yotpo-modal')[0];
@@ -251,4 +252,56 @@ function windowResize() {
 		addClass(elm, className);
 	}
     
+}
+
+$('document').ready(function() {
+	bindGalleryEvents();
+});
+
+var currImageIndex = 0;
+function bindGalleryEvents() {
+	var gallery = document.getElementsByClassName('yotpo-gallery')[0];
+	var mask = gallery.getElementsByClassName('yotpo-modal-mask')[0];
+	var modal = gallery.getElementsByClassName('yotpo-modal')[0];
+	var modalDialog = gallery.getElementsByClassName('yotpo-modal-dialog')[0];
+	var galleryContainer = modalDialog.getElementsByClassName('gallery-images-container')[0];
+	var galleryImages = galleryContainer.getElementsByClassName('yotpo-gallery-image');
+	var closeBtn = modal.getElementsByClassName('yotpo-icon-btn-small')[0];
+
+	mask.onclick = function() {
+		setTimeout(function() {
+			removeClass(modal, 'yotpo-modal-active');
+		}, 500);
+	};
+	modalDialog.onclick = closeBtn.onclick = mask.onclick;
+
+	currImageIndex = 0;
+	$('.image-review').click(function() {
+		setTimeout(function() {
+			addClass(modal, 'yotpo-modal-active');
+		}, 10);
+
+		var images = this.parentNode.getElementsByClassName('image-review');
+		for (var i = 0; i < images.length; i++) {
+			galleryImages[i].src = images[i].getAttribute('data-image-original');
+			if (images[i] === this) {
+				currImageIndex = i;
+				galleryContainer.style.left = - i * 100 + '%';
+			}
+		}
+	});
+
+	$('.yotpo-gallery .yotpo-icon-right-arrow-thin').click(function() {
+		currImageIndex = (currImageIndex + 1) % 3;
+		setTimeout(function() {
+			galleryContainer.style.left = - currImageIndex * 100 + '%';
+		}, 10);
+	});
+
+	$('.yotpo-gallery .yotpo-icon-left-arrow-thin').click(function() {
+		currImageIndex = (currImageIndex + 2) % 3;
+		setTimeout(function() {
+			galleryContainer.style.left = - currImageIndex * 100 + '%';
+		}, 10);
+	});
 }
