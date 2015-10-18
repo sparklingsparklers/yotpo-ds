@@ -1369,15 +1369,22 @@
       margin-#{$right}: 0px;
       margin-bottom: 15px;
       margin-#{$left}: 53px;
-      .content-title{
+      .content-title {
         display: inline-block;
         float: $left;
         color: $gray-darker;
         padding-bottom: 5px;
       }
-      .content-review{
+      .content-review {
         display: inline;
         color: $gray-darker;
+      }
+      .yotpo-review-images-wrapper {
+        margin: 16px 0;
+        .image-review {
+          margin-right: 8px;
+          float: left;
+        }
       }
       .product-link {
         display:none;
