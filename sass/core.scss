@@ -1385,6 +1385,10 @@
           width: 84px;
           height: 84px;
           float: left;
+          cursor: pointer;
+        }
+        .image-review:hover {
+          opacity: 0.7;
         }
         .image-review + .image-review {
           margin-left: 8px;
