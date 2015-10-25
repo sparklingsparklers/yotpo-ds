@@ -1382,8 +1382,12 @@
       .yotpo-review-images-wrapper {
         margin: 16px 0;
         .image-review {
-          margin-right: 8px;
+          width: 84px;
+          height: 84px;
           float: left;
+        }
+        .image-review + .image-review {
+          margin-left: 8px;
         }
       }
       .product-link {
