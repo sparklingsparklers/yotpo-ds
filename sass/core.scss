@@ -2943,6 +2943,9 @@
           cursor: pointer;
           color: white;
           font-size: 40px;
+          padding: 100px 0;
+          position: relative;
+          top: -100px;
         }
         .yotpo-icon-left-arrow-thin {
           float: left;
@@ -3341,10 +3344,6 @@
 
 }
 
-
-
-
-
 div.yotpo-preloader-wrapper{
   display: none;
   width: 100%;
@@ -3471,7 +3470,18 @@ div.yotpo-preloader-wrapper{
   .yotpo-text-box{
     -webkit-appearance: none;
     -moz-appearance:none;
-    -webkit-appearance:none;
+  }
+
+  .yotpo-gallery {
+    &.yotpo {
+      .yotpo-modal {
+        &.yotpo-modal-active {
+          .yotpo-modal-dialog {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 
