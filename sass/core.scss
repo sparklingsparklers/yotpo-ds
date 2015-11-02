@@ -1369,15 +1369,31 @@
       margin-#{$right}: 0px;
       margin-bottom: 15px;
       margin-#{$left}: 53px;
-      .content-title{
+      .content-title {
         display: inline-block;
         float: $left;
         color: $gray-darker;
         padding-bottom: 5px;
       }
-      .content-review{
+      .content-review {
         display: inline;
         color: $gray-darker;
+      }
+      .yotpo-review-images-wrapper {
+        margin: 16px 0;
+        .image-review {
+          width: 84px;
+          height: 84px;
+          float: left;
+          cursor: pointer;
+          -webkit-backface-visibility: hidden;
+        }
+        .image-review:hover {
+          opacity: 0.7;
+        }
+        .image-review + .image-review {
+          margin-left: 8px;
+        }
       }
       .product-link {
         display:none;
