@@ -1390,7 +1390,9 @@
           -webkit-backface-visibility: hidden;
         }
         .image-review:hover {
-          opacity: 0.7;
+          -moz-opacity: 0.70;
+          opacity: 0.70;
+          filter: alpha(opacity=70);
         }
         .image-review + .image-review {
           margin-left: 8px;
@@ -2932,6 +2934,85 @@
   }
 }
 
+.yotpo-gallery {
+  &.yotpo {
+    z-index: 2147483647;
+    .yotpo-modal {
+      opacity: 0;
+      &.yotpo-modal-active {
+        opacity: 1;
+        .yotpo-icon-left-arrow-thin, .yotpo-icon-right-arrow-thin {
+          cursor: pointer;
+          color: white;
+          font-size: 40px;
+          padding: 100px 0;
+          position: relative;
+          top: -100px;
+        }
+        .yotpo-icon-left-arrow-thin {
+          float: left;
+        }
+        .yotpo-icon-right-arrow-thin {
+          float: right;
+        }
+        .yotpo-icon {
+          &.yotpo-icon-cross {
+            color: white;
+            z-index: 1000;
+          }
+        }
+        .gallery-arrows {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          padding: 0 20px;
+          height: 0;
+          z-index: 1001;
+          margin-top: -20px
+        }
+        .yotpo-modal-dialog {
+          width: 80%;
+          height: 100%;
+          max-width: none;
+          max-height: none;
+          top: 0;
+          bottom: 17px;
+          .yotpo-modal-content {
+            background: inherit;
+            text-align: center;
+            display: table;
+            .gallery-images-container {
+              display: table;
+              table-layout: fixed;
+              position: absolute;
+              left: 0;
+              height: 100%;
+              width: 300%;
+              font-size: 0;
+              -webkit-transition: left 0.5s ease-out 0s;
+              -moz-transition:    left 0.5s ease-out 0s;
+              -ms-transition:     left 0.5s ease-out 0s;
+              -o-transition:      left 0.5s ease-out 0s;
+              transition:         left 0.5s ease-out 0s;
+            }
+            .gallery-image-container {
+              display: table-cell;
+              height: 100%;
+              vertical-align: middle;
+              width: 33.33%;
+            }
+            .yotpo-gallery-image {
+              cursor: pointer;
+              max-width: 95%;
+              max-height: 80vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .yotpo {
   .yotpo-modal{
     position: fixed;
@@ -3272,10 +3353,6 @@
 
 }
 
-
-
-
-
 div.yotpo-preloader-wrapper{
   display: none;
   width: 100%;
@@ -3402,7 +3479,18 @@ div.yotpo-preloader-wrapper{
   .yotpo-text-box{
     -webkit-appearance: none;
     -moz-appearance:none;
-    -webkit-appearance:none;
+  }
+
+  .yotpo-gallery {
+    &.yotpo {
+      .yotpo-modal {
+        &.yotpo-modal-active {
+          .yotpo-modal-dialog {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 
