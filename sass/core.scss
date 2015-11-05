@@ -2987,19 +2987,21 @@
               position: absolute;
               left: 0;
               height: 100%;
-              width: 300%;
+              width: 500%;
               font-size: 0;
-              -webkit-transition: left 0.5s ease-out 0s;
-              -moz-transition:    left 0.5s ease-out 0s;
-              -ms-transition:     left 0.5s ease-out 0s;
-              -o-transition:      left 0.5s ease-out 0s;
-              transition:         left 0.5s ease-out 0s;
+              &.gallery-animations {
+                -webkit-transition: left 0.5s ease-out 0s;
+                -moz-transition:    left 0.5s ease-out 0s;
+                -ms-transition:     left 0.5s ease-out 0s;
+                -o-transition:      left 0.5s ease-out 0s;
+                transition:         left 0.5s ease-out 0s;
+              }
             }
             .gallery-image-container {
               display: table-cell;
               height: 100%;
               vertical-align: middle;
-              width: 33.33%;
+              width: 20%;
             }
             .yotpo-gallery-image {
               cursor: pointer;
