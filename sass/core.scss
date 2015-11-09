@@ -2981,32 +2981,40 @@
             background: inherit;
             text-align: center;
             display: table;
-            .gallery-images-container {
-              display: table;
-              table-layout: fixed;
-              position: absolute;
-              left: 0;
-              height: 100%;
-              width: 500%;
-              font-size: 0;
-              &.gallery-animations {
-                -webkit-transition: left 0.5s ease-out 0s;
-                -moz-transition:    left 0.5s ease-out 0s;
-                -ms-transition:     left 0.5s ease-out 0s;
-                -o-transition:      left 0.5s ease-out 0s;
-                transition:         left 0.5s ease-out 0s;
+            .gallery-fade-container {
+              opacity: 0;
+              -webkit-transition: opacity 0.5s ease-out 0s;
+              -moz-transition: opacity 0.5s ease-out 0s;
+              -ms-transition: opacity 0.5s ease-out 0s;
+              -o-transition: opacity 0.5s ease-out 0s;
+              transition: opacity 0.5s ease-out 0s;
+              .gallery-images-container {
+                display: table;
+                table-layout: fixed;
+                position: absolute;
+                left: 0;
+                height: 100%;
+                width: 500%;
+                font-size: 0;
+                &.gallery-animations {
+                  -webkit-transition: left 0.5s ease-out 0s;
+                  -moz-transition: left 0.5s ease-out 0s;
+                  -ms-transition: left 0.5s ease-out 0s;
+                  -o-transition: left 0.5s ease-out 0s;
+                  transition: left 0.5s ease-out 0s;
+                }
               }
-            }
-            .gallery-image-container {
-              display: table-cell;
-              height: 100%;
-              vertical-align: middle;
-              width: 20%;
-            }
-            .yotpo-gallery-image {
-              cursor: pointer;
-              max-width: 95%;
-              max-height: 80vh;
+              .gallery-image-container {
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+                width: 20%;
+              }
+              .yotpo-gallery-image {
+                cursor: pointer;
+                max-width: 95%;
+                max-height: 80vh;
+              }
             }
             .yotpo-image-loader:before,
             .yotpo-image-loader:after,
