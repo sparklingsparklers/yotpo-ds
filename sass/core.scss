@@ -2955,10 +2955,13 @@
         .yotpo-icon-right-arrow-thin {
           float: right;
         }
-        .yotpo-icon {
-          &.yotpo-icon-cross {
-            color: white;
-            z-index: 1000;
+        .yotpo-icon-btn-small {
+          display: block;
+          .yotpo-icon {
+            &.yotpo-icon-cross {
+              color: white;
+              z-index: 1000;
+            }
           }
         }
         .gallery-arrows {
@@ -2976,7 +2979,6 @@
           max-width: none;
           max-height: none;
           top: 0;
-          bottom: 17px;
           .yotpo-modal-content {
             background: inherit;
             text-align: center;
