@@ -3111,12 +3111,16 @@ They are here to complement for missing ones.
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-icon-right-arrow-thin {
   float: right;
 }
-/* line 2959, ../sass/core.scss */
-.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-icon.yotpo-icon-cross {
+/* line 2958, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-icon-btn-small {
+  display: block;
+}
+/* line 2961, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-icon-btn-small .yotpo-icon.yotpo-icon-cross {
   color: white;
   z-index: 1000;
 }
-/* line 2964, ../sass/core.scss */
+/* line 2967, ../sass/core.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .gallery-arrows {
   position: absolute;
   top: 50%;
@@ -3126,50 +3130,127 @@ They are here to complement for missing ones.
   z-index: 1001;
   margin-top: -20px;
 }
-/* line 2973, ../sass/core.scss */
+/* line 2976, ../sass/core.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog {
   width: 80%;
   height: 100%;
   max-width: none;
   max-height: none;
-  top: initial;
-  bottom: 17px;
+  top: 0;
 }
-/* line 2980, ../sass/core.scss */
+/* line 2982, ../sass/core.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content {
   background: inherit;
   text-align: center;
   display: table;
 }
-/* line 2984, ../sass/core.scss */
-.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .gallery-images-container {
+/* line 2986, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .gallery-fade-container {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-out 0s;
+  -moz-transition: opacity 0.5s ease-out 0s;
+  -ms-transition: opacity 0.5s ease-out 0s;
+  -o-transition: opacity 0.5s ease-out 0s;
+  transition: opacity 0.5s ease-out 0s;
+}
+/* line 2993, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .gallery-fade-container .gallery-images-container {
   display: table;
   table-layout: fixed;
   position: absolute;
   left: 0;
   height: 100%;
-  width: 300%;
+  width: 500%;
   font-size: 0;
+}
+/* line 3001, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .gallery-fade-container .gallery-images-container.gallery-animations {
   -webkit-transition: left 0.5s ease-out 0s;
   -moz-transition: left 0.5s ease-out 0s;
   -ms-transition: left 0.5s ease-out 0s;
   -o-transition: left 0.5s ease-out 0s;
   transition: left 0.5s ease-out 0s;
 }
-/* line 2998, ../sass/core.scss */
-.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .gallery-image-container {
+/* line 3009, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .gallery-fade-container .gallery-image-container {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
-  width: 33.33%;
+  width: 20%;
 }
-/* line 3004, ../sass/core.scss */
-.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .yotpo-gallery-image {
+/* line 3015, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .gallery-fade-container .yotpo-gallery-image {
   cursor: pointer;
   max-width: 95%;
+  max-height: 80vh;
 }
-
-/* line 3016, ../sass/core.scss */
+/* line 3021, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:before,
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:after,
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: yotpo-image-loader 1.8s infinite ease-in-out;
+  animation: yotpo-image-loader 1.8s infinite ease-in-out;
+}
+/* line 3032, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader {
+  font-size: 10px;
+  margin: -35px auto 0 auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+/* line 3043, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+/* line 3048, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:after {
+  left: 3.5em;
+}
+/* line 3051, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:before,
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+/* line 3057, ../sass/core.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+@-webkit-keyframes yotpo-image-loader {
+  0%,
+              80%,
+              100% {
+    box-shadow: 0 2.5em 0 -1.3em #ffffff;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0 #ffffff;
+  }
+}
+@keyframes yotpo-image-loader {
+  0%,
+              80%,
+              100% {
+    box-shadow: 0 2.5em 0 -1.3em #ffffff;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0 #ffffff;
+  }
+}
+/* line 3089, ../sass/core.scss */
 .yotpo .yotpo-modal {
   position: fixed;
   z-index: 10000;
@@ -3179,21 +3260,21 @@ They are here to complement for missing ones.
   height: 100%;
   display: none;
 }
-/* line 3025, ../sass/core.scss */
+/* line 3098, ../sass/core.scss */
 .yotpo .yotpo-modal.yotpo-modal-active {
   display: block;
 }
-/* line 3028, ../sass/core.scss */
+/* line 3101, ../sass/core.scss */
 .yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-mask {
   -moz-opacity: 0.70;
   opacity: .70;
   filter: alpha(opacity=70);
 }
-/* line 3033, ../sass/core.scss */
+/* line 3106, ../sass/core.scss */
 .yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog {
   top: 15%;
 }
-/* line 3038, ../sass/core.scss */
+/* line 3111, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-mask {
   display: block;
   height: 100%;
@@ -3210,14 +3291,14 @@ They are here to complement for missing ones.
   -o-transition: opacity 0.5s ease-out 0s;
   transition: opacity 0.5s ease-out 0s;
 }
-/* line 3058, ../sass/core.scss */
+/* line 3131, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-mask.yotpo-modal-mask-active {
   z-index: 800;
   -moz-opacity: 0.70;
   opacity: .70;
   filter: alpha(opacity=70);
 }
-/* line 3065, ../sass/core.scss */
+/* line 3138, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-dialog {
   height: 80%;
   max-height: 550px;
@@ -3236,78 +3317,78 @@ They are here to complement for missing ones.
   -o-transition: top 0.7s ease-in-out 0.1s;
   transition: top 0.7s ease-in-out 0.1s;
 }
-/* line 3084, ../sass/core.scss */
+/* line 3157, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-dialog.yotpo-modal-dialog-active {
   top: 15%;
 }
-/* line 3088, ../sass/core.scss */
+/* line 3161, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-dialog .yotpo-modal-content {
   display: table;
   width: 100%;
   height: 100%;
   background: #ffffff;
 }
-/* line 3094, ../sass/core.scss */
+/* line 3167, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-dialog .yotpo-modal-content .yotpo-modal-header .yotpo-icon-btn-small {
   top: 55px;
 }
-/* line 3097, ../sass/core.scss */
+/* line 3170, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-dialog .yotpo-modal-content .yotpo-modal-header .yotpo-icon-btn-small.semi-white-label {
   top: 30px;
 }
-/* line 3100, ../sass/core.scss */
+/* line 3173, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-dialog .yotpo-modal-content .yotpo-modal-header .yotpo-icon-btn-small.full-white-label {
   top: 5px;
 }
-/* line 3107, ../sass/core.scss */
+/* line 3180, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-logo span:not(.yotpo-icon-yotpo-logo) {
   color: #ffffff;
   position: relative;
   bottom: 3px;
 }
-/* line 3111, ../sass/core.scss */
+/* line 3184, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-logo span:not(.yotpo-icon-yotpo-logo) a {
   color: #ffffff !important;
 }
-/* line 3115, ../sass/core.scss */
+/* line 3188, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-logo .yotpo-icon-yotpo-logo {
   color: #ffffff !important;
 }
-/* line 3119, ../sass/core.scss */
+/* line 3192, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-header {
   height: 90px;
   background: #3085c7;
 }
-/* line 3123, ../sass/core.scss */
+/* line 3196, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-header .yotpo-icon-btn-small {
   position: absolute;
   top: 5px;
   right: 5px;
 }
-/* line 3129, ../sass/core.scss */
+/* line 3202, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-header .yotpo-icon-cross {
   color: #ffffff;
 }
-/* line 3133, ../sass/core.scss */
+/* line 3206, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-header .modal-title {
   text-transform: uppercase;
   padding: 20px;
   text-align: center;
 }
-/* line 3138, ../sass/core.scss */
+/* line 3211, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-header .modal-title span {
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
 }
-/* line 3146, ../sass/core.scss */
+/* line 3219, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-modal-navigation {
   height: 24px;
   padding-bottom: 0px;
   border-bottom: solid 1px #e3e3e3;
   background: #ffffff;
 }
-/* line 3153, ../sass/core.scss */
+/* line 3226, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper {
   display: table-row;
   position: relative;
@@ -3315,7 +3396,7 @@ They are here to complement for missing ones.
   height: 100%;
   max-width: inherit;
 }
-/* line 3160, ../sass/core.scss */
+/* line 3233, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body {
   position: relative;
   max-height: 370px;
@@ -3327,65 +3408,65 @@ They are here to complement for missing ones.
   height: 100%;
   /* Set Default Colors */
 }
-/* line 3169, ../sass/core.scss */
+/* line 3242, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body .yotpo-regular-box {
   padding: 25px 0;
   margin: 0;
 }
-/* line 3173, ../sass/core.scss */
+/* line 3246, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body .product-link {
   padding: 10px 7px 15px 0px;
 }
-/* line 3177, ../sass/core.scss */
+/* line 3250, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body .yotpo-main .product-link {
   display: block;
 }
-/* line 3182, ../sass/core.scss */
+/* line 3255, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body .content-title {
   color: #4f4f4f;
 }
-/* line 3186, ../sass/core.scss */
+/* line 3259, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body .content-review {
   color: #4f4f4f;
 }
-/* line 3189, ../sass/core.scss */
+/* line 3262, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body .write-review.yotpo-regular-box {
   padding: 0 0 20px 0;
   margin: 0;
 }
-/* line 3192, ../sass/core.scss */
+/* line 3265, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body .write-review.yotpo-regular-box .y-label {
   padding: 10px 7px 8px 0px !important;
 }
-/* line 3194, ../sass/core.scss */
+/* line 3267, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body .write-review.yotpo-regular-box .y-label.yotpo-field-option-label {
   padding: 0 !important;
 }
-/* line 3199, ../sass/core.scss */
+/* line 3272, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body .write-review.yotpo-regular-box .connect-wrapper .form-element {
   width: 100%;
   padding-right: 0;
 }
-/* line 3203, ../sass/core.scss */
+/* line 3276, ../sass/core.scss */
 .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body .write-review.yotpo-regular-box .connect-wrapper .email-input {
   display: block;
 }
-/* line 3210, ../sass/core.scss */
+/* line 3283, ../sass/core.scss */
 .yotpo .yotpo-modal .yotpo-nav-tab span {
   color: #4f4f4f !important;
 }
-/* line 3214, ../sass/core.scss */
+/* line 3287, ../sass/core.scss */
 .yotpo .yotpo-modal .btn-testimonials {
   text-transform: uppercase;
 }
-/* line 3218, ../sass/core.scss */
+/* line 3291, ../sass/core.scss */
 .yotpo .promoted-products-box {
   overflow: hidden;
   position: relative;
   background: transparent;
   padding-bottom: 25px;
 }
-/* line 3223, ../sass/core.scss */
+/* line 3296, ../sass/core.scss */
 .yotpo .promoted-products-box .yotpo-main-title {
   margin-bottom: 34px;
   margin-top: 34px;
@@ -3393,53 +3474,53 @@ They are here to complement for missing ones.
   white-space: nowrap;
   color: #4f4f4f;
 }
-/* line 3230, ../sass/core.scss */
+/* line 3303, ../sass/core.scss */
 .yotpo .promoted-products-box .yotpo-promoted-products {
   margin: 0 40px;
   overflow: hidden;
   position: relative;
 }
-/* line 3235, ../sass/core.scss */
+/* line 3308, ../sass/core.scss */
 .yotpo .promoted-products-box .yotpo-page-element {
   top: 50%;
   position: absolute;
 }
-/* line 3239, ../sass/core.scss */
+/* line 3312, ../sass/core.scss */
 .yotpo .promoted-products-box .yotpo-icon-left-arrow {
   left: 0;
 }
-/* line 3242, ../sass/core.scss */
+/* line 3315, ../sass/core.scss */
 .yotpo .promoted-products-box .yotpo-icon-right-arrow {
   right: 0;
 }
-/* line 3245, ../sass/core.scss */
+/* line 3318, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 3248, ../sass/core.scss */
+/* line 3321, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products li {
   display: inline-block;
 }
-/* line 3251, ../sass/core.scss */
+/* line 3324, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product {
   text-align: left;
   width: 160px;
   margin-right: 14px;
   margin-left: 14px;
 }
-/* line 3256, ../sass/core.scss */
+/* line 3329, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product .yotpo-product-image {
   min-width: 160px;
   height: 160px;
   position: relative;
 }
-/* line 3260, ../sass/core.scss */
+/* line 3333, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product .yotpo-product-image img {
   max-width: 160px;
   max-height: 160px;
 }
-/* line 3264, ../sass/core.scss */
+/* line 3337, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product .yotpo-product-image .image-text {
   height: 20px;
   padding-right: 2px;
@@ -3450,24 +3531,24 @@ They are here to complement for missing ones.
   bottom: 10px;
   color: #ffffff;
 }
-/* line 3275, ../sass/core.scss */
+/* line 3348, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product .yotpo-review-stars {
   display: inline-block;
   min-height: 20px;
 }
-/* line 3278, ../sass/core.scss */
+/* line 3351, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product .yotpo-review-stars .yotpo-icon {
   font-size: 15px;
   margin-top: 2px;
   color: #fec600;
 }
-/* line 3283, ../sass/core.scss */
+/* line 3356, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product .yotpo-review-stars .reviews-count {
   margin-top: 3px;
   margin-left: 0px;
   color: #737373;
 }
-/* line 3289, ../sass/core.scss */
+/* line 3362, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product .yotpo-product-name {
   margin-top: 5px;
   color: #737373;
@@ -3476,22 +3557,22 @@ They are here to complement for missing ones.
   white-space: normal;
   line-height: normal;
 }
-/* line 3297, ../sass/core.scss */
+/* line 3370, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product .yotpo-product-price {
   margin-top: 3px;
   color: #3085c7;
   font-weight: bold;
 }
-/* line 3306, ../sass/core.scss */
+/* line 3379, ../sass/core.scss */
 .yotpo .promoted-products-box .yotpo-long-product-names .yotpo-promoted-product .yotpo-product-name {
   height: 100%;
 }
 
-/* line 3315, ../sass/core.scss */
+/* line 3388, ../sass/core.scss */
 #yotpo-testimonials-custom-tab .yotpo-modal-mask {
   display: none;
 }
-/* line 3318, ../sass/core.scss */
+/* line 3391, ../sass/core.scss */
 #yotpo-testimonials-custom-tab .yotpo-modal-dialog {
   width: 100%;
   margin: 0;
@@ -3500,57 +3581,57 @@ They are here to complement for missing ones.
   height: 100%;
   max-height: 100%;
 }
-/* line 3326, ../sass/core.scss */
+/* line 3399, ../sass/core.scss */
 #yotpo-testimonials-custom-tab .yotpo-modal-body {
   height: 100%;
   max-height: 100%;
 }
-/* line 3330, ../sass/core.scss */
+/* line 3403, ../sass/core.scss */
 #yotpo-testimonials-custom-tab .yotpo-modal-header {
   display: none;
 }
-/* line 3332, ../sass/core.scss */
+/* line 3405, ../sass/core.scss */
 #yotpo-testimonials-custom-tab .yotpo-modal-header .modal-title {
   display: none;
 }
-/* line 3337, ../sass/core.scss */
+/* line 3410, ../sass/core.scss */
 #yotpo-testimonials-custom-tab .yotpo-main .product-link {
   display: block;
 }
 
-/* line 3343, ../sass/core.scss */
+/* line 3416, ../sass/core.scss */
 .yotpo-testimonials-semi-label {
   float: left;
   position: relative;
 }
-/* line 3347, ../sass/core.scss */
+/* line 3420, ../sass/core.scss */
 .yotpo-testimonials-semi-label .yotpo-tool-tip {
   padding: 0 20px;
   width: 190px;
 }
 
-/* line 3355, ../sass/core.scss */
+/* line 3428, ../sass/core.scss */
 div.yotpo-preloader-wrapper {
   display: none;
   width: 100%;
 }
-/* line 3358, ../sass/core.scss */
+/* line 3431, ../sass/core.scss */
 div.yotpo-preloader-wrapper .yotpo-pre-loader {
   position: relative;
   display: block;
   width: 88px;
   margin: 20px auto;
 }
-/* line 3364, ../sass/core.scss */
+/* line 3437, ../sass/core.scss */
 div.yotpo-preloader-wrapper .yotpo-pre-loader .yotpo-icon {
   color: #efae00;
   margin-left: -5px;
 }
-/* line 3368, ../sass/core.scss */
+/* line 3441, ../sass/core.scss */
 div.yotpo-preloader-wrapper .yotpo-pre-loader .yotpo-icon:first-child {
   margin: 0;
 }
-/* line 3374, ../sass/core.scss */
+/* line 3447, ../sass/core.scss */
 div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-full-stars {
   position: absolute;
   overflow: hidden;
@@ -3568,7 +3649,7 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-full-stars {
   -o-animation-timing-function: ease-in;
   animation-timing-function: ease-in;
 }
-/* line 3390, ../sass/core.scss */
+/* line 3463, ../sass/core.scss */
 div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   position: absolute;
   overflow: hidden;
@@ -3630,35 +3711,35 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
       font-weight: normal;
       font-style: normal;
     }*/
-  /* line 3432, ../sass/core.scss */
+  /* line 3505, ../sass/core.scss */
   .yotpo .form-group label {
     width: 100%;
     float: left;
     max-width: 100%;
     white-space: normal;
   }
-  /* line 3439, ../sass/core.scss */
+  /* line 3512, ../sass/core.scss */
   .yotpo .form-group span {
     width: 100%;
     float: left;
     margin: 0;
     padding: 0;
   }
-  /* line 3448, ../sass/core.scss */
+  /* line 3521, ../sass/core.scss */
   .yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog {
     width: 94%;
     top: 2%;
     max-height: 94%;
   }
-  /* line 3455, ../sass/core.scss */
+  /* line 3528, ../sass/core.scss */
   .yotpo .yotpo-modal .modal-body-wrapper .yotpo-modal-body {
     max-height: 100%;
   }
-  /* line 3460, ../sass/core.scss */
+  /* line 3533, ../sass/core.scss */
   .yotpo #yotpo_testimonials_btn {
     display: none;
   }
-  /* line 3467, ../sass/core.scss */
+  /* line 3540, ../sass/core.scss */
   .yotpo .yotpo-bottomline.yotpo-bottomline-ditribution-version .yotpo-star-distribution {
     float: none;
     margin-right: 0;
@@ -3667,20 +3748,20 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
     border-left: 0;
   }
 
-  /* line 3478, ../sass/core.scss */
+  /* line 3551, ../sass/core.scss */
   .yotpo-text-box {
     -webkit-appearance: none;
     -moz-appearance: none;
   }
 
-  /* line 3487, ../sass/core.scss */
+  /* line 3560, ../sass/core.scss */
   .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-dialog {
     width: 100%;
   }
 }
 /* End Media Queries */
 /* Animation */
-/* line 3502, ../sass/core.scss */
+/* line 3575, ../sass/core.scss */
 .yotpo .yotpo-animation-fade {
   -webkit-transition: opacity 0.2s ease-in;
   -moz-transition: opacity 0.2s ease-in;
@@ -3688,7 +3769,7 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   -o-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
 }
-/* line 3510, ../sass/core.scss */
+/* line 3583, ../sass/core.scss */
 .yotpo .yotpo-animation-slide {
   -webkit-transition: height 1.1s ease-in-out;
   -moz-transition: height 1.1s ease-in-out;

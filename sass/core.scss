@@ -2955,10 +2955,13 @@
         .yotpo-icon-right-arrow-thin {
           float: right;
         }
-        .yotpo-icon {
-          &.yotpo-icon-cross {
-            color: white;
-            z-index: 1000;
+        .yotpo-icon-btn-small {
+          display: block;
+          .yotpo-icon {
+            &.yotpo-icon-cross {
+              color: white;
+              z-index: 1000;
+            }
           }
         }
         .gallery-arrows {
@@ -2976,35 +2979,104 @@
           max-width: none;
           max-height: none;
           top: 0;
-          bottom: 17px;
           .yotpo-modal-content {
             background: inherit;
             text-align: center;
             display: table;
-            .gallery-images-container {
-              display: table;
-              table-layout: fixed;
+            .gallery-fade-container {
+              opacity: 0;
+              -webkit-transition: opacity 0.5s ease-out 0s;
+              -moz-transition: opacity 0.5s ease-out 0s;
+              -ms-transition: opacity 0.5s ease-out 0s;
+              -o-transition: opacity 0.5s ease-out 0s;
+              transition: opacity 0.5s ease-out 0s;
+              .gallery-images-container {
+                display: table;
+                table-layout: fixed;
+                position: absolute;
+                left: 0;
+                height: 100%;
+                width: 500%;
+                font-size: 0;
+                &.gallery-animations {
+                  -webkit-transition: left 0.5s ease-out 0s;
+                  -moz-transition: left 0.5s ease-out 0s;
+                  -ms-transition: left 0.5s ease-out 0s;
+                  -o-transition: left 0.5s ease-out 0s;
+                  transition: left 0.5s ease-out 0s;
+                }
+              }
+              .gallery-image-container {
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+                width: 20%;
+              }
+              .yotpo-gallery-image {
+                cursor: pointer;
+                max-width: 95%;
+                max-height: 80vh;
+              }
+            }
+            .yotpo-image-loader:before,
+            .yotpo-image-loader:after,
+            .yotpo-image-loader {
+              border-radius: 50%;
+              width: 2.5em;
+              height: 2.5em;
+              -webkit-animation-fill-mode: both;
+              animation-fill-mode: both;
+              -webkit-animation: yotpo-image-loader 1.8s infinite ease-in-out;
+              animation: yotpo-image-loader 1.8s infinite ease-in-out;
+            }
+            .yotpo-image-loader {
+              font-size: 10px;
+              margin: -35px auto 0 auto;
+              position: relative;
+              text-indent: -9999em;
+              -webkit-transform: translateZ(0);
+              -ms-transform: translateZ(0);
+              transform: translateZ(0);
+              -webkit-animation-delay: -0.16s;
+              animation-delay: -0.16s;
+            }
+            .yotpo-image-loader:before {
+              left: -3.5em;
+              -webkit-animation-delay: -0.32s;
+              animation-delay: -0.32s;
+            }
+            .yotpo-image-loader:after {
+              left: 3.5em;
+            }
+            .yotpo-image-loader:before,
+            .yotpo-image-loader:after {
+              content: '';
               position: absolute;
-              left: 0;
-              height: 100%;
-              width: 300%;
-              font-size: 0;
-              -webkit-transition: left 0.5s ease-out 0s;
-              -moz-transition:    left 0.5s ease-out 0s;
-              -ms-transition:     left 0.5s ease-out 0s;
-              -o-transition:      left 0.5s ease-out 0s;
-              transition:         left 0.5s ease-out 0s;
+              top: 0;
             }
-            .gallery-image-container {
+            .yotpo-image-loader-wrapper {
               display: table-cell;
-              height: 100%;
               vertical-align: middle;
-              width: 33.33%;
             }
-            .yotpo-gallery-image {
-              cursor: pointer;
-              max-width: 95%;
-              max-height: 80vh;
+            @-webkit-keyframes yotpo-image-loader {
+              0%,
+              80%,
+              100% {
+                box-shadow: 0 2.5em 0 -1.3em #ffffff;
+              }
+              40% {
+                box-shadow: 0 2.5em 0 0 #ffffff;
+              }
+            }
+            @keyframes yotpo-image-loader {
+              0%,
+              80%,
+              100% {
+                box-shadow: 0 2.5em 0 -1.3em #ffffff;
+              }
+              40% {
+                box-shadow: 0 2.5em 0 0 #ffffff;
+              }
             }
           }
         }
