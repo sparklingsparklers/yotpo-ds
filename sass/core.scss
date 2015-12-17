@@ -730,18 +730,18 @@
         }
       }
 
-      .yotpo-rating-field{
+      .yotpo-rating-field, .yotpo-size-field{
 
         display: inline-block;
         vertical-align: middle;
         text-align: left;
         margin-bottom: 25px;
 
-        .yotpo-rating-field-content{
+        .yotpo-rating-field-content, .yotpo-size-field-content{
           text-align: left;
 
 
-          .yotpo-rating-field-buttons{
+          .yotpo-rating-field-buttons, .yotpo-size-field-buttons{
             float: left;
             display: block;
             .yotpo-radio-wrapper{
@@ -762,7 +762,7 @@
             }
           }
 
-          .yotpo-rating-field-titles{
+          .yotpo-rating-field-titles, .yotpo-size-field-titles{
             float: left;
             display: block;
             .y-label{
@@ -775,11 +775,11 @@
             }
           }
 
-          .yotpo-rating-field-bars{
+          .yotpo-rating-field-bars, .yotpo-size-field-bars{
             display: block;
             overflow: hidden;
             width: 115px;
-            .yotpo-rating-bars{
+            .yotpo-rating-bars, .yotpo-size-bars{
               display: block;
               float: none;
               height: 17px;
@@ -795,7 +795,7 @@
     }
   }
 
-  .yotpo-rating-bars{
+  .yotpo-rating-bars, .yotpo-size-bars{
     vertical-align: middle;
     padding-left: 20px;
     height: 17px;
@@ -808,6 +808,19 @@
 
       &.yotpo-rating-bar-full{
         background-color: $primary;
+      }
+      &.yotpo-size-bar-offset{
+        background-color: $red;
+      }
+      &.yotpo-size-bar-fit{
+        background-color: $green;
+      }
+      &.yotpo-size-bar-empty{
+        background-color: transparent;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border: 1px solid $gray-light;
       }
     }
     .yotpo-product-related-field-score-divider{
@@ -2093,7 +2106,7 @@
             }
           }
           .yotpo-product-related-fields-bars {
-            .yotpo-rating-bars {
+            .yotpo-rating-bars, .yotpo-size-bars {
               margin-top: 2px;
 
               &:first-child {
@@ -2510,7 +2523,7 @@
         }
 
         .yotpo-main {
-          .yotpo-multiple-rating-fields {
+          .yotpo-multiple-rating-fields, .yotpo-multiple-size-fields {
 
             /* Product Rating Fields */
             .yotpo-product-related-fields {
