@@ -555,6 +555,7 @@
   }
 
   input, .y-input {
+    background-color: transparent;
     font-family: $font-type;
     height: 32px;
     min-width: 148px;
@@ -3339,6 +3340,9 @@
             &.yotpo-field-option-label{
               padding: 0!important;
             }
+          }
+          .y-input {
+            color: #737373;
           }
           .connect-wrapper{
             .form-element {
