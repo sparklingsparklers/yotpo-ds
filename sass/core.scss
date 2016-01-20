@@ -3392,6 +3392,7 @@
       overflow: hidden;
       li {
         display: inline-block;
+        vertical-align: top;
       }
       .yotpo-promoted-product{
         text-align: #{$left};
