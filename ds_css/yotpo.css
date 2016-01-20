@@ -893,6 +893,7 @@ They are here to complement for missing ones.
 /* line 734, ../sass/core.scss */
 .yotpo .form-group .form-element .yotpo-rating-field, .yotpo .form-group .form-element .yotpo-size-field {
   display: inline-block;
+  width: 100%;
   vertical-align: middle;
   text-align: left;
   margin-bottom: 25px;
