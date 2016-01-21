@@ -3582,6 +3582,7 @@ They are here to complement for missing ones.
 /* line 3394, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products li {
   display: inline-block;
+  vertical-align: top;
 }
 /* line 3397, ../sass/core.scss */
 .yotpo .promoted-products-box .promoted-products .yotpo-promoted-product {
