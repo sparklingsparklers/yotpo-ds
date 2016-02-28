@@ -1211,6 +1211,10 @@
       }
     }
 
+    .yotpo-padding-left-50-pct {
+      padding-#{$left}: 50%;
+    }
+
     .yotpo-submit{
       display: inline-block;
       margin-bottom: 10px;
