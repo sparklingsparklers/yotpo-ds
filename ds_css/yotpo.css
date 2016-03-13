@@ -3893,28 +3893,40 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   overflow-y: auto;
 }
 /* line 7, ../sass/gallery.scss */
+.yotpo-gallery.yotpo .yotpo-modal .yotpo-modal-mask {
+  opacity: 0;
+}
+/* line 9, ../sass/gallery.scss */
+.yotpo-gallery.yotpo .yotpo-modal .yotpo-modal-mask.yotpo-active-display {
+  opacity: 0.8;
+}
+/* line 13, ../sass/gallery.scss */
+.yotpo-gallery.yotpo .yotpo-modal .yotpo-modal-container {
+  opacity: 0;
+  top: 15%;
+  -webkit-transition: opacity 0.3s ease-out 0s;
+  -moz-transition: opacity 0.3s ease-out 0s;
+  -ms-transition: opacity 0.3s ease-out 0s;
+  -o-transition: opacity 0.3s ease-out 0s;
+  transition: opacity 0.3s ease-out 0s;
+}
+/* line 22, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active {
   opacity: 1;
 }
-/* line 9, ../sass/gallery.scss */
-.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-mask {
-  opacity: 0.8;
-}
-/* line 12, ../sass/gallery.scss */
+/* line 24, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container {
   position: relative;
+  z-index: 900;
   height: 80%;
   width: 1082px;
   margin: auto;
-  top: 15%;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s ease-out 0s;
-  -moz-transition: opacity 0.5s ease-out 0s;
-  -ms-transition: opacity 0.5s ease-out 0s;
-  -o-transition: opacity 0.5s ease-out 0s;
-  transition: opacity 0.5s ease-out 0s;
 }
-/* line 24, ../sass/gallery.scss */
+/* line 30, ../sass/gallery.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container.yotpo-active-display {
+  opacity: 1;
+}
+/* line 33, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container {
   position: relative;
   background-color: black;
@@ -3923,11 +3935,11 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   border-radius: 3px 0 0 3px;
   height: 100%;
 }
-/* line 31, ../sass/gallery.scss */
+/* line 40, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-icon-btn-small {
   display: block !important;
 }
-/* line 34, ../sass/gallery.scss */
+/* line 43, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-icon-btn-small .yotpo-icon.yotpo-icon-cross {
   color: #a2a2a2;
   z-index: 9000;
@@ -3936,54 +3948,58 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   top: 14px;
   right: -415px;
 }
-/* line 44, ../sass/gallery.scss */
+/* line 53, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows {
   position: absolute;
   top: 50%;
   width: 100%;
-  padding: 0 20px;
   height: 0;
   z-index: 1001;
   margin-top: -20px;
 }
-/* line 52, ../sass/gallery.scss */
+/* line 60, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-left-arrow-thin {
   float: left;
-  text-shadow: rgba(0, 0, 0, 0.74) 0 0 30px;
+  text-shadow: rgba(0, 0, 0, 0.34) 0 0 30px;
 }
-/* line 56, ../sass/gallery.scss */
+/* line 64, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-right-arrow-thin {
   float: right;
-  text-shadow: rgba(0, 0, 0, 0.74) 0 0 30px;
+  text-shadow: rgba(0, 0, 0, 0.34) 0 0 30px;
 }
-/* line 60, ../sass/gallery.scss */
+/* line 68, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-left-arrow-thin, .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-right-arrow-thin {
   cursor: pointer;
   color: #737373;
   font-size: 40px;
-  padding: 100px 0;
+  padding: 270px 20px;
   position: relative;
-  top: -100px;
+  top: -270px;
 }
-/* line 68, ../sass/gallery.scss */
+/* line 76, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-left-arrow-thin:hover, .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-right-arrow-thin:hover {
   color: #ffffff;
 }
-/* line 72, ../sass/gallery.scss */
+/* line 80, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog {
   width: 100%;
   height: 100%;
   max-width: none;
   max-height: none;
   top: 0;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: color 0s ease-in 0s;
+  transition: none;
 }
-/* line 78, ../sass/gallery.scss */
+/* line 91, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content {
   background: inherit;
   text-align: center;
   display: table;
 }
-/* line 82, ../sass/gallery.scss */
+/* line 95, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .gallery-images-container {
   display: table;
   table-layout: fixed;
@@ -3993,7 +4009,7 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   width: 500%;
   font-size: 0;
 }
-/* line 90, ../sass/gallery.scss */
+/* line 103, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .gallery-images-container.gallery-animations {
   -webkit-transition: left 0.5s ease-out 0s;
   -moz-transition: left 0.5s ease-out 0s;
@@ -4001,21 +4017,21 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   -o-transition: left 0.5s ease-out 0s;
   transition: left 0.5s ease-out 0s;
 }
-/* line 98, ../sass/gallery.scss */
+/* line 111, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .gallery-image-container {
   display: table-cell;
   height: 100%;
   vertical-align: middle;
   width: 20%;
 }
-/* line 104, ../sass/gallery.scss */
+/* line 117, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-gallery-image {
   cursor: pointer;
   max-width: 100%;
   max-height: 656px;
   border-radius: 3px;
 }
-/* line 110, ../sass/gallery.scss */
+/* line 123, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:before,
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:after,
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader {
@@ -4027,7 +4043,7 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   -webkit-animation: yotpo-image-loader 1.8s infinite ease-in-out;
   animation: yotpo-image-loader 1.8s infinite ease-in-out;
 }
-/* line 121, ../sass/gallery.scss */
+/* line 134, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader {
   font-size: 10px;
   margin: -35px auto 0 auto;
@@ -4039,24 +4055,24 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
-/* line 132, ../sass/gallery.scss */
+/* line 145, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:before {
   left: -3.5em;
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
-/* line 137, ../sass/gallery.scss */
+/* line 150, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:after {
   left: 3.5em;
 }
-/* line 140, ../sass/gallery.scss */
+/* line 153, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:before,
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader:after {
   content: '';
   position: absolute;
   top: 0;
 }
-/* line 146, ../sass/gallery.scss */
+/* line 159, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-image-loader-wrapper {
   display: table-cell;
   vertical-align: middle;
@@ -4081,7 +4097,7 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
     box-shadow: 0 2.5em 0 0 #ffffff;
   }
 }
-/* line 173, ../sass/gallery.scss */
+/* line 186, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container {
   position: absolute;
   top: 0;
@@ -4094,139 +4110,193 @@ div.yotpo-preloader-wrapper .yotpo-pre-loader span.yotpo-empty-stars {
   border-radius: 0 3px 3px 0;
   padding: 28px 40px 28px 28px;
 }
-/* line 186, ../sass/gallery.scss */
+/* line 197, ../sass/gallery.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container .yotpo-read-more {
+  display: none;
+}
+/* line 200, ../sass/gallery.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container .rest-content-collapsed {
+  opacity: 1;
+  display: inherit;
+}
+/* line 204, ../sass/gallery.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container .yotpo-tool-tip {
+  z-index: 88890;
+}
+/* line 208, ../sass/gallery.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container .yotpo-footer .label-helpful {
+  display: none;
+}
+/* line 212, ../sass/gallery.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container .yotpo-footer .share-options-wrapper span[data-social='google'], .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container .yotpo-footer .share-options-wrapper span[data-social='linkedin'] {
+  display: none;
+}
+/* line 216, ../sass/gallery.scss */
+.yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container .yotpo-footer .share-options-wrapper span[data-social='twitter'] .yotpo-icon-dot {
+  display: none;
+}
+/* line 224, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-label .yotpo-logo-bg-white {
   border-radius: 50%;
   padding: 6px;
   margin: 10px 5px;
   background-color: #2f84ed !important;
 }
-/* line 192, ../sass/gallery.scss */
+/* line 230, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-label .yotpo-icon-yotpo-logo-text {
   color: #ffffff !important;
   font-size: 14px;
 }
-/* line 196, ../sass/gallery.scss */
+/* line 234, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-label.yotpo-small-box {
   padding: 0;
   border: none;
-  z-index: 88889;
+  z-index: 800;
   float: right;
   position: absolute;
   right: 0;
 }
-/* line 204, ../sass/gallery.scss */
+/* line 242, ../sass/gallery.scss */
 .yotpo-gallery.yotpo .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-label .yotpo-logo-title > a {
   color: #a2a2a2 !important;
 }
-/* line 215, ../sass/gallery.scss */
+/* line 253, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-6 .yotpo-modal .yotpo-review .yotpo-main, .yotpo-gallery.yotpo.yotpo-size-5 .yotpo-modal .yotpo-review .yotpo-main, .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal .yotpo-review .yotpo-main, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal .yotpo-review .yotpo-main, .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal .yotpo-review .yotpo-main, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal .yotpo-review .yotpo-main {
   margin-left: 0;
 }
-/* line 217, ../sass/gallery.scss */
+/* line 255, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-6 .yotpo-modal .yotpo-review .yotpo-main .content-review, .yotpo-gallery.yotpo.yotpo-size-5 .yotpo-modal .yotpo-review .yotpo-main .content-review, .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal .yotpo-review .yotpo-main .content-review, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal .yotpo-review .yotpo-main .content-review, .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal .yotpo-review .yotpo-main .content-review, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal .yotpo-review .yotpo-main .content-review {
   font-size: 13px;
 }
-/* line 227, ../sass/gallery.scss */
+/* line 259, ../sass/gallery.scss */
+.yotpo-gallery.yotpo.yotpo-size-6 .yotpo-modal .yotpo-review .yotpo-footer, .yotpo-gallery.yotpo.yotpo-size-5 .yotpo-modal .yotpo-review .yotpo-footer, .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal .yotpo-review .yotpo-footer, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal .yotpo-review .yotpo-footer, .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal .yotpo-review .yotpo-footer, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal .yotpo-review .yotpo-footer {
+  margin-left: 0;
+}
+/* line 268, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal .yotpo-modal-container, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal .yotpo-modal-container, .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal .yotpo-modal-container, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal .yotpo-modal-container {
   top: 5%;
   margin: auto;
 }
-/* line 230, ../sass/gallery.scss */
+/* line 271, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal .yotpo-modal-container .yotpo-gallery-slider-container, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal .yotpo-modal-container .yotpo-gallery-slider-container, .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal .yotpo-modal-container .yotpo-gallery-slider-container, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal .yotpo-modal-container .yotpo-gallery-slider-container {
   position: inherit;
   border-radius: 3px 3px 0 0;
 }
-/* line 235, ../sass/gallery.scss */
+/* line 276, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-icon-btn-small .yotpo-icon.yotpo-icon-cross, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-icon-btn-small .yotpo-icon.yotpo-icon-cross, .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-icon-btn-small .yotpo-icon.yotpo-icon-cross, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-icon-btn-small .yotpo-icon.yotpo-icon-cross {
   right: 14px;
   color: white;
 }
-/* line 242, ../sass/gallery.scss */
+/* line 283, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal .yotpo-modal-container .yotpo-gallery-content-container, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal .yotpo-modal-container .yotpo-gallery-content-container, .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal .yotpo-modal-container .yotpo-gallery-content-container, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal .yotpo-modal-container .yotpo-gallery-content-container {
   height: auto;
   right: 0;
   border-radius: 0 0 3px 3px;
   position: inherit;
 }
-/* line 255, ../sass/gallery.scss */
+/* line 296, ../sass/gallery.scss */
+.yotpo-gallery.yotpo.yotpo-size-7 .yotpo-modal.yotpo-modal-active .yotpo-modal-container {
+  max-height: 700px;
+}
+/* line 306, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-6 .yotpo-modal.yotpo-modal-active .yotpo-modal-container {
   width: 920px;
+  max-height: 574px;
 }
-/* line 257, ../sass/gallery.scss */
+/* line 309, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-6 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container {
   max-width: 530px;
   max-height: 530px;
 }
-/* line 262, ../sass/gallery.scss */
+/* line 314, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-6 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-icon-btn-small .yotpo-icon.yotpo-icon-cross {
   right: -368px;
 }
-/* line 269, ../sass/gallery.scss */
+/* line 320, ../sass/gallery.scss */
+.yotpo-gallery.yotpo.yotpo-size-6 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-left-arrow-thin, .yotpo-gallery.yotpo.yotpo-size-6 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-right-arrow-thin {
+  top: -230px;
+  padding: 230px 20px;
+}
+/* line 327, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-6 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-gallery-image {
   max-height: 530px;
 }
-/* line 275, ../sass/gallery.scss */
+/* line 333, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-6 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container {
   width: 390px;
   max-height: 530px;
 }
-/* line 287, ../sass/gallery.scss */
+/* line 345, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-5 .yotpo-modal.yotpo-modal-active .yotpo-modal-container {
   width: 788px;
 }
-/* line 289, ../sass/gallery.scss */
+/* line 347, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-5 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container {
   max-width: 420px;
   max-height: 420px;
 }
-/* line 294, ../sass/gallery.scss */
+/* line 352, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-5 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-icon-btn-small .yotpo-icon.yotpo-icon-cross {
   right: -356px;
 }
-/* line 301, ../sass/gallery.scss */
+/* line 358, ../sass/gallery.scss */
+.yotpo-gallery.yotpo.yotpo-size-5 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-left-arrow-thin, .yotpo-gallery.yotpo.yotpo-size-5 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-right-arrow-thin {
+  top: -180px;
+  padding: 180px 20px;
+}
+/* line 365, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-5 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-gallery-image {
   max-height: 420px;
 }
-/* line 307, ../sass/gallery.scss */
+/* line 371, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-5 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container {
   width: 368px;
   max-height: 420px;
 }
-/* line 319, ../sass/gallery.scss */
+/* line 383, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal.yotpo-modal-active .yotpo-modal-container, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal.yotpo-modal-active .yotpo-modal-container {
   width: 445px;
   height: 825px;
 }
-/* line 322, ../sass/gallery.scss */
+/* line 386, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container {
   width: 445px;
   max-height: 445px;
 }
-/* line 327, ../sass/gallery.scss */
+/* line 390, ../sass/gallery.scss */
+.yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-left-arrow-thin, .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-right-arrow-thin, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-left-arrow-thin, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-right-arrow-thin {
+  top: -180px;
+  padding: 180px 20px;
+}
+/* line 397, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-gallery-image, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-gallery-image {
   max-height: 445px;
 }
-/* line 333, ../sass/gallery.scss */
+/* line 403, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-4 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container, .yotpo-gallery.yotpo.yotpo-size-3 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container {
   position: inherit;
   width: 445px;
 }
-/* line 345, ../sass/gallery.scss */
+/* line 415, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal.yotpo-modal-active .yotpo-modal-container, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal.yotpo-modal-active .yotpo-modal-container {
   width: 275px;
   height: 726px;
 }
-/* line 348, ../sass/gallery.scss */
+/* line 418, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container {
   width: 275px;
   max-height: 275px;
 }
-/* line 353, ../sass/gallery.scss */
+/* line 422, ../sass/gallery.scss */
+.yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-left-arrow-thin, .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-right-arrow-thin, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-left-arrow-thin, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-gallery-arrows .yotpo-icon-right-arrow-thin {
+  top: -110px;
+  padding: 110px 20px;
+}
+/* line 429, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-gallery-image, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-slider-container .yotpo-modal-dialog .yotpo-modal-content .yotpo-gallery-image {
   max-height: 275px;
 }
-/* line 359, ../sass/gallery.scss */
+/* line 435, ../sass/gallery.scss */
 .yotpo-gallery.yotpo.yotpo-size-2 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container, .yotpo-gallery.yotpo.yotpo-size-1 .yotpo-modal.yotpo-modal-active .yotpo-modal-container .yotpo-gallery-content-container {
   width: 275px;
 }
