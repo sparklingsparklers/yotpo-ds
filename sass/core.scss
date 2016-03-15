@@ -638,7 +638,7 @@
     width: 100%;
 
     .form-element {
-      text-align: left;
+      text-align: $left;
       .y-label {
         display: block;
         white-space: nowrap;
@@ -736,15 +736,15 @@
         display: inline-block;
         width: 100%;
         vertical-align: middle;
-        text-align: left;
+        text-align: $left;
         margin-bottom: 25px;
 
         .yotpo-rating-field-content, .yotpo-size-field-content{
-          text-align: left;
+          text-align: $left;
 
 
           .yotpo-rating-field-buttons, .yotpo-size-field-buttons{
-            float: left;
+            float: $left;
             display: block;
             .yotpo-radio-wrapper{
               margin: 0;
@@ -765,7 +765,7 @@
           }
 
           .yotpo-rating-field-titles, .yotpo-size-field-titles{
-            float: left;
+            float: $left;
             display: block;
             .y-label{
               min-width: 0;
@@ -799,7 +799,7 @@
 
   .yotpo-rating-bars, .yotpo-size-bars{
     vertical-align: middle;
-    padding-left: 20px;
+    padding-#{$left}: 20px;
     height: 17px;
     .yotpo-product-related-field-score-bar{
       width: 18px;
