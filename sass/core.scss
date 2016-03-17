@@ -563,7 +563,8 @@
     font-size: 13px;
     color: $gray-dark;
     padding: 0 9px;
-    margin: 15px 10px 20px 0;
+    margin: 15px 0 20px;
+    margin-#{$right}: 10px;
     border: solid 1px $gray-light;
     border-radius:0;
     -webkit-border-radius:0;
@@ -606,10 +607,10 @@
   .yotpo-product-related-fields-column {
 
     .yotpo-product-related-fields-names {
-      float: left;
+      float: $left;
     }
     .yotpo-product-related-fields-bars {
-      float: left;
+      float: $left;
     }
 
     &.yotpo-small-version {
@@ -638,7 +639,7 @@
     width: 100%;
 
     .form-element {
-      text-align: left;
+      text-align: $left;
       .y-label {
         display: block;
         white-space: nowrap;
@@ -736,15 +737,15 @@
         display: inline-block;
         width: 100%;
         vertical-align: middle;
-        text-align: left;
+        text-align: $left;
         margin-bottom: 25px;
 
         .yotpo-rating-field-content, .yotpo-size-field-content{
-          text-align: left;
+          text-align: $left;
 
 
           .yotpo-rating-field-buttons, .yotpo-size-field-buttons{
-            float: left;
+            float: $left;
             display: block;
             .yotpo-radio-wrapper{
               margin: 0;
@@ -765,7 +766,7 @@
           }
 
           .yotpo-rating-field-titles, .yotpo-size-field-titles{
-            float: left;
+            float: $left;
             display: block;
             .y-label{
               min-width: 0;
@@ -799,7 +800,7 @@
 
   .yotpo-rating-bars, .yotpo-size-bars{
     vertical-align: middle;
-    padding-left: 20px;
+    padding-#{$left}: 20px;
     height: 17px;
     .yotpo-product-related-field-score-bar{
       width: 18px;
@@ -1369,9 +1370,10 @@
           margin-top: 15px;
           .yotpo-user-field{
             .yotpo-user-field-description{
+              float: $left;
               font-style: italic !important;
               font-weight: bold;
-              margin-right: 7px;
+              margin-#{$right}: 7px;
               color: $gray-darker;
             }
             .yotpo-user-field-answer{
@@ -1676,6 +1678,7 @@
       }
       .yotpo-size-bars {
         padding-left: 0;
+        padding-right: 0;
         margin-top: -4px;
         margin-bottom: 3px;
       }
