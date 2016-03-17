@@ -607,10 +607,10 @@
   .yotpo-product-related-fields-column {
 
     .yotpo-product-related-fields-names {
-      float: left;
+      float: $left;
     }
     .yotpo-product-related-fields-bars {
-      float: left;
+      float: $left;
     }
 
     &.yotpo-small-version {
@@ -1366,9 +1366,10 @@
           margin-top: 15px;
           .yotpo-user-field{
             .yotpo-user-field-description{
+              float: $left;
               font-style: italic !important;
               font-weight: bold;
-              margin-right: 7px;
+              margin-#{$right}: 7px;
               color: $gray-darker;
             }
             .yotpo-user-field-answer{
