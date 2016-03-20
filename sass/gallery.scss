@@ -28,6 +28,19 @@
             max-height: 656px;
             border-radius: 3px 0 0 3px;
             height: 100%;
+            .yotpo-icon-btn-small {
+              display: block;
+              .yotpo-icon {
+                &.yotpo-icon-cross {
+                  color: $gray;
+                  z-index: 9000;
+                  font-size: 15px;
+                  font-weight: bolder;
+                  top: 14px;
+                  right: -415px;
+                }
+              }
+            }
             .yotpo-gallery-arrows {
               position: absolute;
               top: 50%;
@@ -151,18 +164,6 @@
                     box-shadow: 0 2.5em 0 0 #ffffff;
                   }
                 }
-                .yotpo-icon-btn-small {
-                  display: block;
-                  .yotpo-icon {
-                    &.yotpo-icon-cross {
-                      color: $gray;
-                      z-index: 9000;
-                      font-size: 15px;
-                      top: 14px;
-                      right: -415px;
-                    }
-                  }
-                }
               }
             }
           }
@@ -226,10 +227,7 @@
               .yotpo-icon {
                 &.yotpo-icon-cross {
                   right: 14px;
-                  font-size: 15px;
-                  font-weight: bolder;
                   color: white;
-                  z-index: 9999;
                 }
               }
             }
