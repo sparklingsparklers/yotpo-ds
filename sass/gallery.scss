@@ -29,7 +29,7 @@
             border-radius: 3px 0 0 3px;
             height: 100%;
             .yotpo-icon-btn-small {
-              display: block;
+              display: block !important;
               .yotpo-icon {
                 &.yotpo-icon-cross {
                   color: $gray;
@@ -101,8 +101,8 @@
                 }
                 .yotpo-gallery-image {
                   cursor: pointer;
-                  max-width: 95%;
-                  max-height: 80vh;
+                  max-width: 100%;
+                  max-height: 656px;
                 }
                 .yotpo-image-loader:before,
                 .yotpo-image-loader:after,
@@ -256,6 +256,9 @@
                   }
                 }
               }
+              .yotpo-gallery-image {
+                max-height: 480px;
+              }
             }
             .yotpo-gallery-content-container {
               width: 380px;
@@ -280,6 +283,9 @@
                     right: -356px;
                   }
                 }
+              }
+              .yotpo-gallery-image {
+                max-height: 420px;
               }
             }
             .yotpo-gallery-content-container {
