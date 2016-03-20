@@ -226,6 +226,10 @@
               .yotpo-icon {
                 &.yotpo-icon-cross {
                   right: 14px;
+                  font-size: 15px;
+                  font-weight: bolder;
+                  color: white;
+                  z-index: 9999;
                 }
               }
             }
