@@ -183,11 +183,15 @@
             padding: 28px 40px 28px 28px;
           }
           .yotpo-label {
-            .yotpo-icon-yotpo-logo:before {
-              content: "\e609";
+            .yotpo-logo-bg-white {
+              border-radius: 50%;
+              padding: 6px;
+              margin: 10px 5px;
+              background-color: $blue !important;
             }
-            .yotpo-icon-btn-big {
-              padding: 6px 0 4px 2px;
+            .yotpo-icon-yotpo-logo-text {
+              color: $white !important;
+              font-size: 14px;
             }
             &.yotpo-small-box {
               padding: 0;
@@ -205,7 +209,7 @@
       }
     }
 
-    &.yo-large, &.yo-medium, &.yo-small, &.yo-extra-small, &.yo-extra-extra-small {
+    &.yotpo-size-6, &.yotpo-size-5, &.yotpo-size-4, &.yotpo-size-3, &.yotpo-size-2, &.yotpo-size-1 {
       .yotpo-modal {
         .yotpo-review {
           .yotpo-main {
@@ -218,7 +222,7 @@
       }
     }
 
-    &.yo-small, &.yo-extra-small, &.yo-extra-extra-small {
+    &.yotpo-size-4, &.yotpo-size-3, &.yotpo-size-2, &.yotpo-size-1 {
       .yotpo-modal {
         .yotpo-modal-container {
           top: 5%;
@@ -245,7 +249,7 @@
       }
     }
 
-    &.yo-large {
+    &.yotpo-size-6 {
       .yotpo-modal {
         &.yotpo-modal-active {
           .yotpo-modal-container {
@@ -277,7 +281,7 @@
       }
     }
 
-    &.yo-medium {
+    &.yotpo-size-5 {
       .yotpo-modal {
         &.yotpo-modal-active {
           .yotpo-modal-container {
@@ -309,7 +313,7 @@
       }
     }
 
-    &.yo-small {
+    &.yotpo-size-4, &.yotpo-size-3 {
       .yotpo-modal {
         &.yotpo-modal-active {
           .yotpo-modal-container {
@@ -335,7 +339,7 @@
       }
     }
 
-    &.yo-extra-small, &yo-extra-extra-small  {
+    &.yotpo-size-2, &.yotpo-size-1 {
       .yotpo-modal {
         &.yotpo-modal-active {
           .yotpo-modal-container {
