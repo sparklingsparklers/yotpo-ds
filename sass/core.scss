@@ -3520,7 +3520,13 @@ div.yotpo-preloader-wrapper{
     margin: 20px auto;
 
     .yotpo-icon{
-      color: $orange;
+      $stars-color: false !default;
+      @if $stars-color {
+        color: $stars-color;
+      }
+      @else {
+        color: $orange;
+      }
 
       margin-left: -5px;
       &:first-child {
