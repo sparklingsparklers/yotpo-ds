@@ -1664,6 +1664,7 @@
     }
     .yotpo-tool-tip {
       width: inherit;
+      min-width: 130px;
       top: -25px;
       #{$left}: 130px;
 
