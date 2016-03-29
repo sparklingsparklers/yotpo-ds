@@ -4,23 +4,32 @@
     .yotpo-modal {
       opacity: 0;
       overflow-y: auto;
-      &.yotpo-modal-active {
-        opacity: 1;
-        .yotpo-modal-mask {
+      .yotpo-modal-mask {
+        opacity: 0;
+        &.yotpo-active-display {
           opacity: 0.8;
         }
+      }
+      .yotpo-modal-container {
+        opacity: 0;
+        top: 15%;
+        -webkit-transition: opacity 0.3s ease-out 0s;
+        -moz-transition: opacity 0.3s ease-out 0s;
+        -ms-transition: opacity 0.3s ease-out 0s;
+        -o-transition: opacity 0.3s ease-out 0s;
+        transition: opacity 0.3s ease-out 0s;
+      }
+      &.yotpo-modal-active {
+        opacity: 1;
         .yotpo-modal-container {
           position: relative;
+          z-index: 900;
           height: 80%;
           width: 1082px;
           margin: auto;
-          top: 15%;
-          opacity: 0;
-          -webkit-transition: opacity 0.5s ease-out 0s;
-          -moz-transition: opacity 0.5s ease-out 0s;
-          -ms-transition: opacity 0.5s ease-out 0s;
-          -o-transition: opacity 0.5s ease-out 0s;
-          transition: opacity 0.5s ease-out 0s;
+          &.yotpo-active-display {
+            opacity: 1;
+          }
           .yotpo-gallery-slider-container {
             position: relative;
             background-color: black;
@@ -45,25 +54,24 @@
               position: absolute;
               top: 50%;
               width: 100%;
-              padding: 0 20px;
               height: 0;
               z-index: 1001;
               margin-top: -20px;
               .yotpo-icon-left-arrow-thin {
                 float: left;
-                text-shadow: rgba(0, 0, 0, 0.74) 0 0 30px;
+                text-shadow: rgba(0, 0, 0, 0.34) 0 0 30px;
               }
               .yotpo-icon-right-arrow-thin {
                 float: right;
-                text-shadow: rgba(0, 0, 0, 0.74) 0 0 30px;
+                text-shadow: rgba(0, 0, 0, 0.34) 0 0 30px;
               }
               .yotpo-icon-left-arrow-thin, .yotpo-icon-right-arrow-thin {
                 cursor: pointer;
                 color: $gray-dark;
                 font-size: 40px;
-                padding: 100px 0;
+                padding: 270px 20px;
                 position: relative;
-                top: -100px;
+                top: -270px;
               }
               .yotpo-icon-left-arrow-thin:hover, .yotpo-icon-right-arrow-thin:hover {
                 color: $white;
@@ -75,6 +83,11 @@
               max-width: none;
               max-height: none;
               top: 0;
+              -webkit-transition: none;
+              -moz-transition: none;
+              -ms-transition: none;
+              -o-transition: color 0s ease-in 0s;
+              transition: none;
               .yotpo-modal-content {
                 background: inherit;
                 text-align: center;
@@ -181,6 +194,31 @@
             width: 426px;
             border-radius: 0 3px 3px 0;
             padding: 28px 40px 28px 28px;
+            .yotpo-read-more {
+              display: none;
+            }
+            .rest-content-collapsed {
+              opacity: 1;
+              display: inherit;
+            }
+            .yotpo-tool-tip {
+              z-index: 88890;
+            }
+            .yotpo-footer {
+              .label-helpful {
+                display: none;
+              }
+              .share-options-wrapper {
+                span[data-social='google'], span[data-social='linkedin'] {
+                  display: none;
+                }
+                span[data-social='twitter'] {
+                  .yotpo-icon-dot {
+                    display: none;
+                  }
+                }
+              }
+            }
           }
           .yotpo-label {
             .yotpo-logo-bg-white {
@@ -196,7 +234,7 @@
             &.yotpo-small-box {
               padding: 0;
               border: none;
-              z-index: 88889;
+              z-index: 800;
               float: right;
               position: absolute;
               right: 0;
@@ -217,6 +255,9 @@
             .content-review {
               font-size: 13px;
             }
+          }
+          .yotpo-footer {
+            margin-left: 0;
           }
         }
       }
@@ -249,11 +290,22 @@
       }
     }
 
+    &.yotpo-size-7 {
+      .yotpo-modal {
+        &.yotpo-modal-active {
+          .yotpo-modal-container {
+            max-height: 700px;
+          }
+        }
+      }
+    }
+
     &.yotpo-size-6 {
       .yotpo-modal {
         &.yotpo-modal-active {
           .yotpo-modal-container {
             width: 920px;
+            max-height: 574px;
             .yotpo-gallery-slider-container {
               max-width: 530px;
               max-height: 530px;
@@ -262,6 +314,12 @@
                   &.yotpo-icon-cross {
                     right: -368px;
                   }
+                }
+              }
+              .yotpo-gallery-arrows {
+                .yotpo-icon-left-arrow-thin, .yotpo-icon-right-arrow-thin {
+                  top: -230px;
+                  padding: 230px 20px;
                 }
               }
               .yotpo-modal-dialog {
@@ -296,6 +354,12 @@
                   }
                 }
               }
+              .yotpo-gallery-arrows {
+                .yotpo-icon-left-arrow-thin, .yotpo-icon-right-arrow-thin {
+                  top: -180px;
+                  padding: 180px 20px;
+                }
+              }
               .yotpo-modal-dialog {
                 .yotpo-modal-content {
                   .yotpo-gallery-image {
@@ -322,6 +386,12 @@
             .yotpo-gallery-slider-container {
               width: 445px;
               max-height: 445px;
+              .yotpo-gallery-arrows {
+                .yotpo-icon-left-arrow-thin, .yotpo-icon-right-arrow-thin {
+                  top: -180px;
+                  padding: 180px 20px;
+                }
+              }
               .yotpo-modal-dialog {
                 .yotpo-modal-content {
                   .yotpo-gallery-image {
@@ -348,6 +418,12 @@
             .yotpo-gallery-slider-container {
               width: 275px;
               max-height: 275px;
+              .yotpo-gallery-arrows {
+                .yotpo-icon-left-arrow-thin, .yotpo-icon-right-arrow-thin {
+                  top: -110px;
+                  padding: 110px 20px;
+                }
+              }
               .yotpo-modal-dialog {
                 .yotpo-modal-content {
                   .yotpo-gallery-image {
