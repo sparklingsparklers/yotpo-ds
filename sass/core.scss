@@ -1182,7 +1182,6 @@
         margin-top: 40px;
       }
     }
-
     .connect-wrapper {
       padding-#{$left}: 273px;
       width: 100%;
@@ -3011,6 +3010,16 @@
   }
   .yotpo-nav-tab span {
     color: $default-gray-darker!important;
+  }
+
+  &.yotpo-small {
+
+    .socialize-wrapper {
+      position: static;
+    }
+    .connect-wrapper {
+      padding-left: 0px;
+    }
   }
 }
 
